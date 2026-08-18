@@ -1,6 +1,5 @@
 import {
   type FormEvent,
-  type KeyboardEvent,
   useEffect,
   useMemo,
   useRef,
@@ -29,6 +28,8 @@ const difficultyLabels: Record<Difficulty, string> = {
   impossible: "Impossible",
 };
 
+const defaultRoundMessage = "Listen closely. The first clip is tiny.";
+
 const initialSeen = (): Record<Difficulty, Set<string>> => ({
   easy: new Set(),
   medium: new Set(),
@@ -47,13 +48,14 @@ function App() {
   const [stageIndex, setStageIndex] = useState(0);
   const [status, setStatus] = useState<RoundStatus>("playing");
   const [query, setQuery] = useState("");
-  const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
-  const [message, setMessage] = useState("Listen closely. The first clip is tiny.");
+  const [message, setMessage] = useState(defaultRoundMessage);
   const [audioError, setAudioError] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(() => {
-    const saved = Number(window.localStorage.getItem("songless-volume"));
+    const storedVolume = window.localStorage.getItem("songless-volume-v2");
+    if (storedVolume === null) return 1;
+    const saved = Number(storedVolume);
     return Number.isFinite(saved) && saved >= 0 && saved <= 1 ? saved : 0.8;
   });
 
@@ -74,7 +76,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("songless-volume", String(volume));
+    window.localStorage.setItem("songless-volume-v2", String(volume));
   }, [volume]);
 
   useEffect(() => {
@@ -107,17 +109,12 @@ function App() {
       .slice(0, 7);
   }, [catalog, query]);
 
-  const selectedSong = selectedSongId
-    ? catalog.find((song) => song.id === selectedSongId) ?? null
-    : null;
-
   function resetRoundState() {
     setStageIndex(0);
     setStatus("playing");
     setQuery("");
-    setSelectedSongId(null);
     setGuessedSongIds([]);
-    setMessage("Listen closely. The first clip is tiny.");
+    setMessage(defaultRoundMessage);
     setAudioError("");
     setIsPlaying(false);
   }
@@ -164,9 +161,8 @@ function App() {
     setMessage("Out of clues. The song has been revealed.");
   }
 
-  function submitGuess(songOverride?: Song) {
+  function submitGuess(guess?: Song) {
     if (!currentSong || status !== "playing") return;
-    const guess = songOverride ?? selectedSong;
     if (!guess) {
       setMessage("Choose a song from the search results first.");
       return;
@@ -182,43 +178,18 @@ function App() {
 
     setGuessedSongIds((ids) => [...ids, guess.id]);
     setQuery("");
-    setSelectedSongId(null);
     advanceOrLose("wrong");
   }
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    submitGuess();
-  }
-
-  function handleSearchKeyDown(event: KeyboardEvent<HTMLInputElement>) {
-    if (event.key !== "Enter" || selectedSong || suggestions.length === 0) return;
-    event.preventDefault();
     submitGuess(suggestions[0]);
   }
 
-  function selectSuggestion(song: Song) {
-    setSelectedSongId(song.id);
-    setQuery(`${song.title} — ${song.artist}`);
-  }
-
-  const isDemoCatalog = catalog.length > 0 && catalog.every((song) => song.audio.kind === "synth");
-
   return (
-    <main className="app-shell">
-      <header className="topbar">
-        <a className="brand" href="/" aria-label="Songless home">
-          <span className="brand-mark" aria-hidden="true">s</span>
-          <span>songless</span>
-        </a>
-        <div className="library-size">
-          <span className="status-dot" /> {catalog.length} songs local
-        </div>
-      </header>
-
+    <main className="app-shell" data-difficulty={difficulty}>
       <section className="game-layout">
         <aside className="mode-panel" aria-label="Difficulty">
-          <p className="eyebrow">Difficulty</p>
           <nav className="difficulty-list">
             {difficulties.map((level) => (
               <button
@@ -228,133 +199,129 @@ function App() {
                 onClick={() => setDifficulty(level)}
                 type="button"
               >
-                <span>{difficultyLabels[level]}</span>
-                <span className="mode-count">{counts[level]}</span>
+                {difficultyLabels[level]}
               </button>
             ))}
           </nav>
-          <div className="mode-note">
-            <span>From the start</span>
-            <strong>{stages.length} stages</strong>
-          </div>
         </aside>
 
         <section className="game-card" aria-live="polite">
-          <div className="difficulty-tabs" aria-hidden="true">
-            {difficulties.map((level) => (
-              <span className={difficulty === level ? `${level} active` : level} key={level}>
-                {difficultyLabels[level]}
-              </span>
-            ))}
+          <div className="game-content">
+            <div className="difficulty-tabs" aria-hidden="true">
+              {difficulties.map((level) => (
+                <span className={difficulty === level ? `${level} active` : level} key={level}>
+                  {difficultyLabels[level]}
+                </span>
+              ))}
+            </div>
+
+            {catalogError ? (
+              <div className="empty-state">
+                <span className="empty-icon">!</span>
+                <h1>Catalogue error</h1>
+                <p>{catalogError}</p>
+              </div>
+            ) : !currentSong ? (
+              <div className="empty-state">
+                <span className="empty-icon">{String.fromCharCode(9835)}</span>
+                <h1>{catalog.length === 0 ? "Loading catalogue..." : "No songs in this mode"}</h1>
+                <p>Add a song with the "{difficulty}" difficulty to public/catalog.json.</p>
+              </div>
+            ) : status !== "playing" ? (
+              <div className={`result-panel ${status}`}>
+                <Artwork song={currentSong} />
+                <p className="result-kicker">{status === "won" ? "You got it" : "The answer was"}</p>
+                <h1>{currentSong.title}</h1>
+                <p className="result-artist">{currentSong.artist}</p>
+                <p className="result-message">{message}</p>
+                <button className="primary-action compact" onClick={startNextRound} type="button">
+                  Next song <span aria-hidden="true">-&gt;</span>
+                </button>
+              </div>
+            ) : (
+              <div className="round-panel">
+                <div className="stage-track" aria-label={`Stage ${stageIndex + 1} of ${stages.length}`}>
+                  {stages.map((stage, index) => (
+                    <span
+                      className={index < stageIndex ? "passed" : index === stageIndex ? "current" : ""}
+                      key={stage}
+                    />
+                  ))}
+                </div>
+
+                <div className="player-area">
+                  <button
+                    className={isPlaying ? "play-button playing" : "play-button"}
+                    onClick={playClip}
+                    type="button"
+                    aria-label={`Play ${stages[stageIndex]} second clip`}
+                  >
+                    <span className="play-triangle" />
+                    <span className="pulse-ring" />
+                  </button>
+                  <div className="stage-time">
+                    <strong>{stages[stageIndex]}</strong><span>s</span>
+                  </div>
+                </div>
+
+                {(audioError || message !== defaultRoundMessage) && (
+                  <p className="game-message">{audioError || message}</p>
+                )}
+
+                <form className="guess-form" onSubmit={handleSubmit}>
+                  <div className="search-wrap">
+                    <span className="search-icon" aria-hidden="true" />
+                    <input
+                      aria-label="Search songs"
+                      autoComplete="off"
+                      onChange={(event) => setQuery(event.target.value)}
+                      placeholder="Search songs..."
+                      value={query}
+                    />
+                    {query && suggestions.length > 0 && (
+                      <div className="suggestions" role="listbox">
+                        {suggestions.map((song) => (
+                          <button
+                            key={song.id}
+                            onClick={() => submitGuess(song)}
+                            role="option"
+                            type="button"
+                          >
+                            <Artwork song={song} small />
+                            <span><strong>{song.title}</strong><small>{song.artist}</small></span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <button className="skip-button" onClick={() => advanceOrLose("skip")} type="button">
+                    <span className="skip-icon" aria-hidden="true" /> Skip
+                  </button>
+                </form>
+
+                {guessedSongIds.length > 0 && (
+                  <div className="wrong-guesses">
+                    {guessedSongIds.map((id, index) => {
+                      const song = catalog.find((candidate) => candidate.id === id);
+                      return song ? <span key={`${id}-${index}`}>x {song.title}</span> : null;
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
-
-          {catalogError ? (
-            <div className="empty-state">
-              <span className="empty-icon">!</span>
-              <h1>Catalogue error</h1>
-              <p>{catalogError}</p>
-            </div>
-          ) : !currentSong ? (
-            <div className="empty-state">
-              <span className="empty-icon">♪</span>
-              <h1>{catalog.length === 0 ? "Loading catalogue…" : "No songs in this mode"}</h1>
-              <p>Add a song with the “{difficulty}” difficulty to public/catalog.json.</p>
-            </div>
-          ) : status !== "playing" ? (
-            <div className={`result-panel ${status}`}>
-              <Artwork song={currentSong} />
-              <p className="result-kicker">{status === "won" ? "You got it" : "The answer was"}</p>
-              <h1>{currentSong.title}</h1>
-              <p className="result-artist">{currentSong.artist}</p>
-              <p className="result-message">{message}</p>
-              <button className="primary-action compact" onClick={startNextRound} type="button">
-                Next song <span aria-hidden="true">→</span>
-              </button>
-            </div>
-          ) : (
-            <>
-              <div className="stage-track" aria-label={`Stage ${stageIndex + 1} of ${stages.length}`}>
-                {stages.map((stage, index) => (
-                  <span
-                    className={index < stageIndex ? "passed" : index === stageIndex ? "current" : ""}
-                    key={stage}
-                  />
-                ))}
-              </div>
-
-              <div className="player-area">
-                <button
-                  className={isPlaying ? "play-button playing" : "play-button"}
-                  onClick={playClip}
-                  type="button"
-                  aria-label={`Play ${stages[stageIndex]} second clip`}
-                >
-                  <span className="play-triangle" />
-                  <span className="pulse-ring" />
-                </button>
-                <div className="stage-time">
-                  <strong>{stages[stageIndex]}</strong><span>s</span>
-                </div>
-              </div>
-
-              <p className="game-message">{audioError || message}</p>
-
-              <form className="guess-form" onSubmit={handleSubmit}>
-                <div className="search-wrap">
-                  <span className="search-icon" aria-hidden="true" />
-                  <input
-                    aria-label="Search songs"
-                    autoComplete="off"
-                    onChange={(event) => {
-                      setQuery(event.target.value);
-                      setSelectedSongId(null);
-                    }}
-                    onKeyDown={handleSearchKeyDown}
-                    placeholder="Search songs…"
-                    value={query}
-                  />
-                  {query && !selectedSong && suggestions.length > 0 && (
-                    <div className="suggestions" role="listbox">
-                      {suggestions.map((song) => (
-                        <button
-                          key={song.id}
-                          onClick={() => selectSuggestion(song)}
-                          role="option"
-                          type="button"
-                        >
-                          <Artwork song={song} small />
-                          <span><strong>{song.title}</strong><small>{song.artist}</small></span>
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                <button className="guess-button" disabled={!selectedSong} type="submit">Guess</button>
-                <button className="skip-button" onClick={() => advanceOrLose("skip")} type="button">
-                  <span aria-hidden="true">▷|</span> Skip
-                </button>
-              </form>
-
-              {guessedSongIds.length > 0 && (
-                <div className="wrong-guesses">
-                  {guessedSongIds.map((id, index) => {
-                    const song = catalog.find((candidate) => candidate.id === id);
-                    return song ? <span key={`${id}-${index}`}>× {song.title}</span> : null;
-                  })}
-                </div>
-              )}
-            </>
-          )}
         </section>
 
         <aside className="settings-panel">
           <div>
-            <p className="eyebrow">Song start</p>
-            <div className="setting-value active-setting"><span>◖)))</span> From the start</div>
+            <p className="eyebrow"><span className="speaker-icon" /> Song start</p>
+            <button className="setting-value" disabled type="button">Spotify preview</button>
+            <button className="setting-value active-setting" type="button">From the start</button>
           </div>
           <div>
-            <p className="eyebrow">Stages</p>
+            <p className="eyebrow"><span className="timer-icon" /> Stages</p>
             <div className="stage-pills">
+              <span className="disabled-stage">0.01s</span>
               {stages.map((stage, index) => (
                 <span className={index === stageIndex && status === "playing" ? "active" : ""} key={stage}>
                   {stage}s
@@ -363,17 +330,21 @@ function App() {
             </div>
           </div>
           <label className="volume-control">
-            <span className="eyebrow">Volume</span>
-            <div><span aria-hidden="true">◖)))</span><input min="0" max="1" step="0.01" type="range" value={volume} onChange={(event) => setVolume(Number(event.target.value))} /></div>
+            <span className="eyebrow"><span className="speaker-icon" /> Volume</span>
+            <div>
+              <input
+                aria-label="Volume"
+                min="0"
+                max="1"
+                step="0.01"
+                type="range"
+                value={volume}
+                onChange={(event) => setVolume(Number(event.target.value))}
+              />
+            </div>
           </label>
         </aside>
       </section>
-
-      {isDemoCatalog && (
-        <footer className="demo-banner">
-          Demo catalogue active. Try “Neon Steps” on Easy, then replace the demo entries using <code>docs/CATALOG.md</code>.
-        </footer>
-      )}
     </main>
   );
 }
@@ -384,7 +355,7 @@ function Artwork({ song, small = false }: { song: Song; small?: boolean }) {
   }
   return (
     <span className={small ? "artwork fallback small" : "artwork fallback"} aria-hidden="true">
-      ♪
+      {String.fromCharCode(9835)}
     </span>
   );
 }

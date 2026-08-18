@@ -3,6 +3,8 @@ dist/
 .vite/
 *.local
 *.tsbuildinfo
+.chrome-preview*/
+*-preview*.png
 
 # Private media stays on your machine.
 public/media/audio/*
