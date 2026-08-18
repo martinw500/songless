@@ -26,9 +26,11 @@ This remains comfortable for thousands of catalogue records. JSON size is not th
 5. Playback begins at `startAtMs` and is scheduled for the current enabled stage duration.
 6. Guesses use catalogue IDs, avoiding ambiguous fuzzy-title comparisons.
 
-Stage configuration is client-side. Toggling a duration stops active audio, preserves the current clue where possible, selects the next valid clue when necessary, and saves the enabled durations to local storage so playback state and the interface cannot disagree.
+Stage configuration is client-side. Toggling a duration stops active audio. Removing the current clue selects the next valid clue; adding a shorter clue makes that duration current so it is never misclassified as passed. Enabled durations are saved to local storage so playback state and the interface cannot disagree.
 
 All available timeline segments remain mounted while the app is running. Disabled segments animate to zero width instead of being immediately removed from the DOM, allowing both additions and removals to produce a continuous reflow. A separate absolutely positioned cursor tracks the current stage on the same animation curve. Win confetti is deterministic CSS motion rendered by React, requires no animation dependency, and is disabled by the reduced-motion stylesheet. See [UI-QUALITY.md](UI-QUALITY.md) for the visual acceptance rules.
+
+Playback returns the actual scheduled clip duration from the audio engine. The interface uses `requestAnimationFrame` against that duration to scale a progress layer inside the current timeline segment. A run identifier cancels stale loading and animation work when the user stops playback, changes stages, changes difficulty, or leaves the round.
 
 Decoded audio is cached in memory for replaying the current session. Refreshing the page clears that cache.
 

@@ -83,6 +83,9 @@ const initialSeen = (): Record<Difficulty, Set<string>> => ({
 
 function App() {
   const audioEngine = useRef(new AudioEngine());
+  const playbackFrame = useRef<number | null>(null);
+  const playbackRun = useRef(0);
+  const playbackPending = useRef(false);
   const seenSongs = useRef(initialSeen());
   const [catalog, setCatalog] = useState<Song[]>([]);
   const [catalogError, setCatalogError] = useState("");
@@ -97,6 +100,7 @@ function App() {
   const [message, setMessage] = useState(defaultRoundMessage);
   const [audioError, setAudioError] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
+  const [playbackProgress, setPlaybackProgress] = useState(0);
   const [volume, setVolume] = useState(() => {
     const storedVolume = window.localStorage.getItem("songless-volume-v2");
     if (storedVolume === null) return 1;
@@ -129,7 +133,6 @@ function App() {
   }, [enabledStages]);
 
   useEffect(() => {
-    audioEngine.current.stop();
     const pool = filterSongs(catalog, difficulty);
     const song = pickSong(pool, seenSongs.current[difficulty]);
     if (song) seenSongs.current[difficulty].add(song.id);
@@ -137,7 +140,11 @@ function App() {
     resetRoundState();
   }, [catalog, difficulty]);
 
-  useEffect(() => () => audioEngine.current.stop(), []);
+  useEffect(() => () => {
+    playbackRun.current += 1;
+    if (playbackFrame.current !== null) cancelAnimationFrame(playbackFrame.current);
+    audioEngine.current.stop();
+  }, []);
 
   const counts = useMemo(
     () =>
@@ -163,8 +170,25 @@ function App() {
     : null;
   const currentStage = enabledStages[stageIndex] ?? enabledStages[0] ?? stages[0];
   const cursorOffset = stageCursorOffset(enabledStages, stageIndex);
+  const totalStageWeight = enabledStages.reduce((total, stage) => total + stageWeight(stage), 0);
+  const currentStageWidth = totalStageWeight > 0
+    ? (stageWeight(currentStage) / totalStageWeight) * 100
+    : 0;
+
+  function stopPlayback(resetProgress = true) {
+    playbackRun.current += 1;
+    playbackPending.current = false;
+    if (playbackFrame.current !== null) {
+      cancelAnimationFrame(playbackFrame.current);
+      playbackFrame.current = null;
+    }
+    audioEngine.current.stop();
+    setIsPlaying(false);
+    if (resetProgress) setPlaybackProgress(0);
+  }
 
   function resetRoundState() {
+    stopPlayback();
     setStageIndex(0);
     setStatus("playing");
     setQuery("");
@@ -172,11 +196,9 @@ function App() {
     setGuessedSongIds([]);
     setMessage(defaultRoundMessage);
     setAudioError("");
-    setIsPlaying(false);
   }
 
   function rerollAll() {
-    audioEngine.current.stop();
     seenSongs.current = initialSeen();
     if (currentSong) seenSongs.current[difficulty].add(currentSong.id);
     const pool = filterSongs(catalog, difficulty);
@@ -187,26 +209,50 @@ function App() {
   }
 
   function replayCurrentSong() {
-    audioEngine.current.stop();
     resetRoundState();
   }
 
   async function playClip() {
     if (!currentSong || status !== "playing") return;
+    if (isPlaying || playbackPending.current) {
+      stopPlayback();
+      return;
+    }
+
+    stopPlayback();
+    const run = playbackRun.current;
+    playbackPending.current = true;
     setAudioError("");
-    setIsPlaying(true);
     try {
-      await audioEngine.current.play(currentSong, currentStage, volume);
-      window.setTimeout(() => setIsPlaying(false), currentStage * 1000 + 50);
+      const actualDuration = await audioEngine.current.play(currentSong, currentStage, volume);
+      if (run !== playbackRun.current || actualDuration <= 0) return;
+      playbackPending.current = false;
+      setIsPlaying(true);
+      const startedAt = performance.now();
+      const durationMs = Math.max(1, actualDuration * 1000);
+      const updateProgress = (now: number) => {
+        if (run !== playbackRun.current) return;
+        const progress = Math.min(1, (now - startedAt) / durationMs);
+        setPlaybackProgress(progress);
+        if (progress < 1) {
+          playbackFrame.current = requestAnimationFrame(updateProgress);
+          return;
+        }
+        playbackFrame.current = null;
+        setIsPlaying(false);
+      };
+      playbackFrame.current = requestAnimationFrame(updateProgress);
     } catch (error) {
+      if (run !== playbackRun.current) return;
+      playbackPending.current = false;
       setIsPlaying(false);
+      setPlaybackProgress(0);
       setAudioError(error instanceof Error ? error.message : "The clip could not be played.");
     }
   }
 
   function advanceOrLose(reason: "skip" | "wrong") {
-    audioEngine.current.stop();
-    setIsPlaying(false);
+    stopPlayback();
     if (stageIndex < enabledStages.length - 1) {
       const nextIndex = stageIndex + 1;
       setStageIndex(nextIndex);
@@ -229,8 +275,7 @@ function App() {
     }
 
     if (guess.id === currentSong.id) {
-      audioEngine.current.stop();
-      setIsPlaying(false);
+      stopPlayback();
       setStatus("won");
       setMessage(`Correct in ${currentStage} seconds.`);
       return;
@@ -266,8 +311,7 @@ function App() {
     const nextStages: number[] = stageOptions.filter((option) =>
       option === stage ? !isEnabled : enabledStages.includes(option),
     );
-    audioEngine.current.stop();
-    setIsPlaying(false);
+    stopPlayback();
     setEnabledStages([...nextStages]);
 
     if (status !== "playing") {
@@ -275,11 +319,14 @@ function App() {
       return;
     }
 
-    const nextCurrentStage = nextStages.includes(currentStage)
-      ? currentStage
-      : nextStages.find((option) => option > currentStage) ?? nextStages[nextStages.length - 1];
+    const nextCurrentStage = !isEnabled && stage < currentStage
+      ? stage
+      : nextStages.includes(currentStage)
+        ? currentStage
+        : nextStages.find((option) => option > currentStage) ?? nextStages[nextStages.length - 1];
     setStageIndex(Math.max(0, nextStages.indexOf(nextCurrentStage)));
-    setMessage(`${stage}s stage ${isEnabled ? "removed" : "added"}.`);
+    setMessage(defaultRoundMessage);
+    setAudioError("");
   }
 
   return (
@@ -393,6 +440,16 @@ function App() {
                     );
                   })}
                   <i
+                    className="stage-playback-progress"
+                    data-progress={playbackProgress.toFixed(3)}
+                    style={{
+                      left: `${cursorOffset}%`,
+                      width: `${currentStageWidth}%`,
+                      transform: `scaleX(${playbackProgress})`,
+                    }}
+                    aria-hidden="true"
+                  />
+                  <i
                     className="stage-cursor"
                     style={{ left: `${cursorOffset}%` }}
                     aria-hidden="true"
@@ -404,9 +461,9 @@ function App() {
                     className={isPlaying ? "play-button playing" : "play-button"}
                     onClick={playClip}
                     type="button"
-                    aria-label={`Play ${currentStage} second clip`}
+                    aria-label={isPlaying ? "Stop clip playback" : `Play ${currentStage} second clip`}
                   >
-                    <PlayIcon />
+                    {isPlaying ? <PauseIcon /> : <PlayIcon />}
                     <span className="pulse-ring" />
                   </button>
                   <div className="stage-time">
@@ -507,6 +564,7 @@ function App() {
                 step="0.01"
                 type="range"
                 value={volume}
+                style={{ "--volume-percent": `${volume * 100}%` } as CSSProperties}
                 onChange={(event) => setVolume(Number(event.target.value))}
               />
             </div>
@@ -577,8 +635,17 @@ function StopwatchIcon() {
 
 function PlayIcon() {
   return (
-    <svg className="play-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <svg className="play-glyph play-icon" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.3 6.55c0-1.72 1.88-2.78 3.35-1.9l7.35 4.4c1.43.86 1.43 2.94 0 3.8l-7.35 4.4c-1.47.88-3.35-.18-3.35-1.9v-8.8Z" />
+    </svg>
+  );
+}
+
+function PauseIcon() {
+  return (
+    <svg className="play-glyph pause-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="6" y="5" width="4.5" height="14" rx="1.4" />
+      <rect x="13.5" y="5" width="4.5" height="14" rx="1.4" />
     </svg>
   );
 }

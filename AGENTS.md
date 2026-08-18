@@ -5,7 +5,7 @@ These instructions apply to the entire repository.
 ## Visual quality
 
 - Treat user screenshots as the visual authority. Match their scale, alignment, spacing, softness, iconography, and motion before adding unrelated decoration.
-- Verify optical alignment from the visible pixels, not only from a wrapper's bounding box. For result screens, measure the visible group from artwork through stamp against the game-card center.
+- Verify optical alignment from the visible pixels, not only from a wrapper's bounding box. For asymmetric icons, check both axes and account for visual weight; for result screens, measure the visible group from artwork through stamp against the game-card center.
 - Use inline SVG for interface icons. Do not approximate play, skip, volume, restart, dice, search, or timer symbols with CSS borders, text glyphs, or clipped pseudo-elements.
 - Interactive state changes need meaningful motion. Elements that are added or removed from the stage timeline must expand, collapse, and reflow; they must not simply pop in or disappear.
 - Motion should communicate cause and hierarchy: controls react first, layout follows, and result emphasis lands last. Prefer transform and opacity animation and avoid layout jitter.
@@ -16,7 +16,10 @@ These instructions apply to the entire repository.
 
 - Enabled stage pills define both the actual audio durations and the visible timeline. They must never disagree.
 - The timeline uses one persistent current-stage cursor. It must move on the same curve as segment reflow and must not jump to a new segment before that segment finishes moving.
+- Adding a duration earlier than the current clue makes that newly added duration current. It must not appear as a completed/passed segment.
 - Keep at least one stage enabled and persist stage and volume preferences locally.
+- Range controls must visibly distinguish the filled portion before the thumb from the unfilled portion after it.
+- Active audio must swap the play glyph for a centered pause glyph and advance a visible fill inside the current timeline segment. Stopping playback restores the play glyph and clears partial progress.
 - Difficulty selection must work from both the side rail and central tabs.
 - `Reroll all` is always available. `Play again` appears only after a loss.
 - Search-result selection and guess submission remain separate actions.
@@ -24,8 +27,10 @@ These instructions apply to the entire repository.
 ## Documentation and verification
 
 - Update the relevant Markdown documentation whenever behavior, controls, deployment, media handling, or architecture changes.
-- Run `npm run typecheck`, `npm run build`, and `git diff --check` before handoff.
+- Run `npm run typecheck`, `npm run build`, `npm run verify:ui`, and `git diff --check` before handoff.
 - For visual changes, render the real app and inspect playing, win, and loss states. Exercise any changed interaction rather than inferring behavior from source.
+- Reproduce the exact interaction sequence from a reported bug, including toggling a stage off, restoring it before the current selection, and clicking between durations. A passing build is not a visual regression check.
+- Playback checks must observe the UI while a clip is actually active; a static playing class or a timeout inferred from source is insufficient.
 - Do not claim that an element is centered, animated, or fixed unless the rendered evidence directly proves that specific claim.
 
 See `docs/UI-QUALITY.md` for the product-level visual and motion specification.

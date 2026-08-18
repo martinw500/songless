@@ -3,6 +3,7 @@ dist/
 .vite/
 *.local
 *.tsbuildinfo
+.ui-audit/
 .chrome-preview*/
 *-preview*.png
 

@@ -47,6 +47,8 @@ At 96 kbps, a 20-second clip is about 240 KB. Roughly 500 clips would use about 
 npm run dev       # development server
 npm run typecheck # TypeScript validation
 npm run build     # production build
+npm run verify:ui # browser regression audit for stages, play icon, and volume
+npm run verify:ui:artifacts # audit and save a screenshot for inspection
 npm run preview   # preview the production build
 ```
 

@@ -14,7 +14,9 @@ The stage pills toggle the durations used by the round. The timeline keeps a sta
 
 The current-stage color is a persistent cursor layered over the segments, not a fill owned by a segment. Its position animates on the same 780ms curve as segment widths, so removing the active duration cannot make the green marker jump ahead of the reflow.
 
-Changing the stage configuration stops active audio, preserves the current duration when it remains enabled, otherwise selects the next longer enabled duration (falling back to the longest remaining duration), and saves the selection to local storage. At least one duration remains enabled.
+Changing the stage configuration stops active audio and saves the selection to local storage. Removing the current duration selects the next longer enabled duration (falling back to the longest remaining duration). Adding a duration earlier than the current duration makes the newly added duration current, preventing it from being painted as an already-passed clue. At least one duration remains enabled.
+
+During playback, the play triangle changes to a centered pause glyph and the current timeline segment fills from left to right using frame-synchronized elapsed time. A completed clip leaves its segment filled as feedback that the clue was heard. Pressing the active button stops playback, restores the play glyph, and clears partial progress; replaying a completed clip begins its fill again from zero.
 
 ## Result choreography
 
@@ -41,6 +43,12 @@ All choreography is reduced to near-instant state changes when `prefers-reduced-
 - Render at 1918x1079 and confirm the center card and supporting rails match the reference proportions.
 - Inspect the play glyph and skip SVG at their rendered sizes; neither may look shifted, clipped, or broken.
 - Toggle a disabled stage on and an enabled stage off. Confirm the timeline visibly expands and collapses over time and that the displayed/audio duration follows the new first stage.
+- Remove the current first stage, restore it, then toggle earlier and later durations in succession. The restored earlier stage must become current, no unplayed segment may use the passed color, and the cursor must remain attached to the current boundary throughout reflow.
+- Set volume to a partial value. The track before the thumb must use the difficulty accent and the track after the thumb must remain dark.
+- Stage toggles must not place routine “stage added” or “stage removed” text over the play control.
+- Play a multi-second clue and inspect it while audio is active. The pause glyph must be visible and centered, and the current segment fill must grow over time rather than jump directly to complete.
 - Trigger both a win and loss. Confirm the visible artwork-to-stamp group is optically centered and no result content is clipped.
 - Observe the transition rather than only its final frame. Win confetti should be visible but contained, and the stamp should be the final emphasis.
 - Check a narrow viewport and the reduced-motion media mode.
+
+Run `npm run verify:ui` for the repeatable browser checks behind these invariants. Use `npm run verify:ui:artifacts` to also save the audited browser state in `.ui-audit/` for visual inspection.

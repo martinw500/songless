@@ -6,8 +6,10 @@ export class AudioEngine {
   private context: AudioContext | null = null;
   private activeNodes: AudioScheduledSourceNode[] = [];
   private buffers = new Map<string, AudioBuffer>();
+  private playbackId = 0;
 
   stop(): void {
+    this.playbackId += 1;
     for (const node of this.activeNodes) {
       try {
         node.stop();
@@ -18,9 +20,11 @@ export class AudioEngine {
     this.activeNodes = [];
   }
 
-  async play(song: Song, durationSeconds: number, volume: number): Promise<void> {
+  async play(song: Song, durationSeconds: number, volume: number): Promise<number> {
     this.stop();
+    const playbackId = this.playbackId;
     const context = await this.getContext();
+    if (playbackId !== this.playbackId) return 0;
     const gain = context.createGain();
     const now = context.currentTime;
     const end = now + durationSeconds;
@@ -34,6 +38,7 @@ export class AudioEngine {
 
     if (song.audio.kind === "file") {
       const buffer = await this.loadBuffer(song.audio.src, context);
+      if (playbackId !== this.playbackId) return 0;
       const source = context.createBufferSource();
       source.buffer = buffer;
       source.connect(gain);
@@ -45,7 +50,7 @@ export class AudioEngine {
       }
       source.start(now, offset, actualDuration);
       this.activeNodes = [source];
-      return;
+      return actualDuration;
     }
 
     const noteLength = Math.max(0.08, (song.audio.noteLengthMs ?? 350) / 1000);
@@ -73,6 +78,7 @@ export class AudioEngine {
     }
 
     this.activeNodes = nodes;
+    return durationSeconds;
   }
 
   private async getContext(): Promise<AudioContext> {
@@ -96,4 +102,3 @@ export class AudioEngine {
     return buffer;
   }
 }
-

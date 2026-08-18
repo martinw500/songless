@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "verify:ui": "node scripts/verify-ui.mjs",
+    "verify:ui:artifacts": "node scripts/verify-ui.mjs --artifacts"
   },
   "dependencies": {
     "react": "19.2.8",
@@ -21,4 +23,3 @@
     "vite": "8.2.1"
   }
 }
-
