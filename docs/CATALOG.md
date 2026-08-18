@@ -9,6 +9,7 @@ Add one object per song to `public/catalog.json`:
   "id": "malcolm-todd-earrings",
   "title": "Earrings",
   "artist": "Malcolm Todd",
+  "album": "Malcolm Todd",
   "aliases": [],
   "artistAliases": [],
   "releaseYear": 2025,
@@ -28,6 +29,8 @@ Add one object per song to `public/catalog.json`:
 Use URL-style forward slashes even on Windows. Keep IDs and filenames lowercase, stable, and unique.
 
 `aliases` is useful for alternate spellings. The game normalizes capitalization, accents, punctuation, `feat.`, `remastered`, and similar suffixes, but the player still chooses a canonical search result before guessing.
+
+`album` is optional. When provided, result screens show `Artist · Album` beneath the song title.
 
 ## Familiarity is not lifetime streams
 
@@ -95,4 +98,3 @@ Once persistent statistics exist, player results should replace manual estimates
 - whether only one of the two players knows the track
 
 A practical automatic rule would move a song toward Easy when it is consistently solved early and toward Expert when it is missed after 8–15 seconds.
-

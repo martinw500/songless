@@ -119,15 +119,19 @@ function App() {
     setIsPlaying(false);
   }
 
-  function startNextRound() {
+  function rerollAll() {
     audioEngine.current.stop();
+    seenSongs.current = initialSeen();
+    if (currentSong) seenSongs.current[difficulty].add(currentSong.id);
     const pool = filterSongs(catalog, difficulty);
-    if (seenSongs.current[difficulty].size >= pool.length) {
-      seenSongs.current[difficulty].clear();
-    }
     const song = pickSong(pool, seenSongs.current[difficulty]);
     if (song) seenSongs.current[difficulty].add(song.id);
     setCurrentSong(song);
+    resetRoundState();
+  }
+
+  function replayCurrentSong() {
+    audioEngine.current.stop();
     resetRoundState();
   }
 
@@ -187,7 +191,7 @@ function App() {
   }
 
   return (
-    <main className="app-shell" data-difficulty={difficulty}>
+    <main className="app-shell" data-difficulty={difficulty} data-status={status}>
       <section className="game-layout">
         <aside className="mode-panel" aria-label="Difficulty">
           <nav className="difficulty-list">
@@ -203,17 +207,35 @@ function App() {
               </button>
             ))}
           </nav>
+          <div className="mode-actions">
+            <button className="mode-action" onClick={rerollAll} type="button">
+              <RerollIcon /> Reroll all
+            </button>
+            {status === "lost" && (
+              <button className="mode-action" onClick={replayCurrentSong} type="button">
+                <ReplayIcon /> Play again
+              </button>
+            )}
+          </div>
         </aside>
 
         <section className="game-card" aria-live="polite">
-          <div className="game-content">
-            <div className="difficulty-tabs" aria-hidden="true">
+          <div className={status === "playing" ? "game-content" : "game-content result-state"}>
+            {status === "playing" && (
+            <div className="difficulty-tabs" aria-label="Difficulty">
               {difficulties.map((level) => (
-                <span className={difficulty === level ? `${level} active` : level} key={level}>
+                <button
+                  className={difficulty === level ? `${level} active` : level}
+                  disabled={catalog.length > 0 && counts[level] === 0}
+                  key={level}
+                  onClick={() => setDifficulty(level)}
+                  type="button"
+                >
                   {difficultyLabels[level]}
-                </span>
+                </button>
               ))}
             </div>
+            )}
 
             {catalogError ? (
               <div className="empty-state">
@@ -230,13 +252,15 @@ function App() {
             ) : status !== "playing" ? (
               <div className={`result-panel ${status}`}>
                 <Artwork song={currentSong} />
-                <p className="result-kicker">{status === "won" ? "You got it" : "The answer was"}</p>
+                {status === "lost" && <p className="result-kicker">It was...</p>}
                 <h1>{currentSong.title}</h1>
-                <p className="result-artist">{currentSong.artist}</p>
-                <p className="result-message">{message}</p>
-                <button className="primary-action compact" onClick={startNextRound} type="button">
-                  Next song <span aria-hidden="true">-&gt;</span>
-                </button>
+                <p className="result-artist">
+                  {currentSong.artist}
+                  {currentSong.album && <span> &middot; {currentSong.album}</span>}
+                </p>
+                <div className="result-stamp">
+                  {status === "won" ? `Guessed in ${stages[stageIndex]}s!` : "Lost!"}
+                </div>
               </div>
             ) : (
               <div className="round-panel">
@@ -314,12 +338,12 @@ function App() {
 
         <aside className="settings-panel">
           <div>
-            <p className="eyebrow"><span className="speaker-icon" /> Song start</p>
+            <p className="eyebrow"><WaveformIcon /> Song start</p>
             <button className="setting-value" disabled type="button">Spotify preview</button>
             <button className="setting-value active-setting" type="button">From the start</button>
           </div>
           <div>
-            <p className="eyebrow"><span className="timer-icon" /> Stages</p>
+            <p className="eyebrow"><StopwatchIcon /> Stages</p>
             <div className="stage-pills">
               <span className="disabled-stage">0.01s</span>
               {stages.map((stage, index) => (
@@ -330,7 +354,7 @@ function App() {
             </div>
           </div>
           <label className="volume-control">
-            <span className="eyebrow"><span className="speaker-icon" /> Volume</span>
+            <span className="eyebrow"><VolumeIcon /> Volume</span>
             <div>
               <input
                 aria-label="Volume"
@@ -357,6 +381,48 @@ function Artwork({ song, small = false }: { song: Song; small?: boolean }) {
     <span className={small ? "artwork fallback small" : "artwork fallback"} aria-hidden="true">
       {String.fromCharCode(9835)}
     </span>
+  );
+}
+
+function VolumeIcon() {
+  return (
+    <svg className="label-icon volume-icon" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M2.25 6.1v3.8h2.2l3.1 2.65V3.45L4.45 6.1h-2.2Z" />
+      <path d="M9.7 5.25c.75.72 1.12 1.64 1.12 2.75s-.37 2.03-1.12 2.75M11.65 3.55c1.2 1.18 1.8 2.66 1.8 4.45s-.6 3.27-1.8 4.45" />
+    </svg>
+  );
+}
+
+function WaveformIcon() {
+  return (
+    <svg className="label-icon waveform-icon" viewBox="0 0 18 14" aria-hidden="true">
+      <path d="M1 7h1.5M4 4.5v5M6.5 2v10M9 4v6M11.5 1v12M14 4.5v5M16 7h1" />
+    </svg>
+  );
+}
+
+function StopwatchIcon() {
+  return (
+    <svg className="label-icon stopwatch-icon" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M6 1.5h4M8 3.25v1M12.15 4.35l1.05-1.05M8 14.25a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+      <path d="M8 7v2.2l1.45.9" />
+    </svg>
+  );
+}
+
+function RerollIcon() {
+  return (
+    <svg className="action-icon" viewBox="0 0 18 18" aria-hidden="true">
+      <path d="M5.5 3.5H12a2.5 2.5 0 0 1 2.5 2.5v1M12.25 5.25 14.5 7.5l2.25-2.25M12.5 14.5H6A2.5 2.5 0 0 1 3.5 12v-1M5.75 12.75 3.5 10.5l-2.25 2.25" />
+    </svg>
+  );
+}
+
+function ReplayIcon() {
+  return (
+    <svg className="action-icon" viewBox="0 0 18 18" aria-hidden="true">
+      <path d="M4.3 6.2A5.75 5.75 0 1 1 3.4 11M4.3 2.7v3.5H.8" />
+    </svg>
   );
 }
 

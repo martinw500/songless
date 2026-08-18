@@ -27,6 +27,7 @@ export type Song = {
   artist: string;
   aliases?: string[];
   artistAliases?: string[];
+  album?: string;
   releaseYear?: number;
   genres?: string[];
   difficulty: Difficulty;
@@ -38,4 +39,3 @@ export type Song = {
 };
 
 export type RoundStatus = "playing" | "won" | "lost";
-
