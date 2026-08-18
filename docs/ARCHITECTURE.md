@@ -28,6 +28,8 @@ This remains comfortable for thousands of catalogue records. JSON size is not th
 
 Stage configuration is client-side. Toggling a duration restarts the current round, updates the timeline immediately, and saves the enabled durations to local storage so playback state and the interface cannot disagree.
 
+All available timeline segments remain mounted while the app is running. Disabled segments animate to zero width instead of being immediately removed from the DOM, allowing both additions and removals to produce a continuous reflow. Win confetti is deterministic CSS motion rendered by React, requires no animation dependency, and is disabled by the reduced-motion stylesheet. See [UI-QUALITY.md](UI-QUALITY.md) for the visual acceptance rules.
+
 Decoded audio is cached in memory for replaying the current session. Refreshing the page clears that cache.
 
 ## Media strategy

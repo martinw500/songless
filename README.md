@@ -55,7 +55,7 @@ npm run preview   # preview the production build
 - [Architecture](docs/ARCHITECTURE.md)
 - [Catalogue and difficulty](docs/CATALOG.md)
 - [Vercel deployment](docs/DEPLOYMENT.md)
-- [Roadmap](docs/ROADMAP.md)
+- [UI quality and motion](docs/UI-QUALITY.md)
 
 ## Deploy
 

@@ -1,4 +1,5 @@
 import {
+  type CSSProperties,
   type FormEvent,
   useEffect,
   useMemo,
@@ -46,6 +47,22 @@ function initialStages(): number[] {
 function stageWeight(stage: number): number {
   return Math.max(0.58, Math.log10(stage * 100 + 1));
 }
+
+const confettiPieces = Array.from({ length: 30 }, (_, index) => {
+  const angle = (index / 30) * Math.PI * 2;
+  const distance = 76 + (index % 6) * 15;
+  const x = Math.round(Math.cos(angle) * distance);
+  const y = Math.round(Math.sin(angle) * distance - 30);
+  return {
+    x,
+    y,
+    fall: y + 130 + (index % 5) * 18,
+    rotation: 180 + (index % 7) * 70,
+    delay: (index % 6) * 0.025,
+    color: ["var(--accent)", "#e8fff2", "#77f6b2", "#ffffff", "#b7ffd6"][index % 5],
+    round: index % 4 === 0,
+  };
+});
 
 const initialSeen = (): Record<Difficulty, Set<string>> => ({
   easy: new Set(),
@@ -305,7 +322,16 @@ function App() {
               </div>
             ) : status !== "playing" ? (
               <div className={`result-panel ${status}`} key={`${status}-${currentSong.id}`}>
-                <Artwork song={currentSong} />
+                <div className="result-artwork-wrap">
+                  {status === "won" && (
+                    <>
+                      <span className="success-ring success-ring-one" aria-hidden="true" />
+                      <span className="success-ring success-ring-two" aria-hidden="true" />
+                      <Confetti />
+                    </>
+                  )}
+                  <Artwork song={currentSong} />
+                </div>
                 {status === "lost" && <p className="result-kicker">It was...</p>}
                 <h1>{currentSong.title}</h1>
                 <p className="result-artist">
@@ -323,14 +349,28 @@ function App() {
                   data-stage-count={enabledStages.length}
                   aria-label={`Stage ${stageIndex + 1} of ${enabledStages.length}`}
                 >
-                  {enabledStages.map((stage, index) => (
-                    <span
-                      className={index < stageIndex ? "passed" : index === stageIndex ? "current" : ""}
-                      key={stage}
-                      style={{ flexGrow: stageWeight(stage) }}
-                      title={`${stage} seconds`}
-                    />
-                  ))}
+                  {stageOptions.map((stage) => {
+                    const enabledIndex = enabledStages.indexOf(stage);
+                    const isEnabled = enabledIndex >= 0;
+                    const stateClass = !isEnabled
+                      ? "disabled"
+                      : enabledIndex < stageIndex
+                        ? "passed"
+                        : enabledIndex === stageIndex
+                          ? "current"
+                          : "upcoming";
+                    const isLastEnabled = isEnabled && enabledIndex === enabledStages.length - 1;
+                    return (
+                      <span
+                        aria-hidden={!isEnabled}
+                        className={`stage-segment ${isEnabled ? "enabled" : "disabled"} ${stateClass}${isLastEnabled ? " last-enabled" : ""}`}
+                        data-stage={stage}
+                        key={stage}
+                        style={{ flexGrow: isEnabled ? stageWeight(stage) : 0 }}
+                        title={isEnabled ? `${stage} seconds` : undefined}
+                      />
+                    );
+                  })}
                 </div>
 
                 <div className="player-area">
@@ -385,7 +425,7 @@ function App() {
                     <button className="guess-button" type="submit">Guess</button>
                   ) : (
                     <button className="skip-button" onClick={() => advanceOrLose("skip")} type="button">
-                      <span className="skip-icon" aria-hidden="true" /> Skip
+                      <SkipIcon /> Skip
                     </button>
                   )}
                 </form>
@@ -462,6 +502,27 @@ function Artwork({ song, small = false }: { song: Song; small?: boolean }) {
   );
 }
 
+function Confetti() {
+  return (
+    <span className="confetti" aria-hidden="true">
+      {confettiPieces.map((piece, index) => (
+        <span
+          className={piece.round ? "confetti-piece round" : "confetti-piece"}
+          key={index}
+          style={{
+            "--confetti-x": `${piece.x}px`,
+            "--confetti-y": `${piece.y}px`,
+            "--confetti-fall": `${piece.fall}px`,
+            "--confetti-rotation": `${piece.rotation}deg`,
+            "--confetti-delay": `${piece.delay}s`,
+            "--confetti-color": piece.color,
+          } as CSSProperties}
+        />
+      ))}
+    </span>
+  );
+}
+
 function VolumeIcon() {
   return (
     <svg className="label-icon volume-icon" viewBox="0 0 16 16" aria-hidden="true">
@@ -492,6 +553,15 @@ function PlayIcon() {
   return (
     <svg className="play-icon" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.3 6.55c0-1.72 1.88-2.78 3.35-1.9l7.35 4.4c1.43.86 1.43 2.94 0 3.8l-7.35 4.4c-1.47.88-3.35-.18-3.35-1.9v-8.8Z" />
+    </svg>
+  );
+}
+
+function SkipIcon() {
+  return (
+    <svg className="skip-icon" viewBox="0 0 20 20" aria-hidden="true">
+      <path className="skip-icon-triangle" d="M3.75 5.45c0-1.02 1.12-1.64 1.98-1.1l7.02 4.42c.8.5.8 1.66 0 2.16l-7.02 4.42c-.86.54-1.98-.08-1.98-1.1v-8.8Z" />
+      <path className="skip-icon-bar" d="M15.65 4.8v10.4" />
     </svg>
   );
 }

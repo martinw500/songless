@@ -105,12 +105,18 @@ input:focus-visible {
 
 .app-shell[data-status="won"] .game-card::before {
   background: radial-gradient(ellipse at 50% 52%, rgba(var(--accent-rgb), 0.08), transparent 66%);
-  animation: resultWashIn 850ms var(--ease-out) both;
+  animation: successWashIn 1300ms var(--ease-out) both;
 }
 
 @keyframes resultWashIn {
   from { opacity: 0; transform: scale(0.92); }
   to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes successWashIn {
+  0% { opacity: 0; transform: scale(0.76); }
+  52% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 0.72; transform: scale(1); }
 }
 
 .game-content {
@@ -277,17 +283,30 @@ input:focus-visible {
 }
 
 .stage-track span {
-  flex: 1 1 0;
-  min-width: 7px;
-  border-right: 1px solid #151811;
+  flex: 0 1 0;
+  min-width: 0;
+  border-right: 0 solid #151811;
   background: #2b3028;
   position: relative;
   transform-origin: left center;
-  animation: stageSegmentIn 360ms var(--ease-out) both;
-  transition: flex-grow 420ms var(--ease-out), background 300ms ease, opacity 300ms ease;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    flex-grow 780ms cubic-bezier(0.4, 0, 0.2, 1),
+    min-width 780ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-width 360ms ease,
+    background 340ms ease,
+    opacity 320ms ease;
 }
 
-.stage-track span:last-child { border-right: 0; }
+.stage-track span.enabled {
+  min-width: 7px;
+  border-right-width: 1px;
+  opacity: 1;
+  animation: stageSegmentEnable 620ms var(--ease-out) both;
+}
+.stage-track span.disabled { pointer-events: none; }
+.stage-track span.last-enabled { border-right-width: 0; }
 .stage-track span.passed { background: rgba(var(--accent-rgb), 0.58); }
 .stage-track span.current { background: #2b3028; }
 .stage-track span.current::after {
@@ -300,9 +319,10 @@ input:focus-visible {
   animation: currentStageIn 380ms var(--ease-out) both;
 }
 
-@keyframes stageSegmentIn {
-  from { opacity: 0; transform: scaleX(0.65); }
-  to { opacity: 1; transform: scaleX(1); }
+@keyframes stageSegmentEnable {
+  0% { filter: brightness(1.8); }
+  46% { filter: brightness(1.2); }
+  100% { filter: brightness(1); }
 }
 
 @keyframes currentStageIn {
@@ -356,7 +376,6 @@ input:focus-visible {
 .play-icon {
   width: 45%;
   height: 45%;
-  margin-left: 5%;
   fill: #10140d;
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.16));
   position: relative;
@@ -510,30 +529,18 @@ input:focus-visible {
 .skip-button:hover { background: #1d2118; border-color: #3a3f34; }
 
 .skip-icon {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  position: relative;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  overflow: visible;
 }
 
-.skip-icon::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 6px solid #d8ddd8;
-}
-
-.skip-icon::after {
-  content: "";
-  position: absolute;
-  right: 1px;
-  top: 2px;
-  width: 1px;
-  height: 8px;
-  background: #d8ddd8;
+.skip-icon-triangle { fill: currentColor; }
+.skip-icon-bar {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
 }
 
 .suggestions {
@@ -720,14 +727,24 @@ input:focus-visible {
   background: var(--accent);
 }
 
-.empty-state,
-.result-panel {
+.empty-state {
   min-height: 295px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.result-panel {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .game-content.result-state {
@@ -767,8 +784,8 @@ input:focus-visible {
 .result-state .result-panel {
   width: 100%;
   min-height: 0;
-  padding: 26px 0 44px;
-  transform: translateY(24px);
+  padding: 0;
+  transform: translateY(14px);
 }
 
 .empty-icon {
@@ -802,6 +819,14 @@ input:focus-visible {
 }
 
 .artwork.small { width: 30px; height: 30px; border-radius: 6px; box-shadow: none; flex: 0 0 auto; font-size: 12px; }
+.result-artwork-wrap {
+  width: 142px;
+  height: 142px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
 .result-panel .artwork { width: 142px; height: 142px; border-radius: 17px; }
 .result-panel.won .artwork {
   width: 142px;
@@ -835,6 +860,7 @@ input:focus-visible {
   font-weight: 900;
   letter-spacing: 1px;
   line-height: 1;
+  position: relative;
   text-transform: uppercase;
   transform: rotate(-6deg);
 }
@@ -856,7 +882,7 @@ input:focus-visible {
   box-shadow: 0 0 15px rgba(237, 92, 98, 0.08);
 }
 
-.result-panel > .artwork {
+.result-panel .result-artwork-wrap {
   animation: resultArtworkIn 720ms 120ms var(--ease-spring) both;
 }
 
@@ -878,6 +904,78 @@ input:focus-visible {
 }
 
 .result-panel.won .result-stamp { --stamp-angle: -7deg; }
+
+.success-ring {
+  position: absolute;
+  z-index: -1;
+  inset: -4px;
+  border: 2px solid rgba(var(--accent-rgb), 0.58);
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.success-ring-one { animation: successRing 900ms 120ms var(--ease-out) both; }
+.success-ring-two { animation: successRing 1100ms 260ms var(--ease-out) both; }
+
+.confetti {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.confetti-piece {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--confetti-color);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--confetti-color) 45%, transparent);
+  opacity: 0;
+  animation: confettiBurst 1550ms var(--confetti-delay) var(--ease-out) both;
+}
+
+.confetti-piece.round { width: 8px; height: 8px; border-radius: 50%; }
+
+.result-panel.won h1 { animation: winTitleIn 650ms 430ms var(--ease-spring) both; }
+
+.result-panel.won .result-stamp::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 2px solid rgba(var(--accent-rgb), 0.65);
+  border-radius: 12px;
+  opacity: 0;
+  animation: stampEcho 620ms 840ms var(--ease-out) both;
+}
+
+@keyframes successRing {
+  0% { opacity: 0; transform: scale(0.72); }
+  24% { opacity: 0.75; }
+  100% { opacity: 0; transform: scale(1.52); }
+}
+
+@keyframes confettiBurst {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.25) rotate(0); }
+  10% { opacity: 1; }
+  54% { opacity: 1; transform: translate(calc(-50% + var(--confetti-x)), calc(-50% + var(--confetti-y))) scale(1) rotate(var(--confetti-rotation)); }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--confetti-x)), calc(-50% + var(--confetti-fall))) scale(0.82) rotate(var(--confetti-rotation)); }
+}
+
+@keyframes winTitleIn {
+  0% { opacity: 0; transform: translateY(18px) scale(0.82); filter: blur(4px); }
+  64% { opacity: 1; transform: translateY(-2px) scale(1.045); filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes stampEcho {
+  0% { opacity: 0.8; transform: scale(0.72); }
+  100% { opacity: 0; transform: scale(1.35); }
+}
 
 @keyframes resultArtworkIn {
   0% { opacity: 0; transform: translateY(24px) scale(0.78); filter: blur(8px); }
@@ -1039,7 +1137,8 @@ input:focus-visible {
   .volume-control input::-moz-range-thumb { width: 14px; height: 14px; }
 
   .game-content.result-state { min-height: calc(100dvh - 68px); padding-top: 0; }
-  .result-state .result-panel { padding: 36px 0 58px; transform: translateY(34px); }
+  .result-state .result-panel { padding: 0; transform: translateY(30px); }
+  .result-artwork-wrap { width: 200px; height: 200px; }
   .result-panel .artwork,
   .result-panel.won .artwork { width: 200px; height: 200px; border-radius: 22px; }
   .result-panel.won h1 { margin-top: 20px; font-size: 32px; }
@@ -1108,7 +1207,7 @@ input:focus-visible {
     min-height: 536px;
     height: auto;
   }
-  .result-state .result-panel { padding: 24px 0 34px; transform: translateY(17px); }
+  .result-state .result-panel { padding: 0; transform: translateY(12px); }
 }
 
 @media (max-width: 430px) {
