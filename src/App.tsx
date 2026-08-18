@@ -48,6 +48,7 @@ function App() {
   const [stageIndex, setStageIndex] = useState(0);
   const [status, setStatus] = useState<RoundStatus>("playing");
   const [query, setQuery] = useState("");
+  const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
   const [message, setMessage] = useState(defaultRoundMessage);
   const [audioError, setAudioError] = useState("");
@@ -109,10 +110,15 @@ function App() {
       .slice(0, 7);
   }, [catalog, query]);
 
+  const selectedSong = selectedSongId
+    ? catalog.find((song) => song.id === selectedSongId) ?? null
+    : null;
+
   function resetRoundState() {
     setStageIndex(0);
     setStatus("playing");
     setQuery("");
+    setSelectedSongId(null);
     setGuessedSongIds([]);
     setMessage(defaultRoundMessage);
     setAudioError("");
@@ -182,12 +188,22 @@ function App() {
 
     setGuessedSongIds((ids) => [...ids, guess.id]);
     setQuery("");
+    setSelectedSongId(null);
     advanceOrLose("wrong");
   }
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    submitGuess(suggestions[0]);
+    if (selectedSong) {
+      submitGuess(selectedSong);
+      return;
+    }
+    if (suggestions[0]) selectSuggestion(suggestions[0]);
+  }
+
+  function selectSuggestion(song: Song) {
+    setSelectedSongId(song.id);
+    setQuery(`${song.title} - ${song.artist}`);
   }
 
   return (
@@ -293,21 +309,24 @@ function App() {
                 )}
 
                 <form className="guess-form" onSubmit={handleSubmit}>
-                  <div className="search-wrap">
+                  <div className={selectedSong ? "search-wrap selected" : "search-wrap"}>
                     <span className="search-icon" aria-hidden="true" />
                     <input
                       aria-label="Search songs"
                       autoComplete="off"
-                      onChange={(event) => setQuery(event.target.value)}
+                      onChange={(event) => {
+                        setQuery(event.target.value);
+                        setSelectedSongId(null);
+                      }}
                       placeholder="Search songs..."
                       value={query}
                     />
-                    {query && suggestions.length > 0 && (
+                    {query && !selectedSong && suggestions.length > 0 && (
                       <div className="suggestions" role="listbox">
                         {suggestions.map((song) => (
                           <button
                             key={song.id}
-                            onClick={() => submitGuess(song)}
+                            onClick={() => selectSuggestion(song)}
                             role="option"
                             type="button"
                           >
@@ -318,9 +337,13 @@ function App() {
                       </div>
                     )}
                   </div>
-                  <button className="skip-button" onClick={() => advanceOrLose("skip")} type="button">
-                    <span className="skip-icon" aria-hidden="true" /> Skip
-                  </button>
+                  {selectedSong ? (
+                    <button className="guess-button" type="submit">Guess</button>
+                  ) : (
+                    <button className="skip-button" onClick={() => advanceOrLose("skip")} type="button">
+                      <span className="skip-icon" aria-hidden="true" /> Skip
+                    </button>
+                  )}
                 </form>
 
                 {guessedSongIds.length > 0 && (
@@ -412,16 +435,22 @@ function StopwatchIcon() {
 
 function RerollIcon() {
   return (
-    <svg className="action-icon" viewBox="0 0 18 18" aria-hidden="true">
-      <path d="M5.5 3.5H12a2.5 2.5 0 0 1 2.5 2.5v1M12.25 5.25 14.5 7.5l2.25-2.25M12.5 14.5H6A2.5 2.5 0 0 1 3.5 12v-1M5.75 12.75 3.5 10.5l-2.25 2.25" />
+    <svg className="action-icon dice-icon" viewBox="0 0 20 20" aria-hidden="true">
+      <rect x="2.75" y="7.25" width="9.5" height="9.5" rx="1.6" />
+      <path d="M6.25 7.25V4.9c0-.92.73-1.65 1.65-1.65h7.2c.92 0 1.65.73 1.65 1.65v7.2c0 .92-.73 1.65-1.65 1.65h-2.85" />
+      <circle cx="5.75" cy="10.25" r=".7" className="pip" />
+      <circle cx="9.25" cy="13.75" r=".7" className="pip" />
+      <circle cx="9.75" cy="6.75" r=".7" className="pip" />
+      <circle cx="13.25" cy="10.25" r=".7" className="pip" />
     </svg>
   );
 }
 
 function ReplayIcon() {
   return (
-    <svg className="action-icon" viewBox="0 0 18 18" aria-hidden="true">
-      <path d="M4.3 6.2A5.75 5.75 0 1 1 3.4 11M4.3 2.7v3.5H.8" />
+    <svg className="action-icon replay-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4.2 9.2A8.5 8.5 0 1 1 3.8 15" />
+      <path d="M4.2 4.5v4.7h4.7" />
     </svg>
   );
 }
