@@ -50,10 +50,17 @@ npm run build     # production build
 npm run preview   # preview the production build
 ```
 
+To check which proposed real songs have local audio ready:
+
+```powershell
+.\scripts\audit-song-library.ps1
+```
+
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Catalogue and difficulty](docs/CATALOG.md)
+- [Song sourcing and first library](docs/SONG-SOURCING.md)
 - [Vercel deployment](docs/DEPLOYMENT.md)
 - [UI quality and motion](docs/UI-QUALITY.md)
 

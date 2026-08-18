@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "status": "review_queue",
+  "notes": "These records are not loaded by the game. Add permitted audio, verify metadata and intro scores, then promote complete entries to public/catalog.json.",
+  "songs": [
+    { "id": "the-weeknd-blinding-lights", "title": "Blinding Lights", "artist": "The Weeknd", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "ed-sheeran-shape-of-you", "title": "Shape of You", "artist": "Ed Sheeran", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "post-malone-swae-lee-sunflower", "title": "Sunflower", "artist": "Post Malone & Swae Lee", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "the-weeknd-daft-punk-starboy", "title": "Starboy", "artist": "The Weeknd feat. Daft Punk", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "the-neighbourhood-sweater-weather", "title": "Sweater Weather", "artist": "The Neighbourhood", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "glass-animals-heat-waves", "title": "Heat Waves", "artist": "Glass Animals", "bucket": "billion_anchor", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "harry-styles-as-it-was", "title": "As It Was", "artist": "Harry Styles", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "lewis-capaldi-someone-you-loved", "title": "Someone You Loved", "artist": "Lewis Capaldi", "bucket": "billion_anchor", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "imagine-dragons-believer", "title": "Believer", "artist": "Imagine Dragons", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "the-chainsmokers-halsey-closer", "title": "Closer", "artist": "The Chainsmokers feat. Halsey", "bucket": "billion_anchor", "proposedDifficulty": "medium", "status": "needs_media" },
+
+    { "id": "sombr-back-to-friends", "title": "back to friends", "artist": "sombr", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "malcolm-todd-earrings", "title": "Earrings", "artist": "Malcolm Todd", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "sabrina-carpenter-espresso", "title": "Espresso", "artist": "Sabrina Carpenter", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "billie-eilish-birds-of-a-feather", "title": "BIRDS OF A FEATHER", "artist": "Billie Eilish", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "lady-gaga-bruno-mars-die-with-a-smile", "title": "Die With A Smile", "artist": "Lady Gaga & Bruno Mars", "bucket": "current", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "benson-boone-beautiful-things", "title": "Beautiful Things", "artist": "Benson Boone", "bucket": "current", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "gracie-abrams-thats-so-true", "title": "That's So True", "artist": "Gracie Abrams", "bucket": "current", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "rose-bruno-mars-apt", "title": "APT.", "artist": "ROSÉ & Bruno Mars", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
+
+    { "id": "the-killers-mr-brightside", "title": "Mr. Brightside", "artist": "The Killers", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "a-ha-take-on-me", "title": "Take on Me", "artist": "a-ha", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "fleetwood-mac-dreams", "title": "Dreams", "artist": "Fleetwood Mac", "bucket": "classic", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "michael-jackson-billie-jean", "title": "Billie Jean", "artist": "Michael Jackson", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "nirvana-smells-like-teen-spirit", "title": "Smells Like Teen Spirit", "artist": "Nirvana", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "oasis-wonderwall", "title": "Wonderwall", "artist": "Oasis", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "whitney-houston-i-wanna-dance-with-somebody", "title": "I Wanna Dance with Somebody", "artist": "Whitney Houston", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
+
+    { "id": "joji-slow-dancing-in-the-dark", "title": "SLOW DANCING IN THE DARK", "artist": "Joji", "bucket": "personal", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "frank-ocean-nights", "title": "Nights", "artist": "Frank Ocean", "bucket": "personal", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "tyler-the-creator-kali-uchis-see-you-again", "title": "See You Again", "artist": "Tyler, The Creator feat. Kali Uchis", "bucket": "personal", "proposedDifficulty": "easy", "status": "needs_media" },
+    { "id": "tv-girl-not-allowed", "title": "Not Allowed", "artist": "TV Girl", "bucket": "personal", "proposedDifficulty": "medium", "status": "needs_media" },
+    { "id": "steve-lacy-dark-red", "title": "Dark Red", "artist": "Steve Lacy", "bucket": "personal", "proposedDifficulty": "medium", "status": "needs_media" }
+  ]
+}

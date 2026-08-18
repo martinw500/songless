@@ -12,7 +12,9 @@ The play glyph, skip icon, settings icons, and side actions use SVG artwork so t
 
 The stage pills toggle the durations used by the round. The timeline keeps a stable node for every available duration and animates each enabled segment between zero and its weighted width. This lets neighboring segments slide into their new positions when a duration is added or removed.
 
-Changing the stage configuration restarts the current round, stops active audio, updates the displayed time, and saves the selection to local storage. At least one duration remains enabled.
+The current-stage color is a persistent cursor layered over the segments, not a fill owned by a segment. Its position animates on the same 780ms curve as segment widths, so removing the active duration cannot make the green marker jump ahead of the reflow.
+
+Changing the stage configuration stops active audio, preserves the current duration when it remains enabled, otherwise selects the next longer enabled duration (falling back to the longest remaining duration), and saves the selection to local storage. At least one duration remains enabled.
 
 ## Result choreography
 

@@ -15,6 +15,7 @@ These instructions apply to the entire repository.
 ## Interaction invariants
 
 - Enabled stage pills define both the actual audio durations and the visible timeline. They must never disagree.
+- The timeline uses one persistent current-stage cursor. It must move on the same curve as segment reflow and must not jump to a new segment before that segment finishes moving.
 - Keep at least one stage enabled and persist stage and volume preferences locally.
 - Difficulty selection must work from both the side rail and central tabs.
 - `Reroll all` is always available. `Play again` appears only after a loss.

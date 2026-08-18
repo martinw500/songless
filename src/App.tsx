@@ -48,6 +48,15 @@ function stageWeight(stage: number): number {
   return Math.max(0.58, Math.log10(stage * 100 + 1));
 }
 
+function stageCursorOffset(enabledStages: number[], stageIndex: number): number {
+  const weights = enabledStages.map(stageWeight);
+  const totalWeight = weights.reduce((total, weight) => total + weight, 0);
+  const completedWeight = weights
+    .slice(0, Math.max(0, Math.min(stageIndex, weights.length)))
+    .reduce((total, weight) => total + weight, 0);
+  return totalWeight > 0 ? (completedWeight / totalWeight) * 100 : 0;
+}
+
 const confettiPieces = Array.from({ length: 30 }, (_, index) => {
   const angle = (index / 30) * Math.PI * 2;
   const distance = 76 + (index % 6) * 15;
@@ -153,6 +162,7 @@ function App() {
     ? catalog.find((song) => song.id === selectedSongId) ?? null
     : null;
   const currentStage = enabledStages[stageIndex] ?? enabledStages[0] ?? stages[0];
+  const cursorOffset = stageCursorOffset(enabledStages, stageIndex);
 
   function resetRoundState() {
     setStageIndex(0);
@@ -253,12 +263,23 @@ function App() {
       return;
     }
 
-    const nextStages = stageOptions.filter((option) =>
+    const nextStages: number[] = stageOptions.filter((option) =>
       option === stage ? !isEnabled : enabledStages.includes(option),
     );
     audioEngine.current.stop();
+    setIsPlaying(false);
     setEnabledStages([...nextStages]);
-    resetRoundState();
+
+    if (status !== "playing") {
+      resetRoundState();
+      return;
+    }
+
+    const nextCurrentStage = nextStages.includes(currentStage)
+      ? currentStage
+      : nextStages.find((option) => option > currentStage) ?? nextStages[nextStages.length - 1];
+    setStageIndex(Math.max(0, nextStages.indexOf(nextCurrentStage)));
+    setMessage(`${stage}s stage ${isEnabled ? "removed" : "added"}.`);
   }
 
   return (
@@ -371,6 +392,11 @@ function App() {
                       />
                     );
                   })}
+                  <i
+                    className="stage-cursor"
+                    style={{ left: `${cursorOffset}%` }}
+                    aria-hidden="true"
+                  />
                 </div>
 
                 <div className="player-area">
