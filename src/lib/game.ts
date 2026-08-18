@@ -1,6 +1,7 @@
 import type { Difficulty, Song } from "../types";
 
 export const stages = [0.1, 0.5, 2, 8, 15] as const;
+export const stageOptions = [0.01, ...stages] as const;
 
 export function normalizeAnswer(value: string): string {
   return value
@@ -63,4 +64,3 @@ export function validateCatalog(value: unknown): Song[] {
     );
   });
 }
-

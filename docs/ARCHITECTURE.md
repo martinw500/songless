@@ -12,6 +12,7 @@ The current storage split is:
 | Intro audio | `public/media/audio` | Ignored |
 | Album artwork | `public/media/artwork` | Ignored |
 | Volume preference | Browser local storage | Not applicable |
+| Enabled clue stages | Browser local storage | Not applicable |
 | Current round | React memory | Not persisted |
 
 This remains comfortable for thousands of catalogue records. JSON size is not the limiting factor; audio storage is.
@@ -22,8 +23,10 @@ This remains comfortable for thousands of catalogue records. JSON size is not th
 2. It validates the basic shape and creates difficulty pools.
 3. A song is selected while avoiding repeats within the current pool.
 4. The Web Audio API fetches and decodes its intro clip only when needed.
-5. Playback begins at `startAtMs` and is scheduled for the current stage duration.
+5. Playback begins at `startAtMs` and is scheduled for the current enabled stage duration.
 6. Guesses use catalogue IDs, avoiding ambiguous fuzzy-title comparisons.
+
+Stage configuration is client-side. Toggling a duration restarts the current round, updates the timeline immediately, and saves the enabled durations to local storage so playback state and the interface cannot disagree.
 
 Decoded audio is cached in memory for replaying the current session. Refreshing the page clears that cache.
 
@@ -57,4 +60,3 @@ For a single computer, the next persistence step should be a small stats file or
 - No remote fonts, analytics, accounts, or external runtime services
 
 The game therefore works offline after dependencies are installed and the local media exists.
-

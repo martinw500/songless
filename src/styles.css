@@ -15,6 +15,8 @@
   --surface-soft: #15180f;
   --line: #272b23;
   --muted: #747b73;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.22, 1.35, 0.36, 1);
 }
 
 * { box-sizing: border-box; }
@@ -28,10 +30,16 @@ body {
   background:
     radial-gradient(circle at 50% 54%, rgba(35, 49, 27, 0.11), transparent 31rem),
     #050806;
+  -webkit-font-smoothing: antialiased;
 }
 
 button, input { font: inherit; }
-button { color: inherit; }
+button { color: inherit; -webkit-tap-highlight-color: transparent; }
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(var(--accent-rgb), 0.72);
+  outline-offset: 3px;
+}
 
 .app-shell { min-height: 100vh; }
 .app-shell[data-difficulty="easy"] { --accent: var(--easy); --accent-rgb: 34, 216, 117; }
@@ -61,8 +69,20 @@ button { color: inherit; }
     radial-gradient(ellipse at 50% 53%, rgba(8, 12, 8, 0.98) 0%, rgba(13, 17, 9, 0.96) 48%, rgba(var(--accent-rgb), 0.085) 100%),
     #10140b;
   box-shadow: 0 0 54px rgba(0, 0, 0, 0.18);
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
   transform: translateX(3px);
-  transition: background 220ms ease, box-shadow 220ms ease;
+  transition: background 650ms ease, box-shadow 650ms ease;
+}
+
+.game-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .app-shell[data-status="lost"] .game-card {
@@ -72,10 +92,25 @@ button { color: inherit; }
   box-shadow: inset 0 0 95px rgba(186, 64, 49, 0.1), 0 0 54px rgba(0, 0, 0, 0.18);
 }
 
+.app-shell[data-status="lost"] .game-card::before {
+  background: radial-gradient(ellipse at 50% 52%, transparent 20%, rgba(220, 63, 54, 0.3) 120%);
+  animation: resultWashIn 850ms var(--ease-out) both;
+}
+
 .app-shell[data-status="won"] .game-card {
   background:
     radial-gradient(ellipse at 50% 53%, rgba(8, 13, 8, 0.99) 10%, rgba(var(--accent-rgb), 0.055) 100%),
     #10140b;
+}
+
+.app-shell[data-status="won"] .game-card::before {
+  background: radial-gradient(ellipse at 50% 52%, rgba(var(--accent-rgb), 0.08), transparent 66%);
+  animation: resultWashIn 850ms var(--ease-out) both;
+}
+
+@keyframes resultWashIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .game-content {
@@ -121,7 +156,7 @@ button { color: inherit; }
   font-size: 11.5px;
   font-weight: 600;
   line-height: 1;
-  transition: color 140ms ease, background 140ms ease, box-shadow 140ms ease, transform 140ms ease;
+  transition: color 220ms ease, background 220ms ease, box-shadow 260ms ease, transform 220ms var(--ease-out);
 }
 
 .difficulty:hover:not(:disabled) {
@@ -162,14 +197,17 @@ button { color: inherit; }
   font-size: 11px;
   font-weight: 650;
   white-space: nowrap;
-  transition: color 140ms ease, background 140ms ease, transform 140ms ease;
+  transition: color 200ms ease, background 200ms ease, box-shadow 200ms ease, transform 220ms var(--ease-out);
 }
 
 .mode-action:hover {
   color: #d7ddd6;
   background: #202418;
   transform: translateY(-1px);
+  box-shadow: 0 7px 17px rgba(0, 0, 0, 0.28), inset 0 1px rgba(255, 255, 255, 0.025);
 }
+
+.mode-action:active { transform: translateY(0) scale(0.975); }
 
 .action-icon {
   width: 14px;
@@ -205,20 +243,25 @@ button { color: inherit; }
   font-weight: 750;
   white-space: nowrap;
   opacity: 0.65;
-  transition: opacity 150ms ease, filter 150ms ease, transform 150ms ease;
+  transition: opacity 220ms ease, filter 220ms ease, transform 260ms var(--ease-spring), box-shadow 220ms ease;
   cursor: pointer;
 }
 
 .difficulty-tabs button:hover:not(:disabled) { opacity: 0.9; filter: brightness(1.1); }
 .difficulty-tabs button:disabled { cursor: not-allowed; opacity: 0.25; }
-.difficulty-tabs button.active { opacity: 1; transform: translateY(-1px); }
+.difficulty-tabs button.active { opacity: 1; transform: translateY(-1px) scale(1.02); box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.06); }
 .difficulty-tabs .easy { padding-inline: 16px; color: var(--easy); background: rgba(34, 216, 117, 0.12); }
 .difficulty-tabs .medium { color: var(--medium); background: rgba(255, 209, 25, 0.12); }
 .difficulty-tabs .hard { padding-inline: 9.5px; color: var(--hard); background: rgba(225, 124, 33, 0.11); }
 .difficulty-tabs .expert { padding-inline: 12px; color: var(--expert); background: rgba(215, 72, 66, 0.11); }
 .difficulty-tabs .impossible { padding-inline: 10px; color: var(--impossible); background: rgba(154, 77, 224, 0.11); }
 
-.round-panel { position: relative; }
+.round-panel { position: relative; animation: roundIn 420ms var(--ease-out) both; }
+
+@keyframes roundIn {
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .stage-track {
   width: 100%;
@@ -230,22 +273,42 @@ button { color: inherit; }
   display: flex;
   overflow: hidden;
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.34);
+  transition: border-color 260ms ease, box-shadow 260ms ease;
 }
 
 .stage-track span {
   flex: 1 1 0;
+  min-width: 7px;
   border-right: 1px solid #151811;
   background: #2b3028;
-  transition: background 180ms ease;
+  position: relative;
+  transform-origin: left center;
+  animation: stageSegmentIn 360ms var(--ease-out) both;
+  transition: flex-grow 420ms var(--ease-out), background 300ms ease, opacity 300ms ease;
 }
 
-.stage-track span:nth-child(1) { flex-grow: 0.72; }
-.stage-track span:nth-child(2) { flex-grow: 0.68; }
-.stage-track span:nth-child(3) { flex-grow: 1.75; }
-.stage-track span:nth-child(4) { flex-grow: 3.15; }
-.stage-track span:nth-child(5) { flex-grow: 2.85; border-right: 0; }
+.stage-track span:last-child { border-right: 0; }
 .stage-track span.passed { background: rgba(var(--accent-rgb), 0.58); }
-.stage-track span.current { background: linear-gradient(90deg, var(--accent) 0 7px, #2b3028 7px 100%); }
+.stage-track span.current { background: #2b3028; }
+.stage-track span.current::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 7px;
+  background: var(--accent);
+  box-shadow: 0 0 13px rgba(var(--accent-rgb), 0.34);
+  animation: currentStageIn 380ms var(--ease-out) both;
+}
+
+@keyframes stageSegmentIn {
+  from { opacity: 0; transform: scaleX(0.65); }
+  to { opacity: 1; transform: scaleX(1); }
+}
+
+@keyframes currentStageIn {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
 
 .player-area {
   width: 100%;
@@ -259,30 +322,49 @@ button { color: inherit; }
   width: 112px;
   height: 112px;
   padding: 0;
-  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 9px 25px rgba(var(--accent-rgb), 0.13);
+  background:
+    radial-gradient(circle at 50% 7%, rgba(255, 255, 255, 0.12), transparent 42%),
+    var(--accent);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -12px 24px rgba(0, 0, 0, 0.045),
+    0 11px 30px rgba(0, 0, 0, 0.2),
+    0 0 28px rgba(var(--accent-rgb), 0.1);
   cursor: pointer;
   display: grid;
   place-items: center;
   position: relative;
-  transition: transform 140ms ease, box-shadow 140ms ease;
+  overflow: visible;
+  transition: transform 280ms var(--ease-spring), filter 220ms ease, box-shadow 300ms ease;
   translate: 0 3px;
 }
 
-.play-button:hover { transform: scale(1.025); box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.24); }
-.play-button:active { transform: scale(0.98); }
-
-.play-triangle {
-  width: 0;
-  height: 0;
-  margin-left: 8px;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 27px solid #11150d;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.18));
+.play-button:hover {
+  filter: brightness(1.035);
+  transform: translateY(-2px) scale(1.025);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -12px 24px rgba(0, 0, 0, 0.035),
+    0 16px 35px rgba(0, 0, 0, 0.23),
+    0 0 36px rgba(var(--accent-rgb), 0.18);
 }
+.play-button:active { transform: translateY(1px) scale(0.965); transition-duration: 90ms; }
+.play-button.playing { animation: playBreathe 1.05s ease-in-out infinite alternate; }
+
+.play-icon {
+  width: 45%;
+  height: 45%;
+  margin-left: 5%;
+  fill: #10140d;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.16));
+  position: relative;
+  z-index: 2;
+  transition: transform 260ms var(--ease-spring);
+}
+
+.play-button:hover .play-icon { transform: scale(1.04); }
 
 .pulse-ring {
   position: absolute;
@@ -293,6 +375,11 @@ button { color: inherit; }
 }
 
 .playing .pulse-ring { animation: pulse 900ms ease-out infinite; }
+
+@keyframes playBreathe {
+  from { box-shadow: inset 0 1px rgba(255,255,255,.18), 0 11px 30px rgba(0,0,0,.2), 0 0 24px rgba(var(--accent-rgb), .1); }
+  to { box-shadow: inset 0 1px rgba(255,255,255,.18), 0 13px 34px rgba(0,0,0,.22), 0 0 42px rgba(var(--accent-rgb), .25); }
+}
 
 @keyframes pulse {
   from { transform: scale(1); opacity: 0.7; }
@@ -310,6 +397,12 @@ button { color: inherit; }
 }
 
 .stage-time span { margin-left: 2px; font-size: 10px; opacity: 0.85; }
+.stage-value { display: inline-block; animation: stageValueIn 330ms var(--ease-spring) both; }
+
+@keyframes stageValueIn {
+  from { opacity: 0; transform: translateY(5px) scale(0.85); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
 
 .game-message {
   position: absolute;
@@ -345,7 +438,7 @@ button { color: inherit; }
   background: #171b12;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.012);
   font-size: 12px;
-  transition: border-color 150ms ease, box-shadow 150ms ease;
+  transition: border-color 220ms ease, box-shadow 220ms ease, background 220ms ease;
 }
 
 .search-wrap input:focus {
@@ -392,6 +485,7 @@ button { color: inherit; }
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
+  transition: transform 220ms var(--ease-out), background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
 
 .guess-button {
@@ -402,6 +496,8 @@ button { color: inherit; }
 }
 
 .guess-button:hover { filter: brightness(1.06); }
+.guess-button:active,
+.skip-button:active { transform: scale(0.975); }
 
 .skip-button {
   min-width: 123px;
@@ -549,24 +645,35 @@ button { color: inherit; }
   padding: 0 5px;
 }
 
-.stage-pills span {
+.stage-pill {
   min-width: 29px;
   height: 20px;
   padding: 0 6px;
+  border: 1px solid rgba(255, 255, 255, 0.015);
   border-radius: 999px;
-  color: #11150d;
-  background: var(--accent);
+  color: #7b8279;
+  background: #171a11;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   font-size: 8px;
-  font-weight: 750;
+  font-weight: 650;
+  line-height: 1;
+  transition: color 220ms ease, background 220ms ease, border-color 220ms ease, box-shadow 260ms ease, transform 240ms var(--ease-spring), opacity 220ms ease;
 }
 
-.stage-pills .disabled-stage {
-  color: #7b8279;
-  background: #171a11;
-  font-weight: 600;
+.stage-pill:hover { color: #c4cbc3; background: #202419; transform: translateY(-1px); }
+.stage-pill:active { transform: scale(0.93); transition-duration: 80ms; }
+.stage-pill.enabled {
+  border-color: transparent;
+  color: #10140d;
+  background: var(--accent);
+  font-weight: 800;
+}
+.stage-pill.enabled.current {
+  box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.19), 0 0 16px rgba(var(--accent-rgb), 0.2);
+  transform: translateY(-1px) scale(1.04);
 }
 
 .volume-control { display: block; }
@@ -623,12 +730,12 @@ button { color: inherit; }
   text-align: center;
 }
 
-.result-state {
+.game-content.result-state {
   min-height: calc(100vh - 48px);
   min-height: calc(100dvh - 48px);
   padding-top: 0;
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  place-items: center;
   position: relative;
 }
 
@@ -658,10 +765,10 @@ button { color: inherit; }
 }
 
 .result-state .result-panel {
-  flex: 1;
+  width: 100%;
   min-height: 0;
-  padding-bottom: 28px;
-  transform: translateY(23%);
+  padding: 26px 0 44px;
+  transform: translateY(24px);
 }
 
 .empty-icon {
@@ -749,6 +856,47 @@ button { color: inherit; }
   box-shadow: 0 0 15px rgba(237, 92, 98, 0.08);
 }
 
+.result-panel > .artwork {
+  animation: resultArtworkIn 720ms 120ms var(--ease-spring) both;
+}
+
+.result-panel .result-kicker {
+  animation: resultCopyIn 480ms 340ms var(--ease-out) both;
+}
+
+.result-panel h1 {
+  animation: resultCopyIn 520ms 420ms var(--ease-out) both;
+}
+
+.result-panel .result-artist {
+  animation: resultCopyIn 520ms 500ms var(--ease-out) both;
+}
+
+.result-panel .result-stamp {
+  --stamp-angle: -6deg;
+  animation: resultStampIn 560ms 690ms var(--ease-spring) both;
+}
+
+.result-panel.won .result-stamp { --stamp-angle: -7deg; }
+
+@keyframes resultArtworkIn {
+  0% { opacity: 0; transform: translateY(24px) scale(0.78); filter: blur(8px); }
+  68% { opacity: 1; transform: translateY(-3px) scale(1.025); filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes resultCopyIn {
+  from { opacity: 0; transform: translateY(15px); filter: blur(3px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes resultStampIn {
+  0% { opacity: 0; transform: rotate(calc(var(--stamp-angle) - 7deg)) scale(1.8); filter: blur(2px); }
+  54% { opacity: 1; transform: rotate(calc(var(--stamp-angle) + 2deg)) scale(0.9); filter: blur(0); }
+  76% { transform: rotate(calc(var(--stamp-angle) - 1deg)) scale(1.06); }
+  100% { opacity: 1; transform: rotate(var(--stamp-angle)) scale(1); filter: blur(0); }
+}
+
 @media (min-width: 1600px) and (min-height: 850px) {
   .game-card {
     width: 610px;
@@ -798,20 +946,11 @@ button { color: inherit; }
 
   .stage-track { height: 35px; margin-top: 29px; }
 
-  .stage-track span.current {
-    background: linear-gradient(90deg, var(--accent) 0 11px, #2b3028 11px 100%);
-  }
+  .stage-track span.current::after { width: 11px; }
 
   .player-area { height: 228px; }
 
   .play-button { width: 160px; height: 160px; }
-
-  .play-triangle {
-    margin-left: 12px;
-    border-top-width: 24px;
-    border-bottom-width: 24px;
-    border-left-width: 39px;
-  }
 
   .stage-time { font-size: 17px; }
   .stage-time span { font-size: 13px; }
@@ -885,7 +1024,7 @@ button { color: inherit; }
 
   .stage-pills { gap: 8px; padding: 0; }
 
-  .stage-pills span {
+  .stage-pill {
     min-width: 50px;
     height: 29px;
     padding: 0 9px;
@@ -899,7 +1038,8 @@ button { color: inherit; }
   .volume-control input::-moz-range-track { height: 5px; }
   .volume-control input::-moz-range-thumb { width: 14px; height: 14px; }
 
-  .result-state { min-height: calc(100dvh - 68px); }
+  .game-content.result-state { min-height: calc(100dvh - 68px); padding-top: 0; }
+  .result-state .result-panel { padding: 36px 0 58px; transform: translateY(34px); }
   .result-panel .artwork,
   .result-panel.won .artwork { width: 200px; height: 200px; border-radius: 22px; }
   .result-panel.won h1 { margin-top: 20px; font-size: 32px; }
@@ -963,7 +1103,12 @@ button { color: inherit; }
 
   .setting-value { width: 100%; }
   .stage-pills { padding: 0; gap: 4px; }
-  .stage-pills span { min-width: 26px; padding: 0 4px; }
+  .stage-pill { min-width: 26px; padding: 0 4px; }
+  .game-content.result-state {
+    min-height: 536px;
+    height: auto;
+  }
+  .result-state .result-panel { padding: 24px 0 34px; transform: translateY(17px); }
 }
 
 @media (max-width: 430px) {

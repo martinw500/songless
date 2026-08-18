@@ -10,6 +10,7 @@ import {
   filterSongs,
   pickSong,
   songMatchesQuery,
+  stageOptions,
   stages,
   validateCatalog,
 } from "./lib/game";
@@ -29,6 +30,22 @@ const difficultyLabels: Record<Difficulty, string> = {
 };
 
 const defaultRoundMessage = "Listen closely. The first clip is tiny.";
+const stageStorageKey = "songless-stages-v1";
+
+function initialStages(): number[] {
+  try {
+    const saved = JSON.parse(window.localStorage.getItem(stageStorageKey) ?? "null");
+    if (!Array.isArray(saved)) return [...stages];
+    const selected = stageOptions.filter((stage) => saved.includes(stage));
+    return selected.length > 0 ? [...selected] : [...stages];
+  } catch {
+    return [...stages];
+  }
+}
+
+function stageWeight(stage: number): number {
+  return Math.max(0.58, Math.log10(stage * 100 + 1));
+}
 
 const initialSeen = (): Record<Difficulty, Set<string>> => ({
   easy: new Set(),
@@ -45,6 +62,7 @@ function App() {
   const [catalogError, setCatalogError] = useState("");
   const [difficulty, setDifficulty] = useState<Difficulty>("easy");
   const [currentSong, setCurrentSong] = useState<Song | null>(null);
+  const [enabledStages, setEnabledStages] = useState<number[]>(initialStages);
   const [stageIndex, setStageIndex] = useState(0);
   const [status, setStatus] = useState<RoundStatus>("playing");
   const [query, setQuery] = useState("");
@@ -81,6 +99,10 @@ function App() {
   }, [volume]);
 
   useEffect(() => {
+    window.localStorage.setItem(stageStorageKey, JSON.stringify(enabledStages));
+  }, [enabledStages]);
+
+  useEffect(() => {
     audioEngine.current.stop();
     const pool = filterSongs(catalog, difficulty);
     const song = pickSong(pool, seenSongs.current[difficulty]);
@@ -113,6 +135,7 @@ function App() {
   const selectedSong = selectedSongId
     ? catalog.find((song) => song.id === selectedSongId) ?? null
     : null;
+  const currentStage = enabledStages[stageIndex] ?? enabledStages[0] ?? stages[0];
 
   function resetRoundState() {
     setStageIndex(0);
@@ -146,8 +169,8 @@ function App() {
     setAudioError("");
     setIsPlaying(true);
     try {
-      await audioEngine.current.play(currentSong, stages[stageIndex], volume);
-      window.setTimeout(() => setIsPlaying(false), stages[stageIndex] * 1000 + 50);
+      await audioEngine.current.play(currentSong, currentStage, volume);
+      window.setTimeout(() => setIsPlaying(false), currentStage * 1000 + 50);
     } catch (error) {
       setIsPlaying(false);
       setAudioError(error instanceof Error ? error.message : "The clip could not be played.");
@@ -157,13 +180,13 @@ function App() {
   function advanceOrLose(reason: "skip" | "wrong") {
     audioEngine.current.stop();
     setIsPlaying(false);
-    if (stageIndex < stages.length - 1) {
+    if (stageIndex < enabledStages.length - 1) {
       const nextIndex = stageIndex + 1;
       setStageIndex(nextIndex);
       setMessage(
         reason === "skip"
-          ? `Skipped. You now have ${stages[nextIndex]} seconds.`
-          : `Not that one. You now have ${stages[nextIndex]} seconds.`,
+          ? `Skipped. You now have ${enabledStages[nextIndex]} seconds.`
+          : `Not that one. You now have ${enabledStages[nextIndex]} seconds.`,
       );
       return;
     }
@@ -182,7 +205,7 @@ function App() {
       audioEngine.current.stop();
       setIsPlaying(false);
       setStatus("won");
-      setMessage(`Correct in ${stages[stageIndex]} seconds.`);
+      setMessage(`Correct in ${currentStage} seconds.`);
       return;
     }
 
@@ -204,6 +227,21 @@ function App() {
   function selectSuggestion(song: Song) {
     setSelectedSongId(song.id);
     setQuery(`${song.title} - ${song.artist}`);
+  }
+
+  function toggleStage(stage: number) {
+    const isEnabled = enabledStages.includes(stage);
+    if (isEnabled && enabledStages.length === 1) {
+      setMessage("Keep at least one stage enabled.");
+      return;
+    }
+
+    const nextStages = stageOptions.filter((option) =>
+      option === stage ? !isEnabled : enabledStages.includes(option),
+    );
+    audioEngine.current.stop();
+    setEnabledStages([...nextStages]);
+    resetRoundState();
   }
 
   return (
@@ -266,7 +304,7 @@ function App() {
                 <p>Add a song with the "{difficulty}" difficulty to public/catalog.json.</p>
               </div>
             ) : status !== "playing" ? (
-              <div className={`result-panel ${status}`}>
+              <div className={`result-panel ${status}`} key={`${status}-${currentSong.id}`}>
                 <Artwork song={currentSong} />
                 {status === "lost" && <p className="result-kicker">It was...</p>}
                 <h1>{currentSong.title}</h1>
@@ -275,16 +313,22 @@ function App() {
                   {currentSong.album && <span> &middot; {currentSong.album}</span>}
                 </p>
                 <div className="result-stamp">
-                  {status === "won" ? `Guessed in ${stages[stageIndex]}s!` : "Lost!"}
+                  {status === "won" ? `Guessed in ${currentStage}s!` : "Lost!"}
                 </div>
               </div>
             ) : (
               <div className="round-panel">
-                <div className="stage-track" aria-label={`Stage ${stageIndex + 1} of ${stages.length}`}>
-                  {stages.map((stage, index) => (
+                <div
+                  className="stage-track"
+                  data-stage-count={enabledStages.length}
+                  aria-label={`Stage ${stageIndex + 1} of ${enabledStages.length}`}
+                >
+                  {enabledStages.map((stage, index) => (
                     <span
                       className={index < stageIndex ? "passed" : index === stageIndex ? "current" : ""}
                       key={stage}
+                      style={{ flexGrow: stageWeight(stage) }}
+                      title={`${stage} seconds`}
                     />
                   ))}
                 </div>
@@ -294,13 +338,13 @@ function App() {
                     className={isPlaying ? "play-button playing" : "play-button"}
                     onClick={playClip}
                     type="button"
-                    aria-label={`Play ${stages[stageIndex]} second clip`}
+                    aria-label={`Play ${currentStage} second clip`}
                   >
-                    <span className="play-triangle" />
+                    <PlayIcon />
                     <span className="pulse-ring" />
                   </button>
                   <div className="stage-time">
-                    <strong>{stages[stageIndex]}</strong><span>s</span>
+                    <strong className="stage-value" key={currentStage}>{currentStage}</strong><span>s</span>
                   </div>
                 </div>
 
@@ -368,12 +412,23 @@ function App() {
           <div>
             <p className="eyebrow"><StopwatchIcon /> Stages</p>
             <div className="stage-pills">
-              <span className="disabled-stage">0.01s</span>
-              {stages.map((stage, index) => (
-                <span className={index === stageIndex && status === "playing" ? "active" : ""} key={stage}>
+              {stageOptions.map((stage) => {
+                const isEnabled = enabledStages.includes(stage);
+                const isCurrent = isEnabled && currentStage === stage && status === "playing";
+                return (
+                <button
+                  aria-label={`${isEnabled ? "Remove" : "Add"} ${stage} second stage`}
+                  aria-pressed={isEnabled}
+                  className={`stage-pill${isEnabled ? " enabled" : ""}${isCurrent ? " current" : ""}`}
+                  key={stage}
+                  onClick={() => toggleStage(stage)}
+                  title={`${isEnabled ? "Remove" : "Add"} ${stage}s stage`}
+                  type="button"
+                >
                   {stage}s
-                </span>
-              ))}
+                </button>
+                );
+              })}
             </div>
           </div>
           <label className="volume-control">
@@ -429,6 +484,14 @@ function StopwatchIcon() {
     <svg className="label-icon stopwatch-icon" viewBox="0 0 16 16" aria-hidden="true">
       <path d="M6 1.5h4M8 3.25v1M12.15 4.35l1.05-1.05M8 14.25a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
       <path d="M8 7v2.2l1.45.9" />
+    </svg>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <svg className="play-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.3 6.55c0-1.72 1.88-2.78 3.35-1.9l7.35 4.4c1.43.86 1.43 2.94 0 3.8l-7.35 4.4c-1.47.88-3.35-.18-3.35-1.9v-8.8Z" />
     </svg>
   );
 }

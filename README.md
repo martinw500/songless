@@ -7,7 +7,7 @@ A private, local-first song-intro guessing game for two people. It plays progres
 The first playable version includes:
 
 - Easy, Medium, Hard, Expert, and Impossible pools
-- 0.1, 0.5, 2, 8, and 15 second stages
+- configurable 0.01, 0.1, 0.5, 2, 8, and 15 second stages
 - precise playback through the Web Audio API
 - searchable canonical answers and aliases
 - wrong guesses, skips, reveal states, and no-repeat rounds
@@ -24,6 +24,8 @@ npm run dev
 ```
 
 Open the local URL printed by Vite. Start on Easy, play the clip, search for `Neon Steps`, and submit it to verify the complete loop.
+
+The stage pills on the right are controls, not labels. Toggle any duration to add or remove it from the round; the timeline rebuilds to match and the selection is remembered in that browser. At least one stage always remains enabled.
 
 ## Add your music
 
