@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vite/
+*.local
+*.tsbuildinfo
+
+# Private media stays on your machine.
+public/media/audio/*
+!public/media/audio/.gitkeep
+public/media/artwork/*
+!public/media/artwork/.gitkeep

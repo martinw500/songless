@@ -1,0 +1,13 @@
+.git
+.github
+.vercel
+dist
+node_modules
+docs
+scripts
+*.md
+*.tsbuildinfo
+
+# public/media is intentionally not excluded. A deployment created from this
+# local working tree can include your private clips without committing them.
+

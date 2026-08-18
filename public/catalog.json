@@ -1,0 +1,79 @@
+[
+  {
+    "id": "demo-neon-steps",
+    "title": "Neon Steps",
+    "artist": "Songless Demo",
+    "aliases": ["Neon Step"],
+    "releaseYear": 2026,
+    "genres": ["demo"],
+    "difficulty": "easy",
+    "familiarity": 100,
+    "introRecognition": 90,
+    "audio": {
+      "kind": "synth",
+      "notes": [261.63, 329.63, 392, 523.25],
+      "noteLengthMs": 300
+    }
+  },
+  {
+    "id": "demo-afterglow",
+    "title": "Afterglow Avenue",
+    "artist": "Songless Demo",
+    "releaseYear": 2026,
+    "genres": ["demo"],
+    "difficulty": "medium",
+    "familiarity": 75,
+    "introRecognition": 70,
+    "audio": {
+      "kind": "synth",
+      "notes": [440, 554.37, 659.25, 554.37, 493.88],
+      "noteLengthMs": 380
+    }
+  },
+  {
+    "id": "demo-midnight-signal",
+    "title": "Midnight Signal",
+    "artist": "Songless Demo",
+    "releaseYear": 2026,
+    "genres": ["demo"],
+    "difficulty": "hard",
+    "familiarity": 55,
+    "introRecognition": 48,
+    "audio": {
+      "kind": "synth",
+      "notes": [220, 233.08, 293.66, 277.18],
+      "noteLengthMs": 460
+    }
+  },
+  {
+    "id": "demo-glass-radio",
+    "title": "Glass Radio",
+    "artist": "Songless Demo",
+    "releaseYear": 2026,
+    "genres": ["demo"],
+    "difficulty": "expert",
+    "familiarity": 30,
+    "introRecognition": 35,
+    "audio": {
+      "kind": "synth",
+      "notes": [349.23, 311.13, 261.63, 207.65, 233.08],
+      "noteLengthMs": 270
+    }
+  },
+  {
+    "id": "demo-unknown-frequency",
+    "title": "Unknown Frequency",
+    "artist": "Songless Demo",
+    "releaseYear": 2026,
+    "genres": ["demo"],
+    "difficulty": "impossible",
+    "familiarity": 5,
+    "introRecognition": 10,
+    "audio": {
+      "kind": "synth",
+      "notes": [185, 196, 207.65, 196],
+      "noteLengthMs": 510
+    }
+  }
+]
+
