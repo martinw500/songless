@@ -1,8 +1,8 @@
 {
   "version": 1,
   "status": "intake_longlist",
-  "generatedAt": "2026-08-19T05:01:02.010Z",
-  "notes": "The billion-stream source does not publish song language, so source-only rows remain languageReview=pending until a human checks them. The founder playlist only adds a taste signal to an existing billion-stream or manual candidate; playlist-only tracks are not imported. This is intentionally a broad intake list, not the curated game catalogue.",
+  "generatedAt": "2026-08-19T07:14:17.681Z",
+  "notes": "Active intake songs only. Pruning rules are applied during generation so rejected tracks do not remain visible in this file. The billion-stream source does not publish song language, so source-only rows remain languageReview=pending until a human checks them.",
   "sources": [
     {
       "label": "Spotify BILLIONS CLUB",
@@ -35,23 +35,19 @@
     {
       "label": "Current pruning decisions",
       "file": "data/song-longlist-decisions.json"
-    },
-    {
-      "label": "Under-1B approval decisions",
-      "file": "data/song-under-1b-decisions.json"
     }
   ],
   "counts": {
     "billionSnapshot": 1125,
-    "billionIncluded": 878,
+    "billionIncluded": 820,
     "founderPicks": 450,
     "personalPlaylist": 69,
-    "reviewedKeeps": 105,
+    "reviewedKeeps": 106,
     "playlistSourceTracks": 100,
     "finalizedExclusions": 251,
-    "rejected": 59,
-    "active": 1120,
-    "combinedUnique": 1179
+    "excludedByCurrentDecisions": 58,
+    "active": 1121,
+    "combinedUnique": 1121
   },
   "tracks": [
     {
@@ -6551,30 +6547,6 @@
       "founderReason": "iconic_childhood_hit"
     },
     {
-      "sourceRank": 653,
-      "title": "Faint",
-      "artist": "Linkin Park",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_genre_deep_cut"
-    },
-    {
-      "sourceRank": 654,
-      "title": "Infinity",
-      "artist": "Jaymes Young",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "short_lived_viral"
-    },
-    {
       "sourceRank": 655,
       "title": "No Idea",
       "artist": "Don Toliver",
@@ -6586,18 +6558,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "gen_z_staple"
-    },
-    {
-      "sourceRank": 656,
-      "title": "Sucker For Pain (With Wiz Khalifa, Imagine Dragons, Logic & Ty Dolla $Ign Feat. X Ambassadors)",
-      "artist": "Lil Wayne",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fast_rap_soundtrack_mismatch"
     },
     {
       "sourceRank": 657,
@@ -6613,18 +6573,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 658,
-      "title": "Without You (Feat. Sandro Cavazza)",
-      "artist": "Avicii",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "artist_deep_cut"
-    },
-    {
       "sourceRank": 660,
       "title": "Blame (Feat. John Newman)",
       "artist": "Calvin Harris",
@@ -6636,18 +6584,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 661,
-      "title": "Jimmy Cooks (Feat. 21 Savage)",
-      "artist": "Drake",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
     },
     {
       "sourceRank": 662,
@@ -6674,18 +6610,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "famous_artist"
-    },
-    {
-      "sourceRank": 667,
-      "title": "The Middle",
-      "artist": "Jimmy Eat World",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_niche_genre"
     },
     {
       "sourceRank": 668,
@@ -6883,30 +6807,6 @@
       "founderReason": "iconic_childhood_rap_hit"
     },
     {
-      "sourceRank": 685,
-      "title": "Yes Indeed",
-      "artist": "Lil Baby",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_trap_taste_mismatch"
-    },
-    {
-      "sourceRank": 686,
-      "title": "Nonstop",
-      "artist": "Drake",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
-    },
-    {
       "sourceRank": 687,
       "title": "Ivy",
       "artist": "Frank Ocean",
@@ -6931,30 +6831,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 689,
-      "title": "Lost In The Fire (Feat. The Weeknd)",
-      "artist": "Gesaffelstein",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "artist_deep_cut"
-    },
-    {
-      "sourceRank": 690,
-      "title": "Numb / Encore",
-      "artist": "Jay-Z",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "duplicate_mashup"
     },
     {
       "sourceRank": 693,
@@ -7166,30 +7042,6 @@
       "keepReason": "explicit_user_keep"
     },
     {
-      "sourceRank": 722,
-      "title": "Bank Account",
-      "artist": "21 Savage",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
-    },
-    {
-      "sourceRank": 723,
-      "title": "For The Night (Feat. Lil Baby & Dababy)",
-      "artist": "Pop Smoke",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_trap_taste_mismatch"
-    },
-    {
       "sourceRank": 724,
       "title": "What Is Love (Original 7' Mix)",
       "artist": "Haddaway",
@@ -7346,18 +7198,6 @@
       "founderReason": "iconic_childhood_hit"
     },
     {
-      "sourceRank": 737,
-      "title": "Drops Of Jupiter (Tell Me)",
-      "artist": "Train",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_adult_rock_mismatch"
-    },
-    {
       "sourceRank": 738,
       "title": "Perfect",
       "artist": "One Direction",
@@ -7382,18 +7222,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "explicit_user_keep"
-    },
-    {
-      "sourceRank": 741,
-      "title": "Where Is My Mind? - 2007 Remaster",
-      "artist": "Pixies",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_intro_mismatch"
     },
     {
       "sourceRank": 742,
@@ -7433,42 +7261,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "explicit_user_keep"
-    },
-    {
-      "sourceRank": 746,
-      "title": "Another Brick In The Wall, Pt. 2",
-      "artist": "Pink Floyd",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_long_instrumental_intro"
-    },
-    {
-      "sourceRank": 747,
-      "title": "Runaway",
-      "artist": "AURORA",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fandom_viral_cut"
-    },
-    {
-      "sourceRank": 749,
-      "title": "Forever Young - 2019 Remaster",
-      "artist": "Alphaville",
-      "displayedStreams": "1.3B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_audience_mismatch"
     },
     {
       "sourceRank": 750,
@@ -7523,30 +7315,6 @@
       "founderReason": "iconic_childhood_hit"
     },
     {
-      "sourceRank": 755,
-      "title": "Levitating (Feat. Dababy)",
-      "artist": "Dua Lipa",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "duplicate_recording"
-    },
-    {
-      "sourceRank": 756,
-      "title": "Master Of Puppets (Remastered)",
-      "artist": "Metallica",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_long_instrumental_intro"
-    },
-    {
       "sourceRank": 760,
       "title": "Want To Want Me",
       "artist": "Jason Derulo",
@@ -7558,18 +7326,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 761,
-      "title": "Bellyache",
-      "artist": "Billie Eilish",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
     },
     {
       "sourceRank": 762,
@@ -7609,18 +7365,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "broad_recognition"
-    },
-    {
-      "sourceRank": 765,
-      "title": "Nothing Breaks Like A Heart (Feat. Miley Cyrus)",
-      "artist": "Mark Ronson",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "lower_broad_recognition"
     },
     {
       "sourceRank": 766,
@@ -7766,18 +7510,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 785,
-      "title": "A Lot",
-      "artist": "21 Savage",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
-    },
-    {
       "sourceRank": 788,
       "title": "Pink Pony Club",
       "artist": "Chappell Roan",
@@ -7789,18 +7521,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "broad_recognition"
-    },
-    {
-      "sourceRank": 789,
-      "title": "Sunsetz",
-      "artist": "Cigarettes After Sex",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
     },
     {
       "sourceRank": 790,
@@ -7829,30 +7549,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 792,
-      "title": "Jealous",
-      "artist": "Eyedress",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "niche_gen_z_cut"
-    },
-    {
-      "sourceRank": 793,
-      "title": "One Step Closer",
-      "artist": "Linkin Park",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_niche_genre"
-    },
-    {
       "sourceRank": 796,
       "title": "Thats What I Want",
       "artist": "Lil Nas X",
@@ -7876,18 +7572,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "broad_recognition"
-    },
-    {
-      "sourceRank": 808,
-      "title": "Friends",
-      "artist": "Chase Atlantic",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
     },
     {
       "sourceRank": 809,
@@ -8228,18 +7912,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 847,
-      "title": "Fade Into You",
-      "artist": "Mazzy Star",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
-    },
-    {
       "sourceRank": 848,
       "title": "Bailando - Spanish Version",
       "artist": "Enrique Iglesias",
@@ -8290,18 +7962,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "explicit_user_keep"
-    },
-    {
-      "sourceRank": 852,
-      "title": "Candy Paint",
-      "artist": "Post Malone",
-      "displayedStreams": "1.2B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
     },
     {
       "sourceRank": 853,
@@ -8537,18 +8197,6 @@
       "keepReason": "explicit_user_keep"
     },
     {
-      "sourceRank": 891,
-      "title": "Stargazing",
-      "artist": "Myles Smith",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "short_lived_current_hit"
-    },
-    {
       "sourceRank": 895,
       "title": "Break Up With Your Girlfriend, I'M Bored",
       "artist": "Ariana Grande",
@@ -8560,18 +8208,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "broad_recognition"
-    },
-    {
-      "sourceRank": 896,
-      "title": "Hate It Or Love It",
-      "artist": "The Game",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_rap_audience_mismatch"
     },
     {
       "sourceRank": 897,
@@ -8652,18 +8288,6 @@
       "keepReason": "explicit_user_keep"
     },
     {
-      "sourceRank": 905,
-      "title": "Never Gonna Give You Up - 2022 Remaster",
-      "artist": "Rick Astley",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_meme_first_recognition"
-    },
-    {
       "sourceRank": 907,
       "title": "Runaway (U & I)",
       "artist": "Galantis",
@@ -8675,18 +8299,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 908,
-      "title": "In Your Eyes",
-      "artist": "The Weeknd",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "artist_overrepresentation"
     },
     {
       "sourceRank": 909,
@@ -8765,18 +8377,6 @@
       "reviewStatus": "unreviewed"
     },
     {
-      "sourceRank": 915,
-      "title": "Money In The Grave (Drake Ft. Rick Ross)",
-      "artist": "Drake",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
-    },
-    {
       "sourceRank": 916,
       "title": "Smooth Criminal - 2012 Remaster",
       "artist": "Michael Jackson",
@@ -8801,30 +8401,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 919,
-      "title": "Lean Wit Me",
-      "artist": "Juice WRLD",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
-    },
-    {
-      "sourceRank": 920,
-      "title": "Island In The Sun",
-      "artist": "Weezer",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
     },
     {
       "sourceRank": 921,
@@ -8903,30 +8479,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 933,
-      "title": "Heart-Shaped Box",
-      "artist": "Nirvana",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
-    },
-    {
-      "sourceRank": 935,
-      "title": "Bam Bam (Feat. Ed Sheeran)",
-      "artist": "Camila Cabello",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "lower_broad_recognition"
     },
     {
       "sourceRank": 940,
@@ -9045,54 +8597,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "famous_artist"
-    },
-    {
-      "sourceRank": 955,
-      "title": "Tv",
-      "artist": "Billie Eilish",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fandom_deep_cut"
-    },
-    {
-      "sourceRank": 956,
-      "title": "Bandit (With Youngboy Never Broke Again)",
-      "artist": "Juice WRLD",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
-    },
-    {
-      "sourceRank": 959,
-      "title": "The Remedy For A Broken Heart (Why Am I So In Love)",
-      "artist": "XXXTENTACION",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
-    },
-    {
-      "sourceRank": 961,
-      "title": "Car'S Outside",
-      "artist": "James Arthur",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fandom_viral_cut"
     },
     {
       "sourceRank": 962,
@@ -9329,42 +8833,6 @@
       "founderReason": "explicit_founder_keep"
     },
     {
-      "sourceRank": 988,
-      "title": "Slow Hands",
-      "artist": "Niall Horan",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fandom_era_deep_cut"
-    },
-    {
-      "sourceRank": 989,
-      "title": "Train Wreck",
-      "artist": "James Arthur",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "lower_broad_recognition"
-    },
-    {
-      "sourceRank": 990,
-      "title": "Somewhere I Belong",
-      "artist": "Linkin Park",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_genre_deep_cut"
-    },
-    {
       "sourceRank": 991,
       "title": "I Miss You",
       "artist": "blink-182",
@@ -9405,18 +8873,6 @@
       "founderReason": "college_gen_z_throwback"
     },
     {
-      "sourceRank": 994,
-      "title": "Magnolia",
-      "artist": "Playboi Carti",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
-    },
-    {
       "sourceRank": 995,
       "title": "Teenage Fever",
       "artist": "Drake",
@@ -9428,18 +8884,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "gen_z_staple"
-    },
-    {
-      "sourceRank": 996,
-      "title": "Forgot About Dre",
-      "artist": "Dr. Dre",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_fast_rap_mismatch"
     },
     {
       "sourceRank": 998,
@@ -9491,18 +8935,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "famous_artist"
-    },
-    {
-      "sourceRank": 1002,
-      "title": "I Love You, I'M Sorry",
-      "artist": "Gracie Abrams",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fandom_deep_cut"
     },
     {
       "sourceRank": 1005,
@@ -9607,18 +9039,6 @@
       "languageReview": "pending",
       "reviewStatus": "shortlisted",
       "keepReason": "broad_recognition"
-    },
-    {
-      "sourceRank": 1017,
-      "title": "Vienna",
-      "artist": "Billy Joel",
-      "displayedStreams": "1.1B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_silent_intro_mismatch"
     },
     {
       "sourceRank": 1018,
@@ -9881,54 +9301,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 1047,
-      "title": "Slow It Down",
-      "artist": "Benson Boone",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "founder_unfamiliar"
-    },
-    {
-      "sourceRank": 1048,
-      "title": "Good Riddance (Time Of Your Life)",
-      "artist": "Green Day",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_low_title_recall"
-    },
-    {
-      "sourceRank": 1049,
-      "title": "I Won'T Give Up",
-      "artist": "Jason Mraz",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_adult_contemporary_mismatch"
-    },
-    {
-      "sourceRank": 1050,
-      "title": "Rich Girl",
-      "artist": "Daryl Hall & John Oates",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_lower_gen_z_recognition"
-    },
-    {
       "sourceRank": 1051,
       "title": "Duvet",
       "artist": "bôa",
@@ -10007,18 +9379,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 1062,
-      "title": "Superhero (Heroes & Villains) [With Future & Chris Brown]",
-      "artist": "Metro Boomin",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_trap_taste_mismatch"
-    },
-    {
       "sourceRank": 1063,
       "title": "Love Nwantiti (Ah Ah Ah)",
       "artist": "CKay",
@@ -10063,11 +9423,12 @@
       "artist": "The Rare Occasions",
       "displayedStreams": "1.0B",
       "signals": [
-        "billion_streams"
+        "billion_streams",
+        "reviewed_keep"
       ],
       "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "viral_low_title_recall"
+      "reviewStatus": "shortlisted",
+      "keepReason": "explicit_user_keep"
     },
     {
       "sourceRank": 1072,
@@ -10135,18 +9496,6 @@
       "founderReason": "iconic_childhood_rnb_hit"
     },
     {
-      "sourceRank": 1082,
-      "title": "Maniac",
-      "artist": "Conan Gray",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "fandom_viral_cut"
-    },
-    {
       "sourceRank": 1086,
       "title": "Enchanted",
       "artist": "Taylor Swift",
@@ -10199,18 +9548,6 @@
       "keepReason": "broad_recognition"
     },
     {
-      "sourceRank": 1098,
-      "title": "Underneath The Tree",
-      "artist": "Kelly Clarkson",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "seasonal_only"
-    },
-    {
       "sourceRank": 1101,
       "title": "About You",
       "artist": "The 1975",
@@ -10250,18 +9587,6 @@
       "founderReason": "iconic_childhood_hit"
     },
     {
-      "sourceRank": 1110,
-      "title": "Let It Snow! Let It Snow! Let It Snow! - Remastered",
-      "artist": "Dean Martin",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "duplicate_recording"
-    },
-    {
       "sourceRank": 1111,
       "title": "Party Rock Anthem",
       "artist": "LMFAO",
@@ -10275,18 +9600,6 @@
       "founderReason": "iconic_childhood_hit"
     },
     {
-      "sourceRank": 1112,
-      "title": "F**Kin' Problems (Feat. Drake, 2 Chainz & Kendrick Lamar)",
-      "artist": "A$AP Rocky",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "aggressive_rap_taste_mismatch"
-    },
-    {
       "sourceRank": 1115,
       "title": "On The Floor",
       "artist": "Jennifer Lopez",
@@ -10298,18 +9611,6 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
-    },
-    {
-      "sourceRank": 1116,
-      "title": "Wherever You Will Go",
-      "artist": "The Calling",
-      "displayedStreams": "1.0B",
-      "signals": [
-        "billion_streams"
-      ],
-      "languageReview": "pending",
-      "reviewStatus": "rejected",
-      "rejectionReason": "older_adult_rock_mismatch"
     },
     {
       "sourceRank": 1118,

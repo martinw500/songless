@@ -16,6 +16,8 @@ const valueAfter = (name) => {
 const positionalLimit = args.find((argument) => /^\d+$/u.test(argument));
 const limit = Number(valueAfter("--limit") ?? positionalLimit ?? 5);
 const selectedId = valueAfter("--id");
+const manualUrl = valueAfter("--url");
+const manualReason = valueAfter("--reason");
 const force = args.includes("--force") || valueAfter("--force") === "true";
 if (!Number.isInteger(limit) || limit < 1 || limit > 120) throw new Error("--limit must be from 1 to 120.");
 
@@ -32,24 +34,49 @@ function containsPhrase(haystack, needle) {
   return ` ${haystack} `.includes(` ${needle} `);
 }
 
-const alteredVersion = /\b(live|concert|performance|acoustic|remix|remastered|sped up|slowed|reverb|nightcore|cover|karaoke|instrumental|censored|clean version|radio edit|extended|loop|reaction|bass boosted|8d|mashup|parody|tutorial)\b/iu;
+const alteredVersion = /\b(live|concert|performance|sessions?|acoustic|a ?cappella|acapella|remix|sped up|slowed|reverb|nightcore|cover|karaoke|instrumental|censored|clean version|radio edit|extended|edit|loop|reaction|bass boosted|8d|mashup|parody|tutorial|snippet|teaser|demo|unreleased|fan ?made|shorts?|compilation|playlist|interview|meaning|explained|breakdown|verified|ai (?:cover|version)|vocals? only|music only)\b/iu;
+function hasUnexpectedFeature(versionText) {
+  const featureText = versionText.match(/\b(?:feat|ft|featuring|with)\b([\s\S]*)/iu)?.[1];
+  if (!featureText) return false;
+  const remainder = featureText.replace(/\b(?:and|official|audio|video|music|lyrics?|visualizer|hd|4k)\b/giu, " ").trim();
+  return /\p{L}/u.test(remainder);
+}
 
-function scoreResult(candidate, result) {
+function scoreResult(candidate, result, allowManualProvenance = false) {
   const resultTitle = normalize(result.title ?? "");
-  const songTitle = normalize(candidate.title);
+  const titleOptions = [candidate.title, ...(candidate.aliases ?? [])].map(normalize);
+  const songTitle = titleOptions.find((title) => containsPhrase(resultTitle, title));
   const artistNames = candidate.primaryArtists.map(normalize);
   const channel = normalize(`${result.channel ?? ""} ${result.uploader ?? ""}`);
-  const artistInChannel = artistNames.some((artist) => containsPhrase(channel, artist));
-  if (!containsPhrase(resultTitle, songTitle)) return { accepted: false, reason: "title mismatch", score: -1 };
-  if (!artistNames.some((artist) => containsPhrase(`${resultTitle} ${channel}`, artist))) {
+  const artistAliasNames = (candidate.artistAliases ?? []).map(normalize);
+  const artistInChannel = [...artistNames, ...artistAliasNames].some((artist) => containsPhrase(channel, artist));
+  const compactChannel = channel.replace(/\s+/gu, "");
+  const compactArtistInChannel = [...artistNames, ...artistAliasNames]
+    .map((artist) => artist.replace(/\s+/gu, ""))
+    .some((artist) => artist.length >= 4 && compactChannel.includes(artist));
+  if (!songTitle) return { accepted: false, reason: "title mismatch", score: -1 };
+  const artistCoverage = artistNames.filter((artist) => containsPhrase(`${resultTitle} ${channel}`, artist));
+  const aliasMatch = (candidate.artistAliases ?? []).map(normalize).some((artist) => containsPhrase(`${resultTitle} ${channel}`, artist));
+  if (artistCoverage.length === 0 && !aliasMatch) {
     return { accepted: false, reason: "artist mismatch", score: -1 };
   }
+  const officialChannel = artistInChannel || compactArtistInChannel || channel.includes("topic") || channel.includes("vevo")
+    || containsPhrase(channel, "official")
+    || (Boolean(result.channel_is_verified) && /\bofficial audio\b/iu.test(result.title ?? ""));
+  if (!officialChannel && !allowManualProvenance) return { accepted: false, reason: "weak source provenance", score: -1 };
 
   let versionText = ` ${resultTitle} `;
   versionText = versionText.replace(` ${songTitle} `, " ");
-  for (const artist of artistNames) versionText = versionText.replace(` ${artist} `, " ");
+  for (const artist of artistNames) {
+    while (versionText.includes(` ${artist} `)) versionText = versionText.replace(` ${artist} `, " ");
+  }
   if (alteredVersion.test(versionText)) return { accepted: false, reason: "altered version", score: -1 };
+  if (hasUnexpectedFeature(versionText)) return { accepted: false, reason: "unexpected featured artist", score: -1 };
+  if (/\s\/\s/u.test(result.title ?? "") && !candidate.title.includes("/")) return { accepted: false, reason: "combined-song upload", score: -1 };
   if (result.live_status && result.live_status !== "not_live") return { accepted: false, reason: "live stream", score: -1 };
+  if (!Number.isFinite(result.duration) || result.duration < 75 || result.duration > 720) {
+    return { accepted: false, reason: "invalid full-song duration", score: -1 };
+  }
 
   let score = 100;
   if (resultTitle === songTitle) score += 90;
@@ -60,6 +87,7 @@ function scoreResult(candidate, result) {
   if (/\btopic\b/iu.test(channel) && artistInChannel) score += 90;
   if (artistInChannel) score += 70;
   if (result.channel_is_verified) score += 25;
+  score += artistCoverage.length * 30;
   score += Math.min(25, Math.log10(Math.max(1, result.view_count ?? 1)) * 3);
   return { accepted: true, reason: "studio/original candidate", score };
 }
@@ -79,6 +107,37 @@ function search(candidate) {
   return ranked[0] ?? null;
 }
 
+if (manualUrl) {
+  if (!selectedId || !manualReason) throw new Error("--url requires both --id and --reason for an auditable manual selection.");
+  const candidate = candidates.find((item) => item.id === selectedId);
+  const source = sourceById.get(selectedId);
+  if (!candidate || !source) throw new Error(`Unknown candidate id: ${selectedId}`);
+  const result = spawnSync("yt-dlp", ["--dump-single-json", "--no-playlist", "--no-warnings", manualUrl], {
+    cwd: root,
+    encoding: "utf8",
+    maxBuffer: 20 * 1024 * 1024,
+  });
+  if (result.status !== 0) throw new Error(`YouTube inspection failed for ${selectedId}: ${result.stderr.trim()}`);
+  const item = JSON.parse(result.stdout);
+  const verdict = scoreResult(candidate, item, true);
+  if (!verdict.accepted) throw new Error(`Manual source failed non-overridable checks for ${selectedId}: ${verdict.reason}`);
+  source.url = manualUrl;
+  source.youtube = {
+    videoId: item.id,
+    title: item.title,
+    channel: item.channel ?? item.uploader,
+    channelId: item.channel_id ?? item.uploader_id ?? null,
+    durationSeconds: item.duration,
+    channelVerified: Boolean(item.channel_is_verified),
+    score: Math.round(verdict.score),
+    manualReviewReason: manualReason,
+    resolvedAt: new Date().toISOString(),
+  };
+  writeFileSync(sourceFile, `${JSON.stringify(sourceRoot, null, 2)}\n`, "utf8");
+  console.log(`MANUAL ${selectedId}: ${item.title} — ${item.channel ?? item.uploader} (${item.duration}s)`);
+  process.exit(0);
+}
+
 let resolved = 0;
 const unresolved = [];
 for (const candidate of candidates) {
@@ -90,6 +149,10 @@ for (const candidate of candidates) {
 
   const selected = search(candidate);
   if (!selected) {
+    if (force) {
+      source.url = "";
+      delete source.youtube;
+    }
     unresolved.push(candidate.id);
     console.log(`REVIEW ${candidate.id}: no unaltered studio result passed the filters.`);
     continue;
@@ -100,7 +163,9 @@ for (const candidate of candidates) {
     videoId: item.id,
     title: item.title,
     channel: item.channel,
+    channelId: item.channel_id ?? item.uploader_id ?? null,
     durationSeconds: item.duration,
+    channelVerified: Boolean(item.channel_is_verified),
     score: Math.round(selected.score),
     resolvedAt: new Date().toISOString(),
   };

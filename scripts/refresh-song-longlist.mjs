@@ -13,9 +13,6 @@ const baselineFile = path.join(root, "data", "song-longlist-baseline.json");
 const finalizedPassFiles = [path.join(root, "data", "song-longlist-finalized-pass-4.json")];
 const keepsFile = path.join(root, "data", "song-longlist-keeps.json");
 const decisionsFile = path.join(root, "data", "song-longlist-decisions.json");
-const prunedFile = path.join(root, "data", "song-pruned.txt");
-const recentAdditionsFile = path.join(root, "data", "song-recent-additions.txt");
-const nextReviewFile = path.join(root, "data", "song-review-next.txt");
 const founderPlaylistUrl = "https://open.spotify.com/embed/playlist/0LF0dYuWf8Vl0ZjRHeix3J";
 const founderPlaylistExportFile = path.join(root, "data", "founder-playlist-export.csv");
 
@@ -210,13 +207,14 @@ for (const keep of keepsRoot.tracks) {
 }
 const decisionRoot = JSON.parse(readFileSync(decisionsFile, "utf8"));
 applyDecisionRoot(retainedTracks, decisionRoot, true);
+const activeTracks = retainedTracks.filter((track) => track.reviewStatus !== "rejected");
 
 const generatedAt = new Date().toISOString();
 const snapshot = {
   version: 1,
   status: "intake_longlist",
   generatedAt,
-  notes: "The billion-stream source does not publish song language, so source-only rows remain languageReview=pending until a human checks them. The founder playlist only adds a taste signal to an existing billion-stream or manual candidate; playlist-only tracks are not imported. This is intentionally a broad intake list, not the curated game catalogue.",
+  notes: "Active intake songs only. Pruning rules are applied during generation so rejected tracks do not remain visible in this file. The billion-stream source does not publish song language, so source-only rows remain languageReview=pending until a human checks them.",
   sources: [
     { label: "Spotify BILLIONS CLUB", url: officialPlaylistUrl },
     { label: "TooXclusive billion-stream tracker", url: sourceUrl },
@@ -229,78 +227,30 @@ const snapshot = {
   ],
   counts: {
     billionSnapshot: billionTracks.length,
-    billionIncluded: retainedTracks.filter((track) => track.signals.includes("billion_streams")).length,
-    founderPicks: retainedTracks.filter((track) => track.signals.includes("founder_pick")).length,
-    personalPlaylist: retainedTracks.filter((track) => track.signals.includes("personal_playlist")).length,
-    reviewedKeeps: retainedTracks.filter((track) => track.signals.includes("reviewed_keep") && track.reviewStatus !== "rejected").length,
+    billionIncluded: activeTracks.filter((track) => track.signals.includes("billion_streams")).length,
+    founderPicks: activeTracks.filter((track) => track.signals.includes("founder_pick")).length,
+    personalPlaylist: activeTracks.filter((track) => track.signals.includes("personal_playlist")).length,
+    reviewedKeeps: activeTracks.filter((track) => track.signals.includes("reviewed_keep")).length,
     playlistSourceTracks: founderPlaylistTracks.length,
     finalizedExclusions: baselineExcluded.length,
-    rejected: retainedTracks.filter((track) => track.reviewStatus === "rejected").length,
-    active: retainedTracks.filter((track) => track.reviewStatus !== "rejected").length,
-    combinedUnique: retainedTracks.length,
+    excludedByCurrentDecisions: retainedTracks.length - activeTracks.length,
+    active: activeTracks.length,
+    combinedUnique: activeTracks.length,
   },
-  tracks: retainedTracks,
+  tracks: activeTracks,
 };
 
-const billionLines = retainedTracks
-  .filter((track) => track.signals.includes("billion_streams"))
-  .map((track) => `${String(track.sourceRank).padStart(4, "0")}. ${track.title} — ${track.artist} (${track.displayedStreams})`);
-const founderLines = retainedTracks
-  .filter((track) => track.signals.includes("founder_pick"))
-  .map((track) => `${track.title} — ${track.artist}${track.signals.includes("billion_streams") ? " [also 1B+]" : ""}`);
-const personalLines = retainedTracks
-  .filter((track) => track.signals.includes("personal_playlist"))
-  .map((track) => `${track.title} — ${track.artist}${track.signals.includes("billion_streams") ? " [also 1B+]" : ""}`);
-const rejected = retainedTracks.filter((track) => track.reviewStatus === "rejected");
-const rejectedLines = rejected.map((track) => `${track.title} — ${track.artist} [${track.rejectionReason}]`);
-const activeLines = retainedTracks
-  .filter((track) => track.reviewStatus !== "rejected")
+const activeLines = activeTracks
   .map((track) => `${track.title} — ${track.artist}${track.signals.includes("billion_streams") ? ` (${track.displayedStreams})` : ""}`);
-const recentAdditionLines = retainedTracks
-  .filter((track) => track.signals.includes(manualRoot.latestBatch?.id))
-  .map((track) => `${track.title} — ${track.artist}${track.signals.includes("social_viral") ? " [social/reels]" : track.signals.includes("current_relevance") ? " [current]" : ""}`);
-const activeTracks = retainedTracks.filter((track) => track.reviewStatus !== "rejected");
-const activeArtistCounts = new Map();
-for (const track of activeTracks) {
-  const artistKey = normalized(track.artist);
-  activeArtistCounts.set(artistKey, (activeArtistCounts.get(artistKey) ?? 0) + 1);
-}
-const nextReviewTracks = activeTracks
-  .filter((track) => track.sourceRank >= 650 && track.signals.length === 1 && track.signals[0] === "billion_streams")
-  .sort((left, right) => right.sourceRank - left.sourceRank);
-const nextReviewLines = nextReviewTracks.map((track) => {
-  const artistCount = activeArtistCounts.get(normalized(track.artist));
-  return `${String(track.sourceRank).padStart(4, "0")}. ${track.title} — ${track.artist} [artist candidates: ${artistCount}]`;
-});
 const text = [
-  "SONGLESS INTAKE LONGLIST",
+  "SONGLESS ACTIVE SONG LONGLIST",
   `Generated: ${generatedAt}`,
   "",
-  `ACTIVE INTAKE (${activeLines.length})`,
+  `SONGS (${activeLines.length})`,
   ...activeLines,
-  "",
-  "FOUNDER / GEN-Z PICKS",
-  ...founderLines,
-  "",
-  "PERSONAL PLAYLIST SIGNALS",
-  ...personalLines,
-  "",
-  `PRUNED (${rejectedLines.length})`,
-  ...rejectedLines,
   "",
 ].join("\n");
 
 writeFileSync(snapshotFile, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
 writeFileSync(textFile, text, "utf8");
-writeFileSync(prunedFile, `${["SONGLESS PRUNING REPORT", `Generated: ${generatedAt}`, "", ...rejectedLines, ""].join("\n")}`, "utf8");
-writeFileSync(recentAdditionsFile, `${["SONGLESS RECENT ADDITIONS", `Batch: ${manualRoot.latestBatch?.id ?? "none"}`, `Generated: ${generatedAt}`, "", ...recentAdditionLines, ""].join("\n")}`, "utf8");
-writeFileSync(nextReviewFile, `${[
-  "SONGLESS NEXT REVIEW QUEUE",
-  `Generated: ${generatedAt}`,
-  "Criteria: active 1B+ source rows at source rank 650 or later with no founder, playlist, current, social, or reviewed-keep signal.",
-  "These songs are not pruned; this file is the next manual review queue.",
-  "",
-  ...nextReviewLines,
-  "",
-].join("\n")}`, "utf8");
-console.log(`Wrote ${retainedTracks.length} intake records: ${snapshot.counts.active} active, ${snapshot.counts.rejected} newly pruned, ${snapshot.counts.finalizedExclusions} finalized exclusions, ${billionTracks.length} billion-stream source rows, ${snapshot.counts.founderPicks} founder picks, and ${snapshot.counts.personalPlaylist} personal-playlist matches.`);
+console.log(`Wrote ${snapshot.counts.active} active intake records; ${snapshot.counts.excludedByCurrentDecisions} current prunes and ${snapshot.counts.finalizedExclusions} finalized exclusions were omitted.`);

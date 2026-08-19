@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "notes": "Explicitly reviewed broad-recognition keeps. These songs remain active and are removed from song-review-next without being mislabeled as founder or playlist picks.",
+  "notes": "Explicitly reviewed broad-recognition keeps. These songs remain shortlisted in the active-only generated longlist without being mislabeled as founder or playlist picks.",
   "tracks": [
     { "title": "Thnks Fr Th Mmrs", "artist": "Fall Out Boy" },
     { "title": "Lovefool", "artist": "The Cardigans" },
@@ -106,6 +106,7 @@
     { "title": "Work Out", "artist": "J. Cole" },
     { "title": "Earfquake", "artist": "Tyler, The Creator" },
     { "title": "Low Life (Feat. The Weeknd)", "artist": "Future" },
-    { "title": "Wait For U (Feat. Drake & Tems)", "artist": "Future" }
+    { "title": "Wait For U (Feat. Drake & Tems)", "artist": "Future" },
+    { "title": "Notion", "artist": "The Rare Occasions", "reason": "explicit_user_keep" }
   ]
 }

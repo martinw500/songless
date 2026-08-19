@@ -71,6 +71,11 @@ if ($sourceFiles.Count -eq 0) {
     Write-Host "No supported source files found in $inputRoot"
     exit 0
 }
+$duplicateSources = @($sourceFiles | Group-Object { $_.BaseName.ToLowerInvariant() } | Where-Object { $_.Count -gt 1 })
+if ($duplicateSources.Count -gt 0) {
+    $labels = $duplicateSources | ForEach-Object { "$($_.Name) ($($_.Count) files)" }
+    throw "Each candidate must have exactly one source media file. Resolve duplicates: $($labels -join ', ')"
+}
 
 function Get-LeadingSilenceSeconds([string]$InputFile) {
     $processInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -85,9 +90,12 @@ function Get-LeadingSilenceSeconds([string]$InputFile) {
     $analysisText = $process.StandardError.ReadToEnd()
     $process.WaitForExit()
     if ($process.ExitCode -ne 0) { throw "ffmpeg silence analysis failed for $InputFile" }
-    if ($analysisText -match 'silence_start:\s*0(?:\.0+)?[\s\S]*?silence_end:\s*([0-9]+(?:\.[0-9]+)?)') {
+    if ($analysisText -match 'silence_start:\s*0(?:\.0+)?') {
+        if ($analysisText -notmatch 'silence_end:\s*([0-9]+(?:\.[0-9]+)?)') {
+            throw "Source remains silent through the 30-second inspection window: $InputFile"
+        }
         $detected = [double]::Parse($Matches[1], [Globalization.CultureInfo]::InvariantCulture)
-        return [Math]::Min(30, [Math]::Max(0, $detected))
+        return [Math]::Min(30, [Math]::Max(0, $detected - 0.03))
     }
     return 0
 }

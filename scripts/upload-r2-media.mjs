@@ -61,8 +61,9 @@ const songs = localManifest.songs.filter((song) => !selectedId || song.id === se
 if (selectedId && songs.length === 0) throw new Error(`Prepared manifest does not contain ${selectedId}.`);
 if (songs.length === 0) throw new Error("No prepared songs are available to upload.");
 
-function publicUrl(key) {
-  return `${publicBaseUrl}/${key.split("/").map(encodeURIComponent).join("/")}`;
+function publicUrl(key, version) {
+  const url = `${publicBaseUrl}/${key.split("/").map(encodeURIComponent).join("/")}`;
+  return version ? `${url}?v=${encodeURIComponent(version)}` : url;
 }
 
 function localAsset(relativeFile, key, contentType) {
@@ -96,7 +97,7 @@ if (!dryRun) {
         Body: createReadStream(asset.absoluteFile),
         ContentLength: asset.size,
         ContentType: asset.contentType,
-        CacheControl: "public, max-age=31536000, immutable",
+        CacheControl: "public, max-age=3600",
       }));
       console.log(`UPLOADED ${asset.key} (${(asset.size / 1_000_000).toFixed(2)} MB)`);
     }
@@ -110,10 +111,11 @@ if (!dryRun) {
 
   for (const song of songs) {
     const candidate = candidateById.get(song.id);
-    candidate.media.hostedClueUrl = publicUrl(`audio/clues/${song.id}.mp3`);
-    candidate.media.hostedFullUrl = publicUrl(`audio/full/${song.id}.mp3`);
+    const mediaVersion = `${song.durationMs}-${song.leadingSilenceTrimMs ?? 0}`;
+    candidate.media.hostedClueUrl = publicUrl(`audio/clues/${song.id}.mp3`, mediaVersion);
+    candidate.media.hostedFullUrl = publicUrl(`audio/full/${song.id}.mp3`, mediaVersion);
     candidate.media.hostedDurationMs = song.durationMs;
-    if (song.artworkFile) candidate.media.artworkUrl = publicUrl(`artwork/${song.id}.jpg`);
+    if (song.artworkFile) candidate.media.artworkUrl = publicUrl(`artwork/${song.id}.jpg`, mediaVersion);
     candidate.reviewStatus = "needs_intro_review";
   }
   writeFileSync(candidateFile, `${JSON.stringify(candidateRoot, null, 2)}\n`, "utf8");

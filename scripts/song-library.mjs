@@ -295,7 +295,6 @@ function validateLonglist(report, longlistFile) {
   let founderCount = 0;
   let personalCount = 0;
   let reviewedKeepCount = 0;
-  let rejectedCount = 0;
   const languageCounts = {};
   for (const [index, track] of tracks.entries()) {
     const label = track?.title || `longlist entry ${index + 1}`;
@@ -318,13 +317,8 @@ function validateLonglist(report, longlistFile) {
     }
     if (track?.signals?.includes("founder_pick")) founderCount += 1;
     if (track?.signals?.includes("personal_playlist")) personalCount += 1;
-    if (track?.signals?.includes("reviewed_keep") && track?.reviewStatus !== "rejected") reviewedKeepCount += 1;
-    if (track?.reviewStatus === "rejected") {
-      rejectedCount += 1;
-      if (typeof track.rejectionReason !== "string" || !track.rejectionReason) report.errors.push(`${label}: rejected track needs a rejectionReason.`);
-    } else if (track?.rejectionReason) {
-      report.errors.push(`${label}: active track cannot retain a rejectionReason.`);
-    }
+    if (track?.signals?.includes("reviewed_keep")) reviewedKeepCount += 1;
+    if (track?.reviewStatus === "rejected" || track?.rejectionReason) report.errors.push(`${label}: pruned tracks must not remain in the active longlist.`);
     languageCounts[track?.languageReview] = (languageCounts[track?.languageReview] ?? 0) + 1;
   }
   if (!Number.isInteger(root?.counts?.billionSnapshot) || root.counts.billionSnapshot < billionCount) {
@@ -334,8 +328,10 @@ function validateLonglist(report, longlistFile) {
   if (root?.counts?.founderPicks !== founderCount) report.errors.push("Longlist founderPicks count is stale.");
   if (root?.counts?.personalPlaylist !== personalCount) report.errors.push("Longlist personalPlaylist count is stale.");
   if (root?.counts?.reviewedKeeps !== reviewedKeepCount) report.errors.push("Longlist reviewedKeeps count is stale.");
-  if (root?.counts?.rejected !== rejectedCount) report.errors.push("Longlist rejected count is stale.");
-  if (root?.counts?.active !== tracks.length - rejectedCount) report.errors.push("Longlist active count is stale.");
+  if (!Number.isInteger(root?.counts?.excludedByCurrentDecisions) || root.counts.excludedByCurrentDecisions < 0) {
+    report.errors.push("Longlist excludedByCurrentDecisions count is invalid.");
+  }
+  if (root?.counts?.active !== tracks.length) report.errors.push("Longlist active count is stale.");
   if (root?.counts?.combinedUnique !== tracks.length) report.errors.push("Longlist combinedUnique count is stale.");
   if (!Number.isInteger(root?.counts?.finalizedExclusions) || root.counts.finalizedExclusions < 0) {
     report.errors.push("Longlist finalizedExclusions count is invalid.");
@@ -348,8 +344,8 @@ function validateLonglist(report, longlistFile) {
     personal: personalCount,
     reviewedKeeps: reviewedKeepCount,
     finalized: root?.counts?.finalizedExclusions,
-    rejected: rejectedCount,
-    active: tracks.length - rejectedCount,
+    excludedCurrent: root?.counts?.excludedByCurrentDecisions,
+    active: tracks.length,
     languages: languageCounts,
   };
 }
@@ -364,7 +360,7 @@ function printAudit(report) {
   console.log(`Approved difficulties: ${Object.entries(report.difficultyCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
   console.log(`Live catalogue: demos=${report.liveDemoCount}, real=${report.liveRealCount}; ${Object.entries(report.liveCounts).map(([key, value]) => `${key}=${value}`).join(", ")}`);
   if (report.longlistCounts) {
-    console.log(`Intake longlist: total=${report.longlistCounts.total}, active=${report.longlistCounts.active}, new-pruned=${report.longlistCounts.rejected}, finalized=${report.longlistCounts.finalized}, billion-included=${report.longlistCounts.billion}/${report.longlistCounts.sourceBillion}, founder=${report.longlistCounts.founder}, personal=${report.longlistCounts.personal}, reviewed-keeps=${report.longlistCounts.reviewedKeeps}; languages ${Object.entries(report.longlistCounts.languages).map(([key, value]) => `${key}=${value}`).join(", ")}`);
+    console.log(`Intake longlist: total=${report.longlistCounts.total}, active=${report.longlistCounts.active}, current-excluded=${report.longlistCounts.excludedCurrent}, finalized=${report.longlistCounts.finalized}, billion-included=${report.longlistCounts.billion}/${report.longlistCounts.sourceBillion}, founder=${report.longlistCounts.founder}, personal=${report.longlistCounts.personal}, reviewed-keeps=${report.longlistCounts.reviewedKeeps}; languages ${Object.entries(report.longlistCounts.languages).map(([key, value]) => `${key}=${value}`).join(", ")}`);
   }
   if (report.warnings.length) console.warn(`Warnings:\n- ${report.warnings.join("\n- ")}`);
   if (report.errors.length) console.error(`Errors:\n- ${report.errors.join("\n- ")}`);

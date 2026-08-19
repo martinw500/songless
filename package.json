@@ -11,6 +11,7 @@
     "approve:song": "node scripts/approve-song.mjs",
     "prepare:media": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-audio.ps1",
     "resolve:youtube": "node scripts/resolve-youtube-sources.mjs",
+    "audit:sources": "node scripts/audit-youtube-sources.mjs",
     "download:media": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/download-authorized-sources.ps1",
     "init:sources": "node scripts/init-download-sources.mjs",
     "prepare:r2": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-r2-media.ps1",

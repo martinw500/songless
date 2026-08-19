@@ -7,10 +7,10 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relativePath) => JSON.parse(readFileSync(path.join(root, relativePath), "utf8"));
 const longlist = readJson("data/song-longlist.json");
+const candidates = readJson("data/song-candidates.json");
 const current = readJson("data/song-longlist-decisions.json");
 const finalized = readJson("data/song-longlist-finalized-pass-4.json");
 const reviewedKeeps = readJson("data/song-longlist-keeps.json");
-const nextReview = readFileSync(path.join(root, "data/song-review-next.txt"), "utf8");
 
 function normalized(value) {
   return value
@@ -44,6 +44,7 @@ test("founder-protected and restored songs remain active", () => {
     ["Party Rock Anthem", "LMFAO"],
     ["Lonely", "Akon"],
     ["Airplanes (Feat. Hayley Williams Of Paramore)", "B.o.B"],
+    ["Notion", "The Rare Occasions"],
   ];
   for (const [title, artist] of protectedTracks) {
     const track = findTrack(title, artist);
@@ -52,23 +53,14 @@ test("founder-protected and restored songs remain active", () => {
   }
 });
 
-test("promoted childhood icons no longer appear in the next-review queue", () => {
-  for (const title of ["Party Rock Anthem", "Lonely", "Airplanes", "Like That", "Family Ties"]) {
-    assert.ok(!nextReview.includes(`${title} —`), `${title} should be promoted out of review-next.`);
-  }
-});
-
-test("reviewed keeps are shortlisted and only uncertain tracks remain in review-next", () => {
+test("reviewed keeps are shortlisted in the active-only longlist", () => {
   assert.equal(reviewedKeeps.tracks.length, longlist.counts.reviewedKeeps);
   for (const keep of reviewedKeeps.tracks) {
     const track = findTrack(keep.title, keep.artist);
     assert.ok(track, `${keep.title} by ${keep.artist} must remain in the longlist.`);
     assert.equal(track.reviewStatus, "shortlisted", `${keep.title} must be shortlisted.`);
     assert.ok(track.signals.includes("reviewed_keep"), `${keep.title} must carry reviewed_keep.`);
-    assert.ok(!nextReview.includes(`${keep.title} —`), `${keep.title} must not remain in review-next.`);
   }
-  const reviewLines = nextReview.split(/\r?\n/u).filter((line) => /^\d{4}\./u.test(line));
-  assert.equal(reviewLines.length, 0);
 });
 
 test("explicitly removed songs stay out of the generated longlist", () => {
@@ -77,17 +69,23 @@ test("explicitly removed songs stay out of the generated longlist", () => {
   }
 });
 
-test("finalized pass is excluded while current decisions stay reversible", () => {
+test("all pruned songs are omitted from the generated longlist", () => {
   assert.equal(finalized.trackDecisions.length, 93);
   for (const decision of finalized.trackDecisions) {
     assert.equal(findTrack(decision.title, decision.artist), undefined, `${decision.title} should be finalized out.`);
   }
-  assert.ok(current.trackDecisions.length > 0);
-  assert.equal(longlist.counts.rejected, current.trackDecisions.length);
+  assert.equal(longlist.counts.excludedByCurrentDecisions, current.trackDecisions.length);
   for (const decision of current.trackDecisions) {
-    const track = findTrack(decision.title, decision.artist);
-    assert.ok(track, `${decision.title} should remain visible in the reversible review batch.`);
-    assert.equal(track.reviewStatus, "rejected");
+    assert.equal(findTrack(decision.title, decision.artist), undefined, `${decision.title} should be omitted.`);
+  }
+});
+
+test("the 120-song media queue follows explicit keep and prune decisions", () => {
+  const candidateNames = new Set(candidates.songs.map((song) => `${normalized(song.title)}|${normalized(song.artist)}`));
+  assert.ok(candidateNames.has(`${normalized("Notion")}|${normalized("The Rare Occasions")}`));
+  assert.ok(candidateNames.has(`${normalized("White Keys")}|${normalized("Dominic Fike")}`));
+  for (const decision of current.trackDecisions) {
+    assert.ok(!candidateNames.has(`${normalized(decision.title)}|${normalized(decision.artist)}`), `${decision.title} must not remain in the media queue.`);
   }
 });
 

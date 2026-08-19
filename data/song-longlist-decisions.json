@@ -33,7 +33,6 @@
     { "title": "Wherever You Will Go", "artist": "The Calling", "decision": "rejected", "reason": "older_adult_rock_mismatch" },
     { "title": "Underneath The Tree", "artist": "Kelly Clarkson", "decision": "rejected", "reason": "seasonal_only" },
     { "title": "Maniac", "artist": "Conan Gray", "decision": "rejected", "reason": "fandom_viral_cut" },
-    { "title": "Notion", "artist": "The Rare Occasions", "decision": "rejected", "reason": "viral_low_title_recall" },
     { "title": "I Love You, I'M Sorry", "artist": "Gracie Abrams", "decision": "rejected", "reason": "fandom_deep_cut" },
     { "title": "In Your Eyes", "artist": "The Weeknd", "decision": "rejected", "reason": "artist_overrepresentation" },
     { "title": "Never Gonna Give You Up - 2022 Remaster", "artist": "Rick Astley", "decision": "rejected", "reason": "older_meme_first_recognition" },

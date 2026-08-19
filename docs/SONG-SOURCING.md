@@ -6,7 +6,7 @@ Songless targets an internet-aware North American audience aged roughly 18–24.
 
 ## Intake longlist versus curated queue
 
-The broad intake pool lives in `data/song-longlist.json`, with a readable copy in `data/song-longlist.txt`. Its source snapshot contains 1,125 tracks reported above one billion Spotify streams plus 450 included founder/Gen-Z/current-recognition picks. The currently available 100-track public playlist preview matches 69 supported candidates as a secondary taste signal. After merging overlaps and omitting finalized removals, the current review pool contains 1,179 records: 1,120 active and 59 newly pruned. Another 251 approved removals are finalized and omitted from the generated pool. Of the active source tracks, 105 have also been explicitly accepted in `data/song-longlist-keeps.json`; the remaining 1B+ next-review queue is now empty.
+The broad intake pool lives in `data/song-longlist.json`, with a readable copy in `data/song-longlist.txt`. Its source snapshot currently contains 1,125 tracks reported above one billion Spotify streams plus 450 founder/Gen-Z/current-recognition picks. After merging overlaps and applying exclusions, the generated pool contains 1,121 active songs only. Fifty-eight current prunes and 251 finalized removals are omitted rather than displayed beside usable songs. Of the active tracks, 106 have been explicitly accepted in `data/song-longlist-keeps.json`.
 
 New-song discovery is frozen while the playable catalogue is implemented. Approved under-1B choices remain in the manual intake, while the unapproved proposal queue and its review machinery have been removed.
 
@@ -49,11 +49,14 @@ Do not guess `introRecognition` from the full song or a different master. Until 
 
 1. Create a Cloudflare R2 bucket and an API token limited to Object Read & Write for that bucket. Connect a public custom domain or enable a temporary public development URL. Configure CORS for `GET`, `HEAD`, and byte-range playback from the local and production app origins.
 2. Copy `.env.example` to ignored `.env.local` and configure the five `R2_` connection values. Leave `R2_MAX_BYTES` at 8.5 billion bytes or lower it when the account stores data elsewhere.
-3. Run `npm run init:sources` to generate ignored `data/song-download-sources.local.json`. `npm run resolve:youtube -- 5` fills a reviewable batch by preferring official audio and artist/Topic uploads and rejecting altered versions. The ignored manifest records the exact chosen title, channel, duration, and URL.
-4. Download and prepare complete 128 kbps tracks, 30-second clue assets, and optional artwork:
+3. Run `npm run init:sources` to create or safely sync ignored `data/song-download-sources.local.json`; existing resolved URLs are preserved and removed candidate rows are dropped. `npm run resolve:youtube -- 10` fills a reviewable batch, while `npm run resolve:youtube -- 120` resolves every pending row. Selection prefers verified, artist, official, VEVO, and Topic channels; rejects live, karaoke, remix, sped/slowed, cover, edit, snippet, demo, compilation, and implausibly short or long results; and favors results containing every credited artist. `npm run audit:sources` independently checks completeness, aliases, title/artist agreement, durations, altered-version labels, duplicate video IDs, collaborator coverage, remaster warnings, and provenance before downloads.
+
+   When no official upload is searchable, an exact full studio recording can be recorded with `node scripts/resolve-youtube-sources.mjs --id <id> --url <youtube-url> --reason <short-reason>`. Manual selection can override provenance only; title, artist, duration, altered-version, unexpected-feature, and combined-song checks still apply, and the reason remains in the ignored audit metadata.
+4. Download and prepare complete 128 kbps tracks, 30-second clue assets, and optional artwork. Preparation requires exactly one media source per song, fails on continuous 30-second opening silence, and retains a 30 ms onset pad when trimming so the first transient is not clipped:
 
    ```powershell
-   npm run resolve:youtube -- 5
+   npm run resolve:youtube -- 10
+   npm run audit:sources
    npm run download:media
    npm run prepare:r2 -- ".\private-media\source"
    ```
@@ -66,6 +69,8 @@ Do not guess `introRecognition` from the full song or a different master. Until 
    npm run review:r2
    npm run dev
    ```
+
+   The uploader gives catalogue URLs a media-version query and uses a one-hour R2 cache lifetime, so replacing a corrected source cannot leave devices pinned to an older immutable response.
 
 6. Open `http://127.0.0.1:5173/?reviewSong=<id>` and confirm the exact version. Test 0.1, 0.5, 2, 8, and 15 seconds.
 7. Audit the complete queue:
