@@ -19,7 +19,8 @@ These instructions apply to the entire repository.
 - Adding a duration earlier than the current clue makes that newly added duration current. It must not appear as a completed/passed segment.
 - Keep at least one stage enabled and persist stage and volume preferences locally.
 - Range controls must visibly distinguish the filled portion before the thumb from the unfilled portion after it.
-- Active audio must swap the play glyph for a centered pause glyph and advance a visible fill inside the current timeline segment. Stopping playback restores the play glyph and clears partial progress.
+- Stage durations are cumulative from the song start. An 8-second clue always plays 0-8 seconds, never only the interval after the previous clue. Active audio swaps the play glyph for a centered pause glyph and advances the timeline from its far-left edge across every elapsed boundary.
+- Skipping unlocks the next cumulative duration and leaves earlier segments visibly available without placing explanatory text over the player. Stopping playback restores the play glyph and clears partial progress; replay always starts from song time zero.
 - Difficulty selection must work from both the side rail and central tabs.
 - `Reroll all` is always available. `Play again` appears only after a loss.
 - Search-result selection and guess submission remain separate actions.

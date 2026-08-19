@@ -30,8 +30,7 @@ const difficultyLabels: Record<Difficulty, string> = {
   impossible: "Impossible",
 };
 
-const defaultRoundMessage = "Listen closely. The first clip is tiny.";
-const stageStorageKey = "songless-stages-v1";
+const stageStorageKey = "songless-stages-v2";
 
 function initialStages(): number[] {
   try {
@@ -55,6 +54,25 @@ function stageCursorOffset(enabledStages: number[], stageIndex: number): number 
     .slice(0, Math.max(0, Math.min(stageIndex, weights.length)))
     .reduce((total, weight) => total + weight, 0);
   return totalWeight > 0 ? (completedWeight / totalWeight) * 100 : 0;
+}
+
+function stagePlaybackOffset(enabledStages: number[], stageIndex: number, elapsedSeconds: number): number {
+  const weights = enabledStages.map(stageWeight);
+  const totalWeight = weights.reduce((total, weight) => total + weight, 0);
+  if (totalWeight <= 0 || elapsedSeconds <= 0) return 0;
+
+  let filledWeight = 0;
+  let previousDuration = 0;
+  const lastPlayableIndex = Math.max(0, Math.min(stageIndex, enabledStages.length - 1));
+  for (let index = 0; index <= lastPlayableIndex; index += 1) {
+    const duration = enabledStages[index];
+    const interval = Math.max(0.0001, duration - previousDuration);
+    const intervalProgress = Math.max(0, Math.min(1, (elapsedSeconds - previousDuration) / interval));
+    filledWeight += weights[index] * intervalProgress;
+    if (intervalProgress < 1) break;
+    previousDuration = duration;
+  }
+  return (filledWeight / totalWeight) * 100;
 }
 
 const confettiPieces = Array.from({ length: 30 }, (_, index) => {
@@ -97,10 +115,9 @@ function App() {
   const [query, setQuery] = useState("");
   const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
-  const [message, setMessage] = useState(defaultRoundMessage);
   const [audioError, setAudioError] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
-  const [playbackProgress, setPlaybackProgress] = useState(0);
+  const [playbackElapsed, setPlaybackElapsed] = useState(0);
   const [volume, setVolume] = useState(() => {
     const storedVolume = window.localStorage.getItem("songless-volume-v2");
     if (storedVolume === null) return 1;
@@ -170,10 +187,8 @@ function App() {
     : null;
   const currentStage = enabledStages[stageIndex] ?? enabledStages[0] ?? stages[0];
   const cursorOffset = stageCursorOffset(enabledStages, stageIndex);
-  const totalStageWeight = enabledStages.reduce((total, stage) => total + stageWeight(stage), 0);
-  const currentStageWidth = totalStageWeight > 0
-    ? (stageWeight(currentStage) / totalStageWeight) * 100
-    : 0;
+  const playbackProgress = currentStage > 0 ? Math.min(1, playbackElapsed / currentStage) : 0;
+  const playbackOffset = stagePlaybackOffset(enabledStages, stageIndex, playbackElapsed);
 
   function stopPlayback(resetProgress = true) {
     playbackRun.current += 1;
@@ -184,7 +199,7 @@ function App() {
     }
     audioEngine.current.stop();
     setIsPlaying(false);
-    if (resetProgress) setPlaybackProgress(0);
+    if (resetProgress) setPlaybackElapsed(0);
   }
 
   function resetRoundState() {
@@ -194,7 +209,6 @@ function App() {
     setQuery("");
     setSelectedSongId(null);
     setGuessedSongIds([]);
-    setMessage(defaultRoundMessage);
     setAudioError("");
   }
 
@@ -233,7 +247,7 @@ function App() {
       const updateProgress = (now: number) => {
         if (run !== playbackRun.current) return;
         const progress = Math.min(1, (now - startedAt) / durationMs);
-        setPlaybackProgress(progress);
+        setPlaybackElapsed(Math.min(currentStage, progress * actualDuration));
         if (progress < 1) {
           playbackFrame.current = requestAnimationFrame(updateProgress);
           return;
@@ -246,45 +260,35 @@ function App() {
       if (run !== playbackRun.current) return;
       playbackPending.current = false;
       setIsPlaying(false);
-      setPlaybackProgress(0);
+      setPlaybackElapsed(0);
       setAudioError(error instanceof Error ? error.message : "The clip could not be played.");
     }
   }
 
-  function advanceOrLose(reason: "skip" | "wrong") {
+  function advanceOrLose() {
     stopPlayback();
     if (stageIndex < enabledStages.length - 1) {
       const nextIndex = stageIndex + 1;
       setStageIndex(nextIndex);
-      setMessage(
-        reason === "skip"
-          ? `Skipped. You now have ${enabledStages[nextIndex]} seconds.`
-          : `Not that one. You now have ${enabledStages[nextIndex]} seconds.`,
-      );
       return;
     }
     setStatus("lost");
-    setMessage("Out of clues. The song has been revealed.");
   }
 
   function submitGuess(guess?: Song) {
     if (!currentSong || status !== "playing") return;
-    if (!guess) {
-      setMessage("Choose a song from the search results first.");
-      return;
-    }
+    if (!guess) return;
 
     if (guess.id === currentSong.id) {
       stopPlayback();
       setStatus("won");
-      setMessage(`Correct in ${currentStage} seconds.`);
       return;
     }
 
     setGuessedSongIds((ids) => [...ids, guess.id]);
     setQuery("");
     setSelectedSongId(null);
-    advanceOrLose("wrong");
+    advanceOrLose();
   }
 
   function handleSubmit(event: FormEvent) {
@@ -303,10 +307,7 @@ function App() {
 
   function toggleStage(stage: number) {
     const isEnabled = enabledStages.includes(stage);
-    if (isEnabled && enabledStages.length === 1) {
-      setMessage("Keep at least one stage enabled.");
-      return;
-    }
+    if (isEnabled && enabledStages.length === 1) return;
 
     const nextStages: number[] = stageOptions.filter((option) =>
       option === stage ? !isEnabled : enabledStages.includes(option),
@@ -325,7 +326,6 @@ function App() {
         ? currentStage
         : nextStages.find((option) => option > currentStage) ?? nextStages[nextStages.length - 1];
     setStageIndex(Math.max(0, nextStages.indexOf(nextCurrentStage)));
-    setMessage(defaultRoundMessage);
     setAudioError("");
   }
 
@@ -442,10 +442,9 @@ function App() {
                   <i
                     className="stage-playback-progress"
                     data-progress={playbackProgress.toFixed(3)}
+                    data-elapsed={playbackElapsed.toFixed(3)}
                     style={{
-                      left: `${cursorOffset}%`,
-                      width: `${currentStageWidth}%`,
-                      transform: `scaleX(${playbackProgress})`,
+                      width: `${playbackOffset}%`,
                     }}
                     aria-hidden="true"
                   />
@@ -470,10 +469,6 @@ function App() {
                     <strong className="stage-value" key={currentStage}>{currentStage}</strong><span>s</span>
                   </div>
                 </div>
-
-                {(audioError || message !== defaultRoundMessage) && (
-                  <p className="game-message">{audioError || message}</p>
-                )}
 
                 <form className="guess-form" onSubmit={handleSubmit}>
                   <div className={selectedSong ? "search-wrap selected" : "search-wrap"}>
@@ -507,11 +502,12 @@ function App() {
                   {selectedSong ? (
                     <button className="guess-button" type="submit">Guess</button>
                   ) : (
-                    <button className="skip-button" onClick={() => advanceOrLose("skip")} type="button">
+                    <button className="skip-button" onClick={advanceOrLose} type="button">
                       <SkipIcon /> Skip
                     </button>
                   )}
                 </form>
+                {audioError && <p className="audio-error" role="alert">{audioError}</p>}
 
                 {guessedSongIds.length > 0 && (
                   <div className="wrong-guesses">
