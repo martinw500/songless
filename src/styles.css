@@ -286,8 +286,8 @@ input:focus-visible {
 .stage-track span {
   flex: 0 1 0;
   min-width: 0;
-  border-right: 0 solid #151811;
-  background: #2b3028;
+  border-right: 0 solid rgba(9, 12, 8, 0.72);
+  background: transparent;
   position: relative;
   transform-origin: left center;
   opacity: 0;
@@ -304,32 +304,44 @@ input:focus-visible {
   min-width: 7px;
   border-right-width: 1px;
   opacity: 1;
+  z-index: 3;
   animation: stageSegmentEnable 620ms var(--ease-out) both;
 }
 .stage-track span.disabled { pointer-events: none; }
 .stage-track span.last-enabled { border-right-width: 0; }
-.stage-track span.passed { background: rgba(var(--accent-rgb), 0.58); }
-.stage-track span.current { background: #2b3028; }
+.stage-track span.passed,
+.stage-track span.current { background: transparent; }
+
+.stage-unlocked-progress,
 .stage-playback-progress {
   position: absolute;
-  z-index: 2;
   left: 0;
   top: 0;
   bottom: 0;
-  background: var(--accent);
-  box-shadow: 0 0 13px rgba(var(--accent-rgb), 0.24);
   pointer-events: none;
 }
-.stage-cursor {
+
+.stage-unlocked-progress {
+  z-index: 1;
+  background: rgba(var(--accent-rgb), 0.38);
+  transition: width 780ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stage-playback-progress {
+  z-index: 2;
+  background: var(--accent);
+  box-shadow: 0 0 11px rgba(var(--accent-rgb), 0.18);
+}
+
+.stage-playback-progress::after {
+  content: "";
   position: absolute;
-  z-index: 3;
   top: 0;
   bottom: 0;
+  right: -7px;
   width: 7px;
   background: var(--accent);
   box-shadow: 0 0 13px rgba(var(--accent-rgb), 0.34);
-  pointer-events: none;
-  transition: left 780ms cubic-bezier(0.4, 0, 0.2, 1), background 260ms ease;
 }
 
 @keyframes stageSegmentEnable {
@@ -1063,7 +1075,7 @@ input:focus-visible {
 
   .stage-track { height: 35px; margin-top: 29px; }
 
-  .stage-cursor { width: 11px; }
+  .stage-playback-progress::after { width: 11px; right: -11px; }
 
   .player-area { height: 228px; }
 

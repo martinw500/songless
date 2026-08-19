@@ -118,6 +118,7 @@ function App() {
   const [audioError, setAudioError] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
   const [playbackElapsed, setPlaybackElapsed] = useState(0);
+  const [heardThrough, setHeardThrough] = useState(0);
   const [volume, setVolume] = useState(() => {
     const storedVolume = window.localStorage.getItem("songless-volume-v2");
     if (storedVolume === null) return 1;
@@ -186,11 +187,11 @@ function App() {
     ? catalog.find((song) => song.id === selectedSongId) ?? null
     : null;
   const currentStage = enabledStages[stageIndex] ?? enabledStages[0] ?? stages[0];
-  const cursorOffset = stageCursorOffset(enabledStages, stageIndex);
+  const unlockedOffset = stageCursorOffset(enabledStages, stageIndex + 1);
   const playbackProgress = currentStage > 0 ? Math.min(1, playbackElapsed / currentStage) : 0;
   const playbackOffset = stagePlaybackOffset(enabledStages, stageIndex, playbackElapsed);
 
-  function stopPlayback(resetProgress = true) {
+  function stopPlayback(displayElapsed = 0) {
     playbackRun.current += 1;
     playbackPending.current = false;
     if (playbackFrame.current !== null) {
@@ -199,11 +200,12 @@ function App() {
     }
     audioEngine.current.stop();
     setIsPlaying(false);
-    if (resetProgress) setPlaybackElapsed(0);
+    setPlaybackElapsed(displayElapsed);
   }
 
   function resetRoundState() {
     stopPlayback();
+    setHeardThrough(0);
     setStageIndex(0);
     setStatus("playing");
     setQuery("");
@@ -229,7 +231,7 @@ function App() {
   async function playClip() {
     if (!currentSong || status !== "playing") return;
     if (isPlaying || playbackPending.current) {
-      stopPlayback();
+      stopPlayback(Math.min(heardThrough, currentStage));
       return;
     }
 
@@ -253,6 +255,7 @@ function App() {
           return;
         }
         playbackFrame.current = null;
+        setHeardThrough(currentStage);
         setIsPlaying(false);
       };
       playbackFrame.current = requestAnimationFrame(updateProgress);
@@ -266,7 +269,7 @@ function App() {
   }
 
   function advanceOrLose() {
-    stopPlayback();
+    stopPlayback(Math.min(heardThrough, currentStage));
     if (stageIndex < enabledStages.length - 1) {
       const nextIndex = stageIndex + 1;
       setStageIndex(nextIndex);
@@ -313,6 +316,7 @@ function App() {
       option === stage ? !isEnabled : enabledStages.includes(option),
     );
     stopPlayback();
+    setHeardThrough(0);
     setEnabledStages([...nextStages]);
 
     if (status !== "playing") {
@@ -440,17 +444,17 @@ function App() {
                     );
                   })}
                   <i
+                    className="stage-unlocked-progress"
+                    style={{ width: `${unlockedOffset}%` }}
+                    aria-hidden="true"
+                  />
+                  <i
                     className="stage-playback-progress"
                     data-progress={playbackProgress.toFixed(3)}
                     data-elapsed={playbackElapsed.toFixed(3)}
                     style={{
                       width: `${playbackOffset}%`,
                     }}
-                    aria-hidden="true"
-                  />
-                  <i
-                    className="stage-cursor"
-                    style={{ left: `${cursorOffset}%` }}
                     aria-hidden="true"
                   />
                 </div>

@@ -163,15 +163,17 @@ async function clickStage(client, label) {
 async function stageState(client) {
   return client.evaluate(`(() => {
     const track = document.querySelector('.stage-track').getBoundingClientRect();
-    const cursor = document.querySelector('.stage-cursor').getBoundingClientRect();
+    const unlocked = document.querySelector('.stage-unlocked-progress').getBoundingClientRect();
+    const playback = document.querySelector('.stage-playback-progress').getBoundingClientRect();
     const half = document.querySelector('[data-stage="0.5"]').getBoundingClientRect();
     const current = document.querySelector('.stage-pill.current');
     return {
       current: current?.textContent.trim() ?? null,
       passed: document.querySelectorAll('.stage-segment.passed').length,
       trackLeft: track.left,
-      cursorLeft: cursor.left,
       halfLeft: half.left,
+      unlockedWidth: unlocked.width,
+      playbackWidth: playback.width,
       message: document.querySelector('.game-message')?.textContent.trim() ?? null,
     };
   })()`);
@@ -275,14 +277,14 @@ async function run() {
     await clickStage(client, "0.1s");
     const removalStart = await stageState(client);
     assert(removalStart.current === "0.5s", `Removing 0.1s selected ${removalStart.current}, expected 0.5s.`);
-    assert(Math.abs(removalStart.cursorLeft - removalStart.trackLeft) <= 2,
-      "The persistent cursor jumped away from the start during removal.");
-    assert(removalStart.halfLeft > removalStart.cursorLeft + 2,
-      "The 0.5s segment jumped to the cursor before its reflow animation began.");
+    assert(removalStart.halfLeft > removalStart.trackLeft + 2,
+      "The 0.5s segment jumped to the start before its reflow animation began.");
     await delay(850);
     const removalEnd = await stageState(client);
-    assert(Math.abs(removalEnd.halfLeft - removalEnd.cursorLeft) <= 2,
-      "The 0.5s segment did not finish reflowing beneath the cursor.");
+    assert(Math.abs(removalEnd.halfLeft - removalEnd.trackLeft) <= 2,
+      "The 0.5s segment did not finish reflowing to the start.");
+    assert(removalEnd.unlockedWidth > removalStart.unlockedWidth,
+      "The translucent unlocked range did not expand with the new current stage.");
 
     await clickStage(client, "0.1s");
     await delay(850);
@@ -303,7 +305,7 @@ async function run() {
     state = await stageState(client);
     assert(state.current === "0.01s" && state.passed === 0,
       "The remove/re-add 0.01s sequence corrupted current or passed stage colors.");
-    console.log("PASS stage remove/re-add state, color classes, and cursor reflow");
+    console.log("PASS stage remove/re-add state and translucent unlocked-range reflow");
 
     const volume = await client.evaluate(`(() => {
       const input = document.querySelector('input[aria-label="Volume"]');
@@ -330,13 +332,84 @@ async function run() {
     await client.evaluate("document.querySelector('.skip-button').click()");
     await delay(60);
     await client.evaluate("document.querySelector('.skip-button').click()");
-    await delay(60);
+    await delay(100);
+    state = await stageState(client);
+    assert(state.current === "2s" && state.message === null,
+      `Playback audit expected the silent cumulative 2s stage (${JSON.stringify(state)}).`);
+
+    await client.evaluate("document.querySelector('.play-button').click()");
+    await delay(2200);
+    const completed = await client.evaluate(`(() => {
+      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      const unlocked = document.querySelector('.stage-unlocked-progress').getBoundingClientRect();
+      const segment = document.querySelector('[data-stage="2"]').getBoundingClientRect();
+      const track = document.querySelector('.stage-track').getBoundingClientRect();
+      return {
+        playIcon: Boolean(document.querySelector('.play-icon')),
+        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
+        fillWidth: fill.width,
+        unlockedWidth: unlocked.width,
+        endpointWidth: segment.right - track.left,
+        dividers: [...document.querySelectorAll('.stage-segment.enabled:not(.last-enabled)')]
+          .filter((node) => parseFloat(getComputedStyle(node).borderRightWidth) >= 1).length,
+      };
+    })()`);
+    assert(completed.playIcon && !completed.isPlaying && completed.progress === 1,
+      `Completed playback did not restore the play state (${JSON.stringify(completed)}).`);
+    assert(Math.abs(completed.fillWidth - completed.endpointWidth) <= 3 &&
+      Math.abs(completed.unlockedWidth - completed.endpointWidth) <= 3,
+      `Completed playback did not make the unlocked range opaque (${JSON.stringify(completed)}).`);
+    assert(completed.dividers === 4, `Section dividers disappeared over the fills (${completed.dividers}/4).`);
+
+    await client.evaluate("document.querySelector('.play-button').click()");
+    await delay(250);
+    const replayed = await client.evaluate(`({
+      isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+      elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+      progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
+    })`);
+    assert(replayed.isPlaying && replayed.elapsed > 0.1 && replayed.elapsed < 0.6 && replayed.progress < 0.3,
+      `Replay did not restart its opaque sweep from zero (${JSON.stringify(replayed)}).`);
+    await client.evaluate("document.querySelector('.play-button').click()");
+    await delay(100);
+
     await client.evaluate("document.querySelector('.skip-button').click()");
     await delay(850);
-    state = await stageState(client);
-    assert(state.current === "8s", `Playback audit expected the cumulative 8s stage, found ${state.current}.`);
-    assert(state.passed === 3 && state.message === null,
-      `Skipping did not leave three silent unlocked stages (${JSON.stringify(state)}).`);
+    const skipped = await client.evaluate(`(() => {
+      const track = document.querySelector('.stage-track').getBoundingClientRect();
+      const played = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      const unlocked = document.querySelector('.stage-unlocked-progress').getBoundingClientRect();
+      const completedBoundary = document.querySelector('[data-stage="2"]').getBoundingClientRect().right - track.left;
+      const unlockedBoundary = document.querySelector('[data-stage="8"]').getBoundingClientRect().right - track.left;
+      return {
+        current: document.querySelector('.stage-pill.current')?.textContent.trim(),
+        passed: document.querySelectorAll('.stage-segment.passed').length,
+        message: document.querySelector('.game-message')?.textContent.trim() ?? null,
+        playedWidth: played.width,
+        unlockedWidth: unlocked.width,
+        completedBoundary,
+        unlockedBoundary,
+        dividers: [...document.querySelectorAll('.stage-segment.enabled:not(.last-enabled)')]
+          .filter((node) => parseFloat(getComputedStyle(node).borderRightWidth) >= 1).length,
+      };
+    })()`);
+    assert(skipped.current === "8s" && skipped.passed === 3 && skipped.message === null,
+      `Skip did not silently unlock the 8s section (${JSON.stringify(skipped)}).`);
+    assert(Math.abs(skipped.playedWidth - skipped.completedBoundary) <= 3,
+      `Skip did not retain the completed opaque range (${JSON.stringify(skipped)}).`);
+    assert(Math.abs(skipped.unlockedWidth - skipped.unlockedBoundary) <= 3 &&
+      skipped.unlockedWidth > skipped.playedWidth,
+      `Skip did not add a translucent next section (${JSON.stringify(skipped)}).`);
+    assert(skipped.dividers === 4, `Skip obscured section dividers (${skipped.dividers}/4).`);
+
+    if (saveArtifacts) {
+      const artifactDirectory = path.join(root, ".ui-audit");
+      mkdirSync(artifactDirectory, { recursive: true });
+      const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+      writeFileSync(path.join(artifactDirectory, "skipped-state.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "skipped-state.png"))}`);
+    }
 
     const started = await client.evaluate(`(() => {
       const button = document.querySelector('.play-button');
@@ -380,7 +453,7 @@ async function run() {
       `The cumulative 8s clip did not begin near song time zero (${playing.elapsed}s).`);
     assert(playing.fillWidth > playing.firstWidth && playing.fillWidth < playing.secondBoundary,
       `Timeline fill did not replay from the first stage boundary (${JSON.stringify(playing)}).`);
-    console.log("PASS cumulative 0-8s playback, pause icon, and elapsed-time timeline fill");
+    console.log("PASS opaque replay sweep starts at zero over the translucent 0-8s range");
 
     if (saveArtifacts) {
       const artifactDirectory = path.join(root, ".ui-audit");
@@ -392,50 +465,21 @@ async function run() {
 
     await client.evaluate("document.querySelector('.play-button').click()");
     await delay(100);
-    const stopped = await client.evaluate(`({
-      playIcon: Boolean(document.querySelector('.play-icon')),
-      isPlaying: document.querySelector('.play-button').classList.contains('playing'),
-      progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
-    })`);
-    assert(stopped.playIcon && !stopped.isPlaying && stopped.progress === 0,
-      `Stopping playback did not restore the idle state (${JSON.stringify(stopped)}).`);
-
-    await client.evaluate("document.querySelector('.mode-action').click()");
-    await delay(100);
-    await client.evaluate("document.querySelector('.skip-button').click()");
-    await delay(60);
-    await client.evaluate("document.querySelector('.skip-button').click()");
-    await delay(100);
-    await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(2200);
-    const completed = await client.evaluate(`(() => {
-      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
-      const segment = document.querySelector('[data-stage="2"]').getBoundingClientRect();
+    const stopped = await client.evaluate(`(() => {
       const track = document.querySelector('.stage-track').getBoundingClientRect();
+      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      const completedBoundary = document.querySelector('[data-stage="2"]').getBoundingClientRect().right - track.left;
       return {
         playIcon: Boolean(document.querySelector('.play-icon')),
         isPlaying: document.querySelector('.play-button').classList.contains('playing'),
-        progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
         fillWidth: fill.width,
-        endpointWidth: segment.right - track.left,
+        completedBoundary,
       };
     })()`);
-    assert(completed.playIcon && !completed.isPlaying && completed.progress === 1,
-      `Completed playback did not restore the play state (${JSON.stringify(completed)}).`);
-    assert(Math.abs(completed.fillWidth - completed.endpointWidth) <= 3,
-      `Completed playback did not fill through its stage (${completed.fillWidth}/${completed.endpointWidth}).`);
-    await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(250);
-    const replayed = await client.evaluate(`({
-      isPlaying: document.querySelector('.play-button').classList.contains('playing'),
-      elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
-      progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
-    })`);
-    assert(replayed.isPlaying && replayed.elapsed > 0.1 && replayed.elapsed < 0.6 && replayed.progress < 0.3,
-      `Replay did not restart from song time zero (${JSON.stringify(replayed)}).`);
-    await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(80);
-    console.log("PASS completed clip retains its fill and replay restarts from zero");
+    assert(stopped.playIcon && !stopped.isPlaying &&
+      Math.abs(stopped.fillWidth - stopped.completedBoundary) <= 3,
+      `Stopping replay did not restore the last completed opaque range (${JSON.stringify(stopped)}).`);
+    console.log("PASS completion, skip, replay, and stop preserve the three timeline layers");
 
     await client.call("Emulation.setDeviceMetricsOverride", {
       width: 720,
