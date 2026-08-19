@@ -22,6 +22,7 @@ These instructions apply to the entire repository.
 - Range controls must visibly distinguish the filled portion before the thumb from the unfilled portion after it.
 - Stage durations are cumulative from the song start. An 8-second clue always plays 0-8 seconds, never only the interval after the previous clue. Active audio swaps the play glyph for a centered pause glyph and advances the timeline from its far-left edge across every elapsed boundary.
 - Skip only unlocks the next interval and must never start audio. After advancing from 2 to 8 seconds, the next Play schedules 2-8 and continues the opaque fill from the 2-second boundary. Once that continuation finishes, the following Play is a cumulative replay from 0-8. No decorative playhead may extend the opaque fill beyond the exact elapsed boundary.
+- Pause freezes audio and the opaque timeline at the exact current timestamp. The next Play resumes from that timestamp; it must not jump back to the previous stage boundary. Skip deliberately replaces a partial pause point with the current clue endpoint before unlocking the next interval.
 - Difficulty selection must work from both the side rail and central tabs.
 - `Reroll all` is always available. `Play again` appears only after a loss.
 - Search-result selection and guess submission remain separate actions.

@@ -18,7 +18,7 @@ Changing the stage configuration stops active audio and saves the selection to l
 
 Stage configuration is pre-round setup. The first Play click locks all stage pills for the remainder of that song, including after skips, wrong guesses, completed clues, and result reveal. A full round reset or new song unlocks them again. Locked pills retain enough color to communicate the chosen configuration but have no hover/press response.
 
-Skip itself is silent. Advancing from 2 to 8 only unlocks the translucent 2-8 interval and leaves the completed 0-2 range opaque. The next Play runs song time 2 through 8 while continuing the opaque layer from the 2-second boundary. Once that continuation reaches 8, the following Play begins the cumulative 0-8 replay and restarts the opaque sweep from the far-left edge. Stopping that replay restores the last completed opaque range.
+Skip itself is silent. Advancing from 2 to 8 only unlocks the translucent 2-8 interval and leaves the completed 0-2 range opaque. The next Play runs song time 2 through 8 while continuing the opaque layer from the 2-second boundary. Once that continuation reaches 8, the following Play begins the cumulative 0-8 replay and restarts the opaque sweep from the far-left edge. Pausing freezes both audio and the opaque sweep at the exact elapsed timestamp; the next Play resumes from that point.
 
 Skipping or submitting a wrong answer silently unlocks the next interval without starting it. The previously completed range remains opaque, the newly available interval receives translucent accent, and its later playback edge has no extra cursor or decorative blip. Routine instructions such as “Skipped” or “You now have 2 seconds” never appear over the player. The default stages are 0.1, 0.5, 2, 8, and 15 seconds; 0.01 seconds is an optional setting.
 
@@ -53,6 +53,7 @@ All choreography is reduced to near-instant state changes when `prefers-reduced-
 - Set volume to a partial value. The track before the thumb must use the difficulty accent and the track after the thumb must remain dark.
 - Stage toggles must not place routine “stage added” or “stage removed” text over the play control.
 - Complete 2 seconds and press Skip. Confirm the stage changes to 8 while audio remains stopped and only 2-8 becomes translucent. Press Play and confirm audio and opaque progress run from 2-8. After completion, press Play again and confirm both restart from 0.
+- During the cumulative 0-8 replay, press Pause between stage boundaries. Audio and opaque progress must remain at that exact point, and the next Play must continue from it instead of jumping back to 2 seconds or restarting at zero.
 - Trigger both a win and loss. Confirm the visible artwork-to-stamp group is optically centered and no result content is clipped.
 - Observe the transition rather than only its final frame. Win confetti should be visible but contained, and the stamp should be the final emphasis.
 - Check a narrow viewport and the reduced-motion media mode.

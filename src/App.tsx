@@ -275,17 +275,19 @@ function App() {
   function playClip() {
     if (!currentSong || status !== "playing") return;
     if (isPlaying || playbackPending.current) {
-      stopPlayback(Math.min(heardThrough, currentStage));
+      const pausedAt = Math.min(playbackElapsed, currentStage);
+      setHeardThrough(pausedAt);
+      stopPlayback(pausedAt);
       return;
     }
-    const previousStage = stageIndex > 0 ? enabledStages[stageIndex - 1] : 0;
-    const rangeStart = heardThrough >= currentStage ? 0 : previousStage;
+    const rangeStart = heardThrough >= currentStage ? 0 : heardThrough;
     setHasStartedRound(true);
     void startPlayback(rangeStart, currentStage);
   }
 
   function advanceOrLose() {
-    stopPlayback(Math.min(heardThrough, currentStage));
+    setHeardThrough(currentStage);
+    stopPlayback(currentStage);
     if (stageIndex < enabledStages.length - 1) {
       const nextIndex = stageIndex + 1;
       setStageIndex(nextIndex);
@@ -481,7 +483,7 @@ function App() {
                     className={isPlaying ? "play-button playing" : "play-button"}
                     onClick={playClip}
                     type="button"
-                    aria-label={isPlaying ? "Stop clip playback" : `Play ${currentStage} second clip`}
+                    aria-label={isPlaying ? "Pause clip playback" : `Play ${currentStage} second clip`}
                   >
                     {isPlaying ? <PauseIcon /> : <PlayIcon />}
                     <span className="pulse-ring" />

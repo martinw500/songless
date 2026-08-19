@@ -32,7 +32,7 @@ The first playback attempt sets a per-round stage lock. Both the native button `
 
 All available timeline segments remain mounted while the app is running. Disabled segments animate to zero width instead of being immediately removed from the DOM, allowing both additions and removals to produce a continuous reflow. The fills are separate absolutely positioned layers: translucent unlocked extent below, opaque played extent above, and transparent segment nodes with borders at the top. This keeps dividers visible without conflating unlocked and heard state. Win confetti is deterministic CSS motion rendered by React, requires no animation dependency, and is disabled by the reduced-motion stylesheet. See [UI-QUALITY.md](UI-QUALITY.md) for the visual acceptance rules.
 
-The audio engine receives explicit start and end seconds and returns the actual scheduled range duration. File playback adds the range start to `startAtMs`; synthesized demos begin at the corresponding note index. The interface uses `requestAnimationFrame` to map absolute elapsed song time across the timeline. A run identifier cancels stale loading and animation work when the user stops playback, changes stages, changes difficulty, or leaves the round.
+The audio engine receives explicit start and end seconds and returns the actual scheduled range duration. File playback adds the range start to `startAtMs`; synthesized demos begin at the corresponding note index. The interface uses `requestAnimationFrame` to map absolute elapsed song time across the timeline. Pausing stores that exact absolute timestamp as the next range start, so playback and the opaque timeline resume without snapping to a stage boundary. Skip intentionally replaces a partial pause point with the current endpoint before unlocking the next clue. A run identifier cancels stale loading and animation work when the user pauses playback, changes stages, changes difficulty, or leaves the round.
 
 Decoded audio is cached in memory for replaying the current session. Refreshing the page clears that cache.
 
@@ -43,8 +43,6 @@ Only the first 20 seconds are required because the longest clue is 15 seconds. T
 ```text
 20 seconds × 96 kilobits/second ÷ 8 ≈ 240 KB per track
 ```
-
-The Git ignore rules prevent private media from being added to the repository. A production build will still copy media into `dist`, so do not upload that build to a public host unless the audio is cleared for distribution.
 
 ## When to add a database
 
@@ -57,12 +55,3 @@ Add SQLite or PostgreSQL only when one of these becomes real:
 - several independent catalogues
 
 For a single computer, the next persistence step should be a small stats file or IndexedDB—not a hosted database.
-
-## Deliberate boundaries
-
-- No Spotify playback or Spotify-derived game integration
-- No YouTube downloader
-- No bulk media committed to Git
-- No remote fonts, analytics, accounts, or external runtime services
-
-The game therefore works offline after dependencies are installed and the local media exists.

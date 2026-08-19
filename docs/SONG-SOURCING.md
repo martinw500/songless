@@ -21,15 +21,6 @@ Start with a 120-song pilot:
 
 The first 30 proposed records are in `data/song-candidates.json`. They are a review queue, not the live catalogue.
 
-## Spotify is research-only
-
-The project must not integrate Spotify's API. Spotify's Developer Policy currently prohibits games, including trivia quizzes. The Web API's track `popularity` and `preview_url` fields are also deprecated, previews may be null, and preview clips cannot be offered as a standalone service.
-
-Spotify's public Billions Club playlist can still inspire manual research, but do not fetch Spotify metadata, artwork, or audio into the game. Record ordinary facts such as title and artist independently and use media you are permitted to use.
-
-- Policy: <https://developer.spotify.com/policy>
-- Track API reference: <https://developer.spotify.com/documentation/web-api/reference/get-track>
-- Spotify's Billions Club background: <https://newsroom.spotify.com/2024-12-18/spotify-presents-the-first-ever-billions-club-live-show-with-the-weeknd/>
 
 ## Audio workflow
 

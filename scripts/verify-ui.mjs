@@ -534,7 +534,7 @@ async function run() {
         secondBoundary: second.right - track.left,
       };
     })()`);
-    assert(playing.isPlaying && playing.label === "Stop clip playback" && playing.pauseParts === 2,
+    assert(playing.isPlaying && playing.label === "Pause clip playback" && playing.pauseParts === 2,
       `Play button did not switch to the active pause state (${JSON.stringify(playing)}).`);
     assert(Math.abs(playing.pauseX) <= 0.75 && Math.abs(playing.pauseY) <= 0.75,
       `Pause icon is not centered (${playing.pauseX.toFixed(2)}px, ${playing.pauseY.toFixed(2)}px).`);
@@ -554,23 +554,54 @@ async function run() {
       console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "playing-state.png"))}`);
     }
 
-    await client.evaluate("document.querySelector('.play-button').click()");
+    const pausePoint = await client.evaluate(`(() => {
+      const progress = document.querySelector('.stage-playback-progress');
+      const elapsed = Number(progress.dataset.elapsed);
+      const fillWidth = progress.getBoundingClientRect().width;
+      document.querySelector('.play-button').click();
+      return { elapsed, fillWidth };
+    })()`);
     await delay(100);
-    const stopped = await client.evaluate(`(() => {
-      const track = document.querySelector('.stage-track').getBoundingClientRect();
+    const paused = await client.evaluate(`(() => {
       const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
-      const completedBoundary = document.querySelector('[data-stage="8"]').getBoundingClientRect().right - track.left;
       return {
         playIcon: Boolean(document.querySelector('.play-icon')),
         isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
         fillWidth: fill.width,
-        completedBoundary,
       };
     })()`);
-    assert(stopped.playIcon && !stopped.isPlaying &&
-      Math.abs(stopped.fillWidth - stopped.completedBoundary) <= 3,
-      `Stopping replay did not restore the last completed opaque range (${JSON.stringify(stopped)}).`);
-    console.log("PASS stopping a cumulative replay restores the completed 8s range");
+    assert(paused.playIcon && !paused.isPlaying,
+      `Pause did not return the control to its idle state (${JSON.stringify(paused)}).`);
+    assert(Math.abs(paused.elapsed - pausePoint.elapsed) <= 0.1,
+      `Pause did not retain the exact elapsed timestamp (${JSON.stringify({ pausePoint, paused })}).`);
+    assert(Math.abs(paused.fillWidth - pausePoint.fillWidth) <= 4,
+      `Pause did not freeze the opaque timeline at the current position (${JSON.stringify({ pausePoint, paused })}).`);
+
+    if (saveArtifacts) {
+      const artifactDirectory = path.join(root, ".ui-audit");
+      const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+      writeFileSync(path.join(artifactDirectory, "paused-state.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "paused-state.png"))}`);
+    }
+
+    await client.evaluate("document.querySelector('.play-button').click()");
+    await delay(250);
+    const resumed = await client.evaluate(`(() => {
+      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      return {
+        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+        fillWidth: fill.width,
+      };
+    })()`);
+    assert(resumed.isPlaying && resumed.elapsed > paused.elapsed + 0.1 && resumed.elapsed < paused.elapsed + 0.6,
+      `Play did not resume from the paused timestamp (${JSON.stringify({ paused, resumed })}).`);
+    assert(resumed.fillWidth > paused.fillWidth,
+      `The opaque timeline did not continue from the paused position (${JSON.stringify({ paused, resumed })}).`);
+    await client.evaluate("document.querySelector('.play-button').click()");
+    await delay(80);
+    console.log("PASS pause retains the exact elapsed position and Play resumes from it");
 
     await client.evaluate("document.querySelector('.mode-action').click()");
     await delay(100);
