@@ -1,79 +1,3369 @@
 [
   {
-    "id": "demo-neon-steps",
-    "title": "Neon Steps",
-    "artist": "Songless Demo",
-    "aliases": ["Neon Step"],
-    "releaseYear": 2026,
-    "genres": ["demo"],
+    "id": "the-weeknd-blinding-lights",
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "After Hours",
+    "spotifyUrl": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+    "releaseYear": 2019,
+    "genres": [
+      "pop",
+      "synth-pop"
+    ],
     "difficulty": "easy",
-    "familiarity": 100,
-    "introRecognition": 90,
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-weeknd-blinding-lights.jpg?v=cover-6a12abbfaf80",
     "audio": {
-      "kind": "synth",
-      "notes": [261.63, 329.63, 392, 523.25],
-      "noteLengthMs": 300
-    }
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-blinding-lights.mp3?v=202210-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-blinding-lights.mp3?v=202210-1000",
+      "durationMs": 202210
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 1
   },
   {
-    "id": "demo-afterglow",
-    "title": "Afterglow Avenue",
-    "artist": "Songless Demo",
-    "releaseYear": 2026,
-    "genres": ["demo"],
+    "id": "ed-sheeran-shape-of-you",
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Top Motivation",
+    "spotifyUrl": "https://open.spotify.com/track/5BhCnMoTq4qI4vf37Ohlkm",
+    "releaseYear": 2017,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/ed-sheeran-shape-of-you.jpg?v=cover-ce6110bc1153",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-shape-of-you.mp3?v=235009-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-shape-of-you.mp3?v=235009-0",
+      "durationMs": 235009
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 2
+  },
+  {
+    "id": "post-malone-swae-lee-sunflower",
+    "title": "Sunflower",
+    "artist": "Post Malone & Swae Lee",
+    "aliases": [],
+    "artistAliases": [],
+    "releaseYear": 2018,
+    "genres": [
+      "pop",
+      "hip-hop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=161669-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-swae-lee-sunflower.mp3?v=161669-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-swae-lee-sunflower.mp3?v=161669-0",
+      "durationMs": 161669
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 3
+  },
+  {
+    "id": "the-weeknd-daft-punk-starboy",
+    "title": "Starboy",
+    "artist": "The Weeknd feat. Daft Punk",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Starboy",
+    "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
+    "releaseYear": 2016,
+    "genres": [
+      "r&b",
+      "pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-weeknd-daft-punk-starboy.jpg?v=cover-bb473d7d8d41",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-daft-punk-starboy.mp3?v=229610-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-daft-punk-starboy.mp3?v=229610-1000",
+      "durationMs": 229610
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 4
+  },
+  {
+    "id": "the-neighbourhood-sweater-weather",
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "I Love You.",
+    "spotifyUrl": "https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6",
+    "releaseYear": 2012,
+    "genres": [
+      "alternative",
+      "indie rock"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-neighbourhood-sweater-weather.jpg?v=cover-5ec78ad80d63",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-neighbourhood-sweater-weather.mp3?v=240040-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-neighbourhood-sweater-weather.mp3?v=240040-0",
+      "durationMs": 240040
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 5
+  },
+  {
+    "id": "harry-styles-as-it-was",
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Harry's House",
+    "spotifyUrl": "https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e",
+    "releaseYear": 2022,
+    "genres": [
+      "pop",
+      "synth-pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/harry-styles-as-it-was.jpg?v=cover-888acdc888b8",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/harry-styles-as-it-was.mp3?v=164594-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/harry-styles-as-it-was.mp3?v=164594-1000",
+      "durationMs": 164594
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 6
+  },
+  {
+    "id": "dua-lipa-levitating",
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Future Nostalgia",
+    "spotifyUrl": "https://open.spotify.com/track/39LLxExYz6ewLAcYrzQQyP",
+    "releaseYear": 2020,
+    "genres": [
+      "pop",
+      "disco"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/dua-lipa-levitating.jpg?v=cover-3daa7df184de",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-levitating.mp3?v=220843-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-levitating.mp3?v=220843-0",
+      "durationMs": 220843
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 7
+  },
+  {
+    "id": "billie-eilish-bad-guy",
+    "title": "bad guy",
+    "artist": "Billie Eilish",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+    "spotifyUrl": "https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m",
+    "releaseYear": 2019,
+    "genres": [
+      "pop",
+      "electropop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/billie-eilish-bad-guy.jpg?v=cover-763dd3bbd5d5",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-bad-guy.mp3?v=204927-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-bad-guy.mp3?v=204927-1000",
+      "durationMs": 204927
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 8
+  },
+  {
+    "id": "the-kid-laroi-justin-bieber-stay",
+    "title": "STAY",
+    "artist": "The Kid LAROI & Justin Bieber",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "F*CK LOVE 3+: OVER YOU",
+    "spotifyUrl": "https://open.spotify.com/track/567e29TDzLwZwfDuEpGTwo",
+    "releaseYear": 2021,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-kid-laroi-justin-bieber-stay.jpg?v=cover-dd2f610c736b",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-kid-laroi-justin-bieber-stay.mp3?v=142016-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-kid-laroi-justin-bieber-stay.mp3?v=142016-0",
+      "durationMs": 142016
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 9
+  },
+  {
+    "id": "lady-gaga-poker-face",
+    "title": "Poker Face",
+    "artist": "Lady Gaga",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "The Fame",
+    "spotifyUrl": "https://open.spotify.com/track/5R8dQOPq8haW94K7mgERlO",
+    "releaseYear": 2008,
+    "genres": [
+      "pop",
+      "dance-pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lady-gaga-poker-face.jpg?v=cover-085559ee2137",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-poker-face.mp3?v=213612-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lady-gaga-poker-face.mp3?v=213612-0",
+      "durationMs": 213612
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 10
+  },
+  {
+    "id": "glass-animals-heat-waves",
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "aliases": [],
+    "artistAliases": [],
+    "releaseYear": 2020,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/glass-animals-heat-waves.jpg?v=175302-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/glass-animals-heat-waves.mp3?v=175302-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/glass-animals-heat-waves.mp3?v=175302-0",
+      "durationMs": 175302
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 11
+  },
+  {
+    "id": "journey-dont-stop-believin",
+    "title": "Don't Stop Believin'",
+    "artist": "Journey",
+    "aliases": [
+      "Dont Stop Believing"
+    ],
+    "artistAliases": [],
+    "album": "The Essential Journey",
+    "spotifyUrl": "https://open.spotify.com/track/77NNZQSqzLNqh2A9JhLRkg",
+    "releaseYear": 1981,
+    "genres": [
+      "rock"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/journey-dont-stop-believin.jpg?v=cover-ea8b7927b515",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/journey-dont-stop-believin.mp3?v=249219-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/journey-dont-stop-believin.mp3?v=249219-1000",
+      "durationMs": 249219
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 12
+  },
+  {
+    "id": "imagine-dragons-believer",
+    "title": "Believer",
+    "artist": "Imagine Dragons",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Evolve",
+    "spotifyUrl": "https://open.spotify.com/track/0pqnGHJpmpxLKifKRmU6WP",
+    "releaseYear": 2017,
+    "genres": [
+      "pop rock"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/imagine-dragons-believer.jpg?v=cover-e7b8619bd050",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/imagine-dragons-believer.mp3?v=202816-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/imagine-dragons-believer.mp3?v=202816-0",
+      "durationMs": 202816
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 13
+  },
+  {
+    "id": "the-chainsmokers-halsey-closer",
+    "title": "Closer",
+    "artist": "The Chainsmokers feat. Halsey",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Closer",
+    "spotifyUrl": "https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw",
+    "releaseYear": 2016,
+    "genres": [
+      "pop",
+      "electropop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-chainsmokers-halsey-closer.jpg?v=cover-9d90ba751a2b",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-chainsmokers-halsey-closer.mp3?v=245922-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-chainsmokers-halsey-closer.mp3?v=245922-1000",
+      "durationMs": 245922
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 14
+  },
+  {
+    "id": "harry-styles-watermelon-sugar",
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Fine Line",
+    "spotifyUrl": "https://open.spotify.com/track/6UelLqGlWMcVH1E5c4H7lY",
+    "releaseYear": 2019,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/harry-styles-watermelon-sugar.jpg?v=cover-40cf7719d956",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/harry-styles-watermelon-sugar.mp3?v=173917-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/harry-styles-watermelon-sugar.mp3?v=173917-0",
+      "durationMs": 173917
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 15
+  },
+  {
+    "id": "drake-wizkid-kyla-one-dance",
+    "title": "One Dance",
+    "artist": "Drake feat. Wizkid & Kyla",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Views",
+    "spotifyUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
+    "releaseYear": 2016,
+    "genres": [
+      "dancehall",
+      "pop",
+      "hip-hop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/drake-wizkid-kyla-one-dance.jpg?v=cover-9b8b3344b2ef",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-wizkid-kyla-one-dance.mp3?v=174266-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-wizkid-kyla-one-dance.mp3?v=174266-0",
+      "durationMs": 174266
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 16
+  },
+  {
+    "id": "billie-eilish-khalid-lovely",
+    "title": "lovely",
+    "artist": "Billie Eilish & Khalid",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "lovely (with Khalid)",
+    "spotifyUrl": "https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4",
+    "releaseYear": 2018,
+    "genres": [
+      "pop",
+      "alternative"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/billie-eilish-khalid-lovely.jpg?v=cover-7102917e0fec",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-khalid-lovely.mp3?v=200469-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-khalid-lovely.mp3?v=200469-0",
+      "durationMs": 200469
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 17
+  },
+  {
+    "id": "shawn-mendes-camila-cabello-senorita",
+    "title": "Señorita",
+    "artist": "Shawn Mendes & Camila Cabello",
+    "aliases": [
+      "Senorita"
+    ],
+    "artistAliases": [],
+    "album": "Romance",
+    "spotifyUrl": "https://open.spotify.com/track/3BVgrFWuH01GmCUy9Y2EE8",
+    "releaseYear": 2019,
+    "genres": [
+      "pop",
+      "latin pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/shawn-mendes-camila-cabello-senorita.jpg?v=cover-e4d9e9c7a15b",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shawn-mendes-camila-cabello-senorita.mp3?v=205376-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shawn-mendes-camila-cabello-senorita.mp3?v=205376-0",
+      "durationMs": 205376
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 18
+  },
+  {
+    "id": "dua-lipa-dont-start-now",
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "aliases": [
+      "Dont Start Now"
+    ],
+    "artistAliases": [],
+    "album": "Future Nostalgia",
+    "spotifyUrl": "https://open.spotify.com/track/3PfIrDoz19wz7qK7tYeu62",
+    "releaseYear": 2019,
+    "genres": [
+      "pop",
+      "disco"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/dua-lipa-dont-start-now.jpg?v=cover-3daa7df184de",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-dont-start-now.mp3?v=184558-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-dont-start-now.mp3?v=184558-1000",
+      "durationMs": 184558
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 19
+  },
+  {
+    "id": "post-malone-circles",
+    "title": "Circles",
+    "artist": "Post Malone",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Hollywood's Bleeding",
+    "spotifyUrl": "https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb",
+    "releaseYear": 2019,
+    "genres": [
+      "pop",
+      "hip-hop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/post-malone-circles.jpg?v=cover-27bbb45333e0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-circles.mp3?v=215355-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-circles.mp3?v=215355-0",
+      "durationMs": 215355
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 20
+  },
+  {
+    "id": "coldplay-viva-la-vida",
+    "title": "Viva La Vida",
+    "artist": "Coldplay",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Viva La Vida or Death and All His Friends",
+    "spotifyUrl": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b",
+    "releaseYear": 2008,
+    "genres": [
+      "pop rock"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/coldplay-viva-la-vida.jpg?v=cover-9586804568e5",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/coldplay-viva-la-vida.mp3?v=241104-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/coldplay-viva-la-vida.mp3?v=241104-1000",
+      "durationMs": 241104
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 21
+  },
+  {
+    "id": "rihanna-jay-z-umbrella",
+    "title": "Umbrella",
+    "artist": "Rihanna feat. JAY-Z",
+    "aliases": [],
+    "artistAliases": [
+      "Rihanna featuring Jay-Z"
+    ],
+    "album": "Good Girl Gone Bad: Reloaded",
+    "spotifyUrl": "https://open.spotify.com/track/49FYlytm3dAAraYgpoJZux",
+    "releaseYear": 2007,
+    "genres": [
+      "pop",
+      "r&b"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/rihanna-jay-z-umbrella.jpg?v=cover-bd8a73fdc13e",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rihanna-jay-z-umbrella.mp3?v=253143-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/rihanna-jay-z-umbrella.mp3?v=253143-1000",
+      "durationMs": 253143
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 22
+  },
+  {
+    "id": "coldplay-yellow",
+    "title": "Yellow",
+    "artist": "Coldplay",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Parachutes",
+    "spotifyUrl": "https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg",
+    "releaseYear": 2000,
+    "genres": [
+      "alternative rock"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/coldplay-yellow.jpg?v=cover-5b70cc4f2171",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/coldplay-yellow.mp3?v=270209-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/coldplay-yellow.mp3?v=270209-2000",
+      "durationMs": 270209
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 23
+  },
+  {
+    "id": "radiohead-creep",
+    "title": "Creep",
+    "artist": "Radiohead",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Pablo Honey",
+    "spotifyUrl": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
+    "releaseYear": 1992,
+    "genres": [
+      "alternative rock"
+    ],
+    "difficulty": "easy",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/radiohead-creep.jpg?v=cover-f2643f1230f0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/radiohead-creep.mp3?v=236530-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/radiohead-creep.mp3?v=236530-0",
+      "durationMs": 236530
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 24
+  },
+  {
+    "id": "eminem-without-me",
+    "title": "Without Me",
+    "artist": "Eminem",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "The Eminem Show",
+    "spotifyUrl": "https://open.spotify.com/track/7lQ8MOhq6IN2w8EYcFNSUk",
+    "releaseYear": 2002,
+    "genres": [
+      "hip-hop"
+    ],
     "difficulty": "medium",
-    "familiarity": 75,
-    "introRecognition": 70,
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/eminem-without-me.jpg?v=cover-61a210cd6a5a",
     "audio": {
-      "kind": "synth",
-      "notes": [440, 554.37, 659.25, 554.37, 493.88],
-      "noteLengthMs": 380
-    }
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/eminem-without-me.mp3?v=296600-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/eminem-without-me.mp3?v=296600-1000",
+      "durationMs": 296600
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 25
   },
   {
-    "id": "demo-midnight-signal",
-    "title": "Midnight Signal",
-    "artist": "Songless Demo",
-    "releaseYear": 2026,
-    "genres": ["demo"],
+    "id": "tears-for-fears-everybody-wants-to-rule-the-world",
+    "title": "Everybody Wants to Rule the World",
+    "artist": "Tears for Fears",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Songs From The Big Chair",
+    "spotifyUrl": "https://open.spotify.com/track/2YiCMmONQcoMPX2bV1LxE0",
+    "releaseYear": 1985,
+    "genres": [
+      "new wave",
+      "pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tears-for-fears-everybody-wants-to-rule-the-world.jpg?v=cover-a5f4a826db25",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tears-for-fears-everybody-wants-to-rule-the-world.mp3?v=251489-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tears-for-fears-everybody-wants-to-rule-the-world.mp3?v=251489-0",
+      "durationMs": 251489
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 26
+  },
+  {
+    "id": "toto-africa",
+    "title": "Africa",
+    "artist": "TOTO",
+    "aliases": [],
+    "artistAliases": [
+      "Toto"
+    ],
+    "album": "Toto IV",
+    "spotifyUrl": "https://open.spotify.com/track/2374M0fQpWi3dLnB54qaLX",
+    "releaseYear": 1982,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/toto-africa.jpg?v=cover-97a1b8ddf7af",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/toto-africa.mp3?v=294333-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/toto-africa.mp3?v=294333-0",
+      "durationMs": 294333
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 27
+  },
+  {
+    "id": "fleetwood-mac-dreams",
+    "title": "Dreams",
+    "artist": "Fleetwood Mac",
+    "aliases": [],
+    "artistAliases": [],
+    "releaseYear": 1977,
+    "genres": [
+      "soft rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/fleetwood-mac-dreams.jpg?v=257544-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/fleetwood-mac-dreams.mp3?v=257544-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/fleetwood-mac-dreams.mp3?v=257544-0",
+      "durationMs": 257544
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 28
+  },
+  {
+    "id": "the-killers-mr-brightside",
+    "title": "Mr. Brightside",
+    "artist": "The Killers",
+    "aliases": [
+      "Mister Brightside"
+    ],
+    "artistAliases": [],
+    "album": "Hot Fuss",
+    "spotifyUrl": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B",
+    "releaseYear": 2003,
+    "genres": [
+      "alternative rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-killers-mr-brightside.jpg?v=cover-f0d95229884d",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-killers-mr-brightside.mp3?v=226475-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-killers-mr-brightside.mp3?v=226475-1000",
+      "durationMs": 226475
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 29
+  },
+  {
+    "id": "a-ha-take-on-me",
+    "title": "Take on Me",
+    "artist": "a-ha",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Hunting High and Low",
+    "spotifyUrl": "https://open.spotify.com/track/2WfaOiMkCvy7F5fcp2zZ8L",
+    "releaseYear": 1985,
+    "genres": [
+      "synth-pop",
+      "new wave"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/a-ha-take-on-me.jpg?v=cover-9ccb723faeea",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/a-ha-take-on-me.mp3?v=228520-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/a-ha-take-on-me.mp3?v=228520-0",
+      "durationMs": 228520
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 30
+  },
+  {
+    "id": "michael-jackson-billie-jean",
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Thriller",
+    "spotifyUrl": "https://open.spotify.com/track/7J1uxwnxfQLu4APicE5Rnj",
+    "releaseYear": 1982,
+    "genres": [
+      "pop",
+      "funk"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/michael-jackson-billie-jean.jpg?v=cover-9b3faef9b2e5",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/michael-jackson-billie-jean.mp3?v=294227-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/michael-jackson-billie-jean.mp3?v=294227-0",
+      "durationMs": 294227
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 31
+  },
+  {
+    "id": "nirvana-smells-like-teen-spirit",
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Nevermind (Remastered)",
+    "spotifyUrl": "https://open.spotify.com/track/5ghIJDpPoe3CfHMGu71E6T",
+    "releaseYear": 1991,
+    "genres": [
+      "grunge",
+      "rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/nirvana-smells-like-teen-spirit.jpg?v=cover-d48214a8fcc5",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nirvana-smells-like-teen-spirit.mp3?v=277350-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nirvana-smells-like-teen-spirit.mp3?v=277350-1000",
+      "durationMs": 277350
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 32
+  },
+  {
+    "id": "oasis-wonderwall",
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "(What's The Story) Morning Glory?",
+    "spotifyUrl": "https://open.spotify.com/track/1qPbGZqppFwLwcBC1JQ6Vr",
+    "releaseYear": 1995,
+    "genres": [
+      "britpop",
+      "rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/oasis-wonderwall.jpg?v=cover-8f1dfd70edc3",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/oasis-wonderwall.mp3?v=276723-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/oasis-wonderwall.mp3?v=276723-1000",
+      "durationMs": 276723
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 33
+  },
+  {
+    "id": "whitney-houston-i-wanna-dance-with-somebody",
+    "title": "I Wanna Dance with Somebody (Who Loves Me)",
+    "artist": "Whitney Houston",
+    "aliases": [
+      "I Wanna Dance with Somebody"
+    ],
+    "artistAliases": [],
+    "album": "Whitney",
+    "spotifyUrl": "https://open.spotify.com/track/2tUBqZG2AbRi7Q0BIrVrEj",
+    "releaseYear": 1987,
+    "genres": [
+      "pop",
+      "dance-pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/whitney-houston-i-wanna-dance-with-somebody.jpg?v=cover-b553d9b87ea2",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/whitney-houston-i-wanna-dance-with-somebody.mp3?v=270304-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/whitney-houston-i-wanna-dance-with-somebody.mp3?v=270304-0",
+      "durationMs": 270304
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 34
+  },
+  {
+    "id": "queen-bohemian-rhapsody",
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "A Night At The Opera",
+    "spotifyUrl": "https://open.spotify.com/track/2JiDi0qAXsPwhPqA2qaKGt",
+    "releaseYear": 1975,
+    "genres": [
+      "rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/queen-bohemian-rhapsody.jpg?v=cover-4bc9a6facbb3",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/queen-bohemian-rhapsody.mp3?v=356627-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/queen-bohemian-rhapsody.mp3?v=356627-0",
+      "durationMs": 356627
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 35
+  },
+  {
+    "id": "queen-dont-stop-me-now",
+    "title": "Don't Stop Me Now",
+    "artist": "Queen",
+    "aliases": [
+      "Dont Stop Me Now"
+    ],
+    "artistAliases": [],
+    "album": "Jazz",
+    "spotifyUrl": "https://open.spotify.com/track/1NHWG8zxSEypSRF3UufrnO",
+    "releaseYear": 1978,
+    "genres": [
+      "rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/queen-dont-stop-me-now.jpg?v=cover-1c6d51e6c8ac",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/queen-dont-stop-me-now.mp3?v=198907-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/queen-dont-stop-me-now.mp3?v=198907-0",
+      "durationMs": 198907
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 36
+  },
+  {
+    "id": "abba-dancing-queen",
+    "title": "Dancing Queen",
+    "artist": "ABBA",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Arrival",
+    "spotifyUrl": "https://open.spotify.com/track/0GjEhVFGZW8afUYGChu3Rr",
+    "releaseYear": 1976,
+    "genres": [
+      "pop",
+      "disco"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/abba-dancing-queen.jpg?v=cover-5434345ff4b8",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/abba-dancing-queen.mp3?v=233941-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/abba-dancing-queen.mp3?v=233941-0",
+      "durationMs": 233941
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 37
+  },
+  {
+    "id": "earth-wind-fire-september",
+    "title": "September",
+    "artist": "Earth, Wind & Fire",
+    "aliases": [],
+    "artistAliases": [
+      "Earth Wind and Fire"
+    ],
+    "album": "The Best Of Earth, Wind & Fire Vol. 1",
+    "spotifyUrl": "https://open.spotify.com/track/2grjqo0Frpf2okIBiifQKs",
+    "releaseYear": 1978,
+    "genres": [
+      "disco",
+      "funk"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/earth-wind-fire-september.jpg?v=cover-93001100537e",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/earth-wind-fire-september.mp3?v=215093-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/earth-wind-fire-september.mp3?v=215093-0",
+      "durationMs": 215093
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 38
+  },
+  {
+    "id": "eurythmics-sweet-dreams",
+    "title": "Sweet Dreams (Are Made of This)",
+    "artist": "Eurythmics",
+    "aliases": [
+      "Sweet Dreams"
+    ],
+    "artistAliases": [],
+    "releaseYear": 1983,
+    "genres": [
+      "synth-pop",
+      "new wave"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eurythmics-sweet-dreams.jpg?v=291561-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/eurythmics-sweet-dreams.mp3?v=291561-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/eurythmics-sweet-dreams.mp3?v=291561-1000",
+      "durationMs": 291561
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 39
+  },
+  {
+    "id": "george-michael-careless-whisper",
+    "title": "Careless Whisper",
+    "artist": "George Michael",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Make It Big",
+    "spotifyUrl": "https://open.spotify.com/track/6KsgCYcZKPcBRDNGhiZWRR",
+    "releaseYear": 1984,
+    "genres": [
+      "pop",
+      "soul"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/george-michael-careless-whisper.jpg?v=cover-6e7d1a14d3eb",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/george-michael-careless-whisper.mp3?v=302600-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/george-michael-careless-whisper.mp3?v=302600-0",
+      "durationMs": 302600
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 40
+  },
+  {
+    "id": "the-cranberries-zombie",
+    "title": "Zombie",
+    "artist": "The Cranberries",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Gold",
+    "spotifyUrl": "https://open.spotify.com/track/49wOjOkS4pBK3PQnPnNYjb",
+    "releaseYear": 1994,
+    "genres": [
+      "alternative rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-cranberries-zombie.jpg?v=cover-6a3987635fa2",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-cranberries-zombie.mp3?v=306131-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-cranberries-zombie.mp3?v=306131-1000",
+      "durationMs": 306131
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 41
+  },
+  {
+    "id": "goo-goo-dolls-iris",
+    "title": "Iris",
+    "artist": "Goo Goo Dolls",
+    "aliases": [],
+    "artistAliases": [],
+    "releaseYear": 1998,
+    "genres": [
+      "alternative rock",
+      "pop rock"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/goo-goo-dolls-iris.jpg?v=289907-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/goo-goo-dolls-iris.mp3?v=289907-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/goo-goo-dolls-iris.mp3?v=289907-0",
+      "durationMs": 289907
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 42
+  },
+  {
+    "id": "tlc-no-scrubs",
+    "title": "No Scrubs",
+    "artist": "TLC",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Fanmail",
+    "spotifyUrl": "https://open.spotify.com/track/1KGi9sZVMeszgZOWivFpxs",
+    "releaseYear": 1999,
+    "genres": [
+      "r&b",
+      "pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tlc-no-scrubs.jpg?v=cover-fa26048b2eae",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tlc-no-scrubs.mp3?v=214891-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tlc-no-scrubs.mp3?v=214891-0",
+      "durationMs": 214891
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 43
+  },
+  {
+    "id": "britney-spears-toxic",
+    "title": "Toxic",
+    "artist": "Britney Spears",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "In The Zone",
+    "spotifyUrl": "https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak",
+    "releaseYear": 2003,
+    "genres": [
+      "pop",
+      "dance-pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/britney-spears-toxic.jpg?v=cover-a472f121be30",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/britney-spears-toxic.mp3?v=199080-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/britney-spears-toxic.mp3?v=199080-0",
+      "durationMs": 199080
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 44
+  },
+  {
+    "id": "alexandra-stan-mr-saxobeat",
+    "title": "Mr. Saxobeat",
+    "artist": "Alexandra Stan",
+    "aliases": [
+      "Mister Saxobeat"
+    ],
+    "artistAliases": [],
+    "releaseYear": 2011,
+    "genres": [
+      "dance-pop",
+      "electronic"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alexandra-stan-mr-saxobeat.jpg?v=193504-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alexandra-stan-mr-saxobeat.mp3?v=193504-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/alexandra-stan-mr-saxobeat.mp3?v=193504-0",
+      "durationMs": 193504
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 45
+  },
+  {
+    "id": "nelly-furtado-timbaland-promiscuous",
+    "title": "Promiscuous",
+    "artist": "Nelly Furtado feat. Timbaland",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Loose",
+    "spotifyUrl": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN",
+    "releaseYear": 2006,
+    "genres": [
+      "pop",
+      "r&b"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/nelly-furtado-timbaland-promiscuous.jpg?v=cover-b750f50020cd",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nelly-furtado-timbaland-promiscuous.mp3?v=241661-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nelly-furtado-timbaland-promiscuous.mp3?v=241661-1000",
+      "durationMs": 241661
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 46
+  },
+  {
+    "id": "miley-cyrus-party-in-the-usa",
+    "title": "Party in the U.S.A.",
+    "artist": "Miley Cyrus",
+    "aliases": [
+      "Party in the USA"
+    ],
+    "artistAliases": [],
+    "album": "The Time Of Our Lives",
+    "spotifyUrl": "https://open.spotify.com/track/5Q0Nhxo0l2bP3pNjpGJwV1",
+    "releaseYear": 2009,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/miley-cyrus-party-in-the-usa.jpg?v=cover-ebbdad1f55f1",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-party-in-the-usa.mp3?v=203231-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-party-in-the-usa.mp3?v=203231-2000",
+      "durationMs": 203231
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 47
+  },
+  {
+    "id": "lady-gaga-just-dance",
+    "title": "Just Dance",
+    "artist": "Lady Gaga feat. Colby O'Donis",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "The Fame",
+    "spotifyUrl": "https://open.spotify.com/track/2x7MyWybabEz6Y6wvHuwGE",
+    "releaseYear": 2008,
+    "genres": [
+      "pop",
+      "dance-pop"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lady-gaga-just-dance.jpg?v=cover-085559ee2137",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-just-dance.mp3?v=245771-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lady-gaga-just-dance.mp3?v=245771-1000",
+      "durationMs": 245771
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 48
+  },
+  {
+    "id": "stromae-alors-on-danse",
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "aliases": [],
+    "artistAliases": [],
+    "releaseYear": 2009,
+    "genres": [
+      "electronic",
+      "dance"
+    ],
     "difficulty": "hard",
-    "familiarity": 55,
-    "introRecognition": 48,
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-alors-on-danse.jpg?v=233790-1000",
     "audio": {
-      "kind": "synth",
-      "notes": [220, 233.08, 293.66, 277.18],
-      "noteLengthMs": 460
-    }
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-alors-on-danse.mp3?v=233790-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-alors-on-danse.mp3?v=233790-1000",
+      "durationMs": 233790
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 49
   },
   {
-    "id": "demo-glass-radio",
-    "title": "Glass Radio",
-    "artist": "Songless Demo",
-    "releaseYear": 2026,
-    "genres": ["demo"],
+    "id": "luis-fonsi-daddy-yankee-despacito",
+    "title": "Despacito",
+    "artist": "Luis Fonsi feat. Daddy Yankee",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "VIDA",
+    "spotifyUrl": "https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb",
+    "releaseYear": 2017,
+    "genres": [
+      "reggaeton",
+      "latin pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/luis-fonsi-daddy-yankee-despacito.jpg?v=cover-c1e465f4fe94",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
+      "durationMs": 227346
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 50
+  },
+  {
+    "id": "psy-gangnam-style",
+    "title": "Gangnam Style",
+    "artist": "PSY",
+    "aliases": [
+      "강남스타일"
+    ],
+    "artistAliases": [
+      "싸이"
+    ],
+    "album": "Minidisco Hits - Die beste Faschings-Party für Kinder",
+    "spotifyUrl": "https://open.spotify.com/track/7tVsrYuRjvGei6hDOUjdPh",
+    "releaseYear": 2012,
+    "genres": [
+      "k-pop",
+      "dance"
+    ],
+    "difficulty": "hard",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/psy-gangnam-style.jpg?v=cover-5be46cb24510",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/psy-gangnam-style.mp3?v=248344-4000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/psy-gangnam-style.mp3?v=248344-4000",
+      "durationMs": 248344
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 51
+  },
+  {
+    "id": "don-omar-lucenzo-danza-kuduro",
+    "title": "Danza Kuduro",
+    "artist": "Don Omar feat. Lucenzo",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Meet The Orphans",
+    "spotifyUrl": "https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw",
+    "releaseYear": 2010,
+    "genres": [
+      "reggaeton",
+      "dance"
+    ],
+    "difficulty": "hard",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/don-omar-lucenzo-danza-kuduro.jpg?v=cover-c55aa2e9c373",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/don-omar-lucenzo-danza-kuduro.mp3?v=198647-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/don-omar-lucenzo-danza-kuduro.mp3?v=198647-0",
+      "durationMs": 198647
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 52
+  },
+  {
+    "id": "rema-selena-gomez-calm-down",
+    "title": "Calm Down",
+    "artist": "Rema & Selena Gomez",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Rave & Roses Ultra",
+    "spotifyUrl": "https://open.spotify.com/track/1s7oOCT8vauUh01PbJD6ps",
+    "releaseYear": 2022,
+    "genres": [
+      "afrobeats",
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/rema-selena-gomez-calm-down.jpg?v=cover-d698fbc1f31d",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rema-selena-gomez-calm-down.mp3?v=239293-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/rema-selena-gomez-calm-down.mp3?v=239293-0",
+      "durationMs": 239293
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 53
+  },
+  {
+    "id": "stromae-papaoutai",
+    "title": "Papaoutai",
+    "artist": "Stromae",
+    "aliases": [
+      "Papa où t'es"
+    ],
+    "artistAliases": [],
+    "album": "racine carrée",
+    "spotifyUrl": "https://open.spotify.com/track/34dx8DACTJsc3rsJdaEIQw",
+    "releaseYear": 2013,
+    "genres": [
+      "electronic",
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/stromae-papaoutai.jpg?v=cover-5bb6448de52b",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=231380-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=231380-0",
+      "durationMs": 231380
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 54
+  },
+  {
+    "id": "j-balvin-willy-william-mi-gente",
+    "title": "Mi Gente",
+    "artist": "J Balvin & Willy William",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Vibras",
+    "spotifyUrl": "https://open.spotify.com/track/7COfe3P7KgfwDwIRB8LIDw",
+    "releaseYear": 2017,
+    "genres": [
+      "reggaeton",
+      "dance"
+    ],
+    "difficulty": "hard",
+    "familiarity": 86,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/j-balvin-willy-william-mi-gente.jpg?v=cover-b7792eef2471",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/j-balvin-willy-william-mi-gente.mp3?v=185841-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/j-balvin-willy-william-mi-gente.mp3?v=185841-0",
+      "durationMs": 185841
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 86,
+    "_rank": 55
+  },
+  {
+    "id": "lady-gaga-bruno-mars-die-with-a-smile",
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "MAYHEM",
+    "spotifyUrl": "https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ",
+    "releaseYear": 2024,
+    "genres": [
+      "pop",
+      "soft rock"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lady-gaga-bruno-mars-die-with-a-smile.jpg?v=cover-bb7d4b0b8075",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-bruno-mars-die-with-a-smile.mp3?v=251717-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lady-gaga-bruno-mars-die-with-a-smile.mp3?v=251717-0",
+      "durationMs": 251717
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 56
+  },
+  {
+    "id": "billie-eilish-birds-of-a-feather",
+    "title": "BIRDS OF A FEATHER",
+    "artist": "Billie Eilish",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "HIT ME HARD AND SOFT",
+    "spotifyUrl": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB",
+    "releaseYear": 2024,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/billie-eilish-birds-of-a-feather.jpg?v=cover-302a01ad00fc",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-birds-of-a-feather.mp3?v=210047-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-birds-of-a-feather.mp3?v=210047-1000",
+      "durationMs": 210047
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 57
+  },
+  {
+    "id": "rose-bruno-mars-apt",
+    "title": "APT.",
+    "artist": "ROSÉ & Bruno Mars",
+    "aliases": [
+      "Apateu",
+      "아파트"
+    ],
+    "artistAliases": [
+      "Rose and Bruno Mars"
+    ],
+    "album": "rosie",
+    "spotifyUrl": "https://open.spotify.com/track/4wJ5Qq0jBN4ajy7ouZIV1c",
+    "releaseYear": 2024,
+    "genres": [
+      "pop",
+      "pop rock"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/rose-bruno-mars-apt.jpg?v=cover-8eedd9cf74fe",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rose-bruno-mars-apt.mp3?v=175102-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/rose-bruno-mars-apt.mp3?v=175102-0",
+      "durationMs": 175102
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 58
+  },
+  {
+    "id": "alex-warren-ordinary",
+    "title": "Ordinary",
+    "artist": "Alex Warren",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "You'll Be Alright, Kid (Chapter 1)",
+    "spotifyUrl": "https://open.spotify.com/track/2RkZ5LkEzeHGRsmDqKwmaJ",
+    "releaseYear": 2025,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/alex-warren-ordinary.jpg?v=cover-b0ac3ac8b733",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alex-warren-ordinary.mp3?v=186085-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/alex-warren-ordinary.mp3?v=186085-0",
+      "durationMs": 186085
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 59
+  },
+  {
+    "id": "kendrick-lamar-sza-luther",
+    "title": "luther",
+    "artist": "Kendrick Lamar & SZA",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "GNX",
+    "spotifyUrl": "https://open.spotify.com/track/45J4avUb9Ni0bnETYaYFVJ",
+    "releaseYear": 2024,
+    "genres": [
+      "hip-hop",
+      "r&b"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/kendrick-lamar-sza-luther.jpg?v=cover-f144ba352f28",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-sza-luther.mp3?v=177598-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-sza-luther.mp3?v=177598-0",
+      "durationMs": 177598
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 60
+  },
+  {
+    "id": "sabrina-carpenter-espresso",
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Short n' Sweet",
+    "spotifyUrl": "https://open.spotify.com/track/2HRqTpkrJO5ggZyyK6NPWz",
+    "releaseYear": 2024,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sabrina-carpenter-espresso.jpg?v=cover-1855bde832dc",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sabrina-carpenter-espresso.mp3?v=175439-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sabrina-carpenter-espresso.mp3?v=175439-0",
+      "durationMs": 175439
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 61
+  },
+  {
+    "id": "benson-boone-beautiful-things",
+    "title": "Beautiful Things",
+    "artist": "Benson Boone",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Fireworks & Rollerblades",
+    "spotifyUrl": "https://open.spotify.com/track/3xkHsmpQCBMytMJNiDf3Ii",
+    "releaseYear": 2024,
+    "genres": [
+      "pop rock"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/benson-boone-beautiful-things.jpg?v=cover-e98915207331",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/benson-boone-beautiful-things.mp3?v=179883-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/benson-boone-beautiful-things.mp3?v=179883-0",
+      "durationMs": 179883
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 62
+  },
+  {
+    "id": "chappell-roan-pink-pony-club",
+    "title": "Pink Pony Club",
+    "artist": "Chappell Roan",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "The Rise and Fall of a Midwest Princess",
+    "spotifyUrl": "https://open.spotify.com/track/1k2pQc5i348DCHwbn5KTdc",
+    "releaseYear": 2020,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/chappell-roan-pink-pony-club.jpg?v=cover-244e90c50969",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/chappell-roan-pink-pony-club.mp3?v=280323-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/chappell-roan-pink-pony-club.mp3?v=280323-0",
+      "durationMs": 280323
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 63
+  },
+  {
+    "id": "hozier-too-sweet",
+    "title": "Too Sweet",
+    "artist": "Hozier",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Unreal Unearth: Unaired",
+    "spotifyUrl": "https://open.spotify.com/track/76JKIsdKrAfWUMjaA0u7v5",
+    "releaseYear": 2024,
+    "genres": [
+      "pop rock",
+      "soul"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/hozier-too-sweet.jpg?v=cover-cdf1e223cafe",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hozier-too-sweet.mp3?v=251437-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/hozier-too-sweet.mp3?v=251437-0",
+      "durationMs": 251437
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 64
+  },
+  {
+    "id": "shaboozey-a-bar-song-tipsy",
+    "title": "A Bar Song (Tipsy)",
+    "artist": "Shaboozey",
+    "aliases": [
+      "A Bar Song"
+    ],
+    "artistAliases": [],
+    "album": "Where I've Been, Isn't Where I'm Going",
+    "spotifyUrl": "https://open.spotify.com/track/7wd9kz7UXhJr8pgdqpzKu5",
+    "releaseYear": 2024,
+    "genres": [
+      "country",
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/shaboozey-a-bar-song-tipsy.jpg?v=cover-bb8a3839915a",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shaboozey-a-bar-song-tipsy.mp3?v=171292-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shaboozey-a-bar-song-tipsy.mp3?v=171292-0",
+      "durationMs": 171292
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 65
+  },
+  {
+    "id": "chappell-roan-good-luck-babe",
+    "title": "Good Luck, Babe!",
+    "artist": "Chappell Roan",
+    "aliases": [
+      "Good Luck Babe"
+    ],
+    "artistAliases": [],
+    "album": "Good Luck, Babe!",
+    "spotifyUrl": "https://open.spotify.com/track/0WbMK4wrZ1wFSty9F7FCgu",
+    "releaseYear": 2024,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "hard",
+    "familiarity": 85,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/chappell-roan-good-luck-babe.jpg?v=cover-4a77ca162310",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/chappell-roan-good-luck-babe.mp3?v=218256-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/chappell-roan-good-luck-babe.mp3?v=218256-0",
+      "durationMs": 218256
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 85,
+    "_rank": 66
+  },
+  {
+    "id": "timbaland-onerepublic-apologize",
+    "title": "Apologize",
+    "artist": "Timbaland feat. OneRepublic",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Shock Value",
+    "spotifyUrl": "https://open.spotify.com/track/6ucR4KfvsBFWCMVFDvyKKl",
+    "releaseYear": 2007,
+    "genres": [
+      "pop",
+      "r&b"
+    ],
+    "difficulty": "hard",
+    "familiarity": 80,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/timbaland-onerepublic-apologize.jpg?v=cover-535066bc6df8",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/timbaland-onerepublic-apologize.mp3?v=187675-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/timbaland-onerepublic-apologize.mp3?v=187675-1000",
+      "durationMs": 187675
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 80,
+    "_rank": 67
+  },
+  {
+    "id": "gnarls-barkley-crazy",
+    "title": "Crazy",
+    "artist": "Gnarls Barkley",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "100 Greatest Summer Songs",
+    "spotifyUrl": "https://open.spotify.com/track/0BtXtxmKBm1HwGnM3kO3rY",
+    "releaseYear": 2006,
+    "genres": [
+      "soul",
+      "alternative"
+    ],
+    "difficulty": "hard",
+    "familiarity": 80,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/gnarls-barkley-crazy.jpg?v=cover-a3db8d00607d",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gnarls-barkley-crazy.mp3?v=178334-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gnarls-barkley-crazy.mp3?v=178334-2000",
+      "durationMs": 178334
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 80,
+    "_rank": 68
+  },
+  {
+    "id": "the-rare-occasions-notion",
+    "title": "Notion",
+    "artist": "The Rare Occasions",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Notion",
+    "spotifyUrl": "https://open.spotify.com/track/0sTlGEld0h8kIPZaKDYUf4",
+    "releaseYear": 2016,
+    "genres": [
+      "indie rock"
+    ],
+    "difficulty": "hard",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-rare-occasions-notion.jpg?v=cover-bbe7c78780d0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-rare-occasions-notion.mp3?v=195117-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-rare-occasions-notion.mp3?v=195117-0",
+      "durationMs": 195117
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 69
+  },
+  {
+    "id": "daniel-caesar-her-best-part",
+    "title": "Best Part",
+    "artist": "Daniel Caesar feat. H.E.R.",
+    "aliases": [],
+    "artistAliases": [
+      "Daniel Caesar featuring HER"
+    ],
+    "album": "Freudian",
+    "spotifyUrl": "https://open.spotify.com/track/1Q7EgiMOuwDcB0PJC6AzON",
+    "releaseYear": 2017,
+    "genres": [
+      "r&b"
+    ],
+    "difficulty": "hard",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/daniel-caesar-her-best-part.jpg?v=cover-57c6c9358187",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-her-best-part.mp3?v=210012-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-her-best-part.mp3?v=210012-1000",
+      "durationMs": 210012
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 70
+  },
+  {
+    "id": "daniel-caesar-kali-uchis-get-you",
+    "title": "Get You",
+    "artist": "Daniel Caesar feat. Kali Uchis",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Freudian",
+    "spotifyUrl": "https://open.spotify.com/track/2uP6t2J5MEwhr9rDkAAzwh",
+    "releaseYear": 2016,
+    "genres": [
+      "r&b"
+    ],
+    "difficulty": "hard",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/daniel-caesar-kali-uchis-get-you.jpg?v=cover-57c6c9358187",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-kali-uchis-get-you.mp3?v=269955-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-kali-uchis-get-you.mp3?v=269955-1000",
+      "durationMs": 269955
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 71
+  },
+  {
+    "id": "frank-ocean-nights",
+    "title": "Nights",
+    "artist": "Frank Ocean",
+    "aliases": [],
+    "artistAliases": [
+      "Blonded"
+    ],
+    "album": "Blonde",
+    "spotifyUrl": "https://open.spotify.com/track/7eqoqGkKwgOaWNNHx90uEZ",
+    "releaseYear": 2016,
+    "genres": [
+      "r&b",
+      "alternative"
+    ],
+    "difficulty": "hard",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/frank-ocean-nights.jpg?v=cover-18832d55e82e",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/frank-ocean-nights.mp3?v=307154-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/frank-ocean-nights.mp3?v=307154-0",
+      "durationMs": 307154
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 72
+  },
+  {
+    "id": "frank-ocean-pink-white",
+    "title": "Pink + White",
+    "artist": "Frank Ocean",
+    "aliases": [
+      "Pink and White"
+    ],
+    "artistAliases": [
+      "Blonded"
+    ],
+    "album": "Blonde",
+    "spotifyUrl": "https://open.spotify.com/track/3xKsf9qdS1CyvXSMEid6g8",
+    "releaseYear": 2016,
+    "genres": [
+      "r&b",
+      "alternative"
+    ],
     "difficulty": "expert",
-    "familiarity": 30,
-    "introRecognition": 35,
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/frank-ocean-pink-white.jpg?v=cover-18832d55e82e",
     "audio": {
-      "kind": "synth",
-      "notes": [349.23, 311.13, 261.63, 207.65, 233.08],
-      "noteLengthMs": 270
-    }
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/frank-ocean-pink-white.mp3?v=184530-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/frank-ocean-pink-white.mp3?v=184530-0",
+      "durationMs": 184530
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 73
   },
   {
-    "id": "demo-unknown-frequency",
-    "title": "Unknown Frequency",
-    "artist": "Songless Demo",
-    "releaseYear": 2026,
-    "genres": ["demo"],
-    "difficulty": "impossible",
-    "familiarity": 5,
-    "introRecognition": 10,
+    "id": "joji-slow-dancing-in-the-dark",
+    "title": "SLOW DANCING IN THE DARK",
+    "artist": "Joji",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "BALLADS 1",
+    "spotifyUrl": "https://open.spotify.com/track/6rY5FAWxCdAGllYEOZMbjW",
+    "releaseYear": 2018,
+    "genres": [
+      "r&b",
+      "alternative"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/joji-slow-dancing-in-the-dark.jpg?v=cover-bd4dbffc1c27",
     "audio": {
-      "kind": "synth",
-      "notes": [185, 196, 207.65, 196],
-      "noteLengthMs": 510
-    }
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/joji-slow-dancing-in-the-dark.mp3?v=209274-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/joji-slow-dancing-in-the-dark.mp3?v=209274-0",
+      "durationMs": 209274
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 74
+  },
+  {
+    "id": "joji-glimpse-of-us",
+    "title": "Glimpse of Us",
+    "artist": "Joji",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "SMITHEREENS",
+    "spotifyUrl": "https://open.spotify.com/track/2mlNgAeIBnL78ZriXgrRHz",
+    "releaseYear": 2022,
+    "genres": [
+      "pop",
+      "r&b"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/joji-glimpse-of-us.jpg?v=cover-8cb43812fdc7",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/joji-glimpse-of-us.mp3?v=234034-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/joji-glimpse-of-us.mp3?v=234034-0",
+      "durationMs": 234034
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 75
+  },
+  {
+    "id": "tyler-the-creator-kali-uchis-see-you-again",
+    "title": "See You Again",
+    "artist": "Tyler, The Creator feat. Kali Uchis",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Flower Boy",
+    "spotifyUrl": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
+    "releaseYear": 2017,
+    "genres": [
+      "hip-hop",
+      "r&b"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tyler-the-creator-kali-uchis-see-you-again.jpg?v=cover-1fde8d9586f4",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-the-creator-kali-uchis-see-you-again.mp3?v=202954-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tyler-the-creator-kali-uchis-see-you-again.mp3?v=202954-0",
+      "durationMs": 202954
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 76
+  },
+  {
+    "id": "tyler-the-creator-earfquake",
+    "title": "EARFQUAKE",
+    "artist": "Tyler, The Creator",
+    "aliases": [
+      "Earthquake"
+    ],
+    "artistAliases": [],
+    "album": "IGOR",
+    "spotifyUrl": "https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0",
+    "releaseYear": 2019,
+    "genres": [
+      "hip-hop",
+      "neo soul"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tyler-the-creator-earfquake.jpg?v=cover-073cbdc1f830",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-the-creator-earfquake.mp3?v=266091-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tyler-the-creator-earfquake.mp3?v=266091-0",
+      "durationMs": 266091
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 77
+  },
+  {
+    "id": "tv-girl-not-allowed",
+    "title": "Not Allowed",
+    "artist": "TV Girl",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Who Really Cares",
+    "spotifyUrl": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB",
+    "releaseYear": 2014,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tv-girl-not-allowed.jpg?v=cover-89f9bf4387dd",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tv-girl-not-allowed.mp3?v=167864-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tv-girl-not-allowed.mp3?v=167864-0",
+      "durationMs": 167864
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 78
+  },
+  {
+    "id": "steve-lacy-dark-red",
+    "title": "Dark Red",
+    "artist": "Steve Lacy",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Dark Red",
+    "spotifyUrl": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa",
+    "releaseYear": 2017,
+    "genres": [
+      "r&b",
+      "indie"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/steve-lacy-dark-red.jpg?v=cover-1d369c27925c",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/steve-lacy-dark-red.mp3?v=173603-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/steve-lacy-dark-red.mp3?v=173603-1000",
+      "durationMs": 173603
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 79
+  },
+  {
+    "id": "steve-lacy-bad-habit",
+    "title": "Bad Habit",
+    "artist": "Steve Lacy",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Gemini Rights",
+    "spotifyUrl": "https://open.spotify.com/track/4k6Uh1HXdhtusDW5y8Gbvy",
+    "releaseYear": 2022,
+    "genres": [
+      "r&b",
+      "pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/steve-lacy-bad-habit.jpg?v=cover-c28fd897e462",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/steve-lacy-bad-habit.mp3?v=232120-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/steve-lacy-bad-habit.mp3?v=232120-0",
+      "durationMs": 232120
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 80
+  },
+  {
+    "id": "clairo-sofia",
+    "title": "Sofia",
+    "artist": "Clairo",
+    "aliases": [],
+    "artistAliases": [
+      "Claire Cottrill"
+    ],
+    "album": "Immunity",
+    "spotifyUrl": "https://open.spotify.com/track/1zHUEIQ6yzaWBzhNCV1SGW",
+    "releaseYear": 2019,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/clairo-sofia.jpg?v=cover-6367bae8d8aa",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-sofia.mp3?v=188430-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/clairo-sofia.mp3?v=188430-0",
+      "durationMs": 188430
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 81
+  },
+  {
+    "id": "mgmt-electric-feel",
+    "title": "Electric Feel",
+    "artist": "MGMT",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Oracular Spectacular",
+    "spotifyUrl": "https://open.spotify.com/track/3FtYbEfBqAlGO46NUDQSAt",
+    "releaseYear": 2007,
+    "genres": [
+      "indie pop",
+      "psychedelic pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/mgmt-electric-feel.jpg?v=cover-2c74a4a1df5a",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-electric-feel.mp3?v=227439-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mgmt-electric-feel.mp3?v=227439-1000",
+      "durationMs": 227439
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 82
+  },
+  {
+    "id": "d4vd-romantic-homicide",
+    "title": "Romantic Homicide",
+    "artist": "d4vd",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Romantic Homicide",
+    "spotifyUrl": "https://open.spotify.com/track/1xK59OXxi2TAAAbmZK0kBL",
+    "releaseYear": 2022,
+    "genres": [
+      "alternative",
+      "indie"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/d4vd-romantic-homicide.jpg?v=cover-d37862f92d67",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/d4vd-romantic-homicide.mp3?v=131645-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/d4vd-romantic-homicide.mp3?v=131645-1000",
+      "durationMs": 131645
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 83
+  },
+  {
+    "id": "kanye-west-heartless",
+    "title": "Heartless",
+    "artist": "Kanye West",
+    "aliases": [],
+    "artistAliases": [
+      "Ye"
+    ],
+    "album": "808s & Heartbreak",
+    "spotifyUrl": "https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5",
+    "releaseYear": 2008,
+    "genres": [
+      "hip-hop",
+      "pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/kanye-west-heartless.jpg?v=cover-8efc98307427",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kanye-west-heartless.mp3?v=219695-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kanye-west-heartless.mp3?v=219695-1000",
+      "durationMs": 219695
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 84
+  },
+  {
+    "id": "tame-impala-the-less-i-know-the-better",
+    "title": "The Less I Know the Better",
+    "artist": "Tame Impala",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Currents",
+    "spotifyUrl": "https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ",
+    "releaseYear": 2015,
+    "genres": [
+      "psychedelic pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tame-impala-the-less-i-know-the-better.jpg?v=cover-110c3e6f3bac",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-the-less-i-know-the-better.mp3?v=216351-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-the-less-i-know-the-better.mp3?v=216351-1000",
+      "durationMs": 216351
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 85
+  },
+  {
+    "id": "beach-house-space-song",
+    "title": "Space Song",
+    "artist": "Beach House",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Depression Cherry",
+    "spotifyUrl": "https://open.spotify.com/track/7H0ya83CMmgFcOhw0UB6ow",
+    "releaseYear": 2015,
+    "genres": [
+      "dream pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/beach-house-space-song.jpg?v=cover-24f0d0dfd7c9",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/beach-house-space-song.mp3?v=320493-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/beach-house-space-song.mp3?v=320493-0",
+      "durationMs": 320493
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 86
+  },
+  {
+    "id": "cigarettes-after-sex-apocalypse",
+    "title": "Apocalypse",
+    "artist": "Cigarettes After Sex",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Cigarettes After Sex",
+    "spotifyUrl": "https://open.spotify.com/track/1oAwsWBovWRIp7qLMGPIet",
+    "releaseYear": 2017,
+    "genres": [
+      "dream pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/cigarettes-after-sex-apocalypse.jpg?v=cover-ed391df0624a",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cigarettes-after-sex-apocalypse.mp3?v=290075-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cigarettes-after-sex-apocalypse.mp3?v=290075-0",
+      "durationMs": 290075
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 87
+  },
+  {
+    "id": "mgmt-kids",
+    "title": "Kids",
+    "artist": "MGMT",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Oracular Spectacular",
+    "spotifyUrl": "https://open.spotify.com/track/1jJci4qxiYcOHhQR247rEU",
+    "releaseYear": 2007,
+    "genres": [
+      "indie pop",
+      "synth-pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 79,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/mgmt-kids.jpg?v=cover-2c74a4a1df5a",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-kids.mp3?v=331307-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mgmt-kids.mp3?v=331307-0",
+      "durationMs": 331307
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 79,
+    "_rank": 88
+  },
+  {
+    "id": "master-kg-nomcebo-zikode-jerusalema",
+    "title": "Jerusalema",
+    "artist": "Master KG feat. Nomcebo Zikode",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Jerusalema",
+    "spotifyUrl": "https://open.spotify.com/track/2MlOUXmcofMackX3bxfSwi",
+    "releaseYear": 2019,
+    "genres": [
+      "afro house",
+      "gospel"
+    ],
+    "difficulty": "expert",
+    "familiarity": 78,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/master-kg-nomcebo-zikode-jerusalema.jpg?v=cover-96db5388bf49",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/master-kg-nomcebo-zikode-jerusalema.mp3?v=343253-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/master-kg-nomcebo-zikode-jerusalema.mp3?v=343253-0",
+      "durationMs": 343253
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 78,
+    "_rank": 89
+  },
+  {
+    "id": "o-zone-dragostea-din-tei",
+    "title": "Dragostea Din Tei",
+    "artist": "O-Zone",
+    "aliases": [
+      "Numa Numa"
+    ],
+    "artistAliases": [],
+    "album": "DiscO-Zone",
+    "spotifyUrl": "https://open.spotify.com/track/52Zr0sinhWTCRrQhRRY4EP",
+    "releaseYear": 2003,
+    "genres": [
+      "eurodance",
+      "pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 78,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/o-zone-dragostea-din-tei.jpg?v=cover-aed495c538a6",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/o-zone-dragostea-din-tei.mp3?v=292437-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/o-zone-dragostea-din-tei.mp3?v=292437-0",
+      "durationMs": 292437
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 78,
+    "_rank": 90
+  },
+  {
+    "id": "indila-derniere-danse",
+    "title": "Dernière danse",
+    "artist": "Indila",
+    "aliases": [
+      "Derniere danse"
+    ],
+    "artistAliases": [],
+    "album": "Mini World",
+    "spotifyUrl": "https://open.spotify.com/track/65uoaqX5qcjXZRheAj1qQT",
+    "releaseYear": 2013,
+    "genres": [
+      "french pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 78,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/indila-derniere-danse.jpg?v=cover-992fbef1ca83",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/indila-derniere-danse.mp3?v=212613-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/indila-derniere-danse.mp3?v=212613-1000",
+      "durationMs": 212613
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 78,
+    "_rank": 91
+  },
+  {
+    "id": "bad-bunny-dtmf",
+    "title": "DtMF",
+    "artist": "Bad Bunny",
+    "aliases": [
+      "Debí Tirar Más Fotos",
+      "Debi Tirar Mas Fotos"
+    ],
+    "artistAliases": [],
+    "album": "DeBÍ TiRAR MáS FOToS",
+    "spotifyUrl": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya",
+    "releaseYear": 2025,
+    "genres": [
+      "reggaeton",
+      "latin"
+    ],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/bad-bunny-dtmf.jpg?v=cover-feea065088bc",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bad-bunny-dtmf.mp3?v=240245-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bad-bunny-dtmf.mp3?v=240245-0",
+      "durationMs": 240245
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 92
+  },
+  {
+    "id": "sombr-back-to-friends",
+    "title": "back to friends",
+    "artist": "sombr",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "I Barely Know Her",
+    "spotifyUrl": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe",
+    "releaseYear": 2024,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sombr-back-to-friends.jpg?v=cover-3eecc220a64b",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sombr-back-to-friends.mp3?v=199054-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sombr-back-to-friends.mp3?v=199054-0",
+      "durationMs": 199054
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 93
+  },
+  {
+    "id": "huntrix-golden",
+    "title": "Golden",
+    "artist": "HUNTR/X: EJAE, AUDREY NUNA & REI AMI",
+    "aliases": [],
+    "artistAliases": [
+      "Huntrix"
+    ],
+    "releaseYear": 2025,
+    "genres": [
+      "k-pop",
+      "soundtrack"
+    ],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/huntrix-golden.jpg?v=193934-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/huntrix-golden.mp3?v=193934-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/huntrix-golden.mp3?v=193934-0",
+      "durationMs": 193934
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 94
+  },
+  {
+    "id": "gracie-abrams-thats-so-true",
+    "title": "That's So True",
+    "artist": "Gracie Abrams",
+    "aliases": [
+      "Thats So True"
+    ],
+    "artistAliases": [],
+    "album": "The Secret of Us (Deluxe)",
+    "spotifyUrl": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad",
+    "releaseYear": 2024,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/gracie-abrams-thats-so-true.jpg?v=cover-3a549c048767",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gracie-abrams-thats-so-true.mp3?v=166300-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gracie-abrams-thats-so-true.mp3?v=166300-0",
+      "durationMs": 166300
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 95
+  },
+  {
+    "id": "lola-young-messy",
+    "title": "Messy",
+    "artist": "Lola Young",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "This Wasn't Meant For You Anyway",
+    "spotifyUrl": "https://open.spotify.com/track/0jqcBJBa5qnk6Nx2Zm5poq",
+    "releaseYear": 2024,
+    "genres": [
+      "pop",
+      "soul"
+    ],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lola-young-messy.jpg?v=cover-aa3b15a6a02d",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lola-young-messy.mp3?v=284069-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lola-young-messy.mp3?v=284069-0",
+      "durationMs": 284069
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 96
+  },
+  {
+    "id": "tate-mcrae-sports-car",
+    "title": "Sports car",
+    "artist": "Tate McRae",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "So Close To What",
+    "spotifyUrl": "https://open.spotify.com/track/4il87YHqSV9UqbBkXM7z7m",
+    "releaseYear": 2025,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tate-mcrae-sports-car.jpg?v=cover-2491664807f6",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tate-mcrae-sports-car.mp3?v=187466-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tate-mcrae-sports-car.mp3?v=187466-0",
+      "durationMs": 187466
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 97
+  },
+  {
+    "id": "sabrina-carpenter-taste",
+    "title": "Taste",
+    "artist": "Sabrina Carpenter",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Short n' Sweet",
+    "spotifyUrl": "https://open.spotify.com/track/5G2f63n7IPVPPjfNIGih7Q",
+    "releaseYear": 2024,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sabrina-carpenter-taste.jpg?v=cover-1855bde832dc",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sabrina-carpenter-taste.mp3?v=157478-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sabrina-carpenter-taste.mp3?v=157478-0",
+      "durationMs": 157478
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 98
+  },
+  {
+    "id": "drake-nokia",
+    "title": "NOKIA",
+    "artist": "Drake",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "$ome $exy $ongs 4 U",
+    "spotifyUrl": "https://open.spotify.com/track/2u9S9JJ6hTZS3Vf22HOZKg",
+    "releaseYear": 2025,
+    "genres": [
+      "hip-hop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/drake-nokia.jpg?v=cover-8ecac6d8edc4",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-nokia.mp3?v=241023-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-nokia.mp3?v=241023-0",
+      "durationMs": 241023
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 99
+  },
+  {
+    "id": "the-weeknd-playboi-carti-timeless",
+    "title": "Timeless",
+    "artist": "The Weeknd & Playboi Carti",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Hurry Up Tomorrow",
+    "spotifyUrl": "https://open.spotify.com/track/0FIDCNYYjNvPVimz5icugS",
+    "releaseYear": 2024,
+    "genres": [
+      "r&b",
+      "hip-hop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-weeknd-playboi-carti-timeless.jpg?v=cover-7df8b27cb084",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-playboi-carti-timeless.mp3?v=256093-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-playboi-carti-timeless.mp3?v=256093-0",
+      "durationMs": 256093
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 100
+  },
+  {
+    "id": "teddy-swims-lose-control",
+    "title": "Lose Control",
+    "artist": "Teddy Swims",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "I've Tried Everything But Therapy (Part 1)",
+    "spotifyUrl": "https://open.spotify.com/track/17phhZDn6oGtzMe56NuWvj",
+    "releaseYear": 2023,
+    "genres": [
+      "soul",
+      "pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/teddy-swims-lose-control.jpg?v=cover-a117aef7d062",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/teddy-swims-lose-control.mp3?v=210721-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/teddy-swims-lose-control.mp3?v=210721-0",
+      "durationMs": 210721
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 101
+  },
+  {
+    "id": "doechii-anxiety",
+    "title": "Anxiety",
+    "artist": "Doechii",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Alligator Bites Never Heal (Extended)",
+    "spotifyUrl": "https://open.spotify.com/track/0J7UkOuMsJdffD6pEqDlbh",
+    "releaseYear": 2025,
+    "genres": [
+      "hip-hop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/doechii-anxiety.jpg?v=cover-751c26d5a54b",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=249302-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=249302-0",
+      "durationMs": 249302
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 102
+  },
+  {
+    "id": "sabrina-carpenter-manchild",
+    "title": "Manchild",
+    "artist": "Sabrina Carpenter",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Man’s Best Friend",
+    "spotifyUrl": "https://open.spotify.com/track/2BwO5K8Q7EPAJSGze3AAh9",
+    "releaseYear": 2025,
+    "genres": [
+      "pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sabrina-carpenter-manchild.jpg?v=cover-c9c15280c65e",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sabrina-carpenter-manchild.mp3?v=213646-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sabrina-carpenter-manchild.mp3?v=213646-0",
+      "durationMs": 213646
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 103
+  },
+  {
+    "id": "gigi-perez-sailor-song",
+    "title": "Sailor Song",
+    "artist": "Gigi Perez",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "At The Beach, In Every Life",
+    "spotifyUrl": "https://open.spotify.com/track/21IYMdzTrzSe191Cy5eMap",
+    "releaseYear": 2024,
+    "genres": [
+      "indie folk"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/gigi-perez-sailor-song.jpg?v=cover-a74184a80740",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gigi-perez-sailor-song.mp3?v=210918-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gigi-perez-sailor-song.mp3?v=210918-0",
+      "durationMs": 210918
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 104
+  },
+  {
+    "id": "charli-xcx-apple",
+    "title": "Apple",
+    "artist": "Charli xcx",
+    "aliases": [],
+    "artistAliases": [
+      "Charli XCX"
+    ],
+    "album": "BRAT",
+    "spotifyUrl": "https://open.spotify.com/track/19RybK6XDbAVpcdxSbZL1o",
+    "releaseYear": 2024,
+    "genres": [
+      "pop",
+      "electronic"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/charli-xcx-apple.jpg?v=cover-cb05235f6862",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/charli-xcx-apple.mp3?v=149704-5000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/charli-xcx-apple.mp3?v=149704-5000",
+      "durationMs": 149704
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 105
+  },
+  {
+    "id": "malcolm-todd-earrings",
+    "title": "Earrings",
+    "artist": "Malcolm Todd",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Sweet Boy",
+    "spotifyUrl": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ",
+    "releaseYear": 2024,
+    "genres": [
+      "alternative",
+      "r&b"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/malcolm-todd-earrings.jpg?v=cover-f22fa72dc8ee",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/malcolm-todd-earrings.mp3?v=151893-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/malcolm-todd-earrings.mp3?v=151893-0",
+      "durationMs": 151893
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 106
+  },
+  {
+    "id": "the-marias-no-one-noticed",
+    "title": "No One Noticed",
+    "artist": "The Marías",
+    "aliases": [],
+    "artistAliases": [
+      "The Marias"
+    ],
+    "album": "Submarine",
+    "spotifyUrl": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5",
+    "releaseYear": 2024,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-marias-no-one-noticed.jpg?v=cover-b9a473dd5bed",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-marias-no-one-noticed.mp3?v=235044-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-marias-no-one-noticed.mp3?v=235044-0",
+      "durationMs": 235044
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 107
+  },
+  {
+    "id": "djo-end-of-beginning",
+    "title": "End of Beginning",
+    "artist": "Djo",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "DECIDE",
+    "spotifyUrl": "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
+    "releaseYear": 2022,
+    "genres": [
+      "indie pop",
+      "synth-pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/djo-end-of-beginning.jpg?v=cover-c9cf713f73a9",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/djo-end-of-beginning.mp3?v=159301-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/djo-end-of-beginning.mp3?v=159301-0",
+      "durationMs": 159301
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 108
+  },
+  {
+    "id": "daniel-caesar-japanese-denim",
+    "title": "Japanese Denim",
+    "artist": "Daniel Caesar",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Get You - Single",
+    "spotifyUrl": "https://open.spotify.com/track/7IVukH71OXfAu3KudrrizN",
+    "releaseYear": 2016,
+    "genres": [
+      "r&b"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/daniel-caesar-japanese-denim.jpg?v=cover-4736efc8ca9a",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-japanese-denim.mp3?v=269978-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-japanese-denim.mp3?v=269978-1000",
+      "durationMs": 269978
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 109
+  },
+  {
+    "id": "frank-ocean-lost",
+    "title": "Lost",
+    "artist": "Frank Ocean",
+    "aliases": [],
+    "artistAliases": [
+      "Blonded"
+    ],
+    "album": "channel ORANGE",
+    "spotifyUrl": "https://open.spotify.com/track/3GZD6HmiNUhxXYf8Gch723",
+    "releaseYear": 2012,
+    "genres": [
+      "r&b"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/frank-ocean-lost.jpg?v=cover-8eefee24e90e",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/frank-ocean-lost.mp3?v=234243-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/frank-ocean-lost.mp3?v=234243-0",
+      "durationMs": 234243
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 110
+  },
+  {
+    "id": "joji-sanctuary",
+    "title": "Sanctuary",
+    "artist": "Joji",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Nectar",
+    "spotifyUrl": "https://open.spotify.com/track/4VQH4VluDUOsOuDxccTeyN",
+    "releaseYear": 2019,
+    "genres": [
+      "r&b",
+      "alternative"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/joji-sanctuary.jpg?v=cover-b4b3b0f2fe00",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/joji-sanctuary.mp3?v=180019-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/joji-sanctuary.mp3?v=180019-0",
+      "durationMs": 180019
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 111
+  },
+  {
+    "id": "tyler-the-creator-new-magic-wand",
+    "title": "NEW MAGIC WAND",
+    "artist": "Tyler, The Creator",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "IGOR",
+    "spotifyUrl": "https://open.spotify.com/track/0fv2KH6hac06J86hBUTcSf",
+    "releaseYear": 2019,
+    "genres": [
+      "hip-hop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tyler-the-creator-new-magic-wand.jpg?v=cover-073cbdc1f830",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-the-creator-new-magic-wand.mp3?v=195320-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tyler-the-creator-new-magic-wand.mp3?v=195320-0",
+      "durationMs": 195320
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 112
+  },
+  {
+    "id": "tv-girl-lovers-rock",
+    "title": "Lovers Rock",
+    "artist": "TV Girl",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "French Exit",
+    "spotifyUrl": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM",
+    "releaseYear": 2014,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tv-girl-lovers-rock.jpg?v=cover-dbb175d46be2",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tv-girl-lovers-rock.mp3?v=213920-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tv-girl-lovers-rock.mp3?v=213920-0",
+      "durationMs": 213920
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 113
+  },
+  {
+    "id": "tv-girl-cigarettes-out-the-window",
+    "title": "Cigarettes out the Window",
+    "artist": "TV Girl",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Who Really Cares",
+    "spotifyUrl": "https://open.spotify.com/track/6QeYSvYqYUsfBzsApbjDHO",
+    "releaseYear": 2016,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tv-girl-cigarettes-out-the-window.jpg?v=cover-89f9bf4387dd",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tv-girl-cigarettes-out-the-window.mp3?v=198961-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tv-girl-cigarettes-out-the-window.mp3?v=198961-0",
+      "durationMs": 198961
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 114
+  },
+  {
+    "id": "steve-lacy-some",
+    "title": "Some",
+    "artist": "Steve Lacy",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Steve Lacy's Demo",
+    "spotifyUrl": "https://open.spotify.com/track/1rL6TtfgBWSUhcXVZkrM26",
+    "releaseYear": 2016,
+    "genres": [
+      "r&b",
+      "indie"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/steve-lacy-some.jpg?v=cover-a2cc251f2cfd",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/steve-lacy-some.mp3?v=180696-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/steve-lacy-some.mp3?v=180696-0",
+      "durationMs": 180696
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 115
+  },
+  {
+    "id": "clairo-bags",
+    "title": "Bags",
+    "artist": "Clairo",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Immunity",
+    "spotifyUrl": "https://open.spotify.com/track/1wicceeNVtcnym2YjiOmyj",
+    "releaseYear": 2019,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/clairo-bags.jpg?v=cover-6367bae8d8aa",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-bags.mp3?v=260544-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/clairo-bags.mp3?v=260544-0",
+      "durationMs": 260544
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 116
+  },
+  {
+    "id": "cafune-tek-it",
+    "title": "Tek It",
+    "artist": "Cafuné",
+    "aliases": [],
+    "artistAliases": [
+      "Cafune"
+    ],
+    "album": "Running",
+    "spotifyUrl": "https://open.spotify.com/track/751srcHf5tUqcEa9pRCQwP",
+    "releaseYear": 2019,
+    "genres": [
+      "indie pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/cafune-tek-it.jpg?v=cover-a1ff6e75de0a",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cafune-tek-it.mp3?v=191019-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cafune-tek-it.mp3?v=191019-0",
+      "durationMs": 191019
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 117
+  },
+  {
+    "id": "tame-impala-borderline",
+    "title": "Borderline",
+    "artist": "Tame Impala",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "The Slow Rush",
+    "spotifyUrl": "https://open.spotify.com/track/5hM5arv9KDbCHS0k9uqwjr",
+    "releaseYear": 2019,
+    "genres": [
+      "psychedelic pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tame-impala-borderline.jpg?v=cover-5879b7090677",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-borderline.mp3?v=237807-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-borderline.mp3?v=237807-0",
+      "durationMs": 237807
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 118
+  },
+  {
+    "id": "tame-impala-let-it-happen",
+    "title": "Let It Happen",
+    "artist": "Tame Impala",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Currents",
+    "spotifyUrl": "https://open.spotify.com/track/2X485T9Z5Ly0xyaghN73ed",
+    "releaseYear": 2015,
+    "genres": [
+      "psychedelic pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 70,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tame-impala-let-it-happen.jpg?v=cover-110c3e6f3bac",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-let-it-happen.mp3?v=468257-6000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-let-it-happen.mp3?v=468257-6000",
+      "durationMs": 468257
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 70,
+    "_rank": 119
+  },
+  {
+    "id": "dominic-fike-white-keys",
+    "title": "White Keys",
+    "artist": "Dominic Fike",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "White Keys",
+    "spotifyUrl": "https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI",
+    "releaseYear": 2025,
+    "genres": [
+      "alternative pop"
+    ],
+    "difficulty": "impossible",
+    "familiarity": 61,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/dominic-fike-white-keys.jpg?v=cover-e5d441914ec8",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dominic-fike-white-keys.mp3?v=144080-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dominic-fike-white-keys.mp3?v=144080-0",
+      "durationMs": 144080
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 61,
+    "_rank": 120
   }
 ]
-

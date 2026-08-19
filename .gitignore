@@ -15,3 +15,5 @@ public/media/artwork/*
 public/review-catalog.json
 private-media/
 data/song-download-sources.local.json
+
+data/spotify-cache.local/

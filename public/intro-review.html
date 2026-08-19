@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Songless — Intro Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #050806;
+  --surface: #10140b;
+  --surface-soft: #15180f;
+  --line: #272b23;
+  --muted: #747b73;
+  --text: #dfe4df;
+  --text-dim: #9ea69d;
+  --easy: #22d875;
+  --medium: #ffd119;
+  --hard: #e17c21;
+  --expert: #d74842;
+  --impossible: #9a4de0;
+  --accent: #22d875;
+  --accent-rgb: 34, 216, 117;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.22, 1.35, 0.36, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(35, 49, 27, 0.15), transparent 40rem),
+    var(--bg);
+}
+
+button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+button:focus-visible { outline: 2px solid rgba(var(--accent-rgb), 0.72); outline-offset: 3px; }
+
+/* --- Layout --- */
+.review-shell {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  min-height: 100vh;
+}
+
+/* --- Header --- */
+.review-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.review-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.review-header .subtitle {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* --- Progress bar --- */
+.progress-bar-container {
+  margin-bottom: 32px;
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.progress-bar {
+  height: 6px;
+  background: var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.5s var(--ease-out);
+}
+
+/* --- Filter tabs --- */
+.filter-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.filter-tab {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: transparent;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+.filter-tab:hover { border-color: var(--text-dim); color: var(--text-dim); }
+.filter-tab.active {
+  background: rgba(var(--accent-rgb), 0.12);
+  border-color: rgba(var(--accent-rgb), 0.3);
+  color: var(--accent);
+}
+.filter-tab .count {
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
+/* --- Song list --- */
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+.song-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.song-row:hover { border-color: rgba(var(--accent-rgb), 0.25); background: var(--surface-soft); }
+.song-row.active {
+  border-color: rgba(var(--accent-rgb), 0.5);
+  background: rgba(var(--accent-rgb), 0.06);
+}
+.song-row.reviewed { opacity: 0.65; }
+.song-row.reviewed:hover { opacity: 0.85; }
+
+.song-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.song-info {
+  flex: 1;
+  min-width: 0;
+}
+.song-hidden-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+.song-revealed-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.song-revealed-artist {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.song-score-badge {
+  flex-shrink: 0;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: rgba(var(--accent-rgb), 0.12);
+  color: var(--accent);
+}
+.song-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.song-status-dot.pending { background: var(--line); }
+.song-status-dot.done { background: var(--accent); }
+
+/* --- Player panel --- */
+.player-panel {
+  position: sticky;
+  bottom: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 16px;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+  animation: slideUp 0.35s var(--ease-out);
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.player-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.player-song-number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.player-instructions {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* --- Audio controls --- */
+.audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.play-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(var(--accent-rgb), 0.4);
+  background: rgba(var(--accent-rgb), 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.play-btn:hover {
+  background: rgba(var(--accent-rgb), 0.16);
+  border-color: rgba(var(--accent-rgb), 0.6);
+  transform: scale(1.06);
+}
+.play-btn:active { transform: scale(0.96); }
+.play-btn svg { width: 20px; height: 20px; fill: var(--accent); }
+
+.timeline-container { flex: 1; }
+.timeline-bar {
+  height: 4px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.timeline-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.timeline-time {
+  font-size: 0.7rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+
+.replay-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: all 0.2s ease;
+}
+.replay-btn:hover { border-color: var(--text-dim); color: var(--text); }
+
+/* --- Recognition buttons --- */
+.recognition-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.recog-btn {
+  padding: 10px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.recog-btn:hover {
+  border-color: rgba(var(--accent-rgb), 0.4);
+  background: rgba(var(--accent-rgb), 0.06);
+}
+.recog-btn.selected {
+  border-color: rgba(var(--accent-rgb), 0.6);
+  background: rgba(var(--accent-rgb), 0.12);
+}
+.recog-btn .recog-time {
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+.recog-btn .recog-score {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+.recog-btn.selected .recog-score { color: var(--accent); }
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: all 0.2s ease;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.submit-btn.ready { opacity: 1; pointer-events: auto; }
+.submit-btn.ready:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.submit-btn.ready:active { transform: translateY(0); }
+
+/* --- Revealed panel --- */
+.revealed-panel {
+  text-align: center;
+  padding: 16px 0 8px;
+  animation: fadeIn 0.4s var(--ease-out);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.revealed-artwork {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.revealed-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.revealed-artist {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.revealed-score-line {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.next-btn {
+  padding: 10px 24px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+.next-btn:hover { border-color: rgba(var(--accent-rgb), 0.4); background: rgba(var(--accent-rgb), 0.06); }
+
+/* --- Export panel --- */
+.export-section {
+  margin-top: 32px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.export-section h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.export-section p {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.export-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  background: rgba(var(--accent-rgb), 0.08);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+.export-btn:hover { background: rgba(var(--accent-rgb), 0.14); }
+
+.export-output {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-family: "Cascadia Code", "Fira Code", monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+}
+.export-output.visible { display: block; }
+
+/* --- Responsive --- */
+@media (max-width: 520px) {
+  .review-shell { padding: 20px 16px 80px; }
+  .player-panel { padding: 16px; margin-left: -16px; margin-right: -16px; border-radius: 16px 16px 0 0; }
+  .recognition-grid { grid-template-columns: repeat(3, 1fr); }
+  .song-row { padding: 10px 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="review-shell" id="app">
+  <div class="review-header">
+    <h1>Intro Review</h1>
+    <div class="subtitle">Listen to each clue and select the earliest moment you recognize the song</div>
+  </div>
+
+  <div class="progress-bar-container">
+    <div class="progress-label">
+      <span id="progress-text">0 / 120 reviewed</span>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+  </div>
+
+  <div class="filter-tabs" id="filter-tabs"></div>
+
+  <div class="song-list" id="song-list"></div>
+
+  <div id="player-anchor"></div>
+
+  <div class="export-section" id="export-section">
+    <h3>Export Reviewed Scores</h3>
+    <p>After reviewing songs, export the scores as JSON. Then run:<br>
+    <code>npm run apply:intro -- --file scores.json</code></p>
+    <button class="export-btn" id="export-json-btn">Copy JSON to clipboard</button>
+    <button class="export-btn" id="export-file-btn">Download as file</button>
+    <div class="export-output" id="export-output"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // --- Recognition options ---
+  const RECOGNITION_OPTIONS = [
+    { label: "0.1 seconds", time: 0.1, score: 100 },
+    { label: "0.5 seconds", time: 0.5, score: 90 },
+    { label: "2 seconds", time: 2, score: 75 },
+    { label: "8 seconds", time: 8, score: 50 },
+    { label: "15 seconds", time: 15, score: 30 },
+    { label: "After 15s", time: 999, score: 15 },
+    { label: "Not recognizable", time: null, score: 0 },
+  ];
+
+  const STORAGE_KEY = "songless-intro-review";
+  const CATALOG_PATH = "/review-catalog.json";
+
+  // --- State ---
+  let songs = [];
+  let reviewData = {}; // { [id]: { score, recognizedAt, reviewedAt } }
+  let currentSongId = null;
+  let audioContext = null;
+  let audioBuffer = null;
+  let audioSource = null;
+  let isPlaying = false;
+  let playStartTime = 0;
+  let playOffset = 0;
+  let animFrameId = null;
+  let selectedRecogOption = null;
+  let currentFilter = "all";
+  let hasPlayed = false; // requires at least one play before submitting
+
+  // --- Persistence ---
+  function loadProgress() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) reviewData = JSON.parse(raw);
+    } catch { reviewData = {}; }
+  }
+
+  function saveProgress() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(reviewData));
+    } catch { /* storage full - unlikely for this size */ }
+  }
+
+  // --- Load catalogue ---
+  async function loadCatalog() {
+    try {
+      const resp = await fetch(CATALOG_PATH);
+      if (!resp.ok) throw new Error("Failed to load review catalogue. Run: npm run review:r2");
+      songs = await resp.json();
+      if (!Array.isArray(songs) || songs.length === 0) throw new Error("Empty catalogue.");
+    } catch (err) {
+      document.getElementById("song-list").innerHTML =
+        '<div style="text-align:center;color:var(--muted);padding:32px;">' +
+        'Could not load review catalogue.<br>Run <code>npm run review:r2</code> first.<br><br>' +
+        '<span style="font-size:0.75rem;">' + err.message + '</span></div>';
+      return;
+    }
+    render();
+  }
+
+  // --- Counts ---
+  function getCounts() {
+    const total = songs.length;
+    const reviewed = songs.filter(s => reviewData[s.id]).length;
+    return { total, reviewed, remaining: total - reviewed };
+  }
+
+  // --- Render ---
+  function render() {
+    renderProgress();
+    renderFilters();
+    renderSongList();
+    renderPlayer();
+  }
+
+  function renderProgress() {
+    const { total, reviewed } = getCounts();
+    const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
+    document.getElementById("progress-text").textContent = reviewed + " / " + total + " reviewed";
+    document.getElementById("progress-pct").textContent = pct + "%";
+    document.getElementById("progress-fill").style.width = pct + "%";
+  }
+
+  function renderFilters() {
+    const container = document.getElementById("filter-tabs");
+    const { total, reviewed, remaining } = getCounts();
+    const filters = [
+      { key: "all", label: "All", count: total },
+      { key: "pending", label: "Pending", count: remaining },
+      { key: "reviewed", label: "Reviewed", count: reviewed },
+    ];
+    container.innerHTML = filters.map(f =>
+      '<button class="filter-tab' + (currentFilter === f.key ? ' active' : '') +
+      '" data-filter="' + f.key + '">' + f.label +
+      '<span class="count">' + f.count + '</span></button>'
+    ).join("");
+    container.querySelectorAll(".filter-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentFilter = btn.dataset.filter;
+        render();
+      });
+    });
+  }
+
+  function renderSongList() {
+    const container = document.getElementById("song-list");
+    const filtered = songs.filter(s => {
+      if (currentFilter === "pending") return !reviewData[s.id];
+      if (currentFilter === "reviewed") return !!reviewData[s.id];
+      return true;
+    });
+
+    container.innerHTML = filtered.map((s, i) => {
+      const rd = reviewData[s.id];
+      const isActive = currentSongId === s.id;
+      const globalIdx = songs.indexOf(s) + 1;
+      let row = '<div class="song-row' + (isActive ? ' active' : '') + (rd ? ' reviewed' : '') +
+        '" data-id="' + s.id + '">';
+      row += '<span class="song-number">' + globalIdx + '</span>';
+      row += '<div class="song-info">';
+      if (rd) {
+        row += '<div class="song-revealed-title">' + escHtml(s.title) + '</div>';
+        row += '<div class="song-revealed-artist">' + escHtml(s.artist) + '</div>';
+      } else {
+        row += '<div class="song-hidden-label">Song #' + globalIdx + '</div>';
+      }
+      row += '</div>';
+      if (rd) {
+        row += '<span class="song-score-badge">' + rd.score + '</span>';
+      }
+      row += '<span class="song-status-dot ' + (rd ? 'done' : 'pending') + '"></span>';
+      row += '</div>';
+      return row;
+    }).join("");
+
+    container.querySelectorAll(".song-row").forEach(el => {
+      el.addEventListener("click", () => selectSong(el.dataset.id));
+    });
+  }
+
+  // --- Select song ---
+  function selectSong(id) {
+    stopAudio();
+    currentSongId = id;
+    selectedRecogOption = null;
+    hasPlayed = false;
+    audioBuffer = null;
+    render();
+    // scroll player into view
+    const anchor = document.getElementById("player-anchor");
+    if (anchor) anchor.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  // --- Player ---
+  function renderPlayer() {
+    const anchor = document.getElementById("player-anchor");
+    if (!currentSongId) {
+      anchor.innerHTML = "";
+      return;
+    }
+
+    const song = songs.find(s => s.id === currentSongId);
+    if (!song) return;
+    const rd = reviewData[song.id];
+    const globalIdx = songs.indexOf(song) + 1;
+
+    let html = '<div class="player-panel">';
+    html += '<div class="player-header">';
+    html += '<span class="player-song-number">Song #' + globalIdx + '</span>';
+    if (!rd) {
+      html += '<span class="player-instructions">Play, listen, then score below</span>';
+    }
+    html += '</div>';
+
+    // Audio controls
+    html += '<div class="audio-controls">';
+    html += '<button class="play-btn" id="play-btn" aria-label="Play">';
+    html += isPlaying ? pauseSvg() : playSvg();
+    html += '</button>';
+    html += '<div class="timeline-container">';
+    html += '<div class="timeline-bar"><div class="timeline-fill" id="timeline-fill"></div></div>';
+    html += '<div class="timeline-time"><span id="time-current">0:00</span><span id="time-total">0:30</span></div>';
+    html += '</div>';
+    html += '<button class="replay-btn" id="replay-btn">Restart</button>';
+    html += '</div>';
+
+    if (rd) {
+      // Already reviewed — show reveal
+      html += '<div class="revealed-panel">';
+      if (song.artwork) {
+        html += '<img class="revealed-artwork" src="' + escAttr(song.artwork) + '" alt="" onerror="this.style.display=\'none\'">';
+      }
+      html += '<div class="revealed-title">' + escHtml(song.title) + '</div>';
+      html += '<div class="revealed-artist">' + escHtml(song.artist) + '</div>';
+      html += '<div class="revealed-score-line">Intro recognition: ' + rd.score + '</div>';
+      html += '<button class="next-btn" id="re-review-btn">Re-review</button> ';
+      html += '<button class="next-btn" id="next-unreviewed-btn">Next unreviewed →</button>';
+      html += '</div>';
+    } else {
+      // Recognition buttons
+      html += '<div class="recognition-label">When did you first recognize this song?</div>';
+      html += '<div class="recognition-grid">';
+      RECOGNITION_OPTIONS.forEach((opt, i) => {
+        html += '<button class="recog-btn' + (selectedRecogOption === i ? ' selected' : '') +
+          '" data-index="' + i + '">';
+        html += '<span class="recog-time">' + opt.label + '</span>';
+        html += '<span class="recog-score">Score: ' + opt.score + '</span>';
+        html += '</button>';
+      });
+      html += '</div>';
+      html += '<button class="submit-btn' + (selectedRecogOption !== null && hasPlayed ? ' ready' : '') +
+        '" id="submit-btn">Submit score</button>';
+    }
+
+    html += '</div>';
+    anchor.innerHTML = html;
+
+    // Bind events
+    document.getElementById("play-btn").addEventListener("click", togglePlay);
+    document.getElementById("replay-btn").addEventListener("click", restartAudio);
+
+    if (rd) {
+      const reBtn = document.getElementById("re-review-btn");
+      if (reBtn) reBtn.addEventListener("click", () => {
+        delete reviewData[song.id];
+        saveProgress();
+        selectedRecogOption = null;
+        hasPlayed = false;
+        render();
+      });
+      const nextBtn = document.getElementById("next-unreviewed-btn");
+      if (nextBtn) nextBtn.addEventListener("click", goToNextUnreviewed);
+    } else {
+      anchor.querySelectorAll(".recog-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          selectedRecogOption = parseInt(btn.dataset.index, 10);
+          renderPlayer();
+        });
+      });
+      const submitBtn = document.getElementById("submit-btn");
+      if (submitBtn) submitBtn.addEventListener("click", submitScore);
+    }
+  }
+
+  function submitScore() {
+    if (selectedRecogOption === null || !hasPlayed) return;
+    const opt = RECOGNITION_OPTIONS[selectedRecogOption];
+    const song = songs.find(s => s.id === currentSongId);
+    if (!song) return;
+
+    reviewData[song.id] = {
+      score: opt.score,
+      recognizedAt: opt.time,
+      reviewedAt: new Date().toISOString(),
+    };
+    saveProgress();
+    render();
+  }
+
+  function goToNextUnreviewed() {
+    const currentIdx = songs.findIndex(s => s.id === currentSongId);
+    // Search forward from current position
+    for (let i = currentIdx + 1; i < songs.length; i++) {
+      if (!reviewData[songs[i].id]) { selectSong(songs[i].id); return; }
+    }
+    // Wrap around
+    for (let i = 0; i < currentIdx; i++) {
+      if (!reviewData[songs[i].id]) { selectSong(songs[i].id); return; }
+    }
+    // All done
+    selectSong(songs[currentIdx].id);
+  }
+
+  // --- Audio engine ---
+  function getAudioContext() {
+    if (!audioContext) {
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    return audioContext;
+  }
+
+  async function loadAudioBuffer(url) {
+    const ctx = getAudioContext();
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error("Failed to fetch audio: " + resp.status);
+    const arrayBuf = await resp.arrayBuffer();
+    return await ctx.decodeAudioData(arrayBuf);
+  }
+
+  async function togglePlay() {
+    if (isPlaying) {
+      pauseAudio();
+      return;
+    }
+
+    const song = songs.find(s => s.id === currentSongId);
+    if (!song) return;
+
+    const ctx = getAudioContext();
+    if (ctx.state === "suspended") await ctx.resume();
+
+    if (!audioBuffer) {
+      try {
+        const btn = document.getElementById("play-btn");
+        if (btn) btn.style.opacity = "0.5";
+        audioBuffer = await loadAudioBuffer(song.audio.clueSrc);
+        if (btn) btn.style.opacity = "";
+      } catch (err) {
+        console.error("Audio load failed:", err);
+        return;
+      }
+    }
+
+    audioSource = ctx.createBufferSource();
+    audioSource.buffer = audioBuffer;
+    audioSource.connect(ctx.destination);
+    audioSource.onended = () => {
+      if (isPlaying) {
+        isPlaying = false;
+        playOffset = audioBuffer.duration;
+        cancelAnimationFrame(animFrameId);
+        renderPlayer();
+      }
+    };
+    audioSource.start(0, playOffset);
+    playStartTime = ctx.currentTime - playOffset;
+    isPlaying = true;
+    hasPlayed = true;
+    updateTimeline();
+    renderPlayer();
+  }
+
+  function pauseAudio() {
+    if (!isPlaying || !audioSource) return;
+    const ctx = getAudioContext();
+    playOffset = ctx.currentTime - playStartTime;
+    try { audioSource.stop(); } catch {}
+    audioSource = null;
+    isPlaying = false;
+    cancelAnimationFrame(animFrameId);
+    renderPlayer();
+  }
+
+  function stopAudio() {
+    if (audioSource) {
+      try { audioSource.stop(); } catch {}
+      audioSource = null;
+    }
+    isPlaying = false;
+    playOffset = 0;
+    cancelAnimationFrame(animFrameId);
+  }
+
+  function restartAudio() {
+    stopAudio();
+    playOffset = 0;
+    renderPlayer();
+  }
+
+  function updateTimeline() {
+    if (!isPlaying) return;
+    const ctx = getAudioContext();
+    const elapsed = ctx.currentTime - playStartTime;
+    const duration = audioBuffer ? audioBuffer.duration : 30;
+    const pct = Math.min(elapsed / duration, 1) * 100;
+
+    const fill = document.getElementById("timeline-fill");
+    const timeCur = document.getElementById("time-current");
+    if (fill) fill.style.width = pct + "%";
+    if (timeCur) timeCur.textContent = formatTime(elapsed);
+
+    animFrameId = requestAnimationFrame(updateTimeline);
+  }
+
+  // --- Export ---
+  function getExportData() {
+    const entries = [];
+    for (const song of songs) {
+      const rd = reviewData[song.id];
+      if (!rd) continue;
+      entries.push({
+        id: song.id,
+        introRecognition: rd.score,
+        recognizedAt: rd.recognizedAt,
+        reviewedAt: rd.reviewedAt,
+      });
+    }
+    return entries;
+  }
+
+  // --- Utilities ---
+  function escHtml(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+  function escAttr(s) { return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function formatTime(sec) {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  function playSvg() {
+    return '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="6,3 20,12 6,21"/></svg>';
+  }
+  function pauseSvg() {
+    return '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="3" width="4" height="18" rx="1"/><rect x="15" y="3" width="4" height="18" rx="1"/></svg>';
+  }
+
+  // --- Init ---
+  loadProgress();
+
+  document.getElementById("export-json-btn").addEventListener("click", () => {
+    const data = getExportData();
+    const json = JSON.stringify(data, null, 2);
+    navigator.clipboard.writeText(json).then(() => {
+      const output = document.getElementById("export-output");
+      output.textContent = "Copied " + data.length + " scores to clipboard.\n\n" + json;
+      output.classList.add("visible");
+    }).catch(() => {
+      const output = document.getElementById("export-output");
+      output.textContent = json;
+      output.classList.add("visible");
+    });
+  });
+
+  document.getElementById("export-file-btn").addEventListener("click", () => {
+    const data = getExportData();
+    const json = JSON.stringify(data, null, 2);
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "intro-review-scores.json";
+    a.click();
+    URL.revokeObjectURL(url);
+    const output = document.getElementById("export-output");
+    output.textContent = "Downloaded " + data.length + " scores.";
+    output.classList.add("visible");
+  });
+
+  loadCatalog();
+})();
+</script>
+</body>
+</html>
