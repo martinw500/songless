@@ -654,7 +654,7 @@ async function run() {
     })`);
     assert(lostReveal.lost && lostReveal.title === "Afterglow Avenue" && lostReveal.revealPlaying,
       `A final skip did not begin reveal playback (${JSON.stringify(lostReveal)}).`);
-    console.log("PASS win and loss results continue reveal audio from the reached timestamp");
+    console.log("PASS win and loss results restart reveal audio from the prepared song beginning");
 
     await client.evaluate("document.querySelector('.mode-action').click()");
     await delay(100);

@@ -240,10 +240,10 @@ function App() {
     }
   }
 
-  function finishRound(nextStatus: Exclude<RoundStatus, "playing">, startSeconds: number) {
-    stopPlayback(startSeconds);
+  function finishRound(nextStatus: Exclude<RoundStatus, "playing">, reachedSeconds: number) {
+    stopPlayback(reachedSeconds);
     setStatus(nextStatus);
-    void startRevealPlayback(startSeconds);
+    void startRevealPlayback(0);
   }
 
   function resetRoundState() {
