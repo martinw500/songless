@@ -96,6 +96,7 @@ The readable lists are `data/song-list.txt` for the curated 120-song candidate q
 
 ## Documentation
 
+- [New-computer and new-chat handoff](HANDOFF.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Catalogue and difficulty](docs/CATALOG.md)
 - [Song sourcing and first library](docs/SONG-SOURCING.md)
