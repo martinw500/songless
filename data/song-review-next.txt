@@ -1,0 +1,5 @@
+SONGLESS NEXT REVIEW QUEUE
+Generated: 2026-08-19T05:01:02.010Z
+Criteria: active 1B+ source rows at source rank 650 or later with no founder, playlist, current, social, or reviewed-keep signal.
+These songs are not pruned; this file is the next manual review queue.
+

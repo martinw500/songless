@@ -26,6 +26,8 @@ Skipping or submitting a wrong answer silently unlocks the next interval without
 
 The visible result group—not an oversized invisible wrapper—is centered in the game card.
 
+Entering either win or loss stops clue playback and immediately continues the same track from the furthest timestamp actually reached. Starting a new round, rerolling, or changing difficulty stops that reveal playback.
+
 Loss sequence:
 
 1. The game card receives a red wash.

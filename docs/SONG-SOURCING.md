@@ -1,49 +1,94 @@
 # Song sourcing and first library
 
-## Recommendation
+## Audience and admission rule
 
-Do not make the first library every English-language track with one billion Spotify streams. The Billions Club is a useful source of obvious anchors, but it has four biases for this game:
+Songless targets an internet-aware North American audience aged roughly 18–24. Recognition wins over language, release era, or a single platform metric. A billion streams is an automatic reason to review a track, not an automatic reason to put it in the game.
 
-- streaming-era releases have an advantage over older classics;
-- brand-new culturally dominant songs have not had enough time to reach one billion;
-- a small number of artists can occupy a disproportionate part of the pool;
-- total streams do not measure whether the opening seconds are recognizable.
+## Intake longlist versus curated queue
 
-Start with a 120-song pilot:
+The broad intake pool lives in `data/song-longlist.json`, with a readable copy in `data/song-longlist.txt`. Its source snapshot contains 1,125 tracks reported above one billion Spotify streams plus 450 included founder/Gen-Z/current-recognition picks. The currently available 100-track public playlist preview matches 69 supported candidates as a secondary taste signal. After merging overlaps and omitting finalized removals, the current review pool contains 1,179 records: 1,120 active and 59 newly pruned. Another 251 approved removals are finalized and omitted from the generated pool. Of the active source tracks, 105 have also been explicitly accepted in `data/song-longlist-keeps.json`; the remaining 1B+ next-review queue is now empty.
 
-| Bucket | Songs | Purpose |
-|---|---:|---|
-| Billion-stream anchors | 30 | Globally obvious modern hits |
-| Current and recent | 30 | Songs circulating now, even below one billion |
-| Shared/personal taste | 30 | Songs likely to be known by the actual players |
-| Pre-streaming classics | 20 | Famous songs disadvantaged by platform age |
-| Curveballs | 10 | Genre breadth and harder but fair rounds |
+New-song discovery is frozen while the playable catalogue is implemented. Approved under-1B choices remain in the manual intake, while the unapproved proposal queue and its review machinery have been removed.
 
-The first 30 proposed records are in `data/song-candidates.json`. They are a review queue, not the live catalogue.
+The source does not publish a reliable language field. Source-only rows therefore remain `languageReview: pending` instead of being guessed from a title or artist name. Manual additions and review decisions can explicitly mark a track `english`, `non_english`, or `multilingual`; the refresher validates and preserves that classification. Non-English retention is deliberate and limited to globally recognizable crossovers such as `Alors on danse`, `Gangnam Style`, `How You Like That`, `Gasolina`, and `Danza Kuduro`, rather than treating every international billion-stream track as suitable for this audience.
 
+Taste-driven additions live in `data/song-manual-additions.json`. They are equally valid intake signals: “Who Knows,” “DAISIES,” and “Come Back to Earth” enter through founder recognition regardless of stream count. “august” remains visible as billion-stream evidence but is pruned as a documented founder mismatch. Recognition passes add high-circulation current songs, broad Gen-Z R&B and melodic-rap staples, and major 2000s/2010s childhood hits; they do not import an artist's catalogue merely because one song or the artist is popular. A novelty, joke, or aggressive rap sound circulating in short videos is not enough on its own: the full track should also have plausible deliberate listening value for this audience.
 
-## Audio workflow
+The shared personal playlist contributes recognition evidence only when a song already exists in the billion-stream or manual-addition pool; unmatched playlist songs are not imported. Spotify's unauthenticated public embed is capped at 100 tracks. If `data/founder-playlist-export.csv` exists, the refresher uses that full export instead; accepted headers are `Track Name` or `Title` and `Artist Name(s)` or `Artist`. Chinese-script rows are ignored while matching. `data/song-longlist-baseline.json` and `data/song-longlist-finalized-pass-4.json` contain approved exclusions and persistent crossover exceptions. `data/song-longlist-keeps.json` records accepted songs with a `reviewed_keep` signal, and `data/song-longlist-decisions.json` contains only the current prune batch.
 
-1. Put source files you are allowed to use in a private folder outside the repository.
-2. Name each source file after its candidate ID, such as `malcolm-todd-earrings.m4a`.
-3. Run `scripts/prepare-audio.ps1` to create compact 20-second intro clips.
-4. Run `scripts/audit-song-library.ps1` to see which candidates now have playable media.
-5. Add permitted artwork to `public/media/artwork` or leave artwork blank.
-6. Listen to the prepared beginning and assign `introRecognition` from the actual clip.
-7. Move only complete entries into `public/catalog.json`.
-8. Keep unlicensed audio out of public deployments. A private link does not itself grant redistribution rights.
-
-Example:
+Refresh the snapshot and merge manual additions with:
 
 ```powershell
-.\scripts\prepare-audio.ps1 -InputDirectory "D:\Music\Songless Sources"
-.\scripts\audit-song-library.ps1
+npm run refresh:longlist
 ```
 
-Both media directories are ignored by Git. Vercel can only serve a song if its audio is intentionally included in the deployment, so local testing is the appropriate first milestone.
+The longlist refresh is research-only. The playable application uses R2 or prepared local files; Spotify is optional metadata lookup only and never a playback source. The curated 120-song queue remains the only path toward intro scoring and promotion.
 
-## Selection and difficulty
+The tracked review queue contains 120 candidates in `data/song-candidates.json`:
 
-Use billion-stream status as one familiarity signal, not as the admission rule. Give recent relevance and the two players' taste enough weight to let a newer song outrank an older streaming giant.
+| Primary bucket | Songs | Purpose |
+|---|---:|---|
+| Billion-stream anchors | 30 | Obvious, cross-platform hits |
+| Current and recent | 30 | Songs still circulating strongly with the audience |
+| Gen-Z staples | 30 | Taste-aligned artists and cohort favorites |
+| Classics and throwbacks | 20 | Older songs that remain culturally active |
+| Global crossovers | 10 | Recognizable non-English and international hits |
 
-Keep `familiarity` and `introRecognition` separate. A universally famous track with a quiet or generic opening can still belong in Hard, while a smaller song with a signature first sound can be Easy for this audience. See [CATALOG.md](CATALOG.md) for the scoring rubric.
+The queue is deliberately language-agnostic and caps each credited artist at three appearances. Its era balance is approximate rather than a reason to admit a weak song. Current chart research is recorded at the top of the candidate file; no chart or streaming API is used by the application.
+
+## Candidate states
+
+- `needs_media`: metadata and familiarity are ready, but the permitted clip is absent.
+- `needs_intro_review`: the clip exists and must be heard at 0.1, 0.5, 2, 8, and 15 seconds.
+- `approved`: the exact clip has an intro score, ease score, difficulty, and playable audio.
+- `rejected`: the candidate failed metadata, media, recognizability, or game-quality review.
+
+Do not guess `introRecognition` from the full song or a different master. Until the expected clip has been heard, `introRecognition`, `easeScore`, and `proposedDifficulty` remain `null`.
+
+## R2 review and promotion workflow
+
+1. Create a Cloudflare R2 bucket and an API token limited to Object Read & Write for that bucket. Connect a public custom domain or enable a temporary public development URL. Configure CORS for `GET`, `HEAD`, and byte-range playback from the local and production app origins.
+2. Copy `.env.example` to ignored `.env.local` and configure the five `R2_` connection values. Leave `R2_MAX_BYTES` at 8.5 billion bytes or lower it when the account stores data elsewhere.
+3. Run `npm run init:sources` to generate ignored `data/song-download-sources.local.json`. `npm run resolve:youtube -- 5` fills a reviewable batch by preferring official audio and artist/Topic uploads and rejecting altered versions. The ignored manifest records the exact chosen title, channel, duration, and URL.
+4. Download and prepare complete 128 kbps tracks, 30-second clue assets, and optional artwork:
+
+   ```powershell
+   npm run resolve:youtube -- 5
+   npm run download:media
+   npm run prepare:r2 -- ".\private-media\source"
+   ```
+
+5. Validate the whole-bucket projection, then upload. The dry run and real upload both stop before writing when the projection exceeds the configured ceiling:
+
+   ```powershell
+   npm run upload:r2:dry-run
+   npm run upload:r2
+   npm run review:r2
+   npm run dev
+   ```
+
+6. Open `http://127.0.0.1:5173/?reviewSong=<id>` and confirm the exact version. Test 0.1, 0.5, 2, 8, and 15 seconds.
+7. Audit the complete queue:
+
+   ```powershell
+   npm run audit:songs
+   # or
+   .\scripts\audit-song-library.ps1
+   ```
+
+8. Approve the exact hosted track with `npm run approve:song -- --id <id> --intro <0-100>`. If the master has genuine leading silence, add `--start-at <seconds>` (for example, `--start-at 2.4`) so both the clue and complete reveal treat that position as time zero. Add `--difficulty` and `--reason` only for a documented manual override.
+9. Once at least ten approved songs exist in every difficulty, promote them:
+
+   ```powershell
+   npm run promote:songs
+   ```
+
+Promotion refuses to replace the five playable demos before that 50-song minimum is complete. Later runs promote every approved candidate, allowing the live pool to grow beyond the pilot. The result screen streams the complete R2 file from the exact reached timestamp.
+
+## Local-file fallback
+
+For a purely local build, name a permitted source after the candidate ID and run `.\scripts\prepare-audio.ps1 -InputDirectory "D:\Music\Songless Sources"`. The same audit, intro review, approval, and promotion rules apply.
+
+## Curation principle
+
+Familiarity and intro recognition remain separate. A Daniel Caesar track can outrank an older global hit for this audience, and a famous track with a quiet or generic opening can still land in Hard. See [CATALOG.md](CATALOG.md) for the schema and scoring rules.

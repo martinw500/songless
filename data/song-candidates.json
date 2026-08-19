@@ -1,40 +1,4554 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "review_queue",
-  "notes": "These records are not loaded by the game. Add permitted audio, verify metadata and intro scores, then promote complete entries to public/catalog.json.",
+  "notes": "Language-agnostic candidate queue for an internet-aware North American audience aged 18-24. Candidates stay out of the live game until permitted audio is present and the exact intro has been reviewed at every clue stage.",
+  "scoring": {
+    "weights": {
+      "audienceRecognition": 0.4,
+      "currentCirculation": 0.25,
+      "broaderVisibility": 0.2,
+      "longevity": 0.15
+    },
+    "easeFormula": "0.5 * familiarity + 0.5 * introRecognition"
+  },
+  "researchSources": [
+    {
+      "label": "Spotify 2025 Wrapped global songs",
+      "url": "https://newsroom.spotify.com/2025-12-03/wrapped-top-artists-songs-albums-podcasts-audiobooks/"
+    },
+    {
+      "label": "Billboard Canadian Hot 100 year-end 2025",
+      "url": "https://ca.billboard.com/charts/year-end-2025/top-billboard-canadian-hot-100-songs"
+    },
+    {
+      "label": "Official Singles Chart",
+      "url": "https://www.officialcharts.com/charts/singles-chart/"
+    }
+  ],
   "songs": [
-    { "id": "the-weeknd-blinding-lights", "title": "Blinding Lights", "artist": "The Weeknd", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "ed-sheeran-shape-of-you", "title": "Shape of You", "artist": "Ed Sheeran", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "post-malone-swae-lee-sunflower", "title": "Sunflower", "artist": "Post Malone & Swae Lee", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "the-weeknd-daft-punk-starboy", "title": "Starboy", "artist": "The Weeknd feat. Daft Punk", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "the-neighbourhood-sweater-weather", "title": "Sweater Weather", "artist": "The Neighbourhood", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "glass-animals-heat-waves", "title": "Heat Waves", "artist": "Glass Animals", "bucket": "billion_anchor", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "harry-styles-as-it-was", "title": "As It Was", "artist": "Harry Styles", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "lewis-capaldi-someone-you-loved", "title": "Someone You Loved", "artist": "Lewis Capaldi", "bucket": "billion_anchor", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "imagine-dragons-believer", "title": "Believer", "artist": "Imagine Dragons", "bucket": "billion_anchor", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "the-chainsmokers-halsey-closer", "title": "Closer", "artist": "The Chainsmokers feat. Halsey", "bucket": "billion_anchor", "proposedDifficulty": "medium", "status": "needs_media" },
-
-    { "id": "sombr-back-to-friends", "title": "back to friends", "artist": "sombr", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "malcolm-todd-earrings", "title": "Earrings", "artist": "Malcolm Todd", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "sabrina-carpenter-espresso", "title": "Espresso", "artist": "Sabrina Carpenter", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "billie-eilish-birds-of-a-feather", "title": "BIRDS OF A FEATHER", "artist": "Billie Eilish", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "lady-gaga-bruno-mars-die-with-a-smile", "title": "Die With A Smile", "artist": "Lady Gaga & Bruno Mars", "bucket": "current", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "benson-boone-beautiful-things", "title": "Beautiful Things", "artist": "Benson Boone", "bucket": "current", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "gracie-abrams-thats-so-true", "title": "That's So True", "artist": "Gracie Abrams", "bucket": "current", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "rose-bruno-mars-apt", "title": "APT.", "artist": "ROSÉ & Bruno Mars", "bucket": "current", "proposedDifficulty": "easy", "status": "needs_media" },
-
-    { "id": "the-killers-mr-brightside", "title": "Mr. Brightside", "artist": "The Killers", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "a-ha-take-on-me", "title": "Take on Me", "artist": "a-ha", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "fleetwood-mac-dreams", "title": "Dreams", "artist": "Fleetwood Mac", "bucket": "classic", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "michael-jackson-billie-jean", "title": "Billie Jean", "artist": "Michael Jackson", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "nirvana-smells-like-teen-spirit", "title": "Smells Like Teen Spirit", "artist": "Nirvana", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "oasis-wonderwall", "title": "Wonderwall", "artist": "Oasis", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "whitney-houston-i-wanna-dance-with-somebody", "title": "I Wanna Dance with Somebody", "artist": "Whitney Houston", "bucket": "classic", "proposedDifficulty": "easy", "status": "needs_media" },
-
-    { "id": "joji-slow-dancing-in-the-dark", "title": "SLOW DANCING IN THE DARK", "artist": "Joji", "bucket": "personal", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "frank-ocean-nights", "title": "Nights", "artist": "Frank Ocean", "bucket": "personal", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "tyler-the-creator-kali-uchis-see-you-again", "title": "See You Again", "artist": "Tyler, The Creator feat. Kali Uchis", "bucket": "personal", "proposedDifficulty": "easy", "status": "needs_media" },
-    { "id": "tv-girl-not-allowed", "title": "Not Allowed", "artist": "TV Girl", "bucket": "personal", "proposedDifficulty": "medium", "status": "needs_media" },
-    { "id": "steve-lacy-dark-red", "title": "Dark Red", "artist": "Steve Lacy", "bucket": "personal", "proposedDifficulty": "medium", "status": "needs_media" }
+    {
+      "id": "the-weeknd-blinding-lights",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "primaryArtists": [
+        "The Weeknd"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "pop",
+        "synth-pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "the-weeknd-blinding-lights.mp3",
+        "artworkFile": "the-weeknd-blinding-lights.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-blinding-lights.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-blinding-lights.mp3",
+        "hostedDurationMs": 202210,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-blinding-lights.jpg"
+      }
+    },
+    {
+      "id": "ed-sheeran-shape-of-you",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "primaryArtists": [
+        "Ed Sheeran"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "ed-sheeran-shape-of-you.mp3",
+        "artworkFile": "ed-sheeran-shape-of-you.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-shape-of-you.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-shape-of-you.mp3",
+        "hostedDurationMs": 235009,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg"
+      }
+    },
+    {
+      "id": "post-malone-swae-lee-sunflower",
+      "title": "Sunflower",
+      "artist": "Post Malone & Swae Lee",
+      "primaryArtists": [
+        "Post Malone",
+        "Swae Lee"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2018,
+      "genres": [
+        "pop",
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "post-malone-swae-lee-sunflower.mp3",
+        "artworkFile": "post-malone-swae-lee-sunflower.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-swae-lee-sunflower.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-swae-lee-sunflower.mp3",
+        "hostedDurationMs": 160670,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg"
+      }
+    },
+    {
+      "id": "the-weeknd-daft-punk-starboy",
+      "title": "Starboy",
+      "artist": "The Weeknd feat. Daft Punk",
+      "primaryArtists": [
+        "The Weeknd",
+        "Daft Punk"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "r&b",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "the-weeknd-daft-punk-starboy.mp3",
+        "artworkFile": "the-weeknd-daft-punk-starboy.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-daft-punk-starboy.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-daft-punk-starboy.mp3",
+        "hostedDurationMs": 229454,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-daft-punk-starboy.jpg"
+      }
+    },
+    {
+      "id": "the-neighbourhood-sweater-weather",
+      "title": "Sweater Weather",
+      "artist": "The Neighbourhood",
+      "primaryArtists": [
+        "The Neighbourhood"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2012,
+      "genres": [
+        "alternative",
+        "indie rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "the-neighbourhood-sweater-weather.mp3",
+        "artworkFile": "the-neighbourhood-sweater-weather.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-neighbourhood-sweater-weather.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-neighbourhood-sweater-weather.mp3",
+        "hostedDurationMs": 240040,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-neighbourhood-sweater-weather.jpg"
+      }
+    },
+    {
+      "id": "glass-animals-heat-waves",
+      "title": "Heat Waves",
+      "artist": "Glass Animals",
+      "primaryArtists": [
+        "Glass Animals"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2020,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "glass-animals-heat-waves.mp3",
+        "artworkFile": "glass-animals-heat-waves.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/glass-animals-heat-waves.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/glass-animals-heat-waves.mp3",
+        "hostedDurationMs": 175302,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/glass-animals-heat-waves.jpg"
+      }
+    },
+    {
+      "id": "harry-styles-as-it-was",
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "primaryArtists": [
+        "Harry Styles"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2022,
+      "genres": [
+        "pop",
+        "synth-pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "harry-styles-as-it-was.mp3",
+        "artworkFile": "harry-styles-as-it-was.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/harry-styles-as-it-was.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/harry-styles-as-it-was.mp3",
+        "hostedDurationMs": 164594,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-as-it-was.jpg"
+      }
+    },
+    {
+      "id": "journey-dont-stop-believin",
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "primaryArtists": [
+        "Journey"
+      ],
+      "aliases": [
+        "Dont Stop Believing"
+      ],
+      "artistAliases": [],
+      "releaseYear": 1981,
+      "genres": [
+        "rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "journey-dont-stop-believin.mp3",
+        "artworkFile": "journey-dont-stop-believin.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/journey-dont-stop-believin.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/journey-dont-stop-believin.mp3",
+        "hostedDurationMs": 249219,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/journey-dont-stop-believin.jpg"
+      }
+    },
+    {
+      "id": "imagine-dragons-believer",
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "primaryArtists": [
+        "Imagine Dragons"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "pop rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "imagine-dragons-believer.mp3",
+        "artworkFile": "imagine-dragons-believer.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/imagine-dragons-believer.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/imagine-dragons-believer.mp3",
+        "hostedDurationMs": 202816,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-believer.jpg"
+      }
+    },
+    {
+      "id": "the-chainsmokers-halsey-closer",
+      "title": "Closer",
+      "artist": "The Chainsmokers feat. Halsey",
+      "primaryArtists": [
+        "The Chainsmokers",
+        "Halsey"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "pop",
+        "electropop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "the-chainsmokers-halsey-closer.mp3",
+        "artworkFile": "the-chainsmokers-halsey-closer.jpg",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-chainsmokers-halsey-closer.mp3",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-chainsmokers-halsey-closer.mp3",
+        "hostedDurationMs": 245922,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-chainsmokers-halsey-closer.jpg"
+      }
+    },
+    {
+      "id": "dua-lipa-levitating",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "primaryArtists": [
+        "Dua Lipa"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2020,
+      "genres": [
+        "pop",
+        "disco"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "dua-lipa-levitating.mp3",
+        "artworkFile": "dua-lipa-levitating.jpg"
+      }
+    },
+    {
+      "id": "billie-eilish-bad-guy",
+      "title": "bad guy",
+      "artist": "Billie Eilish",
+      "primaryArtists": [
+        "Billie Eilish"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "pop",
+        "electropop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "billie-eilish-bad-guy.mp3",
+        "artworkFile": "billie-eilish-bad-guy.jpg"
+      }
+    },
+    {
+      "id": "harry-styles-watermelon-sugar",
+      "title": "Watermelon Sugar",
+      "artist": "Harry Styles",
+      "primaryArtists": [
+        "Harry Styles"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "harry-styles-watermelon-sugar.mp3",
+        "artworkFile": "harry-styles-watermelon-sugar.jpg"
+      }
+    },
+    {
+      "id": "drake-wizkid-kyla-one-dance",
+      "title": "One Dance",
+      "artist": "Drake feat. Wizkid & Kyla",
+      "primaryArtists": [
+        "Drake",
+        "Wizkid",
+        "Kyla"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "dancehall",
+        "pop",
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "drake-wizkid-kyla-one-dance.mp3",
+        "artworkFile": "drake-wizkid-kyla-one-dance.jpg"
+      }
+    },
+    {
+      "id": "billie-eilish-khalid-lovely",
+      "title": "lovely",
+      "artist": "Billie Eilish & Khalid",
+      "primaryArtists": [
+        "Billie Eilish",
+        "Khalid"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2018,
+      "genres": [
+        "pop",
+        "alternative"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "billie-eilish-khalid-lovely.mp3",
+        "artworkFile": "billie-eilish-khalid-lovely.jpg"
+      }
+    },
+    {
+      "id": "the-kid-laroi-justin-bieber-stay",
+      "title": "STAY",
+      "artist": "The Kid LAROI & Justin Bieber",
+      "primaryArtists": [
+        "The Kid LAROI",
+        "Justin Bieber"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2021,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "the-kid-laroi-justin-bieber-stay.mp3",
+        "artworkFile": "the-kid-laroi-justin-bieber-stay.jpg"
+      }
+    },
+    {
+      "id": "shawn-mendes-camila-cabello-senorita",
+      "title": "Señorita",
+      "artist": "Shawn Mendes & Camila Cabello",
+      "primaryArtists": [
+        "Shawn Mendes",
+        "Camila Cabello"
+      ],
+      "aliases": [
+        "Senorita"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "pop",
+        "latin pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "shawn-mendes-camila-cabello-senorita.mp3",
+        "artworkFile": "shawn-mendes-camila-cabello-senorita.jpg"
+      }
+    },
+    {
+      "id": "dua-lipa-dont-start-now",
+      "title": "Don't Start Now",
+      "artist": "Dua Lipa",
+      "primaryArtists": [
+        "Dua Lipa"
+      ],
+      "aliases": [
+        "Dont Start Now"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "pop",
+        "disco"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "dua-lipa-dont-start-now.mp3",
+        "artworkFile": "dua-lipa-dont-start-now.jpg"
+      }
+    },
+    {
+      "id": "post-malone-circles",
+      "title": "Circles",
+      "artist": "Post Malone",
+      "primaryArtists": [
+        "Post Malone"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "pop",
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "post-malone-circles.mp3",
+        "artworkFile": "post-malone-circles.jpg"
+      }
+    },
+    {
+      "id": "coldplay-viva-la-vida",
+      "title": "Viva La Vida",
+      "artist": "Coldplay",
+      "primaryArtists": [
+        "Coldplay"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2008,
+      "genres": [
+        "pop rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "coldplay-viva-la-vida.mp3",
+        "artworkFile": "coldplay-viva-la-vida.jpg"
+      }
+    },
+    {
+      "id": "timbaland-onerepublic-apologize",
+      "title": "Apologize",
+      "artist": "Timbaland feat. OneRepublic",
+      "primaryArtists": [
+        "Timbaland",
+        "OneRepublic"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2007,
+      "genres": [
+        "pop",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 65,
+        "broaderVisibility": 90,
+        "longevity": 75
+      },
+      "familiarity": 80,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "timbaland-onerepublic-apologize.mp3",
+        "artworkFile": "timbaland-onerepublic-apologize.jpg"
+      }
+    },
+    {
+      "id": "lady-gaga-poker-face",
+      "title": "Poker Face",
+      "artist": "Lady Gaga",
+      "primaryArtists": [
+        "Lady Gaga"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2008,
+      "genres": [
+        "pop",
+        "dance-pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 95,
+        "currentCirculation": 85,
+        "broaderVisibility": 100,
+        "longevity": 90
+      },
+      "familiarity": 93,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "lady-gaga-poker-face.mp3",
+        "artworkFile": "lady-gaga-poker-face.jpg"
+      }
+    },
+    {
+      "id": "gnarls-barkley-crazy",
+      "title": "Crazy",
+      "artist": "Gnarls Barkley",
+      "primaryArtists": [
+        "Gnarls Barkley"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2006,
+      "genres": [
+        "soul",
+        "alternative"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 65,
+        "broaderVisibility": 90,
+        "longevity": 75
+      },
+      "familiarity": 80,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "gnarls-barkley-crazy.mp3",
+        "artworkFile": "gnarls-barkley-crazy.jpg"
+      }
+    },
+    {
+      "id": "rihanna-jay-z-umbrella",
+      "title": "Umbrella",
+      "artist": "Rihanna feat. JAY-Z",
+      "primaryArtists": [
+        "Rihanna",
+        "JAY-Z"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Rihanna featuring Jay-Z"
+      ],
+      "releaseYear": 2007,
+      "genres": [
+        "pop",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "rihanna-jay-z-umbrella.mp3",
+        "artworkFile": "rihanna-jay-z-umbrella.jpg"
+      }
+    },
+    {
+      "id": "coldplay-yellow",
+      "title": "Yellow",
+      "artist": "Coldplay",
+      "primaryArtists": [
+        "Coldplay"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2000,
+      "genres": [
+        "alternative rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "coldplay-yellow.mp3",
+        "artworkFile": "coldplay-yellow.jpg"
+      }
+    },
+    {
+      "id": "radiohead-creep",
+      "title": "Creep",
+      "artist": "Radiohead",
+      "primaryArtists": [
+        "Radiohead"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1992,
+      "genres": [
+        "alternative rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "radiohead-creep.mp3",
+        "artworkFile": "radiohead-creep.jpg"
+      }
+    },
+    {
+      "id": "eminem-without-me",
+      "title": "Without Me",
+      "artist": "Eminem",
+      "primaryArtists": [
+        "Eminem"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2002,
+      "genres": [
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "eminem-without-me.mp3",
+        "artworkFile": "eminem-without-me.jpg"
+      }
+    },
+    {
+      "id": "tears-for-fears-everybody-wants-to-rule-the-world",
+      "title": "Everybody Wants to Rule the World",
+      "artist": "Tears for Fears",
+      "primaryArtists": [
+        "Tears for Fears"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1985,
+      "genres": [
+        "new wave",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tears-for-fears-everybody-wants-to-rule-the-world.mp3",
+        "artworkFile": "tears-for-fears-everybody-wants-to-rule-the-world.jpg"
+      }
+    },
+    {
+      "id": "toto-africa",
+      "title": "Africa",
+      "artist": "TOTO",
+      "primaryArtists": [
+        "TOTO"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Toto"
+      ],
+      "releaseYear": 1982,
+      "genres": [
+        "rock",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "toto-africa.mp3",
+        "artworkFile": "toto-africa.jpg"
+      }
+    },
+    {
+      "id": "fleetwood-mac-dreams",
+      "title": "Dreams",
+      "artist": "Fleetwood Mac",
+      "primaryArtists": [
+        "Fleetwood Mac"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1977,
+      "genres": [
+        "soft rock"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "fleetwood-mac-dreams.mp3",
+        "artworkFile": "fleetwood-mac-dreams.jpg"
+      }
+    },
+    {
+      "id": "lady-gaga-bruno-mars-die-with-a-smile",
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga & Bruno Mars",
+      "primaryArtists": [
+        "Lady Gaga",
+        "Bruno Mars"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop",
+        "soft rock"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "current_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "lady-gaga-bruno-mars-die-with-a-smile.mp3",
+        "artworkFile": "lady-gaga-bruno-mars-die-with-a-smile.jpg"
+      }
+    },
+    {
+      "id": "billie-eilish-birds-of-a-feather",
+      "title": "BIRDS OF A FEATHER",
+      "artist": "Billie Eilish",
+      "primaryArtists": [
+        "Billie Eilish"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "current_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "billie-eilish-birds-of-a-feather.mp3",
+        "artworkFile": "billie-eilish-birds-of-a-feather.jpg"
+      }
+    },
+    {
+      "id": "rose-bruno-mars-apt",
+      "title": "APT.",
+      "artist": "ROSÉ & Bruno Mars",
+      "primaryArtists": [
+        "ROSÉ",
+        "Bruno Mars"
+      ],
+      "aliases": [
+        "Apateu",
+        "아파트"
+      ],
+      "artistAliases": [
+        "Rose and Bruno Mars"
+      ],
+      "releaseYear": 2024,
+      "genres": [
+        "pop",
+        "pop rock"
+      ],
+      "language": "ko",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "global_crossover"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "rose-bruno-mars-apt.mp3",
+        "artworkFile": "rose-bruno-mars-apt.jpg"
+      }
+    },
+    {
+      "id": "alex-warren-ordinary",
+      "title": "Ordinary",
+      "artist": "Alex Warren",
+      "primaryArtists": [
+        "Alex Warren"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2025,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_global_chart",
+        "current_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "alex-warren-ordinary.mp3",
+        "artworkFile": "alex-warren-ordinary.jpg"
+      }
+    },
+    {
+      "id": "bad-bunny-dtmf",
+      "title": "DtMF",
+      "artist": "Bad Bunny",
+      "primaryArtists": [
+        "Bad Bunny"
+      ],
+      "aliases": [
+        "Debí Tirar Más Fotos",
+        "Debi Tirar Mas Fotos"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2025,
+      "genres": [
+        "reggaeton",
+        "latin"
+      ],
+      "language": "es",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_global_chart",
+        "global_crossover"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "bad-bunny-dtmf.mp3",
+        "artworkFile": "bad-bunny-dtmf.jpg"
+      }
+    },
+    {
+      "id": "sombr-back-to-friends",
+      "title": "back to friends",
+      "artist": "sombr",
+      "primaryArtists": [
+        "sombr"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_global_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "sombr-back-to-friends.mp3",
+        "artworkFile": "sombr-back-to-friends.jpg"
+      }
+    },
+    {
+      "id": "huntrix-golden",
+      "title": "Golden",
+      "artist": "HUNTR/X: EJAE, AUDREY NUNA & REI AMI",
+      "primaryArtists": [
+        "HUNTR/X",
+        "EJAE",
+        "AUDREY NUNA",
+        "REI AMI"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Huntrix"
+      ],
+      "releaseYear": 2025,
+      "genres": [
+        "k-pop",
+        "soundtrack"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_global_chart",
+        "screen_culture"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "huntrix-golden.mp3",
+        "artworkFile": "huntrix-golden.jpg"
+      }
+    },
+    {
+      "id": "kendrick-lamar-sza-luther",
+      "title": "luther",
+      "artist": "Kendrick Lamar & SZA",
+      "primaryArtists": [
+        "Kendrick Lamar",
+        "SZA"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "hip-hop",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_global_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "kendrick-lamar-sza-luther.mp3",
+        "artworkFile": "kendrick-lamar-sza-luther.jpg"
+      }
+    },
+    {
+      "id": "gracie-abrams-thats-so-true",
+      "title": "That's So True",
+      "artist": "Gracie Abrams",
+      "primaryArtists": [
+        "Gracie Abrams"
+      ],
+      "aliases": [
+        "Thats So True"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_global_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "gracie-abrams-thats-so-true.mp3",
+        "artworkFile": "gracie-abrams-thats-so-true.jpg"
+      }
+    },
+    {
+      "id": "sabrina-carpenter-espresso",
+      "title": "Espresso",
+      "artist": "Sabrina Carpenter",
+      "primaryArtists": [
+        "Sabrina Carpenter"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "sabrina-carpenter-espresso.mp3",
+        "artworkFile": "sabrina-carpenter-espresso.jpg"
+      }
+    },
+    {
+      "id": "benson-boone-beautiful-things",
+      "title": "Beautiful Things",
+      "artist": "Benson Boone",
+      "primaryArtists": [
+        "Benson Boone"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop rock"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "benson-boone-beautiful-things.mp3",
+        "artworkFile": "benson-boone-beautiful-things.jpg"
+      }
+    },
+    {
+      "id": "chappell-roan-pink-pony-club",
+      "title": "Pink Pony Club",
+      "artist": "Chappell Roan",
+      "primaryArtists": [
+        "Chappell Roan"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2020,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "chappell-roan-pink-pony-club.mp3",
+        "artworkFile": "chappell-roan-pink-pony-club.jpg"
+      }
+    },
+    {
+      "id": "lola-young-messy",
+      "title": "Messy",
+      "artist": "Lola Young",
+      "primaryArtists": [
+        "Lola Young"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop",
+        "soul"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "current_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "lola-young-messy.mp3",
+        "artworkFile": "lola-young-messy.jpg"
+      }
+    },
+    {
+      "id": "tate-mcrae-sports-car",
+      "title": "Sports car",
+      "artist": "Tate McRae",
+      "primaryArtists": [
+        "Tate McRae"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2025,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tate-mcrae-sports-car.mp3",
+        "artworkFile": "tate-mcrae-sports-car.jpg"
+      }
+    },
+    {
+      "id": "hozier-too-sweet",
+      "title": "Too Sweet",
+      "artist": "Hozier",
+      "primaryArtists": [
+        "Hozier"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop rock",
+        "soul"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "hozier-too-sweet.mp3",
+        "artworkFile": "hozier-too-sweet.jpg"
+      }
+    },
+    {
+      "id": "shaboozey-a-bar-song-tipsy",
+      "title": "A Bar Song (Tipsy)",
+      "artist": "Shaboozey",
+      "primaryArtists": [
+        "Shaboozey"
+      ],
+      "aliases": [
+        "A Bar Song"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "country",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "shaboozey-a-bar-song-tipsy.mp3",
+        "artworkFile": "shaboozey-a-bar-song-tipsy.jpg"
+      }
+    },
+    {
+      "id": "sabrina-carpenter-taste",
+      "title": "Taste",
+      "artist": "Sabrina Carpenter",
+      "primaryArtists": [
+        "Sabrina Carpenter"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "sabrina-carpenter-taste.mp3",
+        "artworkFile": "sabrina-carpenter-taste.jpg"
+      }
+    },
+    {
+      "id": "myles-smith-stargazing",
+      "title": "Stargazing",
+      "artist": "Myles Smith",
+      "primaryArtists": [
+        "Myles Smith"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "folk pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "current_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "myles-smith-stargazing.mp3",
+        "artworkFile": "myles-smith-stargazing.jpg"
+      }
+    },
+    {
+      "id": "drake-nokia",
+      "title": "NOKIA",
+      "artist": "Drake",
+      "primaryArtists": [
+        "Drake"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2025,
+      "genres": [
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "drake-nokia.mp3",
+        "artworkFile": "drake-nokia.jpg"
+      }
+    },
+    {
+      "id": "the-weeknd-playboi-carti-timeless",
+      "title": "Timeless",
+      "artist": "The Weeknd & Playboi Carti",
+      "primaryArtists": [
+        "The Weeknd",
+        "Playboi Carti"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "r&b",
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "the-weeknd-playboi-carti-timeless.mp3",
+        "artworkFile": "the-weeknd-playboi-carti-timeless.jpg"
+      }
+    },
+    {
+      "id": "chappell-roan-good-luck-babe",
+      "title": "Good Luck, Babe!",
+      "artist": "Chappell Roan",
+      "primaryArtists": [
+        "Chappell Roan"
+      ],
+      "aliases": [
+        "Good Luck Babe"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 100,
+        "broaderVisibility": 95,
+        "longevity": 35
+      },
+      "familiarity": 85,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "chappell-roan-good-luck-babe.mp3",
+        "artworkFile": "chappell-roan-good-luck-babe.jpg"
+      }
+    },
+    {
+      "id": "teddy-swims-lose-control",
+      "title": "Lose Control",
+      "artist": "Teddy Swims",
+      "primaryArtists": [
+        "Teddy Swims"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2023,
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "teddy-swims-lose-control.mp3",
+        "artworkFile": "teddy-swims-lose-control.jpg"
+      }
+    },
+    {
+      "id": "doechii-anxiety",
+      "title": "Anxiety",
+      "artist": "Doechii",
+      "primaryArtists": [
+        "Doechii"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2025,
+      "genres": [
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_chart",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "doechii-anxiety.mp3",
+        "artworkFile": "doechii-anxiety.jpg"
+      }
+    },
+    {
+      "id": "sabrina-carpenter-manchild",
+      "title": "Manchild",
+      "artist": "Sabrina Carpenter",
+      "primaryArtists": [
+        "Sabrina Carpenter"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2025,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "2025_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "sabrina-carpenter-manchild.mp3",
+        "artworkFile": "sabrina-carpenter-manchild.jpg"
+      }
+    },
+    {
+      "id": "gigi-perez-sailor-song",
+      "title": "Sailor Song",
+      "artist": "Gigi Perez",
+      "primaryArtists": [
+        "Gigi Perez"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "indie folk"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "gigi-perez-sailor-song.mp3",
+        "artworkFile": "gigi-perez-sailor-song.jpg"
+      }
+    },
+    {
+      "id": "gracie-abrams-i-love-you-im-sorry",
+      "title": "I Love You, I'm Sorry",
+      "artist": "Gracie Abrams",
+      "primaryArtists": [
+        "Gracie Abrams"
+      ],
+      "aliases": [
+        "I Love You Im Sorry"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "gracie-abrams-i-love-you-im-sorry.mp3",
+        "artworkFile": "gracie-abrams-i-love-you-im-sorry.jpg"
+      }
+    },
+    {
+      "id": "charli-xcx-apple",
+      "title": "Apple",
+      "artist": "Charli xcx",
+      "primaryArtists": [
+        "Charli xcx"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Charli XCX"
+      ],
+      "releaseYear": 2024,
+      "genres": [
+        "pop",
+        "electronic"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "social_circulation"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "charli-xcx-apple.mp3",
+        "artworkFile": "charli-xcx-apple.jpg"
+      }
+    },
+    {
+      "id": "malcolm-todd-earrings",
+      "title": "Earrings",
+      "artist": "Malcolm Todd",
+      "primaryArtists": [
+        "Malcolm Todd"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2024,
+      "genres": [
+        "alternative",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "current_chart",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "malcolm-todd-earrings.mp3",
+        "artworkFile": "malcolm-todd-earrings.jpg"
+      }
+    },
+    {
+      "id": "the-marias-no-one-noticed",
+      "title": "No One Noticed",
+      "artist": "The Marías",
+      "primaryArtists": [
+        "The Marías"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "The Marias"
+      ],
+      "releaseYear": 2024,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "the-marias-no-one-noticed.mp3",
+        "artworkFile": "the-marias-no-one-noticed.jpg"
+      }
+    },
+    {
+      "id": "djo-end-of-beginning",
+      "title": "End of Beginning",
+      "artist": "Djo",
+      "primaryArtists": [
+        "Djo"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2022,
+      "genres": [
+        "indie pop",
+        "synth-pop"
+      ],
+      "language": "en",
+      "bucket": "current_recent",
+      "selectionSignals": [
+        "recent_chart",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 95,
+        "broaderVisibility": 80,
+        "longevity": 20
+      },
+      "familiarity": 75,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "djo-end-of-beginning.mp3",
+        "artworkFile": "djo-end-of-beginning.jpg"
+      }
+    },
+    {
+      "id": "daniel-caesar-her-best-part",
+      "title": "Best Part",
+      "artist": "Daniel Caesar feat. H.E.R.",
+      "primaryArtists": [
+        "Daniel Caesar",
+        "H.E.R."
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Daniel Caesar featuring HER"
+      ],
+      "releaseYear": 2017,
+      "genres": [
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "daniel-caesar-her-best-part.mp3",
+        "artworkFile": "daniel-caesar-her-best-part.jpg"
+      }
+    },
+    {
+      "id": "daniel-caesar-kali-uchis-get-you",
+      "title": "Get You",
+      "artist": "Daniel Caesar feat. Kali Uchis",
+      "primaryArtists": [
+        "Daniel Caesar",
+        "Kali Uchis"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "daniel-caesar-kali-uchis-get-you.mp3",
+        "artworkFile": "daniel-caesar-kali-uchis-get-you.jpg"
+      }
+    },
+    {
+      "id": "daniel-caesar-japanese-denim",
+      "title": "Japanese Denim",
+      "artist": "Daniel Caesar",
+      "primaryArtists": [
+        "Daniel Caesar"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "daniel-caesar-japanese-denim.mp3",
+        "artworkFile": "daniel-caesar-japanese-denim.jpg"
+      }
+    },
+    {
+      "id": "frank-ocean-nights",
+      "title": "Nights",
+      "artist": "Frank Ocean",
+      "primaryArtists": [
+        "Frank Ocean"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "r&b",
+        "alternative"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "frank-ocean-nights.mp3",
+        "artworkFile": "frank-ocean-nights.jpg"
+      }
+    },
+    {
+      "id": "frank-ocean-pink-white",
+      "title": "Pink + White",
+      "artist": "Frank Ocean",
+      "primaryArtists": [
+        "Frank Ocean"
+      ],
+      "aliases": [
+        "Pink and White"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "r&b",
+        "alternative"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "frank-ocean-pink-white.mp3",
+        "artworkFile": "frank-ocean-pink-white.jpg"
+      }
+    },
+    {
+      "id": "frank-ocean-lost",
+      "title": "Lost",
+      "artist": "Frank Ocean",
+      "primaryArtists": [
+        "Frank Ocean"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2012,
+      "genres": [
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "frank-ocean-lost.mp3",
+        "artworkFile": "frank-ocean-lost.jpg"
+      }
+    },
+    {
+      "id": "joji-slow-dancing-in-the-dark",
+      "title": "SLOW DANCING IN THE DARK",
+      "artist": "Joji",
+      "primaryArtists": [
+        "Joji"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2018,
+      "genres": [
+        "r&b",
+        "alternative"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "joji-slow-dancing-in-the-dark.mp3",
+        "artworkFile": "joji-slow-dancing-in-the-dark.jpg"
+      }
+    },
+    {
+      "id": "joji-glimpse-of-us",
+      "title": "Glimpse of Us",
+      "artist": "Joji",
+      "primaryArtists": [
+        "Joji"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2022,
+      "genres": [
+        "pop",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "joji-glimpse-of-us.mp3",
+        "artworkFile": "joji-glimpse-of-us.jpg"
+      }
+    },
+    {
+      "id": "joji-sanctuary",
+      "title": "Sanctuary",
+      "artist": "Joji",
+      "primaryArtists": [
+        "Joji"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "r&b",
+        "alternative"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "joji-sanctuary.mp3",
+        "artworkFile": "joji-sanctuary.jpg"
+      }
+    },
+    {
+      "id": "tyler-the-creator-kali-uchis-see-you-again",
+      "title": "See You Again",
+      "artist": "Tyler, The Creator feat. Kali Uchis",
+      "primaryArtists": [
+        "Tyler, The Creator",
+        "Kali Uchis"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "hip-hop",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tyler-the-creator-kali-uchis-see-you-again.mp3",
+        "artworkFile": "tyler-the-creator-kali-uchis-see-you-again.jpg"
+      }
+    },
+    {
+      "id": "tyler-the-creator-earfquake",
+      "title": "EARFQUAKE",
+      "artist": "Tyler, The Creator",
+      "primaryArtists": [
+        "Tyler, The Creator"
+      ],
+      "aliases": [
+        "Earthquake"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "hip-hop",
+        "neo soul"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tyler-the-creator-earfquake.mp3",
+        "artworkFile": "tyler-the-creator-earfquake.jpg"
+      }
+    },
+    {
+      "id": "tyler-the-creator-new-magic-wand",
+      "title": "NEW MAGIC WAND",
+      "artist": "Tyler, The Creator",
+      "primaryArtists": [
+        "Tyler, The Creator"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "hip-hop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tyler-the-creator-new-magic-wand.mp3",
+        "artworkFile": "tyler-the-creator-new-magic-wand.jpg"
+      }
+    },
+    {
+      "id": "tv-girl-not-allowed",
+      "title": "Not Allowed",
+      "artist": "TV Girl",
+      "primaryArtists": [
+        "TV Girl"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2014,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tv-girl-not-allowed.mp3",
+        "artworkFile": "tv-girl-not-allowed.jpg"
+      }
+    },
+    {
+      "id": "tv-girl-lovers-rock",
+      "title": "Lovers Rock",
+      "artist": "TV Girl",
+      "primaryArtists": [
+        "TV Girl"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2014,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tv-girl-lovers-rock.mp3",
+        "artworkFile": "tv-girl-lovers-rock.jpg"
+      }
+    },
+    {
+      "id": "tv-girl-cigarettes-out-the-window",
+      "title": "Cigarettes out the Window",
+      "artist": "TV Girl",
+      "primaryArtists": [
+        "TV Girl"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tv-girl-cigarettes-out-the-window.mp3",
+        "artworkFile": "tv-girl-cigarettes-out-the-window.jpg"
+      }
+    },
+    {
+      "id": "steve-lacy-dark-red",
+      "title": "Dark Red",
+      "artist": "Steve Lacy",
+      "primaryArtists": [
+        "Steve Lacy"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "r&b",
+        "indie"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "steve-lacy-dark-red.mp3",
+        "artworkFile": "steve-lacy-dark-red.jpg"
+      }
+    },
+    {
+      "id": "steve-lacy-bad-habit",
+      "title": "Bad Habit",
+      "artist": "Steve Lacy",
+      "primaryArtists": [
+        "Steve Lacy"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2022,
+      "genres": [
+        "r&b",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "steve-lacy-bad-habit.mp3",
+        "artworkFile": "steve-lacy-bad-habit.jpg"
+      }
+    },
+    {
+      "id": "steve-lacy-some",
+      "title": "Some",
+      "artist": "Steve Lacy",
+      "primaryArtists": [
+        "Steve Lacy"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2016,
+      "genres": [
+        "r&b",
+        "indie"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "steve-lacy-some.mp3",
+        "artworkFile": "steve-lacy-some.jpg"
+      }
+    },
+    {
+      "id": "clairo-sofia",
+      "title": "Sofia",
+      "artist": "Clairo",
+      "primaryArtists": [
+        "Clairo"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "clairo-sofia.mp3",
+        "artworkFile": "clairo-sofia.jpg"
+      }
+    },
+    {
+      "id": "clairo-bags",
+      "title": "Bags",
+      "artist": "Clairo",
+      "primaryArtists": [
+        "Clairo"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "clairo-bags.mp3",
+        "artworkFile": "clairo-bags.jpg"
+      }
+    },
+    {
+      "id": "mgmt-electric-feel",
+      "title": "Electric Feel",
+      "artist": "MGMT",
+      "primaryArtists": [
+        "MGMT"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2007,
+      "genres": [
+        "indie pop",
+        "psychedelic pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "mgmt-electric-feel.mp3",
+        "artworkFile": "mgmt-electric-feel.jpg"
+      }
+    },
+    {
+      "id": "cafune-tek-it",
+      "title": "Tek It",
+      "artist": "Cafuné",
+      "primaryArtists": [
+        "Cafuné"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Cafune"
+      ],
+      "releaseYear": 2019,
+      "genres": [
+        "indie pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "social_circulation"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "cafune-tek-it.mp3",
+        "artworkFile": "cafune-tek-it.jpg"
+      }
+    },
+    {
+      "id": "d4vd-romantic-homicide",
+      "title": "Romantic Homicide",
+      "artist": "d4vd",
+      "primaryArtists": [
+        "d4vd"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2022,
+      "genres": [
+        "alternative",
+        "indie"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "d4vd-romantic-homicide.mp3",
+        "artworkFile": "d4vd-romantic-homicide.jpg"
+      }
+    },
+    {
+      "id": "kanye-west-heartless",
+      "title": "Heartless",
+      "artist": "Kanye West",
+      "primaryArtists": [
+        "Kanye West"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Ye"
+      ],
+      "releaseYear": 2008,
+      "genres": [
+        "hip-hop",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "kanye-west-heartless.mp3",
+        "artworkFile": "kanye-west-heartless.jpg"
+      }
+    },
+    {
+      "id": "tame-impala-borderline",
+      "title": "Borderline",
+      "artist": "Tame Impala",
+      "primaryArtists": [
+        "Tame Impala"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "psychedelic pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tame-impala-borderline.mp3",
+        "artworkFile": "tame-impala-borderline.jpg"
+      }
+    },
+    {
+      "id": "tame-impala-the-less-i-know-the-better",
+      "title": "The Less I Know the Better",
+      "artist": "Tame Impala",
+      "primaryArtists": [
+        "Tame Impala"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2015,
+      "genres": [
+        "psychedelic pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tame-impala-the-less-i-know-the-better.mp3",
+        "artworkFile": "tame-impala-the-less-i-know-the-better.jpg"
+      }
+    },
+    {
+      "id": "tame-impala-let-it-happen",
+      "title": "Let It Happen",
+      "artist": "Tame Impala",
+      "primaryArtists": [
+        "Tame Impala"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2015,
+      "genres": [
+        "psychedelic pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 70,
+        "longevity": 50
+      },
+      "familiarity": 70,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tame-impala-let-it-happen.mp3",
+        "artworkFile": "tame-impala-let-it-happen.jpg"
+      }
+    },
+    {
+      "id": "beach-house-space-song",
+      "title": "Space Song",
+      "artist": "Beach House",
+      "primaryArtists": [
+        "Beach House"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2015,
+      "genres": [
+        "dream pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "beach-house-space-song.mp3",
+        "artworkFile": "beach-house-space-song.jpg"
+      }
+    },
+    {
+      "id": "cigarettes-after-sex-apocalypse",
+      "title": "Apocalypse",
+      "artist": "Cigarettes After Sex",
+      "primaryArtists": [
+        "Cigarettes After Sex"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "dream pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "taste_fit"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "cigarettes-after-sex-apocalypse.mp3",
+        "artworkFile": "cigarettes-after-sex-apocalypse.jpg"
+      }
+    },
+    {
+      "id": "mgmt-kids",
+      "title": "Kids",
+      "artist": "MGMT",
+      "primaryArtists": [
+        "MGMT"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2007,
+      "genres": [
+        "indie pop",
+        "synth-pop"
+      ],
+      "language": "en",
+      "bucket": "gen_z_staple",
+      "selectionSignals": [
+        "gen_z_recognition",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 80,
+        "longevity": 55
+      },
+      "familiarity": 79,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "mgmt-kids.mp3",
+        "artworkFile": "mgmt-kids.jpg"
+      }
+    },
+    {
+      "id": "the-killers-mr-brightside",
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "primaryArtists": [
+        "The Killers"
+      ],
+      "aliases": [
+        "Mister Brightside"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2003,
+      "genres": [
+        "alternative rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "the-killers-mr-brightside.mp3",
+        "artworkFile": "the-killers-mr-brightside.jpg"
+      }
+    },
+    {
+      "id": "a-ha-take-on-me",
+      "title": "Take on Me",
+      "artist": "a-ha",
+      "primaryArtists": [
+        "a-ha"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1985,
+      "genres": [
+        "synth-pop",
+        "new wave"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "a-ha-take-on-me.mp3",
+        "artworkFile": "a-ha-take-on-me.jpg"
+      }
+    },
+    {
+      "id": "michael-jackson-billie-jean",
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "primaryArtists": [
+        "Michael Jackson"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1982,
+      "genres": [
+        "pop",
+        "funk"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "michael-jackson-billie-jean.mp3",
+        "artworkFile": "michael-jackson-billie-jean.jpg"
+      }
+    },
+    {
+      "id": "nirvana-smells-like-teen-spirit",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "primaryArtists": [
+        "Nirvana"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1991,
+      "genres": [
+        "grunge",
+        "rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "nirvana-smells-like-teen-spirit.mp3",
+        "artworkFile": "nirvana-smells-like-teen-spirit.jpg"
+      }
+    },
+    {
+      "id": "oasis-wonderwall",
+      "title": "Wonderwall",
+      "artist": "Oasis",
+      "primaryArtists": [
+        "Oasis"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1995,
+      "genres": [
+        "britpop",
+        "rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "oasis-wonderwall.mp3",
+        "artworkFile": "oasis-wonderwall.jpg"
+      }
+    },
+    {
+      "id": "whitney-houston-i-wanna-dance-with-somebody",
+      "title": "I Wanna Dance with Somebody (Who Loves Me)",
+      "artist": "Whitney Houston",
+      "primaryArtists": [
+        "Whitney Houston"
+      ],
+      "aliases": [
+        "I Wanna Dance with Somebody"
+      ],
+      "artistAliases": [],
+      "releaseYear": 1987,
+      "genres": [
+        "pop",
+        "dance-pop"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "whitney-houston-i-wanna-dance-with-somebody.mp3",
+        "artworkFile": "whitney-houston-i-wanna-dance-with-somebody.jpg"
+      }
+    },
+    {
+      "id": "queen-bohemian-rhapsody",
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "primaryArtists": [
+        "Queen"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1975,
+      "genres": [
+        "rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "queen-bohemian-rhapsody.mp3",
+        "artworkFile": "queen-bohemian-rhapsody.jpg"
+      }
+    },
+    {
+      "id": "queen-dont-stop-me-now",
+      "title": "Don't Stop Me Now",
+      "artist": "Queen",
+      "primaryArtists": [
+        "Queen"
+      ],
+      "aliases": [
+        "Dont Stop Me Now"
+      ],
+      "artistAliases": [],
+      "releaseYear": 1978,
+      "genres": [
+        "rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "queen-dont-stop-me-now.mp3",
+        "artworkFile": "queen-dont-stop-me-now.jpg"
+      }
+    },
+    {
+      "id": "abba-dancing-queen",
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "primaryArtists": [
+        "ABBA"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1976,
+      "genres": [
+        "pop",
+        "disco"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "abba-dancing-queen.mp3",
+        "artworkFile": "abba-dancing-queen.jpg"
+      }
+    },
+    {
+      "id": "earth-wind-fire-september",
+      "title": "September",
+      "artist": "Earth, Wind & Fire",
+      "primaryArtists": [
+        "Earth, Wind & Fire"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Earth Wind and Fire"
+      ],
+      "releaseYear": 1978,
+      "genres": [
+        "disco",
+        "funk"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "earth-wind-fire-september.mp3",
+        "artworkFile": "earth-wind-fire-september.jpg"
+      }
+    },
+    {
+      "id": "eurythmics-sweet-dreams",
+      "title": "Sweet Dreams (Are Made of This)",
+      "artist": "Eurythmics",
+      "primaryArtists": [
+        "Eurythmics"
+      ],
+      "aliases": [
+        "Sweet Dreams"
+      ],
+      "artistAliases": [],
+      "releaseYear": 1983,
+      "genres": [
+        "synth-pop",
+        "new wave"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "eurythmics-sweet-dreams.mp3",
+        "artworkFile": "eurythmics-sweet-dreams.jpg"
+      }
+    },
+    {
+      "id": "george-michael-careless-whisper",
+      "title": "Careless Whisper",
+      "artist": "George Michael",
+      "primaryArtists": [
+        "George Michael"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1984,
+      "genres": [
+        "pop",
+        "soul"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "george-michael-careless-whisper.mp3",
+        "artworkFile": "george-michael-careless-whisper.jpg"
+      }
+    },
+    {
+      "id": "the-cranberries-zombie",
+      "title": "Zombie",
+      "artist": "The Cranberries",
+      "primaryArtists": [
+        "The Cranberries"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1994,
+      "genres": [
+        "alternative rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "the-cranberries-zombie.mp3",
+        "artworkFile": "the-cranberries-zombie.jpg"
+      }
+    },
+    {
+      "id": "goo-goo-dolls-iris",
+      "title": "Iris",
+      "artist": "Goo Goo Dolls",
+      "primaryArtists": [
+        "Goo Goo Dolls"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1998,
+      "genres": [
+        "alternative rock",
+        "pop rock"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "goo-goo-dolls-iris.mp3",
+        "artworkFile": "goo-goo-dolls-iris.jpg"
+      }
+    },
+    {
+      "id": "tlc-no-scrubs",
+      "title": "No Scrubs",
+      "artist": "TLC",
+      "primaryArtists": [
+        "TLC"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 1999,
+      "genres": [
+        "r&b",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "tlc-no-scrubs.mp3",
+        "artworkFile": "tlc-no-scrubs.jpg"
+      }
+    },
+    {
+      "id": "britney-spears-toxic",
+      "title": "Toxic",
+      "artist": "Britney Spears",
+      "primaryArtists": [
+        "Britney Spears"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2003,
+      "genres": [
+        "pop",
+        "dance-pop"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "cultural_longevity",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "britney-spears-toxic.mp3",
+        "artworkFile": "britney-spears-toxic.jpg"
+      }
+    },
+    {
+      "id": "alexandra-stan-mr-saxobeat",
+      "title": "Mr. Saxobeat",
+      "artist": "Alexandra Stan",
+      "primaryArtists": [
+        "Alexandra Stan"
+      ],
+      "aliases": [
+        "Mister Saxobeat"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2011,
+      "genres": [
+        "dance-pop",
+        "electronic"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "throwback_relevance",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "alexandra-stan-mr-saxobeat.mp3",
+        "artworkFile": "alexandra-stan-mr-saxobeat.jpg"
+      }
+    },
+    {
+      "id": "nelly-furtado-timbaland-promiscuous",
+      "title": "Promiscuous",
+      "artist": "Nelly Furtado feat. Timbaland",
+      "primaryArtists": [
+        "Nelly Furtado",
+        "Timbaland"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2006,
+      "genres": [
+        "pop",
+        "r&b"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "throwback_relevance",
+        "revival_relevance"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "nelly-furtado-timbaland-promiscuous.mp3",
+        "artworkFile": "nelly-furtado-timbaland-promiscuous.jpg"
+      }
+    },
+    {
+      "id": "miley-cyrus-party-in-the-usa",
+      "title": "Party in the U.S.A.",
+      "artist": "Miley Cyrus",
+      "primaryArtists": [
+        "Miley Cyrus"
+      ],
+      "aliases": [
+        "Party in the USA"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2009,
+      "genres": [
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "throwback_relevance",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "miley-cyrus-party-in-the-usa.mp3",
+        "artworkFile": "miley-cyrus-party-in-the-usa.jpg"
+      }
+    },
+    {
+      "id": "lady-gaga-just-dance",
+      "title": "Just Dance",
+      "artist": "Lady Gaga feat. Colby O'Donis",
+      "primaryArtists": [
+        "Lady Gaga",
+        "Colby O'Donis"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2008,
+      "genres": [
+        "pop",
+        "dance-pop"
+      ],
+      "language": "en",
+      "bucket": "classic_throwback",
+      "selectionSignals": [
+        "throwback_relevance",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 85,
+        "currentCirculation": 70,
+        "broaderVisibility": 95,
+        "longevity": 100
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "lady-gaga-just-dance.mp3",
+        "artworkFile": "lady-gaga-just-dance.jpg"
+      }
+    },
+    {
+      "id": "stromae-alors-on-danse",
+      "title": "Alors on danse",
+      "artist": "Stromae",
+      "primaryArtists": [
+        "Stromae"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2009,
+      "genres": [
+        "electronic",
+        "dance"
+      ],
+      "language": "fr",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "stromae-alors-on-danse.mp3",
+        "artworkFile": "stromae-alors-on-danse.jpg"
+      }
+    },
+    {
+      "id": "luis-fonsi-daddy-yankee-despacito",
+      "title": "Despacito",
+      "artist": "Luis Fonsi feat. Daddy Yankee",
+      "primaryArtists": [
+        "Luis Fonsi",
+        "Daddy Yankee"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "reggaeton",
+        "latin pop"
+      ],
+      "language": "es",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "luis-fonsi-daddy-yankee-despacito.mp3",
+        "artworkFile": "luis-fonsi-daddy-yankee-despacito.jpg"
+      }
+    },
+    {
+      "id": "psy-gangnam-style",
+      "title": "Gangnam Style",
+      "artist": "PSY",
+      "primaryArtists": [
+        "PSY"
+      ],
+      "aliases": [
+        "강남스타일"
+      ],
+      "artistAliases": [
+        "싸이"
+      ],
+      "releaseYear": 2012,
+      "genres": [
+        "k-pop",
+        "dance"
+      ],
+      "language": "ko",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "psy-gangnam-style.mp3",
+        "artworkFile": "psy-gangnam-style.jpg"
+      }
+    },
+    {
+      "id": "don-omar-lucenzo-danza-kuduro",
+      "title": "Danza Kuduro",
+      "artist": "Don Omar feat. Lucenzo",
+      "primaryArtists": [
+        "Don Omar",
+        "Lucenzo"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2010,
+      "genres": [
+        "reggaeton",
+        "dance"
+      ],
+      "language": "es",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "don-omar-lucenzo-danza-kuduro.mp3",
+        "artworkFile": "don-omar-lucenzo-danza-kuduro.jpg"
+      }
+    },
+    {
+      "id": "rema-selena-gomez-calm-down",
+      "title": "Calm Down",
+      "artist": "Rema & Selena Gomez",
+      "primaryArtists": [
+        "Rema",
+        "Selena Gomez"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2022,
+      "genres": [
+        "afrobeats",
+        "pop"
+      ],
+      "language": "en",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "rema-selena-gomez-calm-down.mp3",
+        "artworkFile": "rema-selena-gomez-calm-down.jpg"
+      }
+    },
+    {
+      "id": "master-kg-nomcebo-zikode-jerusalema",
+      "title": "Jerusalema",
+      "artist": "Master KG feat. Nomcebo Zikode",
+      "primaryArtists": [
+        "Master KG",
+        "Nomcebo Zikode"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2019,
+      "genres": [
+        "afro house",
+        "gospel"
+      ],
+      "language": "zu",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "social_circulation"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 90,
+        "longevity": 75
+      },
+      "familiarity": 78,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "master-kg-nomcebo-zikode-jerusalema.mp3",
+        "artworkFile": "master-kg-nomcebo-zikode-jerusalema.jpg"
+      }
+    },
+    {
+      "id": "o-zone-dragostea-din-tei",
+      "title": "Dragostea Din Tei",
+      "artist": "O-Zone",
+      "primaryArtists": [
+        "O-Zone"
+      ],
+      "aliases": [
+        "Numa Numa"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2003,
+      "genres": [
+        "eurodance",
+        "pop"
+      ],
+      "language": "ro",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "internet_culture"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 90,
+        "longevity": 75
+      },
+      "familiarity": 78,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "o-zone-dragostea-din-tei.mp3",
+        "artworkFile": "o-zone-dragostea-din-tei.jpg"
+      }
+    },
+    {
+      "id": "stromae-papaoutai",
+      "title": "Papaoutai",
+      "artist": "Stromae",
+      "primaryArtists": [
+        "Stromae"
+      ],
+      "aliases": [
+        "Papa où t'es"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2013,
+      "genres": [
+        "electronic",
+        "pop"
+      ],
+      "language": "fr",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "gen_z_recognition"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "stromae-papaoutai.mp3",
+        "artworkFile": "stromae-papaoutai.jpg"
+      }
+    },
+    {
+      "id": "j-balvin-willy-william-mi-gente",
+      "title": "Mi Gente",
+      "artist": "J Balvin & Willy William",
+      "primaryArtists": [
+        "J Balvin",
+        "Willy William"
+      ],
+      "aliases": [],
+      "artistAliases": [],
+      "releaseYear": 2017,
+      "genres": [
+        "reggaeton",
+        "dance"
+      ],
+      "language": "es",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "cross_platform"
+      ],
+      "scores": {
+        "audienceRecognition": 90,
+        "currentCirculation": 75,
+        "broaderVisibility": 95,
+        "longevity": 80
+      },
+      "familiarity": 86,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "j-balvin-willy-william-mi-gente.mp3",
+        "artworkFile": "j-balvin-willy-william-mi-gente.jpg"
+      }
+    },
+    {
+      "id": "indila-derniere-danse",
+      "title": "Dernière danse",
+      "artist": "Indila",
+      "primaryArtists": [
+        "Indila"
+      ],
+      "aliases": [
+        "Derniere danse"
+      ],
+      "artistAliases": [],
+      "releaseYear": 2013,
+      "genres": [
+        "french pop"
+      ],
+      "language": "fr",
+      "bucket": "global_crossover",
+      "selectionSignals": [
+        "global_crossover",
+        "social_circulation"
+      ],
+      "scores": {
+        "audienceRecognition": 80,
+        "currentCirculation": 65,
+        "broaderVisibility": 90,
+        "longevity": 75
+      },
+      "familiarity": 78,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_media",
+      "media": {
+        "audioFile": "indila-derniere-danse.mp3",
+        "artworkFile": "indila-derniere-danse.jpg"
+      }
+    }
   ]
 }

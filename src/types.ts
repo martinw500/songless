@@ -19,7 +19,14 @@ export type SynthAudioSource = {
   noteLengthMs?: number;
 };
 
-export type AudioSource = FileAudioSource | SynthAudioSource;
+export type HostedAudioSource = {
+  kind: "hosted";
+  clueSrc: string;
+  fullSrc: string;
+  durationMs: number;
+};
+
+export type AudioSource = FileAudioSource | SynthAudioSource | HostedAudioSource;
 
 export type Song = {
   id: string;
@@ -28,6 +35,7 @@ export type Song = {
   aliases?: string[];
   artistAliases?: string[];
   album?: string;
+  spotifyUrl?: string;
   releaseYear?: number;
   genres?: string[];
   difficulty: Difficulty;

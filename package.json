@@ -6,9 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "audit:songs": "node scripts/song-library.mjs audit",
+    "approve:song": "node scripts/approve-song.mjs",
+    "prepare:media": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-audio.ps1",
+    "resolve:youtube": "node scripts/resolve-youtube-sources.mjs",
+    "download:media": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/download-authorized-sources.ps1",
+    "init:sources": "node scripts/init-download-sources.mjs",
+    "prepare:r2": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-r2-media.ps1",
+    "check:r2": "node --env-file-if-exists=.env.local scripts/upload-r2-media.mjs --check",
+    "upload:r2:dry-run": "node --env-file-if-exists=.env.local scripts/upload-r2-media.mjs --dry-run",
+    "sync:r2": "node --env-file-if-exists=.env.local scripts/upload-r2-media.mjs --catalog-only",
+    "upload:r2": "node --env-file-if-exists=.env.local scripts/upload-r2-media.mjs",
+    "review:r2": "node scripts/build-hosted-review.mjs",
+    "metadata:spotify": "node --env-file-if-exists=.env.local scripts/resolve-spotify-metadata.mjs",
+    "promote:songs": "node scripts/song-library.mjs promote",
+    "refresh:longlist": "node scripts/refresh-song-longlist.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "verify:ui": "node scripts/verify-ui.mjs",
+    "verify:hosted": "node scripts/verify-ui.mjs --hosted-smoke",
     "verify:ui:artifacts": "node scripts/verify-ui.mjs --artifacts"
   },
   "dependencies": {
@@ -16,6 +33,7 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1113.0",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",
     "@vitejs/plugin-react": "6.0.5",

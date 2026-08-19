@@ -102,6 +102,7 @@ const initialSeen = (): Record<Difficulty, Set<string>> => ({
 function App() {
   const audioEngine = useRef(new AudioEngine());
   const playbackFrame = useRef<number | null>(null);
+  const revealTimer = useRef<number | null>(null);
   const playbackRun = useRef(0);
   const playbackPending = useRef(false);
   const seenSongs = useRef(initialSeen());
@@ -117,6 +118,7 @@ function App() {
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
   const [audioError, setAudioError] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isRevealPlaying, setIsRevealPlaying] = useState(false);
   const [playbackElapsed, setPlaybackElapsed] = useState(0);
   const [heardThrough, setHeardThrough] = useState(0);
   const [hasStartedRound, setHasStartedRound] = useState(false);
@@ -129,12 +131,17 @@ function App() {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/catalog.json", { signal: controller.signal })
+    const reviewSongId = new URLSearchParams(window.location.search).get("reviewSong");
+    const catalogSource = reviewSongId ? "/review-catalog.json" : "/catalog.json";
+    fetch(catalogSource, { signal: controller.signal })
       .then(async (response) => {
         if (!response.ok) throw new Error(`Catalogue request failed (${response.status}).`);
         return response.json() as Promise<unknown>;
       })
-      .then((value) => setCatalog(validateCatalog(value)))
+      .then((value) => {
+        const songs = validateCatalog(value);
+        setCatalog(reviewSongId ? songs.filter((song) => song.id === reviewSongId) : songs);
+      })
       .catch((error: unknown) => {
         if (error instanceof DOMException && error.name === "AbortError") return;
         setCatalogError(error instanceof Error ? error.message : "Could not load the catalogue.");
@@ -142,6 +149,10 @@ function App() {
 
     return () => controller.abort();
   }, []);
+  const catalogUsesHostedAudio = useMemo(
+    () => catalog.some((song) => song.audio.kind === "hosted"),
+    [catalog],
+  );
 
   useEffect(() => {
     window.localStorage.setItem("songless-volume-v2", String(volume));
@@ -199,9 +210,40 @@ function App() {
       cancelAnimationFrame(playbackFrame.current);
       playbackFrame.current = null;
     }
+    if (revealTimer.current !== null) {
+      window.clearTimeout(revealTimer.current);
+      revealTimer.current = null;
+    }
     audioEngine.current.stop();
     setIsPlaying(false);
+    setIsRevealPlaying(false);
     setPlaybackElapsed(displayElapsed);
+  }
+
+  async function startRevealPlayback(startSeconds: number) {
+    if (!currentSong) return;
+    const run = playbackRun.current;
+    setAudioError("");
+    try {
+      const actualDuration = await audioEngine.current.playRemainder(currentSong, startSeconds, volume);
+      if (run !== playbackRun.current || actualDuration <= 0) return;
+      setIsRevealPlaying(true);
+      revealTimer.current = window.setTimeout(() => {
+        if (run !== playbackRun.current) return;
+        revealTimer.current = null;
+        setIsRevealPlaying(false);
+      }, actualDuration * 1000);
+    } catch (error) {
+      if (run !== playbackRun.current) return;
+      setIsRevealPlaying(false);
+      setAudioError(error instanceof Error ? error.message : "The reveal audio could not be played.");
+    }
+  }
+
+  function finishRound(nextStatus: Exclude<RoundStatus, "playing">, startSeconds: number) {
+    stopPlayback(startSeconds);
+    setStatus(nextStatus);
+    void startRevealPlayback(startSeconds);
   }
 
   function resetRoundState() {
@@ -287,13 +329,13 @@ function App() {
 
   function advanceOrLose() {
     setHeardThrough(currentStage);
-    stopPlayback(currentStage);
     if (stageIndex < enabledStages.length - 1) {
+      stopPlayback(currentStage);
       const nextIndex = stageIndex + 1;
       setStageIndex(nextIndex);
       return;
     }
-    setStatus("lost");
+    finishRound("lost", currentStage);
   }
 
   function submitGuess(guess?: Song) {
@@ -301,8 +343,7 @@ function App() {
     if (!guess) return;
 
     if (guess.id === currentSong.id) {
-      stopPlayback();
-      setStatus("won");
+      finishRound("won", Math.max(heardThrough, playbackElapsed));
       return;
     }
 
@@ -429,6 +470,13 @@ function App() {
                   {currentSong.artist}
                   {currentSong.album && <span> &middot; {currentSong.album}</span>}
                 </p>
+                {currentSong.spotifyUrl && (
+                  <a className="result-source-link" href={currentSong.spotifyUrl} target="_blank" rel="noreferrer">
+                    Open in Spotify
+                  </a>
+                )}
+                {isRevealPlaying && <span className="sr-only">Reveal audio is playing</span>}
+                {audioError && <p className="audio-error" role="alert">{audioError}</p>}
                 <div className="result-stamp">
                   {status === "won" ? `Guessed in ${currentStage}s!` : "Lost!"}
                 </div>
@@ -548,7 +596,9 @@ function App() {
         <aside className="settings-panel">
           <div>
             <p className="eyebrow"><WaveformIcon /> Song start</p>
-            <button className="setting-value" disabled type="button">Spotify preview</button>
+            <button className="setting-value" disabled type="button">
+              {catalogUsesHostedAudio ? "R2 hosted" : "Local preview"}
+            </button>
             <button className="setting-value active-setting" type="button">From the start</button>
           </div>
           <div>

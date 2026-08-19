@@ -11,7 +11,8 @@ export function normalizeAnswer(value: string): string {
     .replace(/&/g, "and")
     .replace(/\b(feat|featuring|ft)\.?\b.*$/g, "")
     .replace(/\b(remaster(?:ed)?|radio edit|single version)\b/g, "")
-    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .normalize("NFC")
     .trim();
 }
 
@@ -53,14 +54,27 @@ export function validateCatalog(value: unknown): Song[] {
   return value.filter((item): item is Song => {
     if (!item || typeof item !== "object") return false;
     const song = item as Partial<Song>;
+    if (!song.audio || typeof song.audio !== "object" || !("kind" in song.audio)) return false;
+    const audio = song.audio;
+    const validAudio = audio.kind === "synth"
+      ? Array.isArray(audio.notes) && audio.notes.length > 0 && audio.notes.every(Number.isFinite)
+      : audio.kind === "file"
+        ? typeof audio.src === "string" && audio.src.length > 0
+        : audio.kind === "hosted"
+            ? /^https:\/\//u.test(audio.clueSrc)
+              && /^https:\/\//u.test(audio.fullSrc)
+              && Number.isFinite(audio.durationMs)
+              && audio.durationMs >= 15_000
+          : false;
+    const validStart = song.startAtMs === undefined
+      || (Number.isInteger(song.startAtMs) && song.startAtMs >= 0);
     return Boolean(
       song.id &&
         song.title &&
         song.artist &&
         song.difficulty &&
-        song.audio &&
-        typeof song.audio === "object" &&
-        "kind" in song.audio,
+        validAudio &&
+        validStart,
     );
   });
 }

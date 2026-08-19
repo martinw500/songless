@@ -3,11 +3,12 @@
 .vercel
 dist
 node_modules
+private-media
+data/song-download-sources.local.json
 docs
 scripts
 *.md
 *.tsbuildinfo
 
-# public/media is intentionally not excluded. A deployment created from this
-# local working tree can include your private clips without committing them.
-
+# public/media remains available only for the optional permitted local-file
+# fallback. R2-backed catalogues do not upload song audio to Vercel.

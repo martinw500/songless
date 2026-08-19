@@ -11,13 +11,15 @@ A private Git repository does **not** make either deployed website private by it
 - `vercel.json` selects Vite, runs the production build, and serves `dist`.
 - Every response gets `X-Robots-Tag: noindex, nofollow, noarchive`.
 - `public/robots.txt` asks crawlers not to index any route.
-- `.vercelignore` excludes development-only files but intentionally includes `public/media` for local CLI deployments.
+- `.vercelignore` excludes development-only files. R2-backed catalogues contain URLs and metadata, not audio files.
 
-Crawler directives reduce accidental search-engine discovery; they are not access control. Anyone with the deployment URL can open the game and directly request its audio files.
+Crawler directives reduce accidental search-engine discovery; they are not access control. Public R2 media URLs can be requested directly by anyone who obtains them.
 
 ## Public production deployment
 
-Deploy from the local working tree rather than Git integration. This lets Vercel include the audio and artwork that Git intentionally ignores.
+The promoted catalogue already contains R2 public URLs, so Vercel needs no R2 credential. Never put `R2_SECRET_ACCESS_KEY` or `R2_ACCESS_KEY_ID` into a `VITE_` variable; they remain only in ignored local `.env.local` for uploads.
+
+If the public hostname changes after objects are uploaded, update `R2_PUBLIC_BASE_URL` and run `npm run sync:r2`. This verifies that every expected object exists and rewrites catalogue URLs without consuming upload operations.
 
 From the project directory:
 
@@ -27,19 +29,19 @@ npx vercel@latest --prod
 
 Accept Vercel's Vite defaults when prompted. Vercel will print a stable production URL that can be sent to anyone.
 
-This URL is public. There is no login requirement, and your friends do not need Vercel accounts.
+This URL is public. Players need no service account for R2-hosted playback.
 
 The included `robots.txt` and response header ask search engines not to list it. This makes the deployment *unlisted*, not private. Remove those directives later if you want the game to be discoverable through search.
 
 ## Updating the deployed game
 
-After changing the catalogue or adding media, update production from the same local directory:
+After changing the catalogue, update production from the same local directory:
 
 ```powershell
 npx vercel@latest --prod
 ```
 
-The stable production URL will move to the new deployment. This approach does not require committing audio to Git.
+The stable production URL will move to the new deployment. R2 serves the audio, so no audio is committed or uploaded to Vercel.
 
 ## Optional private mode
 
@@ -52,14 +54,18 @@ If you later decide to restrict access:
 
 Protection is an option, not a requirement for the game.
 
-## Git integration limitation
+## Git integration
 
-Automatic Git deployments contain only committed repository files. Because `public/media/audio` and `public/media/artwork` are intentionally ignored, a Git-triggered deployment will contain the demo catalogue but not your local media.
+R2-backed deployment is compatible with automatic Git builds because the tracked catalogue contains only small JSON metadata and public object URLs. R2 API credentials are not needed at build or runtime.
 
-Use local CLI deployments when real media must be included. If the project eventually uses an external media store, Git-triggered deployments can become the default.
+## Audio and storage
 
-## Audio visibility
+Cloudflare R2 delivers a compact clue file and a complete result track directly to the browser. Vercel hosts no real-song audio, so expanding the library barely changes deployment size and does not require a database.
 
-Vercel serves everything in `public/media` as ordinary web files. Visitors can inspect network requests and download those clips even if the interface has no download button. A database would not prevent that; playable browser audio must ultimately be delivered to the listener.
+The uploader's 8.5 GB default ceiling is intentionally below the 10 GB allowance. Run `npm run check:r2` to validate credentials and read the bucket's current usage without needing prepared media. The uploader totals every object in the target bucket and performs a no-write projection before the batch; run the dedicated `npm run upload:r2:dry-run` command before every material upload. The script cannot see unrelated buckets when the API token is restricted to one bucket, so subtract their usage manually through a lower `R2_MAX_BYTES`.
 
-For a few invited friends, storage and bandwidth should remain small because each prepared clip is only about 240 KB. If the site attracts a wider audience, move media to licensed object storage and revisit catalogue rights before promoting it.
+R2 CORS must allow `GET` and `HEAD` from the exact Vercel origin and `http://127.0.0.1:5173` for local review. Allow the `Range` request header and expose `Accept-Ranges`, `Content-Length`, and `Content-Range`; complete-track seeking depends on byte-range delivery. Keep write methods and credentials out of the browser policy.
+
+After generating the hosted review catalogue, `npm run verify:hosted` exercises a real clue through Web Audio and the complete result-screen stream. It is opt-in because it depends on network access to R2; the default `npm run verify:ui` remains self-contained.
+
+The optional local-file fallback is still supported. Any file placed in `public/media` becomes an ordinary downloadable web asset and is subject to the host's upload limits.

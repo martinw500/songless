@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const saveArtifacts = process.argv.includes("--artifacts");
+const verifyHostedPlayback = process.argv.includes("--hosted-smoke");
 const children = [];
 let browserClient;
 
@@ -160,6 +161,15 @@ async function clickStage(client, label) {
   await delay(40);
 }
 
+async function setStageEnabled(client, label, enabled) {
+  const current = await client.evaluate(`(() => {
+    const button = [...document.querySelectorAll('.stage-pill')]
+      .find((node) => node.textContent.trim() === ${JSON.stringify(label)});
+    return button?.getAttribute('aria-pressed') === 'true';
+  })()`);
+  if (current !== enabled) await clickStage(client, label);
+}
+
 async function stageState(client) {
   return client.evaluate(`(() => {
     const track = document.querySelector('.stage-track').getBoundingClientRect();
@@ -182,6 +192,8 @@ async function stageState(client) {
 async function run() {
   const appPort = await freePort();
   const profile = mkdtempSync(path.join(os.tmpdir(), "songless-ui-audit-"));
+  const reviewCatalogFile = path.join(root, "public", "review-catalog.json");
+  const originalReviewCatalog = existsSync(reviewCatalogFile) ? readFileSync(reviewCatalogFile) : null;
   const viteBin = path.join(root, "node_modules", "vite", "bin", "vite.js");
   assert(existsSync(viteBin), "Run npm install before npm run verify:ui.");
 
@@ -611,6 +623,42 @@ async function run() {
     assert(unlockedAfterReset, "A full round reset did not unlock stage settings.");
     console.log("PASS new-round reset unlocks stage settings");
 
+    await client.evaluate(`(() => {
+      const input = document.querySelector('input[aria-label="Search songs"]');
+      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+      setter.call(input, 'Afterglow Avenue');
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    })()`);
+    await delay(100);
+    await client.evaluate("document.querySelector('.suggestions button').click()");
+    await delay(60);
+    await client.evaluate("document.querySelector('.guess-button').click()");
+    await delay(160);
+    const wonReveal = await client.evaluate(`({
+      won: Boolean(document.querySelector('.result-panel.won')),
+      title: document.querySelector('.result-panel h1')?.textContent.trim(),
+      revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
+    })`);
+    assert(wonReveal.won && wonReveal.title === "Afterglow Avenue" && wonReveal.revealPlaying,
+      `A correct guess did not begin reveal playback (${JSON.stringify(wonReveal)}).`);
+
+    await client.evaluate("document.querySelector('.mode-action').click()");
+    await delay(100);
+    for (const stage of ["0.5s", "2s", "8s", "15s"]) await clickStage(client, stage);
+    await client.evaluate("document.querySelector('.skip-button').click()");
+    await delay(160);
+    const lostReveal = await client.evaluate(`({
+      lost: Boolean(document.querySelector('.result-panel.lost')),
+      title: document.querySelector('.result-panel h1')?.textContent.trim(),
+      revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
+    })`);
+    assert(lostReveal.lost && lostReveal.title === "Afterglow Avenue" && lostReveal.revealPlaying,
+      `A final skip did not begin reveal playback (${JSON.stringify(lostReveal)}).`);
+    console.log("PASS win and loss results continue reveal audio from the reached timestamp");
+
+    await client.evaluate("document.querySelector('.mode-action').click()");
+    await delay(100);
+
     await client.call("Emulation.setDeviceMetricsOverride", {
       width: 720,
       height: 900,
@@ -632,8 +680,134 @@ async function run() {
       `Play triangle lost optical alignment at 720px (${JSON.stringify(narrow)}).`);
     console.log("PASS 720px responsive layout and play-icon alignment");
 
+    if (verifyHostedPlayback) {
+      assert(originalReviewCatalog, "Run npm run review:r2 before npm run verify:hosted.");
+      const hostedSongs = JSON.parse(originalReviewCatalog.toString("utf8"));
+      const hostedSong = hostedSongs.find((song) => song.audio?.kind === "hosted");
+      assert(hostedSong, "The generated review catalogue has no hosted R2 song.");
+      writeFileSync(reviewCatalogFile, `${JSON.stringify([hostedSong], null, 2)}\n`);
+      await client.call("Page.navigate", { url: `http://127.0.0.1:${appPort}/?reviewSong=${encodeURIComponent(hostedSong.id)}` });
+      await waitForPage(client);
+      await setStageEnabled(client, "2s", true);
+      await setStageEnabled(client, "0.1s", false);
+      await setStageEnabled(client, "0.5s", false);
+      await client.evaluate("document.querySelector('.play-button').click()");
+      await delay(500);
+      const activePlayback = await client.evaluate(`({
+        playing: document.querySelector('.play-button')?.classList.contains('playing') ?? false,
+        elapsed: Number(document.querySelector('.stage-playback-progress')?.dataset.elapsed ?? 0),
+        error: document.querySelector('.audio-error')?.textContent.trim() ?? '',
+      })`);
+      assert(activePlayback.playing && activePlayback.elapsed > 0 && !activePlayback.error,
+        `The real hosted clue did not play through Web Audio (${JSON.stringify(activePlayback)}).`);
+      await client.evaluate("document.querySelector('.play-button').click()");
+      await delay(80);
+      const pausedElapsed = await client.evaluate("Number(document.querySelector('.stage-playback-progress')?.dataset.elapsed ?? 0)");
+      assert(pausedElapsed > 0, "The hosted clue did not retain its paused timestamp.");
+      const enabledCount = await client.evaluate("document.querySelectorAll('.stage-pill[aria-pressed=\"true\"]').length");
+      for (let index = 0; index < enabledCount; index += 1) {
+        await client.evaluate("document.querySelector('.skip-button')?.click()");
+        await delay(100);
+      }
+      await delay(700);
+      const hostedReveal = await client.evaluate(`({
+        lost: Boolean(document.querySelector('.result-panel.lost')),
+        revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
+        error: document.querySelector('.audio-error')?.textContent.trim() ?? '',
+      })`);
+      assert(hostedReveal.lost && hostedReveal.revealPlaying && !hostedReveal.error,
+        `The real hosted full-song reveal did not continue (${JSON.stringify(hostedReveal)}).`);
+      console.log(`PASS real R2 clue and full-song reveal playback (${hostedSong.id})`);
+    }
+
+    writeFileSync(reviewCatalogFile, `${JSON.stringify([{
+      id: "hosted-review-fixture",
+      title: "A Deliberately Long International Review Title",
+      artist: "Primary Artist, Featured Artist",
+      aliases: ["Romanized Review Title"],
+      artistAliases: [],
+      album: "A Long Album Name for Result Layout",
+      spotifyUrl: "https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC",
+      releaseYear: 2024,
+      genres: ["pop"],
+      difficulty: "easy",
+      familiarity: 85,
+      audio: {
+        kind: "hosted",
+        clueSrc: "https://media.invalid/audio/clues/hosted-review-fixture.mp3",
+        fullSrc: "https://media.invalid/audio/full/hosted-review-fixture.mp3",
+        durationMs: 213573,
+      },
+    }], null, 2)}\n`);
+    await client.call("Page.navigate", { url: `http://127.0.0.1:${appPort}/?reviewSong=hosted-review-fixture` });
+    await waitForPage(client);
+    await delay(150);
+    const hostedLayout = await client.evaluate(`(() => {
+      const sourceLabel = [...document.querySelectorAll('.settings-panel .setting-value')]
+        .find((element) => element.textContent.trim() === 'R2 hosted');
+      return {
+        sourceLabel: sourceLabel?.textContent.trim() ?? '',
+        spotifySetting: Boolean(document.querySelector('.spotify-setting')),
+        overflow: document.documentElement.scrollWidth - window.innerWidth,
+      };
+    })()`);
+    assert(hostedLayout.sourceLabel === "R2 hosted" && !hostedLayout.spotifySetting,
+      `Hosted source status or removed Spotify setting is incorrect (${JSON.stringify(hostedLayout)}).`);
+    assert(hostedLayout.overflow <= 1,
+      `Hosted settings broke the narrow layout (${JSON.stringify(hostedLayout)}).`);
+
+    await client.evaluate(`(() => {
+      const input = document.querySelector('input[aria-label="Search songs"]');
+      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+      setter.call(input, 'Romanized Review Title');
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    })()`);
+    await delay(80);
+    await client.evaluate("document.querySelector('.suggestions button').click()");
+    await delay(40);
+    await client.evaluate("document.querySelector('.guess-button').click()");
+    await delay(120);
+    const hostedResult = await client.evaluate(`({
+      title: document.querySelector('.result-panel h1')?.textContent.trim(),
+      artist: document.querySelector('.result-artist')?.textContent.replace(/\\s+/g, ' ').trim(),
+      metadataHref: document.querySelector('.result-source-link')?.href ?? "",
+      artworkFallback: Boolean(document.querySelector('.result-panel .artwork.fallback')),
+      overflow: document.documentElement.scrollWidth - window.innerWidth,
+    })`);
+    assert(hostedResult.title === "A Deliberately Long International Review Title" &&
+      hostedResult.artist.includes("Primary Artist, Featured Artist") &&
+      hostedResult.artist.includes("A Long Album Name for Result Layout") &&
+      hostedResult.metadataHref.includes("open.spotify.com/track/") && hostedResult.artworkFallback,
+    `Hosted result metadata or artwork fallback is incomplete (${JSON.stringify(hostedResult)}).`);
+    assert(hostedResult.overflow <= 1, `Hosted result overflows the narrow viewport (${JSON.stringify(hostedResult)}).`);
+    await client.call("Emulation.setDeviceMetricsOverride", {
+      width: 1918,
+      height: 1079,
+      deviceScaleFactor: 1,
+      mobile: false,
+    });
+    await delay(160);
+    const hostedDesktop = await client.evaluate(`(() => {
+      const settingPanel = document.querySelector('.settings-panel').getBoundingClientRect();
+      const gameCard = document.querySelector('.game-card').getBoundingClientRect();
+      const result = document.querySelector('.result-panel').getBoundingClientRect();
+      return {
+        panelTop: settingPanel.top,
+        panelBottom: settingPanel.bottom,
+        resultCenterOffset: (result.left + result.width / 2) - (gameCard.left + gameCard.width / 2),
+        overflow: document.documentElement.scrollWidth - window.innerWidth,
+      };
+    })()`);
+    assert(hostedDesktop.panelTop >= 0 && hostedDesktop.panelBottom <= 1079 && hostedDesktop.overflow <= 1,
+      `Hosted settings do not fit the desktop viewport (${JSON.stringify(hostedDesktop)}).`);
+    assert(Math.abs(hostedDesktop.resultCenterOffset) <= 1,
+      `Hosted result group is not centered in the game card (${JSON.stringify(hostedDesktop)}).`);
+    console.log("PASS hosted source and long result metadata fit narrow and desktop layouts");
+
     console.log("UI audit passed.");
   } finally {
+    if (originalReviewCatalog === null) rmSync(reviewCatalogFile, { force: true });
+    else writeFileSync(reviewCatalogFile, originalReviewCatalog);
     browserClient?.socket.close();
     for (const child of children.reverse()) stopProcess(child);
     await delay(500);

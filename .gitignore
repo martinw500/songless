@@ -12,3 +12,6 @@ public/media/audio/*
 !public/media/audio/.gitkeep
 public/media/artwork/*
 !public/media/artwork/.gitkeep
+public/review-catalog.json
+private-media/
+data/song-download-sources.local.json
