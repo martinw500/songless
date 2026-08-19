@@ -680,8 +680,9 @@ input:focus-visible {
   transition: color 220ms ease, background 220ms ease, border-color 220ms ease, box-shadow 260ms ease, transform 240ms var(--ease-spring), opacity 220ms ease;
 }
 
-.stage-pill:hover { color: #c4cbc3; background: #202419; transform: translateY(-1px); }
-.stage-pill:active { transform: scale(0.93); transition-duration: 80ms; }
+.stage-pill:not(:disabled):hover { color: #c4cbc3; background: #202419; transform: translateY(-1px); }
+.stage-pill:not(:disabled):active { transform: scale(0.93); transition-duration: 80ms; }
+.stage-pill:disabled { cursor: not-allowed; opacity: 0.72; }
 .stage-pill.enabled {
   border-color: transparent;
   color: #10140d;

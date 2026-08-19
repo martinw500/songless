@@ -119,6 +119,7 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [playbackElapsed, setPlaybackElapsed] = useState(0);
   const [heardThrough, setHeardThrough] = useState(0);
+  const [hasStartedRound, setHasStartedRound] = useState(false);
   const [volume, setVolume] = useState(() => {
     const storedVolume = window.localStorage.getItem("songless-volume-v2");
     if (storedVolume === null) return 1;
@@ -206,6 +207,7 @@ function App() {
   function resetRoundState() {
     stopPlayback();
     setHeardThrough(0);
+    setHasStartedRound(false);
     setStageIndex(0);
     setStatus("playing");
     setQuery("");
@@ -276,18 +278,19 @@ function App() {
       stopPlayback(Math.min(heardThrough, currentStage));
       return;
     }
-    void startPlayback(0, currentStage);
+    const previousStage = stageIndex > 0 ? enabledStages[stageIndex - 1] : 0;
+    const rangeStart = heardThrough >= currentStage ? 0 : previousStage;
+    setHasStartedRound(true);
+    void startPlayback(rangeStart, currentStage);
   }
 
   function advanceOrLose() {
+    stopPlayback(Math.min(heardThrough, currentStage));
     if (stageIndex < enabledStages.length - 1) {
       const nextIndex = stageIndex + 1;
-      const nextStage = enabledStages[nextIndex];
       setStageIndex(nextIndex);
-      void startPlayback(currentStage, nextStage);
       return;
     }
-    stopPlayback(Math.min(heardThrough, currentStage));
     setStatus("lost");
   }
 
@@ -322,6 +325,7 @@ function App() {
   }
 
   function toggleStage(stage: number) {
+    if (hasStartedRound) return;
     const isEnabled = enabledStages.includes(stage);
     if (isEnabled && enabledStages.length === 1) return;
 
@@ -556,9 +560,12 @@ function App() {
                   aria-label={`${isEnabled ? "Remove" : "Add"} ${stage} second stage`}
                   aria-pressed={isEnabled}
                   className={`stage-pill${isEnabled ? " enabled" : ""}${isCurrent ? " current" : ""}`}
+                  disabled={hasStartedRound}
                   key={stage}
                   onClick={() => toggleStage(stage)}
-                  title={`${isEnabled ? "Remove" : "Add"} ${stage}s stage`}
+                  title={hasStartedRound
+                    ? "Stage settings are locked for this round"
+                    : `${isEnabled ? "Remove" : "Add"} ${stage}s stage`}
                   type="button"
                 >
                   {stage}s

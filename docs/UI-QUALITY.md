@@ -16,9 +16,11 @@ Timeline meaning is split into three independent layers. The unlocked range is a
 
 Changing the stage configuration stops active audio and saves the selection to local storage. Removing the current duration selects the next longer enabled duration (falling back to the longest remaining duration). Adding a duration earlier than the current duration makes the newly added duration current, preventing it from being painted as an already-passed clue. At least one duration remains enabled.
 
-Stage durations are cumulative. At the 8-second stage, audio and timeline progress both run from song time 0 through song time 8; the stage does not play only the new interval after the previous clue. During playback, the play triangle changes to a centered pause glyph and the opaque layer fills from its far-left edge over the translucent unlocked layer, crossing each enabled duration boundary according to actual elapsed song time. A completed clip leaves all playable territory through its current boundary opaque. Replaying begins its opaque sweep again from time 0; stopping that partial replay restores the last completed opaque range.
+Stage configuration is pre-round setup. The first Play click locks all stage pills for the remainder of that song, including after skips, wrong guesses, completed clues, and result reveal. A full round reset or new song unlocks them again. Locked pills retain enough color to communicate the chosen configuration but have no hover/press response.
 
-Skipping or submitting a wrong answer silently unlocks the next cumulative stage. The previously completed range remains opaque while only the newly available interval receives translucent accent. Routine instructions such as “Skipped” or “You now have 2 seconds” never appear over the player. The default stages are 0.1, 0.5, 2, 8, and 15 seconds; 0.01 seconds is an optional setting.
+Skip itself is silent. Advancing from 2 to 8 only unlocks the translucent 2-8 interval and leaves the completed 0-2 range opaque. The next Play runs song time 2 through 8 while continuing the opaque layer from the 2-second boundary. Once that continuation reaches 8, the following Play begins the cumulative 0-8 replay and restarts the opaque sweep from the far-left edge. Stopping that replay restores the last completed opaque range.
+
+Skipping or submitting a wrong answer silently unlocks the next interval without starting it. The previously completed range remains opaque, the newly available interval receives translucent accent, and its later playback edge has no extra cursor or decorative blip. Routine instructions such as “Skipped” or “You now have 2 seconds” never appear over the player. The default stages are 0.1, 0.5, 2, 8, and 15 seconds; 0.01 seconds is an optional setting.
 
 ## Result choreography
 
@@ -46,10 +48,11 @@ All choreography is reduced to near-instant state changes when `prefers-reduced-
 - Inspect the play glyph and skip SVG at their rendered sizes; neither may look shifted, clipped, or broken.
 - Toggle a disabled stage on and an enabled stage off. Confirm the timeline visibly expands and collapses over time and that the displayed/audio duration follows the new first stage.
 - Remove the current first stage, restore it, then toggle earlier and later durations in succession. The restored earlier stage must become current and the translucent unlocked range must reflow continuously with the segment layout.
+- Press Play once, then attempt to toggle every stage pill. All pills must be disabled and neither the configured stages nor timeline geometry may change until a full round reset.
 - Complete a clue and then skip. The completed interval must stay opaque, only the new interval may be translucent, and every section divider must remain visible above both fills.
 - Set volume to a partial value. The track before the thumb must use the difficulty accent and the track after the thumb must remain dark.
 - Stage toggles must not place routine “stage added” or “stage removed” text over the play control.
-- Skip to 8 seconds, play, stop, and replay. The pause glyph must be visible and centered, progress must begin at the far-left edge and cross early boundaries according to elapsed time, and every replay must restart from time 0.
+- Complete 2 seconds and press Skip. Confirm the stage changes to 8 while audio remains stopped and only 2-8 becomes translucent. Press Play and confirm audio and opaque progress run from 2-8. After completion, press Play again and confirm both restart from 0.
 - Trigger both a win and loss. Confirm the visible artwork-to-stamp group is optically centered and no result content is clipped.
 - Observe the transition rather than only its final frame. Win confetti should be visible but contained, and the stamp should be the final emphasis.
 - Check a narrow viewport and the reduced-motion media mode.

@@ -18,9 +18,10 @@ These instructions apply to the entire repository.
 - The timeline has three independent visual layers: a translucent unlocked range, an opaque actually-played range, and section dividers above both fills. Never use segment backgrounds or a static current-stage cursor to merge those meanings.
 - Adding a duration earlier than the current clue makes that newly added duration current. It must not appear as a completed/passed segment.
 - Keep at least one stage enabled and persist stage and volume preferences locally.
+- Stage settings are editable only before the first Play click of a round. The first playback attempt locks every stage pill until a new song, difficulty change, replay-after-loss reset, or other full round reset.
 - Range controls must visibly distinguish the filled portion before the thumb from the unfilled portion after it.
 - Stage durations are cumulative from the song start. An 8-second clue always plays 0-8 seconds, never only the interval after the previous clue. Active audio swaps the play glyph for a centered pause glyph and advances the timeline from its far-left edge across every elapsed boundary.
-- Skipping preserves the last completed opaque range and extends only the new interval with translucent accent, without placing explanatory text over the player. Starting or replaying resets the opaque sweep to song time zero. Stopping a partial replay restores the last completed opaque range.
+- Skip only unlocks the next interval and must never start audio. After advancing from 2 to 8 seconds, the next Play schedules 2-8 and continues the opaque fill from the 2-second boundary. Once that continuation finishes, the following Play is a cumulative replay from 0-8. No decorative playhead may extend the opaque fill beyond the exact elapsed boundary.
 - Difficulty selection must work from both the side rail and central tabs.
 - `Reroll all` is always available. `Play again` appears only after a loss.
 - Search-result selection and guess submission remain separate actions.

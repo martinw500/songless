@@ -23,14 +23,16 @@ This remains comfortable for thousands of catalogue records. JSON size is not th
 2. It validates the basic shape and creates difficulty pools.
 3. A song is selected while avoiding repeats within the current pool.
 4. The Web Audio API fetches and decodes its intro clip only when needed.
-5. Every clue begins at `startAtMs` and is scheduled for the full cumulative stage duration. Advancing from 2 to 8 seconds still plays the range 0-8 relative to that configured start, never only 2-8.
+5. Skip changes the endpoint without scheduling audio. The first Play after advancing schedules only the new interval—for example, 2-8. After that interval completes, the next Play schedules the full cumulative 0-8 replay.
 6. Guesses use catalogue IDs, avoiding ambiguous fuzzy-title comparisons.
 
 Stage configuration is client-side. Toggling a duration stops active audio. Removing the current clue selects the next valid clue; adding a shorter clue makes that duration current so it is never misclassified as passed. Enabled durations are saved to local storage so playback state and the interface cannot disagree.
 
+The first playback attempt sets a per-round stage lock. Both the native button `disabled` state and the toggle handler enforce it, so scripted or rapid clicks cannot mutate the timeline after play begins. Resetting the round clears the lock.
+
 All available timeline segments remain mounted while the app is running. Disabled segments animate to zero width instead of being immediately removed from the DOM, allowing both additions and removals to produce a continuous reflow. The fills are separate absolutely positioned layers: translucent unlocked extent below, opaque played extent above, and transparent segment nodes with borders at the top. This keeps dividers visible without conflating unlocked and heard state. Win confetti is deterministic CSS motion rendered by React, requires no animation dependency, and is disabled by the reduced-motion stylesheet. See [UI-QUALITY.md](UI-QUALITY.md) for the visual acceptance rules.
 
-Playback returns the actual scheduled clip duration from the audio engine. The interface uses `requestAnimationFrame` against that duration to map elapsed song time across every enabled timeline interval through the current cumulative stage. A run identifier cancels stale loading and animation work when the user stops playback, changes stages, changes difficulty, or leaves the round.
+The audio engine receives explicit start and end seconds and returns the actual scheduled range duration. File playback adds the range start to `startAtMs`; synthesized demos begin at the corresponding note index. The interface uses `requestAnimationFrame` to map absolute elapsed song time across the timeline. A run identifier cancels stale loading and animation work when the user stops playback, changes stages, changes difficulty, or leaves the round.
 
 Decoded audio is cached in memory for replaying the current session. Refreshing the page clears that cache.
 
