@@ -228,19 +228,21 @@ function App() {
     resetRoundState();
   }
 
-  async function playClip() {
+  async function startPlayback(rangeStart: number, rangeEnd: number) {
     if (!currentSong || status !== "playing") return;
-    if (isPlaying || playbackPending.current) {
-      stopPlayback(Math.min(heardThrough, currentStage));
-      return;
-    }
-
-    stopPlayback();
+    const retainedThrough = Math.max(heardThrough, rangeStart);
+    setHeardThrough(retainedThrough);
+    stopPlayback(rangeStart);
     const run = playbackRun.current;
     playbackPending.current = true;
     setAudioError("");
     try {
-      const actualDuration = await audioEngine.current.play(currentSong, currentStage, volume);
+      const actualDuration = await audioEngine.current.play(
+        currentSong,
+        rangeStart,
+        rangeEnd,
+        volume,
+      );
       if (run !== playbackRun.current || actualDuration <= 0) return;
       playbackPending.current = false;
       setIsPlaying(true);
@@ -249,13 +251,13 @@ function App() {
       const updateProgress = (now: number) => {
         if (run !== playbackRun.current) return;
         const progress = Math.min(1, (now - startedAt) / durationMs);
-        setPlaybackElapsed(Math.min(currentStage, progress * actualDuration));
+        setPlaybackElapsed(Math.min(rangeEnd, rangeStart + progress * actualDuration));
         if (progress < 1) {
           playbackFrame.current = requestAnimationFrame(updateProgress);
           return;
         }
         playbackFrame.current = null;
-        setHeardThrough(currentStage);
+        setHeardThrough(rangeEnd);
         setIsPlaying(false);
       };
       playbackFrame.current = requestAnimationFrame(updateProgress);
@@ -263,18 +265,29 @@ function App() {
       if (run !== playbackRun.current) return;
       playbackPending.current = false;
       setIsPlaying(false);
-      setPlaybackElapsed(0);
+      setPlaybackElapsed(retainedThrough);
       setAudioError(error instanceof Error ? error.message : "The clip could not be played.");
     }
   }
 
-  function advanceOrLose() {
-    stopPlayback(Math.min(heardThrough, currentStage));
-    if (stageIndex < enabledStages.length - 1) {
-      const nextIndex = stageIndex + 1;
-      setStageIndex(nextIndex);
+  function playClip() {
+    if (!currentSong || status !== "playing") return;
+    if (isPlaying || playbackPending.current) {
+      stopPlayback(Math.min(heardThrough, currentStage));
       return;
     }
+    void startPlayback(0, currentStage);
+  }
+
+  function advanceOrLose() {
+    if (stageIndex < enabledStages.length - 1) {
+      const nextIndex = stageIndex + 1;
+      const nextStage = enabledStages[nextIndex];
+      setStageIndex(nextIndex);
+      void startPlayback(currentStage, nextStage);
+      return;
+    }
+    stopPlayback(Math.min(heardThrough, currentStage));
     setStatus("lost");
   }
 

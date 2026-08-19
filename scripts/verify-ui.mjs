@@ -329,79 +329,96 @@ async function run() {
     console.log("PASS volume fill boundary follows the thumb (40% filled / 60% unfilled)");
 
     await clickStage(client, "0.01s");
-    await client.evaluate("document.querySelector('.skip-button').click()");
-    await delay(60);
-    await client.evaluate("document.querySelector('.skip-button').click()");
-    await delay(100);
-    state = await stageState(client);
-    assert(state.current === "2s" && state.message === null,
-      `Playback audit expected the silent cumulative 2s stage (${JSON.stringify(state)}).`);
-
     await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(2200);
-    const completed = await client.evaluate(`(() => {
-      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
-      const unlocked = document.querySelector('.stage-unlocked-progress').getBoundingClientRect();
-      const segment = document.querySelector('[data-stage="2"]').getBoundingClientRect();
-      const track = document.querySelector('.stage-track').getBoundingClientRect();
-      return {
-        playIcon: Boolean(document.querySelector('.play-icon')),
-        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
-        progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
-        fillWidth: fill.width,
-        unlockedWidth: unlocked.width,
-        endpointWidth: segment.right - track.left,
-        dividers: [...document.querySelectorAll('.stage-segment.enabled:not(.last-enabled)')]
-          .filter((node) => parseFloat(getComputedStyle(node).borderRightWidth) >= 1).length,
-      };
-    })()`);
-    assert(completed.playIcon && !completed.isPlaying && completed.progress === 1,
-      `Completed playback did not restore the play state (${JSON.stringify(completed)}).`);
-    assert(Math.abs(completed.fillWidth - completed.endpointWidth) <= 3 &&
-      Math.abs(completed.unlockedWidth - completed.endpointWidth) <= 3,
-      `Completed playback did not make the unlocked range opaque (${JSON.stringify(completed)}).`);
-    assert(completed.dividers === 4, `Section dividers disappeared over the fills (${completed.dividers}/4).`);
-
-    await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(250);
-    const replayed = await client.evaluate(`({
+    await delay(220);
+    let playbackState = await client.evaluate(`({
+      current: document.querySelector('.stage-pill.current')?.textContent.trim(),
       isPlaying: document.querySelector('.play-button').classList.contains('playing'),
       elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
-      progress: Number(document.querySelector('.stage-playback-progress').dataset.progress),
     })`);
-    assert(replayed.isPlaying && replayed.elapsed > 0.1 && replayed.elapsed < 0.6 && replayed.progress < 0.3,
-      `Replay did not restart its opaque sweep from zero (${JSON.stringify(replayed)}).`);
-    await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(100);
+    assert(playbackState.current === "0.1s" && !playbackState.isPlaying && playbackState.elapsed === 0.1,
+      `The initial 0-0.1s clue did not complete cleanly (${JSON.stringify(playbackState)}).`);
 
     await client.evaluate("document.querySelector('.skip-button').click()");
-    await delay(850);
+    await delay(150);
+    let incremental = await client.evaluate(`(() => {
+      const track = document.querySelector('.stage-track').getBoundingClientRect();
+      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      return {
+        current: document.querySelector('.stage-pill.current')?.textContent.trim(),
+        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+        fillWidth: fill.width,
+        priorBoundary: document.querySelector('[data-stage="0.1"]').getBoundingClientRect().right - track.left,
+        currentBoundary: document.querySelector('[data-stage="0.5"]').getBoundingClientRect().right - track.left,
+      };
+    })()`);
+    assert(incremental.current === "0.5s" && incremental.isPlaying &&
+      incremental.elapsed > 0.18 && incremental.elapsed < 0.4,
+      `Skip did not automatically continue from 0.1s (${JSON.stringify(incremental)}).`);
+    assert(incremental.fillWidth > incremental.priorBoundary &&
+      incremental.fillWidth < incremental.currentBoundary,
+      `The 0.1-0.5s continuation is outside its visual interval (${JSON.stringify(incremental)}).`);
+    await delay(350);
+
+    await client.evaluate("document.querySelector('.skip-button').click()");
+    await delay(250);
+    incremental = await client.evaluate(`(() => {
+      const track = document.querySelector('.stage-track').getBoundingClientRect();
+      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      return {
+        current: document.querySelector('.stage-pill.current')?.textContent.trim(),
+        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+        fillWidth: fill.width,
+        priorBoundary: document.querySelector('[data-stage="0.5"]').getBoundingClientRect().right - track.left,
+        currentBoundary: document.querySelector('[data-stage="2"]').getBoundingClientRect().right - track.left,
+      };
+    })()`);
+    assert(incremental.current === "2s" && incremental.isPlaying &&
+      incremental.elapsed > 0.65 && incremental.elapsed < 1.1,
+      `Skip did not automatically continue from 0.5s (${JSON.stringify(incremental)}).`);
+    assert(incremental.fillWidth > incremental.priorBoundary &&
+      incremental.fillWidth < incremental.currentBoundary,
+      `The 0.5-2s continuation is outside its visual interval (${JSON.stringify(incremental)}).`);
+    await delay(1400);
+
+    playbackState = await client.evaluate(`({
+      current: document.querySelector('.stage-pill.current')?.textContent.trim(),
+      isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+      elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+    })`);
+    assert(playbackState.current === "2s" && !playbackState.isPlaying && playbackState.elapsed === 2,
+      `The incremental 0.5-2s clue did not finish at 2s (${JSON.stringify(playbackState)}).`);
+
+    await client.evaluate("document.querySelector('.skip-button').click()");
+    await delay(350);
     const skipped = await client.evaluate(`(() => {
       const track = document.querySelector('.stage-track').getBoundingClientRect();
       const played = document.querySelector('.stage-playback-progress').getBoundingClientRect();
       const unlocked = document.querySelector('.stage-unlocked-progress').getBoundingClientRect();
-      const completedBoundary = document.querySelector('[data-stage="2"]').getBoundingClientRect().right - track.left;
-      const unlockedBoundary = document.querySelector('[data-stage="8"]').getBoundingClientRect().right - track.left;
       return {
         current: document.querySelector('.stage-pill.current')?.textContent.trim(),
-        passed: document.querySelectorAll('.stage-segment.passed').length,
-        message: document.querySelector('.game-message')?.textContent.trim() ?? null,
+        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
         playedWidth: played.width,
         unlockedWidth: unlocked.width,
-        completedBoundary,
-        unlockedBoundary,
+        priorBoundary: document.querySelector('[data-stage="2"]').getBoundingClientRect().right - track.left,
+        currentBoundary: document.querySelector('[data-stage="8"]').getBoundingClientRect().right - track.left,
+        playheadDecoration: getComputedStyle(document.querySelector('.stage-playback-progress'), '::after').content,
         dividers: [...document.querySelectorAll('.stage-segment.enabled:not(.last-enabled)')]
           .filter((node) => parseFloat(getComputedStyle(node).borderRightWidth) >= 1).length,
       };
     })()`);
-    assert(skipped.current === "8s" && skipped.passed === 3 && skipped.message === null,
-      `Skip did not silently unlock the 8s section (${JSON.stringify(skipped)}).`);
-    assert(Math.abs(skipped.playedWidth - skipped.completedBoundary) <= 3,
-      `Skip did not retain the completed opaque range (${JSON.stringify(skipped)}).`);
-    assert(Math.abs(skipped.unlockedWidth - skipped.unlockedBoundary) <= 3 &&
-      skipped.unlockedWidth > skipped.playedWidth,
-      `Skip did not add a translucent next section (${JSON.stringify(skipped)}).`);
-    assert(skipped.dividers === 4, `Skip obscured section dividers (${skipped.dividers}/4).`);
+    assert(skipped.current === "8s" && skipped.isPlaying &&
+      skipped.elapsed > 2.2 && skipped.elapsed < 2.8,
+      `Skip did not automatically continue from 2s toward 8s (${JSON.stringify(skipped)}).`);
+    assert(skipped.playedWidth > skipped.priorBoundary && skipped.playedWidth < skipped.currentBoundary,
+      `The 2-8s continuation is outside its visual interval (${JSON.stringify(skipped)}).`);
+    assert(Math.abs(skipped.unlockedWidth - skipped.currentBoundary) <= 3,
+      `The 8s range is not fully translucent behind playback (${JSON.stringify(skipped)}).`);
+    assert(skipped.playheadDecoration === "none" && skipped.dividers === 4,
+      `A playhead blip or missing divider remains (${JSON.stringify(skipped)}).`);
 
     if (saveArtifacts) {
       const artifactDirectory = path.join(root, ".ui-audit");
@@ -410,6 +427,22 @@ async function run() {
       writeFileSync(path.join(artifactDirectory, "skipped-state.png"), Buffer.from(capture.data, "base64"));
       console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "skipped-state.png"))}`);
     }
+
+    await delay(5800);
+    const completed = await client.evaluate(`(() => {
+      const track = document.querySelector('.stage-track').getBoundingClientRect();
+      const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
+      const endpoint = document.querySelector('[data-stage="8"]').getBoundingClientRect().right - track.left;
+      return {
+        isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+        elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+        fillWidth: fill.width,
+        endpoint,
+      };
+    })()`);
+    assert(!completed.isPlaying && completed.elapsed === 8 &&
+      Math.abs(completed.fillWidth - completed.endpoint) <= 3,
+      `The 2-8s continuation did not finish cleanly at 8s (${JSON.stringify(completed)}).`);
 
     const started = await client.evaluate(`(() => {
       const button = document.querySelector('.play-button');
@@ -453,7 +486,7 @@ async function run() {
       `The cumulative 8s clip did not begin near song time zero (${playing.elapsed}s).`);
     assert(playing.fillWidth > playing.firstWidth && playing.fillWidth < playing.secondBoundary,
       `Timeline fill did not replay from the first stage boundary (${JSON.stringify(playing)}).`);
-    console.log("PASS opaque replay sweep starts at zero over the translucent 0-8s range");
+    console.log("PASS Skip continues 2-8s, then Play replays 0-8s without a boundary blip");
 
     if (saveArtifacts) {
       const artifactDirectory = path.join(root, ".ui-audit");
@@ -468,7 +501,7 @@ async function run() {
     const stopped = await client.evaluate(`(() => {
       const track = document.querySelector('.stage-track').getBoundingClientRect();
       const fill = document.querySelector('.stage-playback-progress').getBoundingClientRect();
-      const completedBoundary = document.querySelector('[data-stage="2"]').getBoundingClientRect().right - track.left;
+      const completedBoundary = document.querySelector('[data-stage="8"]').getBoundingClientRect().right - track.left;
       return {
         playIcon: Boolean(document.querySelector('.play-icon')),
         isPlaying: document.querySelector('.play-button').classList.contains('playing'),
@@ -479,7 +512,7 @@ async function run() {
     assert(stopped.playIcon && !stopped.isPlaying &&
       Math.abs(stopped.fillWidth - stopped.completedBoundary) <= 3,
       `Stopping replay did not restore the last completed opaque range (${JSON.stringify(stopped)}).`);
-    console.log("PASS completion, skip, replay, and stop preserve the three timeline layers");
+    console.log("PASS stopping a cumulative replay restores the completed 8s range");
 
     await client.call("Emulation.setDeviceMetricsOverride", {
       width: 720,

@@ -330,18 +330,7 @@ input:focus-visible {
 .stage-playback-progress {
   z-index: 2;
   background: var(--accent);
-  box-shadow: 0 0 11px rgba(var(--accent-rgb), 0.18);
-}
-
-.stage-playback-progress::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -7px;
-  width: 7px;
-  background: var(--accent);
-  box-shadow: 0 0 13px rgba(var(--accent-rgb), 0.34);
+  box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.14);
 }
 
 @keyframes stageSegmentEnable {
@@ -1074,8 +1063,6 @@ input:focus-visible {
   .difficulty-tabs .impossible { padding-inline: 24px; }
 
   .stage-track { height: 35px; margin-top: 29px; }
-
-  .stage-playback-progress::after { width: 11px; right: -11px; }
 
   .player-area { height: 228px; }
 
