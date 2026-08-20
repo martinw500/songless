@@ -15,7 +15,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-weeknd-blinding-lights.jpg?v=cover-6a12abbfaf80",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-blinding-lights.jpg?v=202210-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-blinding-lights.mp3?v=202210-1000",
@@ -42,7 +42,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/ed-sheeran-shape-of-you.jpg?v=cover-ce6110bc1153",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg?v=235009-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-shape-of-you.mp3?v=235009-0",
@@ -68,12 +68,12 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=161669-0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=160670-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-swae-lee-sunflower.mp3?v=161669-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-swae-lee-sunflower.mp3?v=161669-0",
-      "durationMs": 161669
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-swae-lee-sunflower.mp3?v=160670-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-swae-lee-sunflower.mp3?v=160670-1000",
+      "durationMs": 160670
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -96,12 +96,12 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-weeknd-daft-punk-starboy.jpg?v=cover-bb473d7d8d41",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-daft-punk-starboy.jpg?v=228610-2000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-daft-punk-starboy.mp3?v=229610-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-daft-punk-starboy.mp3?v=229610-1000",
-      "durationMs": 229610
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-daft-punk-starboy.mp3?v=228610-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-daft-punk-starboy.mp3?v=228610-2000",
+      "durationMs": 228610
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -124,7 +124,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-neighbourhood-sweater-weather.jpg?v=cover-5ec78ad80d63",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-neighbourhood-sweater-weather.jpg?v=240040-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-neighbourhood-sweater-weather.mp3?v=240040-0",
@@ -152,7 +152,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/harry-styles-as-it-was.jpg?v=cover-888acdc888b8",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-as-it-was.jpg?v=164594-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/harry-styles-as-it-was.mp3?v=164594-1000",
@@ -180,7 +180,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/dua-lipa-levitating.jpg?v=cover-3daa7df184de",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-levitating.jpg?v=220843-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-levitating.mp3?v=220843-0",
@@ -208,7 +208,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/billie-eilish-bad-guy.jpg?v=cover-763dd3bbd5d5",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-bad-guy.jpg?v=204927-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-bad-guy.mp3?v=204927-1000",
@@ -235,7 +235,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-kid-laroi-justin-bieber-stay.jpg?v=cover-dd2f610c736b",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-kid-laroi-justin-bieber-stay.jpg?v=142016-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-kid-laroi-justin-bieber-stay.mp3?v=142016-0",
@@ -263,7 +263,7 @@
     "difficulty": "easy",
     "familiarity": 93,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lady-gaga-poker-face.jpg?v=cover-085559ee2137",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-poker-face.jpg?v=213612-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-poker-face.mp3?v=213612-0",
@@ -285,7 +285,7 @@
     "genres": [
       "indie pop"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/glass-animals-heat-waves.jpg?v=175302-0",
@@ -314,10 +314,10 @@
     "genres": [
       "rock"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/journey-dont-stop-believin.jpg?v=cover-ea8b7927b515",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/journey-dont-stop-believin.jpg?v=249219-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/journey-dont-stop-believin.mp3?v=249219-1000",
@@ -341,10 +341,10 @@
     "genres": [
       "pop rock"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/imagine-dragons-believer.jpg?v=cover-e7b8619bd050",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-believer.jpg?v=202816-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/imagine-dragons-believer.mp3?v=202816-0",
@@ -369,10 +369,10 @@
       "pop",
       "electropop"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-chainsmokers-halsey-closer.jpg?v=cover-9d90ba751a2b",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-chainsmokers-halsey-closer.jpg?v=245922-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-chainsmokers-halsey-closer.mp3?v=245922-1000",
@@ -396,10 +396,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/harry-styles-watermelon-sugar.jpg?v=cover-40cf7719d956",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-watermelon-sugar.jpg?v=173917-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/harry-styles-watermelon-sugar.mp3?v=173917-0",
@@ -425,15 +425,15 @@
       "pop",
       "hip-hop"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/drake-wizkid-kyla-one-dance.jpg?v=cover-9b8b3344b2ef",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-wizkid-kyla-one-dance.jpg?v=173267-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-wizkid-kyla-one-dance.mp3?v=174266-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-wizkid-kyla-one-dance.mp3?v=174266-0",
-      "durationMs": 174266
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-wizkid-kyla-one-dance.mp3?v=173267-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-wizkid-kyla-one-dance.mp3?v=173267-1000",
+      "durationMs": 173267
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -453,15 +453,15 @@
       "pop",
       "alternative"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/billie-eilish-khalid-lovely.jpg?v=cover-7102917e0fec",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-khalid-lovely.jpg?v=199470-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-khalid-lovely.mp3?v=200469-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-khalid-lovely.mp3?v=200469-0",
-      "durationMs": 200469
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-khalid-lovely.mp3?v=199470-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-khalid-lovely.mp3?v=199470-1000",
+      "durationMs": 199470
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -483,10 +483,10 @@
       "pop",
       "latin pop"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/shawn-mendes-camila-cabello-senorita.jpg?v=cover-e4d9e9c7a15b",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-camila-cabello-senorita.jpg?v=205376-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shawn-mendes-camila-cabello-senorita.mp3?v=205376-0",
@@ -513,15 +513,15 @@
       "pop",
       "disco"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/dua-lipa-dont-start-now.jpg?v=cover-3daa7df184de",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-dont-start-now.jpg?v=183558-2000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-dont-start-now.mp3?v=184558-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-dont-start-now.mp3?v=184558-1000",
-      "durationMs": 184558
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-dont-start-now.mp3?v=183558-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-dont-start-now.mp3?v=183558-2000",
+      "durationMs": 183558
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -541,10 +541,10 @@
       "pop",
       "hip-hop"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/post-malone-circles.jpg?v=cover-27bbb45333e0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-circles.jpg?v=215355-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-circles.mp3?v=215355-0",
@@ -568,10 +568,10 @@
     "genres": [
       "pop rock"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/coldplay-viva-la-vida.jpg?v=cover-9586804568e5",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-viva-la-vida.jpg?v=241104-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/coldplay-viva-la-vida.mp3?v=241104-1000",
@@ -598,10 +598,10 @@
       "pop",
       "r&b"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/rihanna-jay-z-umbrella.jpg?v=cover-bd8a73fdc13e",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-jay-z-umbrella.jpg?v=253143-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rihanna-jay-z-umbrella.mp3?v=253143-1000",
@@ -625,10 +625,10 @@
     "genres": [
       "alternative rock"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/coldplay-yellow.jpg?v=cover-5b70cc4f2171",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-yellow.jpg?v=270209-2000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/coldplay-yellow.mp3?v=270209-2000",
@@ -652,10 +652,10 @@
     "genres": [
       "alternative rock"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/radiohead-creep.jpg?v=cover-f2643f1230f0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/radiohead-creep.jpg?v=236530-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/radiohead-creep.mp3?v=236530-0",
@@ -682,7 +682,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/eminem-without-me.jpg?v=cover-61a210cd6a5a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-without-me.jpg?v=296600-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/eminem-without-me.mp3?v=296600-1000",
@@ -710,7 +710,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tears-for-fears-everybody-wants-to-rule-the-world.jpg?v=cover-a5f4a826db25",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tears-for-fears-everybody-wants-to-rule-the-world.jpg?v=251489-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tears-for-fears-everybody-wants-to-rule-the-world.mp3?v=251489-0",
@@ -740,7 +740,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/toto-africa.jpg?v=cover-97a1b8ddf7af",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/toto-africa.jpg?v=294333-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/toto-africa.mp3?v=294333-0",
@@ -794,7 +794,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-killers-mr-brightside.jpg?v=cover-f0d95229884d",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-killers-mr-brightside.jpg?v=226475-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-killers-mr-brightside.mp3?v=226475-1000",
@@ -822,7 +822,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/a-ha-take-on-me.jpg?v=cover-9ccb723faeea",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/a-ha-take-on-me.jpg?v=228520-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/a-ha-take-on-me.mp3?v=228520-0",
@@ -850,7 +850,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/michael-jackson-billie-jean.jpg?v=cover-9b3faef9b2e5",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/michael-jackson-billie-jean.jpg?v=294227-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/michael-jackson-billie-jean.mp3?v=294227-0",
@@ -878,7 +878,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/nirvana-smells-like-teen-spirit.jpg?v=cover-d48214a8fcc5",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nirvana-smells-like-teen-spirit.jpg?v=277350-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nirvana-smells-like-teen-spirit.mp3?v=277350-1000",
@@ -906,12 +906,12 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/oasis-wonderwall.jpg?v=cover-8f1dfd70edc3",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/oasis-wonderwall.jpg?v=268723-9000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/oasis-wonderwall.mp3?v=276723-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/oasis-wonderwall.mp3?v=276723-1000",
-      "durationMs": 276723
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/oasis-wonderwall.mp3?v=268723-9000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/oasis-wonderwall.mp3?v=268723-9000",
+      "durationMs": 268723
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -936,7 +936,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/whitney-houston-i-wanna-dance-with-somebody.jpg?v=cover-b553d9b87ea2",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/whitney-houston-i-wanna-dance-with-somebody.jpg?v=270304-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/whitney-houston-i-wanna-dance-with-somebody.mp3?v=270304-0",
@@ -963,7 +963,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/queen-bohemian-rhapsody.jpg?v=cover-4bc9a6facbb3",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-bohemian-rhapsody.jpg?v=356627-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/queen-bohemian-rhapsody.mp3?v=356627-0",
@@ -992,7 +992,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/queen-dont-stop-me-now.jpg?v=cover-1c6d51e6c8ac",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-dont-stop-me-now.jpg?v=198907-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/queen-dont-stop-me-now.mp3?v=198907-0",
@@ -1020,7 +1020,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/abba-dancing-queen.jpg?v=cover-5434345ff4b8",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/abba-dancing-queen.jpg?v=233941-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/abba-dancing-queen.mp3?v=233941-0",
@@ -1050,7 +1050,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/earth-wind-fire-september.jpg?v=cover-93001100537e",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/earth-wind-fire-september.jpg?v=215093-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/earth-wind-fire-september.mp3?v=215093-0",
@@ -1106,7 +1106,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/george-michael-careless-whisper.jpg?v=cover-6e7d1a14d3eb",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/george-michael-careless-whisper.jpg?v=302600-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/george-michael-careless-whisper.mp3?v=302600-0",
@@ -1133,7 +1133,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-cranberries-zombie.jpg?v=cover-6a3987635fa2",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-cranberries-zombie.jpg?v=306131-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-cranberries-zombie.mp3?v=306131-1000",
@@ -1187,7 +1187,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tlc-no-scrubs.jpg?v=cover-fa26048b2eae",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tlc-no-scrubs.jpg?v=214891-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tlc-no-scrubs.mp3?v=214891-0",
@@ -1215,7 +1215,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/britney-spears-toxic.jpg?v=cover-a472f121be30",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/britney-spears-toxic.jpg?v=199080-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/britney-spears-toxic.mp3?v=199080-0",
@@ -1243,12 +1243,12 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alexandra-stan-mr-saxobeat.jpg?v=193504-0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alexandra-stan-mr-saxobeat.jpg?v=192505-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alexandra-stan-mr-saxobeat.mp3?v=193504-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/alexandra-stan-mr-saxobeat.mp3?v=193504-0",
-      "durationMs": 193504
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alexandra-stan-mr-saxobeat.mp3?v=192505-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/alexandra-stan-mr-saxobeat.mp3?v=192505-1000",
+      "durationMs": 192505
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -1271,7 +1271,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/nelly-furtado-timbaland-promiscuous.jpg?v=cover-b750f50020cd",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-furtado-timbaland-promiscuous.jpg?v=241661-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nelly-furtado-timbaland-promiscuous.mp3?v=241661-1000",
@@ -1300,7 +1300,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/miley-cyrus-party-in-the-usa.jpg?v=cover-ebbdad1f55f1",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-party-in-the-usa.jpg?v=203231-2000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-party-in-the-usa.mp3?v=203231-2000",
@@ -1328,7 +1328,7 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lady-gaga-just-dance.jpg?v=cover-085559ee2137",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-just-dance.jpg?v=245771-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-just-dance.mp3?v=245771-1000",
@@ -1351,7 +1351,7 @@
       "electronic",
       "dance"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-alors-on-danse.jpg?v=233790-1000",
@@ -1379,10 +1379,10 @@
       "reggaeton",
       "latin pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/luis-fonsi-daddy-yankee-despacito.jpg?v=cover-c1e465f4fe94",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/luis-fonsi-daddy-yankee-despacito.jpg?v=227346-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
@@ -1411,10 +1411,10 @@
       "k-pop",
       "dance"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/psy-gangnam-style.jpg?v=cover-5be46cb24510",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/psy-gangnam-style.jpg?v=248344-4000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/psy-gangnam-style.mp3?v=248344-4000",
@@ -1439,10 +1439,10 @@
       "reggaeton",
       "dance"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/don-omar-lucenzo-danza-kuduro.jpg?v=cover-c55aa2e9c373",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-omar-lucenzo-danza-kuduro.jpg?v=198647-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/don-omar-lucenzo-danza-kuduro.mp3?v=198647-0",
@@ -1467,10 +1467,10 @@
       "afrobeats",
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/rema-selena-gomez-calm-down.jpg?v=cover-d698fbc1f31d",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rema-selena-gomez-calm-down.jpg?v=239293-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rema-selena-gomez-calm-down.mp3?v=239293-0",
@@ -1497,15 +1497,15 @@
       "electronic",
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/stromae-papaoutai.jpg?v=cover-5bb6448de52b",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=229381-2000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=231380-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=231380-0",
-      "durationMs": 231380
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=229381-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=229381-2000",
+      "durationMs": 229381
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -1525,10 +1525,10 @@
       "reggaeton",
       "dance"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/j-balvin-willy-william-mi-gente.jpg?v=cover-b7792eef2471",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-balvin-willy-william-mi-gente.jpg?v=185841-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/j-balvin-willy-william-mi-gente.mp3?v=185841-0",
@@ -1553,10 +1553,10 @@
       "pop",
       "soft rock"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lady-gaga-bruno-mars-die-with-a-smile.jpg?v=cover-bb7d4b0b8075",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-bruno-mars-die-with-a-smile.jpg?v=251717-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-bruno-mars-die-with-a-smile.mp3?v=251717-0",
@@ -1580,10 +1580,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/billie-eilish-birds-of-a-feather.jpg?v=cover-302a01ad00fc",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-birds-of-a-feather.jpg?v=210047-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-birds-of-a-feather.mp3?v=210047-1000",
@@ -1613,10 +1613,10 @@
       "pop",
       "pop rock"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/rose-bruno-mars-apt.jpg?v=cover-8eedd9cf74fe",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rose-bruno-mars-apt.jpg?v=175102-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rose-bruno-mars-apt.mp3?v=175102-0",
@@ -1640,10 +1640,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/alex-warren-ordinary.jpg?v=cover-b0ac3ac8b733",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alex-warren-ordinary.jpg?v=186085-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alex-warren-ordinary.mp3?v=186085-0",
@@ -1668,10 +1668,10 @@
       "hip-hop",
       "r&b"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/kendrick-lamar-sza-luther.jpg?v=cover-f144ba352f28",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-sza-luther.jpg?v=177598-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-sza-luther.mp3?v=177598-0",
@@ -1695,10 +1695,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sabrina-carpenter-espresso.jpg?v=cover-1855bde832dc",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-espresso.jpg?v=175439-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sabrina-carpenter-espresso.mp3?v=175439-0",
@@ -1722,10 +1722,10 @@
     "genres": [
       "pop rock"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/benson-boone-beautiful-things.jpg?v=cover-e98915207331",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/benson-boone-beautiful-things.jpg?v=179883-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/benson-boone-beautiful-things.mp3?v=179883-0",
@@ -1749,10 +1749,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/chappell-roan-pink-pony-club.jpg?v=cover-244e90c50969",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/chappell-roan-pink-pony-club.jpg?v=280323-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/chappell-roan-pink-pony-club.mp3?v=280323-0",
@@ -1777,10 +1777,10 @@
       "pop rock",
       "soul"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/hozier-too-sweet.jpg?v=cover-cdf1e223cafe",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hozier-too-sweet.jpg?v=251437-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hozier-too-sweet.mp3?v=251437-0",
@@ -1807,15 +1807,15 @@
       "country",
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/shaboozey-a-bar-song-tipsy.jpg?v=cover-bb8a3839915a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shaboozey-a-bar-song-tipsy.jpg?v=170293-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shaboozey-a-bar-song-tipsy.mp3?v=171292-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shaboozey-a-bar-song-tipsy.mp3?v=171292-0",
-      "durationMs": 171292
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shaboozey-a-bar-song-tipsy.mp3?v=170293-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shaboozey-a-bar-song-tipsy.mp3?v=170293-1000",
+      "durationMs": 170293
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -1836,10 +1836,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 85,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/chappell-roan-good-luck-babe.jpg?v=cover-4a77ca162310",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/chappell-roan-good-luck-babe.jpg?v=218256-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/chappell-roan-good-luck-babe.mp3?v=218256-0",
@@ -1867,7 +1867,7 @@
     "difficulty": "hard",
     "familiarity": 80,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/timbaland-onerepublic-apologize.jpg?v=cover-535066bc6df8",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/timbaland-onerepublic-apologize.jpg?v=187675-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/timbaland-onerepublic-apologize.mp3?v=187675-1000",
@@ -1895,7 +1895,7 @@
     "difficulty": "hard",
     "familiarity": 80,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/gnarls-barkley-crazy.jpg?v=cover-a3db8d00607d",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=178334-2000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gnarls-barkley-crazy.mp3?v=178334-2000",
@@ -1919,15 +1919,15 @@
     "genres": [
       "indie rock"
     ],
-    "difficulty": "hard",
+    "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-rare-occasions-notion.jpg?v=cover-bbe7c78780d0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-rare-occasions-notion.jpg?v=194118-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-rare-occasions-notion.mp3?v=195117-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-rare-occasions-notion.mp3?v=195117-0",
-      "durationMs": 195117
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-rare-occasions-notion.mp3?v=194118-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-rare-occasions-notion.mp3?v=194118-1000",
+      "durationMs": 194118
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -1948,10 +1948,10 @@
     "genres": [
       "r&b"
     ],
-    "difficulty": "hard",
+    "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/daniel-caesar-her-best-part.jpg?v=cover-57c6c9358187",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-her-best-part.jpg?v=210012-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-her-best-part.mp3?v=210012-1000",
@@ -1975,10 +1975,10 @@
     "genres": [
       "r&b"
     ],
-    "difficulty": "hard",
+    "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/daniel-caesar-kali-uchis-get-you.jpg?v=cover-57c6c9358187",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-kali-uchis-get-you.jpg?v=269955-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-kali-uchis-get-you.mp3?v=269955-1000",
@@ -2005,10 +2005,10 @@
       "r&b",
       "alternative"
     ],
-    "difficulty": "hard",
+    "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/frank-ocean-nights.jpg?v=cover-18832d55e82e",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-nights.jpg?v=307154-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/frank-ocean-nights.mp3?v=307154-0",
@@ -2040,7 +2040,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/frank-ocean-pink-white.jpg?v=cover-18832d55e82e",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-pink-white.jpg?v=184530-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/frank-ocean-pink-white.mp3?v=184530-0",
@@ -2068,7 +2068,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/joji-slow-dancing-in-the-dark.jpg?v=cover-bd4dbffc1c27",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-slow-dancing-in-the-dark.jpg?v=209274-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/joji-slow-dancing-in-the-dark.mp3?v=209274-0",
@@ -2096,7 +2096,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/joji-glimpse-of-us.jpg?v=cover-8cb43812fdc7",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-glimpse-of-us.jpg?v=234034-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/joji-glimpse-of-us.mp3?v=234034-0",
@@ -2124,7 +2124,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tyler-the-creator-kali-uchis-see-you-again.jpg?v=cover-1fde8d9586f4",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-kali-uchis-see-you-again.jpg?v=202954-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-the-creator-kali-uchis-see-you-again.mp3?v=202954-0",
@@ -2154,7 +2154,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tyler-the-creator-earfquake.jpg?v=cover-073cbdc1f830",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-earfquake.jpg?v=266091-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-the-creator-earfquake.mp3?v=266091-0",
@@ -2181,7 +2181,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tv-girl-not-allowed.jpg?v=cover-89f9bf4387dd",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-not-allowed.jpg?v=167864-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tv-girl-not-allowed.mp3?v=167864-0",
@@ -2209,7 +2209,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/steve-lacy-dark-red.jpg?v=cover-1d369c27925c",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-dark-red.jpg?v=173603-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/steve-lacy-dark-red.mp3?v=173603-1000",
@@ -2237,7 +2237,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/steve-lacy-bad-habit.jpg?v=cover-c28fd897e462",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-bad-habit.jpg?v=232120-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/steve-lacy-bad-habit.mp3?v=232120-0",
@@ -2266,7 +2266,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/clairo-sofia.jpg?v=cover-6367bae8d8aa",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-sofia.jpg?v=188430-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-sofia.mp3?v=188430-0",
@@ -2294,7 +2294,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/mgmt-electric-feel.jpg?v=cover-2c74a4a1df5a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-electric-feel.jpg?v=227439-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-electric-feel.mp3?v=227439-1000",
@@ -2322,7 +2322,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/d4vd-romantic-homicide.jpg?v=cover-d37862f92d67",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/d4vd-romantic-homicide.jpg?v=131645-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/d4vd-romantic-homicide.mp3?v=131645-1000",
@@ -2352,7 +2352,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/kanye-west-heartless.jpg?v=cover-8efc98307427",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kanye-west-heartless.jpg?v=219695-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kanye-west-heartless.mp3?v=219695-1000",
@@ -2379,7 +2379,7 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tame-impala-the-less-i-know-the-better.jpg?v=cover-110c3e6f3bac",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-the-less-i-know-the-better.jpg?v=216351-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-the-less-i-know-the-better.mp3?v=216351-1000",
@@ -2406,12 +2406,12 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/beach-house-space-song.jpg?v=cover-24f0d0dfd7c9",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beach-house-space-song.jpg?v=317494-3000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/beach-house-space-song.mp3?v=320493-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/beach-house-space-song.mp3?v=320493-0",
-      "durationMs": 320493
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/beach-house-space-song.mp3?v=317494-3000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/beach-house-space-song.mp3?v=317494-3000",
+      "durationMs": 317494
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2433,12 +2433,12 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/cigarettes-after-sex-apocalypse.jpg?v=cover-ed391df0624a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cigarettes-after-sex-apocalypse.jpg?v=289076-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cigarettes-after-sex-apocalypse.mp3?v=290075-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cigarettes-after-sex-apocalypse.mp3?v=290075-0",
-      "durationMs": 290075
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cigarettes-after-sex-apocalypse.mp3?v=289076-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cigarettes-after-sex-apocalypse.mp3?v=289076-1000",
+      "durationMs": 289076
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2461,12 +2461,12 @@
     "difficulty": "expert",
     "familiarity": 79,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/mgmt-kids.jpg?v=cover-2c74a4a1df5a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-kids.jpg?v=330308-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-kids.mp3?v=331307-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mgmt-kids.mp3?v=331307-0",
-      "durationMs": 331307
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-kids.mp3?v=330308-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mgmt-kids.mp3?v=330308-1000",
+      "durationMs": 330308
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2489,12 +2489,12 @@
     "difficulty": "expert",
     "familiarity": 78,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/master-kg-nomcebo-zikode-jerusalema.jpg?v=cover-96db5388bf49",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/master-kg-nomcebo-zikode-jerusalema.jpg?v=342254-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/master-kg-nomcebo-zikode-jerusalema.mp3?v=343253-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/master-kg-nomcebo-zikode-jerusalema.mp3?v=343253-0",
-      "durationMs": 343253
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/master-kg-nomcebo-zikode-jerusalema.mp3?v=342254-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/master-kg-nomcebo-zikode-jerusalema.mp3?v=342254-1000",
+      "durationMs": 342254
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2519,12 +2519,12 @@
     "difficulty": "expert",
     "familiarity": 78,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/o-zone-dragostea-din-tei.jpg?v=cover-aed495c538a6",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/o-zone-dragostea-din-tei.jpg?v=287438-5000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/o-zone-dragostea-din-tei.mp3?v=292437-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/o-zone-dragostea-din-tei.mp3?v=292437-0",
-      "durationMs": 292437
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/o-zone-dragostea-din-tei.mp3?v=287438-5000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/o-zone-dragostea-din-tei.mp3?v=287438-5000",
+      "durationMs": 287438
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2548,7 +2548,7 @@
     "difficulty": "expert",
     "familiarity": 78,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/indila-derniere-danse.jpg?v=cover-992fbef1ca83",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/indila-derniere-danse.jpg?v=212613-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/indila-derniere-danse.mp3?v=212613-1000",
@@ -2579,7 +2579,7 @@
     "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/bad-bunny-dtmf.jpg?v=cover-feea065088bc",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bad-bunny-dtmf.jpg?v=240245-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bad-bunny-dtmf.mp3?v=240245-0",
@@ -2606,7 +2606,7 @@
     "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sombr-back-to-friends.jpg?v=cover-3eecc220a64b",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sombr-back-to-friends.jpg?v=199054-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sombr-back-to-friends.mp3?v=199054-0",
@@ -2663,7 +2663,7 @@
     "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/gracie-abrams-thats-so-true.jpg?v=cover-3a549c048767",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gracie-abrams-thats-so-true.jpg?v=166300-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gracie-abrams-thats-so-true.mp3?v=166300-0",
@@ -2691,7 +2691,7 @@
     "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/lola-young-messy.jpg?v=cover-aa3b15a6a02d",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lola-young-messy.jpg?v=284069-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lola-young-messy.mp3?v=284069-0",
@@ -2715,10 +2715,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tate-mcrae-sports-car.jpg?v=cover-2491664807f6",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tate-mcrae-sports-car.jpg?v=187466-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tate-mcrae-sports-car.mp3?v=187466-0",
@@ -2742,10 +2742,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sabrina-carpenter-taste.jpg?v=cover-1855bde832dc",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-taste.jpg?v=157478-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sabrina-carpenter-taste.mp3?v=157478-0",
@@ -2769,10 +2769,10 @@
     "genres": [
       "hip-hop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/drake-nokia.jpg?v=cover-8ecac6d8edc4",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-nokia.jpg?v=241023-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-nokia.mp3?v=241023-0",
@@ -2797,10 +2797,10 @@
       "r&b",
       "hip-hop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-weeknd-playboi-carti-timeless.jpg?v=cover-7df8b27cb084",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-playboi-carti-timeless.jpg?v=256093-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-playboi-carti-timeless.mp3?v=256093-0",
@@ -2825,10 +2825,10 @@
       "soul",
       "pop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/teddy-swims-lose-control.jpg?v=cover-a117aef7d062",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/teddy-swims-lose-control.jpg?v=210721-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/teddy-swims-lose-control.mp3?v=210721-0",
@@ -2852,15 +2852,15 @@
     "genres": [
       "hip-hop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/doechii-anxiety.jpg?v=cover-751c26d5a54b",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=248303-1000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=249302-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=249302-0",
-      "durationMs": 249302
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=248303-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=248303-1000",
+      "durationMs": 248303
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2879,10 +2879,10 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/sabrina-carpenter-manchild.jpg?v=cover-c9c15280c65e",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-manchild.jpg?v=213646-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sabrina-carpenter-manchild.mp3?v=213646-0",
@@ -2906,15 +2906,15 @@
     "genres": [
       "indie folk"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/gigi-perez-sailor-song.jpg?v=cover-a74184a80740",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gigi-perez-sailor-song.jpg?v=208919-2000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gigi-perez-sailor-song.mp3?v=210918-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gigi-perez-sailor-song.mp3?v=210918-0",
-      "durationMs": 210918
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gigi-perez-sailor-song.mp3?v=208919-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gigi-perez-sailor-song.mp3?v=208919-2000",
+      "durationMs": 208919
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -2936,10 +2936,10 @@
       "pop",
       "electronic"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/charli-xcx-apple.jpg?v=cover-cb05235f6862",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charli-xcx-apple.jpg?v=149704-5000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/charli-xcx-apple.mp3?v=149704-5000",
@@ -2964,10 +2964,10 @@
       "alternative",
       "r&b"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/malcolm-todd-earrings.jpg?v=cover-f22fa72dc8ee",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/malcolm-todd-earrings.jpg?v=151893-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/malcolm-todd-earrings.mp3?v=151893-0",
@@ -2993,10 +2993,10 @@
     "genres": [
       "indie pop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/the-marias-no-one-noticed.jpg?v=cover-b9a473dd5bed",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-marias-no-one-noticed.jpg?v=235044-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-marias-no-one-noticed.mp3?v=235044-0",
@@ -3021,10 +3021,10 @@
       "indie pop",
       "synth-pop"
     ],
-    "difficulty": "impossible",
+    "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/djo-end-of-beginning.jpg?v=cover-c9cf713f73a9",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/djo-end-of-beginning.jpg?v=159301-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/djo-end-of-beginning.mp3?v=159301-0",
@@ -3051,7 +3051,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/daniel-caesar-japanese-denim.jpg?v=cover-4736efc8ca9a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-japanese-denim.jpg?v=269978-1000",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-japanese-denim.mp3?v=269978-1000",
@@ -3080,7 +3080,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/frank-ocean-lost.jpg?v=cover-8eefee24e90e",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-lost.jpg?v=234243-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/frank-ocean-lost.mp3?v=234243-0",
@@ -3108,7 +3108,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/joji-sanctuary.jpg?v=cover-b4b3b0f2fe00",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-sanctuary.jpg?v=180019-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/joji-sanctuary.mp3?v=180019-0",
@@ -3135,7 +3135,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tyler-the-creator-new-magic-wand.jpg?v=cover-073cbdc1f830",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-new-magic-wand.jpg?v=195320-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-the-creator-new-magic-wand.mp3?v=195320-0",
@@ -3162,7 +3162,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tv-girl-lovers-rock.jpg?v=cover-dbb175d46be2",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-lovers-rock.jpg?v=213920-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tv-girl-lovers-rock.mp3?v=213920-0",
@@ -3189,7 +3189,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tv-girl-cigarettes-out-the-window.jpg?v=cover-89f9bf4387dd",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-cigarettes-out-the-window.jpg?v=198961-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tv-girl-cigarettes-out-the-window.mp3?v=198961-0",
@@ -3217,7 +3217,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/steve-lacy-some.jpg?v=cover-a2cc251f2cfd",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-some.jpg?v=180696-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/steve-lacy-some.mp3?v=180696-0",
@@ -3244,12 +3244,12 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/clairo-bags.jpg?v=cover-6367bae8d8aa",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-bags.jpg?v=258545-2000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-bags.mp3?v=260544-0",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/clairo-bags.mp3?v=260544-0",
-      "durationMs": 260544
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-bags.mp3?v=258545-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/clairo-bags.mp3?v=258545-2000",
+      "durationMs": 258545
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -3273,7 +3273,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/cafune-tek-it.jpg?v=cover-a1ff6e75de0a",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cafune-tek-it.jpg?v=191019-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cafune-tek-it.mp3?v=191019-0",
@@ -3300,7 +3300,7 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tame-impala-borderline.jpg?v=cover-5879b7090677",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-borderline.jpg?v=237807-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-borderline.mp3?v=237807-0",
@@ -3327,12 +3327,12 @@
     "difficulty": "impossible",
     "familiarity": 70,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/tame-impala-let-it-happen.jpg?v=cover-110c3e6f3bac",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-let-it-happen.jpg?v=467257-7000",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-let-it-happen.mp3?v=468257-6000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-let-it-happen.mp3?v=468257-6000",
-      "durationMs": 468257
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-let-it-happen.mp3?v=467257-7000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-let-it-happen.mp3?v=467257-7000",
+      "durationMs": 467257
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -3354,7 +3354,7 @@
     "difficulty": "impossible",
     "familiarity": 61,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/album/dominic-fike-white-keys.jpg?v=cover-e5d441914ec8",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dominic-fike-white-keys.jpg?v=144080-0",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dominic-fike-white-keys.mp3?v=144080-0",

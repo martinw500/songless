@@ -43,13 +43,20 @@ const withEase = songs.map((s) => {
 // Sort by ease descending
 withEase.sort((a, b) => b.easeScore - a.easeScore);
 
-// Assign provisional quantile bands
+// Assign absolute thresholds
 const bands = ["easy", "medium", "hard", "expert", "impossible"];
-const bandSize = 24;
+
+function getDifficultyForScore(score) {
+  if (score >= 88) return "easy";
+  if (score >= 85) return "medium";
+  if (score >= 80) return "hard";
+  if (score >= 73) return "expert";
+  return "impossible";
+}
 
 const catalog = withEase.map((entry, index) => {
   const s = entry.song;
-  const difficulty = bands[Math.floor(index / bandSize)];
+  const difficulty = getDifficultyForScore(entry.easeScore);
   const artwork = s.media.artworkUrl || undefined;
 
   return {
@@ -86,8 +93,8 @@ for (const entry of catalog) counts[entry.difficulty] = (counts[entry.difficulty
 
 console.log(`\n=== Provisional Catalogue ===`);
 console.log(`Total songs: ${catalog.length}`);
-console.log(`Method: quantile bands (${bandSize} per difficulty)`);
-for (const d of bands) console.log(`  ${d}: ${counts[d] || 0}`);
+console.log(`Method: absolute thresholds (>88 Easy, >85 Med, >80 Hard, >73 Expert, <=73 Impossible)`);
+for (const d of bands) console.log(`  ${d.padEnd(10)}: ${counts[d] || 0}`);
 
 const withIntro = withEase.filter((e) => e.hasIntroReview).length;
 const withoutIntro = withEase.length - withIntro;
@@ -95,14 +102,7 @@ console.log(`\nIntro reviewed: ${withIntro}`);
 console.log(`Familiarity-only (provisional): ${withoutIntro}`);
 console.log(`\nEase score range: ${withEase[withEase.length - 1].easeScore} – ${withEase[0].easeScore}`);
 
-// Show band boundaries
-for (let i = 0; i < bands.length; i++) {
-  const start = i * bandSize;
-  const end = start + bandSize - 1;
-  const hi = withEase[start].easeScore;
-  const lo = withEase[end].easeScore;
-  console.log(`  ${bands[i].padEnd(11)} rank ${start + 1}–${end + 1}  ease ${lo}–${hi}`);
-}
+// (Band boundaries removed because we now use absolute thresholds)
 
 if (dryRun) {
   console.log("\n[DRY RUN] No files written.");

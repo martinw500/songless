@@ -342,7 +342,7 @@ async function run() {
 
     await clickStage(client, "0.01s");
     await client.evaluate("document.querySelector('.play-button').click()");
-    await delay(220);
+    await delay(1500);
     let playbackState = await client.evaluate(`({
       current: document.querySelector('.stage-pill.current')?.textContent.trim(),
       isPlaying: document.querySelector('.play-button').classList.contains('playing'),
