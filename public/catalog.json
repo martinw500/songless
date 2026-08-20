@@ -313,7 +313,7 @@
     "genres": [
       "indie pop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/glass-animals-heat-waves.jpg?v=175302-0",
@@ -342,7 +342,7 @@
     "genres": [
       "rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/journey-dont-stop-believin.jpg?v=249219-1000",
@@ -369,7 +369,7 @@
     "genres": [
       "pop rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-believer.jpg?v=202816-0",
@@ -397,7 +397,7 @@
       "pop",
       "electropop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-chainsmokers-halsey-closer.jpg?v=245922-1000",
@@ -424,7 +424,7 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-watermelon-sugar.jpg?v=173917-0",
@@ -453,7 +453,7 @@
       "pop",
       "hip-hop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-wizkid-kyla-one-dance.jpg?v=173267-0",
@@ -481,7 +481,7 @@
       "pop",
       "alternative"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-khalid-lovely.jpg?v=199470-1000",
@@ -511,7 +511,7 @@
       "pop",
       "latin pop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-camila-cabello-senorita.jpg?v=205376-0",
@@ -541,7 +541,7 @@
       "pop",
       "disco"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-dont-start-now.jpg?v=183558-2000",
@@ -569,7 +569,7 @@
       "pop",
       "hip-hop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-circles.jpg?v=215355-0",
@@ -596,7 +596,7 @@
     "genres": [
       "pop rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-viva-la-vida.jpg?v=241104-1000",
@@ -626,7 +626,7 @@
       "pop",
       "r&b"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-jay-z-umbrella.jpg?v=253143-1000",
@@ -653,7 +653,7 @@
     "genres": [
       "alternative rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-yellow.jpg?v=270209-2000",
@@ -680,7 +680,7 @@
     "genres": [
       "alternative rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/radiohead-creep.jpg?v=236530-0",
@@ -707,7 +707,7 @@
     "genres": [
       "hip-hop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-without-me.jpg?v=296600-1000",
@@ -735,7 +735,7 @@
       "new wave",
       "pop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tears-for-fears-everybody-wants-to-rule-the-world.jpg?v=251489-0",
@@ -765,7 +765,7 @@
       "rock",
       "pop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/toto-africa.jpg?v=294333-0",
@@ -790,7 +790,7 @@
     "genres": [
       "soft rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/fleetwood-mac-dreams.jpg?v=257544-0",
@@ -819,7 +819,7 @@
     "genres": [
       "alternative rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-killers-mr-brightside.jpg?v=226475-1000",
@@ -847,7 +847,7 @@
       "synth-pop",
       "new wave"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/a-ha-take-on-me.jpg?v=228520-0",
@@ -875,7 +875,7 @@
       "pop",
       "funk"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/michael-jackson-billie-jean.jpg?v=294227-0",
@@ -903,7 +903,7 @@
       "grunge",
       "rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nirvana-smells-like-teen-spirit.jpg?v=277350-1000",
@@ -931,7 +931,7 @@
       "britpop",
       "rock"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/oasis-wonderwall.jpg?v=268723-9000",
@@ -961,7 +961,7 @@
       "pop",
       "dance-pop"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "familiarity": 86,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/whitney-houston-i-wanna-dance-with-somebody.jpg?v=270304-0",
@@ -1864,7 +1864,7 @@
       "pop",
       "r&b"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 80,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/timbaland-onerepublic-apologize.jpg?v=187675-1000",
@@ -1892,7 +1892,7 @@
       "soul",
       "alternative"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "familiarity": 80,
     "startAtMs": 2530,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=178334-2000",
@@ -1919,7 +1919,7 @@
     "genres": [
       "indie rock"
     ],
-    "difficulty": "expert",
+    "difficulty": "medium",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-rare-occasions-notion.jpg?v=194118-1000",
@@ -1948,7 +1948,7 @@
     "genres": [
       "r&b"
     ],
-    "difficulty": "expert",
+    "difficulty": "medium",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-her-best-part.jpg?v=210012-1000",
@@ -1975,7 +1975,7 @@
     "genres": [
       "r&b"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-kali-uchis-get-you.jpg?v=269955-1000",
@@ -2005,7 +2005,7 @@
       "r&b",
       "alternative"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-nights.jpg?v=307154-0",
@@ -2037,7 +2037,7 @@
       "r&b",
       "alternative"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-pink-white.jpg?v=184530-0",
@@ -2065,7 +2065,7 @@
       "r&b",
       "alternative"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-slow-dancing-in-the-dark.jpg?v=209274-0",
@@ -2093,7 +2093,7 @@
       "pop",
       "r&b"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-glimpse-of-us.jpg?v=234034-0",
@@ -2121,7 +2121,7 @@
       "hip-hop",
       "r&b"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-kali-uchis-see-you-again.jpg?v=202954-0",
@@ -2151,7 +2151,7 @@
       "hip-hop",
       "neo soul"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-earfquake.jpg?v=266091-0",
@@ -2178,7 +2178,7 @@
     "genres": [
       "indie pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-not-allowed.jpg?v=167864-0",
@@ -2206,7 +2206,7 @@
       "r&b",
       "indie"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-dark-red.jpg?v=173603-1000",
@@ -2234,7 +2234,7 @@
       "r&b",
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-bad-habit.jpg?v=232120-0",
@@ -2263,7 +2263,7 @@
     "genres": [
       "indie pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-sofia.jpg?v=188430-0",
@@ -2291,7 +2291,7 @@
       "indie pop",
       "psychedelic pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-electric-feel.jpg?v=227439-1000",
@@ -2319,7 +2319,7 @@
       "alternative",
       "indie"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/d4vd-romantic-homicide.jpg?v=131645-1000",
@@ -2349,7 +2349,7 @@
       "hip-hop",
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kanye-west-heartless.jpg?v=219695-1000",
@@ -2376,7 +2376,7 @@
     "genres": [
       "psychedelic pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-the-less-i-know-the-better.jpg?v=216351-1000",
@@ -2403,7 +2403,7 @@
     "genres": [
       "dream pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beach-house-space-song.jpg?v=317494-3000",
@@ -2430,7 +2430,7 @@
     "genres": [
       "dream pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cigarettes-after-sex-apocalypse.jpg?v=289076-1000",
@@ -2458,7 +2458,7 @@
       "indie pop",
       "synth-pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 79,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-kids.jpg?v=330308-1000",
@@ -2486,7 +2486,7 @@
       "afro house",
       "gospel"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 78,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/master-kg-nomcebo-zikode-jerusalema.jpg?v=342254-0",
@@ -2516,7 +2516,7 @@
       "eurodance",
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 78,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/o-zone-dragostea-din-tei.jpg?v=287438-5000",
@@ -2545,7 +2545,7 @@
     "genres": [
       "french pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 78,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/indila-derniere-danse.jpg?v=212613-1000",
@@ -2576,7 +2576,7 @@
       "reggaeton",
       "latin"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bad-bunny-dtmf.jpg?v=240245-0",
@@ -2603,7 +2603,7 @@
     "genres": [
       "indie pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sombr-back-to-friends.jpg?v=199054-0",
@@ -2631,7 +2631,7 @@
       "k-pop",
       "soundtrack"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/huntrix-golden.jpg?v=193934-0",
@@ -2660,7 +2660,7 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gracie-abrams-thats-so-true.jpg?v=166300-0",
@@ -2688,7 +2688,7 @@
       "pop",
       "soul"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lola-young-messy.jpg?v=284069-0",
@@ -2715,7 +2715,7 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tate-mcrae-sports-car.jpg?v=187466-0",
@@ -2742,7 +2742,7 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-taste.jpg?v=157478-0",
@@ -2769,7 +2769,7 @@
     "genres": [
       "hip-hop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-nokia.jpg?v=241023-0",
@@ -2797,7 +2797,7 @@
       "r&b",
       "hip-hop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-playboi-carti-timeless.jpg?v=256093-0",
@@ -2825,7 +2825,7 @@
       "soul",
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/teddy-swims-lose-control.jpg?v=210721-0",
@@ -2852,7 +2852,7 @@
     "genres": [
       "hip-hop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=248303-0",
@@ -2879,7 +2879,7 @@
     "genres": [
       "pop"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-manchild.jpg?v=213646-0",
@@ -2906,7 +2906,7 @@
     "genres": [
       "indie folk"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gigi-perez-sailor-song.jpg?v=208919-2000",
@@ -2936,7 +2936,7 @@
       "pop",
       "electronic"
     ],
-    "difficulty": "expert",
+    "difficulty": "hard",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charli-xcx-apple.jpg?v=149704-5000",
@@ -3714,7 +3714,7 @@
     "artist": "Drake",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-hold-on-we-re-going-home.jpg?v=227027-0",
@@ -3735,7 +3735,7 @@
     "artist": "Eminem",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-not-afraid.jpg?v=258728-0",
@@ -3756,7 +3756,7 @@
     "artist": "Hailee Steinfeld",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hailee-steinfeld-starving.jpg?v=181933-0",
@@ -3777,7 +3777,7 @@
     "artist": "Mr. Probz",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mr-probz-waves.jpg?v=208133-0",
@@ -3798,7 +3798,7 @@
     "artist": "Selena Gomez & The Scene",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-love-you-like-a-love-song.jpg?v=188720-0",
@@ -3819,7 +3819,7 @@
     "artist": "Avicii",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avicii-hey-brother.jpg?v=114539-0",
@@ -3840,7 +3840,7 @@
     "artist": "Mac Miller",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mac-miller-the-spins.jpg?v=196069-0",
@@ -3861,7 +3861,7 @@
     "artist": "Miley Cyrus",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-we-can-t-stop.jpg?v=233327-0",
@@ -3882,7 +3882,7 @@
     "artist": "Avicii",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avicii-levels.jpg?v=197173-0",
@@ -3903,7 +3903,7 @@
     "artist": "Flo Rida",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-my-house.jpg?v=196418-0",
@@ -3924,7 +3924,7 @@
     "artist": "The Weeknd",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-often.jpg?v=249093-0",
@@ -3945,7 +3945,7 @@
     "artist": "PARTYNEXTDOOR",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-break-from-toronto.jpg?v=99214-0",
@@ -3966,7 +3966,7 @@
     "artist": "Jason Derulo",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign.jpg?v=216478-2000",
@@ -3987,7 +3987,7 @@
     "artist": "Sia",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sia-elastic-heart.jpg?v=250670-1000",
@@ -4008,7 +4008,7 @@
     "artist": "Miley Cyrus",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-wrecking-ball.jpg?v=224131-0",
@@ -4029,7 +4029,7 @@
     "artist": "Katy Perry",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/katy-perry-i-kissed-a-girl.jpg?v=184390-0",
@@ -4050,7 +4050,7 @@
     "artist": "Demi Lovato",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-sorry-not-sorry.jpg?v=202761-1000",
@@ -4071,7 +4071,7 @@
     "artist": "One Direction",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-perfect.jpg?v=230852-1000",
@@ -4092,7 +4092,7 @@
     "artist": "*NSYNC",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nsync-bye-bye-bye.jpg?v=201096-1000",
@@ -4113,7 +4113,7 @@
     "artist": "Julia Michaels",
     "aliases": [],
     "artistAliases": [],
-    "difficulty": "expert",
+    "difficulty": "impossible",
     "familiarity": 75,
     "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/julia-michaels-issues.jpg?v=176309-0",

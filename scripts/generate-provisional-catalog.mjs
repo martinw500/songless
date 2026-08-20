@@ -43,20 +43,12 @@ const withEase = songs.map((s) => {
 // Sort by ease descending
 withEase.sort((a, b) => b.easeScore - a.easeScore);
 
-// Assign absolute thresholds
 const bands = ["easy", "medium", "hard", "expert", "impossible"];
-
-function getDifficultyForScore(score) {
-  if (score >= 88) return "easy";
-  if (score >= 85) return "medium";
-  if (score >= 80) return "hard";
-  if (score >= 73) return "expert";
-  return "impossible";
-}
+const bandSize = Math.ceil(withEase.length / bands.length);
 
 const catalog = withEase.map((entry, index) => {
   const s = entry.song;
-  const difficulty = getDifficultyForScore(entry.easeScore);
+  const difficulty = bands[Math.min(bands.length - 1, Math.floor(index / bandSize))];
   const artwork = s.media.artworkUrl || undefined;
 
   return {
@@ -91,10 +83,14 @@ const catalog = withEase.map((entry, index) => {
 const counts = {};
 for (const entry of catalog) counts[entry.difficulty] = (counts[entry.difficulty] || 0) + 1;
 
-console.log(`\n=== Provisional Catalogue ===`);
-console.log(`Total songs: ${catalog.length}`);
-console.log(`Method: absolute thresholds (>88 Easy, >85 Med, >80 Hard, >73 Expert, <=73 Impossible)`);
-for (const d of bands) console.log(`  ${d.padEnd(10)}: ${counts[d] || 0}`);
+console.log("\n=== Provisional Catalogue ===");
+console.log(`Total songs: ${songs.length}`);
+console.log(`Method: quantile calibration (even buckets)`);
+console.log(`  easy      : ${counts.easy}`);
+console.log(`  medium    : ${counts.medium}`);
+console.log(`  hard      : ${counts.hard}`);
+console.log(`  expert    : ${counts.expert}`);
+console.log(`  impossible: ${counts.impossible}`);
 
 const withIntro = withEase.filter((e) => e.hasIntroReview).length;
 const withoutIntro = withEase.length - withIntro;

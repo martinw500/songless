@@ -89,6 +89,9 @@ ease score = 0.50 × familiarity + 0.50 × introRecognition
 
 Familiarity and intro recognition contribute equally. The audit permits a manual difficulty override only when `difficultyOverrideReason` explains it.
 
+> [!NOTE]
+> **Provisional Quantile Calibration:** Until manual intro reviews are completed for all songs, the game uses a provisional ease score equal to the familiarity score. Because familiarity scores tend to cluster in specific ranges, absolute thresholds resulted in very few songs assigned to certain difficulties. Therefore, the provisional catalog script splits songs into 5 even buckets using quantile calibration to ensure an equal distribution of difficulties for testing purposes.
+
 ## Live catalogue
 
 `public/catalog.json` remains the runtime format. The promotion command prefers a complete R2-hosted source, then falls back to a prepared local file:
