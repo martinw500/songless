@@ -20,492 +20,2492 @@
     "https://apnews.com/article/ac2be0695786434ec4a6c65308e2e345",
     "https://open.spotify.com/playlist/0LF0dYuWf8Vl0ZjRHeix3J"
   ],
-  "latestBatch": { "id": "recognition_pass_12", "startsAt": "Drop Dead" },
+  "latestBatch": {
+    "id": "recognition_pass_12",
+    "startsAt": "Drop Dead"
+  },
   "tracks": [
-    { "title": "Who Knows", "artist": "Daniel Caesar", "reason": "founder_recognition" },
-    { "title": "Always", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Loose", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Transform", "artist": "Daniel Caesar feat. Charlotte Day Wilson", "reason": "gen_z_staple" },
-    { "title": "Freudian", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "We Find Love", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Blessed", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Streetcar", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Cyanide", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Superpowers", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Valentina", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Let Me Go", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-
-    { "title": "One Time", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "One Less Lonely Girl", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "Boyfriend", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "What Do You Mean?", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "Company", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "Intentions", "artist": "Justin Bieber feat. Quavo", "reason": "famous_artist" },
-    { "title": "Peaches", "artist": "Justin Bieber feat. Daniel Caesar & Giveon", "reason": "famous_artist" },
-    { "title": "Anyone", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "Hold On", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "Confident", "artist": "Justin Bieber feat. Chance the Rapper", "reason": "famous_artist" },
-    { "title": "All That Matters", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "Mistletoe", "artist": "Justin Bieber", "reason": "famous_artist" },
-    { "title": "DAISIES", "artist": "Justin Bieber", "reason": "founder_recognition" },
-
-    { "title": "Style", "artist": "Taylor Swift", "reason": "famous_artist" },
-    { "title": "You Belong With Me", "artist": "Taylor Swift", "reason": "famous_artist" },
-    { "title": "Love Story", "artist": "Taylor Swift", "reason": "famous_artist" },
-    { "title": "Enchanted", "artist": "Taylor Swift", "reason": "famous_artist" },
-    { "title": "Delicate", "artist": "Taylor Swift", "reason": "famous_artist" },
-    { "title": "The Fate of Ophelia", "artist": "Taylor Swift", "reason": "founder_recognition" },
-
-    { "title": "Clouded", "artist": "Brent Faiyaz", "reason": "gen_z_staple" },
-    { "title": "Trust", "artist": "Brent Faiyaz", "reason": "gen_z_staple" },
-    { "title": "Dead Man Walking", "artist": "Brent Faiyaz", "reason": "gen_z_staple" },
-    { "title": "Jackie Brown", "artist": "Brent Faiyaz", "reason": "gen_z_staple" },
-    { "title": "ALL MINE", "artist": "Brent Faiyaz", "reason": "gen_z_staple" },
-
-    { "title": "Snooze", "artist": "SZA", "reason": "gen_z_staple" },
-    { "title": "Good Days", "artist": "SZA", "reason": "gen_z_staple" },
-    { "title": "Kill Bill", "artist": "SZA", "reason": "gen_z_staple" },
-    { "title": "Saturn", "artist": "SZA", "reason": "gen_z_staple" },
-    { "title": "Broken Clocks", "artist": "SZA", "reason": "gen_z_staple" },
-    { "title": "Love Galore", "artist": "SZA feat. Travis Scott", "reason": "gen_z_staple" },
-    { "title": "The Weekend", "artist": "SZA", "reason": "gen_z_staple" },
-
-    { "title": "Swimming Pools (Drank)", "artist": "Kendrick Lamar", "reason": "famous_artist" },
-    { "title": "PRIDE.", "artist": "Kendrick Lamar", "reason": "gen_z_staple" },
-    { "title": "DNA.", "artist": "Kendrick Lamar", "reason": "famous_artist" },
-    { "title": "Not Like Us", "artist": "Kendrick Lamar", "reason": "current_relevance" },
-    { "title": "Alright", "artist": "Kendrick Lamar", "reason": "famous_artist" },
-
-    { "title": "Jungle", "artist": "Drake", "reason": "gen_z_staple" },
-    { "title": "Marvins Room", "artist": "Drake", "reason": "gen_z_staple" },
-    { "title": "Hold On, We're Going Home", "artist": "Drake feat. Majid Jordan", "reason": "famous_artist" },
-    { "title": "Nice For What", "artist": "Drake", "reason": "famous_artist" },
-    { "title": "Teenage Fever", "artist": "Drake", "reason": "gen_z_staple" },
-    { "title": "Feel No Ways", "artist": "Drake", "reason": "gen_z_staple" },
-
-    { "title": "Chanel", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-    { "title": "Ivy", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-    { "title": "White Ferrari", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-    { "title": "Thinkin Bout You", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-    { "title": "Self Control", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-    { "title": "Novacane", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-
-    { "title": "Often", "artist": "The Weeknd", "reason": "famous_artist" },
-    { "title": "Wicked Games", "artist": "The Weeknd", "reason": "gen_z_staple" },
-    { "title": "Reminder", "artist": "The Weeknd", "reason": "gen_z_staple" },
-    { "title": "After Hours", "artist": "The Weeknd", "reason": "gen_z_staple" },
-    { "title": "Out of Time", "artist": "The Weeknd", "reason": "gen_z_staple" },
-
-    { "title": "WUSYANAME", "artist": "Tyler, The Creator feat. YoungBoy Never Broke Again & Ty Dolla $ign", "reason": "gen_z_staple" },
-    { "title": "SWEET / I THOUGHT YOU WANTED TO DANCE", "artist": "Tyler, The Creator feat. Brent Faiyaz & Fana Hues", "reason": "gen_z_staple" },
-    { "title": "Like Him", "artist": "Tyler, The Creator feat. Lola Young", "reason": "current_relevance" },
-
-    { "title": "The Spins", "artist": "Mac Miller", "reason": "gen_z_staple" },
-    { "title": "Dang!", "artist": "Mac Miller feat. Anderson .Paak", "reason": "gen_z_staple" },
-    { "title": "Congratulations", "artist": "Mac Miller feat. Bilal", "reason": "gen_z_staple" },
-    { "title": "Self Care", "artist": "Mac Miller", "reason": "gen_z_staple" },
-    { "title": "Come Back to Earth", "artist": "Mac Miller", "reason": "founder_recognition" },
-
-    { "title": "3005", "artist": "Childish Gambino", "reason": "gen_z_staple" },
-    { "title": "Me and Your Mama", "artist": "Childish Gambino", "reason": "gen_z_staple" },
-    { "title": "Sweatpants", "artist": "Childish Gambino", "reason": "gen_z_staple" },
-    { "title": "Les", "artist": "Childish Gambino", "reason": "gen_z_staple" },
-
-    { "title": "Heartbreak Anniversary", "artist": "Giveon", "reason": "gen_z_staple" },
-    { "title": "Like I Want You", "artist": "Giveon", "reason": "gen_z_staple" },
-    { "title": "For Tonight", "artist": "Giveon", "reason": "gen_z_staple" },
-
-    { "title": "Break from Toronto", "artist": "PARTYNEXTDOOR", "reason": "gen_z_staple" },
-    { "title": "Come and See Me", "artist": "PARTYNEXTDOOR feat. Drake", "reason": "gen_z_staple" },
-    { "title": "Not Nice", "artist": "PARTYNEXTDOOR", "reason": "gen_z_staple" },
-
-    { "title": "Chest Pain (I Love)", "artist": "Malcolm Todd", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "Love Me Not", "artist": "Ravyn Lenae", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "Undressed", "artist": "sombr", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "Illegal", "artist": "PinkPantheress", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "Rock That Body", "artist": "Black Eyed Peas", "reason": "social_revival", "signals": ["social_viral"] },
-    { "title": "Soul Survivor", "artist": "Jeezy feat. Akon", "reason": "social_revival", "signals": ["social_viral"] },
-    { "title": "Let Down", "artist": "Radiohead", "reason": "social_revival", "signals": ["social_viral"] },
-    { "title": "Your Love Is My Drug", "artist": "Kesha", "reason": "social_revival", "signals": ["social_viral"] },
-    { "title": "Manchild", "artist": "Sabrina Carpenter", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Abracadabra", "artist": "Lady Gaga", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Anxiety", "artist": "Doechii", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "NOKIA", "artist": "Drake", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Bed Chem", "artist": "Sabrina Carpenter", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Please Please Please", "artist": "Sabrina Carpenter", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Diet Pepsi", "artist": "Addison Rae", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "Apple", "artist": "Charli xcx", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "HOT TO GO!", "artist": "Chappell Roan", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "LUNCH", "artist": "Billie Eilish", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Sports car", "artist": "Tate McRae", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "Juna", "artist": "Clairo", "reason": "current_gen_z_staple", "signals": ["current_relevance"] },
-    { "title": "Glue Song", "artist": "beabadoobee", "reason": "gen_z_staple", "signals": ["social_viral"] },
-    { "title": "blue", "artist": "yung kai", "reason": "current_social_breakout", "signals": ["social_viral"] },
-    { "title": "tv off", "artist": "Kendrick Lamar feat. Lefty Gunplay", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "Sticky", "artist": "Tyler, The Creator feat. GloRilla, Sexyy Red & Lil Wayne", "reason": "current_hit", "signals": ["current_relevance"] },
-    { "title": "DENIAL IS A RIVER", "artist": "Doechii", "reason": "current_gen_z_staple", "signals": ["current_relevance"] },
-    { "title": "No Pole", "artist": "Don Toliver", "reason": "gen_z_staple", "signals": ["social_viral"] },
-
-    { "title": "Pink Matter", "artist": "Frank Ocean feat. André 3000", "reason": "gen_z_staple" },
-    { "title": "Super Rich Kids", "artist": "Frank Ocean feat. Earl Sweatshirt", "reason": "gen_z_staple" },
-    { "title": "Japanese Denim", "artist": "Daniel Caesar", "reason": "gen_z_staple" },
-    { "title": "Crew", "artist": "GoldLink feat. Brent Faiyaz & Shy Glizzy", "reason": "gen_z_staple" },
-    { "title": "Location", "artist": "Khalid", "reason": "gen_z_staple" },
-    { "title": "After the Storm", "artist": "Kali Uchis feat. Tyler, The Creator & Bootsy Collins", "reason": "gen_z_staple" },
-    { "title": "Sanctuary", "artist": "Joji", "reason": "gen_z_staple" },
-    { "title": "NEW MAGIC WAND", "artist": "Tyler, The Creator", "reason": "gen_z_staple" },
-    { "title": "Are You Bored Yet?", "artist": "Wallows feat. Clairo", "reason": "gen_z_staple" },
-    { "title": "Tek It", "artist": "Cafuné", "reason": "gen_z_social_staple", "signals": ["social_viral"] },
-    { "title": "Line Without a Hook", "artist": "Ricky Montgomery", "reason": "gen_z_social_staple", "signals": ["social_viral"] },
-    { "title": "Love", "artist": "Keyshia Cole", "reason": "social_revival", "signals": ["social_viral"] },
-
-    { "title": "Good Time", "artist": "Owl City feat. Carly Rae Jepsen", "reason": "founder_playlist_crossover" },
-    { "title": "Radioactive", "artist": "Imagine Dragons", "reason": "founder_playlist_crossover" },
-    { "title": "All of Me", "artist": "John Legend", "reason": "founder_playlist_crossover" },
-    { "title": "Stay With Me", "artist": "Sam Smith", "reason": "founder_playlist_crossover" },
-    { "title": "Bad Habits", "artist": "Ed Sheeran", "reason": "founder_playlist_crossover" },
-    { "title": "One Last Time", "artist": "Ariana Grande", "reason": "founder_playlist_crossover" },
-    { "title": "House of Memories", "artist": "Panic! At The Disco", "reason": "founder_playlist_crossover", "signals": ["social_viral"] },
-    { "title": "The One That Got Away", "artist": "Katy Perry", "reason": "founder_playlist_crossover" },
-    { "title": "Arcade", "artist": "Duncan Laurence", "reason": "founder_playlist_crossover" },
-    { "title": "Dancin - Krono Remix", "artist": "Aaron Smith feat. Luvli", "reason": "founder_playlist_crossover", "signals": ["social_viral"] },
-
-    { "title": "Classic", "artist": "MKTO", "reason": "childhood_hit" },
-    { "title": "Stereo Love", "artist": "Edward Maya feat. Vika Jigulina", "reason": "childhood_hit" },
-    { "title": "Firework", "artist": "Katy Perry", "reason": "childhood_hit" },
-    { "title": "Teenage Dream", "artist": "Katy Perry", "reason": "childhood_hit" },
-    { "title": "Glad You Came", "artist": "The Wanted", "reason": "childhood_hit" },
-    { "title": "International Love", "artist": "Pitbull feat. Chris Brown", "reason": "childhood_hit" },
-    { "title": "Good Feeling", "artist": "Flo Rida", "reason": "childhood_hit" },
-    { "title": "Whatcha Say", "artist": "Jason Derulo", "reason": "childhood_hit" },
-    { "title": "Just a Dream", "artist": "Nelly", "reason": "childhood_hit" },
-    { "title": "Beauty and a Beat", "artist": "Justin Bieber feat. Nicki Minaj", "reason": "childhood_hit" },
-    { "title": "Cheap Thrills", "artist": "Sia feat. Sean Paul", "reason": "childhood_hit" },
-    { "title": "Price Tag", "artist": "Jessie J feat. B.o.B", "reason": "childhood_hit" },
-    { "title": "Domino", "artist": "Jessie J", "reason": "childhood_hit" },
-    { "title": "Raise Your Glass", "artist": "P!nk", "reason": "childhood_hit" },
-    { "title": "Some Nights", "artist": "fun.", "reason": "childhood_hit" },
-    { "title": "Little Talks", "artist": "Of Monsters and Men", "reason": "childhood_hit" },
-    { "title": "Cool Kids", "artist": "Echosmith", "reason": "childhood_hit" },
-    { "title": "Tongue Tied", "artist": "Grouplove", "reason": "childhood_hit" },
-    { "title": "Where Them Girls At", "artist": "David Guetta feat. Flo Rida & Nicki Minaj", "reason": "childhood_hit" },
-    { "title": "Club Can't Handle Me", "artist": "Flo Rida feat. David Guetta", "reason": "childhood_hit" },
-    { "title": "Break Your Heart", "artist": "Taio Cruz feat. Ludacris", "reason": "childhood_hit" },
-    { "title": "Right Now (Na Na Na)", "artist": "Akon", "reason": "childhood_hit" },
-    { "title": "Apologize", "artist": "Timbaland feat. OneRepublic", "reason": "childhood_hit" },
-    { "title": "Pocketful of Sunshine", "artist": "Natasha Bedingfield", "reason": "childhood_hit" },
-    { "title": "Love Song", "artist": "Sara Bareilles", "reason": "childhood_hit" },
-    { "title": "The Climb", "artist": "Miley Cyrus", "reason": "childhood_hit" },
-    { "title": "Sk8er Boi", "artist": "Avril Lavigne", "reason": "childhood_hit" },
-    { "title": "Girlfriend", "artist": "Avril Lavigne", "reason": "childhood_hit" },
-    { "title": "What the Hell", "artist": "Avril Lavigne", "reason": "childhood_hit" },
-    { "title": "Starstrukk", "artist": "3OH!3 feat. Katy Perry", "reason": "childhood_hit" },
-    { "title": "Good Girls Go Bad", "artist": "Cobra Starship feat. Leighton Meester", "reason": "childhood_hit" },
-    { "title": "Evacuate the Dancefloor", "artist": "Cascada", "reason": "childhood_hit" },
-    { "title": "Everytime We Touch", "artist": "Cascada", "reason": "childhood_hit" },
-    { "title": "Bulletproof", "artist": "La Roux", "reason": "childhood_hit" },
-    { "title": "Fire Burning", "artist": "Sean Kingston", "reason": "childhood_hit" },
-    { "title": "Dilemma", "artist": "Nelly feat. Kelly Rowland", "reason": "childhood_hit" },
-    { "title": "No Air", "artist": "Jordin Sparks feat. Chris Brown", "reason": "childhood_hit" },
-    { "title": "Kiss Me Thru the Phone", "artist": "Soulja Boy feat. Sammie", "reason": "childhood_hit" },
-    { "title": "Buttons", "artist": "The Pussycat Dolls feat. Snoop Dogg", "reason": "childhood_hit" },
-    { "title": "Don't Cha", "artist": "The Pussycat Dolls feat. Busta Rhymes", "reason": "childhood_hit" },
-    { "title": "Temperature", "artist": "Sean Paul", "reason": "childhood_hit" },
-    { "title": "Let It Rock", "artist": "Kevin Rudolf feat. Lil Wayne", "reason": "childhood_hit" },
-    { "title": "Potential Breakup Song", "artist": "Aly & AJ", "reason": "childhood_hit" },
-    { "title": "Forever", "artist": "Drake feat. Kanye West, Lil Wayne & Eminem", "reason": "childhood_hit" },
-    { "title": "BedRock", "artist": "Young Money feat. Lloyd", "reason": "childhood_hit" },
-    { "title": "No Hands", "artist": "Waka Flocka Flame feat. Roscoe Dash & Wale", "reason": "childhood_hit" },
-    { "title": "Moment 4 Life", "artist": "Nicki Minaj feat. Drake", "reason": "childhood_hit" },
-    { "title": "Beautiful Soul", "artist": "Jesse McCartney", "reason": "childhood_hit" },
-    { "title": "Hurts Me", "artist": "Tory Lanez, Trippie Redd & Yoko Gold", "reason": "gen_z_social_staple", "signals": ["social_viral"] },
-    { "title": "MUTT", "artist": "Leon Thomas", "reason": "current_rnb_hit", "signals": ["current_relevance"] },
-    { "title": "Folded", "artist": "Kehlani", "reason": "current_rnb_hit", "signals": ["current_relevance"] },
-    { "title": "30 For 30", "artist": "SZA feat. Kendrick Lamar", "reason": "current_rnb_hit", "signals": ["current_relevance"] },
-    { "title": "DIE TRYING", "artist": "PARTYNEXTDOOR, Drake & Yebba", "reason": "current_rnb_hit", "signals": ["current_relevance"] },
-    { "title": "YUKON", "artist": "Justin Bieber", "reason": "current_hit", "signals": ["current_relevance"] },
-
-    { "title": "Guess", "artist": "Charli xcx feat. Billie Eilish", "reason": "current_social_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "360", "artist": "Charli xcx", "reason": "current_social_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "BMF", "artist": "SZA", "reason": "current_rnb_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "Gabriela", "artist": "KATSEYE", "reason": "current_social_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "Push 2 Start", "artist": "Tyla", "reason": "current_social_hit", "signals": ["current_relevance", "social_viral"] },
-
-    { "title": "Adorn", "artist": "Miguel", "reason": "gen_z_rnb_staple" },
-    { "title": "Playing Games", "artist": "Summer Walker", "reason": "gen_z_rnb_staple" },
-    { "title": "Girls Need Love - Remix", "artist": "Summer Walker feat. Drake", "reason": "gen_z_rnb_staple" },
-    { "title": "Trip", "artist": "Ella Mai", "reason": "gen_z_rnb_staple" },
-    { "title": "On My Mama", "artist": "Victoria Monét", "reason": "gen_z_rnb_staple", "signals": ["social_viral"] },
-    { "title": "After Hours", "artist": "Kehlani", "reason": "gen_z_rnb_staple", "signals": ["social_viral"] },
-    { "title": "Nights Like This", "artist": "Kehlani feat. Ty Dolla $ign", "reason": "gen_z_rnb_staple" },
-
-    { "title": "Goodies", "artist": "Ciara feat. Petey Pablo", "reason": "childhood_hit" },
-    { "title": "1, 2 Step", "artist": "Ciara feat. Missy Elliott", "reason": "childhood_hit" },
-    { "title": "Like a G6", "artist": "Far East Movement feat. The Cataracs & DEV", "reason": "childhood_hit" },
-    { "title": "Gives You Hell", "artist": "The All-American Rejects", "reason": "childhood_hit" },
-    { "title": "Bad Day", "artist": "Daniel Powter", "reason": "childhood_hit" },
-    { "title": "Ain't It Fun", "artist": "Paramore", "reason": "childhood_hit" },
-    { "title": "Decode", "artist": "Paramore", "reason": "childhood_hit" },
-    { "title": "Boom Clap", "artist": "Charli xcx", "reason": "childhood_hit" },
-    { "title": "Billionaire", "artist": "Travie McCoy feat. Bruno Mars", "reason": "childhood_hit" },
-    { "title": "Good Life", "artist": "OneRepublic", "reason": "childhood_hit" },
-    { "title": "Scream & Shout", "artist": "will.i.am feat. Britney Spears", "reason": "childhood_hit" },
-    { "title": "#thatPOWER", "artist": "will.i.am feat. Justin Bieber", "reason": "childhood_hit" },
-    { "title": "Want U Back", "artist": "Cher Lloyd", "reason": "childhood_hit" },
-    { "title": "The Show Goes On", "artist": "Lupe Fiasco", "reason": "childhood_hit" },
-    { "title": "Shake It", "artist": "Metro Station", "reason": "childhood_hit" },
-    { "title": "Live While We're Young", "artist": "One Direction", "reason": "childhood_hit" },
-    { "title": "Best Song Ever", "artist": "One Direction", "reason": "childhood_hit" },
-    { "title": "Kiss You", "artist": "One Direction", "reason": "childhood_hit" },
-    { "title": "One Thing", "artist": "One Direction", "reason": "childhood_hit" },
-    { "title": "Really Don't Care", "artist": "Demi Lovato feat. Cher Lloyd", "reason": "childhood_hit" },
-    { "title": "Give Your Heart a Break", "artist": "Demi Lovato", "reason": "childhood_hit" },
-    { "title": "7 Things", "artist": "Miley Cyrus", "reason": "childhood_hit" },
-    { "title": "See You Again", "artist": "Miley Cyrus", "reason": "childhood_hit" },
-    { "title": "Naturally", "artist": "Selena Gomez & The Scene", "reason": "childhood_hit" },
-    { "title": "Who Says", "artist": "Selena Gomez & The Scene", "reason": "childhood_hit" },
-    { "title": "Come & Get It", "artist": "Selena Gomez", "reason": "childhood_hit" },
-    { "title": "Can't Be Tamed", "artist": "Miley Cyrus", "reason": "childhood_hit" },
-    { "title": "Never Say Never", "artist": "Justin Bieber feat. Jaden Smith", "reason": "childhood_hit" },
-    { "title": "Somebody to Love", "artist": "Justin Bieber", "reason": "childhood_hit" },
-    { "title": "As Long As You Love Me", "artist": "Justin Bieber feat. Big Sean", "reason": "childhood_hit" },
-    { "title": "Pound the Alarm", "artist": "Nicki Minaj", "reason": "childhood_hit" },
-
-    { "title": "Earrings", "artist": "Malcolm Todd", "reason": "current_melodic_breakout", "signals": ["current_relevance"] },
-    { "title": "E85", "artist": "Don Toliver", "reason": "current_melodic_rap", "signals": ["current_relevance"] },
-    { "title": "Right My Wrongs", "artist": "Bryson Tiller", "reason": "gen_z_rnb_staple" },
-    { "title": "Come Through and Chill", "artist": "Miguel feat. J. Cole & Salaam Remi", "reason": "gen_z_rnb_staple" },
-    { "title": "Sky Walker", "artist": "Miguel feat. Travis Scott", "reason": "gen_z_rnb_staple" },
-    { "title": "Poison", "artist": "Brent Faiyaz", "reason": "gen_z_rnb_staple" },
-    { "title": "Been Away", "artist": "Brent Faiyaz", "reason": "gen_z_rnb_staple" },
-    { "title": "Wasting Time", "artist": "Brent Faiyaz feat. Drake", "reason": "gen_z_rnb_staple" },
-    { "title": "Damage", "artist": "H.E.R.", "reason": "gen_z_rnb_staple" },
-    { "title": "Focus", "artist": "H.E.R.", "reason": "gen_z_rnb_staple" },
-    { "title": "Could've Been", "artist": "H.E.R. feat. Bryson Tiller", "reason": "gen_z_rnb_staple" },
-    { "title": "Tadow", "artist": "Masego & FKJ", "reason": "gen_z_rnb_staple" },
-    { "title": "Mystery Lady", "artist": "Masego feat. Don Toliver", "reason": "gen_z_rnb_staple" },
-    { "title": "At My Worst", "artist": "Pink Sweat$", "reason": "gen_z_rnb_staple" },
-    { "title": "Boo'd Up", "artist": "Ella Mai", "reason": "gen_z_rnb_staple" },
-    { "title": "So Into You", "artist": "Tamia", "reason": "culturally_active_rnb_classic" },
-    { "title": "Recognize", "artist": "PARTYNEXTDOOR feat. Drake", "reason": "gen_z_rnb_staple" },
-    { "title": "Her Way", "artist": "PARTYNEXTDOOR", "reason": "gen_z_rnb_staple" },
-    { "title": "LUV", "artist": "Tory Lanez", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Love Songs", "artist": "Kaash Paige", "reason": "gen_z_rnb_staple" },
-    { "title": "Cardigan", "artist": "Don Toliver", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "After Party", "artist": "Don Toliver", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "What You Need", "artist": "Don Toliver", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Lemonade", "artist": "Internet Money feat. Gunna, Don Toliver & NAV", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "YEAH RIGHT", "artist": "Joji", "reason": "gen_z_staple" },
-    { "title": "worldstar money (interlude)", "artist": "Joji", "reason": "gen_z_staple" },
-    { "title": "Private Landing", "artist": "Don Toliver feat. Justin Bieber & Future", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Ex-Factor", "artist": "Ms. Lauryn Hill", "reason": "culturally_active_rnb_classic" },
-    { "title": "Can We Talk", "artist": "Tevin Campbell", "reason": "culturally_active_rnb_classic" },
-
-    { "title": "Good Old Days", "artist": "Macklemore feat. Kesha", "reason": "cohort_nostalgia" },
-    { "title": "I Lived", "artist": "OneRepublic", "reason": "cohort_nostalgia" },
-    { "title": "Little Dark Age", "artist": "MGMT", "reason": "gen_z_social_staple", "signals": ["social_viral"] },
-    { "title": "Kids", "artist": "MGMT", "reason": "childhood_hit" },
-    { "title": "Take It Off", "artist": "Kesha", "reason": "childhood_hit" },
-    { "title": "Blow", "artist": "Kesha", "reason": "childhood_hit" },
-    { "title": "We R Who We R", "artist": "Kesha", "reason": "childhood_hit" },
-    { "title": "Ridin' Solo", "artist": "Jason Derulo", "reason": "childhood_hit" },
-    { "title": "In My Head", "artist": "Jason Derulo", "reason": "childhood_hit" },
-    { "title": "Secrets", "artist": "OneRepublic", "reason": "childhood_hit" },
-    { "title": "OMG", "artist": "USHER feat. will.i.am", "reason": "childhood_hit" },
-    { "title": "More", "artist": "USHER", "reason": "childhood_hit" },
-    { "title": "Scream", "artist": "USHER", "reason": "childhood_hit" },
-    { "title": "Boom Boom Pow", "artist": "Black Eyed Peas", "reason": "childhood_hit" },
-    { "title": "Just Can't Get Enough", "artist": "Black Eyed Peas", "reason": "childhood_hit" },
-    { "title": "The Time (Dirty Bit)", "artist": "Black Eyed Peas", "reason": "childhood_hit" },
-    { "title": "Rocketeer", "artist": "Far East Movement feat. Ryan Tedder", "reason": "childhood_hit" },
-    { "title": "Cake by the Ocean", "artist": "DNCE", "reason": "childhood_hit" },
-    { "title": "Me and My Broken Heart", "artist": "Rixton", "reason": "childhood_hit" },
-    { "title": "Tonight Tonight", "artist": "Hot Chelle Rae", "reason": "childhood_hit" },
-    { "title": "I Like It", "artist": "Enrique Iglesias feat. Pitbull", "reason": "childhood_hit" },
-    { "title": "Sexy and I Know It", "artist": "LMFAO", "reason": "childhood_hit" },
-    { "title": "Hotel Room Service", "artist": "Pitbull", "reason": "childhood_hit" },
-    { "title": "Rain Over Me", "artist": "Pitbull feat. Marc Anthony", "reason": "childhood_hit" },
-    { "title": "Fireball", "artist": "Pitbull feat. John Ryan", "reason": "childhood_hit" },
-    { "title": "I Know You Want Me (Calle Ocho)", "artist": "Pitbull", "reason": "childhood_hit" },
-    { "title": "Yeah 3x", "artist": "Chris Brown", "reason": "childhood_hit" },
-    { "title": "Turn Up the Music", "artist": "Chris Brown", "reason": "childhood_hit" },
-    { "title": "Don't Trust Me", "artist": "3OH!3", "reason": "childhood_hit" },
-
-    { "title": "Show Me", "artist": "Kid Ink feat. Chris Brown", "reason": "cohort_rnb_hit" },
-    { "title": "Don't Tell 'Em", "artist": "Jeremih feat. YG", "reason": "cohort_rnb_hit" },
-    { "title": "Post to Be", "artist": "Omarion feat. Chris Brown & Jhené Aiko", "reason": "cohort_rnb_hit" },
-    { "title": "2 On", "artist": "Tinashe feat. ScHoolboy Q", "reason": "cohort_rnb_hit" },
-    { "title": "Birthday Sex", "artist": "Jeremih", "reason": "cohort_rnb_hit" },
-    { "title": "Down on Me", "artist": "Jeremih feat. 50 Cent", "reason": "childhood_rnb_hit" },
-    { "title": "Paranoid", "artist": "Ty Dolla $ign feat. B.o.B", "reason": "cohort_melodic_rap_hit" },
-    { "title": "Loyal", "artist": "Chris Brown feat. Lil Wayne & Tyga", "reason": "cohort_rnb_hit" },
-    { "title": "No Type", "artist": "Rae Sremmurd", "reason": "cohort_melodic_rap_hit" },
-    { "title": "Come Get Her", "artist": "Rae Sremmurd", "reason": "cohort_melodic_rap_hit" },
-    { "title": "Swang", "artist": "Rae Sremmurd", "reason": "cohort_melodic_rap_hit" },
-    { "title": "Don't Mind", "artist": "Kent Jones", "reason": "cohort_hit" },
-    { "title": "Controlla", "artist": "Drake", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Crew Love", "artist": "Drake feat. The Weeknd", "reason": "gen_z_rnb_staple" },
-    { "title": "Chicago Freestyle", "artist": "Drake feat. Giveon", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Love Yourz", "artist": "J. Cole", "reason": "gen_z_rap_staple" },
-    { "title": "Power Trip", "artist": "J. Cole feat. Miguel", "reason": "cohort_melodic_rap_hit" },
-    { "title": "She Knows", "artist": "J. Cole feat. Amber Coffman & Cults", "reason": "gen_z_rap_staple", "signals": ["social_viral"] },
-    { "title": "Money Longer", "artist": "Lil Uzi Vert", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Shoota", "artist": "Playboi Carti feat. Lil Uzi Vert", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "L$D", "artist": "A$AP Rocky", "reason": "gen_z_melodic_rap_staple" },
-    { "title": "Sativa", "artist": "Jhené Aiko feat. Swae Lee", "reason": "gen_z_rnb_staple" },
-    { "title": "The Worst", "artist": "Jhené Aiko", "reason": "cohort_rnb_hit" },
-    { "title": "Bed Peace", "artist": "Jhené Aiko feat. Childish Gambino", "reason": "gen_z_rnb_staple" },
-
-    { "title": "Shea Butter Baby", "artist": "Ari Lennox feat. J. Cole", "reason": "gen_z_rnb_staple" },
-    { "title": "P*$$Y Fairy (OTW)", "artist": "Jhené Aiko", "reason": "gen_z_rnb_staple" },
-    { "title": "While We're Young", "artist": "Jhené Aiko", "reason": "gen_z_rnb_staple" },
-    { "title": "Oui", "artist": "Jeremih", "reason": "cohort_rnb_hit" },
-    { "title": "Planez", "artist": "Jeremih feat. J. Cole", "reason": "cohort_rnb_hit" },
-    { "title": "BEST INTEREST", "artist": "Tyler, The Creator", "reason": "gen_z_staple" },
-    { "title": "911 / Mr. Lonely", "artist": "Tyler, The Creator feat. Frank Ocean & Steve Lacy", "reason": "gen_z_staple" },
-
-    { "title": "Alors on danse", "artist": "Stromae", "reason": "global_crossover", "languageReview": "non_english" },
-    { "title": "Gangnam Style", "artist": "PSY", "reason": "global_crossover", "languageReview": "non_english" },
-
-    { "title": "Stateside + Zara Larsson", "artist": "PinkPantheress feat. Zara Larsson", "reason": "current_gen_z_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "So Easy (To Fall In Love)", "artist": "Olivia Dean", "reason": "current_rnb_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "Die On This Hill", "artist": "SIENNA SPIRO", "reason": "current_global_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "White Keys", "artist": "Dominic Fike", "reason": "current_gen_z_hit", "signals": ["current_relevance", "social_viral"] },
-    { "title": "hate that i made you love me", "artist": "Ariana Grande", "reason": "current_pop_hit", "signals": ["current_relevance"] },
-    { "title": "Babydoll", "artist": "Dominic Fike", "reason": "revived_gen_z_staple", "signals": ["current_relevance", "social_viral"] },
-    { "title": "Man I Need", "artist": "Olivia Dean", "reason": "current_rnb_hit", "signals": ["current_relevance"] },
-    { "title": "No One Noticed", "artist": "The Marías", "reason": "current_gen_z_staple", "signals": ["current_relevance", "social_viral"] },
-    { "title": "The Color Violet", "artist": "Tory Lanez", "reason": "college_gen_z_staple", "signals": ["cohort_streaming"] },
-    { "title": "The Spins", "artist": "Mac Miller", "reason": "college_gen_z_throwback", "signals": ["cohort_streaming"] },
-    { "title": "Ribs", "artist": "Lorde", "reason": "college_gen_z_throwback", "signals": ["cohort_streaming"] },
-
-    { "title": "Party Rock Anthem", "artist": "LMFAO", "reason": "iconic_childhood_hit" },
-    { "title": "On The Floor", "artist": "Jennifer Lopez feat. Pitbull", "reason": "iconic_childhood_hit" },
-    { "title": "Hey Mama", "artist": "David Guetta feat. Nicki Minaj, Bebe Rexha & Afrojack", "reason": "iconic_childhood_hit" },
-    { "title": "Down", "artist": "Jay Sean feat. Lil Wayne", "reason": "iconic_childhood_hit" },
-    { "title": "Drive By", "artist": "Train", "reason": "iconic_childhood_hit" },
-    { "title": "The Sweet Escape", "artist": "Gwen Stefani feat. Akon", "reason": "iconic_childhood_hit" },
-    { "title": "Paper Planes", "artist": "M.I.A.", "reason": "iconic_childhood_hit" },
-    { "title": "Burn", "artist": "Ellie Goulding", "reason": "iconic_childhood_hit" },
-    { "title": "Die Young", "artist": "Kesha", "reason": "iconic_childhood_hit" },
-    { "title": "Love Me Again", "artist": "John Newman", "reason": "iconic_childhood_hit" },
-    { "title": "Rock Your Body", "artist": "Justin Timberlake", "reason": "iconic_childhood_hit" },
-    { "title": "Paparazzi", "artist": "Lady Gaga", "reason": "iconic_childhood_hit" },
-    { "title": "21 Questions", "artist": "50 Cent feat. Nate Dogg", "reason": "iconic_childhood_hit" },
-    { "title": "Lonely", "artist": "Akon", "reason": "iconic_childhood_hit" },
-    { "title": "Airplanes", "artist": "B.o.B feat. Hayley Williams", "reason": "iconic_childhood_hit" },
-    { "title": "Fight Song", "artist": "Rachel Platten", "reason": "iconic_childhood_hit" },
-    { "title": "Say It Right", "artist": "Nelly Furtado", "reason": "iconic_childhood_hit" },
-    { "title": "Shower", "artist": "Becky G", "reason": "iconic_childhood_hit" },
-    { "title": "American Boy", "artist": "Estelle feat. Kanye West", "reason": "iconic_childhood_hit" },
-    { "title": "Pon de Replay", "artist": "Rihanna", "reason": "iconic_childhood_hit" },
-    { "title": "Feel This Moment", "artist": "Pitbull feat. Christina Aguilera", "reason": "iconic_childhood_hit" },
-    { "title": "Disturbia", "artist": "Rihanna", "reason": "iconic_childhood_hit" },
-    { "title": "Pump It", "artist": "Black Eyed Peas", "reason": "iconic_childhood_hit" },
-    { "title": "Since U Been Gone", "artist": "Kelly Clarkson", "reason": "iconic_childhood_hit" },
-    { "title": "Cool for the Summer", "artist": "Demi Lovato", "reason": "iconic_childhood_hit" },
-    { "title": "Eenie Meenie", "artist": "Sean Kingston feat. Justin Bieber", "reason": "iconic_childhood_hit" },
-    { "title": "Meet Me Halfway", "artist": "Black Eyed Peas", "reason": "iconic_childhood_hit" },
-    { "title": "Everybody Talks", "artist": "Neon Trees", "reason": "iconic_childhood_hit" },
-    { "title": "I Write Sins Not Tragedies", "artist": "Panic! At The Disco", "reason": "iconic_childhood_hit" },
-    { "title": "Telephone", "artist": "Lady Gaga feat. Beyoncé", "reason": "iconic_childhood_hit" },
-    { "title": "Beautiful Girls", "artist": "Sean Kingston", "reason": "iconic_childhood_hit" },
-    { "title": "Bleeding Love", "artist": "Leona Lewis", "reason": "iconic_childhood_hit" },
-    { "title": "My Boo", "artist": "Usher feat. Alicia Keys", "reason": "iconic_childhood_hit" },
-    { "title": "Say My Name", "artist": "Destiny's Child", "reason": "iconic_childhood_hit" },
-    { "title": "You're Beautiful", "artist": "James Blunt", "reason": "iconic_childhood_hit" },
-    { "title": "Fireflies", "artist": "Owl City", "reason": "iconic_childhood_hit" },
-    { "title": "Super Bass", "artist": "Nicki Minaj", "reason": "iconic_childhood_hit" },
-    { "title": "Misery Business", "artist": "Paramore", "reason": "iconic_childhood_hit" },
-    { "title": "The A Team", "artist": "Ed Sheeran", "reason": "iconic_childhood_hit" },
-    { "title": "Never Forget You", "artist": "Zara Larsson feat. MNEK", "reason": "iconic_childhood_hit" },
-    { "title": "Versace on the Floor", "artist": "Bruno Mars", "reason": "iconic_childhood_hit" },
-    { "title": "Heart Attack", "artist": "Demi Lovato", "reason": "iconic_childhood_hit" },
-    { "title": "Where Have You Been", "artist": "Rihanna", "reason": "iconic_childhood_hit" },
-    { "title": "So Sick", "artist": "Ne-Yo", "reason": "iconic_childhood_hit" },
-    { "title": "Still Into You", "artist": "Paramore", "reason": "iconic_childhood_hit" },
-    { "title": "Break Free", "artist": "Ariana Grande feat. Zedd", "reason": "iconic_childhood_hit" },
-    { "title": "Maneater", "artist": "Nelly Furtado", "reason": "iconic_childhood_hit" },
-    { "title": "Am I Wrong", "artist": "Nico & Vinz", "reason": "iconic_childhood_hit" },
-    { "title": "Wild Ones", "artist": "Flo Rida feat. Sia", "reason": "iconic_childhood_hit" },
-    { "title": "Steal My Girl", "artist": "One Direction", "reason": "iconic_childhood_hit" },
-    { "title": "Want to Want Me", "artist": "Jason Derulo", "reason": "iconic_childhood_hit" },
-    { "title": "Issues", "artist": "Julia Michaels", "reason": "iconic_childhood_hit" },
-    { "title": "Rewrite the Stars", "artist": "Zac Efron feat. Zendaya", "reason": "iconic_childhood_hit" },
-    { "title": "Perfect", "artist": "One Direction", "reason": "iconic_childhood_hit" },
-    { "title": "Sorry Not Sorry", "artist": "Demi Lovato", "reason": "iconic_childhood_hit" },
-    { "title": "Wrecking Ball", "artist": "Miley Cyrus", "reason": "iconic_childhood_hit" },
-    { "title": "Elastic Heart", "artist": "Sia", "reason": "iconic_childhood_hit" },
-    { "title": "Swalla", "artist": "Jason Derulo feat. Nicki Minaj & Ty Dolla $ign", "reason": "iconic_childhood_hit" },
-    { "title": "My House", "artist": "Flo Rida", "reason": "iconic_childhood_hit" },
-    { "title": "Levels", "artist": "Avicii", "reason": "iconic_childhood_hit" },
-    { "title": "We Can't Stop", "artist": "Miley Cyrus", "reason": "iconic_childhood_hit" },
-    { "title": "Where Are Ü Now", "artist": "Jack Ü feat. Justin Bieber", "reason": "iconic_childhood_hit" },
-    { "title": "Hey Brother", "artist": "Avicii", "reason": "iconic_childhood_hit" },
-    { "title": "Love You Like a Love Song", "artist": "Selena Gomez & The Scene", "reason": "iconic_childhood_hit" },
-    { "title": "Waves - Robin Schulz Radio Edit", "artist": "Mr. Probz", "reason": "iconic_childhood_hit" },
-    { "title": "Starving", "artist": "Hailee Steinfeld feat. Grey & Zedd", "reason": "iconic_childhood_hit" },
-    { "title": "Candy Shop", "artist": "50 Cent feat. Olivia", "reason": "iconic_childhood_hit" },
-    { "title": "Teenagers", "artist": "My Chemical Romance", "reason": "iconic_childhood_hit" },
-    { "title": "Best Day of My Life", "artist": "American Authors", "reason": "iconic_childhood_hit" },
-    { "title": "Habits (Stay High)", "artist": "Tove Lo", "reason": "iconic_childhood_hit" },
-    { "title": "Him & I", "artist": "G-Eazy feat. Halsey", "reason": "iconic_childhood_hit" },
-    { "title": "California Gurls", "artist": "Katy Perry feat. Snoop Dogg", "reason": "iconic_childhood_hit" },
-    { "title": "I Love It", "artist": "Icona Pop feat. Charli XCX", "reason": "iconic_childhood_hit" },
-
-    { "title": "Breakin' Dishes", "artist": "Rihanna", "reason": "social_revival", "signals": ["social_viral"] },
-    { "title": "Rude Boy", "artist": "Rihanna", "reason": "iconic_childhood_hit" },
-    { "title": "Give It to Me", "artist": "Timbaland feat. Nelly Furtado & Justin Timberlake", "reason": "iconic_childhood_hit" },
-    { "title": "Don't Phunk with My Heart", "artist": "Black Eyed Peas", "reason": "iconic_childhood_hit" },
-    { "title": "Promiscuous", "artist": "Nelly Furtado feat. Timbaland", "reason": "iconic_childhood_hit" },
-    { "title": "Don't Stop the Music", "artist": "Rihanna", "reason": "iconic_childhood_hit" },
-    { "title": "Just Dance", "artist": "Lady Gaga feat. Colby O'Donis", "reason": "iconic_childhood_hit" },
-    { "title": "Smack That", "artist": "Akon feat. Eminem", "reason": "iconic_childhood_hit" },
-    { "title": "Low", "artist": "Flo Rida feat. T-Pain", "reason": "iconic_childhood_hit" },
-    { "title": "SexyBack", "artist": "Justin Timberlake feat. Timbaland", "reason": "iconic_childhood_hit" },
-    { "title": "Where Is the Love?", "artist": "Black Eyed Peas", "reason": "iconic_childhood_hit" },
-    { "title": "Gimme More", "artist": "Britney Spears", "reason": "iconic_childhood_hit" },
-
-    { "title": "Like That", "artist": "Future feat. Metro Boomin & Kendrick Lamar", "reason": "recognizable_recent_rap_hit" },
-    { "title": "Family Ties", "artist": "Baby Keem feat. Kendrick Lamar", "reason": "recognizable_recent_rap_hit" },
-    { "title": "Boyfriend (with Social House)", "artist": "Ariana Grande", "reason": "explicit_founder_keep" },
-    { "title": "Kings & Queens", "artist": "Ava Max", "reason": "explicit_founder_keep" },
-    { "title": "10,000 Hours", "artist": "Dan + Shay feat. Justin Bieber", "reason": "explicit_founder_keep" },
-    { "title": "Sofia", "artist": "Clairo", "reason": "gen_z_staple" },
-    { "title": "About You", "artist": "The 1975", "reason": "gen_z_staple" },
-    { "title": "Somebody Else", "artist": "The 1975", "reason": "gen_z_staple" },
-    { "title": "Miss Independent", "artist": "Ne-Yo", "reason": "iconic_childhood_rnb_hit" },
-    { "title": "Pursuit of Happiness (Nightmare)", "artist": "Kid Cudi", "reason": "gen_z_rap_staple" },
-    { "title": "Nights", "artist": "Frank Ocean", "reason": "gen_z_staple" },
-    { "title": "Love Lies", "artist": "Khalid feat. Normani", "reason": "cohort_rnb_hit" },
-    { "title": "Try", "artist": "P!nk", "reason": "iconic_childhood_hit" },
-    { "title": "Boy's a liar Pt. 2", "artist": "PinkPantheress feat. Ice Spice", "reason": "current_gen_z_hit" },
-    { "title": "One Call Away", "artist": "Charlie Puth", "reason": "iconic_childhood_hit" },
-    { "title": "Team", "artist": "Lorde", "reason": "iconic_childhood_hit" },
-    { "title": "Runaway (U & I)", "artist": "Galantis", "reason": "iconic_childhood_hit" },
-    { "title": "Bailando - Spanish Version", "artist": "Enrique Iglesias", "reason": "global_crossover", "languageReview": "non_english" },
-    { "title": "If I Can't Have You", "artist": "Shawn Mendes", "reason": "cohort_pop_hit" },
-    { "title": "Wildest Dreams", "artist": "Taylor Swift", "reason": "iconic_childhood_hit" },
-    { "title": "Oops!...I Did It Again", "artist": "Britney Spears", "reason": "iconic_throwback" },
-    { "title": "No One", "artist": "Alicia Keys", "reason": "iconic_childhood_rnb_hit" },
-    { "title": "Bye Bye Bye", "artist": "*NSYNC", "reason": "iconic_revived_throwback", "signals": ["social_viral"] },
-    { "title": "I Kissed a Girl", "artist": "Katy Perry", "reason": "iconic_childhood_hit" },
-    { "title": "Not Afraid", "artist": "Eminem", "reason": "iconic_childhood_rap_hit" },
-    { "title": "No Guidance", "artist": "Chris Brown feat. Drake", "reason": "gen_z_rnb_staple" },
-    { "title": "Exchange", "artist": "Bryson Tiller", "reason": "gen_z_rnb_staple" },
-    { "title": "Too Many Nights", "artist": "Metro Boomin feat. Don Toliver & Future", "reason": "gen_z_melodic_rap_hit" },
-    { "title": "No Idea", "artist": "Don Toliver", "reason": "gen_z_staple" },
-    { "title": "Blame", "artist": "Calvin Harris feat. John Newman", "reason": "iconic_childhood_hit" },
-
-    { "title": "Drop Dead", "artist": "Olivia Rodrigo", "reason": "approved_under_1b" },
-    { "title": "I Just Might", "artist": "Bruno Mars", "reason": "approved_under_1b" },
-    { "title": "Janice STFU", "artist": "Drake", "reason": "approved_under_1b" },
-    { "title": "Dracula", "artist": "Tame Impala & JENNIE", "reason": "approved_under_1b" },
-    { "title": "Cinderella", "artist": "Mac Miller feat. Ty Dolla $ign", "reason": "approved_under_1b" },
-    { "title": "Oh Yeah?", "artist": "Steve Lacy", "reason": "explicit_founder_pick" },
-    { "title": "party 4 u", "artist": "Charli xcx", "reason": "approved_under_1b" },
-    { "title": "Show Me Love", "artist": "WizTheMc feat. Tyla", "reason": "approved_under_1b" },
-    { "title": "Dark Thoughts", "artist": "Lil Tecca", "reason": "approved_under_1b" },
-    { "title": "Darling, I", "artist": "Tyler, The Creator", "reason": "approved_under_1b" }
+    {
+      "title": "Who Knows",
+      "artist": "Daniel Caesar",
+      "reason": "founder_recognition"
+    },
+    {
+      "title": "Always",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Loose",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Transform",
+      "artist": "Daniel Caesar feat. Charlotte Day Wilson",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Freudian",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "We Find Love",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Blessed",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Streetcar",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Cyanide",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Superpowers",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Valentina",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Let Me Go",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "One Time",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "One Less Lonely Girl",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Boyfriend",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "What Do You Mean?",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Company",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Intentions",
+      "artist": "Justin Bieber feat. Quavo",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Peaches",
+      "artist": "Justin Bieber feat. Daniel Caesar & Giveon",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Anyone",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Hold On",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Confident",
+      "artist": "Justin Bieber feat. Chance the Rapper",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "All That Matters",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Mistletoe",
+      "artist": "Justin Bieber",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "DAISIES",
+      "artist": "Justin Bieber",
+      "reason": "founder_recognition"
+    },
+    {
+      "title": "Style",
+      "artist": "Taylor Swift",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "You Belong With Me",
+      "artist": "Taylor Swift",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Love Story",
+      "artist": "Taylor Swift",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Enchanted",
+      "artist": "Taylor Swift",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Delicate",
+      "artist": "Taylor Swift",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "The Fate of Ophelia",
+      "artist": "Taylor Swift",
+      "reason": "founder_recognition"
+    },
+    {
+      "title": "Clouded",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Trust",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Dead Man Walking",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Jackie Brown",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "ALL MINE",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Snooze",
+      "artist": "SZA",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Good Days",
+      "artist": "SZA",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Kill Bill",
+      "artist": "SZA",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Saturn",
+      "artist": "SZA",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Broken Clocks",
+      "artist": "SZA",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Love Galore",
+      "artist": "SZA feat. Travis Scott",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "The Weekend",
+      "artist": "SZA",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Swimming Pools (Drank)",
+      "artist": "Kendrick Lamar",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "PRIDE.",
+      "artist": "Kendrick Lamar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "DNA.",
+      "artist": "Kendrick Lamar",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Not Like Us",
+      "artist": "Kendrick Lamar",
+      "reason": "current_relevance"
+    },
+    {
+      "title": "Alright",
+      "artist": "Kendrick Lamar",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Jungle",
+      "artist": "Drake",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Marvins Room",
+      "artist": "Drake",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Hold On, We're Going Home",
+      "artist": "Drake feat. Majid Jordan",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Nice For What",
+      "artist": "Drake",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Teenage Fever",
+      "artist": "Drake",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Feel No Ways",
+      "artist": "Drake",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Chanel",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Ivy",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "White Ferrari",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Thinkin Bout You",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Self Control",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Novacane",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Often",
+      "artist": "The Weeknd",
+      "reason": "famous_artist"
+    },
+    {
+      "title": "Wicked Games",
+      "artist": "The Weeknd",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Reminder",
+      "artist": "The Weeknd",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "After Hours",
+      "artist": "The Weeknd",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Out of Time",
+      "artist": "The Weeknd",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "WUSYANAME",
+      "artist": "Tyler, The Creator feat. YoungBoy Never Broke Again & Ty Dolla $ign",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "SWEET / I THOUGHT YOU WANTED TO DANCE",
+      "artist": "Tyler, The Creator feat. Brent Faiyaz & Fana Hues",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Like Him",
+      "artist": "Tyler, The Creator feat. Lola Young",
+      "reason": "current_relevance"
+    },
+    {
+      "title": "The Spins",
+      "artist": "Mac Miller",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Dang!",
+      "artist": "Mac Miller feat. Anderson .Paak",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Congratulations",
+      "artist": "Mac Miller feat. Bilal",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Self Care",
+      "artist": "Mac Miller",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Come Back to Earth",
+      "artist": "Mac Miller",
+      "reason": "founder_recognition"
+    },
+    {
+      "title": "3005",
+      "artist": "Childish Gambino",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Me and Your Mama",
+      "artist": "Childish Gambino",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Sweatpants",
+      "artist": "Childish Gambino",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Les",
+      "artist": "Childish Gambino",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Heartbreak Anniversary",
+      "artist": "Giveon",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Like I Want You",
+      "artist": "Giveon",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "For Tonight",
+      "artist": "Giveon",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Break from Toronto",
+      "artist": "PARTYNEXTDOOR",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Come and See Me",
+      "artist": "PARTYNEXTDOOR feat. Drake",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Not Nice",
+      "artist": "PARTYNEXTDOOR",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Chest Pain (I Love)",
+      "artist": "Malcolm Todd",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Love Me Not",
+      "artist": "Ravyn Lenae",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Undressed",
+      "artist": "sombr",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Illegal",
+      "artist": "PinkPantheress",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Rock That Body",
+      "artist": "Black Eyed Peas",
+      "reason": "social_revival",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Soul Survivor",
+      "artist": "Jeezy feat. Akon",
+      "reason": "social_revival",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Let Down",
+      "artist": "Radiohead",
+      "reason": "social_revival",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Your Love Is My Drug",
+      "artist": "Kesha",
+      "reason": "social_revival",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Manchild",
+      "artist": "Sabrina Carpenter",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Abracadabra",
+      "artist": "Lady Gaga",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Anxiety",
+      "artist": "Doechii",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "NOKIA",
+      "artist": "Drake",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Bed Chem",
+      "artist": "Sabrina Carpenter",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Please Please Please",
+      "artist": "Sabrina Carpenter",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Diet Pepsi",
+      "artist": "Addison Rae",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Apple",
+      "artist": "Charli xcx",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "HOT TO GO!",
+      "artist": "Chappell Roan",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "LUNCH",
+      "artist": "Billie Eilish",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Sports car",
+      "artist": "Tate McRae",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Juna",
+      "artist": "Clairo",
+      "reason": "current_gen_z_staple",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Glue Song",
+      "artist": "beabadoobee",
+      "reason": "gen_z_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "blue",
+      "artist": "yung kai",
+      "reason": "current_social_breakout",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "tv off",
+      "artist": "Kendrick Lamar feat. Lefty Gunplay",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Sticky",
+      "artist": "Tyler, The Creator feat. GloRilla, Sexyy Red & Lil Wayne",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "DENIAL IS A RIVER",
+      "artist": "Doechii",
+      "reason": "current_gen_z_staple",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "No Pole",
+      "artist": "Don Toliver",
+      "reason": "gen_z_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Pink Matter",
+      "artist": "Frank Ocean feat. André 3000",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Super Rich Kids",
+      "artist": "Frank Ocean feat. Earl Sweatshirt",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Japanese Denim",
+      "artist": "Daniel Caesar",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Crew",
+      "artist": "GoldLink feat. Brent Faiyaz & Shy Glizzy",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Location",
+      "artist": "Khalid",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "After the Storm",
+      "artist": "Kali Uchis feat. Tyler, The Creator & Bootsy Collins",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Sanctuary",
+      "artist": "Joji",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "NEW MAGIC WAND",
+      "artist": "Tyler, The Creator",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Are You Bored Yet?",
+      "artist": "Wallows feat. Clairo",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Tek It",
+      "artist": "Cafuné",
+      "reason": "gen_z_social_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Line Without a Hook",
+      "artist": "Ricky Montgomery",
+      "reason": "gen_z_social_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Love",
+      "artist": "Keyshia Cole",
+      "reason": "social_revival",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Good Time",
+      "artist": "Owl City feat. Carly Rae Jepsen",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "Radioactive",
+      "artist": "Imagine Dragons",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "All of Me",
+      "artist": "John Legend",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "Stay With Me",
+      "artist": "Sam Smith",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "Bad Habits",
+      "artist": "Ed Sheeran",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "One Last Time",
+      "artist": "Ariana Grande",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "House of Memories",
+      "artist": "Panic! At The Disco",
+      "reason": "founder_playlist_crossover",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "The One That Got Away",
+      "artist": "Katy Perry",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "Arcade",
+      "artist": "Duncan Laurence",
+      "reason": "founder_playlist_crossover"
+    },
+    {
+      "title": "Dancin - Krono Remix",
+      "artist": "Aaron Smith feat. Luvli",
+      "reason": "founder_playlist_crossover",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Classic",
+      "artist": "MKTO",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Stereo Love",
+      "artist": "Edward Maya feat. Vika Jigulina",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Firework",
+      "artist": "Katy Perry",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Teenage Dream",
+      "artist": "Katy Perry",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Glad You Came",
+      "artist": "The Wanted",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "International Love",
+      "artist": "Pitbull feat. Chris Brown",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Good Feeling",
+      "artist": "Flo Rida",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Whatcha Say",
+      "artist": "Jason Derulo",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Just a Dream",
+      "artist": "Nelly",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Beauty and a Beat",
+      "artist": "Justin Bieber feat. Nicki Minaj",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Cheap Thrills",
+      "artist": "Sia feat. Sean Paul",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Price Tag",
+      "artist": "Jessie J feat. B.o.B",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Domino",
+      "artist": "Jessie J",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Raise Your Glass",
+      "artist": "P!nk",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Some Nights",
+      "artist": "fun.",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Little Talks",
+      "artist": "Of Monsters and Men",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Cool Kids",
+      "artist": "Echosmith",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Tongue Tied",
+      "artist": "Grouplove",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Where Them Girls At",
+      "artist": "David Guetta feat. Flo Rida & Nicki Minaj",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Club Can't Handle Me",
+      "artist": "Flo Rida feat. David Guetta",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Break Your Heart",
+      "artist": "Taio Cruz feat. Ludacris",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Right Now (Na Na Na)",
+      "artist": "Akon",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Apologize",
+      "artist": "Timbaland feat. OneRepublic",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Pocketful of Sunshine",
+      "artist": "Natasha Bedingfield",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Love Song",
+      "artist": "Sara Bareilles",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "The Climb",
+      "artist": "Miley Cyrus",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Sk8er Boi",
+      "artist": "Avril Lavigne",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Girlfriend",
+      "artist": "Avril Lavigne",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "What the Hell",
+      "artist": "Avril Lavigne",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Starstrukk",
+      "artist": "3OH!3 feat. Katy Perry",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Good Girls Go Bad",
+      "artist": "Cobra Starship feat. Leighton Meester",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Evacuate the Dancefloor",
+      "artist": "Cascada",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Everytime We Touch",
+      "artist": "Cascada",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Bulletproof",
+      "artist": "La Roux",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Fire Burning",
+      "artist": "Sean Kingston",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Dilemma",
+      "artist": "Nelly feat. Kelly Rowland",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "No Air",
+      "artist": "Jordin Sparks feat. Chris Brown",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Kiss Me Thru the Phone",
+      "artist": "Soulja Boy feat. Sammie",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Buttons",
+      "artist": "The Pussycat Dolls feat. Snoop Dogg",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Don't Cha",
+      "artist": "The Pussycat Dolls feat. Busta Rhymes",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Temperature",
+      "artist": "Sean Paul",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Let It Rock",
+      "artist": "Kevin Rudolf feat. Lil Wayne",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Potential Breakup Song",
+      "artist": "Aly & AJ",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Forever",
+      "artist": "Drake feat. Kanye West, Lil Wayne & Eminem",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "BedRock",
+      "artist": "Young Money feat. Lloyd",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "No Hands",
+      "artist": "Waka Flocka Flame feat. Roscoe Dash & Wale",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Moment 4 Life",
+      "artist": "Nicki Minaj feat. Drake",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Beautiful Soul",
+      "artist": "Jesse McCartney",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Hurts Me",
+      "artist": "Tory Lanez, Trippie Redd & Yoko Gold",
+      "reason": "gen_z_social_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "MUTT",
+      "artist": "Leon Thomas",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Folded",
+      "artist": "Kehlani",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "30 For 30",
+      "artist": "SZA feat. Kendrick Lamar",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "DIE TRYING",
+      "artist": "PARTYNEXTDOOR, Drake & Yebba",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "YUKON",
+      "artist": "Justin Bieber",
+      "reason": "current_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Guess",
+      "artist": "Charli xcx feat. Billie Eilish",
+      "reason": "current_social_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "360",
+      "artist": "Charli xcx",
+      "reason": "current_social_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "BMF",
+      "artist": "SZA",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Gabriela",
+      "artist": "KATSEYE",
+      "reason": "current_social_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Push 2 Start",
+      "artist": "Tyla",
+      "reason": "current_social_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Adorn",
+      "artist": "Miguel",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Playing Games",
+      "artist": "Summer Walker",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Girls Need Love - Remix",
+      "artist": "Summer Walker feat. Drake",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Trip",
+      "artist": "Ella Mai",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "On My Mama",
+      "artist": "Victoria Monét",
+      "reason": "gen_z_rnb_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "After Hours",
+      "artist": "Kehlani",
+      "reason": "gen_z_rnb_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Nights Like This",
+      "artist": "Kehlani feat. Ty Dolla $ign",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Goodies",
+      "artist": "Ciara feat. Petey Pablo",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "1, 2 Step",
+      "artist": "Ciara feat. Missy Elliott",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Like a G6",
+      "artist": "Far East Movement feat. The Cataracs & DEV",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Gives You Hell",
+      "artist": "The All-American Rejects",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Bad Day",
+      "artist": "Daniel Powter",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Ain't It Fun",
+      "artist": "Paramore",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Decode",
+      "artist": "Paramore",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Boom Clap",
+      "artist": "Charli xcx",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Billionaire",
+      "artist": "Travie McCoy feat. Bruno Mars",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Good Life",
+      "artist": "OneRepublic",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Scream & Shout",
+      "artist": "will.i.am feat. Britney Spears",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "#thatPOWER",
+      "artist": "will.i.am feat. Justin Bieber",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Want U Back",
+      "artist": "Cher Lloyd",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "The Show Goes On",
+      "artist": "Lupe Fiasco",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Shake It",
+      "artist": "Metro Station",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Live While We're Young",
+      "artist": "One Direction",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Best Song Ever",
+      "artist": "One Direction",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Kiss You",
+      "artist": "One Direction",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "One Thing",
+      "artist": "One Direction",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Really Don't Care",
+      "artist": "Demi Lovato feat. Cher Lloyd",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Give Your Heart a Break",
+      "artist": "Demi Lovato",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "7 Things",
+      "artist": "Miley Cyrus",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "See You Again",
+      "artist": "Miley Cyrus",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Naturally",
+      "artist": "Selena Gomez & The Scene",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Who Says",
+      "artist": "Selena Gomez & The Scene",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Come & Get It",
+      "artist": "Selena Gomez",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Can't Be Tamed",
+      "artist": "Miley Cyrus",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Never Say Never",
+      "artist": "Justin Bieber feat. Jaden Smith",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Somebody to Love",
+      "artist": "Justin Bieber",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "As Long As You Love Me",
+      "artist": "Justin Bieber feat. Big Sean",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Pound the Alarm",
+      "artist": "Nicki Minaj",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Earrings",
+      "artist": "Malcolm Todd",
+      "reason": "current_melodic_breakout",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "E85",
+      "artist": "Don Toliver",
+      "reason": "current_melodic_rap",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Right My Wrongs",
+      "artist": "Bryson Tiller",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Come Through and Chill",
+      "artist": "Miguel feat. J. Cole & Salaam Remi",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Sky Walker",
+      "artist": "Miguel feat. Travis Scott",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Poison",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Been Away",
+      "artist": "Brent Faiyaz",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Wasting Time",
+      "artist": "Brent Faiyaz feat. Drake",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Damage",
+      "artist": "H.E.R.",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Focus",
+      "artist": "H.E.R.",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Could've Been",
+      "artist": "H.E.R. feat. Bryson Tiller",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Tadow",
+      "artist": "Masego & FKJ",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Mystery Lady",
+      "artist": "Masego feat. Don Toliver",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "At My Worst",
+      "artist": "Pink Sweat$",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Boo'd Up",
+      "artist": "Ella Mai",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "So Into You",
+      "artist": "Tamia",
+      "reason": "culturally_active_rnb_classic"
+    },
+    {
+      "title": "Recognize",
+      "artist": "PARTYNEXTDOOR feat. Drake",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Her Way",
+      "artist": "PARTYNEXTDOOR",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "LUV",
+      "artist": "Tory Lanez",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Love Songs",
+      "artist": "Kaash Paige",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Cardigan",
+      "artist": "Don Toliver",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "After Party",
+      "artist": "Don Toliver",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "What You Need",
+      "artist": "Don Toliver",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Lemonade",
+      "artist": "Internet Money feat. Gunna, Don Toliver & NAV",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "YEAH RIGHT",
+      "artist": "Joji",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "worldstar money (interlude)",
+      "artist": "Joji",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Private Landing",
+      "artist": "Don Toliver feat. Justin Bieber & Future",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Ex-Factor",
+      "artist": "Ms. Lauryn Hill",
+      "reason": "culturally_active_rnb_classic"
+    },
+    {
+      "title": "Can We Talk",
+      "artist": "Tevin Campbell",
+      "reason": "culturally_active_rnb_classic"
+    },
+    {
+      "title": "Good Old Days",
+      "artist": "Macklemore feat. Kesha",
+      "reason": "cohort_nostalgia"
+    },
+    {
+      "title": "I Lived",
+      "artist": "OneRepublic",
+      "reason": "cohort_nostalgia"
+    },
+    {
+      "title": "Little Dark Age",
+      "artist": "MGMT",
+      "reason": "gen_z_social_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Kids",
+      "artist": "MGMT",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Take It Off",
+      "artist": "Kesha",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Blow",
+      "artist": "Kesha",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "We R Who We R",
+      "artist": "Kesha",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Ridin' Solo",
+      "artist": "Jason Derulo",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "In My Head",
+      "artist": "Jason Derulo",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Secrets",
+      "artist": "OneRepublic",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "OMG",
+      "artist": "USHER feat. will.i.am",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "More",
+      "artist": "USHER",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Scream",
+      "artist": "USHER",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Boom Boom Pow",
+      "artist": "Black Eyed Peas",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Just Can't Get Enough",
+      "artist": "Black Eyed Peas",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "The Time (Dirty Bit)",
+      "artist": "Black Eyed Peas",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Rocketeer",
+      "artist": "Far East Movement feat. Ryan Tedder",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Cake by the Ocean",
+      "artist": "DNCE",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Me and My Broken Heart",
+      "artist": "Rixton",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Tonight Tonight",
+      "artist": "Hot Chelle Rae",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "I Like It",
+      "artist": "Enrique Iglesias feat. Pitbull",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Sexy and I Know It",
+      "artist": "LMFAO",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Hotel Room Service",
+      "artist": "Pitbull",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Rain Over Me",
+      "artist": "Pitbull feat. Marc Anthony",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Fireball",
+      "artist": "Pitbull feat. John Ryan",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "I Know You Want Me (Calle Ocho)",
+      "artist": "Pitbull",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Yeah 3x",
+      "artist": "Chris Brown",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Turn Up the Music",
+      "artist": "Chris Brown",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Don't Trust Me",
+      "artist": "3OH!3",
+      "reason": "childhood_hit"
+    },
+    {
+      "title": "Show Me",
+      "artist": "Kid Ink feat. Chris Brown",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Don't Tell 'Em",
+      "artist": "Jeremih feat. YG",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Post to Be",
+      "artist": "Omarion feat. Chris Brown & Jhené Aiko",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "2 On",
+      "artist": "Tinashe feat. ScHoolboy Q",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Birthday Sex",
+      "artist": "Jeremih",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Down on Me",
+      "artist": "Jeremih feat. 50 Cent",
+      "reason": "childhood_rnb_hit"
+    },
+    {
+      "title": "Paranoid",
+      "artist": "Ty Dolla $ign feat. B.o.B",
+      "reason": "cohort_melodic_rap_hit"
+    },
+    {
+      "title": "Loyal",
+      "artist": "Chris Brown feat. Lil Wayne & Tyga",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "No Type",
+      "artist": "Rae Sremmurd",
+      "reason": "cohort_melodic_rap_hit"
+    },
+    {
+      "title": "Come Get Her",
+      "artist": "Rae Sremmurd",
+      "reason": "cohort_melodic_rap_hit"
+    },
+    {
+      "title": "Swang",
+      "artist": "Rae Sremmurd",
+      "reason": "cohort_melodic_rap_hit"
+    },
+    {
+      "title": "Don't Mind",
+      "artist": "Kent Jones",
+      "reason": "cohort_hit"
+    },
+    {
+      "title": "Controlla",
+      "artist": "Drake",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Crew Love",
+      "artist": "Drake feat. The Weeknd",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Chicago Freestyle",
+      "artist": "Drake feat. Giveon",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Love Yourz",
+      "artist": "J. Cole",
+      "reason": "gen_z_rap_staple"
+    },
+    {
+      "title": "Power Trip",
+      "artist": "J. Cole feat. Miguel",
+      "reason": "cohort_melodic_rap_hit"
+    },
+    {
+      "title": "She Knows",
+      "artist": "J. Cole feat. Amber Coffman & Cults",
+      "reason": "gen_z_rap_staple",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Money Longer",
+      "artist": "Lil Uzi Vert",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Shoota",
+      "artist": "Playboi Carti feat. Lil Uzi Vert",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "L$D",
+      "artist": "A$AP Rocky",
+      "reason": "gen_z_melodic_rap_staple"
+    },
+    {
+      "title": "Sativa",
+      "artist": "Jhené Aiko feat. Swae Lee",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "The Worst",
+      "artist": "Jhené Aiko",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Bed Peace",
+      "artist": "Jhené Aiko feat. Childish Gambino",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Shea Butter Baby",
+      "artist": "Ari Lennox feat. J. Cole",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "P*$$Y Fairy (OTW)",
+      "artist": "Jhené Aiko",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "While We're Young",
+      "artist": "Jhené Aiko",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Oui",
+      "artist": "Jeremih",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Planez",
+      "artist": "Jeremih feat. J. Cole",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "BEST INTEREST",
+      "artist": "Tyler, The Creator",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "911 / Mr. Lonely",
+      "artist": "Tyler, The Creator feat. Frank Ocean & Steve Lacy",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Alors on danse",
+      "artist": "Stromae",
+      "reason": "global_crossover",
+      "languageReview": "non_english"
+    },
+    {
+      "title": "Gangnam Style",
+      "artist": "PSY",
+      "reason": "global_crossover",
+      "languageReview": "non_english"
+    },
+    {
+      "title": "Stateside + Zara Larsson",
+      "artist": "PinkPantheress feat. Zara Larsson",
+      "reason": "current_gen_z_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "So Easy (To Fall In Love)",
+      "artist": "Olivia Dean",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Die On This Hill",
+      "artist": "SIENNA SPIRO",
+      "reason": "current_global_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "White Keys",
+      "artist": "Dominic Fike",
+      "reason": "current_gen_z_hit",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "hate that i made you love me",
+      "artist": "Ariana Grande",
+      "reason": "current_pop_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "Babydoll",
+      "artist": "Dominic Fike",
+      "reason": "revived_gen_z_staple",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Man I Need",
+      "artist": "Olivia Dean",
+      "reason": "current_rnb_hit",
+      "signals": [
+        "current_relevance"
+      ]
+    },
+    {
+      "title": "No One Noticed",
+      "artist": "The Marías",
+      "reason": "current_gen_z_staple",
+      "signals": [
+        "current_relevance",
+        "social_viral"
+      ]
+    },
+    {
+      "title": "The Color Violet",
+      "artist": "Tory Lanez",
+      "reason": "college_gen_z_staple",
+      "signals": [
+        "cohort_streaming"
+      ]
+    },
+    {
+      "title": "The Spins",
+      "artist": "Mac Miller",
+      "reason": "college_gen_z_throwback",
+      "signals": [
+        "cohort_streaming"
+      ]
+    },
+    {
+      "title": "Ribs",
+      "artist": "Lorde",
+      "reason": "college_gen_z_throwback",
+      "signals": [
+        "cohort_streaming"
+      ]
+    },
+    {
+      "title": "Party Rock Anthem",
+      "artist": "LMFAO",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "On The Floor",
+      "artist": "Jennifer Lopez feat. Pitbull",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Hey Mama",
+      "artist": "David Guetta feat. Nicki Minaj, Bebe Rexha & Afrojack",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Down",
+      "artist": "Jay Sean feat. Lil Wayne",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Drive By",
+      "artist": "Train",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "The Sweet Escape",
+      "artist": "Gwen Stefani feat. Akon",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Paper Planes",
+      "artist": "M.I.A.",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Burn",
+      "artist": "Ellie Goulding",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Die Young",
+      "artist": "Kesha",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Love Me Again",
+      "artist": "John Newman",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Rock Your Body",
+      "artist": "Justin Timberlake",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Paparazzi",
+      "artist": "Lady Gaga",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "21 Questions",
+      "artist": "50 Cent feat. Nate Dogg",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Lonely",
+      "artist": "Akon",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Airplanes",
+      "artist": "B.o.B feat. Hayley Williams",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Fight Song",
+      "artist": "Rachel Platten",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Say It Right",
+      "artist": "Nelly Furtado",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Shower",
+      "artist": "Becky G",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "American Boy",
+      "artist": "Estelle feat. Kanye West",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Pon de Replay",
+      "artist": "Rihanna",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Feel This Moment",
+      "artist": "Pitbull feat. Christina Aguilera",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Disturbia",
+      "artist": "Rihanna",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Pump It",
+      "artist": "Black Eyed Peas",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Cool for the Summer",
+      "artist": "Demi Lovato",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Eenie Meenie",
+      "artist": "Sean Kingston feat. Justin Bieber",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Meet Me Halfway",
+      "artist": "Black Eyed Peas",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Everybody Talks",
+      "artist": "Neon Trees",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "I Write Sins Not Tragedies",
+      "artist": "Panic! At The Disco",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Telephone",
+      "artist": "Lady Gaga feat. Beyoncé",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Beautiful Girls",
+      "artist": "Sean Kingston",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Bleeding Love",
+      "artist": "Leona Lewis",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "My Boo",
+      "artist": "Usher feat. Alicia Keys",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Say My Name",
+      "artist": "Destiny's Child",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "You're Beautiful",
+      "artist": "James Blunt",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Fireflies",
+      "artist": "Owl City",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Super Bass",
+      "artist": "Nicki Minaj",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Misery Business",
+      "artist": "Paramore",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "The A Team",
+      "artist": "Ed Sheeran",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Never Forget You",
+      "artist": "Zara Larsson feat. MNEK",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Versace on the Floor",
+      "artist": "Bruno Mars",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Heart Attack",
+      "artist": "Demi Lovato",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Where Have You Been",
+      "artist": "Rihanna",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "So Sick",
+      "artist": "Ne-Yo",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Still Into You",
+      "artist": "Paramore",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Break Free",
+      "artist": "Ariana Grande feat. Zedd",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Maneater",
+      "artist": "Nelly Furtado",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Am I Wrong",
+      "artist": "Nico & Vinz",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Wild Ones",
+      "artist": "Flo Rida feat. Sia",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Steal My Girl",
+      "artist": "One Direction",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Want to Want Me",
+      "artist": "Jason Derulo",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Issues",
+      "artist": "Julia Michaels",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Rewrite the Stars",
+      "artist": "Zac Efron feat. Zendaya",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Perfect",
+      "artist": "One Direction",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Sorry Not Sorry",
+      "artist": "Demi Lovato",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Wrecking Ball",
+      "artist": "Miley Cyrus",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Elastic Heart",
+      "artist": "Sia",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Swalla",
+      "artist": "Jason Derulo feat. Nicki Minaj & Ty Dolla $ign",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "My House",
+      "artist": "Flo Rida",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Levels",
+      "artist": "Avicii",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "We Can't Stop",
+      "artist": "Miley Cyrus",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Where Are Ü Now",
+      "artist": "Jack Ü feat. Justin Bieber",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Hey Brother",
+      "artist": "Avicii",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Love You Like a Love Song",
+      "artist": "Selena Gomez & The Scene",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Waves - Robin Schulz Radio Edit",
+      "artist": "Mr. Probz",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Starving",
+      "artist": "Hailee Steinfeld feat. Grey & Zedd",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Candy Shop",
+      "artist": "50 Cent feat. Olivia",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Teenagers",
+      "artist": "My Chemical Romance",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Best Day of My Life",
+      "artist": "American Authors",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Habits (Stay High)",
+      "artist": "Tove Lo",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Him & I",
+      "artist": "G-Eazy feat. Halsey",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "California Gurls",
+      "artist": "Katy Perry feat. Snoop Dogg",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "I Love It",
+      "artist": "Icona Pop feat. Charli XCX",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Breakin' Dishes",
+      "artist": "Rihanna",
+      "reason": "social_revival",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "Rude Boy",
+      "artist": "Rihanna",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Give It to Me",
+      "artist": "Timbaland feat. Nelly Furtado & Justin Timberlake",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Don't Phunk with My Heart",
+      "artist": "Black Eyed Peas",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Promiscuous",
+      "artist": "Nelly Furtado feat. Timbaland",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Don't Stop the Music",
+      "artist": "Rihanna",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Just Dance",
+      "artist": "Lady Gaga feat. Colby O'Donis",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Smack That",
+      "artist": "Akon feat. Eminem",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Low",
+      "artist": "Flo Rida feat. T-Pain",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "SexyBack",
+      "artist": "Justin Timberlake feat. Timbaland",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Where Is the Love?",
+      "artist": "Black Eyed Peas",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Gimme More",
+      "artist": "Britney Spears",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Like That",
+      "artist": "Future feat. Metro Boomin & Kendrick Lamar",
+      "reason": "recognizable_recent_rap_hit"
+    },
+    {
+      "title": "Family Ties",
+      "artist": "Baby Keem feat. Kendrick Lamar",
+      "reason": "recognizable_recent_rap_hit"
+    },
+    {
+      "title": "Boyfriend (with Social House)",
+      "artist": "Ariana Grande",
+      "reason": "explicit_founder_keep"
+    },
+    {
+      "title": "Kings & Queens",
+      "artist": "Ava Max",
+      "reason": "explicit_founder_keep"
+    },
+    {
+      "title": "10,000 Hours",
+      "artist": "Dan + Shay feat. Justin Bieber",
+      "reason": "explicit_founder_keep"
+    },
+    {
+      "title": "Sofia",
+      "artist": "Clairo",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "About You",
+      "artist": "The 1975",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Somebody Else",
+      "artist": "The 1975",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Miss Independent",
+      "artist": "Ne-Yo",
+      "reason": "iconic_childhood_rnb_hit"
+    },
+    {
+      "title": "Pursuit of Happiness (Nightmare)",
+      "artist": "Kid Cudi",
+      "reason": "gen_z_rap_staple"
+    },
+    {
+      "title": "Nights",
+      "artist": "Frank Ocean",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Love Lies",
+      "artist": "Khalid feat. Normani",
+      "reason": "cohort_rnb_hit"
+    },
+    {
+      "title": "Try",
+      "artist": "P!nk",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Boy's a liar Pt. 2",
+      "artist": "PinkPantheress feat. Ice Spice",
+      "reason": "current_gen_z_hit"
+    },
+    {
+      "title": "One Call Away",
+      "artist": "Charlie Puth",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Team",
+      "artist": "Lorde",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Runaway (U & I)",
+      "artist": "Galantis",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Bailando - Spanish Version",
+      "artist": "Enrique Iglesias",
+      "reason": "global_crossover",
+      "languageReview": "non_english"
+    },
+    {
+      "title": "If I Can't Have You",
+      "artist": "Shawn Mendes",
+      "reason": "cohort_pop_hit"
+    },
+    {
+      "title": "Wildest Dreams",
+      "artist": "Taylor Swift",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Oops!...I Did It Again",
+      "artist": "Britney Spears",
+      "reason": "iconic_throwback"
+    },
+    {
+      "title": "No One",
+      "artist": "Alicia Keys",
+      "reason": "iconic_childhood_rnb_hit"
+    },
+    {
+      "title": "Bye Bye Bye",
+      "artist": "*NSYNC",
+      "reason": "iconic_revived_throwback",
+      "signals": [
+        "social_viral"
+      ]
+    },
+    {
+      "title": "I Kissed a Girl",
+      "artist": "Katy Perry",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Not Afraid",
+      "artist": "Eminem",
+      "reason": "iconic_childhood_rap_hit"
+    },
+    {
+      "title": "No Guidance",
+      "artist": "Chris Brown feat. Drake",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Exchange",
+      "artist": "Bryson Tiller",
+      "reason": "gen_z_rnb_staple"
+    },
+    {
+      "title": "Too Many Nights",
+      "artist": "Metro Boomin feat. Don Toliver & Future",
+      "reason": "gen_z_melodic_rap_hit"
+    },
+    {
+      "title": "No Idea",
+      "artist": "Don Toliver",
+      "reason": "gen_z_staple"
+    },
+    {
+      "title": "Blame",
+      "artist": "Calvin Harris feat. John Newman",
+      "reason": "iconic_childhood_hit"
+    },
+    {
+      "title": "Drop Dead",
+      "artist": "Olivia Rodrigo",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "I Just Might",
+      "artist": "Bruno Mars",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Janice STFU",
+      "artist": "Drake",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Dracula",
+      "artist": "Tame Impala & JENNIE",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Cinderella",
+      "artist": "Mac Miller feat. Ty Dolla $ign",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Oh Yeah?",
+      "artist": "Steve Lacy",
+      "reason": "explicit_founder_pick"
+    },
+    {
+      "title": "party 4 u",
+      "artist": "Charli xcx",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Show Me Love",
+      "artist": "WizTheMc feat. Tyla",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Dark Thoughts",
+      "artist": "Lil Tecca",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Darling, I",
+      "artist": "Tyler, The Creator",
+      "reason": "approved_under_1b"
+    },
+    {
+      "title": "Mo Bamba",
+      "artist": "Sheck Wes",
+      "reason": "explicit_user_request"
+    },
+    {
+      "title": "Lady (Hear Me Tonight)",
+      "artist": "Modjo",
+      "reason": "explicit_user_request"
+    }
   ]
 }

@@ -95,6 +95,11 @@ for (const song of candidateRoot.songs) {
     headers: { Authorization: `Bearer ${token}` },
   });
   const value = await response.json();
+  if (response.status === 429) {
+    const retryAfter = response.headers.get("retry-after") || "unknown";
+    console.warn(`Spotify rate limit hit! Retry-After: ${retryAfter} seconds. Saving progress and exiting cleanly.`);
+    break;
+  }
   if (!response.ok) throw new Error(`Spotify metadata search failed for ${song.title} (${response.status}).`);
 
   const title = normalized(song.title);

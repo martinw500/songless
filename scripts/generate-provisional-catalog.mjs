@@ -25,8 +25,8 @@ const songs = candidateRoot.songs.filter(
     Number.isInteger(s.media.hostedDurationMs)
 );
 
-if (songs.length !== 120) {
-  console.error(`Expected 120 hosted songs; found ${songs.length}. Cannot generate provisional catalogue.`);
+if (songs.length !== 172) {
+  console.error(`Expected 172 hosted songs; found ${songs.length}. Cannot generate provisional catalogue.`);
   process.exit(1);
 }
 

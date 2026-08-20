@@ -276,6 +276,34 @@
     "_rank": 10
   },
   {
+    "id": "luis-fonsi-daddy-yankee-despacito",
+    "title": "Despacito",
+    "artist": "Luis Fonsi feat. Daddy Yankee",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "VIDA",
+    "spotifyUrl": "https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb",
+    "releaseYear": 2017,
+    "genres": [
+      "reggaeton",
+      "latin pop"
+    ],
+    "difficulty": "easy",
+    "familiarity": 93,
+    "startAtMs": 600,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/luis-fonsi-daddy-yankee-despacito.jpg?v=227346-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
+      "durationMs": 227346
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 93,
+    "_rank": 11
+  },
+  {
     "id": "glass-animals-heat-waves",
     "title": "Heat Waves",
     "artist": "Glass Animals",
@@ -298,7 +326,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 11
+    "_rank": 12
   },
   {
     "id": "journey-dont-stop-believin",
@@ -327,7 +355,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 12
+    "_rank": 13
   },
   {
     "id": "imagine-dragons-believer",
@@ -354,7 +382,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 13
+    "_rank": 14
   },
   {
     "id": "the-chainsmokers-halsey-closer",
@@ -382,7 +410,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 14
+    "_rank": 15
   },
   {
     "id": "harry-styles-watermelon-sugar",
@@ -409,7 +437,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 15
+    "_rank": 16
   },
   {
     "id": "drake-wizkid-kyla-one-dance",
@@ -428,17 +456,17 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-wizkid-kyla-one-dance.jpg?v=173267-1000",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-wizkid-kyla-one-dance.jpg?v=173267-0",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-wizkid-kyla-one-dance.mp3?v=173267-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-wizkid-kyla-one-dance.mp3?v=173267-1000",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-wizkid-kyla-one-dance.mp3?v=173267-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-wizkid-kyla-one-dance.mp3?v=173267-0",
       "durationMs": 173267
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 16
+    "_rank": 17
   },
   {
     "id": "billie-eilish-khalid-lovely",
@@ -466,7 +494,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 17
+    "_rank": 18
   },
   {
     "id": "shawn-mendes-camila-cabello-senorita",
@@ -496,7 +524,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 18
+    "_rank": 19
   },
   {
     "id": "dua-lipa-dont-start-now",
@@ -526,7 +554,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 19
+    "_rank": 20
   },
   {
     "id": "post-malone-circles",
@@ -554,7 +582,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 20
+    "_rank": 21
   },
   {
     "id": "coldplay-viva-la-vida",
@@ -581,7 +609,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 21
+    "_rank": 22
   },
   {
     "id": "rihanna-jay-z-umbrella",
@@ -611,7 +639,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 22
+    "_rank": 23
   },
   {
     "id": "coldplay-yellow",
@@ -638,7 +666,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 23
+    "_rank": 24
   },
   {
     "id": "radiohead-creep",
@@ -665,7 +693,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 24
+    "_rank": 25
   },
   {
     "id": "eminem-without-me",
@@ -692,7 +720,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 25
+    "_rank": 26
   },
   {
     "id": "tears-for-fears-everybody-wants-to-rule-the-world",
@@ -720,7 +748,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 26
+    "_rank": 27
   },
   {
     "id": "toto-africa",
@@ -750,7 +778,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 27
+    "_rank": 28
   },
   {
     "id": "fleetwood-mac-dreams",
@@ -775,7 +803,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 28
+    "_rank": 29
   },
   {
     "id": "the-killers-mr-brightside",
@@ -804,7 +832,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 29
+    "_rank": 30
   },
   {
     "id": "a-ha-take-on-me",
@@ -832,7 +860,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 30
+    "_rank": 31
   },
   {
     "id": "michael-jackson-billie-jean",
@@ -860,7 +888,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 31
+    "_rank": 32
   },
   {
     "id": "nirvana-smells-like-teen-spirit",
@@ -888,7 +916,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 32
+    "_rank": 33
   },
   {
     "id": "oasis-wonderwall",
@@ -916,7 +944,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 33
+    "_rank": 34
   },
   {
     "id": "whitney-houston-i-wanna-dance-with-somebody",
@@ -946,7 +974,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 34
+    "_rank": 35
   },
   {
     "id": "queen-bohemian-rhapsody",
@@ -973,7 +1001,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 35
+    "_rank": 36
   },
   {
     "id": "queen-dont-stop-me-now",
@@ -1002,7 +1030,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 36
+    "_rank": 37
   },
   {
     "id": "abba-dancing-queen",
@@ -1030,7 +1058,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 37
+    "_rank": 38
   },
   {
     "id": "earth-wind-fire-september",
@@ -1060,7 +1088,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 38
+    "_rank": 39
   },
   {
     "id": "eurythmics-sweet-dreams",
@@ -1088,7 +1116,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 39
+    "_rank": 40
   },
   {
     "id": "george-michael-careless-whisper",
@@ -1116,7 +1144,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 40
+    "_rank": 41
   },
   {
     "id": "the-cranberries-zombie",
@@ -1143,7 +1171,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 41
+    "_rank": 42
   },
   {
     "id": "goo-goo-dolls-iris",
@@ -1169,7 +1197,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 42
+    "_rank": 43
   },
   {
     "id": "tlc-no-scrubs",
@@ -1197,7 +1225,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 43
+    "_rank": 44
   },
   {
     "id": "britney-spears-toxic",
@@ -1225,7 +1253,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 44
+    "_rank": 45
   },
   {
     "id": "alexandra-stan-mr-saxobeat",
@@ -1253,7 +1281,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 45
+    "_rank": 46
   },
   {
     "id": "nelly-furtado-timbaland-promiscuous",
@@ -1281,7 +1309,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 46
+    "_rank": 47
   },
   {
     "id": "miley-cyrus-party-in-the-usa",
@@ -1310,7 +1338,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 47
+    "_rank": 48
   },
   {
     "id": "lady-gaga-just-dance",
@@ -1338,7 +1366,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 86,
-    "_rank": 48
+    "_rank": 49
   },
   {
     "id": "stromae-alors-on-danse",
@@ -1360,34 +1388,6 @@
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-alors-on-danse.mp3?v=233790-1000",
       "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-alors-on-danse.mp3?v=233790-1000",
       "durationMs": 233790
-    },
-    "_provisional": true,
-    "_provisionalMethod": "familiarity_only",
-    "_easeScore": 86,
-    "_rank": 49
-  },
-  {
-    "id": "luis-fonsi-daddy-yankee-despacito",
-    "title": "Despacito",
-    "artist": "Luis Fonsi feat. Daddy Yankee",
-    "aliases": [],
-    "artistAliases": [],
-    "album": "VIDA",
-    "spotifyUrl": "https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb",
-    "releaseYear": 2017,
-    "genres": [
-      "reggaeton",
-      "latin pop"
-    ],
-    "difficulty": "medium",
-    "familiarity": 86,
-    "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/luis-fonsi-daddy-yankee-despacito.jpg?v=227346-1000",
-    "audio": {
-      "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/luis-fonsi-daddy-yankee-despacito.mp3?v=227346-1000",
-      "durationMs": 227346
     },
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
@@ -1500,11 +1500,11 @@
     "difficulty": "medium",
     "familiarity": 86,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=229381-2000",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=229381-0",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=229381-2000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=229381-2000",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=229381-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=229381-0",
       "durationMs": 229381
     },
     "_provisional": true,
@@ -1894,7 +1894,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 80,
-    "startAtMs": 0,
+    "startAtMs": 2530,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=178334-2000",
     "audio": {
       "kind": "hosted",
@@ -2489,11 +2489,11 @@
     "difficulty": "expert",
     "familiarity": 78,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/master-kg-nomcebo-zikode-jerusalema.jpg?v=342254-1000",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/master-kg-nomcebo-zikode-jerusalema.jpg?v=342254-0",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/master-kg-nomcebo-zikode-jerusalema.mp3?v=342254-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/master-kg-nomcebo-zikode-jerusalema.mp3?v=342254-1000",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/master-kg-nomcebo-zikode-jerusalema.mp3?v=342254-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/master-kg-nomcebo-zikode-jerusalema.mp3?v=342254-0",
       "durationMs": 342254
     },
     "_provisional": true,
@@ -2855,11 +2855,11 @@
     "difficulty": "expert",
     "familiarity": 75,
     "startAtMs": 0,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=248303-1000",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=248303-0",
     "audio": {
       "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=248303-1000",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=248303-1000",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=248303-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=248303-0",
       "durationMs": 248303
     },
     "_provisional": true,
@@ -3037,6 +3037,1098 @@
     "_rank": 108
   },
   {
+    "id": "sheck-wes-mo-bamba",
+    "title": "Mo Bamba",
+    "artist": "Sheck Wes",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sheck-wes-mo-bamba.jpg?v=185899-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sheck-wes-mo-bamba.mp3?v=185899-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sheck-wes-mo-bamba.mp3?v=185899-0",
+      "durationMs": 185899
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 109
+  },
+  {
+    "id": "modjo-lady-hear-me-tonight",
+    "title": "Lady (Hear Me Tonight)",
+    "artist": "Modjo",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/modjo-lady-hear-me-tonight.jpg?v=221135-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/modjo-lady-hear-me-tonight.mp3?v=221135-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/modjo-lady-hear-me-tonight.mp3?v=221135-0",
+      "durationMs": 221135
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 110
+  },
+  {
+    "id": "bts-dynamite",
+    "title": "Dynamite",
+    "artist": "BTS",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bts-dynamite.jpg?v=195639-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bts-dynamite.mp3?v=195639-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bts-dynamite.mp3?v=195639-1000",
+      "durationMs": 195639
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 111
+  },
+  {
+    "id": "justin-bieber-peaches-feat-daniel-caesar-giveon",
+    "title": "Peaches (Feat. Daniel Caesar & Giveon)",
+    "artist": "Justin Bieber",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-peaches-feat-daniel-caesar-giveon.jpg?v=200574-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-peaches-feat-daniel-caesar-giveon.mp3?v=200574-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-peaches-feat-daniel-caesar-giveon.mp3?v=200574-0",
+      "durationMs": 200574
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 112
+  },
+  {
+    "id": "sza-snooze",
+    "title": "Snooze",
+    "artist": "SZA",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-snooze.jpg?v=201800-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sza-snooze.mp3?v=201800-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sza-snooze.mp3?v=201800-0",
+      "durationMs": 201800
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 113
+  },
+  {
+    "id": "kendrick-lamar-not-like-us",
+    "title": "Not Like Us",
+    "artist": "Kendrick Lamar",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-not-like-us.jpg?v=273380-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-not-like-us.mp3?v=273380-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-not-like-us.mp3?v=273380-0",
+      "durationMs": 273380
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 114
+  },
+  {
+    "id": "taylor-swift-style",
+    "title": "Style",
+    "artist": "Taylor Swift",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-style.jpg?v=230772-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-style.mp3?v=230772-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-style.mp3?v=230772-0",
+      "durationMs": 230772
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 115
+  },
+  {
+    "id": "rihanna-don-t-stop-the-music",
+    "title": "Don'T Stop The Music",
+    "artist": "Rihanna",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-don-t-stop-the-music.jpg?v=232153-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/rihanna-don-t-stop-the-music.mp3?v=232153-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/rihanna-don-t-stop-the-music.mp3?v=232153-1000",
+      "durationMs": 232153
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 116
+  },
+  {
+    "id": "akon-smack-that",
+    "title": "Smack That",
+    "artist": "Akon",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/akon-smack-that.jpg?v=212347-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/akon-smack-that.mp3?v=212347-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/akon-smack-that.mp3?v=212347-0",
+      "durationMs": 212347
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 117
+  },
+  {
+    "id": "sza-good-days",
+    "title": "Good Days",
+    "artist": "SZA",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-good-days.jpg?v=279753-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sza-good-days.mp3?v=279753-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sza-good-days.mp3?v=279753-1000",
+      "durationMs": 279753
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 118
+  },
+  {
+    "id": "flo-rida-low-feat-t-pain",
+    "title": "Low (Feat. T-Pain)",
+    "artist": "Flo Rida",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-low-feat-t-pain.jpg?v=229819-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/flo-rida-low-feat-t-pain.mp3?v=229819-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/flo-rida-low-feat-t-pain.mp3?v=229819-1000",
+      "durationMs": 229819
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 119
+  },
+  {
+    "id": "giv-on-heartbreak-anniversary",
+    "title": "Heartbreak Anniversary",
+    "artist": "GIVĒON",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/giv-on-heartbreak-anniversary.jpg?v=197337-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/giv-on-heartbreak-anniversary.mp3?v=197337-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/giv-on-heartbreak-anniversary.mp3?v=197337-1000",
+      "durationMs": 197337
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 120
+  },
+  {
+    "id": "drake-nice-for-what",
+    "title": "Nice For What",
+    "artist": "Drake",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-nice-for-what.jpg?v=210747-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-nice-for-what.mp3?v=210747-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-nice-for-what.mp3?v=210747-0",
+      "durationMs": 210747
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 121
+  },
+  {
+    "id": "tory-lanez-the-color-violet",
+    "title": "The Color Violet",
+    "artist": "Tory Lanez",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tory-lanez-the-color-violet.jpg?v=226487-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tory-lanez-the-color-violet.mp3?v=226487-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tory-lanez-the-color-violet.mp3?v=226487-0",
+      "durationMs": 226487
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 122
+  },
+  {
+    "id": "kendrick-lamar-dna",
+    "title": "Dna.",
+    "artist": "Kendrick Lamar",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-dna.jpg?v=185947-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-dna.mp3?v=185947-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-dna.mp3?v=185947-0",
+      "durationMs": 185947
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 123
+  },
+  {
+    "id": "bts-butter",
+    "title": "Butter",
+    "artist": "BTS",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bts-butter.jpg?v=164468-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bts-butter.mp3?v=164468-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bts-butter.mp3?v=164468-0",
+      "durationMs": 164468
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 124
+  },
+  {
+    "id": "jung-kook-standing-next-to-you",
+    "title": "Standing Next To You",
+    "artist": "Jung Kook",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jung-kook-standing-next-to-you.jpg?v=206089-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/jung-kook-standing-next-to-you.mp3?v=206089-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/jung-kook-standing-next-to-you.mp3?v=206089-0",
+      "durationMs": 206089
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 125
+  },
+  {
+    "id": "the-weeknd-reminder",
+    "title": "Reminder",
+    "artist": "The Weeknd",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-reminder.jpg?v=218880-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-reminder.mp3?v=218880-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-reminder.mp3?v=218880-0",
+      "durationMs": 218880
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 126
+  },
+  {
+    "id": "lisa-money",
+    "title": "Money",
+    "artist": "LISA",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lisa-money.jpg?v=165071-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lisa-money.mp3?v=165071-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lisa-money.mp3?v=165071-0",
+      "durationMs": 165071
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 127
+  },
+  {
+    "id": "black-eyed-peas-where-is-the-love",
+    "title": "Where Is The Love?",
+    "artist": "Black Eyed Peas",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-where-is-the-love.jpg?v=250543-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/black-eyed-peas-where-is-the-love.mp3?v=250543-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/black-eyed-peas-where-is-the-love.mp3?v=250543-0",
+      "durationMs": 250543
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 128
+  },
+  {
+    "id": "taylor-swift-the-fate-of-ophelia",
+    "title": "The Fate Of Ophelia",
+    "artist": "Taylor Swift",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-the-fate-of-ophelia.jpg?v=237075-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-the-fate-of-ophelia.mp3?v=237075-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-the-fate-of-ophelia.mp3?v=237075-1000",
+      "durationMs": 237075
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 129
+  },
+  {
+    "id": "dominic-fike-babydoll",
+    "title": "Babydoll",
+    "artist": "Dominic Fike",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dominic-fike-babydoll.jpg?v=98545-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dominic-fike-babydoll.mp3?v=98545-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dominic-fike-babydoll.mp3?v=98545-1000",
+      "durationMs": 98545
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 130
+  },
+  {
+    "id": "the-weeknd-after-hours",
+    "title": "After Hours",
+    "artist": "The Weeknd",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-after-hours.jpg?v=361929-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-after-hours.mp3?v=361929-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-after-hours.mp3?v=361929-0",
+      "durationMs": 361929
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 131
+  },
+  {
+    "id": "icona-pop-i-love-it-feat-charli-xcx",
+    "title": "I Love It (Feat. Charli Xcx)",
+    "artist": "Icona Pop",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/icona-pop-i-love-it-feat-charli-xcx.jpg?v=155733-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/icona-pop-i-love-it-feat-charli-xcx.mp3?v=155733-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/icona-pop-i-love-it-feat-charli-xcx.mp3?v=155733-0",
+      "durationMs": 155733
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 132
+  },
+  {
+    "id": "don-toliver-no-idea",
+    "title": "No Idea",
+    "artist": "Don Toliver",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-toliver-no-idea.jpg?v=152404-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/don-toliver-no-idea.mp3?v=152404-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/don-toliver-no-idea.mp3?v=152404-1000",
+      "durationMs": 152404
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 133
+  },
+  {
+    "id": "taylor-swift-delicate",
+    "title": "Delicate",
+    "artist": "Taylor Swift",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-delicate.jpg?v=230881-4000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-delicate.mp3?v=230881-4000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-delicate.mp3?v=230881-4000",
+      "durationMs": 230881
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 134
+  },
+  {
+    "id": "katy-perry-california-gurls",
+    "title": "California Gurls",
+    "artist": "Katy Perry",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/katy-perry-california-gurls.jpg?v=218667-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/katy-perry-california-gurls.mp3?v=218667-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/katy-perry-california-gurls.mp3?v=218667-0",
+      "durationMs": 218667
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 135
+  },
+  {
+    "id": "ava-max-kings-queens",
+    "title": "Kings & Queens",
+    "artist": "Ava Max",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ava-max-kings-queens.jpg?v=162389-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ava-max-kings-queens.mp3?v=162389-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ava-max-kings-queens.mp3?v=162389-0",
+      "durationMs": 162389
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 136
+  },
+  {
+    "id": "bryson-tiller-exchange",
+    "title": "Exchange",
+    "artist": "Bryson Tiller",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bryson-tiller-exchange.jpg?v=195871-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bryson-tiller-exchange.mp3?v=195871-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bryson-tiller-exchange.mp3?v=195871-1000",
+      "durationMs": 195871
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 137
+  },
+  {
+    "id": "tove-lo-habits-stay-high",
+    "title": "Habits (Stay High)",
+    "artist": "Tove Lo",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tove-lo-habits-stay-high.jpg?v=208167-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tove-lo-habits-stay-high.mp3?v=208167-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tove-lo-habits-stay-high.mp3?v=208167-0",
+      "durationMs": 208167
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 138
+  },
+  {
+    "id": "my-chemical-romance-teenagers",
+    "title": "Teenagers",
+    "artist": "My Chemical Romance",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/my-chemical-romance-teenagers.jpg?v=162200-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/my-chemical-romance-teenagers.mp3?v=162200-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/my-chemical-romance-teenagers.mp3?v=162200-0",
+      "durationMs": 162200
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 139
+  },
+  {
+    "id": "50-cent-candy-shop",
+    "title": "Candy Shop",
+    "artist": "50 Cent",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/50-cent-candy-shop.jpg?v=206973-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/50-cent-candy-shop.mp3?v=206973-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/50-cent-candy-shop.mp3?v=206973-0",
+      "durationMs": 206973
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 140
+  },
+  {
+    "id": "drake-hold-on-we-re-going-home",
+    "title": "Hold On, We'Re Going Home",
+    "artist": "Drake",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-hold-on-we-re-going-home.jpg?v=227027-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-hold-on-we-re-going-home.mp3?v=227027-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-hold-on-we-re-going-home.mp3?v=227027-0",
+      "durationMs": 227027
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 141
+  },
+  {
+    "id": "eminem-not-afraid",
+    "title": "Not Afraid",
+    "artist": "Eminem",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-not-afraid.jpg?v=258728-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/eminem-not-afraid.mp3?v=258728-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/eminem-not-afraid.mp3?v=258728-0",
+      "durationMs": 258728
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 142
+  },
+  {
+    "id": "hailee-steinfeld-starving",
+    "title": "Starving",
+    "artist": "Hailee Steinfeld",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hailee-steinfeld-starving.jpg?v=181933-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hailee-steinfeld-starving.mp3?v=181933-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/hailee-steinfeld-starving.mp3?v=181933-0",
+      "durationMs": 181933
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 143
+  },
+  {
+    "id": "mr-probz-waves",
+    "title": "Waves - Robin Schulz Radio Edit",
+    "artist": "Mr. Probz",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mr-probz-waves.jpg?v=208133-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mr-probz-waves.mp3?v=208133-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mr-probz-waves.mp3?v=208133-0",
+      "durationMs": 208133
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 144
+  },
+  {
+    "id": "selena-gomez-love-you-like-a-love-song",
+    "title": "Love You Like A Love Song",
+    "artist": "Selena Gomez & The Scene",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-love-you-like-a-love-song.jpg?v=188720-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/selena-gomez-love-you-like-a-love-song.mp3?v=188720-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/selena-gomez-love-you-like-a-love-song.mp3?v=188720-0",
+      "durationMs": 188720
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 145
+  },
+  {
+    "id": "avicii-hey-brother",
+    "title": "Hey Brother",
+    "artist": "Avicii",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avicii-hey-brother.jpg?v=114539-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/avicii-hey-brother.mp3?v=114539-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/avicii-hey-brother.mp3?v=114539-0",
+      "durationMs": 114539
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 146
+  },
+  {
+    "id": "mac-miller-the-spins",
+    "title": "The Spins",
+    "artist": "Mac Miller",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mac-miller-the-spins.jpg?v=196069-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mac-miller-the-spins.mp3?v=196069-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mac-miller-the-spins.mp3?v=196069-0",
+      "durationMs": 196069
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 147
+  },
+  {
+    "id": "miley-cyrus-we-can-t-stop",
+    "title": "We Can'T Stop",
+    "artist": "Miley Cyrus",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-we-can-t-stop.jpg?v=233327-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-we-can-t-stop.mp3?v=233327-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-we-can-t-stop.mp3?v=233327-0",
+      "durationMs": 233327
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 148
+  },
+  {
+    "id": "avicii-levels",
+    "title": "Levels - Radio Edit",
+    "artist": "Avicii",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avicii-levels.jpg?v=197173-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/avicii-levels.mp3?v=197173-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/avicii-levels.mp3?v=197173-0",
+      "durationMs": 197173
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 149
+  },
+  {
+    "id": "flo-rida-my-house",
+    "title": "My House",
+    "artist": "Flo Rida",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-my-house.jpg?v=196418-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/flo-rida-my-house.mp3?v=196418-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/flo-rida-my-house.mp3?v=196418-0",
+      "durationMs": 196418
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 150
+  },
+  {
+    "id": "the-weeknd-often",
+    "title": "Often",
+    "artist": "The Weeknd",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-often.jpg?v=249093-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-often.mp3?v=249093-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-often.mp3?v=249093-0",
+      "durationMs": 249093
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 151
+  },
+  {
+    "id": "partynextdoor-break-from-toronto",
+    "title": "Break From Toronto",
+    "artist": "PARTYNEXTDOOR",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-break-from-toronto.jpg?v=99214-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/partynextdoor-break-from-toronto.mp3?v=99214-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/partynextdoor-break-from-toronto.mp3?v=99214-0",
+      "durationMs": 99214
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 152
+  },
+  {
+    "id": "jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign",
+    "title": "Swalla (Feat. Nicki Minaj & Ty Dolla $Ign)",
+    "artist": "Jason Derulo",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign.jpg?v=216478-2000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign.mp3?v=216478-2000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign.mp3?v=216478-2000",
+      "durationMs": 216478
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 153
+  },
+  {
+    "id": "sia-elastic-heart",
+    "title": "Elastic Heart",
+    "artist": "Sia",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sia-elastic-heart.jpg?v=250670-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sia-elastic-heart.mp3?v=250670-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sia-elastic-heart.mp3?v=250670-1000",
+      "durationMs": 250670
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 154
+  },
+  {
+    "id": "miley-cyrus-wrecking-ball",
+    "title": "Wrecking Ball",
+    "artist": "Miley Cyrus",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-wrecking-ball.jpg?v=224131-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-wrecking-ball.mp3?v=224131-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-wrecking-ball.mp3?v=224131-0",
+      "durationMs": 224131
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 155
+  },
+  {
+    "id": "katy-perry-i-kissed-a-girl",
+    "title": "I Kissed A Girl",
+    "artist": "Katy Perry",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/katy-perry-i-kissed-a-girl.jpg?v=184390-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/katy-perry-i-kissed-a-girl.mp3?v=184390-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/katy-perry-i-kissed-a-girl.mp3?v=184390-0",
+      "durationMs": 184390
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 156
+  },
+  {
+    "id": "demi-lovato-sorry-not-sorry",
+    "title": "Sorry Not Sorry",
+    "artist": "Demi Lovato",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-sorry-not-sorry.jpg?v=202761-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/demi-lovato-sorry-not-sorry.mp3?v=202761-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/demi-lovato-sorry-not-sorry.mp3?v=202761-1000",
+      "durationMs": 202761
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 157
+  },
+  {
+    "id": "one-direction-perfect",
+    "title": "Perfect",
+    "artist": "One Direction",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-perfect.jpg?v=230852-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/one-direction-perfect.mp3?v=230852-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/one-direction-perfect.mp3?v=230852-1000",
+      "durationMs": 230852
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 158
+  },
+  {
+    "id": "nsync-bye-bye-bye",
+    "title": "Bye Bye Bye",
+    "artist": "*NSYNC",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nsync-bye-bye-bye.jpg?v=201096-1000",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nsync-bye-bye-bye.mp3?v=201096-1000",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nsync-bye-bye-bye.mp3?v=201096-1000",
+      "durationMs": 201096
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 159
+  },
+  {
+    "id": "julia-michaels-issues",
+    "title": "Issues",
+    "artist": "Julia Michaels",
+    "aliases": [],
+    "artistAliases": [],
+    "difficulty": "expert",
+    "familiarity": 75,
+    "startAtMs": 0,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/julia-michaels-issues.jpg?v=176309-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/julia-michaels-issues.mp3?v=176309-0",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/julia-michaels-issues.mp3?v=176309-0",
+      "durationMs": 176309
+    },
+    "_provisional": true,
+    "_provisionalMethod": "familiarity_only",
+    "_easeScore": 75,
+    "_rank": 160
+  },
+  {
     "id": "daniel-caesar-japanese-denim",
     "title": "Japanese Denim",
     "artist": "Daniel Caesar",
@@ -3061,7 +4153,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 109
+    "_rank": 161
   },
   {
     "id": "frank-ocean-lost",
@@ -3090,7 +4182,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 110
+    "_rank": 162
   },
   {
     "id": "joji-sanctuary",
@@ -3118,7 +4210,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 111
+    "_rank": 163
   },
   {
     "id": "tyler-the-creator-new-magic-wand",
@@ -3145,7 +4237,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 112
+    "_rank": 164
   },
   {
     "id": "tv-girl-lovers-rock",
@@ -3172,7 +4264,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 113
+    "_rank": 165
   },
   {
     "id": "tv-girl-cigarettes-out-the-window",
@@ -3199,7 +4291,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 114
+    "_rank": 166
   },
   {
     "id": "steve-lacy-some",
@@ -3227,7 +4319,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 115
+    "_rank": 167
   },
   {
     "id": "clairo-bags",
@@ -3254,7 +4346,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 116
+    "_rank": 168
   },
   {
     "id": "cafune-tek-it",
@@ -3272,7 +4364,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 0,
+    "startAtMs": 120,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cafune-tek-it.jpg?v=191019-0",
     "audio": {
       "kind": "hosted",
@@ -3283,7 +4375,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 117
+    "_rank": 169
   },
   {
     "id": "tame-impala-borderline",
@@ -3310,7 +4402,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 118
+    "_rank": 170
   },
   {
     "id": "tame-impala-let-it-happen",
@@ -3337,7 +4429,7 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 70,
-    "_rank": 119
+    "_rank": 171
   },
   {
     "id": "dominic-fike-white-keys",
@@ -3364,6 +4456,6 @@
     "_provisional": true,
     "_provisionalMethod": "familiarity_only",
     "_easeScore": 61,
-    "_rank": 120
+    "_rank": 172
   }
 ]

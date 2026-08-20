@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "intake_longlist",
-  "generatedAt": "2026-08-19T07:14:17.681Z",
+  "generatedAt": "2026-08-20T00:32:22.517Z",
   "notes": "Active intake songs only. Pruning rules are applied during generation so rejected tracks do not remain visible in this file. The billion-stream source does not publish song language, so source-only rows remain languageReview=pending until a human checks them.",
   "sources": [
     {
@@ -39,15 +39,15 @@
   ],
   "counts": {
     "billionSnapshot": 1125,
-    "billionIncluded": 820,
-    "founderPicks": 450,
+    "billionIncluded": 823,
+    "founderPicks": 452,
     "personalPlaylist": 69,
     "reviewedKeeps": 106,
     "playlistSourceTracks": 100,
-    "finalizedExclusions": 251,
+    "finalizedExclusions": 248,
     "excludedByCurrentDecisions": 58,
-    "active": 1121,
-    "combinedUnique": 1121
+    "active": 1125,
+    "combinedUnique": 1125
   },
   "tracks": [
     {
@@ -7549,6 +7549,20 @@
       "keepReason": "broad_recognition"
     },
     {
+      "sourceRank": 795,
+      "title": "Mo Bamba",
+      "artist": "Sheck Wes",
+      "displayedStreams": "1.2B",
+      "signals": [
+        "billion_streams",
+        "founder_pick",
+        "recognition_pass_12"
+      ],
+      "languageReview": "english",
+      "reviewStatus": "unreviewed",
+      "founderReason": "explicit_user_request"
+    },
+    {
       "sourceRank": 796,
       "title": "Thats What I Want",
       "artist": "Lil Nas X",
@@ -7556,6 +7570,17 @@
       "signals": [
         "billion_streams",
         "personal_playlist"
+      ],
+      "languageReview": "pending",
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "sourceRank": 801,
+      "title": "Mamiii",
+      "artist": "Becky G",
+      "displayedStreams": "1.2B",
+      "signals": [
+        "billion_streams"
       ],
       "languageReview": "pending",
       "reviewStatus": "unreviewed"
@@ -8690,6 +8715,17 @@
       "languageReview": "english",
       "reviewStatus": "unreviewed",
       "founderReason": "iconic_childhood_hit"
+    },
+    {
+      "sourceRank": 972,
+      "title": "éChame La Culpa",
+      "artist": "Luis Fonsi",
+      "displayedStreams": "1.1B",
+      "signals": [
+        "billion_streams"
+      ],
+      "languageReview": "pending",
+      "reviewStatus": "unreviewed"
     },
     {
       "sourceRank": 973,
@@ -13344,6 +13380,19 @@
         "recognition_pass_12"
       ],
       "founderReason": "approved_under_1b",
+      "languageReview": "english",
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "sourceRank": null,
+      "title": "Lady (Hear Me Tonight)",
+      "artist": "Modjo",
+      "displayedStreams": null,
+      "signals": [
+        "founder_pick",
+        "recognition_pass_12"
+      ],
+      "founderReason": "explicit_user_request",
       "languageReview": "english",
       "reviewStatus": "unreviewed"
     }
