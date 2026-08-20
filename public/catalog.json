@@ -14,7 +14,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-blinding-lights.jpg?v=202210-1000",
     "audio": {
       "kind": "hosted",
@@ -41,7 +41,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 316,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg?v=235009-0",
     "audio": {
       "kind": "hosted",
@@ -67,7 +67,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=160670-1000",
     "audio": {
       "kind": "hosted",
@@ -95,7 +95,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-daft-punk-starboy.jpg?v=228610-2000",
     "audio": {
       "kind": "hosted",
@@ -123,7 +123,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 111,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-neighbourhood-sweater-weather.jpg?v=240040-0",
     "audio": {
       "kind": "hosted",
@@ -151,7 +151,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-as-it-was.jpg?v=164594-1000",
     "audio": {
       "kind": "hosted",
@@ -179,7 +179,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 291,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-levitating.jpg?v=220843-0",
     "audio": {
       "kind": "hosted",
@@ -207,7 +207,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 84,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-bad-guy.jpg?v=204927-1000",
     "audio": {
       "kind": "hosted",
@@ -234,7 +234,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 321,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-kid-laroi-justin-bieber-stay.jpg?v=142016-0",
     "audio": {
       "kind": "hosted",
@@ -262,7 +262,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 93,
-    "startAtMs": 30,
+    "startAtMs": 354,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-poker-face.jpg?v=213612-0",
     "audio": {
       "kind": "hosted",
@@ -315,7 +315,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 199,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/glass-animals-heat-waves.jpg?v=175302-0",
     "audio": {
       "kind": "hosted",
@@ -344,7 +344,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 111,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/journey-dont-stop-believin.jpg?v=249219-1000",
     "audio": {
       "kind": "hosted",
@@ -371,7 +371,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 222,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-believer.jpg?v=202816-0",
     "audio": {
       "kind": "hosted",
@@ -399,7 +399,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-chainsmokers-halsey-closer.jpg?v=245922-1000",
     "audio": {
       "kind": "hosted",
@@ -426,7 +426,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 189,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-watermelon-sugar.jpg?v=173917-0",
     "audio": {
       "kind": "hosted",
@@ -455,7 +455,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-wizkid-kyla-one-dance.jpg?v=173267-0",
     "audio": {
       "kind": "hosted",
@@ -483,7 +483,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-khalid-lovely.jpg?v=199470-1000",
     "audio": {
       "kind": "hosted",
@@ -513,7 +513,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 501,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-camila-cabello-senorita.jpg?v=205376-0",
     "audio": {
       "kind": "hosted",
@@ -543,7 +543,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-dont-start-now.jpg?v=183558-2000",
     "audio": {
       "kind": "hosted",
@@ -571,7 +571,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 521,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-circles.jpg?v=215355-0",
     "audio": {
       "kind": "hosted",
@@ -598,7 +598,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-viva-la-vida.jpg?v=241104-1000",
     "audio": {
       "kind": "hosted",
@@ -628,7 +628,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 167,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-jay-z-umbrella.jpg?v=253143-1000",
     "audio": {
       "kind": "hosted",
@@ -655,7 +655,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 169,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-yellow.jpg?v=270209-2000",
     "audio": {
       "kind": "hosted",
@@ -682,7 +682,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 80,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/radiohead-creep.jpg?v=236530-0",
     "audio": {
       "kind": "hosted",
@@ -709,7 +709,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-without-me.jpg?v=296600-1000",
     "audio": {
       "kind": "hosted",
@@ -737,7 +737,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 181,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tears-for-fears-everybody-wants-to-rule-the-world.jpg?v=251489-0",
     "audio": {
       "kind": "hosted",
@@ -767,7 +767,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/toto-africa.jpg?v=294333-0",
     "audio": {
       "kind": "hosted",
@@ -792,7 +792,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 325,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/fleetwood-mac-dreams.jpg?v=257544-0",
     "audio": {
       "kind": "hosted",
@@ -821,7 +821,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 344,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-killers-mr-brightside.jpg?v=226475-1000",
     "audio": {
       "kind": "hosted",
@@ -849,7 +849,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 371,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/a-ha-take-on-me.jpg?v=228520-0",
     "audio": {
       "kind": "hosted",
@@ -877,7 +877,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 157,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/michael-jackson-billie-jean.jpg?v=294227-0",
     "audio": {
       "kind": "hosted",
@@ -905,7 +905,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 51,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nirvana-smells-like-teen-spirit.jpg?v=277350-1000",
     "audio": {
       "kind": "hosted",
@@ -933,7 +933,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/oasis-wonderwall.jpg?v=268723-9000",
     "audio": {
       "kind": "hosted",
@@ -963,7 +963,7 @@
     ],
     "difficulty": "easy",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 64,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/whitney-houston-i-wanna-dance-with-somebody.jpg?v=270304-0",
     "audio": {
       "kind": "hosted",
@@ -990,7 +990,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 185,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-bohemian-rhapsody.jpg?v=356627-0",
     "audio": {
       "kind": "hosted",
@@ -1019,7 +1019,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 17,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-dont-stop-me-now.jpg?v=198907-0",
     "audio": {
       "kind": "hosted",
@@ -1047,7 +1047,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 122,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/abba-dancing-queen.jpg?v=233941-0",
     "audio": {
       "kind": "hosted",
@@ -1077,7 +1077,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 15,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/earth-wind-fire-september.jpg?v=215093-0",
     "audio": {
       "kind": "hosted",
@@ -1105,7 +1105,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eurythmics-sweet-dreams.jpg?v=291561-1000",
     "audio": {
       "kind": "hosted",
@@ -1133,7 +1133,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 202,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/george-michael-careless-whisper.jpg?v=302600-0",
     "audio": {
       "kind": "hosted",
@@ -1160,7 +1160,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-cranberries-zombie.jpg?v=306131-1000",
     "audio": {
       "kind": "hosted",
@@ -1186,7 +1186,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 443,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/goo-goo-dolls-iris.jpg?v=289907-0",
     "audio": {
       "kind": "hosted",
@@ -1214,7 +1214,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 367,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tlc-no-scrubs.jpg?v=214891-0",
     "audio": {
       "kind": "hosted",
@@ -1242,7 +1242,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 486,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/britney-spears-toxic.jpg?v=199080-0",
     "audio": {
       "kind": "hosted",
@@ -1270,7 +1270,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alexandra-stan-mr-saxobeat.jpg?v=192505-1000",
     "audio": {
       "kind": "hosted",
@@ -1298,7 +1298,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-furtado-timbaland-promiscuous.jpg?v=241661-1000",
     "audio": {
       "kind": "hosted",
@@ -1327,7 +1327,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-party-in-the-usa.jpg?v=203231-2000",
     "audio": {
       "kind": "hosted",
@@ -1355,7 +1355,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 43,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-just-dance.jpg?v=245771-1000",
     "audio": {
       "kind": "hosted",
@@ -1381,7 +1381,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-alors-on-danse.jpg?v=233790-1000",
     "audio": {
       "kind": "hosted",
@@ -1413,7 +1413,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 84,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/psy-gangnam-style.jpg?v=248344-4000",
     "audio": {
       "kind": "hosted",
@@ -1441,7 +1441,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 316,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-omar-lucenzo-danza-kuduro.jpg?v=198647-0",
     "audio": {
       "kind": "hosted",
@@ -1469,7 +1469,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 41,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rema-selena-gomez-calm-down.jpg?v=239293-0",
     "audio": {
       "kind": "hosted",
@@ -1499,7 +1499,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=229381-0",
     "audio": {
       "kind": "hosted",
@@ -1527,7 +1527,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 86,
-    "startAtMs": 30,
+    "startAtMs": 41,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-balvin-willy-william-mi-gente.jpg?v=185841-0",
     "audio": {
       "kind": "hosted",
@@ -1555,7 +1555,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 249,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-bruno-mars-die-with-a-smile.jpg?v=251717-0",
     "audio": {
       "kind": "hosted",
@@ -1582,7 +1582,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-birds-of-a-feather.jpg?v=210047-1000",
     "audio": {
       "kind": "hosted",
@@ -1615,7 +1615,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 318,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rose-bruno-mars-apt.jpg?v=175102-0",
     "audio": {
       "kind": "hosted",
@@ -1642,7 +1642,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 195,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alex-warren-ordinary.jpg?v=186085-0",
     "audio": {
       "kind": "hosted",
@@ -1670,7 +1670,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 412,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-sza-luther.jpg?v=177598-0",
     "audio": {
       "kind": "hosted",
@@ -1697,7 +1697,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 304,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-espresso.jpg?v=175439-0",
     "audio": {
       "kind": "hosted",
@@ -1724,7 +1724,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 324,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/benson-boone-beautiful-things.jpg?v=179883-0",
     "audio": {
       "kind": "hosted",
@@ -1751,7 +1751,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/chappell-roan-pink-pony-club.jpg?v=280323-0",
     "audio": {
       "kind": "hosted",
@@ -1779,7 +1779,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 430,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hozier-too-sweet.jpg?v=251437-0",
     "audio": {
       "kind": "hosted",
@@ -1809,7 +1809,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shaboozey-a-bar-song-tipsy.jpg?v=170293-1000",
     "audio": {
       "kind": "hosted",
@@ -1838,7 +1838,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 85,
-    "startAtMs": 30,
+    "startAtMs": 255,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/chappell-roan-good-luck-babe.jpg?v=218256-0",
     "audio": {
       "kind": "hosted",
@@ -1866,7 +1866,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 80,
-    "startAtMs": 30,
+    "startAtMs": 26,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/timbaland-onerepublic-apologize.jpg?v=187675-1000",
     "audio": {
       "kind": "hosted",
@@ -1921,7 +1921,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-rare-occasions-notion.jpg?v=194118-1000",
     "audio": {
       "kind": "hosted",
@@ -1950,7 +1950,7 @@
     ],
     "difficulty": "medium",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-her-best-part.jpg?v=210012-1000",
     "audio": {
       "kind": "hosted",
@@ -1977,7 +1977,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-kali-uchis-get-you.jpg?v=269955-1000",
     "audio": {
       "kind": "hosted",
@@ -2007,7 +2007,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 41,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-nights.jpg?v=307154-0",
     "audio": {
       "kind": "hosted",
@@ -2039,7 +2039,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 43,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-pink-white.jpg?v=184530-0",
     "audio": {
       "kind": "hosted",
@@ -2067,7 +2067,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 70,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-slow-dancing-in-the-dark.jpg?v=209274-0",
     "audio": {
       "kind": "hosted",
@@ -2095,7 +2095,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 337,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-glimpse-of-us.jpg?v=234034-0",
     "audio": {
       "kind": "hosted",
@@ -2123,7 +2123,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-kali-uchis-see-you-again.jpg?v=202954-0",
     "audio": {
       "kind": "hosted",
@@ -2153,7 +2153,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 50,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-earfquake.jpg?v=266091-0",
     "audio": {
       "kind": "hosted",
@@ -2180,7 +2180,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 433,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-not-allowed.jpg?v=167864-0",
     "audio": {
       "kind": "hosted",
@@ -2208,7 +2208,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 489,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-dark-red.jpg?v=173603-1000",
     "audio": {
       "kind": "hosted",
@@ -2236,7 +2236,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 15,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-bad-habit.jpg?v=232120-0",
     "audio": {
       "kind": "hosted",
@@ -2265,7 +2265,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 33,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-sofia.jpg?v=188430-0",
     "audio": {
       "kind": "hosted",
@@ -2293,7 +2293,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-electric-feel.jpg?v=227439-1000",
     "audio": {
       "kind": "hosted",
@@ -2321,7 +2321,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/d4vd-romantic-homicide.jpg?v=131645-1000",
     "audio": {
       "kind": "hosted",
@@ -2351,7 +2351,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kanye-west-heartless.jpg?v=219695-1000",
     "audio": {
       "kind": "hosted",
@@ -2378,7 +2378,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-the-less-i-know-the-better.jpg?v=216351-1000",
     "audio": {
       "kind": "hosted",
@@ -2405,7 +2405,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beach-house-space-song.jpg?v=317494-3000",
     "audio": {
       "kind": "hosted",
@@ -2432,7 +2432,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cigarettes-after-sex-apocalypse.jpg?v=289076-1000",
     "audio": {
       "kind": "hosted",
@@ -2460,7 +2460,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 79,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-kids.jpg?v=330308-1000",
     "audio": {
       "kind": "hosted",
@@ -2488,7 +2488,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 78,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/master-kg-nomcebo-zikode-jerusalema.jpg?v=342254-0",
     "audio": {
       "kind": "hosted",
@@ -2518,7 +2518,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 78,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/o-zone-dragostea-din-tei.jpg?v=287438-5000",
     "audio": {
       "kind": "hosted",
@@ -2547,7 +2547,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 78,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/indila-derniere-danse.jpg?v=212613-1000",
     "audio": {
       "kind": "hosted",
@@ -2578,7 +2578,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 29,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bad-bunny-dtmf.jpg?v=240245-0",
     "audio": {
       "kind": "hosted",
@@ -2605,7 +2605,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 314,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sombr-back-to-friends.jpg?v=199054-0",
     "audio": {
       "kind": "hosted",
@@ -2633,7 +2633,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 151,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/huntrix-golden.jpg?v=193934-0",
     "audio": {
       "kind": "hosted",
@@ -2662,7 +2662,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 203,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gracie-abrams-thats-so-true.jpg?v=166300-0",
     "audio": {
       "kind": "hosted",
@@ -2690,7 +2690,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 341,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lola-young-messy.jpg?v=284069-0",
     "audio": {
       "kind": "hosted",
@@ -2717,7 +2717,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 195,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tate-mcrae-sports-car.jpg?v=187466-0",
     "audio": {
       "kind": "hosted",
@@ -2744,7 +2744,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 308,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-taste.jpg?v=157478-0",
     "audio": {
       "kind": "hosted",
@@ -2771,7 +2771,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 170,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-nokia.jpg?v=241023-0",
     "audio": {
       "kind": "hosted",
@@ -2799,7 +2799,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 49,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-playboi-carti-timeless.jpg?v=256093-0",
     "audio": {
       "kind": "hosted",
@@ -2827,7 +2827,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 311,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/teddy-swims-lose-control.jpg?v=210721-0",
     "audio": {
       "kind": "hosted",
@@ -2854,7 +2854,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=248303-0",
     "audio": {
       "kind": "hosted",
@@ -2881,7 +2881,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 262,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sabrina-carpenter-manchild.jpg?v=213646-0",
     "audio": {
       "kind": "hosted",
@@ -2908,7 +2908,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gigi-perez-sailor-song.jpg?v=208919-2000",
     "audio": {
       "kind": "hosted",
@@ -2938,7 +2938,7 @@
     ],
     "difficulty": "hard",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 485,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charli-xcx-apple.jpg?v=149704-5000",
     "audio": {
       "kind": "hosted",
@@ -2966,7 +2966,7 @@
     ],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 195,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/malcolm-todd-earrings.jpg?v=151893-0",
     "audio": {
       "kind": "hosted",
@@ -2995,7 +2995,7 @@
     ],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 22,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-marias-no-one-noticed.jpg?v=235044-0",
     "audio": {
       "kind": "hosted",
@@ -3023,7 +3023,7 @@
     ],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 104,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/djo-end-of-beginning.jpg?v=159301-0",
     "audio": {
       "kind": "hosted",
@@ -3044,7 +3044,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 522,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sheck-wes-mo-bamba.jpg?v=185899-0",
     "audio": {
       "kind": "hosted",
@@ -3065,7 +3065,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 70,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/modjo-lady-hear-me-tonight.jpg?v=221135-0",
     "audio": {
       "kind": "hosted",
@@ -3086,7 +3086,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 135,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bts-dynamite.jpg?v=195639-1000",
     "audio": {
       "kind": "hosted",
@@ -3107,7 +3107,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 347,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-peaches-feat-daniel-caesar-giveon.jpg?v=200574-0",
     "audio": {
       "kind": "hosted",
@@ -3128,7 +3128,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 349,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-snooze.jpg?v=201800-0",
     "audio": {
       "kind": "hosted",
@@ -3149,7 +3149,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 43,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-not-like-us.jpg?v=273380-0",
     "audio": {
       "kind": "hosted",
@@ -3170,7 +3170,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 134,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-style.jpg?v=230772-0",
     "audio": {
       "kind": "hosted",
@@ -3191,7 +3191,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-don-t-stop-the-music.jpg?v=232153-1000",
     "audio": {
       "kind": "hosted",
@@ -3212,7 +3212,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 53,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/akon-smack-that.jpg?v=212347-0",
     "audio": {
       "kind": "hosted",
@@ -3233,7 +3233,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-good-days.jpg?v=279753-1000",
     "audio": {
       "kind": "hosted",
@@ -3254,7 +3254,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-low-feat-t-pain.jpg?v=229819-1000",
     "audio": {
       "kind": "hosted",
@@ -3275,7 +3275,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/giv-on-heartbreak-anniversary.jpg?v=197337-1000",
     "audio": {
       "kind": "hosted",
@@ -3296,7 +3296,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-nice-for-what.jpg?v=210747-0",
     "audio": {
       "kind": "hosted",
@@ -3317,7 +3317,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 24,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tory-lanez-the-color-violet.jpg?v=226487-0",
     "audio": {
       "kind": "hosted",
@@ -3338,7 +3338,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 18,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-dna.jpg?v=185947-0",
     "audio": {
       "kind": "hosted",
@@ -3359,7 +3359,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 255,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bts-butter.jpg?v=164468-0",
     "audio": {
       "kind": "hosted",
@@ -3380,7 +3380,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 287,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jung-kook-standing-next-to-you.jpg?v=206089-0",
     "audio": {
       "kind": "hosted",
@@ -3401,7 +3401,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-reminder.jpg?v=218880-0",
     "audio": {
       "kind": "hosted",
@@ -3422,7 +3422,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 100,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lisa-money.jpg?v=165071-0",
     "audio": {
       "kind": "hosted",
@@ -3443,7 +3443,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 55,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-where-is-the-love.jpg?v=250543-0",
     "audio": {
       "kind": "hosted",
@@ -3464,7 +3464,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-the-fate-of-ophelia.jpg?v=237075-1000",
     "audio": {
       "kind": "hosted",
@@ -3485,7 +3485,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dominic-fike-babydoll.jpg?v=98545-1000",
     "audio": {
       "kind": "hosted",
@@ -3506,7 +3506,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 73,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-after-hours.jpg?v=361929-0",
     "audio": {
       "kind": "hosted",
@@ -3527,7 +3527,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 349,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/icona-pop-i-love-it-feat-charli-xcx.jpg?v=155733-0",
     "audio": {
       "kind": "hosted",
@@ -3548,7 +3548,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-toliver-no-idea.jpg?v=152404-1000",
     "audio": {
       "kind": "hosted",
@@ -3569,7 +3569,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-delicate.jpg?v=230881-4000",
     "audio": {
       "kind": "hosted",
@@ -3590,7 +3590,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 234,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/katy-perry-california-gurls.jpg?v=218667-0",
     "audio": {
       "kind": "hosted",
@@ -3611,7 +3611,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 284,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ava-max-kings-queens.jpg?v=162389-0",
     "audio": {
       "kind": "hosted",
@@ -3632,7 +3632,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 20,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bryson-tiller-exchange.jpg?v=195871-1000",
     "audio": {
       "kind": "hosted",
@@ -3653,7 +3653,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 475,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tove-lo-habits-stay-high.jpg?v=208167-0",
     "audio": {
       "kind": "hosted",
@@ -3674,7 +3674,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 173,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/my-chemical-romance-teenagers.jpg?v=162200-0",
     "audio": {
       "kind": "hosted",
@@ -3695,7 +3695,7 @@
     "artistAliases": [],
     "difficulty": "expert",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 74,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/50-cent-candy-shop.jpg?v=206973-0",
     "audio": {
       "kind": "hosted",
@@ -3716,7 +3716,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 10,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-hold-on-we-re-going-home.jpg?v=227027-0",
     "audio": {
       "kind": "hosted",
@@ -3737,7 +3737,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 399,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-not-afraid.jpg?v=258728-0",
     "audio": {
       "kind": "hosted",
@@ -3758,7 +3758,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 29,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hailee-steinfeld-starving.jpg?v=181933-0",
     "audio": {
       "kind": "hosted",
@@ -3779,7 +3779,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 154,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mr-probz-waves.jpg?v=208133-0",
     "audio": {
       "kind": "hosted",
@@ -3800,7 +3800,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 293,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-love-you-like-a-love-song.jpg?v=188720-0",
     "audio": {
       "kind": "hosted",
@@ -3821,7 +3821,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 205,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avicii-hey-brother.jpg?v=114539-0",
     "audio": {
       "kind": "hosted",
@@ -3842,7 +3842,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 55,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mac-miller-the-spins.jpg?v=196069-0",
     "audio": {
       "kind": "hosted",
@@ -3863,7 +3863,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 205,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-we-can-t-stop.jpg?v=233327-0",
     "audio": {
       "kind": "hosted",
@@ -3884,7 +3884,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 77,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avicii-levels.jpg?v=197173-0",
     "audio": {
       "kind": "hosted",
@@ -3905,7 +3905,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 71,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-my-house.jpg?v=196418-0",
     "audio": {
       "kind": "hosted",
@@ -3926,7 +3926,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 181,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-often.jpg?v=249093-0",
     "audio": {
       "kind": "hosted",
@@ -3947,7 +3947,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 17,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-break-from-toronto.jpg?v=99214-0",
     "audio": {
       "kind": "hosted",
@@ -3968,7 +3968,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign.jpg?v=216478-2000",
     "audio": {
       "kind": "hosted",
@@ -3989,7 +3989,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sia-elastic-heart.jpg?v=250670-1000",
     "audio": {
       "kind": "hosted",
@@ -4010,7 +4010,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 382,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-wrecking-ball.jpg?v=224131-0",
     "audio": {
       "kind": "hosted",
@@ -4031,7 +4031,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 76,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/katy-perry-i-kissed-a-girl.jpg?v=184390-0",
     "audio": {
       "kind": "hosted",
@@ -4052,7 +4052,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-sorry-not-sorry.jpg?v=202761-1000",
     "audio": {
       "kind": "hosted",
@@ -4073,7 +4073,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 92,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-perfect.jpg?v=230852-1000",
     "audio": {
       "kind": "hosted",
@@ -4094,7 +4094,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 269,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nsync-bye-bye-bye.jpg?v=201096-1000",
     "audio": {
       "kind": "hosted",
@@ -4115,7 +4115,7 @@
     "artistAliases": [],
     "difficulty": "impossible",
     "familiarity": 75,
-    "startAtMs": 30,
+    "startAtMs": 166,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/julia-michaels-issues.jpg?v=176309-0",
     "audio": {
       "kind": "hosted",
@@ -4142,7 +4142,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-japanese-denim.jpg?v=269978-1000",
     "audio": {
       "kind": "hosted",
@@ -4171,7 +4171,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 259,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-lost.jpg?v=234243-0",
     "audio": {
       "kind": "hosted",
@@ -4199,7 +4199,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 244,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-sanctuary.jpg?v=180019-0",
     "audio": {
       "kind": "hosted",
@@ -4226,7 +4226,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-new-magic-wand.jpg?v=195320-0",
     "audio": {
       "kind": "hosted",
@@ -4253,7 +4253,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 475,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-lovers-rock.jpg?v=213920-0",
     "audio": {
       "kind": "hosted",
@@ -4280,7 +4280,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 193,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tv-girl-cigarettes-out-the-window.jpg?v=198961-0",
     "audio": {
       "kind": "hosted",
@@ -4308,7 +4308,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 21,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-some.jpg?v=180696-0",
     "audio": {
       "kind": "hosted",
@@ -4335,7 +4335,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-bags.jpg?v=258545-2000",
     "audio": {
       "kind": "hosted",
@@ -4391,7 +4391,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 391,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-borderline.jpg?v=237807-0",
     "audio": {
       "kind": "hosted",
@@ -4418,7 +4418,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 70,
-    "startAtMs": 30,
+    "startAtMs": 0,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-let-it-happen.jpg?v=467257-7000",
     "audio": {
       "kind": "hosted",
@@ -4445,7 +4445,7 @@
     ],
     "difficulty": "impossible",
     "familiarity": 61,
-    "startAtMs": 30,
+    "startAtMs": 222,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dominic-fike-white-keys.jpg?v=144080-0",
     "audio": {
       "kind": "hosted",

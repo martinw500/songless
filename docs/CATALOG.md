@@ -92,6 +92,20 @@ Familiarity and intro recognition contribute equally. The audit permits a manual
 > [!NOTE]
 > **Provisional Quantile Calibration:** Until manual intro reviews are completed for all songs, the game uses a provisional ease score equal to the familiarity score. Because familiarity scores tend to cluster in specific ranges, absolute thresholds resulted in very few songs assigned to certain difficulties. Therefore, the provisional catalog script splits songs into 5 even buckets using quantile calibration to ensure an equal distribution of difficulties for testing purposes.
 
+## Audio onset calibration
+
+MP3 files contain encoder padding (typically one full MP3 frame of 1152 samples ≈ 26ms) plus any genuine silence or fade-in at the start of the track. When the browser's Web Audio API decodes an MP3 to PCM via `decodeAudioData()`, this padding becomes real zero-valued samples at the start of the buffer. For extremely short playback stages (0.01s, 0.1s), even 50–300ms of leading silence makes the clip completely inaudible.
+
+The `startAtMs` field in each candidate and catalog entry tells the audio engine where to begin playback inside the decoded buffer. To set it correctly:
+
+1. Decode each prepared clue MP3 to raw 32-bit float PCM at 44100 Hz using ffmpeg.
+2. Scan for the first sample whose absolute value exceeds a threshold of 0.002 (~-54 dBFS).
+3. Store that sample's timestamp in milliseconds as `startAtMs`.
+
+The probe script is at `scratch/probe-all-onsets.ps1` and writes `data/onset-data.local.json`. The application script `scratch/apply-onsets.js` patches `song-candidates.json` while preserving any existing manual overrides (e.g. `gnarls-barkley-crazy` at 2530ms for tape-hiss skip, `cafune-tek-it` at 120ms).
+
+After applying onsets, regenerate the catalog with `node scripts/generate-provisional-catalog.mjs`. The fallback chain is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding).
+
 ## Live catalogue
 
 `public/catalog.json` remains the runtime format. The promotion command prefers a complete R2-hosted source, then falls back to a prepared local file:
