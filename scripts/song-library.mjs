@@ -267,7 +267,8 @@ function validateLiveCatalog(report, catalogFile, audioDirectory) {
       continue;
     }
     if (song.difficulty !== candidate.proposedDifficulty) report.errors.push(`${label}: live difficulty disagrees with its approved candidate.`);
-    if (song.startAtMs !== (candidate.startAtMs ?? 0)) report.errors.push(`${label}: live startAtMs disagrees with its approved candidate.`);
+    const expectedStartAtMs = candidate.startAtMs ?? candidate.media?.onsetPadMs ?? 30;
+    if (song.startAtMs !== expectedStartAtMs) report.errors.push(`${label}: live startAtMs disagrees with its approved candidate.`);
     if (song.audio.kind === "file" && !existsSync(path.join(audioDirectory, candidate.media.audioFile))) report.errors.push(`${label}: live audio file is missing.`);
   }
   if (realCount > 0) {
@@ -400,7 +401,7 @@ function promote(report, catalogFile, audioDirectory, artworkDirectory) {
       difficulty: song.proposedDifficulty,
       familiarity: song.familiarity,
       introRecognition: song.introRecognition,
-      startAtMs: song.startAtMs ?? 0,
+      startAtMs: song.startAtMs ?? song.media?.onsetPadMs ?? 30,
       ...(artwork ? { artwork } : {}),
       audio,
     };
