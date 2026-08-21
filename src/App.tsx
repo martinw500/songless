@@ -114,6 +114,8 @@ function App() {
   const [stageIndex, setStageIndex] = useState(0);
   const [status, setStatus] = useState<RoundStatus>("playing");
   const [query, setQuery] = useState("");
+  const [highlightedIndex, setHighlightedIndex] = useState(-1);
+  const suggestionsListRef = useRef<HTMLDivElement>(null);
   const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
   const [audioError, setAudioError] = useState("");
@@ -382,6 +384,37 @@ function App() {
   function selectSuggestion(song: Song) {
     setSelectedSongId(song.id);
     setQuery(`${song.title} - ${song.artist}`);
+    setHighlightedIndex(-1);
+  }
+
+  function handleKeyDown(event: React.KeyboardEvent) {
+    if (suggestions.length === 0) return;
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      setHighlightedIndex((prev) => {
+        const next = prev < suggestions.length - 1 ? prev + 1 : prev;
+        scrollToSuggestion(next);
+        return next;
+      });
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      setHighlightedIndex((prev) => {
+        const next = prev > 0 ? prev - 1 : -1;
+        scrollToSuggestion(next);
+        return next;
+      });
+    } else if (event.key === "Enter" && highlightedIndex >= 0) {
+      event.preventDefault();
+      selectSuggestion(suggestions[highlightedIndex]);
+    }
+  }
+
+  function scrollToSuggestion(index: number) {
+    if (!suggestionsListRef.current || index < 0) return;
+    const button = suggestionsListRef.current.children[index] as HTMLElement | undefined;
+    if (button && button.scrollIntoView) {
+      button.scrollIntoView({ block: "nearest" });
+    }
   }
 
   function toggleStage(stage: number) {
@@ -564,20 +597,25 @@ function App() {
                     <input
                       aria-label="Search songs"
                       autoComplete="off"
+                      onKeyDown={handleKeyDown}
                       onChange={(event) => {
                         setQuery(event.target.value);
                         setSelectedSongId(null);
+                        setHighlightedIndex(-1);
                       }}
                       placeholder="Search songs..."
                       value={query}
                     />
                     {query && !selectedSong && suggestions.length > 0 && (
-                      <div className="suggestions" role="listbox">
-                        {suggestions.map((song) => (
+                      <div className="suggestions" role="listbox" ref={suggestionsListRef}>
+                        {suggestions.map((song, index) => (
                           <button
                             key={song.id}
+                            className={index === highlightedIndex ? "highlighted" : ""}
                             onClick={() => selectSuggestion(song)}
+                            onMouseMove={() => setHighlightedIndex(index)}
                             role="option"
+                            aria-selected={index === highlightedIndex}
                             type="button"
                           >
                             <Artwork song={song} small />

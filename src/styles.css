@@ -604,7 +604,10 @@ input:focus-visible {
   gap: 9px;
 }
 
-.suggestions button:hover { background: #202519; }
+.suggestions button:hover,
+.suggestions button.highlighted {
+  background: #202519;
+}
 .suggestions button > span:last-child { min-width: 0; display: grid; }
 .suggestions strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
 .suggestions small { color: #798078; font-size: 9px; }
