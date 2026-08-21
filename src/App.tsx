@@ -627,18 +627,32 @@ function App() {
             </div>
           </div>
           <label className="volume-control">
-            <span className="eyebrow"><VolumeIcon /> Volume</span>
-            <div>
+            <div className="volume-header">
+              <span className="eyebrow"><VolumeIcon /> Volume</span>
+              <span className="volume-value">{Math.round(volume * 100)}%</span>
+            </div>
+            <div className="volume-slider-row">
               <input
                 aria-label="Volume"
                 min="0"
-                max="1"
+                max="5"
                 step="0.01"
                 type="range"
                 value={volume}
-                style={{ "--volume-percent": `${volume * 100}%` } as CSSProperties}
+                style={{ "--volume-percent": `${Math.min(100, volume * 20)}%` } as CSSProperties}
                 onChange={(event) => setVolume(Number(event.target.value))}
               />
+              {volume !== 1 && (
+                <button
+                  type="button"
+                  className="volume-reset"
+                  onClick={() => setVolume(1)}
+                  aria-label="Reset volume to 100%"
+                  title="Reset to 100%"
+                >
+                  <ResetIcon />
+                </button>
+              )}
             </div>
           </label>
         </aside>
@@ -749,6 +763,15 @@ function ReplayIcon() {
     <svg className="action-icon replay-icon" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4.2 9.2A8.5 8.5 0 1 1 3.8 15" />
       <path d="M4.2 4.5v4.7h4.7" />
+    </svg>
+  );
+}
+
+function ResetIcon() {
+  return (
+    <svg className="reset-icon" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M2.5 5.5A5.5 5.5 0 1 1 2.2 9.5" />
+      <path d="M2.5 2v3.5h3.5" />
     </svg>
   );
 }

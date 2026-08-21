@@ -98,9 +98,28 @@ export class AudioEngine {
     if (song.audio.kind === "hosted") {
       this.stop();
       const playbackId = this.playbackId;
+      const context = await this.getContext();
+      if (playbackId !== this.playbackId) return 0;
+
       const media = new Audio();
       media.preload = "auto";
-      media.volume = Math.max(0, Math.min(1, volume));
+      media.crossOrigin = "anonymous";
+      
+      const source = context.createMediaElementSource(media);
+      const gain = context.createGain();
+      gain.gain.value = volume;
+      source.connect(gain);
+      gain.connect(context.destination);
+
+      // Add a dummy node to disconnect the graph on stop
+      const disconnectNode = {
+        stop: () => {
+          source.disconnect();
+          gain.disconnect();
+        }
+      } as any;
+      this.activeNodes.push(disconnectNode);
+
       media.src = song.audio.fullSrc;
       this.media = media;
       await this.waitForMetadata(media);

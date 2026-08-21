@@ -706,8 +706,39 @@ input:focus-visible {
   transform: translateY(-1px) scale(1.04);
 }
 
-.volume-control { display: block; }
-.volume-control > div { height: 17px; display: flex; align-items: center; }
+.volume-control { display: flex; flex-direction: column; gap: 4px; }
+.volume-header { display: flex; justify-content: space-between; align-items: center; }
+.volume-value { font-size: 11px; color: rgba(255, 255, 255, 0.4); font-weight: 500; font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
+.volume-slider-row { height: 17px; display: flex; align-items: center; gap: 8px; }
+.volume-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: color 0.15s, transform 0.15s;
+}
+.volume-reset:hover {
+  color: var(--accent);
+  transform: scale(1.1) rotate(-15deg);
+}
+.volume-reset:active {
+  transform: scale(0.95);
+}
+.reset-icon {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 .volume-control input {
   width: 100%;
@@ -1168,7 +1199,7 @@ input:focus-visible {
     font-size: 11px;
   }
 
-  .volume-control > div { height: 23px; }
+  .volume-slider-row { height: 23px; }
   .volume-control input { height: 16px; }
   .volume-control input::-webkit-slider-runnable-track { height: 5px; }
   .volume-control input::-webkit-slider-thumb { width: 14px; height: 14px; margin-top: -4.5px; }
