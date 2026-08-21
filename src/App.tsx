@@ -126,7 +126,11 @@ function App() {
     const storedVolume = window.localStorage.getItem("songless-volume-v2");
     if (storedVolume === null) return 1;
     const saved = Number(storedVolume);
-    return Number.isFinite(saved) && saved >= 0 && saved <= 1 ? saved : 0.8;
+    return Number.isFinite(saved) && saved >= 0 && saved <= 5 ? saved : 1;
+  });
+  const [songStartMode, setSongStartMode] = useState<"intro" | "hook">(() => {
+    const stored = window.localStorage.getItem("songless-start-mode");
+    return stored === "hook" ? "hook" : "intro";
   });
 
   useEffect(() => {
@@ -157,6 +161,10 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem("songless-volume-v2", String(volume));
   }, [volume]);
+
+  useEffect(() => {
+    window.localStorage.setItem("songless-start-mode", songStartMode);
+  }, [songStartMode]);
 
   useEffect(() => {
     window.localStorage.setItem(stageStorageKey, JSON.stringify(enabledStages));
@@ -203,6 +211,15 @@ function App() {
   const playbackProgress = currentStage > 0 ? Math.min(1, playbackElapsed / currentStage) : 0;
   const playbackOffset = stagePlaybackOffset(enabledStages, stageIndex, playbackElapsed);
 
+  // When in "hook" mode, override startAtMs with hookStartMs so audio begins at the chorus
+  const playableSong = useMemo(() => {
+    if (!currentSong) return null;
+    if (songStartMode === "hook" && currentSong.hookStartMs != null) {
+      return { ...currentSong, startAtMs: currentSong.hookStartMs };
+    }
+    return currentSong;
+  }, [currentSong, songStartMode]);
+
   function stopPlayback(displayElapsed = 0) {
     playbackRun.current += 1;
     playbackPending.current = false;
@@ -221,11 +238,11 @@ function App() {
   }
 
   async function startRevealPlayback(startSeconds: number) {
-    if (!currentSong) return;
+    if (!playableSong) return;
     const run = playbackRun.current;
     setAudioError("");
     try {
-      const actualDuration = await audioEngine.current.playRemainder(currentSong, startSeconds, volume);
+      const actualDuration = await audioEngine.current.playRemainder(playableSong, startSeconds, volume);
       if (run !== playbackRun.current || actualDuration <= 0) return;
       setIsRevealPlaying(true);
       revealTimer.current = window.setTimeout(() => {
@@ -273,7 +290,7 @@ function App() {
   }
 
   async function startPlayback(rangeStart: number, rangeEnd: number) {
-    if (!currentSong || status !== "playing") return;
+    if (!playableSong || status !== "playing") return;
     const retainedThrough = Math.max(heardThrough, rangeStart);
     setHeardThrough(retainedThrough);
     stopPlayback(rangeStart);
@@ -282,7 +299,7 @@ function App() {
     setAudioError("");
     try {
       const actualDuration = await audioEngine.current.play(
-        currentSong,
+        playableSong,
         rangeStart,
         rangeEnd,
         volume,
@@ -596,10 +613,22 @@ function App() {
         <aside className="settings-panel">
           <div>
             <p className="eyebrow"><WaveformIcon /> Song start</p>
-            <button className="setting-value" disabled type="button">
-              {catalogUsesHostedAudio ? "R2 hosted" : "Local preview"}
+            <button
+              className={`setting-value ${songStartMode === "intro" ? "active-setting" : ""}`}
+              onClick={() => setSongStartMode("intro")}
+              disabled={hasStartedRound}
+              type="button"
+            >
+              From the start
             </button>
-            <button className="setting-value active-setting" type="button">From the start</button>
+            <button
+              className={`setting-value ${songStartMode === "hook" ? "active-setting" : ""}`}
+              onClick={() => setSongStartMode("hook")}
+              disabled={hasStartedRound}
+              type="button"
+            >
+              Main hook
+            </button>
           </div>
           <div>
             <p className="eyebrow"><StopwatchIcon /> Stages</p>

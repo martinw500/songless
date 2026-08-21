@@ -42,6 +42,7 @@ export type Song = {
   familiarity?: number;
   introRecognition?: number;
   startAtMs?: number;
+  hookStartMs?: number;
   artwork?: string;
   audio: AudioSource;
 };

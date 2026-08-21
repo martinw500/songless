@@ -68,7 +68,8 @@
       },
       "album": "After Hours",
       "spotifyUrl": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 25400
     },
     {
       "id": "ed-sheeran-shape-of-you",
@@ -111,7 +112,8 @@
       },
       "album": "Top Motivation",
       "spotifyUrl": "https://open.spotify.com/track/5BhCnMoTq4qI4vf37Ohlkm",
-      "startAtMs": 316
+      "startAtMs": 316,
+      "hookStartMs": 68400
     },
     {
       "id": "post-malone-swae-lee-sunflower",
@@ -154,7 +156,8 @@
         "hostedDurationMs": 160670,
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=160670-1000"
       },
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 120400
     },
     {
       "id": "the-weeknd-daft-punk-starboy",
@@ -199,7 +202,8 @@
       },
       "album": "Starboy",
       "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 63600
     },
     {
       "id": "the-neighbourhood-sweater-weather",
@@ -243,7 +247,8 @@
       },
       "album": "I Love You.",
       "spotifyUrl": "https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6",
-      "startAtMs": 111
+      "startAtMs": 111,
+      "hookStartMs": 107000
     },
     {
       "id": "glass-animals-heat-waves",
@@ -286,7 +291,8 @@
       },
       "startAtMs": 199,
       "album": "Dreamland",
-      "spotifyUrl": "https://open.spotify.com/track/3USxtqRwSYz57Ewm6wWRMp"
+      "spotifyUrl": "https://open.spotify.com/track/3USxtqRwSYz57Ewm6wWRMp",
+      "hookStartMs": 15000
     },
     {
       "id": "harry-styles-as-it-was",
@@ -330,7 +336,8 @@
       },
       "album": "Harry's House",
       "spotifyUrl": "https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 35400
     },
     {
       "id": "journey-dont-stop-believin",
@@ -375,7 +382,8 @@
       },
       "album": "The Essential Journey",
       "spotifyUrl": "https://open.spotify.com/track/77NNZQSqzLNqh2A9JhLRkg",
-      "startAtMs": 111
+      "startAtMs": 111,
+      "hookStartMs": 91800
     },
     {
       "id": "imagine-dragons-believer",
@@ -418,7 +426,8 @@
       },
       "album": "Evolve",
       "spotifyUrl": "https://open.spotify.com/track/0pqnGHJpmpxLKifKRmU6WP",
-      "startAtMs": 222
+      "startAtMs": 222,
+      "hookStartMs": 68200
     },
     {
       "id": "the-chainsmokers-halsey-closer",
@@ -463,7 +472,8 @@
       },
       "album": "Closer",
       "spotifyUrl": "https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 132600
     },
     {
       "id": "dua-lipa-levitating",
@@ -507,7 +517,8 @@
       },
       "album": "Future Nostalgia",
       "spotifyUrl": "https://open.spotify.com/track/39LLxExYz6ewLAcYrzQQyP",
-      "startAtMs": 291
+      "startAtMs": 291,
+      "hookStartMs": 34000
     },
     {
       "id": "billie-eilish-bad-guy",
@@ -551,7 +562,8 @@
       },
       "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
       "spotifyUrl": "https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m",
-      "startAtMs": 84
+      "startAtMs": 84,
+      "hookStartMs": 34800
     },
     {
       "id": "harry-styles-watermelon-sugar",
@@ -594,7 +606,8 @@
       },
       "album": "Fine Line",
       "spotifyUrl": "https://open.spotify.com/track/6UelLqGlWMcVH1E5c4H7lY",
-      "startAtMs": 189
+      "startAtMs": 189,
+      "hookStartMs": 81400
     },
     {
       "id": "drake-wizkid-kyla-one-dance",
@@ -641,7 +654,8 @@
       },
       "album": "Views",
       "spotifyUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 11400
     },
     {
       "id": "billie-eilish-khalid-lovely",
@@ -686,7 +700,8 @@
       },
       "album": "lovely (with Khalid)",
       "spotifyUrl": "https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 37200
     },
     {
       "id": "the-kid-laroi-justin-bieber-stay",
@@ -730,7 +745,8 @@
       },
       "album": "F*CK LOVE 3+: OVER YOU",
       "spotifyUrl": "https://open.spotify.com/track/567e29TDzLwZwfDuEpGTwo",
-      "startAtMs": 321
+      "startAtMs": 321,
+      "hookStartMs": 32200
     },
     {
       "id": "shawn-mendes-camila-cabello-senorita",
@@ -777,7 +793,8 @@
       },
       "album": "Romance",
       "spotifyUrl": "https://open.spotify.com/track/3BVgrFWuH01GmCUy9Y2EE8",
-      "startAtMs": 501
+      "startAtMs": 501,
+      "hookStartMs": 73200
     },
     {
       "id": "dua-lipa-dont-start-now",
@@ -823,7 +840,8 @@
       },
       "album": "Future Nostalgia",
       "spotifyUrl": "https://open.spotify.com/track/3PfIrDoz19wz7qK7tYeu62",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 23800
     },
     {
       "id": "post-malone-circles",
@@ -867,7 +885,8 @@
       },
       "album": "Hollywood's Bleeding",
       "spotifyUrl": "https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb",
-      "startAtMs": 521
+      "startAtMs": 521,
+      "hookStartMs": 16600
     },
     {
       "id": "coldplay-viva-la-vida",
@@ -910,7 +929,8 @@
       },
       "album": "Viva La Vida or Death and All His Friends",
       "spotifyUrl": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 68600
     },
     {
       "id": "timbaland-onerepublic-apologize",
@@ -955,7 +975,8 @@
       },
       "album": "Shock Value",
       "spotifyUrl": "https://open.spotify.com/track/6ucR4KfvsBFWCMVFDvyKKl",
-      "startAtMs": 26
+      "startAtMs": 26,
+      "hookStartMs": 117000
     },
     {
       "id": "lady-gaga-poker-face",
@@ -999,7 +1020,8 @@
       },
       "album": "The Fame",
       "spotifyUrl": "https://open.spotify.com/track/5R8dQOPq8haW94K7mgERlO",
-      "startAtMs": 354
+      "startAtMs": 354,
+      "hookStartMs": 56400
     },
     {
       "id": "gnarls-barkley-crazy",
@@ -1043,7 +1065,8 @@
       },
       "album": "100 Greatest Summer Songs",
       "spotifyUrl": "https://open.spotify.com/track/0BtXtxmKBm1HwGnM3kO3rY",
-      "startAtMs": 2530
+      "startAtMs": 2530,
+      "hookStartMs": 48000
     },
     {
       "id": "rihanna-jay-z-umbrella",
@@ -1090,7 +1113,8 @@
       },
       "album": "Good Girl Gone Bad: Reloaded",
       "spotifyUrl": "https://open.spotify.com/track/49FYlytm3dAAraYgpoJZux",
-      "startAtMs": 167
+      "startAtMs": 167,
+      "hookStartMs": 118000
     },
     {
       "id": "coldplay-yellow",
@@ -1133,7 +1157,8 @@
       },
       "album": "Parachutes",
       "spotifyUrl": "https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg",
-      "startAtMs": 169
+      "startAtMs": 169,
+      "hookStartMs": 93800
     },
     {
       "id": "radiohead-creep",
@@ -1176,7 +1201,8 @@
       },
       "album": "Pablo Honey",
       "spotifyUrl": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
-      "startAtMs": 80
+      "startAtMs": 80,
+      "hookStartMs": 62800
     },
     {
       "id": "eminem-without-me",
@@ -1219,7 +1245,8 @@
       },
       "album": "The Eminem Show",
       "spotifyUrl": "https://open.spotify.com/track/7lQ8MOhq6IN2w8EYcFNSUk",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 102000
     },
     {
       "id": "tears-for-fears-everybody-wants-to-rule-the-world",
@@ -1263,7 +1290,8 @@
       },
       "album": "Songs From The Big Chair",
       "spotifyUrl": "https://open.spotify.com/track/2YiCMmONQcoMPX2bV1LxE0",
-      "startAtMs": 181
+      "startAtMs": 181,
+      "hookStartMs": 45000
     },
     {
       "id": "toto-africa",
@@ -1309,7 +1337,8 @@
       },
       "album": "Toto IV",
       "spotifyUrl": "https://open.spotify.com/track/2374M0fQpWi3dLnB54qaLX",
-      "startAtMs": 400
+      "startAtMs": 400,
+      "hookStartMs": 69200
     },
     {
       "id": "fleetwood-mac-dreams",
@@ -1352,7 +1381,8 @@
       },
       "startAtMs": 325,
       "album": "Greatest Hits",
-      "spotifyUrl": "https://open.spotify.com/track/1lbXEepatjRVjoG8pZMtdp"
+      "spotifyUrl": "https://open.spotify.com/track/1lbXEepatjRVjoG8pZMtdp",
+      "hookStartMs": 32600
     },
     {
       "id": "lady-gaga-bruno-mars-die-with-a-smile",
@@ -1397,7 +1427,8 @@
       },
       "album": "MAYHEM",
       "spotifyUrl": "https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ",
-      "startAtMs": 249
+      "startAtMs": 249,
+      "hookStartMs": 39800
     },
     {
       "id": "billie-eilish-birds-of-a-feather",
@@ -1440,7 +1471,8 @@
       },
       "album": "HIT ME HARD AND SOFT",
       "spotifyUrl": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 67000
     },
     {
       "id": "rose-bruno-mars-apt",
@@ -1490,7 +1522,8 @@
       },
       "album": "rosie",
       "spotifyUrl": "https://open.spotify.com/track/4wJ5Qq0jBN4ajy7ouZIV1c",
-      "startAtMs": 318
+      "startAtMs": 318,
+      "hookStartMs": 31200
     },
     {
       "id": "alex-warren-ordinary",
@@ -1533,7 +1566,8 @@
       },
       "album": "You'll Be Alright, Kid (Chapter 1)",
       "spotifyUrl": "https://open.spotify.com/track/2RkZ5LkEzeHGRsmDqKwmaJ",
-      "startAtMs": 195
+      "startAtMs": 195,
+      "hookStartMs": 51000
     },
     {
       "id": "bad-bunny-dtmf",
@@ -1580,7 +1614,8 @@
       },
       "album": "DeBÍ TiRAR MáS FOToS",
       "spotifyUrl": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya",
-      "startAtMs": 29
+      "startAtMs": 29,
+      "hookStartMs": 50200
     },
     {
       "id": "sombr-back-to-friends",
@@ -1623,7 +1658,8 @@
       },
       "album": "I Barely Know Her",
       "spotifyUrl": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe",
-      "startAtMs": 314
+      "startAtMs": 314,
+      "hookStartMs": 84200
     },
     {
       "id": "huntrix-golden",
@@ -1672,7 +1708,8 @@
       },
       "startAtMs": 151,
       "album": "Golden (from the Netflix film KPop Demon Hunters)",
-      "spotifyUrl": "https://open.spotify.com/track/5Cp75TUMrHF6c8xbhdligS"
+      "spotifyUrl": "https://open.spotify.com/track/5Cp75TUMrHF6c8xbhdligS",
+      "hookStartMs": 65000
     },
     {
       "id": "kendrick-lamar-sza-luther",
@@ -1717,7 +1754,8 @@
       },
       "album": "GNX",
       "spotifyUrl": "https://open.spotify.com/track/45J4avUb9Ni0bnETYaYFVJ",
-      "startAtMs": 412
+      "startAtMs": 412,
+      "hookStartMs": 119200
     },
     {
       "id": "gracie-abrams-thats-so-true",
@@ -1762,7 +1800,8 @@
       },
       "album": "The Secret of Us (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad",
-      "startAtMs": 203
+      "startAtMs": 203,
+      "hookStartMs": 77800
     },
     {
       "id": "sabrina-carpenter-espresso",
@@ -1805,7 +1844,8 @@
       },
       "album": "Short n' Sweet",
       "spotifyUrl": "https://open.spotify.com/track/2HRqTpkrJO5ggZyyK6NPWz",
-      "startAtMs": 304
+      "startAtMs": 304,
+      "hookStartMs": 88400
     },
     {
       "id": "benson-boone-beautiful-things",
@@ -1848,7 +1888,8 @@
       },
       "album": "Fireworks & Rollerblades",
       "spotifyUrl": "https://open.spotify.com/track/3xkHsmpQCBMytMJNiDf3Ii",
-      "startAtMs": 324
+      "startAtMs": 324,
+      "hookStartMs": 87000
     },
     {
       "id": "chappell-roan-pink-pony-club",
@@ -1891,7 +1932,8 @@
       },
       "album": "The Rise and Fall of a Midwest Princess",
       "spotifyUrl": "https://open.spotify.com/track/1k2pQc5i348DCHwbn5KTdc",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 129400
     },
     {
       "id": "lola-young-messy",
@@ -1935,7 +1977,8 @@
       },
       "album": "This Wasn't Meant For You Anyway",
       "spotifyUrl": "https://open.spotify.com/track/0jqcBJBa5qnk6Nx2Zm5poq",
-      "startAtMs": 341
+      "startAtMs": 341,
+      "hookStartMs": 50200
     },
     {
       "id": "tate-mcrae-sports-car",
@@ -1978,7 +2021,8 @@
       },
       "album": "So Close To What",
       "spotifyUrl": "https://open.spotify.com/track/4il87YHqSV9UqbBkXM7z7m",
-      "startAtMs": 195
+      "startAtMs": 195,
+      "hookStartMs": 154400
     },
     {
       "id": "hozier-too-sweet",
@@ -2022,7 +2066,8 @@
       },
       "album": "Unreal Unearth: Unaired",
       "spotifyUrl": "https://open.spotify.com/track/76JKIsdKrAfWUMjaA0u7v5",
-      "startAtMs": 430
+      "startAtMs": 430,
+      "hookStartMs": 80600
     },
     {
       "id": "shaboozey-a-bar-song-tipsy",
@@ -2068,7 +2113,8 @@
       },
       "album": "Where I've Been, Isn't Where I'm Going",
       "spotifyUrl": "https://open.spotify.com/track/7wd9kz7UXhJr8pgdqpzKu5",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 96000
     },
     {
       "id": "sabrina-carpenter-taste",
@@ -2111,7 +2157,8 @@
       },
       "album": "Short n' Sweet",
       "spotifyUrl": "https://open.spotify.com/track/5G2f63n7IPVPPjfNIGih7Q",
-      "startAtMs": 308
+      "startAtMs": 308,
+      "hookStartMs": 82400
     },
     {
       "id": "the-rare-occasions-notion",
@@ -2155,7 +2202,8 @@
       },
       "album": "Notion",
       "spotifyUrl": "https://open.spotify.com/track/0sTlGEld0h8kIPZaKDYUf4",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 35000
     },
     {
       "id": "drake-nokia",
@@ -2198,7 +2246,8 @@
       },
       "album": "$ome $exy $ongs 4 U",
       "spotifyUrl": "https://open.spotify.com/track/2u9S9JJ6hTZS3Vf22HOZKg",
-      "startAtMs": 170
+      "startAtMs": 170,
+      "hookStartMs": 46600
     },
     {
       "id": "the-weeknd-playboi-carti-timeless",
@@ -2243,7 +2292,8 @@
       },
       "album": "Hurry Up Tomorrow",
       "spotifyUrl": "https://open.spotify.com/track/0FIDCNYYjNvPVimz5icugS",
-      "startAtMs": 49
+      "startAtMs": 49,
+      "hookStartMs": 217000
     },
     {
       "id": "chappell-roan-good-luck-babe",
@@ -2288,7 +2338,8 @@
       },
       "album": "Good Luck, Babe!",
       "spotifyUrl": "https://open.spotify.com/track/0WbMK4wrZ1wFSty9F7FCgu",
-      "startAtMs": 255
+      "startAtMs": 255,
+      "hookStartMs": 106400
     },
     {
       "id": "teddy-swims-lose-control",
@@ -2332,7 +2383,8 @@
       },
       "album": "I've Tried Everything But Therapy (Part 1)",
       "spotifyUrl": "https://open.spotify.com/track/17phhZDn6oGtzMe56NuWvj",
-      "startAtMs": 311
+      "startAtMs": 311,
+      "hookStartMs": 71600
     },
     {
       "id": "doechii-anxiety",
@@ -2375,7 +2427,8 @@
       },
       "album": "Alligator Bites Never Heal (Extended)",
       "spotifyUrl": "https://open.spotify.com/track/0J7UkOuMsJdffD6pEqDlbh",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 98400
     },
     {
       "id": "sabrina-carpenter-manchild",
@@ -2418,7 +2471,8 @@
       },
       "album": "Man’s Best Friend",
       "spotifyUrl": "https://open.spotify.com/track/2BwO5K8Q7EPAJSGze3AAh9",
-      "startAtMs": 262
+      "startAtMs": 262,
+      "hookStartMs": 41000
     },
     {
       "id": "gigi-perez-sailor-song",
@@ -2461,7 +2515,8 @@
       },
       "album": "At The Beach, In Every Life",
       "spotifyUrl": "https://open.spotify.com/track/21IYMdzTrzSe191Cy5eMap",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 115200
     },
     {
       "id": "dominic-fike-white-keys",
@@ -2505,7 +2560,8 @@
       },
       "album": "White Keys",
       "spotifyUrl": "https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI",
-      "startAtMs": 222
+      "startAtMs": 222,
+      "hookStartMs": 75800
     },
     {
       "id": "charli-xcx-apple",
@@ -2551,7 +2607,8 @@
       },
       "album": "BRAT",
       "spotifyUrl": "https://open.spotify.com/track/19RybK6XDbAVpcdxSbZL1o",
-      "startAtMs": 485
+      "startAtMs": 485,
+      "hookStartMs": 53800
     },
     {
       "id": "malcolm-todd-earrings",
@@ -2595,7 +2652,8 @@
       },
       "album": "Sweet Boy",
       "spotifyUrl": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ",
-      "startAtMs": 195
+      "startAtMs": 195,
+      "hookStartMs": 6400
     },
     {
       "id": "the-marias-no-one-noticed",
@@ -2640,7 +2698,8 @@
       },
       "album": "Submarine",
       "spotifyUrl": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5",
-      "startAtMs": 22
+      "startAtMs": 22,
+      "hookStartMs": 155000
     },
     {
       "id": "djo-end-of-beginning",
@@ -2684,7 +2743,8 @@
       },
       "album": "DECIDE",
       "spotifyUrl": "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
-      "startAtMs": 104
+      "startAtMs": 104,
+      "hookStartMs": 41000
     },
     {
       "id": "daniel-caesar-her-best-part",
@@ -2730,7 +2790,8 @@
       },
       "album": "Freudian",
       "spotifyUrl": "https://open.spotify.com/track/1Q7EgiMOuwDcB0PJC6AzON",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 46800
     },
     {
       "id": "daniel-caesar-kali-uchis-get-you",
@@ -2774,7 +2835,8 @@
       },
       "album": "Freudian",
       "spotifyUrl": "https://open.spotify.com/track/2uP6t2J5MEwhr9rDkAAzwh",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 67800
     },
     {
       "id": "daniel-caesar-japanese-denim",
@@ -2817,7 +2879,8 @@
       },
       "album": "Get You - Single",
       "spotifyUrl": "https://open.spotify.com/track/7IVukH71OXfAu3KudrrizN",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 189200
     },
     {
       "id": "frank-ocean-nights",
@@ -2863,7 +2926,8 @@
       },
       "album": "Blonde",
       "spotifyUrl": "https://open.spotify.com/track/7eqoqGkKwgOaWNNHx90uEZ",
-      "startAtMs": 41
+      "startAtMs": 41,
+      "hookStartMs": 113800
     },
     {
       "id": "frank-ocean-pink-white",
@@ -2911,7 +2975,8 @@
       },
       "album": "Blonde",
       "spotifyUrl": "https://open.spotify.com/track/3xKsf9qdS1CyvXSMEid6g8",
-      "startAtMs": 43
+      "startAtMs": 43,
+      "hookStartMs": 103600
     },
     {
       "id": "frank-ocean-lost",
@@ -2956,7 +3021,8 @@
       },
       "album": "channel ORANGE",
       "spotifyUrl": "https://open.spotify.com/track/3GZD6HmiNUhxXYf8Gch723",
-      "startAtMs": 259
+      "startAtMs": 259,
+      "hookStartMs": 50000
     },
     {
       "id": "joji-slow-dancing-in-the-dark",
@@ -3000,7 +3066,8 @@
       },
       "album": "BALLADS 1",
       "spotifyUrl": "https://open.spotify.com/track/6rY5FAWxCdAGllYEOZMbjW",
-      "startAtMs": 70
+      "startAtMs": 70,
+      "hookStartMs": 187800
     },
     {
       "id": "joji-glimpse-of-us",
@@ -3044,7 +3111,8 @@
       },
       "album": "SMITHEREENS",
       "spotifyUrl": "https://open.spotify.com/track/2mlNgAeIBnL78ZriXgrRHz",
-      "startAtMs": 337
+      "startAtMs": 337,
+      "hookStartMs": 136800
     },
     {
       "id": "joji-sanctuary",
@@ -3088,7 +3156,8 @@
       },
       "album": "Nectar",
       "spotifyUrl": "https://open.spotify.com/track/4VQH4VluDUOsOuDxccTeyN",
-      "startAtMs": 244
+      "startAtMs": 244,
+      "hookStartMs": 14800
     },
     {
       "id": "tyler-the-creator-kali-uchis-see-you-again",
@@ -3133,7 +3202,8 @@
       },
       "album": "Flower Boy",
       "spotifyUrl": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 75400
     },
     {
       "id": "tyler-the-creator-earfquake",
@@ -3179,7 +3249,8 @@
       },
       "album": "IGOR",
       "spotifyUrl": "https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0",
-      "startAtMs": 50
+      "startAtMs": 50,
+      "hookStartMs": 105200
     },
     {
       "id": "tyler-the-creator-new-magic-wand",
@@ -3222,7 +3293,8 @@
       },
       "album": "IGOR",
       "spotifyUrl": "https://open.spotify.com/track/0fv2KH6hac06J86hBUTcSf",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 84600
     },
     {
       "id": "tv-girl-not-allowed",
@@ -3265,7 +3337,8 @@
       },
       "album": "Who Really Cares",
       "spotifyUrl": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB",
-      "startAtMs": 433
+      "startAtMs": 433,
+      "hookStartMs": 6000
     },
     {
       "id": "tv-girl-lovers-rock",
@@ -3308,7 +3381,8 @@
       },
       "album": "French Exit",
       "spotifyUrl": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM",
-      "startAtMs": 475
+      "startAtMs": 475,
+      "hookStartMs": 90800
     },
     {
       "id": "tv-girl-cigarettes-out-the-window",
@@ -3351,7 +3425,8 @@
       },
       "album": "Who Really Cares",
       "spotifyUrl": "https://open.spotify.com/track/6QeYSvYqYUsfBzsApbjDHO",
-      "startAtMs": 193
+      "startAtMs": 193,
+      "hookStartMs": 9800
     },
     {
       "id": "steve-lacy-dark-red",
@@ -3395,7 +3470,8 @@
       },
       "album": "Dark Red",
       "spotifyUrl": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa",
-      "startAtMs": 489
+      "startAtMs": 489,
+      "hookStartMs": 33000
     },
     {
       "id": "steve-lacy-bad-habit",
@@ -3439,7 +3515,8 @@
       },
       "album": "Gemini Rights",
       "spotifyUrl": "https://open.spotify.com/track/4k6Uh1HXdhtusDW5y8Gbvy",
-      "startAtMs": 15
+      "startAtMs": 15,
+      "hookStartMs": 50400
     },
     {
       "id": "steve-lacy-some",
@@ -3483,7 +3560,8 @@
       },
       "album": "Steve Lacy's Demo",
       "spotifyUrl": "https://open.spotify.com/track/1rL6TtfgBWSUhcXVZkrM26",
-      "startAtMs": 21
+      "startAtMs": 21,
+      "hookStartMs": 6400
     },
     {
       "id": "clairo-sofia",
@@ -3528,7 +3606,8 @@
       },
       "album": "Immunity",
       "spotifyUrl": "https://open.spotify.com/track/1zHUEIQ6yzaWBzhNCV1SGW",
-      "startAtMs": 33
+      "startAtMs": 33,
+      "hookStartMs": 84400
     },
     {
       "id": "clairo-bags",
@@ -3571,7 +3650,8 @@
       },
       "album": "Immunity",
       "spotifyUrl": "https://open.spotify.com/track/1wicceeNVtcnym2YjiOmyj",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 54800
     },
     {
       "id": "mgmt-electric-feel",
@@ -3615,7 +3695,8 @@
       },
       "album": "Oracular Spectacular",
       "spotifyUrl": "https://open.spotify.com/track/3FtYbEfBqAlGO46NUDQSAt",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 28000
     },
     {
       "id": "cafune-tek-it",
@@ -3660,7 +3741,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cafune-tek-it.jpg?v=191019-0"
       },
       "album": "Running",
-      "spotifyUrl": "https://open.spotify.com/track/751srcHf5tUqcEa9pRCQwP"
+      "spotifyUrl": "https://open.spotify.com/track/751srcHf5tUqcEa9pRCQwP",
+      "hookStartMs": 25000
     },
     {
       "id": "d4vd-romantic-homicide",
@@ -3704,7 +3786,8 @@
       },
       "album": "Romantic Homicide",
       "spotifyUrl": "https://open.spotify.com/track/1xK59OXxi2TAAAbmZK0kBL",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 87200
     },
     {
       "id": "kanye-west-heartless",
@@ -3750,7 +3833,8 @@
       },
       "album": "808s & Heartbreak",
       "spotifyUrl": "https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 63800
     },
     {
       "id": "tame-impala-borderline",
@@ -3793,7 +3877,8 @@
       },
       "album": "The Slow Rush",
       "spotifyUrl": "https://open.spotify.com/track/5hM5arv9KDbCHS0k9uqwjr",
-      "startAtMs": 391
+      "startAtMs": 391,
+      "hookStartMs": 94800
     },
     {
       "id": "tame-impala-the-less-i-know-the-better",
@@ -3836,7 +3921,8 @@
       },
       "album": "Currents",
       "spotifyUrl": "https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 65400
     },
     {
       "id": "tame-impala-let-it-happen",
@@ -3879,7 +3965,8 @@
       },
       "album": "Currents",
       "spotifyUrl": "https://open.spotify.com/track/2X485T9Z5Ly0xyaghN73ed",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 27000
     },
     {
       "id": "beach-house-space-song",
@@ -3922,7 +4009,8 @@
       },
       "album": "Depression Cherry",
       "spotifyUrl": "https://open.spotify.com/track/7H0ya83CMmgFcOhw0UB6ow",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 23800
     },
     {
       "id": "cigarettes-after-sex-apocalypse",
@@ -3965,7 +4053,8 @@
       },
       "album": "Cigarettes After Sex",
       "spotifyUrl": "https://open.spotify.com/track/1oAwsWBovWRIp7qLMGPIet",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 46400
     },
     {
       "id": "mgmt-kids",
@@ -4009,7 +4098,8 @@
       },
       "album": "Oracular Spectacular",
       "spotifyUrl": "https://open.spotify.com/track/1jJci4qxiYcOHhQR247rEU",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 21800
     },
     {
       "id": "the-killers-mr-brightside",
@@ -4054,7 +4144,8 @@
       },
       "album": "Hot Fuss",
       "spotifyUrl": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B",
-      "startAtMs": 344
+      "startAtMs": 344,
+      "hookStartMs": 67600
     },
     {
       "id": "a-ha-take-on-me",
@@ -4098,7 +4189,8 @@
       },
       "album": "Hunting High and Low",
       "spotifyUrl": "https://open.spotify.com/track/2WfaOiMkCvy7F5fcp2zZ8L",
-      "startAtMs": 371
+      "startAtMs": 371,
+      "hookStartMs": 49200
     },
     {
       "id": "michael-jackson-billie-jean",
@@ -4142,7 +4234,8 @@
       },
       "album": "Thriller",
       "spotifyUrl": "https://open.spotify.com/track/7J1uxwnxfQLu4APicE5Rnj",
-      "startAtMs": 157
+      "startAtMs": 157,
+      "hookStartMs": 56000
     },
     {
       "id": "nirvana-smells-like-teen-spirit",
@@ -4186,7 +4279,8 @@
       },
       "album": "Nevermind (Remastered)",
       "spotifyUrl": "https://open.spotify.com/track/5ghIJDpPoe3CfHMGu71E6T",
-      "startAtMs": 51
+      "startAtMs": 51,
+      "hookStartMs": 56600
     },
     {
       "id": "oasis-wonderwall",
@@ -4230,7 +4324,8 @@
       },
       "album": "(What's The Story) Morning Glory?",
       "spotifyUrl": "https://open.spotify.com/track/1qPbGZqppFwLwcBC1JQ6Vr",
-      "startAtMs": 1
+      "startAtMs": 1,
+      "hookStartMs": 72200
     },
     {
       "id": "whitney-houston-i-wanna-dance-with-somebody",
@@ -4276,7 +4371,8 @@
       },
       "album": "Whitney",
       "spotifyUrl": "https://open.spotify.com/track/2tUBqZG2AbRi7Q0BIrVrEj",
-      "startAtMs": 64
+      "startAtMs": 64,
+      "hookStartMs": 41800
     },
     {
       "id": "queen-bohemian-rhapsody",
@@ -4319,7 +4415,8 @@
       },
       "album": "A Night At The Opera",
       "spotifyUrl": "https://open.spotify.com/track/2JiDi0qAXsPwhPqA2qaKGt",
-      "startAtMs": 185
+      "startAtMs": 185,
+      "hookStartMs": 93800
     },
     {
       "id": "queen-dont-stop-me-now",
@@ -4364,7 +4461,8 @@
       },
       "album": "Jazz",
       "spotifyUrl": "https://open.spotify.com/track/1NHWG8zxSEypSRF3UufrnO",
-      "startAtMs": 17
+      "startAtMs": 17,
+      "hookStartMs": 37400
     },
     {
       "id": "abba-dancing-queen",
@@ -4408,7 +4506,8 @@
       },
       "album": "Arrival",
       "spotifyUrl": "https://open.spotify.com/track/0GjEhVFGZW8afUYGChu3Rr",
-      "startAtMs": 122
+      "startAtMs": 122,
+      "hookStartMs": 24400
     },
     {
       "id": "earth-wind-fire-september",
@@ -4454,7 +4553,8 @@
       },
       "album": "The Best Of Earth, Wind & Fire Vol. 1",
       "spotifyUrl": "https://open.spotify.com/track/2grjqo0Frpf2okIBiifQKs",
-      "startAtMs": 15
+      "startAtMs": 15,
+      "hookStartMs": 108400
     },
     {
       "id": "eurythmics-sweet-dreams",
@@ -4500,7 +4600,8 @@
       },
       "startAtMs": 0,
       "album": "Greatest Hits",
-      "spotifyUrl": "https://open.spotify.com/track/6zIfdCmmhPCX0cMquBsC37"
+      "spotifyUrl": "https://open.spotify.com/track/6zIfdCmmhPCX0cMquBsC37",
+      "hookStartMs": 109400
     },
     {
       "id": "george-michael-careless-whisper",
@@ -4544,7 +4645,8 @@
       },
       "album": "Make It Big",
       "spotifyUrl": "https://open.spotify.com/track/6KsgCYcZKPcBRDNGhiZWRR",
-      "startAtMs": 202
+      "startAtMs": 202,
+      "hookStartMs": 112400
     },
     {
       "id": "the-cranberries-zombie",
@@ -4587,7 +4689,8 @@
       },
       "album": "Gold",
       "spotifyUrl": "https://open.spotify.com/track/49wOjOkS4pBK3PQnPnNYjb",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 93400
     },
     {
       "id": "goo-goo-dolls-iris",
@@ -4629,7 +4732,8 @@
         "hostedDurationMs": 289907,
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/goo-goo-dolls-iris.jpg?v=289907-0"
       },
-      "startAtMs": 443
+      "startAtMs": 443,
+      "hookStartMs": 48400
     },
     {
       "id": "tlc-no-scrubs",
@@ -4673,7 +4777,8 @@
       },
       "album": "Fanmail",
       "spotifyUrl": "https://open.spotify.com/track/1KGi9sZVMeszgZOWivFpxs",
-      "startAtMs": 367
+      "startAtMs": 367,
+      "hookStartMs": 32400
     },
     {
       "id": "britney-spears-toxic",
@@ -4717,7 +4822,8 @@
       },
       "album": "In The Zone",
       "spotifyUrl": "https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak",
-      "startAtMs": 486
+      "startAtMs": 486,
+      "hookStartMs": 67600
     },
     {
       "id": "alexandra-stan-mr-saxobeat",
@@ -4763,7 +4869,8 @@
       },
       "startAtMs": 0,
       "album": "Mr. Saxobeat",
-      "spotifyUrl": "https://open.spotify.com/track/3jfN9BwqDUGUjGUH9Xzm18"
+      "spotifyUrl": "https://open.spotify.com/track/3jfN9BwqDUGUjGUH9Xzm18",
+      "hookStartMs": 25000
     },
     {
       "id": "nelly-furtado-timbaland-promiscuous",
@@ -4808,7 +4915,8 @@
       },
       "album": "Loose",
       "spotifyUrl": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 113800
     },
     {
       "id": "miley-cyrus-party-in-the-usa",
@@ -4853,7 +4961,8 @@
       },
       "album": "The Time Of Our Lives",
       "spotifyUrl": "https://open.spotify.com/track/5Q0Nhxo0l2bP3pNjpGJwV1",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 51200
     },
     {
       "id": "lady-gaga-just-dance",
@@ -4898,7 +5007,8 @@
       },
       "album": "The Fame",
       "spotifyUrl": "https://open.spotify.com/track/2x7MyWybabEz6Y6wvHuwGE",
-      "startAtMs": 43
+      "startAtMs": 43,
+      "hookStartMs": 54600
     },
     {
       "id": "stromae-alors-on-danse",
@@ -4942,7 +5052,8 @@
       },
       "startAtMs": 0,
       "album": "Alors On Danse",
-      "spotifyUrl": "https://open.spotify.com/track/4I2ENHg65RuKifEHdD0kMu"
+      "spotifyUrl": "https://open.spotify.com/track/4I2ENHg65RuKifEHdD0kMu",
+      "hookStartMs": 64000
     },
     {
       "id": "luis-fonsi-daddy-yankee-despacito",
@@ -4987,7 +5098,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/luis-fonsi-daddy-yankee-despacito.jpg?v=227346-1000"
       },
       "album": "VIDA",
-      "spotifyUrl": "https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb"
+      "spotifyUrl": "https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb",
+      "hookStartMs": 87800
     },
     {
       "id": "psy-gangnam-style",
@@ -5035,7 +5147,8 @@
       },
       "album": "Minidisco Hits - Die beste Faschings-Party für Kinder",
       "spotifyUrl": "https://open.spotify.com/track/7tVsrYuRjvGei6hDOUjdPh",
-      "startAtMs": 84
+      "startAtMs": 84,
+      "hookStartMs": 57800
     },
     {
       "id": "don-omar-lucenzo-danza-kuduro",
@@ -5080,7 +5193,8 @@
       },
       "album": "Meet The Orphans",
       "spotifyUrl": "https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw",
-      "startAtMs": 316
+      "startAtMs": 316,
+      "hookStartMs": 71800
     },
     {
       "id": "rema-selena-gomez-calm-down",
@@ -5125,7 +5239,8 @@
       },
       "album": "Rave & Roses Ultra",
       "spotifyUrl": "https://open.spotify.com/track/1s7oOCT8vauUh01PbJD6ps",
-      "startAtMs": 41
+      "startAtMs": 41,
+      "hookStartMs": 39200
     },
     {
       "id": "master-kg-nomcebo-zikode-jerusalema",
@@ -5170,7 +5285,8 @@
       },
       "album": "Jerusalema",
       "spotifyUrl": "https://open.spotify.com/track/2MlOUXmcofMackX3bxfSwi",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 53800
     },
     {
       "id": "o-zone-dragostea-din-tei",
@@ -5216,7 +5332,8 @@
       },
       "album": "DiscO-Zone",
       "spotifyUrl": "https://open.spotify.com/track/52Zr0sinhWTCRrQhRRY4EP",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 48800
     },
     {
       "id": "stromae-papaoutai",
@@ -5262,7 +5379,8 @@
       },
       "album": "racine carrée",
       "spotifyUrl": "https://open.spotify.com/track/34dx8DACTJsc3rsJdaEIQw",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 47600
     },
     {
       "id": "j-balvin-willy-william-mi-gente",
@@ -5307,7 +5425,8 @@
       },
       "album": "Vibras",
       "spotifyUrl": "https://open.spotify.com/track/7COfe3P7KgfwDwIRB8LIDw",
-      "startAtMs": 41
+      "startAtMs": 41,
+      "hookStartMs": 36000
     },
     {
       "id": "indila-derniere-danse",
@@ -5352,7 +5471,8 @@
       },
       "album": "Mini World",
       "spotifyUrl": "https://open.spotify.com/track/65uoaqX5qcjXZRheAj1qQT",
-      "startAtMs": 0
+      "startAtMs": 0,
+      "hookStartMs": 98600
     },
     {
       "id": "sheck-wes-mo-bamba",
@@ -5382,7 +5502,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 522,
       "album": "MUDBOY",
-      "spotifyUrl": "https://open.spotify.com/track/1xzBco0xcoJEDXktl7Jxrr"
+      "spotifyUrl": "https://open.spotify.com/track/1xzBco0xcoJEDXktl7Jxrr",
+      "hookStartMs": 32800
     },
     {
       "id": "modjo-lady-hear-me-tonight",
@@ -5412,7 +5533,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 70,
       "album": "Modjo (Remastered)",
-      "spotifyUrl": "https://open.spotify.com/track/49X0LAl6faAusYq02PRAY6"
+      "spotifyUrl": "https://open.spotify.com/track/49X0LAl6faAusYq02PRAY6",
+      "hookStartMs": 113000
     },
     {
       "id": "bts-dynamite",
@@ -5442,7 +5564,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 135,
       "album": "BE",
-      "spotifyUrl": "https://open.spotify.com/track/5QDLhrAOJJdNAmCTJ8xMyW"
+      "spotifyUrl": "https://open.spotify.com/track/5QDLhrAOJJdNAmCTJ8xMyW",
+      "hookStartMs": 107200
     },
     {
       "id": "justin-bieber-peaches-feat-daniel-caesar-giveon",
@@ -5472,7 +5595,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 347,
       "album": "Justice",
-      "spotifyUrl": "https://open.spotify.com/track/4iJyoBOLtHqaGxP12qzhQI"
+      "spotifyUrl": "https://open.spotify.com/track/4iJyoBOLtHqaGxP12qzhQI",
+      "hookStartMs": 45800
     },
     {
       "id": "sza-snooze",
@@ -5502,7 +5626,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 349,
       "album": "SOS",
-      "spotifyUrl": "https://open.spotify.com/track/4iZ4pt7kvcaH6Yo8UoZ4s2"
+      "spotifyUrl": "https://open.spotify.com/track/4iZ4pt7kvcaH6Yo8UoZ4s2",
+      "hookStartMs": 75000
     },
     {
       "id": "kendrick-lamar-not-like-us",
@@ -5532,7 +5657,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 43,
       "album": "Not Like Us",
-      "spotifyUrl": "https://open.spotify.com/track/6AI3ezQ4o3HUoP6Dhudph3"
+      "spotifyUrl": "https://open.spotify.com/track/6AI3ezQ4o3HUoP6Dhudph3",
+      "hookStartMs": 57000
     },
     {
       "id": "taylor-swift-style",
@@ -5562,7 +5688,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 134,
       "album": "1989",
-      "spotifyUrl": "https://open.spotify.com/track/4lIxdJw6W3Fg4vUIYCB0S5"
+      "spotifyUrl": "https://open.spotify.com/track/4lIxdJw6W3Fg4vUIYCB0S5",
+      "hookStartMs": 65400
     },
     {
       "id": "rihanna-don-t-stop-the-music",
@@ -5592,7 +5719,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Good Girl Gone Bad: Reloaded",
-      "spotifyUrl": "https://open.spotify.com/track/0ByMNEPAPpOR5H69DVrTNy"
+      "spotifyUrl": "https://open.spotify.com/track/0ByMNEPAPpOR5H69DVrTNy",
+      "hookStartMs": 76600
     },
     {
       "id": "akon-smack-that",
@@ -5622,7 +5750,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 53,
       "album": "Konvicted",
-      "spotifyUrl": "https://open.spotify.com/track/2kQuhkFX7uSVepCD3h29g5"
+      "spotifyUrl": "https://open.spotify.com/track/2kQuhkFX7uSVepCD3h29g5",
+      "hookStartMs": 38200
     },
     {
       "id": "sza-good-days",
@@ -5652,7 +5781,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "SOS",
-      "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID"
+      "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID",
+      "hookStartMs": 59600
     },
     {
       "id": "flo-rida-low-feat-t-pain",
@@ -5682,7 +5812,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Mail on Sunday",
-      "spotifyUrl": "https://open.spotify.com/track/0CAfXk7DXMnon4gLudAp7J"
+      "spotifyUrl": "https://open.spotify.com/track/0CAfXk7DXMnon4gLudAp7J",
+      "hookStartMs": 39000
     },
     {
       "id": "giv-on-heartbreak-anniversary",
@@ -5712,7 +5843,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Heartbreak Anniversary",
-      "spotifyUrl": "https://open.spotify.com/track/2QfznFotJNZmnIEYFdzE5T"
+      "spotifyUrl": "https://open.spotify.com/track/2QfznFotJNZmnIEYFdzE5T",
+      "hookStartMs": 56000
     },
     {
       "id": "drake-nice-for-what",
@@ -5742,7 +5874,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Scorpion",
-      "spotifyUrl": "https://open.spotify.com/track/3CA9pLiwRIGtUBiMjbZmRw"
+      "spotifyUrl": "https://open.spotify.com/track/3CA9pLiwRIGtUBiMjbZmRw",
+      "hookStartMs": 64600
     },
     {
       "id": "tory-lanez-the-color-violet",
@@ -5772,7 +5905,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 24,
       "album": "Alone At Prom",
-      "spotifyUrl": "https://open.spotify.com/track/3azJifCSqg9fRij2yKIbWz"
+      "spotifyUrl": "https://open.spotify.com/track/3azJifCSqg9fRij2yKIbWz",
+      "hookStartMs": 22400
     },
     {
       "id": "kendrick-lamar-dna",
@@ -5802,7 +5936,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 18,
       "album": "DAMN.",
-      "spotifyUrl": "https://open.spotify.com/track/6HZILIRieu8S0iqY8kIKhj"
+      "spotifyUrl": "https://open.spotify.com/track/6HZILIRieu8S0iqY8kIKhj",
+      "hookStartMs": 125200
     },
     {
       "id": "bts-butter",
@@ -5832,7 +5967,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 255,
       "album": "Butter (Hotter, Sweeter, Cooler)",
-      "spotifyUrl": "https://open.spotify.com/track/1mWdTewIgB3gtBM3TOSFhB"
+      "spotifyUrl": "https://open.spotify.com/track/1mWdTewIgB3gtBM3TOSFhB",
+      "hookStartMs": 30400
     },
     {
       "id": "jung-kook-standing-next-to-you",
@@ -5862,7 +5998,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 287,
       "album": "GOLDEN",
-      "spotifyUrl": "https://open.spotify.com/track/2KslE17cAJNHTsI2MI0jb2"
+      "spotifyUrl": "https://open.spotify.com/track/2KslE17cAJNHTsI2MI0jb2",
+      "hookStartMs": 10600
     },
     {
       "id": "the-weeknd-reminder",
@@ -5892,7 +6029,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Starboy",
-      "spotifyUrl": "https://open.spotify.com/track/37F0uwRSrdzkBiuj0D5UHI"
+      "spotifyUrl": "https://open.spotify.com/track/37F0uwRSrdzkBiuj0D5UHI",
+      "hookStartMs": 59800
     },
     {
       "id": "lisa-money",
@@ -5922,7 +6060,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 100,
       "album": "LALISA",
-      "spotifyUrl": "https://open.spotify.com/track/7hU3IHwjX150XLoTVmjD0q"
+      "spotifyUrl": "https://open.spotify.com/track/7hU3IHwjX150XLoTVmjD0q",
+      "hookStartMs": 136200
     },
     {
       "id": "black-eyed-peas-where-is-the-love",
@@ -5952,7 +6091,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 55,
       "album": "Elephunk",
-      "spotifyUrl": "https://open.spotify.com/track/0xmjwnQ3FNE6HuWCt2nHdZ"
+      "spotifyUrl": "https://open.spotify.com/track/0xmjwnQ3FNE6HuWCt2nHdZ",
+      "hookStartMs": 28400
     },
     {
       "id": "taylor-swift-the-fate-of-ophelia",
@@ -5982,7 +6122,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "The Life of a Showgirl",
-      "spotifyUrl": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W"
+      "spotifyUrl": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W",
+      "hookStartMs": 55200
     },
     {
       "id": "dominic-fike-babydoll",
@@ -6012,7 +6153,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Don't Forget About Me, Demos",
-      "spotifyUrl": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc"
+      "spotifyUrl": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
+      "hookStartMs": 10600
     },
     {
       "id": "the-weeknd-after-hours",
@@ -6042,7 +6184,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 73,
       "album": "After Hours",
-      "spotifyUrl": "https://open.spotify.com/track/2p8IUWQDrpjuFltbdgLOag"
+      "spotifyUrl": "https://open.spotify.com/track/2p8IUWQDrpjuFltbdgLOag",
+      "hookStartMs": 156400
     },
     {
       "id": "icona-pop-i-love-it-feat-charli-xcx",
@@ -6072,7 +6215,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 349,
       "album": "THIS IS... ICONA POP",
-      "spotifyUrl": "https://open.spotify.com/track/6HZ9VeI5IRFCNQLXhpF4bq"
+      "spotifyUrl": "https://open.spotify.com/track/6HZ9VeI5IRFCNQLXhpF4bq",
+      "hookStartMs": 44200
     },
     {
       "id": "don-toliver-no-idea",
@@ -6102,7 +6246,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "Heaven Or Hell",
-      "spotifyUrl": "https://open.spotify.com/track/7AzlLxHn24DxjgQX73F9fU"
+      "spotifyUrl": "https://open.spotify.com/track/7AzlLxHn24DxjgQX73F9fU",
+      "hookStartMs": 34200
     },
     {
       "id": "taylor-swift-delicate",
@@ -6132,7 +6277,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 0,
       "album": "reputation",
-      "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf"
+      "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf",
+      "hookStartMs": 51600
     },
     {
       "id": "katy-perry-california-gurls",
@@ -6162,7 +6308,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 234,
       "album": "Teenage Dream",
-      "spotifyUrl": "https://open.spotify.com/track/6KOEK6SeCEZOQkLj5M1PxH"
+      "spotifyUrl": "https://open.spotify.com/track/6KOEK6SeCEZOQkLj5M1PxH",
+      "hookStartMs": 66800
     },
     {
       "id": "ava-max-kings-queens",
@@ -6192,7 +6339,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 284,
       "album": "Heaven & Hell",
-      "spotifyUrl": "https://open.spotify.com/track/7a53HqqArd4b9NF4XAmlbI"
+      "spotifyUrl": "https://open.spotify.com/track/7a53HqqArd4b9NF4XAmlbI",
+      "hookStartMs": 17600
     },
     {
       "id": "bryson-tiller-exchange",
@@ -6222,7 +6370,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 20,
       "album": "T R A P S O U L",
-      "spotifyUrl": "https://open.spotify.com/track/43PuMrRfbyyuz4QpZ3oAwN"
+      "spotifyUrl": "https://open.spotify.com/track/43PuMrRfbyyuz4QpZ3oAwN",
+      "hookStartMs": 40200
     },
     {
       "id": "tove-lo-habits-stay-high",
@@ -6252,7 +6401,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 475,
       "album": "Queen Of The Clouds",
-      "spotifyUrl": "https://open.spotify.com/track/14OxJlLdcHNpgsm4DRwDOB"
+      "spotifyUrl": "https://open.spotify.com/track/14OxJlLdcHNpgsm4DRwDOB",
+      "hookStartMs": 51000
     },
     {
       "id": "my-chemical-romance-teenagers",
@@ -6282,7 +6432,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 173,
       "album": "The Black Parade",
-      "spotifyUrl": "https://open.spotify.com/track/7j31rVgGX9Q2blT92VBEA0"
+      "spotifyUrl": "https://open.spotify.com/track/7j31rVgGX9Q2blT92VBEA0",
+      "hookStartMs": 48000
     },
     {
       "id": "50-cent-candy-shop",
@@ -6312,7 +6463,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 74,
       "album": "The Massacre",
-      "spotifyUrl": "https://open.spotify.com/track/5D2mYZuzcgjpchVY1pmTPh"
+      "spotifyUrl": "https://open.spotify.com/track/5D2mYZuzcgjpchVY1pmTPh",
+      "hookStartMs": 79400
     },
     {
       "id": "drake-hold-on-we-re-going-home",
@@ -6342,7 +6494,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 10,
       "album": "Nothing Was The Same (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/6jdOi5U5LBzQrc4c1VT983"
+      "spotifyUrl": "https://open.spotify.com/track/6jdOi5U5LBzQrc4c1VT983",
+      "hookStartMs": 21000
     },
     {
       "id": "eminem-not-afraid",
@@ -6372,7 +6525,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 399,
       "album": "Recovery",
-      "spotifyUrl": "https://open.spotify.com/track/7Ie9W94M7OjPoZVV216Xus"
+      "spotifyUrl": "https://open.spotify.com/track/7Ie9W94M7OjPoZVV216Xus",
+      "hookStartMs": 166800
     },
     {
       "id": "hailee-steinfeld-starving",
@@ -6402,7 +6556,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 29,
       "album": "Starving",
-      "spotifyUrl": "https://open.spotify.com/track/4Ce37cRWvM1vIGGynKcs22"
+      "spotifyUrl": "https://open.spotify.com/track/4Ce37cRWvM1vIGGynKcs22",
+      "hookStartMs": 59400
     },
     {
       "id": "mr-probz-waves",
@@ -6430,7 +6585,8 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 154
+      "startAtMs": 154,
+      "hookStartMs": 8600
     },
     {
       "id": "selena-gomez-love-you-like-a-love-song",
@@ -6458,7 +6614,8 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 293
+      "startAtMs": 293,
+      "hookStartMs": 119800
     },
     {
       "id": "avicii-hey-brother",
@@ -6488,7 +6645,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 205,
       "album": "True",
-      "spotifyUrl": "https://open.spotify.com/track/4lhqb6JvbHId48OUJGwymk"
+      "spotifyUrl": "https://open.spotify.com/track/4lhqb6JvbHId48OUJGwymk",
+      "hookStartMs": 37600
     },
     {
       "id": "mac-miller-the-spins",
@@ -6518,7 +6676,8 @@
       "bucket": "billion_anchor",
       "startAtMs": 55,
       "album": "K.I.D.S. (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/3iEUDvanZwQhLCIqUmCR7N"
+      "spotifyUrl": "https://open.spotify.com/track/3iEUDvanZwQhLCIqUmCR7N",
+      "hookStartMs": 36800
     },
     {
       "id": "miley-cyrus-we-can-t-stop",
@@ -6548,7 +6707,8 @@
       "artwork": null,
       "startAtMs": 205,
       "album": "Bangerz (Deluxe Version)",
-      "spotifyUrl": "https://open.spotify.com/track/2y4lAQpi5VTNLu2ldeTdUH"
+      "spotifyUrl": "https://open.spotify.com/track/2y4lAQpi5VTNLu2ldeTdUH",
+      "hookStartMs": 71400
     },
     {
       "id": "avicii-levels",
@@ -6576,7 +6736,8 @@
       },
       "audio": null,
       "artwork": null,
-      "startAtMs": 77
+      "startAtMs": 77,
+      "hookStartMs": 22200
     },
     {
       "id": "flo-rida-my-house",
@@ -6606,7 +6767,8 @@
       "artwork": null,
       "startAtMs": 71,
       "album": "My House",
-      "spotifyUrl": "https://open.spotify.com/track/6Knv6wdA0luoMUuuoYi2i1"
+      "spotifyUrl": "https://open.spotify.com/track/6Knv6wdA0luoMUuuoYi2i1",
+      "hookStartMs": 40800
     },
     {
       "id": "the-weeknd-often",
@@ -6636,7 +6798,8 @@
       "artwork": null,
       "startAtMs": 181,
       "album": "Beauty Behind The Madness",
-      "spotifyUrl": "https://open.spotify.com/track/4PhsKqMdgMEUSstTDAmMpg"
+      "spotifyUrl": "https://open.spotify.com/track/4PhsKqMdgMEUSstTDAmMpg",
+      "hookStartMs": 156600
     },
     {
       "id": "partynextdoor-break-from-toronto",
@@ -6666,7 +6829,8 @@
       "artwork": null,
       "startAtMs": 17,
       "album": "PARTYNEXTDOOR",
-      "spotifyUrl": "https://open.spotify.com/track/5fEB6ZmVkg63GZg9qO86jh"
+      "spotifyUrl": "https://open.spotify.com/track/5fEB6ZmVkg63GZg9qO86jh",
+      "hookStartMs": 26400
     },
     {
       "id": "jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign",
@@ -6696,7 +6860,8 @@
       "artwork": null,
       "startAtMs": 0,
       "album": "Swalla (feat. Nicki Minaj & Ty Dolla $ign)",
-      "spotifyUrl": "https://open.spotify.com/track/6kex4EBAj0WHXDKZMEJaaF"
+      "spotifyUrl": "https://open.spotify.com/track/6kex4EBAj0WHXDKZMEJaaF",
+      "hookStartMs": 22400
     },
     {
       "id": "sia-elastic-heart",
@@ -6726,7 +6891,8 @@
       "artwork": null,
       "startAtMs": 0,
       "album": "1000 Forms Of Fear",
-      "spotifyUrl": "https://open.spotify.com/track/6kwAbEjseqBob48jCus7Sz"
+      "spotifyUrl": "https://open.spotify.com/track/6kwAbEjseqBob48jCus7Sz",
+      "hookStartMs": 44400
     },
     {
       "id": "miley-cyrus-wrecking-ball",
@@ -6756,7 +6922,8 @@
       "artwork": null,
       "startAtMs": 382,
       "album": "Bangerz (Deluxe Version)",
-      "spotifyUrl": "https://open.spotify.com/track/2vwlzO0Qp8kfEtzTsCXfyE"
+      "spotifyUrl": "https://open.spotify.com/track/2vwlzO0Qp8kfEtzTsCXfyE",
+      "hookStartMs": 44800
     },
     {
       "id": "katy-perry-i-kissed-a-girl",
@@ -6786,7 +6953,8 @@
       "artwork": null,
       "startAtMs": 76,
       "album": "One Of The Boys",
-      "spotifyUrl": "https://open.spotify.com/track/005lwxGU1tms6HGELIcUv9"
+      "spotifyUrl": "https://open.spotify.com/track/005lwxGU1tms6HGELIcUv9",
+      "hookStartMs": 34200
     },
     {
       "id": "demi-lovato-sorry-not-sorry",
@@ -6816,7 +6984,8 @@
       "artwork": null,
       "startAtMs": 0,
       "album": "Tell Me You Love Me",
-      "spotifyUrl": "https://open.spotify.com/track/0yvPEnB032fojLfVluFjUv"
+      "spotifyUrl": "https://open.spotify.com/track/0yvPEnB032fojLfVluFjUv",
+      "hookStartMs": 45600
     },
     {
       "id": "one-direction-perfect",
@@ -6846,7 +7015,8 @@
       "artwork": null,
       "startAtMs": 92,
       "album": "Made In The A.M. (Deluxe Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/3NLnwwAQbbFKcEcV8hDItk"
+      "spotifyUrl": "https://open.spotify.com/track/3NLnwwAQbbFKcEcV8hDItk",
+      "hookStartMs": 63000
     },
     {
       "id": "nsync-bye-bye-bye",
@@ -6876,7 +7046,8 @@
       "artwork": null,
       "startAtMs": 269,
       "album": "No Strings Attached",
-      "spotifyUrl": "https://open.spotify.com/track/4r8lRYnoOGdEi6YyI5OC1o"
+      "spotifyUrl": "https://open.spotify.com/track/4r8lRYnoOGdEi6YyI5OC1o",
+      "hookStartMs": 63400
     },
     {
       "id": "julia-michaels-issues",
@@ -6906,7 +7077,8 @@
       "artwork": null,
       "startAtMs": 166,
       "album": "Nervous System",
-      "spotifyUrl": "https://open.spotify.com/track/7vu0JkJh0ldukEYbTVcqd0"
+      "spotifyUrl": "https://open.spotify.com/track/7vu0JkJh0ldukEYbTVcqd0",
+      "hookStartMs": 138000
     },
     {
       "id": "jason-derulo-want-to-want-me",
@@ -6936,7 +7108,8 @@
       "audio": null,
       "artwork": null,
       "album": "Everything Is 4",
-      "spotifyUrl": "https://open.spotify.com/track/7oGZAicScQt96OAW4AruYy"
+      "spotifyUrl": "https://open.spotify.com/track/7oGZAicScQt96OAW4AruYy",
+      "hookStartMs": 49200
     },
     {
       "id": "one-direction-steal-my-girl",
@@ -6966,7 +7139,8 @@
       "audio": null,
       "artwork": null,
       "album": "FOUR (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/2Bs4jQEGMycglOfWPBqrVG"
+      "spotifyUrl": "https://open.spotify.com/track/2Bs4jQEGMycglOfWPBqrVG",
+      "hookStartMs": 61600
     },
     {
       "id": "flo-rida-wild-ones-feat-sia",
@@ -6996,7 +7170,8 @@
       "audio": null,
       "artwork": null,
       "album": "Wild Ones",
-      "spotifyUrl": "https://open.spotify.com/track/1NpW5kyvO4XrNJ3rnfcNy3"
+      "spotifyUrl": "https://open.spotify.com/track/1NpW5kyvO4XrNJ3rnfcNy3",
+      "hookStartMs": 45000
     },
     {
       "id": "nico-am-i-wrong",
@@ -7024,7 +7199,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nico-am-i-wrong.jpg?v=247246-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 209200
     },
     {
       "id": "britney-spears-gimme-more",
@@ -7054,7 +7230,8 @@
       "audio": null,
       "artwork": null,
       "album": "Blackout",
-      "spotifyUrl": "https://open.spotify.com/track/6ic8OlLUNEATToEFU3xmaH"
+      "spotifyUrl": "https://open.spotify.com/track/6ic8OlLUNEATToEFU3xmaH",
+      "hookStartMs": 141600
     },
     {
       "id": "dan-shay-10-000-hours-with-justin-bieber",
@@ -7111,7 +7288,8 @@
       "audio": null,
       "artwork": null,
       "album": "Loose",
-      "spotifyUrl": "https://open.spotify.com/track/4wH4dJgrsxONID6KS2tDQM"
+      "spotifyUrl": "https://open.spotify.com/track/4wH4dJgrsxONID6KS2tDQM",
+      "hookStartMs": 147200
     },
     {
       "id": "metro-boomin-too-many-nights-feat-don-toliver-with-future",
@@ -7168,7 +7346,8 @@
       "audio": null,
       "artwork": null,
       "album": "My Everything (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/12KUFSHFgT0XCoiSlvdQi4"
+      "spotifyUrl": "https://open.spotify.com/track/12KUFSHFgT0XCoiSlvdQi4",
+      "hookStartMs": 117800
     },
     {
       "id": "justin-bieber-confident",
@@ -7190,7 +7369,7 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b27358ae8fddecbd2630005409c9"
+        "artworkUrl": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6"
       },
       "audio": null,
       "artwork": null,
@@ -7225,7 +7404,8 @@
       "audio": null,
       "artwork": null,
       "album": "As I Am (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/6IwKcFdiRQZOWeYNhUiWIv"
+      "spotifyUrl": "https://open.spotify.com/track/6IwKcFdiRQZOWeYNhUiWIv",
+      "hookStartMs": 98400
     },
     {
       "id": "paramore-still-into-you",
@@ -7255,7 +7435,8 @@
       "audio": null,
       "artwork": null,
       "album": "Paramore",
-      "spotifyUrl": "https://open.spotify.com/track/1yjY7rpaAQvKwpdUliHx0d"
+      "spotifyUrl": "https://open.spotify.com/track/1yjY7rpaAQvKwpdUliHx0d",
+      "hookStartMs": 48600
     },
     {
       "id": "ne-yo-so-sick",
@@ -7285,7 +7466,8 @@
       "audio": null,
       "artwork": null,
       "album": "In My Own Words",
-      "spotifyUrl": "https://open.spotify.com/track/6brl7bwOHmGFkNw3MBqssT"
+      "spotifyUrl": "https://open.spotify.com/track/6brl7bwOHmGFkNw3MBqssT",
+      "hookStartMs": 74600
     },
     {
       "id": "britney-spears-oops-i-did-it-again",
@@ -7315,7 +7497,8 @@
       "audio": null,
       "artwork": null,
       "album": "Oops!... I Did It Again",
-      "spotifyUrl": "https://open.spotify.com/track/6naxalmIoLFWR0siv8dnQQ"
+      "spotifyUrl": "https://open.spotify.com/track/6naxalmIoLFWR0siv8dnQQ",
+      "hookStartMs": 64400
     },
     {
       "id": "taylor-swift-wildest-dreams",
@@ -7345,7 +7528,8 @@
       "audio": null,
       "artwork": null,
       "album": "1989",
-      "spotifyUrl": "https://open.spotify.com/track/59HjlYCeBsxdI0fcm3zglw"
+      "spotifyUrl": "https://open.spotify.com/track/59HjlYCeBsxdI0fcm3zglw",
+      "hookStartMs": 106000
     },
     {
       "id": "kali-uchis-moonlight",
@@ -7375,7 +7559,8 @@
       "audio": null,
       "artwork": null,
       "album": "Moonlight",
-      "spotifyUrl": "https://open.spotify.com/track/2i2gDpKKWjvnRTOZRhaPh2"
+      "spotifyUrl": "https://open.spotify.com/track/2i2gDpKKWjvnRTOZRhaPh2",
+      "hookStartMs": 29200
     },
     {
       "id": "rihanna-where-have-you-been",
@@ -7405,7 +7590,8 @@
       "audio": null,
       "artwork": null,
       "album": "Talk That Talk (Explicit)",
-      "spotifyUrl": "https://open.spotify.com/track/1uN0f4NqMDcReSwXO6PLuG"
+      "spotifyUrl": "https://open.spotify.com/track/1uN0f4NqMDcReSwXO6PLuG",
+      "hookStartMs": 30000
     },
     {
       "id": "demi-lovato-heart-attack",
@@ -7435,7 +7621,8 @@
       "audio": null,
       "artwork": null,
       "album": "Demi",
-      "spotifyUrl": "https://open.spotify.com/track/1V6gIisPpYqgFeWbMLI0bA"
+      "spotifyUrl": "https://open.spotify.com/track/1V6gIisPpYqgFeWbMLI0bA",
+      "hookStartMs": 44000
     },
     {
       "id": "kendrick-lamar-pride",
@@ -7465,7 +7652,8 @@
       "audio": null,
       "artwork": null,
       "album": "DAMN.",
-      "spotifyUrl": "https://open.spotify.com/track/6IZvVAP7VPPnsGX6bvgkqg"
+      "spotifyUrl": "https://open.spotify.com/track/6IZvVAP7VPPnsGX6bvgkqg",
+      "hookStartMs": 73400
     },
     {
       "id": "shawn-mendes-if-i-can-t-have-you",
@@ -7495,7 +7683,8 @@
       "audio": null,
       "artwork": null,
       "album": "Shawn Mendes (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/2bT1PH7Cw3J9p3t7nlXCdh"
+      "spotifyUrl": "https://open.spotify.com/track/2bT1PH7Cw3J9p3t7nlXCdh",
+      "hookStartMs": 66400
     },
     {
       "id": "baby-keem-family-ties-with-kendrick-lamar",
@@ -7552,7 +7741,8 @@
       "audio": null,
       "artwork": null,
       "album": "24K Magic",
-      "spotifyUrl": "https://open.spotify.com/track/0kN8xEmgMW9mh7UmDYHlJP"
+      "spotifyUrl": "https://open.spotify.com/track/0kN8xEmgMW9mh7UmDYHlJP",
+      "hookStartMs": 50000
     },
     {
       "id": "zara-larsson-never-forget-you",
@@ -7582,7 +7772,8 @@
       "audio": null,
       "artwork": null,
       "album": "So Good",
-      "spotifyUrl": "https://open.spotify.com/track/6hmhG1b4LEyNuashVvuIAo"
+      "spotifyUrl": "https://open.spotify.com/track/6hmhG1b4LEyNuashVvuIAo",
+      "hookStartMs": 53200
     },
     {
       "id": "ed-sheeran-the-a-team",
@@ -7612,7 +7803,8 @@
       "audio": null,
       "artwork": null,
       "album": "+",
-      "spotifyUrl": "https://open.spotify.com/track/6wJhz2jABaX2oMChhGy39Y"
+      "spotifyUrl": "https://open.spotify.com/track/6wJhz2jABaX2oMChhGy39Y",
+      "hookStartMs": 55200
     },
     {
       "id": "paramore-misery-business",
@@ -7642,7 +7834,8 @@
       "audio": null,
       "artwork": null,
       "album": "Riot!",
-      "spotifyUrl": "https://open.spotify.com/track/6SpLc7EXZIPpy0sVko0aoU"
+      "spotifyUrl": "https://open.spotify.com/track/6SpLc7EXZIPpy0sVko0aoU",
+      "hookStartMs": 60200
     },
     {
       "id": "nicki-minaj-super-bass",
@@ -7672,7 +7865,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pink Friday (Complete Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/3hlksXnvbKogFdPbpO9vel"
+      "spotifyUrl": "https://open.spotify.com/track/3hlksXnvbKogFdPbpO9vel",
+      "hookStartMs": 21000
     },
     {
       "id": "kendrick-lamar-swimming-pools-drank",
@@ -7702,7 +7896,8 @@
       "audio": null,
       "artwork": null,
       "album": "Swimming Pools (Drank)",
-      "spotifyUrl": "https://open.spotify.com/track/6REbwUNlppTfcnV4d4ZoZi"
+      "spotifyUrl": "https://open.spotify.com/track/6REbwUNlppTfcnV4d4ZoZi",
+      "hookStartMs": 61800
     },
     {
       "id": "frank-ocean-white-ferrari",
@@ -7759,7 +7954,8 @@
       "audio": null,
       "artwork": null,
       "album": "Ocean Eyes",
-      "spotifyUrl": "https://open.spotify.com/track/3DamFFqW32WihKkTVlwTYQ"
+      "spotifyUrl": "https://open.spotify.com/track/3DamFFqW32WihKkTVlwTYQ",
+      "hookStartMs": 87200
     },
     {
       "id": "james-blunt-you-re-beautiful",
@@ -7789,7 +7985,8 @@
       "audio": null,
       "artwork": null,
       "album": "Back to Bedlam",
-      "spotifyUrl": "https://open.spotify.com/track/5pbajJXEPdcoXQPXoAVR1t"
+      "spotifyUrl": "https://open.spotify.com/track/5pbajJXEPdcoXQPXoAVR1t",
+      "hookStartMs": 63600
     },
     {
       "id": "destiny-s-child-say-my-name",
@@ -7819,7 +8016,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Writing's On The Wall",
-      "spotifyUrl": "https://open.spotify.com/track/7H6ev70Weq6DdpZyyTmUXk"
+      "spotifyUrl": "https://open.spotify.com/track/7H6ev70Weq6DdpZyyTmUXk",
+      "hookStartMs": 61400
     },
     {
       "id": "taylor-swift-love-story",
@@ -7849,7 +8047,8 @@
       "audio": null,
       "artwork": null,
       "album": "Fearless",
-      "spotifyUrl": "https://open.spotify.com/track/1vrd6UOGamcKNGnSHJQlSt"
+      "spotifyUrl": "https://open.spotify.com/track/1vrd6UOGamcKNGnSHJQlSt",
+      "hookStartMs": 117600
     },
     {
       "id": "usher-my-boo",
@@ -7879,7 +8078,8 @@
       "audio": null,
       "artwork": null,
       "album": "Confessions (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/68vgtRHr7iZHpzGpon6Jlo"
+      "spotifyUrl": "https://open.spotify.com/track/68vgtRHr7iZHpzGpon6Jlo",
+      "hookStartMs": 51600
     },
     {
       "id": "leona-lewis-bleeding-love",
@@ -7909,7 +8109,8 @@
       "audio": null,
       "artwork": null,
       "album": "Spirit",
-      "spotifyUrl": "https://open.spotify.com/track/7wZUrN8oemZfsEd1CGkbXE"
+      "spotifyUrl": "https://open.spotify.com/track/7wZUrN8oemZfsEd1CGkbXE",
+      "hookStartMs": 162800
     },
     {
       "id": "galantis-runaway-u-i",
@@ -7939,7 +8140,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pharmacy",
-      "spotifyUrl": "https://open.spotify.com/track/46lFttIf5hnUZMGvjK0Wxo"
+      "spotifyUrl": "https://open.spotify.com/track/46lFttIf5hnUZMGvjK0Wxo",
+      "hookStartMs": 101600
     },
     {
       "id": "sean-kingston-beautiful-girls",
@@ -7993,7 +8195,8 @@
       "audio": null,
       "artwork": null,
       "album": "Saturn",
-      "spotifyUrl": "https://open.spotify.com/track/1bjeWoagtHmUKputLVyDxQ"
+      "spotifyUrl": "https://open.spotify.com/track/1bjeWoagtHmUKputLVyDxQ",
+      "hookStartMs": 63000
     },
     {
       "id": "lady-gaga-telephone",
@@ -8023,7 +8226,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Fame Monster (Deluxe Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/4TCL0qqKyqsMZml0G3M9IM"
+      "spotifyUrl": "https://open.spotify.com/track/4TCL0qqKyqsMZml0G3M9IM",
+      "hookStartMs": 70400
     },
     {
       "id": "panic-at-the-disco-i-write-sins-not-tragedies",
@@ -8053,7 +8257,8 @@
       "audio": null,
       "artwork": null,
       "album": "A Fever You Can't Sweat Out",
-      "spotifyUrl": "https://open.spotify.com/track/4948g5UqwZFLGI8UTOXqdi"
+      "spotifyUrl": "https://open.spotify.com/track/4948g5UqwZFLGI8UTOXqdi",
+      "hookStartMs": 78200
     },
     {
       "id": "neon-trees-everybody-talks",
@@ -8083,7 +8288,8 @@
       "audio": null,
       "artwork": null,
       "album": "Picture Show",
-      "spotifyUrl": "https://open.spotify.com/track/2iUmqdfGZcHIhS3b9E9EWq"
+      "spotifyUrl": "https://open.spotify.com/track/2iUmqdfGZcHIhS3b9E9EWq",
+      "hookStartMs": 63400
     },
     {
       "id": "black-eyed-peas-meet-me-halfway",
@@ -8113,7 +8319,8 @@
       "audio": null,
       "artwork": null,
       "album": "THE E.N.D. (THE ENERGY NEVER DIES)",
-      "spotifyUrl": "https://open.spotify.com/track/6wOYnPq1hPihRepcDClPUw"
+      "spotifyUrl": "https://open.spotify.com/track/6wOYnPq1hPihRepcDClPUw",
+      "hookStartMs": 52000
     },
     {
       "id": "childish-gambino-3005",
@@ -8170,7 +8377,8 @@
       "audio": null,
       "artwork": null,
       "album": "Eenie Meenie",
-      "spotifyUrl": "https://open.spotify.com/track/4vVTI94F9uJ8lHNDWKv0i2"
+      "spotifyUrl": "https://open.spotify.com/track/4vVTI94F9uJ8lHNDWKv0i2",
+      "hookStartMs": 46400
     },
     {
       "id": "demi-lovato-cool-for-the-summer",
@@ -8200,7 +8408,8 @@
       "audio": null,
       "artwork": null,
       "album": "Confident",
-      "spotifyUrl": "https://open.spotify.com/track/3uwnnTQcHM1rDqSfA4gQNz"
+      "spotifyUrl": "https://open.spotify.com/track/3uwnnTQcHM1rDqSfA4gQNz",
+      "hookStartMs": 51400
     },
     {
       "id": "olivia-dean-man-i-need",
@@ -8230,7 +8439,8 @@
       "audio": null,
       "artwork": null,
       "album": "Man I Need",
-      "spotifyUrl": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX"
+      "spotifyUrl": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX",
+      "hookStartMs": 79200
     },
     {
       "id": "lorde-team",
@@ -8260,7 +8470,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pure Heroine",
-      "spotifyUrl": "https://open.spotify.com/track/3G6hD9B2ZHOsgf4WfNu7X1"
+      "spotifyUrl": "https://open.spotify.com/track/3G6hD9B2ZHOsgf4WfNu7X1",
+      "hookStartMs": 68800
     },
     {
       "id": "charlie-puth-one-call-away",
@@ -8290,7 +8501,8 @@
       "audio": null,
       "artwork": null,
       "album": "Nine Track Mind",
-      "spotifyUrl": "https://open.spotify.com/track/7soJgKhQTO8hLP2JPRkL5O"
+      "spotifyUrl": "https://open.spotify.com/track/7soJgKhQTO8hLP2JPRkL5O",
+      "hookStartMs": 76600
     },
     {
       "id": "taylor-swift-you-belong-with-me-taylor-s-version",
@@ -8320,7 +8532,8 @@
       "audio": null,
       "artwork": null,
       "album": "Valentines Day 2022",
-      "spotifyUrl": "https://open.spotify.com/track/04K9KfH0TQyrdadWYV30Tq"
+      "spotifyUrl": "https://open.spotify.com/track/04K9KfH0TQyrdadWYV30Tq",
+      "hookStartMs": 54800
     },
     {
       "id": "the-mar-as-no-one-noticed",
@@ -8350,7 +8563,8 @@
       "audio": null,
       "artwork": null,
       "album": "Submarine",
-      "spotifyUrl": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5"
+      "spotifyUrl": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5",
+      "hookStartMs": 155000
     },
     {
       "id": "kelly-clarkson-since-u-been-gone",
@@ -8380,7 +8594,8 @@
       "audio": null,
       "artwork": null,
       "album": "Breakaway",
-      "spotifyUrl": "https://open.spotify.com/track/6JY1IdkZGeIcPegKxjSKeb"
+      "spotifyUrl": "https://open.spotify.com/track/6JY1IdkZGeIcPegKxjSKeb",
+      "hookStartMs": 50000
     },
     {
       "id": "childish-gambino-les",
@@ -8437,7 +8652,8 @@
       "audio": null,
       "artwork": null,
       "album": "Monkey Business",
-      "spotifyUrl": "https://open.spotify.com/track/2ygMBIctKIAfbEBcT9065L"
+      "spotifyUrl": "https://open.spotify.com/track/2ygMBIctKIAfbEBcT9065L",
+      "hookStartMs": 69600
     },
     {
       "id": "rihanna-disturbia",
@@ -8467,7 +8683,8 @@
       "audio": null,
       "artwork": null,
       "album": "Good Girl Gone Bad: Reloaded",
-      "spotifyUrl": "https://open.spotify.com/track/2VOomzT6VavJOGBeySqaMc"
+      "spotifyUrl": "https://open.spotify.com/track/2VOomzT6VavJOGBeySqaMc",
+      "hookStartMs": 143400
     },
     {
       "id": "pitbull-feel-this-moment-feat-christina-aguilera",
@@ -8524,7 +8741,8 @@
       "audio": null,
       "artwork": null,
       "album": "Boy's a liar Pt. 2",
-      "spotifyUrl": "https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv"
+      "spotifyUrl": "https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv",
+      "hookStartMs": 42200
     },
     {
       "id": "p-nk-try",
@@ -8554,7 +8772,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Truth About Love",
-      "spotifyUrl": "https://open.spotify.com/track/1jF7IL57ayN4Ity3jQqGu0"
+      "spotifyUrl": "https://open.spotify.com/track/1jF7IL57ayN4Ity3jQqGu0",
+      "hookStartMs": 44800
     },
     {
       "id": "ariana-grande-boyfriend-with-social-house",
@@ -8611,7 +8830,8 @@
       "audio": null,
       "artwork": null,
       "album": "Music Of The Sun",
-      "spotifyUrl": "https://open.spotify.com/track/4TsmezEQVSZNNPv5RJ65Ov"
+      "spotifyUrl": "https://open.spotify.com/track/4TsmezEQVSZNNPv5RJ65Ov",
+      "hookStartMs": 40800
     },
     {
       "id": "lorde-ribs",
@@ -8641,7 +8861,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pure Heroine",
-      "spotifyUrl": "https://open.spotify.com/track/2MvvoeRt8NcOXWESkxWn3g"
+      "spotifyUrl": "https://open.spotify.com/track/2MvvoeRt8NcOXWESkxWn3g",
+      "hookStartMs": 92200
     },
     {
       "id": "drake-teenage-fever",
@@ -8671,7 +8892,8 @@
       "audio": null,
       "artwork": null,
       "album": "More Life",
-      "spotifyUrl": "https://open.spotify.com/track/6n3HGiq4v35D6eFOSwqYuo"
+      "spotifyUrl": "https://open.spotify.com/track/6n3HGiq4v35D6eFOSwqYuo",
+      "hookStartMs": 24000
     },
     {
       "id": "khalid-love-lies",
@@ -8701,7 +8923,8 @@
       "audio": null,
       "artwork": null,
       "album": "Love Lies",
-      "spotifyUrl": "https://open.spotify.com/track/45Egmo7icyopuzJN0oMEdk"
+      "spotifyUrl": "https://open.spotify.com/track/45Egmo7icyopuzJN0oMEdk",
+      "hookStartMs": 42800
     },
     {
       "id": "justin-bieber-mistletoe",
@@ -8731,7 +8954,8 @@
       "audio": null,
       "artwork": null,
       "album": "Under The Mistletoe (Deluxe Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/7xapw9Oy21WpfEcib2ErSA"
+      "spotifyUrl": "https://open.spotify.com/track/7xapw9Oy21WpfEcib2ErSA",
+      "hookStartMs": 61400
     },
     {
       "id": "estelle-american-boy",
@@ -8761,7 +8985,8 @@
       "audio": null,
       "artwork": null,
       "album": "Shine",
-      "spotifyUrl": "https://open.spotify.com/track/6etwirSInfuJrSOlogS6Sh"
+      "spotifyUrl": "https://open.spotify.com/track/6etwirSInfuJrSOlogS6Sh",
+      "hookStartMs": 38000
     },
     {
       "id": "becky-g-shower",
@@ -8791,7 +9016,8 @@
       "audio": null,
       "artwork": null,
       "album": "Shower",
-      "spotifyUrl": "https://open.spotify.com/track/3DmW6y7wTEYHJZlLo1r6XJ"
+      "spotifyUrl": "https://open.spotify.com/track/3DmW6y7wTEYHJZlLo1r6XJ",
+      "hookStartMs": 33600
     },
     {
       "id": "nelly-furtado-say-it-right",
@@ -8821,7 +9047,8 @@
       "audio": null,
       "artwork": null,
       "album": "Loose",
-      "spotifyUrl": "https://open.spotify.com/track/2aI21FnmY7TJVKeMaoQZ0t"
+      "spotifyUrl": "https://open.spotify.com/track/2aI21FnmY7TJVKeMaoQZ0t",
+      "hookStartMs": 138000
     },
     {
       "id": "rachel-platten-fight-song",
@@ -8851,7 +9078,8 @@
       "audio": null,
       "artwork": null,
       "album": "Wildfire",
-      "spotifyUrl": "https://open.spotify.com/track/37f4ITSlgPX81ad2EvmVQr"
+      "spotifyUrl": "https://open.spotify.com/track/37f4ITSlgPX81ad2EvmVQr",
+      "hookStartMs": 37600
     },
     {
       "id": "b-o-b-airplanes-feat-hayley-williams-of-paramore",
@@ -8881,7 +9109,8 @@
       "audio": null,
       "artwork": null,
       "album": "B.o.B Presents: The Adventures of Bobby Ray",
-      "spotifyUrl": "https://open.spotify.com/track/6lV2MSQmRIkycDScNtrBXO"
+      "spotifyUrl": "https://open.spotify.com/track/6lV2MSQmRIkycDScNtrBXO",
+      "hookStartMs": 71000
     },
     {
       "id": "sza-love-galore-feat-travis-scott",
@@ -8938,7 +9167,8 @@
       "audio": null,
       "artwork": null,
       "album": "Trouble Deluxe Edition",
-      "spotifyUrl": "https://open.spotify.com/track/4v7DCN09hgXkKazefkznDQ"
+      "spotifyUrl": "https://open.spotify.com/track/4v7DCN09hgXkKazefkznDQ",
+      "hookStartMs": 121600
     },
     {
       "id": "50-cent-21-questions",
@@ -8968,7 +9198,8 @@
       "audio": null,
       "artwork": null,
       "album": "Get Rich Or Die Tryin'",
-      "spotifyUrl": "https://open.spotify.com/track/41bIQPBE1lFN0mmw6Lmssz"
+      "spotifyUrl": "https://open.spotify.com/track/41bIQPBE1lFN0mmw6Lmssz",
+      "hookStartMs": 114200
     },
     {
       "id": "lady-gaga-paparazzi",
@@ -8998,7 +9229,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Fame",
-      "spotifyUrl": "https://open.spotify.com/track/7Hqig8kp32q2Ire3ECQvWM"
+      "spotifyUrl": "https://open.spotify.com/track/7Hqig8kp32q2Ire3ECQvWM",
+      "hookStartMs": 43000
     },
     {
       "id": "kid-cudi-pursuit-of-happiness-nightmare",
@@ -9028,7 +9260,8 @@
       "audio": null,
       "artwork": null,
       "album": "Man On The Moon: The End Of Day",
-      "spotifyUrl": "https://open.spotify.com/track/5iSEsR6NKjlC9SrIJkyL3k"
+      "spotifyUrl": "https://open.spotify.com/track/5iSEsR6NKjlC9SrIJkyL3k",
+      "hookStartMs": 204800
     },
     {
       "id": "justin-timberlake-rock-your-body",
@@ -9058,7 +9291,8 @@
       "audio": null,
       "artwork": null,
       "album": "Justified",
-      "spotifyUrl": "https://open.spotify.com/track/1AWQoqb9bSvzTjaLralEkT"
+      "spotifyUrl": "https://open.spotify.com/track/1AWQoqb9bSvzTjaLralEkT",
+      "hookStartMs": 153400
     },
     {
       "id": "john-newman-love-me-again",
@@ -9086,7 +9320,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/john-newman-love-me-again.jpg?v=197091-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 89200
     },
     {
       "id": "kesha-die-young",
@@ -9116,7 +9351,8 @@
       "audio": null,
       "artwork": null,
       "album": "Warrior (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/7EQGXaVSyEDsCWKmUcfpLk"
+      "spotifyUrl": "https://open.spotify.com/track/7EQGXaVSyEDsCWKmUcfpLk",
+      "hookStartMs": 39200
     },
     {
       "id": "ellie-goulding-burn",
@@ -9146,7 +9382,8 @@
       "audio": null,
       "artwork": null,
       "album": "Halcyon Days",
-      "spotifyUrl": "https://open.spotify.com/track/0xMd5bcWTbyXS7wPrBtZA6"
+      "spotifyUrl": "https://open.spotify.com/track/0xMd5bcWTbyXS7wPrBtZA6",
+      "hookStartMs": 55000
     },
     {
       "id": "m-i-a-paper-planes",
@@ -9176,7 +9413,8 @@
       "audio": null,
       "artwork": null,
       "album": "Kala",
-      "spotifyUrl": "https://open.spotify.com/track/1ixbwbeBi5ufN4noUKmW5a"
+      "spotifyUrl": "https://open.spotify.com/track/1ixbwbeBi5ufN4noUKmW5a",
+      "hookStartMs": 13000
     },
     {
       "id": "gwen-stefani-the-sweet-escape",
@@ -9233,7 +9471,8 @@
       "audio": null,
       "artwork": null,
       "album": "I like it when you sleep, for you are so beautiful yet so unaware of it",
-      "spotifyUrl": "https://open.spotify.com/track/5hc71nKsUgtwQ3z52KEKQk"
+      "spotifyUrl": "https://open.spotify.com/track/5hc71nKsUgtwQ3z52KEKQk",
+      "hookStartMs": 53800
     },
     {
       "id": "train-drive-by",
@@ -9263,7 +9502,8 @@
       "audio": null,
       "artwork": null,
       "album": "California 37",
-      "spotifyUrl": "https://open.spotify.com/track/0KAiuUOrLTIkzkpfpn9jb9"
+      "spotifyUrl": "https://open.spotify.com/track/0KAiuUOrLTIkzkpfpn9jb9",
+      "hookStartMs": 60200
     },
     {
       "id": "ne-yo-miss-independent",
@@ -9293,7 +9533,8 @@
       "audio": null,
       "artwork": null,
       "album": "Year Of The Gentleman",
-      "spotifyUrl": "https://open.spotify.com/track/1yJ5fyqBusR7Verj8JGsKV"
+      "spotifyUrl": "https://open.spotify.com/track/1yJ5fyqBusR7Verj8JGsKV",
+      "hookStartMs": 94600
     },
     {
       "id": "taylor-swift-enchanted",
@@ -9323,7 +9564,8 @@
       "audio": null,
       "artwork": null,
       "album": "Speak Now",
-      "spotifyUrl": "https://open.spotify.com/track/10eBRyImhfqVvkiVEGf0N0"
+      "spotifyUrl": "https://open.spotify.com/track/10eBRyImhfqVvkiVEGf0N0",
+      "hookStartMs": 90000
     },
     {
       "id": "jay-sean-down",
@@ -9380,7 +9622,8 @@
       "audio": null,
       "artwork": null,
       "album": "Being Funny In A Foreign Language",
-      "spotifyUrl": "https://open.spotify.com/track/3hEfpBHxgieRLz4t3kLNEg"
+      "spotifyUrl": "https://open.spotify.com/track/3hEfpBHxgieRLz4t3kLNEg",
+      "hookStartMs": 86200
     },
     {
       "id": "david-guetta-hey-mama-feat-nicki-minaj-bebe-rexha-afrojack",
@@ -9464,7 +9707,8 @@
       "audio": null,
       "artwork": null,
       "album": "LOVE?",
-      "spotifyUrl": "https://open.spotify.com/track/20zQZVyUNPbq8kZACdgYrh"
+      "spotifyUrl": "https://open.spotify.com/track/20zQZVyUNPbq8kZACdgYrh",
+      "hookStartMs": 99400
     },
     {
       "id": "future-like-that",
@@ -9494,7 +9738,8 @@
       "audio": null,
       "artwork": null,
       "album": "WE DON'T TRUST YOU",
-      "spotifyUrl": "https://open.spotify.com/track/2tudvzsrR56uom6smgOcSf"
+      "spotifyUrl": "https://open.spotify.com/track/2tudvzsrR56uom6smgOcSf",
+      "hookStartMs": 200800
     },
     {
       "id": "frank-ocean-novacane",
@@ -9551,7 +9796,8 @@
       "audio": null,
       "artwork": null,
       "album": "Son Of Spergy",
-      "spotifyUrl": "https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48"
+      "spotifyUrl": "https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48",
+      "hookStartMs": 49600
     },
     {
       "id": "daniel-caesar-always",
@@ -9581,7 +9827,8 @@
       "audio": null,
       "artwork": null,
       "album": "NEVER ENOUGH",
-      "spotifyUrl": "https://open.spotify.com/track/2LlOeW5rVcvl3QcPNPcDus"
+      "spotifyUrl": "https://open.spotify.com/track/2LlOeW5rVcvl3QcPNPcDus",
+      "hookStartMs": 61000
     },
     {
       "id": "daniel-caesar-loose",
@@ -9611,7 +9858,8 @@
       "audio": null,
       "artwork": null,
       "album": "Freudian",
-      "spotifyUrl": "https://open.spotify.com/track/3xqWiKFFYF9Pv7H1nNoZFd"
+      "spotifyUrl": "https://open.spotify.com/track/3xqWiKFFYF9Pv7H1nNoZFd",
+      "hookStartMs": 59600
     },
     {
       "id": "daniel-caesar-freudian",
@@ -9641,7 +9889,8 @@
       "audio": null,
       "artwork": null,
       "album": "Freudian",
-      "spotifyUrl": "https://open.spotify.com/track/1WFgv04BZTx6gZWQNE6Sp7"
+      "spotifyUrl": "https://open.spotify.com/track/1WFgv04BZTx6gZWQNE6Sp7",
+      "hookStartMs": 24600
     },
     {
       "id": "daniel-caesar-blessed",
@@ -9671,7 +9920,8 @@
       "audio": null,
       "artwork": null,
       "album": "Freudian",
-      "spotifyUrl": "https://open.spotify.com/track/2XjoHA58XD0t3qye8bYGU8"
+      "spotifyUrl": "https://open.spotify.com/track/2XjoHA58XD0t3qye8bYGU8",
+      "hookStartMs": 115800
     },
     {
       "id": "daniel-caesar-streetcar",
@@ -9701,7 +9951,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pilgrim's Paradise",
-      "spotifyUrl": "https://open.spotify.com/track/3m5rs2BeWjLUe0Ygc6aM7i"
+      "spotifyUrl": "https://open.spotify.com/track/3m5rs2BeWjLUe0Ygc6aM7i",
+      "hookStartMs": 104600
     },
     {
       "id": "daniel-caesar-cyanide",
@@ -9731,7 +9982,8 @@
       "audio": null,
       "artwork": null,
       "album": "CASE STUDY 01",
-      "spotifyUrl": "https://open.spotify.com/track/7lmsi1pVDa3HnfeinsL89t"
+      "spotifyUrl": "https://open.spotify.com/track/7lmsi1pVDa3HnfeinsL89t",
+      "hookStartMs": 40200
     },
     {
       "id": "daniel-caesar-superpowers",
@@ -9761,7 +10013,8 @@
       "audio": null,
       "artwork": null,
       "album": "NEVER ENOUGH",
-      "spotifyUrl": "https://open.spotify.com/track/736PP5LTtREkDgktNmX3Gu"
+      "spotifyUrl": "https://open.spotify.com/track/736PP5LTtREkDgktNmX3Gu",
+      "hookStartMs": 96200
     },
     {
       "id": "justin-bieber-one-time",
@@ -9791,7 +10044,8 @@
       "audio": null,
       "artwork": null,
       "album": "My World (Canada Version - All BP's)",
-      "spotifyUrl": "https://open.spotify.com/track/38dxwjNTN6sw1ZV3EivUUu"
+      "spotifyUrl": "https://open.spotify.com/track/38dxwjNTN6sw1ZV3EivUUu",
+      "hookStartMs": 96600
     },
     {
       "id": "justin-bieber-one-less-lonely-girl",
@@ -9821,7 +10075,8 @@
       "audio": null,
       "artwork": null,
       "album": "My World",
-      "spotifyUrl": "https://open.spotify.com/track/69ghzc538EQSVon2Gm3wrr"
+      "spotifyUrl": "https://open.spotify.com/track/69ghzc538EQSVon2Gm3wrr",
+      "hookStartMs": 179200
     },
     {
       "id": "justin-bieber-boyfriend",
@@ -9851,7 +10106,8 @@
       "audio": null,
       "artwork": null,
       "album": "Believe",
-      "spotifyUrl": "https://open.spotify.com/track/3UGIZ8qcrMTwzLbx6Kttqt"
+      "spotifyUrl": "https://open.spotify.com/track/3UGIZ8qcrMTwzLbx6Kttqt",
+      "hookStartMs": 127600
     },
     {
       "id": "justin-bieber-what-do-you-mean",
@@ -9881,7 +10137,8 @@
       "audio": null,
       "artwork": null,
       "album": "Purpose (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/4B0JvthVoAAuygILe3n4Bs"
+      "spotifyUrl": "https://open.spotify.com/track/4B0JvthVoAAuygILe3n4Bs",
+      "hookStartMs": 20000
     },
     {
       "id": "justin-bieber-company",
@@ -9911,7 +10168,8 @@
       "audio": null,
       "artwork": null,
       "album": "Purpose (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/61uyGDPJ06MkxJtHgPmuyO"
+      "spotifyUrl": "https://open.spotify.com/track/61uyGDPJ06MkxJtHgPmuyO",
+      "hookStartMs": 70600
     },
     {
       "id": "justin-bieber-anyone",
@@ -9941,7 +10199,8 @@
       "audio": null,
       "artwork": null,
       "album": "Justice",
-      "spotifyUrl": "https://open.spotify.com/track/2WnAKZefdRHxtBEkRjFOHC"
+      "spotifyUrl": "https://open.spotify.com/track/2WnAKZefdRHxtBEkRjFOHC",
+      "hookStartMs": 87000
     },
     {
       "id": "justin-bieber-hold-on",
@@ -9971,7 +10230,8 @@
       "audio": null,
       "artwork": null,
       "album": "Justice",
-      "spotifyUrl": "https://open.spotify.com/track/1nahzW3kfMuwReTka28tH5"
+      "spotifyUrl": "https://open.spotify.com/track/1nahzW3kfMuwReTka28tH5",
+      "hookStartMs": 87000
     },
     {
       "id": "justin-bieber-all-that-matters",
@@ -10001,7 +10261,8 @@
       "audio": null,
       "artwork": null,
       "album": "Journals",
-      "spotifyUrl": "https://open.spotify.com/track/6CLVh9sekZ1p2G8Tfhhj8h"
+      "spotifyUrl": "https://open.spotify.com/track/6CLVh9sekZ1p2G8Tfhhj8h",
+      "hookStartMs": 18000
     },
     {
       "id": "justin-bieber-daisies",
@@ -10031,7 +10292,8 @@
       "audio": null,
       "artwork": null,
       "album": "SWAG",
-      "spotifyUrl": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb"
+      "spotifyUrl": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb",
+      "hookStartMs": 49800
     },
     {
       "id": "brent-faiyaz-clouded",
@@ -10061,7 +10323,8 @@
       "audio": null,
       "artwork": null,
       "album": "Fuck The World",
-      "spotifyUrl": "https://open.spotify.com/track/2J6OF7CkpdQGSfm1wdclqn"
+      "spotifyUrl": "https://open.spotify.com/track/2J6OF7CkpdQGSfm1wdclqn",
+      "hookStartMs": 49800
     },
     {
       "id": "brent-faiyaz-trust",
@@ -10091,7 +10354,8 @@
       "audio": null,
       "artwork": null,
       "album": "Lost",
-      "spotifyUrl": "https://open.spotify.com/track/0oufSLnKQDoBFX5mgkDCgR"
+      "spotifyUrl": "https://open.spotify.com/track/0oufSLnKQDoBFX5mgkDCgR",
+      "hookStartMs": 43400
     },
     {
       "id": "brent-faiyaz-dead-man-walking",
@@ -10121,7 +10385,8 @@
       "audio": null,
       "artwork": null,
       "album": "WASTELAND",
-      "spotifyUrl": "https://open.spotify.com/track/2c2tlXfEmLgUNvxngIi1qL"
+      "spotifyUrl": "https://open.spotify.com/track/2c2tlXfEmLgUNvxngIi1qL",
+      "hookStartMs": 121800
     },
     {
       "id": "brent-faiyaz-jackie-brown",
@@ -10151,7 +10416,8 @@
       "audio": null,
       "artwork": null,
       "album": "WASTELAND",
-      "spotifyUrl": "https://open.spotify.com/track/2IlT65thKQQw248mhk2PjQ"
+      "spotifyUrl": "https://open.spotify.com/track/2IlT65thKQQw248mhk2PjQ",
+      "hookStartMs": 48000
     },
     {
       "id": "brent-faiyaz-all-mine",
@@ -10181,7 +10447,8 @@
       "audio": null,
       "artwork": null,
       "album": "WASTELAND",
-      "spotifyUrl": "https://open.spotify.com/track/3XgGQ1wjo5khvq2UImjyNF"
+      "spotifyUrl": "https://open.spotify.com/track/3XgGQ1wjo5khvq2UImjyNF",
+      "hookStartMs": 37600
     },
     {
       "id": "sza-kill-bill",
@@ -10211,7 +10478,8 @@
       "audio": null,
       "artwork": null,
       "album": "SOS",
-      "spotifyUrl": "https://open.spotify.com/track/3OHfY25tqY28d16oZczHc8"
+      "spotifyUrl": "https://open.spotify.com/track/3OHfY25tqY28d16oZczHc8",
+      "hookStartMs": 31000
     },
     {
       "id": "sza-broken-clocks",
@@ -10241,7 +10509,8 @@
       "audio": null,
       "artwork": null,
       "album": "Ctrl",
-      "spotifyUrl": "https://open.spotify.com/track/2fXwCWkh6YG5zU1IyvQrbs"
+      "spotifyUrl": "https://open.spotify.com/track/2fXwCWkh6YG5zU1IyvQrbs",
+      "hookStartMs": 13000
     },
     {
       "id": "sza-the-weekend",
@@ -10271,7 +10540,8 @@
       "audio": null,
       "artwork": null,
       "album": "Ctrl",
-      "spotifyUrl": "https://open.spotify.com/track/6gU9OKjOE7ghfEd55oRO57"
+      "spotifyUrl": "https://open.spotify.com/track/6gU9OKjOE7ghfEd55oRO57",
+      "hookStartMs": 44200
     },
     {
       "id": "kendrick-lamar-alright",
@@ -10301,7 +10571,8 @@
       "audio": null,
       "artwork": null,
       "album": "To Pimp A Butterfly",
-      "spotifyUrl": "https://open.spotify.com/track/3iVcZ5G6tvkXZkZKlMpIUs"
+      "spotifyUrl": "https://open.spotify.com/track/3iVcZ5G6tvkXZkZKlMpIUs",
+      "hookStartMs": 19600
     },
     {
       "id": "drake-jungle",
@@ -10331,7 +10602,8 @@
       "audio": null,
       "artwork": null,
       "album": "If You're Reading This It's Too Late",
-      "spotifyUrl": "https://open.spotify.com/track/7JXZq0JgG2zTrSOAgY8VMC"
+      "spotifyUrl": "https://open.spotify.com/track/7JXZq0JgG2zTrSOAgY8VMC",
+      "hookStartMs": 62600
     },
     {
       "id": "drake-marvins-room",
@@ -10361,7 +10633,8 @@
       "audio": null,
       "artwork": null,
       "album": "Take Care (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/047fCsbO4NdmwCBn8pcUXl"
+      "spotifyUrl": "https://open.spotify.com/track/047fCsbO4NdmwCBn8pcUXl",
+      "hookStartMs": 43000
     },
     {
       "id": "drake-feel-no-ways",
@@ -10391,7 +10664,8 @@
       "audio": null,
       "artwork": null,
       "album": "Views",
-      "spotifyUrl": "https://open.spotify.com/track/3cjF2OFRmip8spwZYQRKxP"
+      "spotifyUrl": "https://open.spotify.com/track/3cjF2OFRmip8spwZYQRKxP",
+      "hookStartMs": 20200
     },
     {
       "id": "frank-ocean-chanel",
@@ -10475,7 +10749,8 @@
       "audio": null,
       "artwork": null,
       "album": "Trilogy",
-      "spotifyUrl": "https://open.spotify.com/track/6VwBbL8CzPiC4QV66ay7oR"
+      "spotifyUrl": "https://open.spotify.com/track/6VwBbL8CzPiC4QV66ay7oR",
+      "hookStartMs": 116800
     },
     {
       "id": "the-weeknd-out-of-time",
@@ -10505,7 +10780,8 @@
       "audio": null,
       "artwork": null,
       "album": "Dawn FM",
-      "spotifyUrl": "https://open.spotify.com/track/2SLwbpExuoBDZBpjfefCtV"
+      "spotifyUrl": "https://open.spotify.com/track/2SLwbpExuoBDZBpjfefCtV",
+      "hookStartMs": 63800
     },
     {
       "id": "tyler-wusyaname",
@@ -10533,7 +10809,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-wusyaname.jpg?v=121858-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 30600
     },
     {
       "id": "tyler-sweet-i-thought-you-wanted-to-dance",
@@ -10561,7 +10838,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-sweet-i-thought-you-wanted-to-dance.jpg?v=588150-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 54800
     },
     {
       "id": "tyler-like-him",
@@ -10589,7 +10867,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-like-him.jpg?v=278015-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 88600
     },
     {
       "id": "mac-miller-dang",
@@ -10673,7 +10952,8 @@
       "audio": null,
       "artwork": null,
       "album": "Swimming",
-      "spotifyUrl": "https://open.spotify.com/track/5bJ1DrEM4hNCafcDd1oxHx"
+      "spotifyUrl": "https://open.spotify.com/track/5bJ1DrEM4hNCafcDd1oxHx",
+      "hookStartMs": 26400
     },
     {
       "id": "mac-miller-come-back-to-earth",
@@ -10703,7 +10983,8 @@
       "audio": null,
       "artwork": null,
       "album": "Swimming",
-      "spotifyUrl": "https://open.spotify.com/track/01z2fBGB8Hl3Jd3zXe4IXR"
+      "spotifyUrl": "https://open.spotify.com/track/01z2fBGB8Hl3Jd3zXe4IXR",
+      "hookStartMs": 38800
     },
     {
       "id": "childish-gambino-me-and-your-mama",
@@ -10784,7 +11065,8 @@
       "audio": null,
       "artwork": null,
       "album": "TAKE TIME",
-      "spotifyUrl": "https://open.spotify.com/track/6qBFSepqLCuh5tehehc1bd"
+      "spotifyUrl": "https://open.spotify.com/track/6qBFSepqLCuh5tehehc1bd",
+      "hookStartMs": 75800
     },
     {
       "id": "giveon-for-tonight",
@@ -10814,7 +11096,8 @@
       "audio": null,
       "artwork": null,
       "album": "For Tonight",
-      "spotifyUrl": "https://open.spotify.com/track/61Emqg95O9zo1GNOcyxq4Y"
+      "spotifyUrl": "https://open.spotify.com/track/61Emqg95O9zo1GNOcyxq4Y",
+      "hookStartMs": 58400
     },
     {
       "id": "partynextdoor-come-and-see-me",
@@ -10871,7 +11154,8 @@
       "audio": null,
       "artwork": null,
       "album": "PARTYNEXTDOOR 3 (P3)",
-      "spotifyUrl": "https://open.spotify.com/track/6tHt7Ln9RV8FTlT4kTxr2b"
+      "spotifyUrl": "https://open.spotify.com/track/6tHt7Ln9RV8FTlT4kTxr2b",
+      "hookStartMs": 43400
     },
     {
       "id": "malcolm-todd-chest-pain-i-love",
@@ -10901,7 +11185,8 @@
       "audio": null,
       "artwork": null,
       "album": "Chest Pain (I Love)",
-      "spotifyUrl": "https://open.spotify.com/track/3gPYoFtn70aTgl546XVSET"
+      "spotifyUrl": "https://open.spotify.com/track/3gPYoFtn70aTgl546XVSET",
+      "hookStartMs": 18600
     },
     {
       "id": "ravyn-lenae-love-me-not",
@@ -10958,7 +11243,8 @@
       "audio": null,
       "artwork": null,
       "album": "undressed",
-      "spotifyUrl": "https://open.spotify.com/track/4AajxCEwGEsmHmT4H1TwjY"
+      "spotifyUrl": "https://open.spotify.com/track/4AajxCEwGEsmHmT4H1TwjY",
+      "hookStartMs": 50200
     },
     {
       "id": "pinkpantheress-illegal",
@@ -10988,7 +11274,8 @@
       "audio": null,
       "artwork": null,
       "album": "Fancy That",
-      "spotifyUrl": "https://open.spotify.com/track/1WmBVbFmLt0w6zPP37TeCG"
+      "spotifyUrl": "https://open.spotify.com/track/1WmBVbFmLt0w6zPP37TeCG",
+      "hookStartMs": 24200
     },
     {
       "id": "black-eyed-peas-rock-that-body",
@@ -11018,7 +11305,8 @@
       "audio": null,
       "artwork": null,
       "album": "THE E.N.D. (THE ENERGY NEVER DIES)",
-      "spotifyUrl": "https://open.spotify.com/track/7K8XoQXZBffc4xG2xIQHMO"
+      "spotifyUrl": "https://open.spotify.com/track/7K8XoQXZBffc4xG2xIQHMO",
+      "hookStartMs": 34400
     },
     {
       "id": "jeezy-soul-survivor",
@@ -11048,7 +11336,8 @@
       "audio": null,
       "artwork": null,
       "album": "Let's Get It: Thug Motivation 101",
-      "spotifyUrl": "https://open.spotify.com/track/0Ss50OU9tCozI7JIywkv14"
+      "spotifyUrl": "https://open.spotify.com/track/0Ss50OU9tCozI7JIywkv14",
+      "hookStartMs": 123200
     },
     {
       "id": "radiohead-let-down",
@@ -11078,7 +11367,8 @@
       "audio": null,
       "artwork": null,
       "album": "OK Computer",
-      "spotifyUrl": "https://open.spotify.com/track/2fuYa3Lx06QQJAm0MjztKr"
+      "spotifyUrl": "https://open.spotify.com/track/2fuYa3Lx06QQJAm0MjztKr",
+      "hookStartMs": 20000
     },
     {
       "id": "kesha-your-love-is-my-drug",
@@ -11108,7 +11398,8 @@
       "audio": null,
       "artwork": null,
       "album": "Animal (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/6vc2Jq2vaGu8z326kSrw92"
+      "spotifyUrl": "https://open.spotify.com/track/6vc2Jq2vaGu8z326kSrw92",
+      "hookStartMs": 39000
     },
     {
       "id": "lady-gaga-abracadabra",
@@ -11138,7 +11429,8 @@
       "audio": null,
       "artwork": null,
       "album": "MAYHEM",
-      "spotifyUrl": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
+      "spotifyUrl": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR",
+      "hookStartMs": 60800
     },
     {
       "id": "sabrina-carpenter-bed-chem",
@@ -11168,7 +11460,8 @@
       "audio": null,
       "artwork": null,
       "album": "Short n' Sweet",
-      "spotifyUrl": "https://open.spotify.com/track/1UHS8Rf6h5Ar3CDWRd3wjF"
+      "spotifyUrl": "https://open.spotify.com/track/1UHS8Rf6h5Ar3CDWRd3wjF",
+      "hookStartMs": 19600
     },
     {
       "id": "sabrina-carpenter-please-please-please",
@@ -11198,7 +11491,8 @@
       "audio": null,
       "artwork": null,
       "album": "Please Please Please",
-      "spotifyUrl": "https://open.spotify.com/track/5N3hjp1WNayUPZrA8kJmJP"
+      "spotifyUrl": "https://open.spotify.com/track/5N3hjp1WNayUPZrA8kJmJP",
+      "hookStartMs": 53600
     },
     {
       "id": "addison-rae-diet-pepsi",
@@ -11228,7 +11522,8 @@
       "audio": null,
       "artwork": null,
       "album": "Diet Pepsi",
-      "spotifyUrl": "https://open.spotify.com/track/6MzofobZt2dm0Kf1hTThFz"
+      "spotifyUrl": "https://open.spotify.com/track/6MzofobZt2dm0Kf1hTThFz",
+      "hookStartMs": 34600
     },
     {
       "id": "chappell-roan-hot-to-go",
@@ -11258,7 +11553,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Rise and Fall of a Midwest Princess",
-      "spotifyUrl": "https://open.spotify.com/track/4xdBrk0nFZaP54vvZj0yx7"
+      "spotifyUrl": "https://open.spotify.com/track/4xdBrk0nFZaP54vvZj0yx7",
+      "hookStartMs": 89200
     },
     {
       "id": "billie-eilish-lunch",
@@ -11288,7 +11584,8 @@
       "audio": null,
       "artwork": null,
       "album": "HIT ME HARD AND SOFT",
-      "spotifyUrl": "https://open.spotify.com/track/629DixmZGHc7ILtEntuiWE"
+      "spotifyUrl": "https://open.spotify.com/track/629DixmZGHc7ILtEntuiWE",
+      "hookStartMs": 29200
     },
     {
       "id": "clairo-juna",
@@ -11345,7 +11642,8 @@
       "audio": null,
       "artwork": null,
       "album": "Glue Song",
-      "spotifyUrl": "https://open.spotify.com/track/3iBgrkexCzVuPy4O9vx7Mf"
+      "spotifyUrl": "https://open.spotify.com/track/3iBgrkexCzVuPy4O9vx7Mf",
+      "hookStartMs": 50200
     },
     {
       "id": "yung-kai-blue",
@@ -11375,7 +11673,8 @@
       "audio": null,
       "artwork": null,
       "album": "blue",
-      "spotifyUrl": "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG"
+      "spotifyUrl": "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG",
+      "hookStartMs": 47600
     },
     {
       "id": "kendrick-lamar-tv-off",
@@ -11403,7 +11702,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-tv-off.jpg?v=220684-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 17200
     },
     {
       "id": "tyler-sticky",
@@ -11431,7 +11731,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-sticky.jpg?v=255930-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 71400
     },
     {
       "id": "doechii-denial-is-a-river",
@@ -11461,7 +11762,8 @@
       "audio": null,
       "artwork": null,
       "album": "Alligator Bites Never Heal",
-      "spotifyUrl": "https://open.spotify.com/track/1eTaznNW4Xxtx9za2SMTXB"
+      "spotifyUrl": "https://open.spotify.com/track/1eTaznNW4Xxtx9za2SMTXB",
+      "hookStartMs": 16000
     },
     {
       "id": "don-toliver-no-pole",
@@ -11491,7 +11793,8 @@
       "audio": null,
       "artwork": null,
       "album": "Love Sick (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/0eaVIYo2zeOaGJeqZ5TwYz"
+      "spotifyUrl": "https://open.spotify.com/track/0eaVIYo2zeOaGJeqZ5TwYz",
+      "hookStartMs": 50800
     },
     {
       "id": "frank-ocean-pink-matter",
@@ -11575,7 +11878,8 @@
       "audio": null,
       "artwork": null,
       "album": "At What Cost",
-      "spotifyUrl": "https://open.spotify.com/track/15EPc80XuFrb2LmOzGjuRg"
+      "spotifyUrl": "https://open.spotify.com/track/15EPc80XuFrb2LmOzGjuRg",
+      "hookStartMs": 63400
     },
     {
       "id": "khalid-location",
@@ -11605,7 +11909,8 @@
       "audio": null,
       "artwork": null,
       "album": "American Teen",
-      "spotifyUrl": "https://open.spotify.com/track/152lZdxL1OR0ZMW6KquMif"
+      "spotifyUrl": "https://open.spotify.com/track/152lZdxL1OR0ZMW6KquMif",
+      "hookStartMs": 75000
     },
     {
       "id": "kali-uchis-after-the-storm",
@@ -11660,7 +11965,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-new-magic-wand.jpg?v=195320-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 84600
     },
     {
       "id": "wallows-are-you-bored-yet",
@@ -11717,7 +12023,8 @@
       "audio": null,
       "artwork": null,
       "album": "Tek It (I Watch the Moon)",
-      "spotifyUrl": "https://open.spotify.com/track/4K9fCsfAZmLogvDKKIRgCa"
+      "spotifyUrl": "https://open.spotify.com/track/4K9fCsfAZmLogvDKKIRgCa",
+      "hookStartMs": 25000
     },
     {
       "id": "ricky-montgomery-line-without-a-hook",
@@ -11747,7 +12054,8 @@
       "audio": null,
       "artwork": null,
       "album": "Montgomery Ricky",
-      "spotifyUrl": "https://open.spotify.com/track/5NvOZCjZaGGGL597exlQWv"
+      "spotifyUrl": "https://open.spotify.com/track/5NvOZCjZaGGGL597exlQWv",
+      "hookStartMs": 128400
     },
     {
       "id": "keyshia-cole-love",
@@ -11777,7 +12085,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Way It Is",
-      "spotifyUrl": "https://open.spotify.com/track/0W4NhJhcqKCqEP2GIpDCDq"
+      "spotifyUrl": "https://open.spotify.com/track/0W4NhJhcqKCqEP2GIpDCDq",
+      "hookStartMs": 74000
     },
     {
       "id": "owl-city-good-time",
@@ -11807,7 +12116,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Midsummer Station",
-      "spotifyUrl": "https://open.spotify.com/track/1kPpge9JDLpcj15qgrPbYX"
+      "spotifyUrl": "https://open.spotify.com/track/1kPpge9JDLpcj15qgrPbYX",
+      "hookStartMs": 63400
     },
     {
       "id": "imagine-dragons-radioactive",
@@ -11837,7 +12147,8 @@
       "audio": null,
       "artwork": null,
       "album": "Night Visions",
-      "spotifyUrl": "https://open.spotify.com/track/4G8gkOterJn0Ywt6uhqbhp"
+      "spotifyUrl": "https://open.spotify.com/track/4G8gkOterJn0Ywt6uhqbhp",
+      "hookStartMs": 56400
     },
     {
       "id": "john-legend-all-of-me",
@@ -11867,7 +12178,8 @@
       "audio": null,
       "artwork": null,
       "album": "Love In The Future (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a"
+      "spotifyUrl": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a",
+      "hookStartMs": 63000
     },
     {
       "id": "sam-smith-stay-with-me",
@@ -11897,7 +12209,8 @@
       "audio": null,
       "artwork": null,
       "album": "In The Lonely Hour",
-      "spotifyUrl": "https://open.spotify.com/track/5Nm9ERjJZ5oyfXZTECKmRt"
+      "spotifyUrl": "https://open.spotify.com/track/5Nm9ERjJZ5oyfXZTECKmRt",
+      "hookStartMs": 63400
     },
     {
       "id": "ed-sheeran-bad-habits",
@@ -11927,7 +12240,8 @@
       "audio": null,
       "artwork": null,
       "album": "=",
-      "spotifyUrl": "https://open.spotify.com/track/3rmo8F54jFF8OgYsqTxm5d"
+      "spotifyUrl": "https://open.spotify.com/track/3rmo8F54jFF8OgYsqTxm5d",
+      "hookStartMs": 70800
     },
     {
       "id": "ariana-grande-one-last-time",
@@ -11957,7 +12271,8 @@
       "audio": null,
       "artwork": null,
       "album": "My Everything (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/7xoUc6faLbCqZO6fQEYprd"
+      "spotifyUrl": "https://open.spotify.com/track/7xoUc6faLbCqZO6fQEYprd",
+      "hookStartMs": 40000
     },
     {
       "id": "panic-at-the-disco-house-of-memories",
@@ -11987,7 +12302,8 @@
       "audio": null,
       "artwork": null,
       "album": "Death of a Bachelor",
-      "spotifyUrl": "https://open.spotify.com/track/2DgdHcjWmO3qd50RzuBLgZ"
+      "spotifyUrl": "https://open.spotify.com/track/2DgdHcjWmO3qd50RzuBLgZ",
+      "hookStartMs": 64600
     },
     {
       "id": "katy-perry-the-one-that-got-away",
@@ -12017,7 +12333,8 @@
       "audio": null,
       "artwork": null,
       "album": "Teenage Dream: The Complete Confection",
-      "spotifyUrl": "https://open.spotify.com/track/3oL3XRtkP1WVbMxf7dtTdu"
+      "spotifyUrl": "https://open.spotify.com/track/3oL3XRtkP1WVbMxf7dtTdu",
+      "hookStartMs": 110800
     },
     {
       "id": "duncan-laurence-arcade",
@@ -12047,7 +12364,8 @@
       "audio": null,
       "artwork": null,
       "album": "Arcade",
-      "spotifyUrl": "https://open.spotify.com/track/1Xi84slp6FryDSCbzq4UCD"
+      "spotifyUrl": "https://open.spotify.com/track/1Xi84slp6FryDSCbzq4UCD",
+      "hookStartMs": 65800
     },
     {
       "id": "aaron-smith-dancin",
@@ -12101,7 +12419,8 @@
       "audio": null,
       "artwork": null,
       "album": "MKTO",
-      "spotifyUrl": "https://open.spotify.com/track/6FE2iI43OZnszFLuLtvvmg"
+      "spotifyUrl": "https://open.spotify.com/track/6FE2iI43OZnszFLuLtvvmg",
+      "hookStartMs": 41200
     },
     {
       "id": "edward-maya-stereo-love",
@@ -12131,7 +12450,8 @@
       "audio": null,
       "artwork": null,
       "album": "Stereo Love",
-      "spotifyUrl": "https://open.spotify.com/track/11Iv8RCFmeImLOpaHYxKb4"
+      "spotifyUrl": "https://open.spotify.com/track/11Iv8RCFmeImLOpaHYxKb4",
+      "hookStartMs": 44800
     },
     {
       "id": "katy-perry-firework",
@@ -12161,7 +12481,8 @@
       "audio": null,
       "artwork": null,
       "album": "Teenage Dream: The Complete Confection",
-      "spotifyUrl": "https://open.spotify.com/track/4lCv7b86sLynZbXhfScfm2"
+      "spotifyUrl": "https://open.spotify.com/track/4lCv7b86sLynZbXhfScfm2",
+      "hookStartMs": 69000
     },
     {
       "id": "katy-perry-teenage-dream",
@@ -12191,7 +12512,8 @@
       "audio": null,
       "artwork": null,
       "album": "Teenage Dream",
-      "spotifyUrl": "https://open.spotify.com/track/5jzKL4BDMClWqRguW5qZvh"
+      "spotifyUrl": "https://open.spotify.com/track/5jzKL4BDMClWqRguW5qZvh",
+      "hookStartMs": 128600
     },
     {
       "id": "the-wanted-glad-you-came",
@@ -12221,7 +12543,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Wanted (Special Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/3AGOgQzp0YcPH41u9p7dOp"
+      "spotifyUrl": "https://open.spotify.com/track/3AGOgQzp0YcPH41u9p7dOp",
+      "hookStartMs": 64400
     },
     {
       "id": "pitbull-international-love",
@@ -12251,7 +12574,8 @@
       "audio": null,
       "artwork": null,
       "album": "Planet Pit (Deluxe Version)",
-      "spotifyUrl": "https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC"
+      "spotifyUrl": "https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC",
+      "hookStartMs": 90000
     },
     {
       "id": "flo-rida-good-feeling",
@@ -12281,7 +12605,8 @@
       "audio": null,
       "artwork": null,
       "album": "Wild Ones",
-      "spotifyUrl": "https://open.spotify.com/track/2LEF1A8DOZ9wRYikWgVlZ8"
+      "spotifyUrl": "https://open.spotify.com/track/2LEF1A8DOZ9wRYikWgVlZ8",
+      "hookStartMs": 35800
     },
     {
       "id": "jason-derulo-whatcha-say",
@@ -12311,7 +12636,8 @@
       "audio": null,
       "artwork": null,
       "album": "Jason Derulo (Deluxe Audio)",
-      "spotifyUrl": "https://open.spotify.com/track/2zJZwWF7BTGIIvrAlgzJEx"
+      "spotifyUrl": "https://open.spotify.com/track/2zJZwWF7BTGIIvrAlgzJEx",
+      "hookStartMs": 42800
     },
     {
       "id": "nelly-just-a-dream",
@@ -12341,7 +12667,8 @@
       "audio": null,
       "artwork": null,
       "album": "5.0",
-      "spotifyUrl": "https://open.spotify.com/track/3ZdJffjzJWFimSQyxgGIxN"
+      "spotifyUrl": "https://open.spotify.com/track/3ZdJffjzJWFimSQyxgGIxN",
+      "hookStartMs": 25000
     },
     {
       "id": "justin-bieber-beauty-and-a-beat",
@@ -12371,7 +12698,8 @@
       "audio": null,
       "artwork": null,
       "album": "Believe (Deluxe Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/190jyVPHYjAqEaOGmMzdyk"
+      "spotifyUrl": "https://open.spotify.com/track/190jyVPHYjAqEaOGmMzdyk",
+      "hookStartMs": 40000
     },
     {
       "id": "sia-cheap-thrills",
@@ -12401,7 +12729,8 @@
       "audio": null,
       "artwork": null,
       "album": "This Is Acting",
-      "spotifyUrl": "https://open.spotify.com/track/378iszndTZAR4dH8kwsLC6"
+      "spotifyUrl": "https://open.spotify.com/track/378iszndTZAR4dH8kwsLC6",
+      "hookStartMs": 32400
     },
     {
       "id": "jessie-j-price-tag",
@@ -12431,7 +12760,8 @@
       "audio": null,
       "artwork": null,
       "album": "Who You Are (Platinum Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/5mvKuE9Lf9ARVXVXA32kK9"
+      "spotifyUrl": "https://open.spotify.com/track/5mvKuE9Lf9ARVXVXA32kK9",
+      "hookStartMs": 141600
     },
     {
       "id": "jessie-j-domino",
@@ -12461,7 +12791,8 @@
       "audio": null,
       "artwork": null,
       "album": "Who You Are (Platinum Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/6MAdEUilV2p9RQUqE5bMAK"
+      "spotifyUrl": "https://open.spotify.com/track/6MAdEUilV2p9RQUqE5bMAK",
+      "hookStartMs": 57200
     },
     {
       "id": "p-nk-raise-your-glass",
@@ -12491,7 +12822,8 @@
       "audio": null,
       "artwork": null,
       "album": "Raise Your Glass",
-      "spotifyUrl": "https://open.spotify.com/track/1gv4xPanImH17bKZ9rOveR"
+      "spotifyUrl": "https://open.spotify.com/track/1gv4xPanImH17bKZ9rOveR",
+      "hookStartMs": 38600
     },
     {
       "id": "fun-some-nights",
@@ -12521,7 +12853,8 @@
       "audio": null,
       "artwork": null,
       "album": "Some Nights",
-      "spotifyUrl": "https://open.spotify.com/track/67WTwafOMgegV6ABnBQxcE"
+      "spotifyUrl": "https://open.spotify.com/track/67WTwafOMgegV6ABnBQxcE",
+      "hookStartMs": 42600
     },
     {
       "id": "of-monsters-and-men-little-talks",
@@ -12551,7 +12884,8 @@
       "audio": null,
       "artwork": null,
       "album": "My Head Is An Animal",
-      "spotifyUrl": "https://open.spotify.com/track/2ihCaVdNZmnHZWt0fvAM7B"
+      "spotifyUrl": "https://open.spotify.com/track/2ihCaVdNZmnHZWt0fvAM7B",
+      "hookStartMs": 115800
     },
     {
       "id": "echosmith-cool-kids",
@@ -12581,7 +12915,8 @@
       "audio": null,
       "artwork": null,
       "album": "Talking Dreams (Deluxe Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/13P5rwmk2EsoFRIz9UCeh9"
+      "spotifyUrl": "https://open.spotify.com/track/13P5rwmk2EsoFRIz9UCeh9",
+      "hookStartMs": 56000
     },
     {
       "id": "grouplove-tongue-tied",
@@ -12611,7 +12946,8 @@
       "audio": null,
       "artwork": null,
       "album": "Never Trust a Happy Song",
-      "spotifyUrl": "https://open.spotify.com/track/0GO8y8jQk1PkHzS31d699N"
+      "spotifyUrl": "https://open.spotify.com/track/0GO8y8jQk1PkHzS31d699N",
+      "hookStartMs": 15200
     },
     {
       "id": "david-guetta-where-them-girls-at",
@@ -12695,7 +13031,8 @@
       "audio": null,
       "artwork": null,
       "album": "Rokstarr",
-      "spotifyUrl": "https://open.spotify.com/track/1CdqVF1ywD0ZO1zXtB9yWa"
+      "spotifyUrl": "https://open.spotify.com/track/1CdqVF1ywD0ZO1zXtB9yWa",
+      "hookStartMs": 140600
     },
     {
       "id": "akon-right-now-na-na-na",
@@ -12725,7 +13062,8 @@
       "audio": null,
       "artwork": null,
       "album": "Freedom",
-      "spotifyUrl": "https://open.spotify.com/track/5Ravsw8TmHN5wBiYPPYUFw"
+      "spotifyUrl": "https://open.spotify.com/track/5Ravsw8TmHN5wBiYPPYUFw",
+      "hookStartMs": 102800
     },
     {
       "id": "timbaland-apologize",
@@ -12755,7 +13093,8 @@
       "audio": null,
       "artwork": null,
       "album": "Shock Value",
-      "spotifyUrl": "https://open.spotify.com/track/6ucR4KfvsBFWCMVFDvyKKl"
+      "spotifyUrl": "https://open.spotify.com/track/6ucR4KfvsBFWCMVFDvyKKl",
+      "hookStartMs": 117200
     },
     {
       "id": "natasha-bedingfield-pocketful-of-sunshine",
@@ -12785,7 +13124,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pocketful Of Sunshine",
-      "spotifyUrl": "https://open.spotify.com/track/1uigwk5hNV84zRd5YQQRTk"
+      "spotifyUrl": "https://open.spotify.com/track/1uigwk5hNV84zRd5YQQRTk",
+      "hookStartMs": 59000
     },
     {
       "id": "sara-bareilles-love-song",
@@ -12815,7 +13155,8 @@
       "audio": null,
       "artwork": null,
       "album": "Little Voice",
-      "spotifyUrl": "https://open.spotify.com/track/4E6cwWJWZw2zWf7VFbH7wf"
+      "spotifyUrl": "https://open.spotify.com/track/4E6cwWJWZw2zWf7VFbH7wf",
+      "hookStartMs": 56400
     },
     {
       "id": "miley-cyrus-the-climb",
@@ -12845,7 +13186,8 @@
       "audio": null,
       "artwork": null,
       "album": "Hannah Montana The Movie",
-      "spotifyUrl": "https://open.spotify.com/track/0V8FYVlBFuXXTIvRnMbZyS"
+      "spotifyUrl": "https://open.spotify.com/track/0V8FYVlBFuXXTIvRnMbZyS",
+      "hookStartMs": 118800
     },
     {
       "id": "avril-lavigne-sk8er-boi",
@@ -12875,7 +13217,8 @@
       "audio": null,
       "artwork": null,
       "album": "Let Go",
-      "spotifyUrl": "https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU"
+      "spotifyUrl": "https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU",
+      "hookStartMs": 124200
     },
     {
       "id": "avril-lavigne-girlfriend",
@@ -12905,7 +13248,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Best Damn Thing (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/45hOioMDJktr86iKDHC8gr"
+      "spotifyUrl": "https://open.spotify.com/track/45hOioMDJktr86iKDHC8gr",
+      "hookStartMs": 62000
     },
     {
       "id": "avril-lavigne-what-the-hell",
@@ -12935,7 +13279,8 @@
       "audio": null,
       "artwork": null,
       "album": "Goodbye Lullaby (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/2z4U9d5OAA4YLNXoCgioxo"
+      "spotifyUrl": "https://open.spotify.com/track/2z4U9d5OAA4YLNXoCgioxo",
+      "hookStartMs": 57200
     },
     {
       "id": "3oh-3-starstrukk",
@@ -12965,7 +13310,8 @@
       "audio": null,
       "artwork": null,
       "album": "WANT (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/1hBM2D1ULT3aeKuddSwPsK"
+      "spotifyUrl": "https://open.spotify.com/track/1hBM2D1ULT3aeKuddSwPsK",
+      "hookStartMs": 21800
     },
     {
       "id": "cobra-starship-good-girls-go-bad",
@@ -13022,7 +13368,8 @@
       "audio": null,
       "artwork": null,
       "album": "Back On the Dancefloor",
-      "spotifyUrl": "https://open.spotify.com/track/4Zfq7r0v4FKeoxwhyLYSyb"
+      "spotifyUrl": "https://open.spotify.com/track/4Zfq7r0v4FKeoxwhyLYSyb",
+      "hookStartMs": 129800
     },
     {
       "id": "cascada-everytime-we-touch",
@@ -13052,7 +13399,8 @@
       "audio": null,
       "artwork": null,
       "album": "Everytime We Touch",
-      "spotifyUrl": "https://open.spotify.com/track/2iA1MTr7YGg2lSu7XISiJR"
+      "spotifyUrl": "https://open.spotify.com/track/2iA1MTr7YGg2lSu7XISiJR",
+      "hookStartMs": 28200
     },
     {
       "id": "la-roux-bulletproof",
@@ -13082,7 +13430,8 @@
       "audio": null,
       "artwork": null,
       "album": "Bulletproof",
-      "spotifyUrl": "https://open.spotify.com/track/0SyxZC4wlqAwf20cHE6Xon"
+      "spotifyUrl": "https://open.spotify.com/track/0SyxZC4wlqAwf20cHE6Xon",
+      "hookStartMs": 102400
     },
     {
       "id": "sean-kingston-fire-burning",
@@ -13112,7 +13461,8 @@
       "audio": null,
       "artwork": null,
       "album": "Tomorrow",
-      "spotifyUrl": "https://open.spotify.com/track/2oENJa1T33GJ0w8dC167G4"
+      "spotifyUrl": "https://open.spotify.com/track/2oENJa1T33GJ0w8dC167G4",
+      "hookStartMs": 60200
     },
     {
       "id": "nelly-dilemma",
@@ -13142,7 +13492,8 @@
       "audio": null,
       "artwork": null,
       "album": "Nellyville",
-      "spotifyUrl": "https://open.spotify.com/track/0ARK753YaiJbpLUk7z5yIM"
+      "spotifyUrl": "https://open.spotify.com/track/0ARK753YaiJbpLUk7z5yIM",
+      "hookStartMs": 29600
     },
     {
       "id": "jordin-sparks-no-air",
@@ -13226,7 +13577,8 @@
       "audio": null,
       "artwork": null,
       "album": "PCD",
-      "spotifyUrl": "https://open.spotify.com/track/3BxWKCI06eQ5Od8TY2JBeA"
+      "spotifyUrl": "https://open.spotify.com/track/3BxWKCI06eQ5Od8TY2JBeA",
+      "hookStartMs": 126000
     },
     {
       "id": "the-pussycat-dolls-don-t-cha",
@@ -13256,7 +13608,8 @@
       "audio": null,
       "artwork": null,
       "album": "PCD",
-      "spotifyUrl": "https://open.spotify.com/track/1gZ7i4qxXkHZb1r6eioaAP"
+      "spotifyUrl": "https://open.spotify.com/track/1gZ7i4qxXkHZb1r6eioaAP",
+      "hookStartMs": 195200
     },
     {
       "id": "sean-paul-temperature",
@@ -13286,7 +13639,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Trinity",
-      "spotifyUrl": "https://open.spotify.com/track/0k2GOhqsrxDTAbFFSdNJjT"
+      "spotifyUrl": "https://open.spotify.com/track/0k2GOhqsrxDTAbFFSdNJjT",
+      "hookStartMs": 15800
     },
     {
       "id": "kevin-rudolf-let-it-rock",
@@ -13316,7 +13670,8 @@
       "audio": null,
       "artwork": null,
       "album": "In The City",
-      "spotifyUrl": "https://open.spotify.com/track/6TrNRd98WksT9Kkmx9uj6R"
+      "spotifyUrl": "https://open.spotify.com/track/6TrNRd98WksT9Kkmx9uj6R",
+      "hookStartMs": 32800
     },
     {
       "id": "aly-potential-breakup-song",
@@ -13344,7 +13699,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/aly-potential-breakup-song.jpg?v=218304-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 48200
     },
     {
       "id": "drake-forever",
@@ -13374,7 +13730,8 @@
       "audio": null,
       "artwork": null,
       "album": "Relapse: Refill",
-      "spotifyUrl": "https://open.spotify.com/track/5UsLjwBaTHBX4ektWIr4XX"
+      "spotifyUrl": "https://open.spotify.com/track/5UsLjwBaTHBX4ektWIr4XX",
+      "hookStartMs": 72600
     },
     {
       "id": "young-money-bedrock",
@@ -13404,7 +13761,8 @@
       "audio": null,
       "artwork": null,
       "album": "We Are Young Money",
-      "spotifyUrl": "https://open.spotify.com/track/3iL2l5gUqyPS6vDwJFgJTR"
+      "spotifyUrl": "https://open.spotify.com/track/3iL2l5gUqyPS6vDwJFgJTR",
+      "hookStartMs": 26600
     },
     {
       "id": "waka-flocka-flame-no-hands",
@@ -13461,7 +13819,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pink Friday",
-      "spotifyUrl": "https://open.spotify.com/track/1ia019RqDK2o4QiANR1Dyn"
+      "spotifyUrl": "https://open.spotify.com/track/1ia019RqDK2o4QiANR1Dyn",
+      "hookStartMs": 36800
     },
     {
       "id": "jesse-mccartney-beautiful-soul",
@@ -13491,7 +13850,8 @@
       "audio": null,
       "artwork": null,
       "album": "Beautiful Soul",
-      "spotifyUrl": "https://open.spotify.com/track/1HwpWwa6bnqqRhK8agG4RS"
+      "spotifyUrl": "https://open.spotify.com/track/1HwpWwa6bnqqRhK8agG4RS",
+      "hookStartMs": 60200
     },
     {
       "id": "tory-lanez-hurts-me",
@@ -13521,7 +13881,8 @@
       "audio": null,
       "artwork": null,
       "album": "Hurts Me",
-      "spotifyUrl": "https://open.spotify.com/track/0RBw4ODUQPO4cuAOZtBGga"
+      "spotifyUrl": "https://open.spotify.com/track/0RBw4ODUQPO4cuAOZtBGga",
+      "hookStartMs": 56600
     },
     {
       "id": "leon-thomas-mutt",
@@ -13551,7 +13912,8 @@
       "audio": null,
       "artwork": null,
       "album": "MUTT",
-      "spotifyUrl": "https://open.spotify.com/track/1mh9eHVRdNhzryG43PXdW1"
+      "spotifyUrl": "https://open.spotify.com/track/1mh9eHVRdNhzryG43PXdW1",
+      "hookStartMs": 51800
     },
     {
       "id": "kehlani-folded",
@@ -13581,7 +13943,8 @@
       "audio": null,
       "artwork": null,
       "album": "Folded",
-      "spotifyUrl": "https://open.spotify.com/track/0bxPRWprUVpQK0UFcddkrA"
+      "spotifyUrl": "https://open.spotify.com/track/0bxPRWprUVpQK0UFcddkrA",
+      "hookStartMs": 193200
     },
     {
       "id": "sza-30-for-30",
@@ -13611,7 +13974,8 @@
       "audio": null,
       "artwork": null,
       "album": "SOS Deluxe: LANA",
-      "spotifyUrl": "https://open.spotify.com/track/3aSWXU6owkZeVhh94XxEWO"
+      "spotifyUrl": "https://open.spotify.com/track/3aSWXU6owkZeVhh94XxEWO",
+      "hookStartMs": 60200
     },
     {
       "id": "partynextdoor-die-trying",
@@ -13641,7 +14005,8 @@
       "audio": null,
       "artwork": null,
       "album": "$ome $exy $ongs 4 U",
-      "spotifyUrl": "https://open.spotify.com/track/0NUqi0ps17YpLUC3kgsZq0"
+      "spotifyUrl": "https://open.spotify.com/track/0NUqi0ps17YpLUC3kgsZq0",
+      "hookStartMs": 79400
     },
     {
       "id": "justin-bieber-yukon",
@@ -13671,7 +14036,8 @@
       "audio": null,
       "artwork": null,
       "album": "SWAG",
-      "spotifyUrl": "https://open.spotify.com/track/29iva9idM6rFCPUlu7Rhxl"
+      "spotifyUrl": "https://open.spotify.com/track/29iva9idM6rFCPUlu7Rhxl",
+      "hookStartMs": 44800
     },
     {
       "id": "charli-xcx-guess",
@@ -13701,7 +14067,8 @@
       "audio": null,
       "artwork": null,
       "album": "Brat and it’s completely different but also still brat",
-      "spotifyUrl": "https://open.spotify.com/track/0IsIY8pfu1yaGkPUD7pkDx"
+      "spotifyUrl": "https://open.spotify.com/track/0IsIY8pfu1yaGkPUD7pkDx",
+      "hookStartMs": 58800
     },
     {
       "id": "charli-xcx-360",
@@ -13731,7 +14098,8 @@
       "audio": null,
       "artwork": null,
       "album": "BRAT",
-      "spotifyUrl": "https://open.spotify.com/track/4w2GLmK2wnioVnb5CPQeex"
+      "spotifyUrl": "https://open.spotify.com/track/4w2GLmK2wnioVnb5CPQeex",
+      "hookStartMs": 58400
     },
     {
       "id": "sza-bmf",
@@ -13761,7 +14129,8 @@
       "audio": null,
       "artwork": null,
       "album": "SOS Deluxe: LANA",
-      "spotifyUrl": "https://open.spotify.com/track/3U3hFkMr0Q90pD24EkE3Pr"
+      "spotifyUrl": "https://open.spotify.com/track/3U3hFkMr0Q90pD24EkE3Pr",
+      "hookStartMs": 30400
     },
     {
       "id": "katseye-gabriela",
@@ -13791,7 +14160,8 @@
       "audio": null,
       "artwork": null,
       "album": "Gabriela",
-      "spotifyUrl": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL"
+      "spotifyUrl": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL",
+      "hookStartMs": 53400
     },
     {
       "id": "tyla-push-2-start",
@@ -13821,7 +14191,8 @@
       "audio": null,
       "artwork": null,
       "album": "TYLA +",
-      "spotifyUrl": "https://open.spotify.com/track/1Cbl3Yq8rHo7hhDQmLQagU"
+      "spotifyUrl": "https://open.spotify.com/track/1Cbl3Yq8rHo7hhDQmLQagU",
+      "hookStartMs": 76000
     },
     {
       "id": "miguel-adorn",
@@ -13851,7 +14222,8 @@
       "audio": null,
       "artwork": null,
       "album": "Kaleidoscope Dream",
-      "spotifyUrl": "https://open.spotify.com/track/25cUhiAod71TIQSNicOaW3"
+      "spotifyUrl": "https://open.spotify.com/track/25cUhiAod71TIQSNicOaW3",
+      "hookStartMs": 137200
     },
     {
       "id": "summer-walker-playing-games",
@@ -13881,7 +14253,8 @@
       "audio": null,
       "artwork": null,
       "album": "Over It",
-      "spotifyUrl": "https://open.spotify.com/track/2xyx0o4xNOLLjBSbOOdcbA"
+      "spotifyUrl": "https://open.spotify.com/track/2xyx0o4xNOLLjBSbOOdcbA",
+      "hookStartMs": 40800
     },
     {
       "id": "summer-walker-girls-need-love",
@@ -13909,7 +14282,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/summer-walker-girls-need-love.jpg?v=221376-1000"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 81800
     },
     {
       "id": "ella-mai-trip",
@@ -13939,7 +14313,8 @@
       "audio": null,
       "artwork": null,
       "album": "Ella Mai",
-      "spotifyUrl": "https://open.spotify.com/track/6CTWathupIiDs7U4InHnDA"
+      "spotifyUrl": "https://open.spotify.com/track/6CTWathupIiDs7U4InHnDA",
+      "hookStartMs": 44600
     },
     {
       "id": "victoria-mon-t-on-my-mama",
@@ -13969,7 +14344,8 @@
       "audio": null,
       "artwork": null,
       "album": "On My Mama",
-      "spotifyUrl": "https://open.spotify.com/track/1o8Z7GD1CeOaVBEyuzu4HO"
+      "spotifyUrl": "https://open.spotify.com/track/1o8Z7GD1CeOaVBEyuzu4HO",
+      "hookStartMs": 48800
     },
     {
       "id": "kehlani-after-hours",
@@ -13999,7 +14375,8 @@
       "audio": null,
       "artwork": null,
       "album": "After Hours",
-      "spotifyUrl": "https://open.spotify.com/track/2x03XLsTZ0o86h0cfHrkKF"
+      "spotifyUrl": "https://open.spotify.com/track/2x03XLsTZ0o86h0cfHrkKF",
+      "hookStartMs": 81200
     },
     {
       "id": "kehlani-nights-like-this",
@@ -14056,7 +14433,8 @@
       "audio": null,
       "artwork": null,
       "album": "Goodies",
-      "spotifyUrl": "https://open.spotify.com/track/3dFwpxh2yH7C7p9BGEKLVB"
+      "spotifyUrl": "https://open.spotify.com/track/3dFwpxh2yH7C7p9BGEKLVB",
+      "hookStartMs": 59600
     },
     {
       "id": "ciara-1-2-step",
@@ -14086,7 +14464,8 @@
       "audio": null,
       "artwork": null,
       "album": "Goodies",
-      "spotifyUrl": "https://open.spotify.com/track/7uKcScNXuO3MWw6LowBjW1"
+      "spotifyUrl": "https://open.spotify.com/track/7uKcScNXuO3MWw6LowBjW1",
+      "hookStartMs": 57200
     },
     {
       "id": "far-east-movement-like-a-g6",
@@ -14143,7 +14522,8 @@
       "audio": null,
       "artwork": null,
       "album": "When The World Comes Down",
-      "spotifyUrl": "https://open.spotify.com/track/6ihL9TjfRjadfEePzXXyVF"
+      "spotifyUrl": "https://open.spotify.com/track/6ihL9TjfRjadfEePzXXyVF",
+      "hookStartMs": 69400
     },
     {
       "id": "daniel-powter-bad-day",
@@ -14173,7 +14553,8 @@
       "audio": null,
       "artwork": null,
       "album": "Daniel Powter",
-      "spotifyUrl": "https://open.spotify.com/track/0mUyMawtxj1CJ76kn9gIZK"
+      "spotifyUrl": "https://open.spotify.com/track/0mUyMawtxj1CJ76kn9gIZK",
+      "hookStartMs": 48400
     },
     {
       "id": "paramore-ain-t-it-fun",
@@ -14203,7 +14584,8 @@
       "audio": null,
       "artwork": null,
       "album": "Paramore",
-      "spotifyUrl": "https://open.spotify.com/track/1j8z4TTjJ1YOdoFEDwJTQa"
+      "spotifyUrl": "https://open.spotify.com/track/1j8z4TTjJ1YOdoFEDwJTQa",
+      "hookStartMs": 47200
     },
     {
       "id": "paramore-decode",
@@ -14233,7 +14615,8 @@
       "audio": null,
       "artwork": null,
       "album": "Decode",
-      "spotifyUrl": "https://open.spotify.com/track/1ZLtE9tSJdaUiIJ9YoKHQe"
+      "spotifyUrl": "https://open.spotify.com/track/1ZLtE9tSJdaUiIJ9YoKHQe",
+      "hookStartMs": 51800
     },
     {
       "id": "charli-xcx-boom-clap",
@@ -14263,7 +14646,8 @@
       "audio": null,
       "artwork": null,
       "album": "SUCKER",
-      "spotifyUrl": "https://open.spotify.com/track/0Y1MWB026LYxGvhq4EcMiC"
+      "spotifyUrl": "https://open.spotify.com/track/0Y1MWB026LYxGvhq4EcMiC",
+      "hookStartMs": 34000
     },
     {
       "id": "travie-mccoy-billionaire",
@@ -14320,7 +14704,8 @@
       "audio": null,
       "artwork": null,
       "album": "Waking Up",
-      "spotifyUrl": "https://open.spotify.com/track/5MDMFoTpN4ZIDUjNRt3AoN"
+      "spotifyUrl": "https://open.spotify.com/track/5MDMFoTpN4ZIDUjNRt3AoN",
+      "hookStartMs": 69400
     },
     {
       "id": "will-i-am-scream-shout",
@@ -14350,7 +14735,8 @@
       "audio": null,
       "artwork": null,
       "album": "#willpower",
-      "spotifyUrl": "https://open.spotify.com/track/2iJuuzV8P9Yz0VSurttIV5"
+      "spotifyUrl": "https://open.spotify.com/track/2iJuuzV8P9Yz0VSurttIV5",
+      "hookStartMs": 63600
     },
     {
       "id": "will-i-am-thatpower",
@@ -14407,7 +14793,8 @@
       "audio": null,
       "artwork": null,
       "album": "Sticks & Stones",
-      "spotifyUrl": "https://open.spotify.com/track/6E11E0lT5Zy7yb6iT3y8DN"
+      "spotifyUrl": "https://open.spotify.com/track/6E11E0lT5Zy7yb6iT3y8DN",
+      "hookStartMs": 126600
     },
     {
       "id": "lupe-fiasco-the-show-goes-on",
@@ -14437,7 +14824,8 @@
       "audio": null,
       "artwork": null,
       "album": "Lasers",
-      "spotifyUrl": "https://open.spotify.com/track/4NTWZqvfQTlOMitlVn6tew"
+      "spotifyUrl": "https://open.spotify.com/track/4NTWZqvfQTlOMitlVn6tew",
+      "hookStartMs": 25400
     },
     {
       "id": "metro-station-shake-it",
@@ -14467,7 +14855,8 @@
       "audio": null,
       "artwork": null,
       "album": "Metro Station",
-      "spotifyUrl": "https://open.spotify.com/track/5619Ojc6t9evEEs3B7Drhe"
+      "spotifyUrl": "https://open.spotify.com/track/5619Ojc6t9evEEs3B7Drhe",
+      "hookStartMs": 42800
     },
     {
       "id": "one-direction-live-while-we-re-young",
@@ -14495,7 +14884,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-live-while-we-re-young.jpg?v=200772-1000"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 51800
     },
     {
       "id": "one-direction-best-song-ever",
@@ -14525,7 +14915,8 @@
       "audio": null,
       "artwork": null,
       "album": "Midnight Memories (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/5T7ZFtCcOgkpjxcuaeZbw0"
+      "spotifyUrl": "https://open.spotify.com/track/5T7ZFtCcOgkpjxcuaeZbw0",
+      "hookStartMs": 45600
     },
     {
       "id": "one-direction-kiss-you",
@@ -14555,7 +14946,8 @@
       "audio": null,
       "artwork": null,
       "album": "Take Me Home (Expanded Edition)",
-      "spotifyUrl": "https://open.spotify.com/track/4My8w8AA1JpG6E5SiAPvJL"
+      "spotifyUrl": "https://open.spotify.com/track/4My8w8AA1JpG6E5SiAPvJL",
+      "hookStartMs": 82800
     },
     {
       "id": "one-direction-one-thing",
@@ -14585,7 +14977,8 @@
       "audio": null,
       "artwork": null,
       "album": "Up All Night",
-      "spotifyUrl": "https://open.spotify.com/track/5G2c6FsfTzgYUzageCmfXY"
+      "spotifyUrl": "https://open.spotify.com/track/5G2c6FsfTzgYUzageCmfXY",
+      "hookStartMs": 50000
     },
     {
       "id": "demi-lovato-really-don-t-care",
@@ -14642,7 +15035,8 @@
       "audio": null,
       "artwork": null,
       "album": "Unbroken",
-      "spotifyUrl": "https://open.spotify.com/track/3sP3c86WFjOzHHnbhhZcLA"
+      "spotifyUrl": "https://open.spotify.com/track/3sP3c86WFjOzHHnbhhZcLA",
+      "hookStartMs": 52400
     },
     {
       "id": "miley-cyrus-7-things",
@@ -14672,7 +15066,8 @@
       "audio": null,
       "artwork": null,
       "album": "Breakout",
-      "spotifyUrl": "https://open.spotify.com/track/5ecZWU5uQOiCVSnPxBZNmT"
+      "spotifyUrl": "https://open.spotify.com/track/5ecZWU5uQOiCVSnPxBZNmT",
+      "hookStartMs": 61000
     },
     {
       "id": "miley-cyrus-see-you-again",
@@ -14702,7 +15097,8 @@
       "audio": null,
       "artwork": null,
       "album": "Meet Miley Cyrus",
-      "spotifyUrl": "https://open.spotify.com/track/3AjyOYxBv8bByfBtG5o9dP"
+      "spotifyUrl": "https://open.spotify.com/track/3AjyOYxBv8bByfBtG5o9dP",
+      "hookStartMs": 32800
     },
     {
       "id": "selena-gomez-naturally",
@@ -14730,7 +15126,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-naturally.jpg?v=203667-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 51600
     },
     {
       "id": "selena-gomez-who-says",
@@ -14758,7 +15155,8 @@
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-who-says.jpg?v=195613-0"
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "hookStartMs": 48200
     },
     {
       "id": "selena-gomez-come-get-it",
@@ -14788,7 +15186,8 @@
       "audio": null,
       "artwork": null,
       "album": "Stars Dance (Bonus Track Version)",
-      "spotifyUrl": "https://open.spotify.com/track/6LoQHIo74tOzQ8EsLEkhgF"
+      "spotifyUrl": "https://open.spotify.com/track/6LoQHIo74tOzQ8EsLEkhgF",
+      "hookStartMs": 14800
     },
     {
       "id": "miley-cyrus-can-t-be-tamed",
@@ -14818,7 +15217,8 @@
       "audio": null,
       "artwork": null,
       "album": "Can't Be Tamed",
-      "spotifyUrl": "https://open.spotify.com/track/2r6DdaSbkbwoPzuK6NjLPn"
+      "spotifyUrl": "https://open.spotify.com/track/2r6DdaSbkbwoPzuK6NjLPn",
+      "hookStartMs": 90000
     },
     {
       "id": "justin-bieber-never-say-never",
@@ -14875,7 +15275,8 @@
       "audio": null,
       "artwork": null,
       "album": "My World 2.0",
-      "spotifyUrl": "https://open.spotify.com/track/3rLIv187BhjyweFe89SgLn"
+      "spotifyUrl": "https://open.spotify.com/track/3rLIv187BhjyweFe89SgLn",
+      "hookStartMs": 49000
     },
     {
       "id": "justin-bieber-as-long-as-you-love-me",
@@ -14932,7 +15333,8 @@
       "audio": null,
       "artwork": null,
       "album": "Pink Friday ... Roman Reloaded",
-      "spotifyUrl": "https://open.spotify.com/track/0LohatbcUXRauoeMlR1jnS"
+      "spotifyUrl": "https://open.spotify.com/track/0LohatbcUXRauoeMlR1jnS",
+      "hookStartMs": 38400
     },
     {
       "id": "don-toliver-e85",
@@ -14962,7 +15364,8 @@
       "audio": null,
       "artwork": null,
       "album": "OCTANE",
-      "spotifyUrl": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ"
+      "spotifyUrl": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ",
+      "hookStartMs": 50000
     },
     {
       "id": "bryson-tiller-right-my-wrongs",
@@ -14992,7 +15395,8 @@
       "audio": null,
       "artwork": null,
       "album": "T R A P S O U L",
-      "spotifyUrl": "https://open.spotify.com/track/5rgrBsAFYMun6yhtnLKRPz"
+      "spotifyUrl": "https://open.spotify.com/track/5rgrBsAFYMun6yhtnLKRPz",
+      "hookStartMs": 56400
     },
     {
       "id": "miguel-come-through-and-chill",
@@ -15022,7 +15426,8 @@
       "audio": null,
       "artwork": null,
       "album": "War & Leisure",
-      "spotifyUrl": "https://open.spotify.com/track/1m8WpLYXEiNVZchsWEcCSy"
+      "spotifyUrl": "https://open.spotify.com/track/1m8WpLYXEiNVZchsWEcCSy",
+      "hookStartMs": 33400
     },
     {
       "id": "miguel-sky-walker",
@@ -15052,7 +15457,8 @@
       "audio": null,
       "artwork": null,
       "album": "War & Leisure",
-      "spotifyUrl": "https://open.spotify.com/track/5WoaF1B5XIEnWfmb5NZikf"
+      "spotifyUrl": "https://open.spotify.com/track/5WoaF1B5XIEnWfmb5NZikf",
+      "hookStartMs": 114200
     },
     {
       "id": "brent-faiyaz-poison",
@@ -15082,7 +15488,8 @@
       "audio": null,
       "artwork": null,
       "album": "Poison",
-      "spotifyUrl": "https://open.spotify.com/track/5NijSs5dAwaIybq1GaRTIe"
+      "spotifyUrl": "https://open.spotify.com/track/5NijSs5dAwaIybq1GaRTIe",
+      "hookStartMs": 37200
     },
     {
       "id": "brent-faiyaz-been-away",
@@ -15112,7 +15519,8 @@
       "audio": null,
       "artwork": null,
       "album": "Fuck The World",
-      "spotifyUrl": "https://open.spotify.com/track/5PvVkf1Yuq3XyMqqjPiKPd"
+      "spotifyUrl": "https://open.spotify.com/track/5PvVkf1Yuq3XyMqqjPiKPd",
+      "hookStartMs": 44400
     },
     {
       "id": "brent-faiyaz-wasting-time",
@@ -15169,7 +15577,8 @@
       "audio": null,
       "artwork": null,
       "album": "Damage",
-      "spotifyUrl": "https://open.spotify.com/track/0KS2h61pHQ4WmOwruD7uxD"
+      "spotifyUrl": "https://open.spotify.com/track/0KS2h61pHQ4WmOwruD7uxD",
+      "hookStartMs": 34200
     },
     {
       "id": "h-e-r-focus",
@@ -15199,7 +15608,8 @@
       "audio": null,
       "artwork": null,
       "album": "H.E.R.",
-      "spotifyUrl": "https://open.spotify.com/track/3tZs3nVjySLbL320lP4mvs"
+      "spotifyUrl": "https://open.spotify.com/track/3tZs3nVjySLbL320lP4mvs",
+      "hookStartMs": 37200
     },
     {
       "id": "h-e-r-could-ve-been",
@@ -15229,7 +15639,8 @@
       "audio": null,
       "artwork": null,
       "album": "I Used To Know Her",
-      "spotifyUrl": "https://open.spotify.com/track/6oEVnWKgPqIEPc53OYDNqG"
+      "spotifyUrl": "https://open.spotify.com/track/6oEVnWKgPqIEPc53OYDNqG",
+      "hookStartMs": 57400
     },
     {
       "id": "masego-tadow",
@@ -15259,7 +15670,8 @@
       "audio": null,
       "artwork": null,
       "album": "Lady Lady",
-      "spotifyUrl": "https://open.spotify.com/track/6FMMd1fixOMmhplCevpjL7"
+      "spotifyUrl": "https://open.spotify.com/track/6FMMd1fixOMmhplCevpjL7",
+      "hookStartMs": 54400
     },
     {
       "id": "masego-mystery-lady",
@@ -15289,7 +15701,8 @@
       "audio": null,
       "artwork": null,
       "album": "Studying Abroad: Extended Stay",
-      "spotifyUrl": "https://open.spotify.com/track/0bkTdkWwGk3OGFX0afD3Wj"
+      "spotifyUrl": "https://open.spotify.com/track/0bkTdkWwGk3OGFX0afD3Wj",
+      "hookStartMs": 76200
     },
     {
       "id": "pink-sweat-at-my-worst",
@@ -15319,7 +15732,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Prelude",
-      "spotifyUrl": "https://open.spotify.com/track/0ri0Han4IRJhzvERHOZTMr"
+      "spotifyUrl": "https://open.spotify.com/track/0ri0Han4IRJhzvERHOZTMr",
+      "hookStartMs": 43600
     },
     {
       "id": "ella-mai-boo-d-up",
@@ -15349,7 +15763,8 @@
       "audio": null,
       "artwork": null,
       "album": "Ella Mai",
-      "spotifyUrl": "https://open.spotify.com/track/4squZv12LD9M8ooJfoVgZS"
+      "spotifyUrl": "https://open.spotify.com/track/4squZv12LD9M8ooJfoVgZS",
+      "hookStartMs": 37800
     },
     {
       "id": "tamia-so-into-you",
@@ -15379,7 +15794,8 @@
       "audio": null,
       "artwork": null,
       "album": "Tamia",
-      "spotifyUrl": "https://open.spotify.com/track/3c6afiysmB7OnxQzzSqRfD"
+      "spotifyUrl": "https://open.spotify.com/track/3c6afiysmB7OnxQzzSqRfD",
+      "hookStartMs": 72200
     },
     {
       "id": "partynextdoor-recognize",
@@ -15436,7 +15852,8 @@
       "audio": null,
       "artwork": null,
       "album": "PARTYNEXTDOOR TWO",
-      "spotifyUrl": "https://open.spotify.com/track/3JEJwjqLkg2Jbau5922CAb"
+      "spotifyUrl": "https://open.spotify.com/track/3JEJwjqLkg2Jbau5922CAb",
+      "hookStartMs": 15000
     },
     {
       "id": "tory-lanez-luv",
@@ -15466,7 +15883,8 @@
       "audio": null,
       "artwork": null,
       "album": "I Told You",
-      "spotifyUrl": "https://open.spotify.com/track/16Ah4QqH4mgYVXqfC4mdSd"
+      "spotifyUrl": "https://open.spotify.com/track/16Ah4QqH4mgYVXqfC4mdSd",
+      "hookStartMs": 74400
     },
     {
       "id": "kaash-paige-love-songs",
@@ -15496,7 +15914,8 @@
       "audio": null,
       "artwork": null,
       "album": "420 Hits: Kaash Paige",
-      "spotifyUrl": "https://open.spotify.com/track/0XjBXsgNpvIMAOTkDAlDkE"
+      "spotifyUrl": "https://open.spotify.com/track/0XjBXsgNpvIMAOTkDAlDkE",
+      "hookStartMs": 87000
     },
     {
       "id": "don-toliver-cardigan",
@@ -15526,7 +15945,8 @@
       "audio": null,
       "artwork": null,
       "album": "Heaven Or Hell",
-      "spotifyUrl": "https://open.spotify.com/track/0Li1OuXXfi7950ilZUFGkF"
+      "spotifyUrl": "https://open.spotify.com/track/0Li1OuXXfi7950ilZUFGkF",
+      "hookStartMs": 31600
     },
     {
       "id": "don-toliver-after-party",
@@ -15556,7 +15976,8 @@
       "audio": null,
       "artwork": null,
       "album": "Heaven Or Hell",
-      "spotifyUrl": "https://open.spotify.com/track/527k23H0A4Q0UJN3vGs0Da"
+      "spotifyUrl": "https://open.spotify.com/track/527k23H0A4Q0UJN3vGs0Da",
+      "hookStartMs": 26800
     },
     {
       "id": "don-toliver-what-you-need",
@@ -15586,7 +16007,8 @@
       "audio": null,
       "artwork": null,
       "album": "Life of a DON",
-      "spotifyUrl": "https://open.spotify.com/track/7iC56CDz8miPDKaH0OEIqS"
+      "spotifyUrl": "https://open.spotify.com/track/7iC56CDz8miPDKaH0OEIqS",
+      "hookStartMs": 46000
     },
     {
       "id": "internet-money-lemonade",
@@ -15670,7 +16092,8 @@
       "audio": null,
       "artwork": null,
       "album": "In Tongues (Deluxe)",
-      "spotifyUrl": "https://open.spotify.com/track/3Y3KY9Apoeet0mYKM5QySi"
+      "spotifyUrl": "https://open.spotify.com/track/3Y3KY9Apoeet0mYKM5QySi",
+      "hookStartMs": 64600
     },
     {
       "id": "don-toliver-private-landing",
@@ -15727,7 +16150,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Miseducation of Lauryn Hill",
-      "spotifyUrl": "https://open.spotify.com/track/2VjXGuPVVxyhMgER3Uz2Fe"
+      "spotifyUrl": "https://open.spotify.com/track/2VjXGuPVVxyhMgER3Uz2Fe",
+      "hookStartMs": 20200
     }
   ]
 }

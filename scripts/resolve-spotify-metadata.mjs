@@ -88,7 +88,7 @@ const flagged = [];
 const artistMismatches = [];
 
 for (const song of candidateRoot.songs) {
-  if (song.spotifyUrl && song.album && song.media?.artworkUrl) continue;
+  if (song.spotifyUrl && song.album && song.media?.artworkUrl && song.media?.spotifyPreviewUrl) continue;
   const primaryArtist = song.primaryArtists[0];
   const query = encodeURIComponent(`track:${song.title} artist:${primaryArtist}`);
   const response = await fetch(`https://api.spotify.com/v1/search?q=${query}&type=track&limit=10`, {
@@ -157,9 +157,15 @@ for (const song of candidateRoot.songs) {
     }
   }
 
+  // Save Spotify preview URL for hook detection (no extra API call)
+  if (bestMatch.preview_url && !song.media.spotifyPreviewUrl) {
+    song.media.spotifyPreviewUrl = bestMatch.preview_url;
+  }
+
   resolved += 1;
   if (verbose) {
-    console.log(`✓ ${song.title} — album: "${bestMatch.album?.name}", spotify: ${bestMatch.external_urls?.spotify}`);
+    const previewStatus = bestMatch.preview_url ? "✓" : "✗";
+    console.log(`✓ ${song.title} — album: "${bestMatch.album?.name}", preview: ${previewStatus}, spotify: ${bestMatch.external_urls?.spotify}`);
   }
 }
 

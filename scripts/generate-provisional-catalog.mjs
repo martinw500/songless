@@ -61,6 +61,7 @@ const catalog = withEase.map((entry, index) => {
     familiarity: s.familiarity,
     ...(s.introRecognition !== null ? { introRecognition: s.introRecognition } : {}),
     startAtMs: s.startAtMs ?? s.media?.onsetPadMs ?? 30,
+    ...(s.hookStartMs != null ? { hookStartMs: s.hookStartMs } : {}),
     ...(artwork ? { artwork } : {}),
     audio: {
       kind: "hosted",
