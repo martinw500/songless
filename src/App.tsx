@@ -116,6 +116,9 @@ function App() {
   const [query, setQuery] = useState("");
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const suggestionsListRef = useRef<HTMLDivElement>(null);
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+  const [feedbackText, setFeedbackText] = useState("");
+  const [feedbackStatus, setFeedbackStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
   const [audioError, setAudioError] = useState("");
@@ -443,6 +446,39 @@ function App() {
     setAudioError("");
   }
 
+  async function handleFeedbackSubmit(event: FormEvent) {
+    event.preventDefault();
+    if (!feedbackText.trim() || feedbackStatus === "submitting") return;
+
+    setFeedbackStatus("submitting");
+    try {
+      const webhookUrl = import.meta.env.VITE_DISCORD_WEBHOOK_URL;
+      if (!webhookUrl) {
+        throw new Error("Discord webhook URL not configured.");
+      }
+
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          content: `**New Feedback from Songless**\n\n${feedbackText}`
+        })
+      });
+
+      if (!response.ok) throw new Error("Failed to send feedback");
+      
+      setFeedbackStatus("success");
+      setTimeout(() => {
+        setIsFeedbackOpen(false);
+        setFeedbackText("");
+        setFeedbackStatus("idle");
+      }, 2000);
+    } catch (error) {
+      console.error(error);
+      setFeedbackStatus("error");
+    }
+  }
+
   return (
     <main className="app-shell" data-difficulty={difficulty} data-status={status}>
       <section className="game-layout">
@@ -469,6 +505,9 @@ function App() {
                 <ReplayIcon /> Play again
               </button>
             )}
+            <button className="mode-action" onClick={() => setIsFeedbackOpen(true)} type="button">
+              <FeedbackIcon /> Feedback
+            </button>
           </div>
         </aside>
 
@@ -724,6 +763,42 @@ function App() {
           </label>
         </aside>
       </section>
+
+      {isFeedbackOpen && (
+        <div className="modal-overlay" onClick={() => setIsFeedbackOpen(false)}>
+          <div className="modal-content feedback-modal" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setIsFeedbackOpen(false)} aria-label="Close">
+              &times;
+            </button>
+            <h2>Send Feedback</h2>
+            <p className="modal-desc">Tell us what you think, report a bug, or request a new feature!</p>
+            
+            <form onSubmit={handleFeedbackSubmit}>
+              <textarea 
+                className="feedback-textarea"
+                placeholder="What's on your mind?"
+                value={feedbackText}
+                onChange={e => setFeedbackText(e.target.value)}
+                disabled={feedbackStatus === "submitting" || feedbackStatus === "success"}
+                autoFocus
+                required
+              />
+              
+              {feedbackStatus === "error" && (
+                <p className="modal-error">Failed to send feedback. Please try again or check VITE_DISCORD_WEBHOOK_URL.</p>
+              )}
+              
+              <button 
+                type="submit" 
+                className={`modal-submit ${feedbackStatus}`}
+                disabled={feedbackStatus === "submitting" || feedbackStatus === "success" || !feedbackText.trim()}
+              >
+                {feedbackStatus === "submitting" ? "Sending..." : feedbackStatus === "success" ? "Sent!" : "Submit"}
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
@@ -839,6 +914,14 @@ function ResetIcon() {
     <svg className="reset-icon" viewBox="0 0 16 16" aria-hidden="true">
       <path d="M2.5 5.5A5.5 5.5 0 1 1 2.2 9.5" />
       <path d="M2.5 2v3.5h3.5" />
+    </svg>
+  );
+}
+
+function FeedbackIcon() {
+  return (
+    <svg className="action-icon feedback-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM11 5h2v6h-2zm0 8h2v2h-2z" />
     </svg>
   );
 }
