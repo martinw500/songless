@@ -25,10 +25,6 @@ const songs = candidateRoot.songs.filter(
     Number.isInteger(s.media.hostedDurationMs)
 );
 
-if (songs.length !== 172) {
-  console.error(`Expected 172 hosted songs; found ${songs.length}. Cannot generate provisional catalogue.`);
-  process.exit(1);
-}
 
 // For songs without intro scores yet, use familiarity alone as a provisional ease
 const withEase = songs.map((s) => {

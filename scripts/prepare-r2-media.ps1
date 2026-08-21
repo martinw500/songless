@@ -1,11 +1,10 @@
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory = $true)]
-    [string]$InputDirectory,
+    [string]$InputDirectory = "private-media\source",
 
-    [string]$OutputRoot,
+    [string]$OutputRoot = "private-media\r2",
 
-    [string]$CandidateFile,
+    [string]$CandidateFile = "data\song-candidates.json",
 
     [string]$FfmpegDirectory,
 
@@ -21,8 +20,6 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-if ([string]::IsNullOrWhiteSpace($OutputRoot)) { $OutputRoot = Join-Path $PSScriptRoot "..\private-media\r2" }
-if ([string]::IsNullOrWhiteSpace($CandidateFile)) { $CandidateFile = Join-Path $PSScriptRoot "..\data\song-candidates.json" }
 $supportedExtensions = @(".mp3", ".m4a", ".wav", ".flac", ".ogg", ".opus", ".aac", ".webm", ".mp4")
 function Find-MediaTool([string]$Name) {
     if (-not [string]::IsNullOrWhiteSpace($FfmpegDirectory)) {
@@ -80,7 +77,7 @@ if ($duplicateSources.Count -gt 0) {
 function Get-LeadingSilenceSeconds([string]$InputFile) {
     $processInfo = New-Object System.Diagnostics.ProcessStartInfo
     $processInfo.FileName = $ffmpeg
-    $processInfo.Arguments = "-hide_banner -nostats -i `"$InputFile`" -af silencedetect=noise=-25dB:d=0.02 -t 30 -f null NUL"
+    $processInfo.Arguments = "-hide_banner -nostats -y -i `"$InputFile`" -af silencedetect=noise=-25dB:d=0.02 -t 30 -f null -"
     $processInfo.UseShellExecute = $false
     $processInfo.CreateNoWindow = $true
     $processInfo.RedirectStandardError = $true
@@ -109,7 +106,7 @@ foreach ($file in $sourceFiles) {
         continue
     }
 
-    $trimSeconds = Get-LeadingSilenceSeconds $file.FullName
+    Write-Host "Analyzing $($file.FullName)..."; $trimSeconds = Get-LeadingSilenceSeconds $file.FullName; Write-Host "Analyzed!"
     $trimById[$candidateId] = [Math]::Round($trimSeconds * 1000)
     $seekArgs = @()
     if ($trimSeconds -gt 0.02) {

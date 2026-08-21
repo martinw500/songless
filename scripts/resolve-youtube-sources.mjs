@@ -19,7 +19,7 @@ const selectedId = valueAfter("--id");
 const manualUrl = valueAfter("--url");
 const manualReason = valueAfter("--reason");
 const force = args.includes("--force") || valueAfter("--force") === "true";
-if (!Number.isInteger(limit) || limit < 1 || limit > 120) throw new Error("--limit must be from 1 to 120.");
+if (!Number.isInteger(limit) || limit < 1 || limit > 500) throw new Error("--limit must be from 1 to 500.");
 
 const candidates = JSON.parse(readFileSync(candidateFile, "utf8")).songs;
 const sourceRoot = JSON.parse(readFileSync(sourceFile, "utf8"));
