@@ -40,7 +40,12 @@ export class AudioEngine {
     if (playbackId !== this.playbackId) return 0;
 
     if (song.audio.kind === "file" || song.audio.kind === "hosted") {
-      const sourceUrl = song.audio.kind === "file" ? song.audio.src : song.audio.clueSrc;
+      let sourceUrl = song.audio.kind === "file" ? song.audio.src : song.audio.clueSrc;
+      // If the start time is past the end of the ~30s clue clip (e.g. when playing a hook offset), 
+      // we must use the full audio track instead.
+      if (song.audio.kind === "hosted" && (song.startAtMs ?? 0) > 28000) {
+        sourceUrl = song.audio.fullSrc;
+      }
       const buffer = await this.loadBuffer(sourceUrl, context);
       if (playbackId !== this.playbackId) return 0;
       const now = context.currentTime;
