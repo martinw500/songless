@@ -200,7 +200,7 @@ function App() {
         const familiarity = (b.familiarity ?? 0) - (a.familiarity ?? 0);
         return familiarity || a.title.localeCompare(b.title);
       })
-      .slice(0, 7);
+      .slice(0, 50);
   }, [catalog, query]);
 
   const selectedSong = selectedSongId
