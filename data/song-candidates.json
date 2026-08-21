@@ -151,12 +151,12 @@
       "media": {
         "audioFile": "post-malone-swae-lee-sunflower.mp3",
         "artworkFile": "post-malone-swae-lee-sunflower.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-swae-lee-sunflower.mp3?v=160670-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-swae-lee-sunflower.mp3?v=160670-1000",
-        "hostedDurationMs": 160670,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=160670-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-swae-lee-sunflower.mp3?v=161669-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-swae-lee-sunflower.mp3?v=161669-0",
+        "hostedDurationMs": 161669,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-swae-lee-sunflower.jpg?v=161669-0"
       },
-      "startAtMs": 0,
+      "startAtMs": 646,
       "hookStartMs": 120400,
       "album": "Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)"
     },
@@ -196,14 +196,14 @@
       "media": {
         "audioFile": "the-weeknd-daft-punk-starboy.mp3",
         "artworkFile": "the-weeknd-daft-punk-starboy.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-daft-punk-starboy.mp3?v=228610-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-daft-punk-starboy.mp3?v=228610-2000",
-        "hostedDurationMs": 228610,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-daft-punk-starboy.jpg?v=228610-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-daft-punk-starboy.mp3?v=229610-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-daft-punk-starboy.mp3?v=229610-1000",
+        "hostedDurationMs": 229610,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-daft-punk-starboy.jpg?v=229610-1000"
       },
       "album": "Starboy",
       "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
-      "startAtMs": 0,
+      "startAtMs": 607,
       "hookStartMs": 63600
     },
     {
@@ -473,7 +473,7 @@
       },
       "album": "Closer",
       "spotifyUrl": "https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw",
-      "startAtMs": 0,
+      "startAtMs": 30,
       "hookStartMs": 132600
     },
     {
@@ -655,7 +655,7 @@
       },
       "album": "Views",
       "spotifyUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
-      "startAtMs": 0,
+      "startAtMs": 8,
       "hookStartMs": 11400
     },
     {
@@ -694,14 +694,14 @@
       "media": {
         "audioFile": "billie-eilish-khalid-lovely.mp3",
         "artworkFile": "billie-eilish-khalid-lovely.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-khalid-lovely.mp3?v=199470-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-khalid-lovely.mp3?v=199470-1000",
-        "hostedDurationMs": 199470,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-khalid-lovely.jpg?v=199470-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-khalid-lovely.mp3?v=200469-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-khalid-lovely.mp3?v=200469-0",
+        "hostedDurationMs": 200469,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-khalid-lovely.jpg?v=200469-0"
       },
       "album": "lovely (with Khalid)",
       "spotifyUrl": "https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4",
-      "startAtMs": 0,
+      "startAtMs": 83,
       "hookStartMs": 37200
     },
     {
@@ -834,14 +834,14 @@
       "media": {
         "audioFile": "dua-lipa-dont-start-now.mp3",
         "artworkFile": "dua-lipa-dont-start-now.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-dont-start-now.mp3?v=183558-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-dont-start-now.mp3?v=183558-2000",
-        "hostedDurationMs": 183558,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-dont-start-now.jpg?v=183558-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-dont-start-now.mp3?v=184558-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-dont-start-now.mp3?v=184558-1000",
+        "hostedDurationMs": 184558,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-dont-start-now.jpg?v=184558-1000"
       },
       "album": "Future Nostalgia",
       "spotifyUrl": "https://open.spotify.com/track/3PfIrDoz19wz7qK7tYeu62",
-      "startAtMs": 0,
+      "startAtMs": 1182,
       "hookStartMs": 23800
     },
     {
@@ -2107,14 +2107,14 @@
       "media": {
         "audioFile": "shaboozey-a-bar-song-tipsy.mp3",
         "artworkFile": "shaboozey-a-bar-song-tipsy.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shaboozey-a-bar-song-tipsy.mp3?v=170293-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shaboozey-a-bar-song-tipsy.mp3?v=170293-1000",
-        "hostedDurationMs": 170293,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shaboozey-a-bar-song-tipsy.jpg?v=170293-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shaboozey-a-bar-song-tipsy.mp3?v=171292-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shaboozey-a-bar-song-tipsy.mp3?v=171292-0",
+        "hostedDurationMs": 171292,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shaboozey-a-bar-song-tipsy.jpg?v=171292-0"
       },
       "album": "Where I've Been, Isn't Where I'm Going",
       "spotifyUrl": "https://open.spotify.com/track/7wd9kz7UXhJr8pgdqpzKu5",
-      "startAtMs": 0,
+      "startAtMs": 83,
       "hookStartMs": 96000
     },
     {
@@ -2196,14 +2196,14 @@
       "media": {
         "audioFile": "the-rare-occasions-notion.mp3",
         "artworkFile": "the-rare-occasions-notion.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-rare-occasions-notion.mp3?v=194118-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-rare-occasions-notion.mp3?v=194118-1000",
-        "hostedDurationMs": 194118,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-rare-occasions-notion.jpg?v=194118-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-rare-occasions-notion.mp3?v=195117-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-rare-occasions-notion.mp3?v=195117-0",
+        "hostedDurationMs": 195117,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-rare-occasions-notion.jpg?v=195117-0"
       },
       "album": "Notion",
       "spotifyUrl": "https://open.spotify.com/track/0sTlGEld0h8kIPZaKDYUf4",
-      "startAtMs": 0,
+      "startAtMs": 473,
       "hookStartMs": 35000
     },
     {
@@ -2509,14 +2509,14 @@
       "media": {
         "audioFile": "gigi-perez-sailor-song.mp3",
         "artworkFile": "gigi-perez-sailor-song.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gigi-perez-sailor-song.mp3?v=208919-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gigi-perez-sailor-song.mp3?v=208919-2000",
-        "hostedDurationMs": 208919,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gigi-perez-sailor-song.jpg?v=208919-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gigi-perez-sailor-song.mp3?v=210918-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gigi-perez-sailor-song.mp3?v=210918-0",
+        "hostedDurationMs": 210918,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gigi-perez-sailor-song.jpg?v=210918-0"
       },
       "album": "At The Beach, In Every Life",
       "spotifyUrl": "https://open.spotify.com/track/21IYMdzTrzSe191Cy5eMap",
-      "startAtMs": 0,
+      "startAtMs": 797,
       "hookStartMs": 115200
     },
     {
@@ -3203,7 +3203,7 @@
       },
       "album": "Flower Boy",
       "spotifyUrl": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
-      "startAtMs": 0,
+      "startAtMs": 14,
       "hookStartMs": 75400
     },
     {
@@ -3294,7 +3294,7 @@
       },
       "album": "IGOR",
       "spotifyUrl": "https://open.spotify.com/track/0fv2KH6hac06J86hBUTcSf",
-      "startAtMs": 0,
+      "startAtMs": 11,
       "hookStartMs": 84600
     },
     {
@@ -3644,14 +3644,14 @@
       "media": {
         "audioFile": "clairo-bags.mp3",
         "artworkFile": "clairo-bags.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-bags.mp3?v=258545-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/clairo-bags.mp3?v=258545-2000",
-        "hostedDurationMs": 258545,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-bags.jpg?v=258545-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/clairo-bags.mp3?v=259545-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/clairo-bags.mp3?v=259545-1000",
+        "hostedDurationMs": 259545,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-bags.jpg?v=259545-1000"
       },
       "album": "Immunity",
       "spotifyUrl": "https://open.spotify.com/track/1wicceeNVtcnym2YjiOmyj",
-      "startAtMs": 0,
+      "startAtMs": 379,
       "hookStartMs": 54800
     },
     {
@@ -3787,7 +3787,7 @@
       },
       "album": "Romantic Homicide",
       "spotifyUrl": "https://open.spotify.com/track/1xK59OXxi2TAAAbmZK0kBL",
-      "startAtMs": 0,
+      "startAtMs": 700,
       "hookStartMs": 87200
     },
     {
@@ -3834,7 +3834,7 @@
       },
       "album": "808s & Heartbreak",
       "spotifyUrl": "https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5",
-      "startAtMs": 0,
+      "startAtMs": 18,
       "hookStartMs": 63800
     },
     {
@@ -3959,14 +3959,14 @@
       "media": {
         "audioFile": "tame-impala-let-it-happen.mp3",
         "artworkFile": "tame-impala-let-it-happen.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-let-it-happen.mp3?v=467257-7000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-let-it-happen.mp3?v=467257-7000",
-        "hostedDurationMs": 467257,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-let-it-happen.jpg?v=467257-7000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tame-impala-let-it-happen.mp3?v=468257-6000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tame-impala-let-it-happen.mp3?v=468257-6000",
+        "hostedDurationMs": 468257,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-let-it-happen.jpg?v=468257-6000"
       },
       "album": "Currents",
       "spotifyUrl": "https://open.spotify.com/track/2X485T9Z5Ly0xyaghN73ed",
-      "startAtMs": 0,
+      "startAtMs": 42,
       "hookStartMs": 27000
     },
     {
@@ -4003,14 +4003,14 @@
       "media": {
         "audioFile": "beach-house-space-song.mp3",
         "artworkFile": "beach-house-space-song.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/beach-house-space-song.mp3?v=317494-3000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/beach-house-space-song.mp3?v=317494-3000",
-        "hostedDurationMs": 317494,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beach-house-space-song.jpg?v=317494-3000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/beach-house-space-song.mp3?v=320493-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/beach-house-space-song.mp3?v=320493-0",
+        "hostedDurationMs": 320493,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beach-house-space-song.jpg?v=320493-0"
       },
       "album": "Depression Cherry",
       "spotifyUrl": "https://open.spotify.com/track/7H0ya83CMmgFcOhw0UB6ow",
-      "startAtMs": 0,
+      "startAtMs": 1255,
       "hookStartMs": 23800
     },
     {
@@ -4047,14 +4047,14 @@
       "media": {
         "audioFile": "cigarettes-after-sex-apocalypse.mp3",
         "artworkFile": "cigarettes-after-sex-apocalypse.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cigarettes-after-sex-apocalypse.mp3?v=289076-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cigarettes-after-sex-apocalypse.mp3?v=289076-1000",
-        "hostedDurationMs": 289076,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cigarettes-after-sex-apocalypse.jpg?v=289076-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cigarettes-after-sex-apocalypse.mp3?v=290075-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cigarettes-after-sex-apocalypse.mp3?v=290075-0",
+        "hostedDurationMs": 290075,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cigarettes-after-sex-apocalypse.jpg?v=290075-0"
       },
       "album": "Cigarettes After Sex",
       "spotifyUrl": "https://open.spotify.com/track/1oAwsWBovWRIp7qLMGPIet",
-      "startAtMs": 0,
+      "startAtMs": 357,
       "hookStartMs": 46400
     },
     {
@@ -4092,14 +4092,14 @@
       "media": {
         "audioFile": "mgmt-kids.mp3",
         "artworkFile": "mgmt-kids.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-kids.mp3?v=330308-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mgmt-kids.mp3?v=330308-1000",
-        "hostedDurationMs": 330308,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-kids.jpg?v=330308-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mgmt-kids.mp3?v=331307-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mgmt-kids.mp3?v=331307-0",
+        "hostedDurationMs": 331307,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-kids.jpg?v=331307-0"
       },
       "album": "Oracular Spectacular",
       "spotifyUrl": "https://open.spotify.com/track/1jJci4qxiYcOHhQR247rEU",
-      "startAtMs": 0,
+      "startAtMs": 398,
       "hookStartMs": 21800
     },
     {
@@ -4318,10 +4318,10 @@
       "media": {
         "audioFile": "oasis-wonderwall.mp3",
         "artworkFile": "oasis-wonderwall.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/oasis-wonderwall.mp3?v=268723-9000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/oasis-wonderwall.mp3?v=268723-9000",
-        "hostedDurationMs": 268723,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/oasis-wonderwall.jpg?v=268723-9000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/oasis-wonderwall.mp3?v=276723-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/oasis-wonderwall.mp3?v=276723-1000",
+        "hostedDurationMs": 276723,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/oasis-wonderwall.jpg?v=276723-1000"
       },
       "album": "(What's The Story) Morning Glory?",
       "spotifyUrl": "https://open.spotify.com/track/1qPbGZqppFwLwcBC1JQ6Vr",
@@ -4864,12 +4864,12 @@
       "media": {
         "audioFile": "alexandra-stan-mr-saxobeat.mp3",
         "artworkFile": "alexandra-stan-mr-saxobeat.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alexandra-stan-mr-saxobeat.mp3?v=192505-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/alexandra-stan-mr-saxobeat.mp3?v=192505-1000",
-        "hostedDurationMs": 192505,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alexandra-stan-mr-saxobeat.jpg?v=192505-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/alexandra-stan-mr-saxobeat.mp3?v=193504-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/alexandra-stan-mr-saxobeat.mp3?v=193504-0",
+        "hostedDurationMs": 193504,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alexandra-stan-mr-saxobeat.jpg?v=193504-0"
       },
-      "startAtMs": 0,
+      "startAtMs": 421,
       "album": "Mr. Saxobeat",
       "spotifyUrl": "https://open.spotify.com/track/3jfN9BwqDUGUjGUH9Xzm18",
       "hookStartMs": 25000
@@ -5327,10 +5327,10 @@
       "media": {
         "audioFile": "o-zone-dragostea-din-tei.mp3",
         "artworkFile": "o-zone-dragostea-din-tei.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/o-zone-dragostea-din-tei.mp3?v=287438-5000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/o-zone-dragostea-din-tei.mp3?v=287438-5000",
-        "hostedDurationMs": 287438,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/o-zone-dragostea-din-tei.jpg?v=287438-5000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/o-zone-dragostea-din-tei.mp3?v=291438-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/o-zone-dragostea-din-tei.mp3?v=291438-1000",
+        "hostedDurationMs": 291438,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/o-zone-dragostea-din-tei.jpg?v=291438-1000"
       },
       "album": "DiscO-Zone",
       "spotifyUrl": "https://open.spotify.com/track/52Zr0sinhWTCRrQhRRY4EP",
@@ -5473,7 +5473,7 @@
       },
       "album": "Mini World",
       "spotifyUrl": "https://open.spotify.com/track/65uoaqX5qcjXZRheAj1qQT",
-      "startAtMs": 0,
+      "startAtMs": 91,
       "hookStartMs": 98600
     },
     {
@@ -5719,7 +5719,7 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 0,
+      "startAtMs": 421,
       "album": "Good Girl Gone Bad: Reloaded",
       "spotifyUrl": "https://open.spotify.com/track/0ByMNEPAPpOR5H69DVrTNy",
       "hookStartMs": 76600
@@ -5781,7 +5781,7 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 0,
+      "startAtMs": 143,
       "album": "SOS",
       "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID",
       "hookStartMs": 59600
@@ -5799,10 +5799,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/flo-rida-low-feat-t-pain.mp3?v=229819-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/flo-rida-low-feat-t-pain.mp3?v=229819-1000",
-        "hostedDurationMs": 229819,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-low-feat-t-pain.jpg?v=229819-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/flo-rida-low-feat-t-pain.mp3?v=230819-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/flo-rida-low-feat-t-pain.mp3?v=230819-0",
+        "hostedDurationMs": 230819,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-low-feat-t-pain.jpg?v=230819-0"
       },
       "audio": null,
       "artwork": null,
@@ -5812,7 +5812,7 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 0,
+      "startAtMs": 553,
       "album": "Mail on Sunday",
       "spotifyUrl": "https://open.spotify.com/track/0CAfXk7DXMnon4gLudAp7J",
       "hookStartMs": 39000
@@ -6109,10 +6109,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-the-fate-of-ophelia.mp3?v=237075-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-the-fate-of-ophelia.mp3?v=237075-1000",
-        "hostedDurationMs": 237075,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-the-fate-of-ophelia.jpg?v=237075-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-the-fate-of-ophelia.mp3?v=238074-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-the-fate-of-ophelia.mp3?v=238074-0",
+        "hostedDurationMs": 238074,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-the-fate-of-ophelia.jpg?v=238074-0"
       },
       "audio": null,
       "artwork": null,
@@ -6122,7 +6122,7 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 0,
+      "startAtMs": 214,
       "album": "The Life of a Showgirl",
       "spotifyUrl": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W",
       "hookStartMs": 55200
@@ -6264,10 +6264,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-delicate.mp3?v=230881-4000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-delicate.mp3?v=230881-4000",
-        "hostedDurationMs": 230881,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-delicate.jpg?v=230881-4000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-delicate.mp3?v=231881-3000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-delicate.mp3?v=231881-3000",
+        "hostedDurationMs": 231881,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-delicate.jpg?v=231881-3000"
       },
       "audio": null,
       "artwork": null,
@@ -6277,7 +6277,7 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "startAtMs": 0,
+      "startAtMs": 785,
       "album": "reputation",
       "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf",
       "hookStartMs": 51600
@@ -6588,7 +6588,8 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "startAtMs": 154,
-      "hookStartMs": 8600
+      "hookStartMs": 8600,
+      "album": "Waves (Robin Schulz Remix Radio Edit) - Single"
     },
     {
       "id": "selena-gomez-love-you-like-a-love-song",
@@ -6617,7 +6618,8 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "startAtMs": 293,
-      "hookStartMs": 119800
+      "hookStartMs": 119800,
+      "album": "For You"
     },
     {
       "id": "avicii-hey-brother",
@@ -6739,7 +6741,8 @@
       "audio": null,
       "artwork": null,
       "startAtMs": 77,
-      "hookStartMs": 22200
+      "hookStartMs": 22200,
+      "album": "Levels - EP"
     },
     {
       "id": "flo-rida-my-house",
@@ -6977,14 +6980,14 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/demi-lovato-sorry-not-sorry.mp3?v=202761-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/demi-lovato-sorry-not-sorry.mp3?v=202761-1000",
-        "hostedDurationMs": 202761,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-sorry-not-sorry.jpg?v=202761-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/demi-lovato-sorry-not-sorry.mp3?v=203760-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/demi-lovato-sorry-not-sorry.mp3?v=203760-0",
+        "hostedDurationMs": 203760,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-sorry-not-sorry.jpg?v=203760-0"
       },
       "audio": null,
       "artwork": null,
-      "startAtMs": 0,
+      "startAtMs": 449,
       "album": "Tell Me You Love Me",
       "spotifyUrl": "https://open.spotify.com/track/0yvPEnB032fojLfVluFjUv",
       "hookStartMs": 45600
@@ -7421,7 +7424,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 976,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -7430,10 +7433,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/paramore-still-into-you.jpg?v=216138-4000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/paramore-still-into-you.mp3?v=216138-4000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/paramore-still-into-you.mp3?v=216138-4000",
-        "hostedDurationMs": 216138
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/paramore-still-into-you.jpg?v=218138-2000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/paramore-still-into-you.mp3?v=218138-2000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/paramore-still-into-you.mp3?v=218138-2000",
+        "hostedDurationMs": 218138
       },
       "audio": null,
       "artwork": null,
@@ -7638,7 +7641,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1116,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -7647,10 +7650,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-pride.jpg?v=272254-3000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-pride.mp3?v=272254-3000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-pride.mp3?v=272254-3000",
-        "hostedDurationMs": 272254
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-pride.jpg?v=274254-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-pride.mp3?v=274254-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-pride.mp3?v=274254-1000",
+        "hostedDurationMs": 274254
       },
       "audio": null,
       "artwork": null,
@@ -7669,7 +7672,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 88,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -7798,10 +7801,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-the-a-team.jpg?v=284565-5000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-the-a-team.mp3?v=284565-5000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-the-a-team.mp3?v=284565-5000",
-        "hostedDurationMs": 284565
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-the-a-team.jpg?v=289564-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-the-a-team.mp3?v=289564-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-the-a-team.mp3?v=289564-0",
+        "hostedDurationMs": 289564
       },
       "audio": null,
       "artwork": null,
@@ -7851,7 +7854,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 861,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -7860,10 +7863,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nicki-minaj-super-bass.jpg?v=200254-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nicki-minaj-super-bass.mp3?v=200254-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nicki-minaj-super-bass.mp3?v=200254-1000",
-        "hostedDurationMs": 200254
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nicki-minaj-super-bass.jpg?v=201253-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nicki-minaj-super-bass.mp3?v=201253-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nicki-minaj-super-bass.mp3?v=201253-0",
+        "hostedDurationMs": 201253
       },
       "audio": null,
       "artwork": null,
@@ -7882,7 +7885,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 515,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -7891,10 +7894,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-swimming-pools-drank.jpg?v=247468-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-swimming-pools-drank.mp3?v=247468-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-swimming-pools-drank.mp3?v=247468-1000",
-        "hostedDurationMs": 247468
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-swimming-pools-drank.jpg?v=248467-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kendrick-lamar-swimming-pools-drank.mp3?v=248467-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kendrick-lamar-swimming-pools-drank.mp3?v=248467-0",
+        "hostedDurationMs": 248467
       },
       "audio": null,
       "artwork": null,
@@ -7940,7 +7943,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 61,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -8073,10 +8076,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/usher-my-boo.jpg?v=215828-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/usher-my-boo.mp3?v=215828-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/usher-my-boo.mp3?v=215828-1000",
-        "hostedDurationMs": 215828
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/usher-my-boo.jpg?v=216827-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/usher-my-boo.mp3?v=216827-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/usher-my-boo.mp3?v=216827-0",
+        "hostedDurationMs": 216827
       },
       "audio": null,
       "artwork": null,
@@ -8126,7 +8129,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 589,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -8135,10 +8138,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/galantis-runaway-u-i.jpg?v=262664-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/galantis-runaway-u-i.mp3?v=262664-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/galantis-runaway-u-i.mp3?v=262664-1000",
-        "hostedDurationMs": 262664
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/galantis-runaway-u-i.jpg?v=263663-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/galantis-runaway-u-i.mp3?v=263663-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/galantis-runaway-u-i.mp3?v=263663-0",
+        "hostedDurationMs": 263663
       },
       "audio": null,
       "artwork": null,
@@ -8165,10 +8168,12 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
-      "artwork": null
+      "artwork": null,
+      "album": "Beautiful Girls (Radio Disney Version) - Single"
     },
     {
       "id": "sza-saturn",
@@ -8487,7 +8492,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 217,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -8539,37 +8544,6 @@
       "hookStartMs": 54800
     },
     {
-      "id": "the-mar-as-no-one-noticed",
-      "title": "No One Noticed",
-      "artist": "The Marías",
-      "primaryArtists": [
-        "The Marías"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 22,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-mar-as-no-one-noticed.jpg?v=235044-0",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-mar-as-no-one-noticed.mp3?v=235044-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-mar-as-no-one-noticed.mp3?v=235044-0",
-        "hostedDurationMs": 235044
-      },
-      "audio": null,
-      "artwork": null,
-      "album": "Submarine",
-      "spotifyUrl": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5",
-      "hookStartMs": 155000
-    },
-    {
       "id": "kelly-clarkson-since-u-been-gone",
       "title": "Since U Been Gone",
       "artist": "Kelly Clarkson",
@@ -8589,10 +8563,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kelly-clarkson-since-u-been-gone.jpg?v=187821-4000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kelly-clarkson-since-u-been-gone.mp3?v=187821-4000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kelly-clarkson-since-u-been-gone.mp3?v=187821-4000",
-        "hostedDurationMs": 187821
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kelly-clarkson-since-u-been-gone.jpg?v=191820-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kelly-clarkson-since-u-been-gone.mp3?v=191820-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kelly-clarkson-since-u-been-gone.mp3?v=191820-0",
+        "hostedDurationMs": 191820
       },
       "audio": null,
       "artwork": null,
@@ -8669,7 +8643,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 170,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -8767,10 +8741,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/p-nk-try.jpg?v=243965-5000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/p-nk-try.mp3?v=243965-5000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/p-nk-try.mp3?v=243965-5000",
-        "hostedDurationMs": 243965
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/p-nk-try.jpg?v=246965-2000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/p-nk-try.mp3?v=246965-2000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/p-nk-try.mp3?v=246965-2000",
+        "hostedDurationMs": 246965
       },
       "audio": null,
       "artwork": null,
@@ -8847,7 +8821,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 540,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -8856,10 +8830,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lorde-ribs.jpg?v=257970-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lorde-ribs.mp3?v=257970-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lorde-ribs.mp3?v=257970-1000",
-        "hostedDurationMs": 257970
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lorde-ribs.jpg?v=258969-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lorde-ribs.mp3?v=258969-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lorde-ribs.mp3?v=258969-0",
+        "hostedDurationMs": 258969
       },
       "audio": null,
       "artwork": null,
@@ -9033,7 +9007,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 115,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9042,10 +9016,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-furtado-say-it-right.jpg?v=233743-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nelly-furtado-say-it-right.mp3?v=233743-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nelly-furtado-say-it-right.mp3?v=233743-1000",
-        "hostedDurationMs": 233743
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-furtado-say-it-right.jpg?v=234742-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nelly-furtado-say-it-right.mp3?v=234742-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nelly-furtado-say-it-right.mp3?v=234742-0",
+        "hostedDurationMs": 234742
       },
       "audio": null,
       "artwork": null,
@@ -9064,7 +9038,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 419,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9246,7 +9220,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 38,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9458,7 +9432,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 357,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9467,10 +9441,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-1975-somebody-else.jpg?v=509828-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-1975-somebody-else.mp3?v=509828-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-1975-somebody-else.mp3?v=509828-1000",
-        "hostedDurationMs": 509828
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-1975-somebody-else.jpg?v=510827-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-1975-somebody-else.mp3?v=510827-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-1975-somebody-else.mp3?v=510827-0",
+        "hostedDurationMs": 510827
       },
       "audio": null,
       "artwork": null,
@@ -9551,7 +9525,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 623,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9560,10 +9534,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-enchanted.jpg?v=351188-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-enchanted.mp3?v=351188-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-enchanted.mp3?v=351188-1000",
-        "hostedDurationMs": 351188
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-enchanted.jpg?v=352187-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/taylor-swift-enchanted.mp3?v=352187-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/taylor-swift-enchanted.mp3?v=352187-0",
+        "hostedDurationMs": 352187
       },
       "audio": null,
       "artwork": null,
@@ -9609,7 +9583,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 869,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9618,10 +9592,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-1975-about-you.jpg?v=324485-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-1975-about-you.mp3?v=324485-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-1975-about-you.mp3?v=324485-2000",
-        "hostedDurationMs": 324485
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-1975-about-you.jpg?v=326484-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-1975-about-you.mp3?v=326484-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-1975-about-you.mp3?v=326484-0",
+        "hostedDurationMs": 326484
       },
       "audio": null,
       "artwork": null,
@@ -9783,7 +9757,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 627,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9792,10 +9766,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-who-knows.jpg?v=225326-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-who-knows.mp3?v=225326-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-who-knows.mp3?v=225326-1000",
-        "hostedDurationMs": 225326
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-who-knows.jpg?v=226326-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-who-knows.mp3?v=226326-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-who-knows.mp3?v=226326-0",
+        "hostedDurationMs": 226326
       },
       "audio": null,
       "artwork": null,
@@ -9876,7 +9850,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1024,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -9885,10 +9859,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-freudian.jpg?v=249950-3000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-freudian.mp3?v=249950-3000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-freudian.mp3?v=249950-3000",
-        "hostedDurationMs": 249950
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-freudian.jpg?v=250950-2000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-freudian.mp3?v=250950-2000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-freudian.mp3?v=250950-2000",
+        "hostedDurationMs": 250950
       },
       "audio": null,
       "artwork": null,
@@ -10000,7 +9974,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 268,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10009,10 +9983,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-superpowers.jpg?v=173603-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-superpowers.mp3?v=173603-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-superpowers.mp3?v=173603-1000",
-        "hostedDurationMs": 173603
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-superpowers.jpg?v=174604-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/daniel-caesar-superpowers.mp3?v=174604-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/daniel-caesar-superpowers.mp3?v=174604-0",
+        "hostedDurationMs": 174604
       },
       "audio": null,
       "artwork": null,
@@ -10062,7 +10036,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 519,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10071,10 +10045,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-one-less-lonely-girl.jpg?v=226057-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-one-less-lonely-girl.mp3?v=226057-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-one-less-lonely-girl.mp3?v=226057-1000",
-        "hostedDurationMs": 226057
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-one-less-lonely-girl.jpg?v=227057-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-one-less-lonely-girl.mp3?v=227057-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-one-less-lonely-girl.mp3?v=227057-0",
+        "hostedDurationMs": 227057
       },
       "audio": null,
       "artwork": null,
@@ -10155,7 +10129,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 21,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10164,10 +10138,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-company.jpg?v=205276-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-company.mp3?v=205276-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-company.mp3?v=205276-2000",
-        "hostedDurationMs": 205276
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-company.jpg?v=206276-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-company.mp3?v=206276-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-company.mp3?v=206276-1000",
+        "hostedDurationMs": 206276
       },
       "audio": null,
       "artwork": null,
@@ -10186,7 +10160,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 554,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10195,10 +10169,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-anyone.jpg?v=251766-12000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-anyone.mp3?v=251766-12000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-anyone.mp3?v=251766-12000",
-        "hostedDurationMs": 251766
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-anyone.jpg?v=263765-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-anyone.mp3?v=263765-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-anyone.mp3?v=263765-0",
+        "hostedDurationMs": 263765
       },
       "audio": null,
       "artwork": null,
@@ -10217,7 +10191,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 213,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10226,10 +10200,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-hold-on.jpg?v=307246-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-hold-on.mp3?v=307246-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-hold-on.mp3?v=307246-1000",
-        "hostedDurationMs": 307246
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-hold-on.jpg?v=308246-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-hold-on.mp3?v=308246-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-hold-on.mp3?v=308246-0",
+        "hostedDurationMs": 308246
       },
       "audio": null,
       "artwork": null,
@@ -10465,7 +10439,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 99,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10496,7 +10470,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 8,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10505,10 +10479,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-broken-clocks.jpg?v=230804-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sza-broken-clocks.mp3?v=230804-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sza-broken-clocks.mp3?v=230804-2000",
-        "hostedDurationMs": 230804
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-broken-clocks.jpg?v=231804-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sza-broken-clocks.mp3?v=231804-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sza-broken-clocks.mp3?v=231804-1000",
+        "hostedDurationMs": 231804
       },
       "audio": null,
       "artwork": null,
@@ -10527,7 +10501,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 22,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -10629,10 +10603,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-marvins-room.jpg?v=340228-7000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-marvins-room.mp3?v=340228-7000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-marvins-room.mp3?v=340228-7000",
-        "hostedDurationMs": 340228
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-marvins-room.jpg?v=346228-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-marvins-room.mp3?v=346228-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-marvins-room.mp3?v=346228-1000",
+        "hostedDurationMs": 346228
       },
       "audio": null,
       "artwork": null,
@@ -10856,7 +10830,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 5,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -11036,7 +11010,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -11141,7 +11116,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 6,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -11150,10 +11125,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-not-nice.jpg?v=208002-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/partynextdoor-not-nice.mp3?v=208002-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/partynextdoor-not-nice.mp3?v=208002-2000",
-        "hostedDurationMs": 208002
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-not-nice.jpg?v=210001-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/partynextdoor-not-nice.mp3?v=210001-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/partynextdoor-not-nice.mp3?v=210001-0",
+        "hostedDurationMs": 210001
       },
       "audio": null,
       "artwork": null,
@@ -11172,7 +11147,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 61,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -11181,10 +11156,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/malcolm-todd-chest-pain-i-love.jpg?v=231814-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/malcolm-todd-chest-pain-i-love.mp3?v=231814-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/malcolm-todd-chest-pain-i-love.mp3?v=231814-2000",
-        "hostedDurationMs": 231814
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/malcolm-todd-chest-pain-i-love.jpg?v=232814-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/malcolm-todd-chest-pain-i-love.mp3?v=232814-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/malcolm-todd-chest-pain-i-love.mp3?v=232814-1000",
+        "hostedDurationMs": 232814
       },
       "audio": null,
       "artwork": null,
@@ -11549,10 +11524,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/chappell-roan-hot-to-go.jpg?v=203547-8000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/chappell-roan-hot-to-go.mp3?v=203547-8000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/chappell-roan-hot-to-go.mp3?v=203547-8000",
-        "hostedDurationMs": 203547
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/chappell-roan-hot-to-go.jpg?v=211545-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/chappell-roan-hot-to-go.mp3?v=211545-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/chappell-roan-hot-to-go.mp3?v=211545-0",
+        "hostedDurationMs": 211545
       },
       "audio": null,
       "artwork": null,
@@ -11944,36 +11919,6 @@
       "spotifyUrl": "https://open.spotify.com/track/1otG6j1WHNvl9WgXLWkHTo"
     },
     {
-      "id": "tyler-new-magic-wand",
-      "title": "NEW MAGIC WAND",
-      "artist": "Tyler, The Creator",
-      "primaryArtists": [
-        "Tyler"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tyler-new-magic-wand.mp3?v=195320-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tyler-new-magic-wand.mp3?v=195320-0",
-        "hostedDurationMs": 195320,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-new-magic-wand.jpg?v=195320-0"
-      },
-      "audio": null,
-      "artwork": null,
-      "hookStartMs": 84600,
-      "album": "Lullaby Versions of Tyler, The Creator"
-    },
-    {
       "id": "wallows-are-you-bored-yet",
       "title": "Are You Bored Yet?",
       "artist": "Wallows feat. Clairo",
@@ -11999,37 +11944,6 @@
       "artwork": null,
       "album": "Nothing Happens",
       "spotifyUrl": "https://open.spotify.com/track/57RA3JGafJm5zRtKJiKPIm"
-    },
-    {
-      "id": "cafun-tek-it",
-      "title": "Tek It",
-      "artist": "Cafuné",
-      "primaryArtists": [
-        "Cafuné"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 103,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cafun-tek-it.jpg?v=191019-0",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cafun-tek-it.mp3?v=191019-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cafun-tek-it.mp3?v=191019-0",
-        "hostedDurationMs": 191019
-      },
-      "audio": null,
-      "artwork": null,
-      "album": "Tek It (I Watch the Moon)",
-      "spotifyUrl": "https://open.spotify.com/track/4K9fCsfAZmLogvDKKIRgCa",
-      "hookStartMs": 25000
     },
     {
       "id": "ricky-montgomery-line-without-a-hook",
@@ -12073,7 +11987,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 646,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -12082,10 +11996,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/keyshia-cole-love.jpg?v=305568-5000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/keyshia-cole-love.mp3?v=305568-5000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/keyshia-cole-love.mp3?v=305568-5000",
-        "hostedDurationMs": 305568
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/keyshia-cole-love.jpg?v=306568-4000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/keyshia-cole-love.mp3?v=306568-4000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/keyshia-cole-love.mp3?v=306568-4000",
+        "hostedDurationMs": 306568
       },
       "audio": null,
       "artwork": null,
@@ -12228,7 +12142,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 488,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -12237,10 +12151,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-bad-habits.jpg?v=230690-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-bad-habits.mp3?v=230690-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-bad-habits.mp3?v=230690-1000",
-        "hostedDurationMs": 230690
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-bad-habits.jpg?v=231689-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-bad-habits.mp3?v=231689-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-bad-habits.mp3?v=231689-0",
+        "hostedDurationMs": 231689
       },
       "audio": null,
       "artwork": null,
@@ -12268,10 +12182,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ariana-grande-one-last-time.jpg?v=197892-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ariana-grande-one-last-time.mp3?v=197892-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ariana-grande-one-last-time.mp3?v=197892-1000",
-        "hostedDurationMs": 197892
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ariana-grande-one-last-time.jpg?v=198891-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ariana-grande-one-last-time.mp3?v=198891-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ariana-grande-one-last-time.mp3?v=198891-0",
+        "hostedDurationMs": 198891
       },
       "audio": null,
       "artwork": null,
@@ -12290,7 +12204,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 882,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -12299,10 +12213,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/panic-at-the-disco-house-of-memories.jpg?v=207085-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/panic-at-the-disco-house-of-memories.mp3?v=207085-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/panic-at-the-disco-house-of-memories.mp3?v=207085-2000",
-        "hostedDurationMs": 207085
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/panic-at-the-disco-house-of-memories.jpg?v=209085-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/panic-at-the-disco-house-of-memories.mp3?v=209085-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/panic-at-the-disco-house-of-memories.mp3?v=209085-0",
+        "hostedDurationMs": 209085
       },
       "audio": null,
       "artwork": null,
@@ -12391,7 +12305,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -12469,7 +12384,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 498,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -12602,10 +12517,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-good-feeling.jpg?v=269258-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/flo-rida-good-feeling.mp3?v=269258-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/flo-rida-good-feeling.mp3?v=269258-1000",
-        "hostedDurationMs": 269258
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-good-feeling.jpg?v=270257-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/flo-rida-good-feeling.mp3?v=270257-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/flo-rida-good-feeling.mp3?v=270257-0",
+        "hostedDurationMs": 270257
       },
       "audio": null,
       "artwork": null,
@@ -12717,7 +12632,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 49,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -12872,7 +12787,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 18,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -12881,10 +12796,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/of-monsters-and-men-little-talks.jpg?v=208937-4000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/of-monsters-and-men-little-talks.mp3?v=208937-4000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/of-monsters-and-men-little-talks.mp3?v=208937-4000",
-        "hostedDurationMs": 208937
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/of-monsters-and-men-little-talks.jpg?v=210937-2000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/of-monsters-and-men-little-talks.mp3?v=210937-2000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/of-monsters-and-men-little-talks.mp3?v=210937-2000",
+        "hostedDurationMs": 210937
       },
       "audio": null,
       "artwork": null,
@@ -12943,10 +12858,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/grouplove-tongue-tied.jpg?v=250294-4000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/grouplove-tongue-tied.mp3?v=250294-4000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/grouplove-tongue-tied.mp3?v=250294-4000",
-        "hostedDurationMs": 250294
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/grouplove-tongue-tied.jpg?v=254293-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/grouplove-tongue-tied.mp3?v=254293-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/grouplove-tongue-tied.mp3?v=254293-0",
+        "hostedDurationMs": 254293
       },
       "audio": null,
       "artwork": null,
@@ -13071,37 +12986,6 @@
       "hookStartMs": 102800
     },
     {
-      "id": "timbaland-apologize",
-      "title": "Apologize",
-      "artist": "Timbaland feat. OneRepublic",
-      "primaryArtists": [
-        "Timbaland"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 230,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/timbaland-apologize.jpg?v=185120-0",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/timbaland-apologize.mp3?v=185120-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/timbaland-apologize.mp3?v=185120-0",
-        "hostedDurationMs": 185120
-      },
-      "audio": null,
-      "artwork": null,
-      "album": "Shock Value",
-      "spotifyUrl": "https://open.spotify.com/track/6ucR4KfvsBFWCMVFDvyKKl",
-      "hookStartMs": 117200
-    },
-    {
       "id": "natasha-bedingfield-pocketful-of-sunshine",
       "title": "Pocketful of Sunshine",
       "artist": "Natasha Bedingfield",
@@ -13112,7 +12996,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 593,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -13121,10 +13005,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/natasha-bedingfield-pocketful-of-sunshine.jpg?v=221894-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/natasha-bedingfield-pocketful-of-sunshine.mp3?v=221894-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/natasha-bedingfield-pocketful-of-sunshine.mp3?v=221894-2000",
-        "hostedDurationMs": 221894
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/natasha-bedingfield-pocketful-of-sunshine.jpg?v=222894-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/natasha-bedingfield-pocketful-of-sunshine.mp3?v=222894-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/natasha-bedingfield-pocketful-of-sunshine.mp3?v=222894-1000",
+        "hostedDurationMs": 222894
       },
       "audio": null,
       "artwork": null,
@@ -13143,7 +13027,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 206,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -13152,10 +13036,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sara-bareilles-love-song.jpg?v=262685-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sara-bareilles-love-song.mp3?v=262685-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sara-bareilles-love-song.mp3?v=262685-2000",
-        "hostedDurationMs": 262685
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sara-bareilles-love-song.jpg?v=263685-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sara-bareilles-love-song.mp3?v=263685-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sara-bareilles-love-song.mp3?v=263685-1000",
+        "hostedDurationMs": 263685
       },
       "audio": null,
       "artwork": null,
@@ -13387,7 +13271,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 744,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -13396,10 +13280,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cascada-everytime-we-touch.jpg?v=184599-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cascada-everytime-we-touch.mp3?v=184599-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cascada-everytime-we-touch.mp3?v=184599-1000",
-        "hostedDurationMs": 184599
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cascada-everytime-we-touch.jpg?v=185598-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cascada-everytime-we-touch.mp3?v=185598-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cascada-everytime-we-touch.mp3?v=185598-0",
+        "hostedDurationMs": 185598
       },
       "audio": null,
       "artwork": null,
@@ -13627,7 +13511,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1255,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -13993,7 +13877,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 3,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14002,10 +13886,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-die-trying.jpg?v=194433-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/partynextdoor-die-trying.mp3?v=194433-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/partynextdoor-die-trying.mp3?v=194433-1000",
-        "hostedDurationMs": 194433
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/partynextdoor-die-trying.jpg?v=195432-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/partynextdoor-die-trying.mp3?v=195432-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/partynextdoor-die-trying.mp3?v=195432-0",
+        "hostedDurationMs": 195432
       },
       "audio": null,
       "artwork": null,
@@ -14210,7 +14094,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 500,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14272,7 +14156,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 284,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14281,10 +14165,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/summer-walker-girls-need-love.mp3?v=221376-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/summer-walker-girls-need-love.mp3?v=221376-1000",
-        "hostedDurationMs": 221376,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/summer-walker-girls-need-love.jpg?v=221376-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/summer-walker-girls-need-love.mp3?v=222375-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/summer-walker-girls-need-love.mp3?v=222375-0",
+        "hostedDurationMs": 222375,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/summer-walker-girls-need-love.jpg?v=222375-0"
       },
       "audio": null,
       "artwork": null,
@@ -14510,7 +14394,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 242,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14519,10 +14403,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-all-american-rejects-gives-you-hell.jpg?v=207889-8000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-all-american-rejects-gives-you-hell.mp3?v=207889-8000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-all-american-rejects-gives-you-hell.mp3?v=207889-8000",
-        "hostedDurationMs": 207889
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-all-american-rejects-gives-you-hell.jpg?v=215888-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-all-american-rejects-gives-you-hell.mp3?v=215888-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-all-american-rejects-gives-you-hell.mp3?v=215888-0",
+        "hostedDurationMs": 215888
       },
       "audio": null,
       "artwork": null,
@@ -14781,7 +14665,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 505,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14790,10 +14674,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cher-lloyd-want-u-back.jpg?v=213014-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cher-lloyd-want-u-back.mp3?v=213014-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cher-lloyd-want-u-back.mp3?v=213014-1000",
-        "hostedDurationMs": 213014
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cher-lloyd-want-u-back.jpg?v=214013-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/cher-lloyd-want-u-back.mp3?v=214013-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/cher-lloyd-want-u-back.mp3?v=214013-0",
+        "hostedDurationMs": 214013
       },
       "audio": null,
       "artwork": null,
@@ -14843,7 +14727,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 901,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14852,10 +14736,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/metro-station-shake-it.jpg?v=182391-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/metro-station-shake-it.mp3?v=182391-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/metro-station-shake-it.mp3?v=182391-2000",
-        "hostedDurationMs": 182391
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/metro-station-shake-it.jpg?v=184390-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/metro-station-shake-it.mp3?v=184390-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/metro-station-shake-it.mp3?v=184390-0",
+        "hostedDurationMs": 184390
       },
       "audio": null,
       "artwork": null,
@@ -14903,7 +14787,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 518,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -14912,10 +14796,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-best-song-ever.jpg?v=199203-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/one-direction-best-song-ever.mp3?v=199203-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/one-direction-best-song-ever.mp3?v=199203-1000",
-        "hostedDurationMs": 199203
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-best-song-ever.jpg?v=200204-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/one-direction-best-song-ever.mp3?v=200204-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/one-direction-best-song-ever.mp3?v=200204-0",
+        "hostedDurationMs": 200204
       },
       "audio": null,
       "artwork": null,
@@ -15054,7 +14938,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1142,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15063,10 +14947,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-7-things.jpg?v=210450-3000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-7-things.mp3?v=210450-3000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-7-things.mp3?v=210450-3000",
-        "hostedDurationMs": 210450
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-7-things.jpg?v=212450-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-7-things.mp3?v=212450-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-7-things.mp3?v=212450-1000",
+        "hostedDurationMs": 212450
       },
       "audio": null,
       "artwork": null,
@@ -15205,7 +15089,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 101,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15214,10 +15098,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-can-t-be-tamed.jpg?v=227286-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-can-t-be-tamed.mp3?v=227286-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-can-t-be-tamed.mp3?v=227286-2000",
-        "hostedDurationMs": 227286
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-can-t-be-tamed.jpg?v=228286-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-can-t-be-tamed.mp3?v=228286-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-can-t-be-tamed.mp3?v=228286-1000",
+        "hostedDurationMs": 228286
       },
       "audio": null,
       "artwork": null,
@@ -15321,7 +15205,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 606,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15330,10 +15214,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nicki-minaj-pound-the-alarm.jpg?v=204641-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nicki-minaj-pound-the-alarm.mp3?v=204641-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nicki-minaj-pound-the-alarm.mp3?v=204641-1000",
-        "hostedDurationMs": 204641
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nicki-minaj-pound-the-alarm.jpg?v=205640-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nicki-minaj-pound-the-alarm.mp3?v=205640-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nicki-minaj-pound-the-alarm.mp3?v=205640-0",
+        "hostedDurationMs": 205640
       },
       "audio": null,
       "artwork": null,
@@ -15414,7 +15298,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 21,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15445,7 +15329,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 31,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15565,7 +15449,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 874,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15574,10 +15458,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-damage.jpg?v=222150-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/h-e-r-damage.mp3?v=222150-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/h-e-r-damage.mp3?v=222150-2000",
-        "hostedDurationMs": 222150
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-damage.jpg?v=223150-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/h-e-r-damage.mp3?v=223150-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/h-e-r-damage.mp3?v=223150-1000",
+        "hostedDurationMs": 223150
       },
       "audio": null,
       "artwork": null,
@@ -15605,10 +15489,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-focus.jpg?v=198462-7000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/h-e-r-focus.mp3?v=198462-7000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/h-e-r-focus.mp3?v=198462-7000",
-        "hostedDurationMs": 198462
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-focus.jpg?v=205461-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/h-e-r-focus.mp3?v=205461-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/h-e-r-focus.mp3?v=205461-0",
+        "hostedDurationMs": 205461
       },
       "audio": null,
       "artwork": null,
@@ -15782,7 +15666,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1309,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -15791,10 +15675,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tamia-so-into-you.jpg?v=234125-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tamia-so-into-you.mp3?v=234125-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tamia-so-into-you.mp3?v=234125-2000",
-        "hostedDurationMs": 234125
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tamia-so-into-you.jpg?v=236124-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tamia-so-into-you.mp3?v=236124-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tamia-so-into-you.mp3?v=236124-0",
+        "hostedDurationMs": 236124
       },
       "audio": null,
       "artwork": null,
@@ -16138,7 +16022,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 978,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16147,10 +16031,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ms-lauryn-hill-ex-factor.jpg?v=276282-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ms-lauryn-hill-ex-factor.mp3?v=276282-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ms-lauryn-hill-ex-factor.mp3?v=276282-1000",
-        "hostedDurationMs": 276282
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ms-lauryn-hill-ex-factor.jpg?v=277281-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ms-lauryn-hill-ex-factor.mp3?v=277281-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ms-lauryn-hill-ex-factor.mp3?v=277281-0",
+        "hostedDurationMs": 277281
       },
       "audio": null,
       "artwork": null,
@@ -16206,7 +16090,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -16222,7 +16107,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 691,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16231,10 +16116,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/onerepublic-i-lived.mp3?v=233302-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/onerepublic-i-lived.mp3?v=233302-1000",
-        "hostedDurationMs": 233302,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/onerepublic-i-lived.jpg?v=233302-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/onerepublic-i-lived.mp3?v=234301-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/onerepublic-i-lived.mp3?v=234301-0",
+        "hostedDurationMs": 234301,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/onerepublic-i-lived.jpg?v=234301-0"
       },
       "audio": null,
       "artwork": null,
@@ -16251,7 +16136,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 512,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16309,7 +16194,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1779,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16318,10 +16203,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kesha-blow.mp3?v=246598-7000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kesha-blow.mp3?v=246598-7000",
-        "hostedDurationMs": 246598,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kesha-blow.jpg?v=246598-7000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/kesha-blow.mp3?v=248598-5000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/kesha-blow.mp3?v=248598-5000",
+        "hostedDurationMs": 248598,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kesha-blow.jpg?v=248598-5000"
       },
       "audio": null,
       "artwork": null,
@@ -16462,7 +16347,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -16486,7 +16372,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -16531,7 +16418,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 256,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16540,10 +16427,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/black-eyed-peas-boom-boom-pow.mp3?v=249428-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/black-eyed-peas-boom-boom-pow.mp3?v=249428-2000",
-        "hostedDurationMs": 249428,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-boom-boom-pow.jpg?v=249428-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/black-eyed-peas-boom-boom-pow.mp3?v=250428-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/black-eyed-peas-boom-boom-pow.mp3?v=250428-1000",
+        "hostedDurationMs": 250428,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-boom-boom-pow.jpg?v=250428-1000"
       },
       "audio": null,
       "artwork": null,
@@ -16561,7 +16448,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 180,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16570,10 +16457,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/black-eyed-peas-just-can-t-get-enough.mp3?v=234393-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/black-eyed-peas-just-can-t-get-enough.mp3?v=234393-1000",
-        "hostedDurationMs": 234393,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-just-can-t-get-enough.jpg?v=234393-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/black-eyed-peas-just-can-t-get-enough.mp3?v=235392-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/black-eyed-peas-just-can-t-get-enough.mp3?v=235392-0",
+        "hostedDurationMs": 235392,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-just-can-t-get-enough.jpg?v=235392-0"
       },
       "audio": null,
       "artwork": null,
@@ -16685,7 +16572,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -16701,7 +16589,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1413,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -16710,10 +16598,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hot-chelle-rae-tonight-tonight.mp3?v=201372-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/hot-chelle-rae-tonight-tonight.mp3?v=201372-2000",
-        "hostedDurationMs": 201372,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hot-chelle-rae-tonight-tonight.jpg?v=201372-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hot-chelle-rae-tonight-tonight.mp3?v=202372-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/hot-chelle-rae-tonight-tonight.mp3?v=202372-1000",
+        "hostedDurationMs": 202372,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hot-chelle-rae-tonight-tonight.jpg?v=202372-1000"
       },
       "audio": null,
       "artwork": null,
@@ -16825,7 +16713,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -16849,7 +16738,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -16989,7 +16879,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17042,7 +16933,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17124,7 +17016,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17148,7 +17041,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17520,7 +17414,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17544,7 +17439,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17647,7 +17543,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 541,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -17656,10 +17552,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ari-lennox-shea-butter-baby.mp3?v=223278-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ari-lennox-shea-butter-baby.mp3?v=223278-1000",
-        "hostedDurationMs": 223278,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ari-lennox-shea-butter-baby.jpg?v=223278-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ari-lennox-shea-butter-baby.mp3?v=224277-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ari-lennox-shea-butter-baby.mp3?v=224277-0",
+        "hostedDurationMs": 224277,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ari-lennox-shea-butter-baby.jpg?v=224277-0"
       },
       "audio": null,
       "artwork": null,
@@ -17705,7 +17601,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 5,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -17829,7 +17725,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -17874,7 +17771,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 637,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -17883,10 +17780,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/olivia-dean-so-easy-to-fall-in-love.mp3?v=195929-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/olivia-dean-so-easy-to-fall-in-love.mp3?v=195929-1000",
-        "hostedDurationMs": 195929,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-dean-so-easy-to-fall-in-love.jpg?v=195929-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/olivia-dean-so-easy-to-fall-in-love.mp3?v=196928-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/olivia-dean-so-easy-to-fall-in-love.mp3?v=196928-0",
+        "hostedDurationMs": 196928,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-dean-so-easy-to-fall-in-love.jpg?v=196928-0"
       },
       "audio": null,
       "artwork": null,
@@ -17904,7 +17801,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 62,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -17913,10 +17810,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sienna-spiro-die-on-this-hill.jpg?v=213084-4000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sienna-spiro-die-on-this-hill.mp3?v=213084-4000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sienna-spiro-die-on-this-hill.mp3?v=213084-4000",
-        "hostedDurationMs": 213084
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sienna-spiro-die-on-this-hill.jpg?v=216084-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/sienna-spiro-die-on-this-hill.mp3?v=216084-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/sienna-spiro-die-on-this-hill.mp3?v=216084-1000",
+        "hostedDurationMs": 216084
       },
       "audio": null,
       "artwork": null,
@@ -18079,7 +17976,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 536,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -18088,10 +17985,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/olivia-rodrigo-drop-dead.mp3?v=244150-6000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/olivia-rodrigo-drop-dead.mp3?v=244150-6000",
-        "hostedDurationMs": 244150,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-drop-dead.jpg?v=244150-6000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/olivia-rodrigo-drop-dead.mp3?v=245150-5000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/olivia-rodrigo-drop-dead.mp3?v=245150-5000",
+        "hostedDurationMs": 245150,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-drop-dead.jpg?v=245150-5000"
       },
       "audio": null,
       "artwork": null,
@@ -18204,7 +18101,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -18278,7 +18176,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 624,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -18287,10 +18185,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/wizthemc-show-me-love.mp3?v=175966-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/wizthemc-show-me-love.mp3?v=175966-1000",
-        "hostedDurationMs": 175966,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/wizthemc-show-me-love.jpg?v=175966-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/wizthemc-show-me-love.mp3?v=176965-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/wizthemc-show-me-love.mp3?v=176965-0",
+        "hostedDurationMs": 176965,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/wizthemc-show-me-love.jpg?v=176965-0"
       },
       "audio": null,
       "artwork": null,
@@ -18355,35 +18253,6 @@
       "hookStartMs": 48200
     },
     {
-      "id": "the-weeknd-starboy",
-      "title": "Starboy",
-      "artist": "The Weeknd",
-      "primaryArtists": [
-        "The Weeknd"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-starboy.mp3?v=228454-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-starboy.mp3?v=228454-2000",
-        "hostedDurationMs": 228454,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-starboy.jpg?v=228454-2000"
-      },
-      "audio": null,
-      "artwork": null,
-      "hookStartMs": 63400
-    },
-    {
       "id": "lewis-capaldi-someone-you-loved",
       "title": "Someone You Loved",
       "artist": "Lewis Capaldi",
@@ -18423,7 +18292,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 646,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -18432,43 +18301,14 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-sunflower.mp3?v=160670-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-sunflower.mp3?v=160670-1000",
-        "hostedDurationMs": 160670,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-sunflower.jpg?v=160670-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/post-malone-sunflower.mp3?v=161669-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/post-malone-sunflower.mp3?v=161669-0",
+        "hostedDurationMs": 161669,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-sunflower.jpg?v=161669-0"
       },
       "audio": null,
       "artwork": null,
       "hookStartMs": 120400
-    },
-    {
-      "id": "drake-one-dance",
-      "title": "One Dance",
-      "artist": "Drake",
-      "primaryArtists": [
-        "Drake"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 288,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/drake-one-dance.mp3?v=136010-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/drake-one-dance.mp3?v=136010-1000",
-        "hostedDurationMs": 136010,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-one-dance.jpg?v=136010-1000"
-      },
-      "audio": null,
-      "artwork": null,
-      "hookStartMs": 73000
     },
     {
       "id": "ed-sheeran-perfect",
@@ -18481,7 +18321,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 449,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -18490,10 +18330,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-perfect.jpg?v=262361-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-perfect.mp3?v=262361-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-perfect.mp3?v=262361-1000",
-        "hostedDurationMs": 262361
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-perfect.jpg?v=263360-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-perfect.mp3?v=263360-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-perfect.mp3?v=263360-0",
+        "hostedDurationMs": 263360
       },
       "audio": null,
       "artwork": null,
@@ -18519,7 +18359,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -18564,7 +18405,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 83,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -18573,67 +18414,14 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-lovely-with-khalid.mp3?v=199470-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-lovely-with-khalid.mp3?v=199470-1000",
-        "hostedDurationMs": 199470,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-lovely-with-khalid.jpg?v=199470-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/billie-eilish-lovely-with-khalid.mp3?v=200469-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/billie-eilish-lovely-with-khalid.mp3?v=200469-0",
+        "hostedDurationMs": 200469,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-lovely-with-khalid.jpg?v=200469-0"
       },
       "audio": null,
       "artwork": null,
       "hookStartMs": 37200
-    },
-    {
-      "id": "the-chainsmokers-closer",
-      "title": "Closer",
-      "artist": "The Chainsmokers",
-      "primaryArtists": [
-        "The Chainsmokers"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_media",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30
-      },
-      "audio": null,
-      "artwork": null
-    },
-    {
-      "id": "lady-gaga-die-with-a-smile",
-      "title": "Die With A Smile",
-      "artist": "Lady Gaga",
-      "primaryArtists": [
-        "Lady Gaga"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 249,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lady-gaga-die-with-a-smile.mp3?v=251717-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lady-gaga-die-with-a-smile.mp3?v=251717-0",
-        "hostedDurationMs": 251717,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-die-with-a-smile.jpg?v=251717-0"
-      },
-      "audio": null,
-      "artwork": null,
-      "hookStartMs": 39800
     },
     {
       "id": "vance-joy-riptide",
@@ -18821,7 +18609,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 366,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -18830,10 +18618,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tones-and-i-dance-monkey.mp3?v=225415-11000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tones-and-i-dance-monkey.mp3?v=225415-11000",
-        "hostedDurationMs": 225415,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tones-and-i-dance-monkey.jpg?v=225415-11000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/tones-and-i-dance-monkey.mp3?v=232415-4000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/tones-and-i-dance-monkey.mp3?v=232415-4000",
+        "hostedDurationMs": 232415,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tones-and-i-dance-monkey.jpg?v=232415-4000"
       },
       "audio": null,
       "artwork": null,
@@ -18888,7 +18676,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -18950,35 +18739,6 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 32400
-    },
-    {
-      "id": "shawn-mendes-se-orita",
-      "title": "SeñOrita",
-      "artist": "Shawn Mendes",
-      "primaryArtists": [
-        "Shawn Mendes"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/shawn-mendes-se-orita.mp3?v=205376-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/shawn-mendes-se-orita.mp3?v=205376-0",
-        "hostedDurationMs": 205376,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-se-orita.jpg?v=205376-0"
-      },
-      "audio": null,
-      "artwork": null,
-      "hookStartMs": 73200
     },
     {
       "id": "bruno-mars-just-the-way-you-are",
@@ -19058,43 +18818,14 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bruno-mars-locked-out-of-heaven.mp3?v=233163-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bruno-mars-locked-out-of-heaven.mp3?v=233163-1000",
-        "hostedDurationMs": 233163,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-locked-out-of-heaven.jpg?v=233163-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bruno-mars-locked-out-of-heaven.mp3?v=234162-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bruno-mars-locked-out-of-heaven.mp3?v=234162-0",
+        "hostedDurationMs": 234162,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-locked-out-of-heaven.jpg?v=234162-0"
       },
       "audio": null,
       "artwork": null,
       "hookStartMs": 62000
-    },
-    {
-      "id": "dua-lipa-don-t-start-now",
-      "title": "Don'T Start Now",
-      "artist": "Dua Lipa",
-      "primaryArtists": [
-        "Dua Lipa"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/dua-lipa-don-t-start-now.mp3?v=183558-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/dua-lipa-don-t-start-now.mp3?v=183558-2000",
-        "hostedDurationMs": 183558,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-don-t-start-now.jpg?v=183558-2000"
-      },
-      "audio": null,
-      "artwork": null,
-      "hookStartMs": 23800
     },
     {
       "id": "justin-bieber-love-yourself",
@@ -19523,7 +19254,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -19576,7 +19308,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -19710,7 +19443,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 453,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -19749,10 +19482,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-flowers.mp3?v=199459-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-flowers.mp3?v=199459-1000",
-        "hostedDurationMs": 199459,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-flowers.jpg?v=199459-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-flowers.mp3?v=200458-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-flowers.mp3?v=200458-0",
+        "hostedDurationMs": 200458,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-flowers.jpg?v=200458-0"
       },
       "audio": null,
       "artwork": null,
@@ -19865,7 +19598,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -19889,7 +19623,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -19993,7 +19728,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1115,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -20002,10 +19737,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/linkin-park-numb.mp3?v=185521-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/linkin-park-numb.mp3?v=185521-2000",
-        "hostedDurationMs": 185521,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/linkin-park-numb.jpg?v=185521-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/linkin-park-numb.mp3?v=187520-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/linkin-park-numb.mp3?v=187520-0",
+        "hostedDurationMs": 187520,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/linkin-park-numb.jpg?v=187520-0"
       },
       "audio": null,
       "artwork": null,
@@ -20051,7 +19786,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 834,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -20060,10 +19795,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/elton-john-cold-heart.mp3?v=252132-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/elton-john-cold-heart.mp3?v=252132-2000",
-        "hostedDurationMs": 252132,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/elton-john-cold-heart.jpg?v=252132-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/elton-john-cold-heart.mp3?v=254131-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/elton-john-cold-heart.mp3?v=254131-0",
+        "hostedDurationMs": 254131,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/elton-john-cold-heart.jpg?v=254131-0"
       },
       "audio": null,
       "artwork": null,
@@ -20118,7 +19853,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20171,7 +19907,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20224,7 +19961,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20277,7 +20015,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20301,7 +20040,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20466,7 +20206,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 534,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -20475,10 +20215,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/keane-somewhere-only-we-know.mp3?v=235485-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/keane-somewhere-only-we-know.mp3?v=235485-1000",
-        "hostedDurationMs": 235485,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/keane-somewhere-only-we-know.jpg?v=235485-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/keane-somewhere-only-we-know.mp3?v=236484-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/keane-somewhere-only-we-know.mp3?v=236484-0",
+        "hostedDurationMs": 236484,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/keane-somewhere-only-we-know.jpg?v=236484-0"
       },
       "audio": null,
       "artwork": null,
@@ -20495,7 +20235,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1253,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -20504,10 +20244,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/xxxtentacion-sad.mp3?v=346701-13000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/xxxtentacion-sad.mp3?v=346701-13000",
-        "hostedDurationMs": 346701,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/xxxtentacion-sad.jpg?v=346701-13000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/xxxtentacion-sad.mp3?v=349702-10000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/xxxtentacion-sad.mp3?v=349702-10000",
+        "hostedDurationMs": 349702,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/xxxtentacion-sad.jpg?v=349702-10000"
       },
       "audio": null,
       "artwork": null,
@@ -20583,7 +20323,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 35,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -20620,7 +20360,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20847,7 +20588,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20901,7 +20643,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -20917,7 +20660,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 493,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21002,7 +20745,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 160,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21011,10 +20754,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/jason-mraz-i-m-yours.mp3?v=219775-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/jason-mraz-i-m-yours.mp3?v=219775-2000",
-        "hostedDurationMs": 219775,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jason-mraz-i-m-yours.jpg?v=219775-2000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/jason-mraz-i-m-yours.mp3?v=220775-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/jason-mraz-i-m-yours.mp3?v=220775-1000",
+        "hostedDurationMs": 220775,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jason-mraz-i-m-yours.jpg?v=220775-1000"
       },
       "audio": null,
       "artwork": null,
@@ -21243,7 +20986,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -21346,7 +21090,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 116,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21376,7 +21120,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 496,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21385,10 +21129,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/roddy-ricch-the-box.jpg?v=195950-1000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/roddy-ricch-the-box.mp3?v=195950-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/roddy-ricch-the-box.mp3?v=195950-1000",
-        "hostedDurationMs": 195950
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/roddy-ricch-the-box.jpg?v=196949-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/roddy-ricch-the-box.mp3?v=196949-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/roddy-ricch-the-box.mp3?v=196949-0",
+        "hostedDurationMs": 196949
       },
       "audio": null,
       "artwork": null,
@@ -21435,7 +21179,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 35,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21618,10 +21362,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lana-del-rey-summertime-sadness.mp3?v=253401-12000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lana-del-rey-summertime-sadness.mp3?v=253401-12000",
-        "hostedDurationMs": 253401,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lana-del-rey-summertime-sadness.jpg?v=253401-12000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/lana-del-rey-summertime-sadness.mp3?v=264401-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/lana-del-rey-summertime-sadness.mp3?v=264401-1000",
+        "hostedDurationMs": 264401,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lana-del-rey-summertime-sadness.jpg?v=264401-1000"
       },
       "audio": null,
       "artwork": null,
@@ -21733,7 +21477,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -21894,7 +21639,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 56,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21923,7 +21668,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 260,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -21932,14 +21677,15 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-ghost.mp3?v=211301-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-ghost.mp3?v=211301-1000",
-        "hostedDurationMs": 211301,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-ghost.jpg?v=211301-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/justin-bieber-ghost.mp3?v=212300-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/justin-bieber-ghost.mp3?v=212300-0",
+        "hostedDurationMs": 212300,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-ghost.jpg?v=212300-0"
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 63200
+      "hookStartMs": 63200,
+      "album": "Justice"
     },
     {
       "id": "christina-perri-a-thousand-years",
@@ -22010,7 +21756,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 43,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -22040,7 +21786,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 505,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -22069,7 +21815,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 1805,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -22078,10 +21824,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bon-jovi-livin-on-a-prayer.mp3?v=241803-7000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bon-jovi-livin-on-a-prayer.mp3?v=241803-7000",
-        "hostedDurationMs": 241803,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bon-jovi-livin-on-a-prayer.jpg?v=241803-7000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/bon-jovi-livin-on-a-prayer.mp3?v=245803-3000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/bon-jovi-livin-on-a-prayer.mp3?v=245803-3000",
+        "hostedDurationMs": 245803,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bon-jovi-livin-on-a-prayer.jpg?v=245803-3000"
       },
       "audio": null,
       "artwork": null,
@@ -22127,7 +21873,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 9,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -22146,30 +21892,6 @@
       "hookStartMs": 116200
     },
     {
-      "id": "rihanna-umbrella",
-      "title": "Umbrella",
-      "artist": "Rihanna",
-      "primaryArtists": [
-        "Rihanna"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_media",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30
-      },
-      "audio": null,
-      "artwork": null
-    },
-    {
       "id": "ac-dc-thunderstruck",
       "title": "Thunderstruck",
       "artist": "AC/DC",
@@ -22180,7 +21902,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 0,
+      "startAtMs": 589,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
@@ -22189,10 +21911,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ac-dc-thunderstruck.mp3?v=291932-1000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ac-dc-thunderstruck.mp3?v=291932-1000",
-        "hostedDurationMs": 291932,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ac-dc-thunderstruck.jpg?v=291932-1000"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ac-dc-thunderstruck.mp3?v=292931-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ac-dc-thunderstruck.mp3?v=292931-0",
+        "hostedDurationMs": 292931,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ac-dc-thunderstruck.jpg?v=292931-0"
       },
       "audio": null,
       "artwork": null,
@@ -22304,7 +22026,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -22415,7 +22138,8 @@
       "reviewStatus": "needs_media",
       "media": {
         "clueLengthMs": 30000,
-        "onsetPadMs": 30
+        "onsetPadMs": 30,
+        "artworkUrl": ""
       },
       "audio": null,
       "artwork": null
@@ -22507,36 +22231,6 @@
       "artwork": null,
       "album": "Elephant",
       "hookStartMs": 118400
-    },
-    {
-      "id": "miley-cyrus-party-in-the-u-s-a",
-      "title": "Party In The U.S.A.",
-      "artist": "Miley Cyrus",
-      "primaryArtists": [
-        "Miley Cyrus"
-      ],
-      "aliases": [],
-      "artistAliases": [],
-      "bucket": "billion_anchor",
-      "familiarity": 75,
-      "startAtMs": 0,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
-      "media": {
-        "clueLengthMs": 30000,
-        "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-party-in-the-u-s-a.jpg?v=203231-2000",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/miley-cyrus-party-in-the-u-s-a.mp3?v=203231-2000",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/miley-cyrus-party-in-the-u-s-a.mp3?v=203231-2000",
-        "hostedDurationMs": 203231
-      },
-      "audio": null,
-      "artwork": null,
-      "album": "Party In the U.S.A. - Single",
-      "hookStartMs": 51200
     },
     {
       "id": "rihanna-love-on-the-brain",

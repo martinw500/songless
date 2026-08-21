@@ -77,7 +77,7 @@ if ($duplicateSources.Count -gt 0) {
 function Get-LeadingSilenceSeconds([string]$InputFile) {
     $processInfo = New-Object System.Diagnostics.ProcessStartInfo
     $processInfo.FileName = $ffmpeg
-    $processInfo.Arguments = "-hide_banner -nostats -y -i `"$InputFile`" -af silencedetect=noise=-25dB:d=0.02 -t 30 -f null -"
+    $processInfo.Arguments = "-hide_banner -nostats -y -i `"$InputFile`" -af silencedetect=noise=-45dB:d=0.02 -t 30 -f null -"
     $processInfo.UseShellExecute = $false
     $processInfo.CreateNoWindow = $true
     $processInfo.RedirectStandardError = $true

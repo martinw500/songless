@@ -27,42 +27,63 @@ async function run() {
     const query = encodeURIComponent(`${song.title} ${song.artist}`);
     const url = `https://itunes.apple.com/search?term=${query}&entity=song&limit=5`;
     
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      
-      let bestMatch = null;
-      for (const result of data.results) {
-        // Basic safety check for artist and title
-        const trackNameClean = normalized(result.trackName);
-        const artistNameClean = normalized(result.artistName);
-        const songTitleClean = normalized(song.title);
+    let success = false;
+    for (let attempt = 1; attempt <= 5; attempt++) {
+      try {
+        const response = await fetch(url);
+        if (response.status === 429) throw new Error("Rate limit");
+        const data = await response.json();
         
-        if (trackNameClean.includes(songTitleClean) || songTitleClean.includes(trackNameClean)) {
-           bestMatch = result;
-           break;
+        let bestMatch = null;
+        let fallbackMatch = null;
+        
+        for (const result of data.results) {
+          const trackNameClean = normalized(result.trackName);
+          const songTitleClean = normalized(song.title);
+          
+          if (trackNameClean.includes(songTitleClean) || songTitleClean.includes(trackNameClean)) {
+             const collectionName = (result.collectionName || '').toLowerCase();
+             
+             if (!fallbackMatch) fallbackMatch = result;
+
+             if (song.album && normalized(collectionName).includes(normalized(song.album))) {
+                 bestMatch = result;
+                 break;
+             } else if (!song.album && !collectionName.includes('highlights') && !collectionName.includes('greatest hits') && !collectionName.includes('essentials') && !collectionName.includes('best of') && !collectionName.includes('the singles')) {
+                 bestMatch = result;
+                 break;
+             }
+          }
+        }
+        
+        bestMatch = bestMatch || fallbackMatch;
+
+        if (bestMatch) {
+          song.album = song.album || bestMatch.collectionName;
+          const artworkUrl = bestMatch.artworkUrl100?.replace('100x100bb.jpg', '600x600cc.jpg');
+          if (artworkUrl) {
+            song.media.artworkUrl = artworkUrl;
+          }
+          resolved++;
+          console.log(`[OK] ${song.title} -> ${song.album}`);
+        } else {
+          failed++;
+          console.warn(`[MISS] ${song.title}`);
+        }
+        
+        success = true;
+        await new Promise(r => setTimeout(r, 200));
+        break; // break retry loop
+
+      } catch (err) {
+        if (attempt === 5) {
+          console.error(`Error on ${song.title}: ${err.message}`);
+          failed++;
+        } else {
+          console.warn(`Rate limit on ${song.title}, retrying in 5s...`);
+          await new Promise(r => setTimeout(r, 5000));
         }
       }
-
-      if (bestMatch) {
-        song.album = song.album || bestMatch.collectionName;
-        const artworkUrl = bestMatch.artworkUrl100?.replace('100x100bb.jpg', '600x600bb.jpg');
-        if (artworkUrl) {
-          song.media.artworkUrl = artworkUrl;
-        }
-        resolved++;
-        console.log(`[OK] ${song.title} -> ${song.album}`);
-      } else {
-        failed++;
-        console.warn(`[MISS] ${song.title}`);
-      }
-      
-      // iTunes has a generous rate limit but 200ms is safe
-      await new Promise(r => setTimeout(r, 200));
-
-    } catch (err) {
-      console.error(`Error on ${song.title}: ${err.message}`);
-      failed++;
     }
   }
 

@@ -90,16 +90,20 @@ assertWithinR2Budget(projectedBytes, maxBytes);
 
 if (!dryRun) {
   if (!catalogOnly) {
-    for (const asset of assets) {
-      await client.send(new PutObjectCommand({
-        Bucket: bucket,
-        Key: asset.key,
-        Body: createReadStream(asset.absoluteFile),
-        ContentLength: asset.size,
-        ContentType: asset.contentType,
-        CacheControl: "public, max-age=3600",
+    const concurrency = 20;
+    for (let i = 0; i < assets.length; i += concurrency) {
+      const chunk = assets.slice(i, i + concurrency);
+      await Promise.all(chunk.map(async (asset) => {
+        await client.send(new PutObjectCommand({
+          Bucket: bucket,
+          Key: asset.key,
+          Body: createReadStream(asset.absoluteFile),
+          ContentLength: asset.size,
+          ContentType: asset.contentType,
+          CacheControl: "public, max-age=3600",
+        }));
+        console.log(`UPLOADED ${asset.key} (${(asset.size / 1_000_000).toFixed(2)} MB)`);
       }));
-      console.log(`UPLOADED ${asset.key} (${(asset.size / 1_000_000).toFixed(2)} MB)`);
     }
   }
 
