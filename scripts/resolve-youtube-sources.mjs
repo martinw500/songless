@@ -72,6 +72,11 @@ function scoreResult(candidate, result, allowManualProvenance = false) {
   }
   if (alteredVersion.test(versionText)) return { accepted: false, reason: "altered version", score: -1 };
   if (hasUnexpectedFeature(versionText)) return { accepted: false, reason: "unexpected featured artist", score: -1 };
+  if (/(official (music )?video|music video|making of|footnotes|behind the scenes)/iu.test(resultTitle)) return { accepted: false, reason: "music video or behind scenes", score: -1 };
+  
+  const isTopic = /Topic/i.test(result.channel ?? "");
+  const isAudio = /\bAudio\b/i.test(resultTitle);
+  if (!isTopic && !isAudio) return { accepted: false, reason: "not a Topic channel or explicit Audio", score: -1 };
   if (/\s\/\s/u.test(result.title ?? "") && !candidate.title.includes("/")) return { accepted: false, reason: "combined-song upload", score: -1 };
   if (result.live_status && result.live_status !== "not_live") return { accepted: false, reason: "live stream", score: -1 };
   if (!Number.isFinite(result.duration) || result.duration < 75 || result.duration > 720) {
