@@ -2421,10 +2421,10 @@
       "media": {
         "audioFile": "doechii-anxiety.mp3",
         "artworkFile": "doechii-anxiety.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=248303-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=248303-0",
-        "hostedDurationMs": 248303,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=248303-0"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/doechii-anxiety.mp3?v=249302-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/doechii-anxiety.mp3?v=249302-0",
+        "hostedDurationMs": 249302,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/doechii-anxiety.jpg?v=249302-0"
       },
       "album": "Alligator Bites Never Heal (Extended)",
       "spotifyUrl": "https://open.spotify.com/track/0J7UkOuMsJdffD6pEqDlbh",
@@ -5374,10 +5374,10 @@
       "media": {
         "audioFile": "stromae-papaoutai.mp3",
         "artworkFile": "stromae-papaoutai.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=229381-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=229381-0",
-        "hostedDurationMs": 229381,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=229381-0"
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/stromae-papaoutai.mp3?v=231380-0",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/stromae-papaoutai.mp3?v=231380-0",
+        "hostedDurationMs": 231380,
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=231380-0"
       },
       "album": "racine carrée",
       "spotifyUrl": "https://open.spotify.com/track/34dx8DACTJsc3rsJdaEIQw",
@@ -12331,9 +12331,9 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mkto-classic.jpg?v=173383-0",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mkto-classic.mp3?v=173383-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mkto-classic.mp3?v=173383-0",
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mkto-classic.jpg?v=173383-1000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/mkto-classic.mp3?v=173383-1000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/mkto-classic.mp3?v=173383-1000",
         "hostedDurationMs": 173383
       },
       "audio": null,
@@ -12579,9 +12579,9 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-just-a-dream.jpg?v=240872-0",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nelly-just-a-dream.mp3?v=240872-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nelly-just-a-dream.mp3?v=240872-0",
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-just-a-dream.jpg?v=240872-5000",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/nelly-just-a-dream.mp3?v=240872-5000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/nelly-just-a-dream.mp3?v=240872-5000",
         "hostedDurationMs": 240872
       },
       "audio": null,
@@ -16598,10 +16598,10 @@
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hot-chelle-rae-tonight-tonight.mp3?v=202372-0",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/hot-chelle-rae-tonight-tonight.mp3?v=202372-0",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/hot-chelle-rae-tonight-tonight.mp3?v=202372-3000",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/hot-chelle-rae-tonight-tonight.mp3?v=202372-3000",
         "hostedDurationMs": 202372,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hot-chelle-rae-tonight-tonight.jpg?v=202372-0"
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hot-chelle-rae-tonight-tonight.jpg?v=202372-3000"
       },
       "audio": null,
       "artwork": null,
