@@ -15964,7 +15964,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 93,
+      "startAtMs": 7000,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,
