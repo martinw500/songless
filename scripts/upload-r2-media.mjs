@@ -78,7 +78,6 @@ for (const song of songs) {
   if (!candidateById.has(song.id)) throw new Error(`Unknown candidate in prepared manifest: ${song.id}.`);
   assets.push(localAsset(song.fullFile, `audio/full/${song.id}.mp3`, "audio/mpeg"));
   assets.push(localAsset(song.clueFile, `audio/clues/${song.id}.mp3`, "audio/mpeg"));
-  if (song.artworkFile) assets.push(localAsset(song.artworkFile, `artwork/${song.id}.jpg`, "image/jpeg"));
 }
 
 const existing = await listObjects();
@@ -119,7 +118,6 @@ if (!dryRun) {
     candidate.media.hostedClueUrl = publicUrl(`audio/clues/${song.id}.mp3`, mediaVersion);
     candidate.media.hostedFullUrl = publicUrl(`audio/full/${song.id}.mp3`, mediaVersion);
     candidate.media.hostedDurationMs = song.durationMs;
-    if (song.artworkFile) candidate.media.artworkUrl = publicUrl(`artwork/${song.id}.jpg`, mediaVersion);
     candidate.reviewStatus = "needs_intro_review";
   }
   writeFileSync(candidateFile, `${JSON.stringify(candidateRoot, null, 2)}\n`, "utf8");

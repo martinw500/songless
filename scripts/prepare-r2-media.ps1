@@ -126,17 +126,6 @@ foreach ($file in $sourceFiles) {
         if ($LASTEXITCODE -ne 0) { throw "ffmpeg failed while encoding the clue asset: $($file.FullName)" }
     }
 
-    $artworkTarget = Join-Path $artworkRoot "$candidateId.jpg"
-    if ($Force -or -not (Test-Path -LiteralPath $artworkTarget)) {
-        $overwrite = if ($Force) { "-y" } else { "-n" }
-        $downloadedThumbnail = Join-Path $file.DirectoryName "$candidateId.jpg"
-        if (Test-Path -LiteralPath $downloadedThumbnail -PathType Leaf) {
-            & $ffmpeg -hide_banner -loglevel error $overwrite -i $downloadedThumbnail -vf "scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:(ow-iw)/2:(oh-ih)/2" -frames:v 1 -q:v 3 $artworkTarget
-        } else {
-            & $ffmpeg -hide_banner -loglevel error $overwrite -i $file.FullName -an -map "0:v:0?" -vf "scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:(ow-iw)/2:(oh-ih)/2" -frames:v 1 -q:v 3 $artworkTarget
-        }
-    }
-
     $durationText = & $ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $fullTarget
     $durationSeconds = [double]::Parse($durationText.Trim(), [Globalization.CultureInfo]::InvariantCulture)
     $trimMessage = if ($trimSeconds -gt 0.02) { "; trimmed $([Math]::Round($trimSeconds, 3))s leading silence" } else { "" }
@@ -158,14 +147,12 @@ foreach ($fullFile in @(Get-ChildItem -LiteralPath $fullRoot -Filter *.mp3 -File
     if (-not (Test-Path -LiteralPath $clueFile -PathType Leaf)) { continue }
     $durationText = & $ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $fullFile.FullName
     $durationMs = [Math]::Round([double]::Parse($durationText.Trim(), [Globalization.CultureInfo]::InvariantCulture) * 1000)
-    $artworkFile = Join-Path $artworkRoot "$candidateId.jpg"
     $manifestSongs += [ordered]@{
         id = $candidateId
         durationMs = $durationMs
         leadingSilenceTrimMs = $(if ($trimById.ContainsKey($candidateId)) { $trimById[$candidateId] } else { 0 })
         fullFile = "full/$candidateId.mp3"
         clueFile = "clues/$candidateId.mp3"
-        artworkFile = $(if (Test-Path -LiteralPath $artworkFile) { "artwork/$candidateId.jpg" } else { $null })
     }
 }
 
