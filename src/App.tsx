@@ -507,7 +507,7 @@ function App() {
             )}
             <button
               type="button"
-              className="action-button secondary-action feedback-button"
+              className="mode-action feedback-button"
               onClick={() => setIsFeedbackOpen(true)}
               title="Send Feedback"
             >
@@ -519,8 +519,9 @@ function App() {
               href="https://buymeacoffee.com/songlessrecreation"
               target="_blank"
               rel="noopener noreferrer"
-              className="action-button secondary-action support-button"
+              className="mode-action support-button"
               title="Support this project on Buy Me A Coffee"
+              style={{ textDecoration: 'none' }}
             >
               <CoffeeIcon />
               Support
