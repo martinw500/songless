@@ -116,6 +116,8 @@ The `startAtMs` field in each candidate and catalog entry tells the audio engine
 
 After applying onsets, regenerate the catalog with `node scripts/generate-provisional-catalog.mjs`. The fallback chain is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding). Do not skip a deliberate fade or melody merely because it is soft. Set `clueGainDb` from 0–12 dB for those cases; clue playback is limited, and full-song reveal playback remains at the original level.
 
+Because the shortest normal clue is 0.1 seconds, `npm run provisional:catalog` automatically advances an undocumented start that sits at least 100 ms before the measured sustained-audio onset. The audit verifies that normalization was applied instead of rejecting the song as a curation decision. Intentional quiet textures and fades must have a documented media-start override and, when necessary, clue-only gain. Audible static cannot be distinguished reliably from intentional texture by level measurements, so known static receives an explicit skip such as the tracked `No One Noticed` override.
+
 ## Live catalogue
 
 `public/catalog.json` remains the runtime format. The promotion command prefers a complete R2-hosted source, then falls back to a prepared local file:
@@ -146,6 +148,12 @@ After applying onsets, regenerate the catalog with `node scripts/generate-provis
 ```
 
 R2 artwork or optional metadata artwork is used when no local JPG exists. Album and Spotify-link metadata are display-only and optional; Spotify is never a playback source. Playable R2/local audio and verified intro scoring are mandatory. The first real catalogue needs at least ten songs in each mode and cannot mix demos with real songs. Hosted clues decode only the compact clue asset; a win or final loss streams the complete file from game-time zero rather than inheriting the final clue position.
+
+### Artwork integrity
+
+R2 object names do not prove that their contents are correct. Run `npm run audit:artwork:remote` after any bulk artwork upload. It reads R2 checksums and fails when identical image bytes are assigned to unrelated referenced candidates, even if every JSON URL and object key is unique. Legitimate shared release covers must be documented in `data/artwork-sharing-overrides.json` with the exact song IDs and a reason.
+
+`npm run repair:artwork` is dry-run by default. It identifies the known poisoned checksum group and reports replacement coverage without changing R2. `node --env-file-if-exists=.env.local scripts/repair-poisoned-artwork-r2.mjs --apply` stages every replacement before uploading, enforces the R2 storage ceiling, writes a new content-hash cache-buster into candidate metadata, and verifies every resulting R2 checksum. Canonical cached Spotify artwork is preferred, followed by verified iTunes artwork; a song-specific local image is used only when neither canonical source is available. Unused candidates with no trustworthy replacement have their bad URL quarantined with `media.artworkStatus: "needs_canonical_artwork"`, so promotion uses the normal artwork fallback instead of reviving corrupt content.
 
 ## Search metadata
 

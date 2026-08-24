@@ -227,6 +227,7 @@ for (const song of candidates) {
     const actualDurationMs = durationMs(fullFile);
     const kind = sourceKind(source, song);
     if (firstSoundMs !== null && configuredStartMs + 250 < firstSoundMs) flags.push("configured-before-first-sound");
+    if (firstAudibleMs !== null && configuredStartMs + 100 <= firstAudibleMs) flags.push("short-clue-dead-zone");
     if (firstAudibleMs !== null && configuredStartMs + 600 < firstAudibleMs && clueGainDb === 0) flags.push("configured-before-audible-content");
     if (configuredStartMs > 1000) flags.push("manual-offset-over-1s");
     if (effectiveIntroDb < -38) flags.push("very-quiet-first-2s");

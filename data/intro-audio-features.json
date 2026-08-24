@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-24T06:17:32.067Z",
+  "generatedAt": "2026-08-24T08:07:27.611Z",
   "notes": "Derived waveform measurements only. Regenerate after replacing, trimming, or retiming hosted audio.",
   "songs": [
     {
@@ -590,8 +590,8 @@
       "firstStrongMs": 100,
       "firstMusicalMs": 0,
       "recommendedPlayableMs": 0,
-      "first2SecondsDb": -14.2,
-      "seconds8To15Db": -15.4
+      "first2SecondsDb": -13.2,
+      "seconds8To15Db": -15.3
     },
     {
       "id": "djo-end-of-beginning",

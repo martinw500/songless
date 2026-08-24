@@ -780,6 +780,64 @@ async function run() {
       `Play triangle lost optical alignment at 720px (${JSON.stringify(narrow)}).`);
     console.log("PASS 720px responsive layout and play-icon alignment");
 
+    const artworkFixtures = ["#ff3158", "#2f7cff"].map((color, index) => (
+      `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" fill="${color}"/><text x="32" y="40" text-anchor="middle" fill="white" font-size="24">${index + 1}</text></svg>`).toString("base64")}`
+    ));
+    const artworkTransitionCatalog = artworkFixtures.map((artwork, index) => ({
+      id: `artwork-transition-${index + 1}`,
+      title: `Artwork Transition ${index + 1}`,
+      artist: `Fixture Artist ${index + 1}`,
+      aliases: [],
+      artistAliases: [],
+      releaseYear: 2026,
+      genres: ["test"],
+      difficulty: "easy",
+      familiarity: 80,
+      artwork,
+      audio: { kind: "synth", notes: [220 + index * 110, 330 + index * 110] },
+    }));
+    writeFileSync(catalogFile, `${JSON.stringify(artworkTransitionCatalog, null, 2)}\n`);
+    await client.call("Page.navigate", { url: `http://127.0.0.1:${appPort}/` });
+    await waitForPage(client);
+    async function loseArtworkFixture() {
+      for (let attempt = 0; attempt < 8; attempt += 1) {
+        const status = await client.evaluate("document.querySelector('.app-shell')?.dataset.status");
+        if (status !== "playing") return;
+        await client.evaluate("document.querySelector('.skip-button')?.click()");
+        await delay(60);
+      }
+      throw new Error("Artwork transition fixture did not reach its result screen.");
+    }
+    async function artworkResultState() {
+      for (let attempt = 0; attempt < 30; attempt += 1) {
+        const state = await client.evaluate(`(() => {
+          const shell = document.querySelector('.app-shell');
+          const image = document.querySelector('.result-panel img.artwork');
+          return {
+            songId: shell?.dataset.songId ?? '',
+            artworkId: image?.dataset.artworkId ?? '',
+            src: image?.src ?? '',
+            loaded: Boolean(image?.complete && image?.naturalWidth > 0),
+          };
+        })()`);
+        if (state.loaded) return state;
+        await delay(40);
+      }
+      throw new Error("Artwork transition fixture did not load its result image.");
+    }
+    await loseArtworkFixture();
+    const firstArtwork = await artworkResultState();
+    await client.evaluate("document.querySelector('.result-next-button').click()");
+    await delay(80);
+    await loseArtworkFixture();
+    const secondArtwork = await artworkResultState();
+    assert(firstArtwork.songId === firstArtwork.artworkId
+      && secondArtwork.songId === secondArtwork.artworkId
+      && firstArtwork.songId !== secondArtwork.songId
+      && firstArtwork.src !== secondArtwork.src,
+    `Result artwork did not follow the current song across Next song (${JSON.stringify({ firstArtwork, secondArtwork })}).`);
+    console.log("PASS result artwork changes with the current song across consecutive rounds");
+
     if (verifyHostedPlayback) {
       assert(originalReviewCatalog, "Run npm run review:r2 before npm run verify:hosted.");
       const hostedSongs = JSON.parse(originalReviewCatalog.toString("utf8"));

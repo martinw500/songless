@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createScorer } from "./provisional-scoring.mjs";
+import { automaticStartMs } from "./media-start-normalization.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relative) => JSON.parse(readFileSync(path.join(root, relative), "utf8"));
@@ -80,6 +81,10 @@ for (const candidate of playableCandidates) {
   if (feature && Number.isFinite(feature.first2SecondsDb)) {
     const effectiveDb = feature.first2SecondsDb + (candidate.clueGainDb ?? 0);
     if (effectiveDb < -38) warnings.push(`${candidate.id}: first two seconds remain quiet at ${effectiveDb.toFixed(1)} dB.`);
+  }
+  const expectedAutomaticStartMs = automaticStartMs(candidate, feature, overrideById.has(candidate.id));
+  if (expectedAutomaticStartMs !== null) {
+    errors.push(`${candidate.id}: media-start auto-normalization was not applied; expected ${expectedAutomaticStartMs}ms.`);
   }
 }
 
