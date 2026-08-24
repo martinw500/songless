@@ -2698,12 +2698,12 @@
         "social_circulation"
       ],
       "scores": {
-        "audienceRecognition": 80,
-        "currentCirculation": 95,
-        "broaderVisibility": 80,
-        "longevity": 20
+        "audienceRecognition": 45,
+        "currentCirculation": 80,
+        "broaderVisibility": 65,
+        "longevity": 10
       },
-      "familiarity": 75,
+      "familiarity": 53,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,

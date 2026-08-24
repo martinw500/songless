@@ -3264,41 +3264,6 @@
     "_rank": 110
   },
   {
-    "id": "charli-xcx-apple",
-    "title": "Apple",
-    "artist": "Charli xcx",
-    "aliases": [],
-    "artistAliases": [
-      "Charli XCX"
-    ],
-    "album": "BRAT",
-    "spotifyUrl": "https://open.spotify.com/track/19RybK6XDbAVpcdxSbZL1o",
-    "releaseYear": 2024,
-    "genres": [
-      "pop",
-      "electronic"
-    ],
-    "difficulty": "easy",
-    "familiarity": 75,
-    "recognitionScore": 83.4,
-    "streamReachScore": 80,
-    "genZRelevanceScore": 86.8,
-    "introRecognition": 88,
-    "startAtMs": 485,
-    "hookStartMs": 53800,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charli-xcx-apple.jpg?v=149704-0",
-    "audio": {
-      "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/charli-xcx-apple.mp3?v=38cc1e827d21",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/charli-xcx-apple.mp3?v=d53e3c0055fb",
-      "durationMs": 150635
-    },
-    "_provisional": true,
-    "_provisionalMethod": "waveform_estimate",
-    "_easeScore": 85.7,
-    "_rank": 111
-  },
-  {
     "id": "paramore-decode",
     "title": "Decode",
     "artist": "Paramore",
@@ -3325,7 +3290,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.7,
-    "_rank": 112
+    "_rank": 111
   },
   {
     "id": "kendrick-lamar-humble",
@@ -3351,7 +3316,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.7,
-    "_rank": 113
+    "_rank": 112
   },
   {
     "id": "the-chainsmokers-something-just-like-this",
@@ -3380,7 +3345,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.7,
-    "_rank": 114
+    "_rank": 113
   },
   {
     "id": "drake-forever",
@@ -3408,7 +3373,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.6,
-    "_rank": 115
+    "_rank": 114
   },
   {
     "id": "goo-goo-dolls-iris",
@@ -3440,7 +3405,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.6,
-    "_rank": 116
+    "_rank": 115
   },
   {
     "id": "tv-girl-lovers-rock",
@@ -3472,7 +3437,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.6,
-    "_rank": 117
+    "_rank": 116
   },
   {
     "id": "xxxtentacion-moonlight",
@@ -3498,7 +3463,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.6,
-    "_rank": 118
+    "_rank": 117
   },
   {
     "id": "cafune-tek-it",
@@ -3532,7 +3497,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.6,
-    "_rank": 119
+    "_rank": 118
   },
   {
     "id": "arctic-monkeys-do-i-wanna-know",
@@ -3558,7 +3523,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.5,
-    "_rank": 120
+    "_rank": 119
   },
   {
     "id": "guns-n-roses-sweet-child-o-mine",
@@ -3585,7 +3550,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.5,
-    "_rank": 121
+    "_rank": 120
   },
   {
     "id": "grouplove-tongue-tied",
@@ -3614,7 +3579,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.5,
-    "_rank": 122
+    "_rank": 121
   },
   {
     "id": "abba-dancing-queen",
@@ -3647,7 +3612,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.4,
-    "_rank": 123
+    "_rank": 122
   },
   {
     "id": "lola-young-messy",
@@ -3680,7 +3645,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.4,
-    "_rank": 124
+    "_rank": 123
   },
   {
     "id": "drake-passionfruit",
@@ -3706,7 +3671,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.4,
-    "_rank": 125
+    "_rank": 124
   },
   {
     "id": "travis-scott-sicko-mode",
@@ -3733,7 +3698,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.4,
-    "_rank": 126
+    "_rank": 125
   },
   {
     "id": "tyler-sweet-i-thought-you-wanted-to-dance",
@@ -3761,7 +3726,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.4,
-    "_rank": 127
+    "_rank": 126
   },
   {
     "id": "daniel-caesar-her-best-part",
@@ -3795,7 +3760,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.3,
-    "_rank": 128
+    "_rank": 127
   },
   {
     "id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
@@ -3823,7 +3788,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.3,
-    "_rank": 129
+    "_rank": 128
   },
   {
     "id": "sia-chandelier",
@@ -3850,7 +3815,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.2,
-    "_rank": 130
+    "_rank": 129
   },
   {
     "id": "bts-dynamite",
@@ -3878,7 +3843,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.2,
-    "_rank": 131
+    "_rank": 130
   },
   {
     "id": "ciara-goodies",
@@ -3906,7 +3871,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.2,
-    "_rank": 132
+    "_rank": 131
   },
   {
     "id": "alex-warren-ordinary",
@@ -3938,7 +3903,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.2,
-    "_rank": 133
+    "_rank": 132
   },
   {
     "id": "travis-scott-goosebumps",
@@ -3965,7 +3930,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.1,
-    "_rank": 134
+    "_rank": 133
   },
   {
     "id": "pitbull-i-know-you-want-me-calle-ocho",
@@ -3991,7 +3956,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.1,
-    "_rank": 135
+    "_rank": 134
   },
   {
     "id": "ava-max-kings-queens",
@@ -4019,7 +3984,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85.1,
-    "_rank": 136
+    "_rank": 135
   },
   {
     "id": "lady-gaga-paparazzi",
@@ -4047,7 +4012,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85,
-    "_rank": 137
+    "_rank": 136
   },
   {
     "id": "lady-gaga-shallow",
@@ -4073,7 +4038,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 85,
-    "_rank": 138
+    "_rank": 137
   },
   {
     "id": "lady-gaga-bruno-mars-die-with-a-smile",
@@ -4106,7 +4071,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.9,
-    "_rank": 139
+    "_rank": 138
   },
   {
     "id": "ricky-montgomery-line-without-a-hook",
@@ -4134,7 +4099,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.9,
-    "_rank": 140
+    "_rank": 139
   },
   {
     "id": "flo-rida-wild-ones-feat-sia",
@@ -4162,7 +4127,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.9,
-    "_rank": 141
+    "_rank": 140
   },
   {
     "id": "yung-kai-blue",
@@ -4190,7 +4155,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 142
+    "_rank": 141
   },
   {
     "id": "macklemore-can-t-hold-us-feat-ray-dalton",
@@ -4217,7 +4182,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 143
+    "_rank": 142
   },
   {
     "id": "the-marias-no-one-noticed",
@@ -4251,7 +4216,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 144
+    "_rank": 143
   },
   {
     "id": "rihanna-rude-boy",
@@ -4277,7 +4242,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 145
+    "_rank": 144
   },
   {
     "id": "earth-wind-fire-september",
@@ -4312,7 +4277,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 146
+    "_rank": 145
   },
   {
     "id": "sean-paul-temperature",
@@ -4340,7 +4305,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 147
+    "_rank": 146
   },
   {
     "id": "britney-spears-toxic",
@@ -4373,7 +4338,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.8,
-    "_rank": 148
+    "_rank": 147
   },
   {
     "id": "alexandra-stan-mr-saxobeat",
@@ -4409,7 +4374,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.7,
-    "_rank": 149
+    "_rank": 148
   },
   {
     "id": "james-arthur-say-you-won-t-let-go",
@@ -4435,7 +4400,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.7,
-    "_rank": 150
+    "_rank": 149
   },
   {
     "id": "chris-brown-turn-up-the-music",
@@ -4461,7 +4426,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.7,
-    "_rank": 151
+    "_rank": 150
   },
   {
     "id": "tyler-wusyaname",
@@ -4489,7 +4454,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.7,
-    "_rank": 152
+    "_rank": 151
   },
   {
     "id": "queen-another-one-bites-the-dust",
@@ -4515,7 +4480,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.6,
-    "_rank": 153
+    "_rank": 152
   },
   {
     "id": "travis-scott-highest-in-the-room",
@@ -4541,7 +4506,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.6,
-    "_rank": 154
+    "_rank": 153
   },
   {
     "id": "maroon-5-payphone",
@@ -4567,7 +4532,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.6,
-    "_rank": 155
+    "_rank": 154
   },
   {
     "id": "rihanna-pon-de-replay",
@@ -4595,7 +4560,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.6,
-    "_rank": 156
+    "_rank": 155
   },
   {
     "id": "tyla-push-2-start",
@@ -4623,7 +4588,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.6,
-    "_rank": 157
+    "_rank": 156
   },
   {
     "id": "mac-miller-come-back-to-earth",
@@ -4651,7 +4616,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.5,
-    "_rank": 158
+    "_rank": 157
   },
   {
     "id": "eminem-not-afraid",
@@ -4679,7 +4644,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.5,
-    "_rank": 159
+    "_rank": 158
   },
   {
     "id": "the-white-stripes-seven-nation-army",
@@ -4706,7 +4671,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.5,
-    "_rank": 160
+    "_rank": 159
   },
   {
     "id": "jung-kook-standing-next-to-you",
@@ -4734,7 +4699,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.5,
-    "_rank": 161
+    "_rank": 160
   },
   {
     "id": "creedence-clearwater-revival-have-you-ever-seen-the-rain",
@@ -4760,7 +4725,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.4,
-    "_rank": 162
+    "_rank": 161
   },
   {
     "id": "zara-larsson-never-forget-you",
@@ -4788,7 +4753,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.4,
-    "_rank": 163
+    "_rank": 162
   },
   {
     "id": "lady-gaga-poker-face",
@@ -4821,7 +4786,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.4,
-    "_rank": 164
+    "_rank": 163
   },
   {
     "id": "rihanna-where-have-you-been",
@@ -4849,7 +4814,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.4,
-    "_rank": 165
+    "_rank": 164
   },
   {
     "id": "coldplay-yellow",
@@ -4881,7 +4846,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.4,
-    "_rank": 166
+    "_rank": 165
   },
   {
     "id": "the-weeknd-call-out-my-name",
@@ -4907,7 +4872,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.3,
-    "_rank": 167
+    "_rank": 166
   },
   {
     "id": "the-chainsmokers-halsey-closer",
@@ -4940,7 +4905,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.3,
-    "_rank": 168
+    "_rank": 167
   },
   {
     "id": "justin-bieber-daisies",
@@ -4968,7 +4933,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.3,
-    "_rank": 169
+    "_rank": 168
   },
   {
     "id": "maroon-5-memories",
@@ -4994,7 +4959,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.3,
-    "_rank": 170
+    "_rank": 169
   },
   {
     "id": "stromae-papaoutai",
@@ -5029,7 +4994,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.3,
-    "_rank": 171
+    "_rank": 170
   },
   {
     "id": "olivia-rodrigo-traitor",
@@ -5056,7 +5021,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.3,
-    "_rank": 172
+    "_rank": 171
   },
   {
     "id": "tones-and-i-dance-monkey",
@@ -5083,7 +5048,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.2,
-    "_rank": 173
+    "_rank": 172
   },
   {
     "id": "ruth-b-dandelions",
@@ -5109,7 +5074,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.2,
-    "_rank": 174
+    "_rank": 173
   },
   {
     "id": "the-pussycat-dolls-don-t-cha",
@@ -5137,7 +5102,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.2,
-    "_rank": 175
+    "_rank": 174
   },
   {
     "id": "lmfao-sexy-and-i-know-it",
@@ -5163,7 +5128,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.2,
-    "_rank": 176
+    "_rank": 175
   },
   {
     "id": "george-michael-careless-whisper",
@@ -5196,7 +5161,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.1,
-    "_rank": 177
+    "_rank": 176
   },
   {
     "id": "passenger-let-her-go",
@@ -5223,7 +5188,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.1,
-    "_rank": 178
+    "_rank": 177
   },
   {
     "id": "cher-lloyd-want-u-back",
@@ -5251,7 +5216,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84.1,
-    "_rank": 179
+    "_rank": 178
   },
   {
     "id": "daniel-caesar-blessed",
@@ -5279,7 +5244,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84,
-    "_rank": 180
+    "_rank": 179
   },
   {
     "id": "daniel-caesar-cyanide",
@@ -5307,7 +5272,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84,
-    "_rank": 181
+    "_rank": 180
   },
   {
     "id": "tate-mcrae-greedy",
@@ -5333,7 +5298,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84,
-    "_rank": 182
+    "_rank": 181
   },
   {
     "id": "ed-sheeran-photograph",
@@ -5360,7 +5325,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 84,
-    "_rank": 183
+    "_rank": 182
   },
   {
     "id": "olivia-rodrigo-good-4-u",
@@ -5386,7 +5351,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.9,
-    "_rank": 184
+    "_rank": 183
   },
   {
     "id": "black-eyed-peas-pump-it",
@@ -5414,7 +5379,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.9,
-    "_rank": 185
+    "_rank": 184
   },
   {
     "id": "charlie-puth-we-don-t-talk-anymore-feat-selena-gomez",
@@ -5440,7 +5405,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.9,
-    "_rank": 186
+    "_rank": 185
   },
   {
     "id": "billie-eilish-when-the-party-s-over",
@@ -5466,7 +5431,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.9,
-    "_rank": 187
+    "_rank": 186
   },
   {
     "id": "daniel-caesar-always",
@@ -5494,7 +5459,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 188
+    "_rank": 187
   },
   {
     "id": "rihanna-disturbia",
@@ -5522,7 +5487,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 189
+    "_rank": 188
   },
   {
     "id": "britney-spears-gimme-more",
@@ -5550,7 +5515,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 190
+    "_rank": 189
   },
   {
     "id": "partynextdoor-her-way",
@@ -5578,7 +5543,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 191
+    "_rank": 190
   },
   {
     "id": "nelly-just-a-dream",
@@ -5606,7 +5571,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 192
+    "_rank": 191
   },
   {
     "id": "bruno-mars-just-the-way-you-are",
@@ -5632,7 +5597,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 193
+    "_rank": 192
   },
   {
     "id": "ne-yo-miss-independent",
@@ -5660,7 +5625,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 194
+    "_rank": 193
   },
   {
     "id": "tyler-the-creator-kali-uchis-see-you-again",
@@ -5693,7 +5658,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 195
+    "_rank": 194
   },
   {
     "id": "my-chemical-romance-teenagers",
@@ -5721,7 +5686,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.8,
-    "_rank": 196
+    "_rank": 195
   },
   {
     "id": "sabrina-carpenter-bed-chem",
@@ -5749,7 +5714,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 197
+    "_rank": 196
   },
   {
     "id": "jhen-aiko-bed-peace",
@@ -5776,7 +5741,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 198
+    "_rank": 197
   },
   {
     "id": "lewis-capaldi-before-you-go",
@@ -5802,7 +5767,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 199
+    "_rank": 198
   },
   {
     "id": "kent-jones-don-t-mind",
@@ -5828,7 +5793,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 200
+    "_rank": 199
   },
   {
     "id": "katseye-gabriela",
@@ -5856,7 +5821,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 201
+    "_rank": 200
   },
   {
     "id": "charlie-puth-one-call-away",
@@ -5884,7 +5849,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 202
+    "_rank": 201
   },
   {
     "id": "xxxtentacion-sad",
@@ -5911,7 +5876,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 203
+    "_rank": 202
   },
   {
     "id": "tory-lanez-the-color-violet",
@@ -5939,7 +5904,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.7,
-    "_rank": 204
+    "_rank": 203
   },
   {
     "id": "queen-bohemian-rhapsody",
@@ -5971,7 +5936,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.6,
-    "_rank": 205
+    "_rank": 204
   },
   {
     "id": "indila-derniere-danse",
@@ -6005,7 +5970,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.6,
-    "_rank": 206
+    "_rank": 205
   },
   {
     "id": "kaash-paige-love-songs",
@@ -6033,7 +5998,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.6,
-    "_rank": 207
+    "_rank": 206
   },
   {
     "id": "selena-gomez-naturally",
@@ -6059,7 +6024,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.6,
-    "_rank": 208
+    "_rank": 207
   },
   {
     "id": "omi-cheerleader-felix-jaehn-remix",
@@ -6085,7 +6050,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 209
+    "_rank": 208
   },
   {
     "id": "malcolm-todd-chest-pain-i-love",
@@ -6113,7 +6078,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 210
+    "_rank": 209
   },
   {
     "id": "lil-tecca-dark-thoughts",
@@ -6139,7 +6104,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 211
+    "_rank": 210
   },
   {
     "id": "queen-don-t-stop-me-now",
@@ -6165,7 +6130,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 212
+    "_rank": 211
   },
   {
     "id": "huntrix-golden",
@@ -6200,7 +6165,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 213
+    "_rank": 212
   },
   {
     "id": "drake-janice-stfu",
@@ -6227,7 +6192,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 214
+    "_rank": 213
   },
   {
     "id": "taylor-swift-the-fate-of-ophelia",
@@ -6255,7 +6220,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 215
+    "_rank": 214
   },
   {
     "id": "katy-perry-the-one-that-got-away",
@@ -6283,7 +6248,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.5,
-    "_rank": 216
+    "_rank": 215
   },
   {
     "id": "the-weeknd-can-t-feel-my-face",
@@ -6309,7 +6274,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.4,
-    "_rank": 217
+    "_rank": 216
   },
   {
     "id": "drake-crew-love",
@@ -6335,7 +6300,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.4,
-    "_rank": 218
+    "_rank": 217
   },
   {
     "id": "partynextdoor-break-from-toronto",
@@ -6363,7 +6328,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 219
+    "_rank": 218
   },
   {
     "id": "drake-chicago-freestyle",
@@ -6389,7 +6354,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 220
+    "_rank": 219
   },
   {
     "id": "tv-girl-cigarettes-out-the-window",
@@ -6421,7 +6386,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 221
+    "_rank": 220
   },
   {
     "id": "post-malone-circles",
@@ -6454,7 +6419,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 222
+    "_rank": 221
   },
   {
     "id": "post-malone-congratulations",
@@ -6481,7 +6446,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 223
+    "_rank": 222
   },
   {
     "id": "flo-rida-my-house",
@@ -6509,7 +6474,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 224
+    "_rank": 223
   },
   {
     "id": "miley-cyrus-party-in-the-usa",
@@ -6543,7 +6508,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 225
+    "_rank": 224
   },
   {
     "id": "kid-cudi-pursuit-of-happiness-nightmare",
@@ -6571,7 +6536,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 226
+    "_rank": 225
   },
   {
     "id": "ariana-grande-thank-u-next",
@@ -6597,7 +6562,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 227
+    "_rank": 226
   },
   {
     "id": "calvin-harris-this-is-what-you-came-for",
@@ -6623,7 +6588,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 228
+    "_rank": 227
   },
   {
     "id": "miley-cyrus-we-can-t-stop",
@@ -6651,7 +6616,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.3,
-    "_rank": 229
+    "_rank": 228
   },
   {
     "id": "rose-bruno-mars-apt",
@@ -6689,7 +6654,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.2,
-    "_rank": 230
+    "_rank": 229
   },
   {
     "id": "selena-gomez-love-you-like-a-love-song",
@@ -6716,7 +6681,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.2,
-    "_rank": 231
+    "_rank": 230
   },
   {
     "id": "victoria-mon-t-on-my-mama",
@@ -6744,7 +6709,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.2,
-    "_rank": 232
+    "_rank": 231
   },
   {
     "id": "daniel-caesar-streetcar",
@@ -6772,7 +6737,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.2,
-    "_rank": 233
+    "_rank": 232
   },
   {
     "id": "ed-sheeran-perfect",
@@ -6800,7 +6765,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 83.1,
-    "_rank": 234
+    "_rank": 233
   },
   {
     "id": "pink-sweat-at-my-worst",
@@ -6828,7 +6793,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 235
+    "_rank": 234
   },
   {
     "id": "onerepublic-i-ain-t-worried",
@@ -6854,7 +6819,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 236
+    "_rank": 235
   },
   {
     "id": "frank-ocean-lost",
@@ -6888,7 +6853,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 237
+    "_rank": 236
   },
   {
     "id": "nicki-minaj-moment-4-life",
@@ -6916,7 +6881,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 238
+    "_rank": 237
   },
   {
     "id": "joji-sanctuary",
@@ -6949,7 +6914,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 239
+    "_rank": 238
   },
   {
     "id": "the-weeknd-save-your-tears",
@@ -6975,7 +6940,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 240
+    "_rank": 239
   },
   {
     "id": "lewis-capaldi-someone-you-loved",
@@ -7001,7 +6966,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 241
+    "_rank": 240
   },
   {
     "id": "coldplay-the-scientist",
@@ -7028,7 +6993,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.9,
-    "_rank": 242
+    "_rank": 241
   },
   {
     "id": "miguel-adorn",
@@ -7056,7 +7021,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.8,
-    "_rank": 243
+    "_rank": 242
   },
   {
     "id": "gnarls-barkley-crazy",
@@ -7089,7 +7054,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.8,
-    "_rank": 244
+    "_rank": 243
   },
   {
     "id": "chappell-roan-pink-pony-club",
@@ -7121,7 +7086,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.8,
-    "_rank": 245
+    "_rank": 244
   },
   {
     "id": "bruno-mars-when-i-was-your-man",
@@ -7148,7 +7113,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.8,
-    "_rank": 246
+    "_rank": 245
   },
   {
     "id": "giveon-like-i-want-you",
@@ -7176,7 +7141,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.7,
-    "_rank": 247
+    "_rank": 246
   },
   {
     "id": "walk-the-moon-shut-up-and-dance",
@@ -7202,7 +7167,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.7,
-    "_rank": 248
+    "_rank": 247
   },
   {
     "id": "shaboozey-a-bar-song-tipsy",
@@ -7237,7 +7202,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.6,
-    "_rank": 249
+    "_rank": 248
   },
   {
     "id": "imagine-dragons-demons",
@@ -7263,7 +7228,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.6,
-    "_rank": 250
+    "_rank": 249
   },
   {
     "id": "fleetwood-mac-dreams",
@@ -7295,7 +7260,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.6,
-    "_rank": 251
+    "_rank": 250
   },
   {
     "id": "the-police-every-breath-you-take",
@@ -7321,7 +7286,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.6,
-    "_rank": 252
+    "_rank": 251
   },
   {
     "id": "pitbull-hotel-room-service",
@@ -7347,7 +7312,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.6,
-    "_rank": 253
+    "_rank": 252
   },
   {
     "id": "billie-eilish-ocean-eyes",
@@ -7373,7 +7338,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.6,
-    "_rank": 254
+    "_rank": 253
   },
   {
     "id": "tove-lo-habits-stay-high",
@@ -7401,7 +7366,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.5,
-    "_rank": 255
+    "_rank": 254
   },
   {
     "id": "the-walters-i-love-you-so",
@@ -7428,7 +7393,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.5,
-    "_rank": 256
+    "_rank": 255
   },
   {
     "id": "sara-bareilles-love-song",
@@ -7456,7 +7421,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.5,
-    "_rank": 257
+    "_rank": 256
   },
   {
     "id": "natasha-bedingfield-pocketful-of-sunshine",
@@ -7484,7 +7449,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.5,
-    "_rank": 258
+    "_rank": 257
   },
   {
     "id": "alan-walker-faded",
@@ -7511,7 +7476,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.4,
-    "_rank": 259
+    "_rank": 258
   },
   {
     "id": "jason-mraz-i-m-yours",
@@ -7537,7 +7502,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.4,
-    "_rank": 260
+    "_rank": 259
   },
   {
     "id": "eminem-lose-yourself",
@@ -7564,7 +7529,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.4,
-    "_rank": 261
+    "_rank": 260
   },
   {
     "id": "ciara-1-2-step",
@@ -7592,7 +7557,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 262
+    "_rank": 261
   },
   {
     "id": "ariana-grande-7-rings",
@@ -7618,7 +7583,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 263
+    "_rank": 262
   },
   {
     "id": "sombr-back-to-friends",
@@ -7650,7 +7615,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 264
+    "_rank": 263
   },
   {
     "id": "jason-derulo-in-my-head",
@@ -7677,7 +7642,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 265
+    "_rank": 264
   },
   {
     "id": "chris-brown-loyal",
@@ -7703,7 +7668,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 266
+    "_rank": 265
   },
   {
     "id": "jhen-aiko-the-worst",
@@ -7730,7 +7695,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 267
+    "_rank": 266
   },
   {
     "id": "bruno-mars-versace-on-the-floor",
@@ -7758,7 +7723,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 268
+    "_rank": 267
   },
   {
     "id": "jhen-aiko-while-we-re-young",
@@ -7784,7 +7749,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 269
+    "_rank": 268
   },
   {
     "id": "chris-brown-yeah-3x",
@@ -7810,7 +7775,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.3,
-    "_rank": 270
+    "_rank": 269
   },
   {
     "id": "brent-faiyaz-been-away",
@@ -7838,7 +7803,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.2,
-    "_rank": 271
+    "_rank": 270
   },
   {
     "id": "kendrick-lamar-dna",
@@ -7866,7 +7831,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.2,
-    "_rank": 272
+    "_rank": 271
   },
   {
     "id": "lil-uzi-vert-money-longer",
@@ -7892,7 +7857,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.2,
-    "_rank": 273
+    "_rank": 272
   },
   {
     "id": "kali-uchis-moonlight",
@@ -7920,7 +7885,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.2,
-    "_rank": 274
+    "_rank": 273
   },
   {
     "id": "daniel-caesar-who-knows",
@@ -7948,7 +7913,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.2,
-    "_rank": 275
+    "_rank": 274
   },
   {
     "id": "glass-animals-heat-waves",
@@ -7980,7 +7945,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82.1,
-    "_rank": 276
+    "_rank": 275
   },
   {
     "id": "demi-lovato-heart-attack",
@@ -8008,7 +7973,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82,
-    "_rank": 277
+    "_rank": 276
   },
   {
     "id": "tyler-the-creator-new-magic-wand",
@@ -8040,7 +8005,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82,
-    "_rank": 278
+    "_rank": 277
   },
   {
     "id": "jhen-aiko-p-y-fairy-otw",
@@ -8067,7 +8032,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82,
-    "_rank": 279
+    "_rank": 278
   },
   {
     "id": "far-east-movement-rocketeer",
@@ -8093,7 +8058,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82,
-    "_rank": 280
+    "_rank": 279
   },
   {
     "id": "kesha-take-it-off",
@@ -8119,7 +8084,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 82,
-    "_rank": 281
+    "_rank": 280
   },
   {
     "id": "sza-30-for-30",
@@ -8148,7 +8113,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.9,
-    "_rank": 282
+    "_rank": 281
   },
   {
     "id": "kehlani-after-hours",
@@ -8176,7 +8141,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.9,
-    "_rank": 283
+    "_rank": 282
   },
   {
     "id": "jeremih-don-t-tell-em",
@@ -8202,7 +8167,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.9,
-    "_rank": 284
+    "_rank": 283
   },
   {
     "id": "olivia-rodrigo-drivers-license",
@@ -8229,7 +8194,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.9,
-    "_rank": 285
+    "_rank": 284
   },
   {
     "id": "flo-rida-low-feat-t-pain",
@@ -8257,7 +8222,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.9,
-    "_rank": 286
+    "_rank": 285
   },
   {
     "id": "paramore-misery-business",
@@ -8285,7 +8250,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.9,
-    "_rank": 287
+    "_rank": 286
   },
   {
     "id": "dominic-fike-babydoll",
@@ -8313,7 +8278,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 288
+    "_rank": 287
   },
   {
     "id": "brent-faiyaz-clouded",
@@ -8341,7 +8306,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 289
+    "_rank": 288
   },
   {
     "id": "olivia-rodrigo-deja-vu",
@@ -8367,7 +8332,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 290
+    "_rank": 289
   },
   {
     "id": "justin-bieber-ghost",
@@ -8394,7 +8359,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 291
+    "_rank": 290
   },
   {
     "id": "linkin-park-in-the-end",
@@ -8420,7 +8385,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 292
+    "_rank": 291
   },
   {
     "id": "usher-my-boo",
@@ -8448,7 +8413,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 293
+    "_rank": 292
   },
   {
     "id": "miguel-sky-walker",
@@ -8476,7 +8441,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 294
+    "_rank": 293
   },
   {
     "id": "ed-sheeran-thinking-out-loud",
@@ -8502,7 +8467,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 295
+    "_rank": 294
   },
   {
     "id": "the-weeknd-playboi-carti-timeless",
@@ -8535,7 +8500,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.8,
-    "_rank": 296
+    "_rank": 295
   },
   {
     "id": "brent-faiyaz-all-mine",
@@ -8563,7 +8528,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.7,
-    "_rank": 297
+    "_rank": 296
   },
   {
     "id": "selena-gomez-come-get-it",
@@ -8591,7 +8556,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.7,
-    "_rank": 298
+    "_rank": 297
   },
   {
     "id": "onerepublic-secrets",
@@ -8617,7 +8582,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.7,
-    "_rank": 299
+    "_rank": 298
   },
   {
     "id": "arctic-monkeys-i-wanna-be-yours",
@@ -8644,7 +8609,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.6,
-    "_rank": 300
+    "_rank": 299
   },
   {
     "id": "maroon-5-maps",
@@ -8670,7 +8635,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.6,
-    "_rank": 301
+    "_rank": 300
   },
   {
     "id": "sam-smith-too-good-at-goodbyes",
@@ -8697,7 +8662,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.6,
-    "_rank": 302
+    "_rank": 301
   },
   {
     "id": "doechii-anxiety",
@@ -8729,7 +8694,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.5,
-    "_rank": 303
+    "_rank": 302
   },
   {
     "id": "cascada-evacuate-the-dancefloor",
@@ -8757,7 +8722,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.5,
-    "_rank": 304
+    "_rank": 303
   },
   {
     "id": "flo-rida-good-feeling",
@@ -8785,7 +8750,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.5,
-    "_rank": 305
+    "_rank": 304
   },
   {
     "id": "tory-lanez-hurts-me",
@@ -8813,7 +8778,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.5,
-    "_rank": 306
+    "_rank": 305
   },
   {
     "id": "david-guetta-titanium-feat-sia",
@@ -8839,7 +8804,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.5,
-    "_rank": 307
+    "_rank": 306
   },
   {
     "id": "kesha-your-love-is-my-drug",
@@ -8867,7 +8832,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.5,
-    "_rank": 308
+    "_rank": 307
   },
   {
     "id": "train-drive-by",
@@ -8895,7 +8860,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.4,
-    "_rank": 309
+    "_rank": 308
   },
   {
     "id": "whitney-houston-i-wanna-dance-with-somebody",
@@ -8930,7 +8895,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.4,
-    "_rank": 310
+    "_rank": 309
   },
   {
     "id": "khalid-love-lies",
@@ -8958,7 +8923,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.4,
-    "_rank": 311
+    "_rank": 310
   },
   {
     "id": "harry-styles-sign-of-the-times",
@@ -8984,7 +8949,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.4,
-    "_rank": 312
+    "_rank": 311
   },
   {
     "id": "cigarettes-after-sex-apocalypse",
@@ -9016,7 +8981,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 313
+    "_rank": 312
   },
   {
     "id": "ella-mai-boo-d-up",
@@ -9044,7 +9009,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 314
+    "_rank": 313
   },
   {
     "id": "queen-dont-stop-me-now",
@@ -9079,7 +9044,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 315
+    "_rank": 314
   },
   {
     "id": "panic-at-the-disco-i-write-sins-not-tragedies",
@@ -9107,7 +9072,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 316
+    "_rank": 315
   },
   {
     "id": "teddy-swims-lose-control",
@@ -9140,7 +9105,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 317
+    "_rank": 316
   },
   {
     "id": "dua-lipa-new-rules",
@@ -9167,7 +9132,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 318
+    "_rank": 317
   },
   {
     "id": "summer-walker-playing-games",
@@ -9195,7 +9160,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 319
+    "_rank": 318
   },
   {
     "id": "jason-derulo-whatcha-say",
@@ -9223,7 +9188,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.3,
-    "_rank": 320
+    "_rank": 319
   },
   {
     "id": "ellie-goulding-burn",
@@ -9251,7 +9216,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.2,
-    "_rank": 321
+    "_rank": 320
   },
   {
     "id": "the-wanted-glad-you-came",
@@ -9279,7 +9244,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.2,
-    "_rank": 322
+    "_rank": 321
   },
   {
     "id": "the-weeknd-i-feel-it-coming",
@@ -9305,7 +9270,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.2,
-    "_rank": 323
+    "_rank": 322
   },
   {
     "id": "lorde-team",
@@ -9333,7 +9298,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.2,
-    "_rank": 324
+    "_rank": 323
   },
   {
     "id": "kendrick-lamar-tv-off",
@@ -9359,7 +9324,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.2,
-    "_rank": 325
+    "_rank": 324
   },
   {
     "id": "tame-impala-dracula",
@@ -9387,7 +9352,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.1,
-    "_rank": 326
+    "_rank": 325
   },
   {
     "id": "nicki-minaj-pound-the-alarm",
@@ -9415,7 +9380,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.1,
-    "_rank": 327
+    "_rank": 326
   },
   {
     "id": "masego-tadow",
@@ -9443,7 +9408,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81.1,
-    "_rank": 328
+    "_rank": 327
   },
   {
     "id": "the-pussycat-dolls-buttons",
@@ -9472,7 +9437,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81,
-    "_rank": 329
+    "_rank": 328
   },
   {
     "id": "adele-easy-on-me",
@@ -9499,7 +9464,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81,
-    "_rank": 330
+    "_rank": 329
   },
   {
     "id": "eminem-love-the-way-you-lie",
@@ -9525,7 +9490,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81,
-    "_rank": 331
+    "_rank": 330
   },
   {
     "id": "don-toliver-no-idea",
@@ -9553,7 +9518,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81,
-    "_rank": 332
+    "_rank": 331
   },
   {
     "id": "p-nk-raise-your-glass",
@@ -9581,7 +9546,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 81,
-    "_rank": 333
+    "_rank": 332
   },
   {
     "id": "drake-god-s-plan",
@@ -9607,7 +9572,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.9,
-    "_rank": 334
+    "_rank": 333
   },
   {
     "id": "kesha-blow",
@@ -9634,7 +9599,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.8,
-    "_rank": 335
+    "_rank": 334
   },
   {
     "id": "black-eyed-peas-don-t-phunk-with-my-heart",
@@ -9660,7 +9625,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.8,
-    "_rank": 336
+    "_rank": 335
   },
   {
     "id": "daniel-caesar-loose",
@@ -9688,7 +9653,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.8,
-    "_rank": 337
+    "_rank": 336
   },
   {
     "id": "justin-timberlake-rock-your-body",
@@ -9716,7 +9681,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.8,
-    "_rank": 338
+    "_rank": 337
   },
   {
     "id": "the-weeknd-after-hours",
@@ -9744,7 +9709,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.7,
-    "_rank": 339
+    "_rank": 338
   },
   {
     "id": "wham-last-christmas",
@@ -9773,7 +9738,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.7,
-    "_rank": 340
+    "_rank": 339
   },
   {
     "id": "kendrick-lamar-money-trees",
@@ -9800,7 +9765,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.7,
-    "_rank": 341
+    "_rank": 340
   },
   {
     "id": "charlie-puth-attention",
@@ -9827,7 +9792,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.6,
-    "_rank": 342
+    "_rank": 341
   },
   {
     "id": "ariana-grande-break-free",
@@ -9855,7 +9820,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.6,
-    "_rank": 343
+    "_rank": 342
   },
   {
     "id": "giv-on-heartbreak-anniversary",
@@ -9883,7 +9848,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.6,
-    "_rank": 344
+    "_rank": 343
   },
   {
     "id": "a-ha-take-on-me",
@@ -9916,7 +9881,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.6,
-    "_rank": 345
+    "_rank": 344
   },
   {
     "id": "the-cranberries-zombie",
@@ -9948,7 +9913,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.6,
-    "_rank": 346
+    "_rank": 345
   },
   {
     "id": "beabadoobee-glue-song",
@@ -9976,7 +9941,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.5,
-    "_rank": 347
+    "_rank": 346
   },
   {
     "id": "one-direction-live-while-we-re-young",
@@ -10002,7 +9967,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.5,
-    "_rank": 348
+    "_rank": 347
   },
   {
     "id": "tlc-no-scrubs",
@@ -10035,7 +10000,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.5,
-    "_rank": 349
+    "_rank": 348
   },
   {
     "id": "nirvana-smells-like-teen-spirit",
@@ -10068,7 +10033,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.5,
-    "_rank": 350
+    "_rank": 349
   },
   {
     "id": "leona-lewis-bleeding-love",
@@ -10096,7 +10061,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.4,
-    "_rank": 351
+    "_rank": 350
   },
   {
     "id": "tyler-the-creator-earfquake",
@@ -10131,7 +10096,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.4,
-    "_rank": 352
+    "_rank": 351
   },
   {
     "id": "adele-someone-like-you",
@@ -10158,7 +10123,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.4,
-    "_rank": 353
+    "_rank": 352
   },
   {
     "id": "the-neighbourhood-sweater-weather",
@@ -10191,7 +10156,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.4,
-    "_rank": 354
+    "_rank": 353
   },
   {
     "id": "john-legend-all-of-me",
@@ -10219,7 +10184,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.3,
-    "_rank": 355
+    "_rank": 354
   },
   {
     "id": "harry-styles-as-it-was",
@@ -10252,7 +10217,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.3,
-    "_rank": 356
+    "_rank": 355
   },
   {
     "id": "will-i-am-scream-shout",
@@ -10280,7 +10245,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.3,
-    "_rank": 357
+    "_rank": 356
   },
   {
     "id": "fun-some-nights",
@@ -10308,7 +10273,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.3,
-    "_rank": 358
+    "_rank": 357
   },
   {
     "id": "pinkpantheress-stateside-zara-larsson",
@@ -10334,7 +10299,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.3,
-    "_rank": 359
+    "_rank": 358
   },
   {
     "id": "don-toliver-what-you-need",
@@ -10362,7 +10327,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.3,
-    "_rank": 360
+    "_rank": 359
   },
   {
     "id": "3oh-3-don-t-trust-me",
@@ -10388,7 +10353,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.2,
-    "_rank": 361
+    "_rank": 360
   },
   {
     "id": "future-like-that",
@@ -10416,7 +10381,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.2,
-    "_rank": 362
+    "_rank": 361
   },
   {
     "id": "shawn-mendes-treat-you-better",
@@ -10442,7 +10407,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.2,
-    "_rank": 363
+    "_rank": 362
   },
   {
     "id": "young-money-bedrock",
@@ -10471,7 +10436,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 364
+    "_rank": 363
   },
   {
     "id": "50-cent-candy-shop",
@@ -10499,7 +10464,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 365
+    "_rank": 364
   },
   {
     "id": "steve-lacy-dark-red",
@@ -10532,7 +10497,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 366
+    "_rank": 365
   },
   {
     "id": "radiohead-let-down",
@@ -10560,7 +10525,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 367
+    "_rank": 366
   },
   {
     "id": "keyshia-cole-love",
@@ -10588,7 +10553,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 368
+    "_rank": 367
   },
   {
     "id": "one-direction-steal-my-girl",
@@ -10616,7 +10581,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 369
+    "_rank": 368
   },
   {
     "id": "kesha-we-r-who-we-r",
@@ -10643,7 +10608,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 370
+    "_rank": 369
   },
   {
     "id": "james-blunt-you-re-beautiful",
@@ -10671,7 +10636,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80.1,
-    "_rank": 371
+    "_rank": 370
   },
   {
     "id": "nelly-dilemma",
@@ -10699,7 +10664,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80,
-    "_rank": 372
+    "_rank": 371
   },
   {
     "id": "demi-lovato-give-your-heart-a-break",
@@ -10727,7 +10692,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80,
-    "_rank": 373
+    "_rank": 372
   },
   {
     "id": "akon-lonely",
@@ -10755,7 +10720,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80,
-    "_rank": 374
+    "_rank": 373
   },
   {
     "id": "justin-bieber-one-time",
@@ -10783,7 +10748,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80,
-    "_rank": 375
+    "_rank": 374
   },
   {
     "id": "mac-miller-self-care",
@@ -10811,7 +10776,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80,
-    "_rank": 376
+    "_rank": 375
   },
   {
     "id": "sza-the-weekend",
@@ -10839,7 +10804,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 80,
-    "_rank": 377
+    "_rank": 376
   },
   {
     "id": "xxxtentacion-jocelyn-flores",
@@ -10865,7 +10830,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.9,
-    "_rank": 378
+    "_rank": 377
   },
   {
     "id": "the-rare-occasions-notion",
@@ -10897,7 +10862,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.9,
-    "_rank": 379
+    "_rank": 378
   },
   {
     "id": "wiz-khalifa-see-you-again-feat-charlie-puth",
@@ -10924,7 +10889,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.9,
-    "_rank": 380
+    "_rank": 379
   },
   {
     "id": "nico-am-i-wrong",
@@ -10951,7 +10916,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.8,
-    "_rank": 381
+    "_rank": 380
   },
   {
     "id": "ari-lennox-shea-butter-baby",
@@ -10977,7 +10942,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.6,
-    "_rank": 382
+    "_rank": 381
   },
   {
     "id": "becky-g-shower",
@@ -11005,7 +10970,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.6,
-    "_rank": 383
+    "_rank": 382
   },
   {
     "id": "tyler-darling-i",
@@ -11033,7 +10998,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.5,
-    "_rank": 384
+    "_rank": 383
   },
   {
     "id": "sam-smith-stay-with-me",
@@ -11061,7 +11026,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.5,
-    "_rank": 385
+    "_rank": 384
   },
   {
     "id": "joji-glimpse-of-us",
@@ -11094,7 +11059,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.4,
-    "_rank": 386
+    "_rank": 385
   },
   {
     "id": "conan-gray-heather",
@@ -11121,7 +11086,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.4,
-    "_rank": 387
+    "_rank": 386
   },
   {
     "id": "akon-right-now-na-na-na",
@@ -11149,7 +11114,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.4,
-    "_rank": 388
+    "_rank": 387
   },
   {
     "id": "drake-teenage-fever",
@@ -11177,7 +11142,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.4,
-    "_rank": 389
+    "_rank": 388
   },
   {
     "id": "tinashe-2-on",
@@ -11204,7 +11169,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.3,
-    "_rank": 390
+    "_rank": 389
   },
   {
     "id": "daniel-powter-bad-day",
@@ -11232,7 +11197,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.3,
-    "_rank": 391
+    "_rank": 390
   },
   {
     "id": "maroon-5-sugar",
@@ -11258,7 +11223,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.3,
-    "_rank": 392
+    "_rank": 391
   },
   {
     "id": "taio-cruz-break-your-heart",
@@ -11287,7 +11252,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.2,
-    "_rank": 393
+    "_rank": 392
   },
   {
     "id": "sza-saturn",
@@ -11315,7 +11280,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.2,
-    "_rank": 394
+    "_rank": 393
   },
   {
     "id": "j-cole-she-knows",
@@ -11342,7 +11307,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.2,
-    "_rank": 395
+    "_rank": 394
   },
   {
     "id": "the-weeknd-daft-punk-starboy",
@@ -11375,7 +11340,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.2,
-    "_rank": 396
+    "_rank": 395
   },
   {
     "id": "nicki-minaj-super-bass",
@@ -11403,7 +11368,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79.1,
-    "_rank": 397
+    "_rank": 396
   },
   {
     "id": "justin-bieber-beauty-and-a-beat",
@@ -11431,7 +11396,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 398
+    "_rank": 397
   },
   {
     "id": "rae-sremmurd-come-get-her",
@@ -11458,7 +11423,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 399
+    "_rank": 398
   },
   {
     "id": "giveon-for-tonight",
@@ -11486,7 +11451,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 400
+    "_rank": 399
   },
   {
     "id": "enrique-iglesias-i-like-it",
@@ -11512,7 +11477,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 401
+    "_rank": 400
   },
   {
     "id": "j-cole-power-trip",
@@ -11539,7 +11504,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 402
+    "_rank": 401
   },
   {
     "id": "katy-perry-teenage-dream",
@@ -11567,7 +11532,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 403
+    "_rank": 402
   },
   {
     "id": "taylor-swift-wildest-dreams",
@@ -11595,7 +11560,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 79,
-    "_rank": 404
+    "_rank": 403
   },
   {
     "id": "onerepublic-good-life",
@@ -11623,7 +11588,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.9,
-    "_rank": 405
+    "_rank": 404
   },
   {
     "id": "miley-cyrus-the-climb",
@@ -11652,7 +11617,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.9,
-    "_rank": 406
+    "_rank": 405
   },
   {
     "id": "mgmt-electric-feel",
@@ -11685,7 +11650,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.7,
-    "_rank": 407
+    "_rank": 406
   },
   {
     "id": "one-direction-kiss-you",
@@ -11713,7 +11678,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.7,
-    "_rank": 408
+    "_rank": 407
   },
   {
     "id": "modjo-lady-hear-me-tonight",
@@ -11741,7 +11706,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.7,
-    "_rank": 409
+    "_rank": 408
   },
   {
     "id": "brent-faiyaz-poison",
@@ -11770,7 +11735,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.7,
-    "_rank": 410
+    "_rank": 409
   },
   {
     "id": "lil-uzi-vert-xo-tour-llif3",
@@ -11797,7 +11762,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.7,
-    "_rank": 411
+    "_rank": 410
   },
   {
     "id": "katy-perry-firework",
@@ -11825,7 +11790,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.6,
-    "_rank": 412
+    "_rank": 411
   },
   {
     "id": "mgmt-little-dark-age",
@@ -11851,7 +11816,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.6,
-    "_rank": 413
+    "_rank": 412
   },
   {
     "id": "ne-yo-so-sick",
@@ -11879,7 +11844,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.6,
-    "_rank": 414
+    "_rank": 413
   },
   {
     "id": "the-1975-somebody-else",
@@ -11908,7 +11873,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.6,
-    "_rank": 415
+    "_rank": 414
   },
   {
     "id": "paramore-ain-t-it-fun",
@@ -11936,7 +11901,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 416
+    "_rank": 415
   },
   {
     "id": "tevin-campbell-can-we-talk",
@@ -11962,7 +11927,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 417
+    "_rank": 416
   },
   {
     "id": "olivia-rodrigo-drop-dead",
@@ -11989,7 +11954,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 418
+    "_rank": 417
   },
   {
     "id": "cascada-everytime-we-touch",
@@ -12017,7 +11982,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 419
+    "_rank": 418
   },
   {
     "id": "billie-eilish-khalid-lovely",
@@ -12050,7 +12015,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 420
+    "_rank": 419
   },
   {
     "id": "jhen-aiko-sativa",
@@ -12077,7 +12042,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 421
+    "_rank": 420
   },
   {
     "id": "ed-sheeran-the-a-team",
@@ -12105,7 +12070,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.5,
-    "_rank": 422
+    "_rank": 421
   },
   {
     "id": "lauv-i-like-me-better",
@@ -12131,7 +12096,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.4,
-    "_rank": 423
+    "_rank": 422
   },
   {
     "id": "m-i-a-paper-planes",
@@ -12159,7 +12124,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.3,
-    "_rank": 424
+    "_rank": 423
   },
   {
     "id": "jeremih-planez",
@@ -12186,7 +12151,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.3,
-    "_rank": 425
+    "_rank": 424
   },
   {
     "id": "metro-station-shake-it",
@@ -12215,7 +12180,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.3,
-    "_rank": 426
+    "_rank": 425
   },
   {
     "id": "ac-dc-thunderstruck",
@@ -12241,7 +12206,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.3,
-    "_rank": 427
+    "_rank": 426
   },
   {
     "id": "galantis-runaway-u-i",
@@ -12269,7 +12234,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.2,
-    "_rank": 428
+    "_rank": 427
   },
   {
     "id": "usher-scream",
@@ -12295,7 +12260,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.1,
-    "_rank": 429
+    "_rank": 428
   },
   {
     "id": "adele-set-fire-to-the-rain",
@@ -12321,7 +12286,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78.1,
-    "_rank": 430
+    "_rank": 429
   },
   {
     "id": "britney-spears-oops-i-did-it-again",
@@ -12349,7 +12314,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78,
-    "_rank": 431
+    "_rank": 430
   },
   {
     "id": "the-weeknd-reminder",
@@ -12377,7 +12342,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78,
-    "_rank": 432
+    "_rank": 431
   },
   {
     "id": "black-eyed-peas-rock-that-body",
@@ -12405,7 +12370,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78,
-    "_rank": 433
+    "_rank": 432
   },
   {
     "id": "hailee-steinfeld-starving",
@@ -12433,7 +12398,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78,
-    "_rank": 434
+    "_rank": 433
   },
   {
     "id": "ella-mai-trip",
@@ -12461,7 +12426,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78,
-    "_rank": 435
+    "_rank": 434
   },
   {
     "id": "rihanna-we-found-love",
@@ -12487,7 +12452,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 78,
-    "_rank": 436
+    "_rank": 435
   },
   {
     "id": "tame-impala-borderline",
@@ -12519,7 +12484,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 437
+    "_rank": 436
   },
   {
     "id": "miguel-come-through-and-chill",
@@ -12547,7 +12512,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 438
+    "_rank": 437
   },
   {
     "id": "sean-kingston-eenie-meenie",
@@ -12575,7 +12540,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 439
+    "_rank": 438
   },
   {
     "id": "miley-cyrus-flowers",
@@ -12601,7 +12566,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 440
+    "_rank": 439
   },
   {
     "id": "katy-perry-i-kissed-a-girl",
@@ -12629,7 +12594,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 441
+    "_rank": 440
   },
   {
     "id": "brent-faiyaz-jackie-brown",
@@ -12657,7 +12622,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 442
+    "_rank": 441
   },
   {
     "id": "mgmt-kids",
@@ -12690,7 +12655,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 443
+    "_rank": 442
   },
   {
     "id": "rae-sremmurd-swang",
@@ -12717,7 +12682,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 444
+    "_rank": 443
   },
   {
     "id": "black-eyed-peas-where-is-the-love",
@@ -12745,7 +12710,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.9,
-    "_rank": 445
+    "_rank": 444
   },
   {
     "id": "drake-nice-for-what",
@@ -12773,7 +12738,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.8,
-    "_rank": 446
+    "_rank": 445
   },
   {
     "id": "one-direction-one-thing",
@@ -12801,7 +12766,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.8,
-    "_rank": 447
+    "_rank": 446
   },
   {
     "id": "adele-rolling-in-the-deep",
@@ -12827,7 +12792,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.8,
-    "_rank": 448
+    "_rank": 447
   },
   {
     "id": "destiny-s-child-say-my-name",
@@ -12855,7 +12820,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.8,
-    "_rank": 449
+    "_rank": 448
   },
   {
     "id": "don-toliver-after-party",
@@ -12883,7 +12848,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.7,
-    "_rank": 450
+    "_rank": 449
   },
   {
     "id": "doechii-denial-is-a-river",
@@ -12911,7 +12876,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.6,
-    "_rank": 451
+    "_rank": 450
   },
   {
     "id": "neon-trees-everybody-talks",
@@ -12939,7 +12904,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.6,
-    "_rank": 452
+    "_rank": 451
   },
   {
     "id": "summer-walker-girls-need-love",
@@ -12966,7 +12931,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.6,
-    "_rank": 453
+    "_rank": 452
   },
   {
     "id": "j-cole-love-yourz",
@@ -12993,7 +12958,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.5,
-    "_rank": 454
+    "_rank": 453
   },
   {
     "id": "sheck-wes-mo-bamba",
@@ -13021,7 +12986,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.5,
-    "_rank": 455
+    "_rank": 454
   },
   {
     "id": "sia-elastic-heart",
@@ -13049,7 +13014,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.4,
-    "_rank": 456
+    "_rank": 455
   },
   {
     "id": "owl-city-fireflies",
@@ -13077,7 +13042,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.4,
-    "_rank": 457
+    "_rank": 456
   },
   {
     "id": "jennifer-lopez-on-the-floor",
@@ -13105,7 +13070,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.4,
-    "_rank": 458
+    "_rank": 457
   },
   {
     "id": "jesse-mccartney-beautiful-soul",
@@ -13133,7 +13098,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.2,
-    "_rank": 459
+    "_rank": 458
   },
   {
     "id": "rachel-platten-fight-song",
@@ -13161,7 +13126,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.2,
-    "_rank": 460
+    "_rank": 459
   },
   {
     "id": "50-cent-21-questions",
@@ -13189,7 +13154,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.1,
-    "_rank": 461
+    "_rank": 460
   },
   {
     "id": "addison-rae-diet-pepsi",
@@ -13217,7 +13182,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.1,
-    "_rank": 462
+    "_rank": 461
   },
   {
     "id": "nelly-furtado-maneater",
@@ -13245,7 +13210,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.1,
-    "_rank": 463
+    "_rank": 462
   },
   {
     "id": "foster-the-people-pumped-up-kicks",
@@ -13271,7 +13236,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.1,
-    "_rank": 464
+    "_rank": 463
   },
   {
     "id": "wizthemc-show-me-love",
@@ -13297,7 +13262,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.1,
-    "_rank": 465
+    "_rank": 464
   },
   {
     "id": "kendrick-lamar-swimming-pools-drank",
@@ -13325,7 +13290,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77.1,
-    "_rank": 466
+    "_rank": 465
   },
   {
     "id": "don-toliver-e85",
@@ -13353,7 +13318,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 77,
-    "_rank": 467
+    "_rank": 466
   },
   {
     "id": "shawn-mendes-stitches",
@@ -13379,7 +13344,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.9,
-    "_rank": 468
+    "_rank": 467
   },
   {
     "id": "black-eyed-peas-just-can-t-get-enough",
@@ -13407,7 +13372,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.8,
-    "_rank": 469
+    "_rank": 468
   },
   {
     "id": "selena-gomez-who-says",
@@ -13433,7 +13398,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.8,
-    "_rank": 470
+    "_rank": 469
   },
   {
     "id": "taylor-swift-love-story",
@@ -13461,7 +13426,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.7,
-    "_rank": 471
+    "_rank": 470
   },
   {
     "id": "sza-good-days",
@@ -13489,7 +13454,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.6,
-    "_rank": 472
+    "_rank": 471
   },
   {
     "id": "taylor-swift-blank-space",
@@ -13516,7 +13481,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.5,
-    "_rank": 473
+    "_rank": 472
   },
   {
     "id": "steve-lacy-oh-yeah",
@@ -13542,7 +13507,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.5,
-    "_rank": 474
+    "_rank": 473
   },
   {
     "id": "bryson-tiller-exchange",
@@ -13570,7 +13535,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.4,
-    "_rank": 475
+    "_rank": 474
   },
   {
     "id": "avicii-hey-brother",
@@ -13598,7 +13563,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.4,
-    "_rank": 476
+    "_rank": 475
   },
   {
     "id": "shawn-mendes-if-i-can-t-have-you",
@@ -13626,7 +13591,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.4,
-    "_rank": 477
+    "_rank": 476
   },
   {
     "id": "onerepublic-i-lived",
@@ -13652,7 +13617,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.3,
-    "_rank": 478
+    "_rank": 477
   },
   {
     "id": "estelle-american-boy",
@@ -13680,7 +13645,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.2,
-    "_rank": 479
+    "_rank": 478
   },
   {
     "id": "nsync-bye-bye-bye",
@@ -13708,7 +13673,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76.1,
-    "_rank": 480
+    "_rank": 479
   },
   {
     "id": "frank-ocean-nights",
@@ -13743,7 +13708,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 76,
-    "_rank": 481
+    "_rank": 480
   },
   {
     "id": "justin-bieber-peaches-feat-daniel-caesar-giveon",
@@ -13771,7 +13736,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 75.8,
-    "_rank": 482
+    "_rank": 481
   },
   {
     "id": "lisa-money",
@@ -13799,7 +13764,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 75.7,
-    "_rank": 483
+    "_rank": 482
   },
   {
     "id": "duncan-laurence-arcade",
@@ -13827,6 +13792,41 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_estimate",
     "_easeScore": 75.6,
+    "_rank": 483
+  },
+  {
+    "id": "charli-xcx-apple",
+    "title": "Apple",
+    "artist": "Charli xcx",
+    "aliases": [],
+    "artistAliases": [
+      "Charli XCX"
+    ],
+    "album": "BRAT",
+    "spotifyUrl": "https://open.spotify.com/track/19RybK6XDbAVpcdxSbZL1o",
+    "releaseYear": 2024,
+    "genres": [
+      "pop",
+      "electronic"
+    ],
+    "difficulty": "expert",
+    "familiarity": 53,
+    "recognitionScore": 62.9,
+    "streamReachScore": 65,
+    "genZRelevanceScore": 60.8,
+    "introRecognition": 88,
+    "startAtMs": 485,
+    "hookStartMs": 53800,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charli-xcx-apple.jpg?v=149704-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/charli-xcx-apple.mp3?v=38cc1e827d21",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/charli-xcx-apple.mp3?v=d53e3c0055fb",
+      "durationMs": 150635
+    },
+    "_provisional": true,
+    "_provisionalMethod": "waveform_estimate",
+    "_easeScore": 75.5,
     "_rank": 484
   },
   {
