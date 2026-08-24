@@ -6586,12 +6586,12 @@
       "id": "katy-perry-california-gurls",
       "title": "California Gurls",
       "artist": "Katy Perry feat. Snoop Dogg",
-      "familiarity": 75,
-      "introRecognition": null,
-      "easeScore": null,
-      "proposedDifficulty": null,
+      "familiarity": 93,
+      "introRecognition": 96,
+      "easeScore": 83.3,
+      "proposedDifficulty": "easy",
       "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
+      "reviewStatus": "approved",
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
@@ -6608,7 +6608,24 @@
       ],
       "aliases": [],
       "artistAliases": [],
+      "releaseYear": 2010,
+      "genres": [
+        "pop",
+        "dance-pop"
+      ],
+      "language": "en",
       "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "childhood_hit",
+        "cultural_longevity"
+      ],
+      "scores": {
+        "audienceRecognition": 96,
+        "currentCirculation": 84,
+        "broaderVisibility": 98,
+        "longevity": 96
+      },
       "startAtMs": 150,
       "album": "Teenage Dream",
       "spotifyUrl": "https://open.spotify.com/track/6KOEK6SeCEZOQkLj5M1PxH",

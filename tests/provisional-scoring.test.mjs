@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { createScorer, difficultyFor, difficultyWeights } from "../scripts/provisional-scoring.mjs";
 
@@ -41,4 +42,17 @@ test("difficulty weights keep Gen-Z relevance at fifteen percent", () => {
   assert.equal(result.longevityScore, 40);
   assert.equal(result.easeScore, 75.7);
   assert.equal(result.difficulty, "expert");
+});
+
+test("reviewed iconic childhood hits are not demoted by waveform proxies", () => {
+  const candidates = JSON.parse(readFileSync("data/song-candidates.json", "utf8")).songs;
+  const longlist = JSON.parse(readFileSync("data/song-longlist.json", "utf8"));
+  const features = JSON.parse(readFileSync("data/intro-audio-features.json", "utf8"));
+  const song = candidates.find((candidate) => candidate.id === "katy-perry-california-gurls");
+  const result = createScorer(longlist, features)(song);
+
+  assert.equal(result.introScoreMethod, "reviewed");
+  assert.equal(result.introRecognition, 96);
+  assert.equal(result.easeScore, 83.3);
+  assert.equal(result.difficulty, "easy");
 });
