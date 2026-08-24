@@ -29,6 +29,7 @@ const difficultyLabels: Record<Difficulty, string> = {
   expert: "Expert",
   impossible: "Impossible",
 };
+const AUTO_REROLL_SECONDS = 4;
 
 const stageStorageKey = "songless-stages-v2";
 
@@ -134,6 +135,11 @@ function App() {
     const saved = Number(storedVolume);
     return Number.isFinite(saved) && saved >= 0 && saved <= 5 ? saved : 1;
   });
+  const [autoReroll, setAutoReroll] = useState(() => (
+    window.localStorage.getItem("songless-auto-reroll") === "true"
+  ));
+  const [autoRerollRemaining, setAutoRerollRemaining] = useState<number | null>(null);
+  const [autoRerollCancelled, setAutoRerollCancelled] = useState(false);
   const [songStartMode, setSongStartMode] = useState<"intro" | "hook">(() => {
     const stored = window.localStorage.getItem("songless-start-mode");
     return stored === "hook" ? "hook" : "intro";
@@ -168,6 +174,29 @@ function App() {
     window.localStorage.setItem("songless-volume-v2", String(volume));
     audioEngine.current.setVolume(volume);
   }, [volume]);
+
+  useEffect(() => {
+    window.localStorage.setItem("songless-auto-reroll", String(autoReroll));
+  }, [autoReroll]);
+
+  useEffect(() => {
+    if (!autoReroll || autoRerollCancelled || status === "playing" || !currentSong) {
+      setAutoRerollRemaining(null);
+      return undefined;
+    }
+
+    const deadline = Date.now() + AUTO_REROLL_SECONDS * 1000;
+    const updateCountdown = () => {
+      setAutoRerollRemaining(Math.max(0, Math.ceil((deadline - Date.now()) / 1000)));
+    };
+    updateCountdown();
+    const interval = window.setInterval(updateCountdown, 250);
+    const timeout = window.setTimeout(() => advanceToNextSong(), AUTO_REROLL_SECONDS * 1000);
+    return () => {
+      window.clearInterval(interval);
+      window.clearTimeout(timeout);
+    };
+  }, [autoReroll, autoRerollCancelled, status, currentSong?.id]);
 
   useEffect(() => {
     window.localStorage.setItem("songless-start-mode", songStartMode);
@@ -276,6 +305,7 @@ function App() {
 
   function resetRoundState() {
     stopPlayback();
+    setAutoRerollCancelled(false);
     setHeardThrough(0);
     setHasStartedRound(false);
     setStageIndex(0);
@@ -286,14 +316,23 @@ function App() {
     setAudioError("");
   }
 
-  function rerollAll() {
-    seenSongs.current = initialSeen();
-    if (currentSong) seenSongs.current[difficulty].add(currentSong.id);
+  function advanceToNextSong(resetSeen = false) {
+    if (resetSeen) seenSongs.current = initialSeen();
     const pool = filterSongs(catalog, difficulty);
-    const song = pickSong(pool, seenSongs.current[difficulty]);
-    if (song) seenSongs.current[difficulty].add(song.id);
+    const seen = seenSongs.current[difficulty];
+    if (currentSong) seen.add(currentSong.id);
+    if (pool.length > 1 && pool.every((song) => seen.has(song.id))) {
+      seen.clear();
+      if (currentSong) seen.add(currentSong.id);
+    }
+    const song = pickSong(pool, seen);
+    if (song) seen.add(song.id);
     setCurrentSong(song);
     resetRoundState();
+  }
+
+  function rerollAll() {
+    advanceToNextSong(true);
   }
 
   function replayCurrentSong() {
@@ -489,7 +528,12 @@ function App() {
   }
 
   return (
-    <main className="app-shell" data-difficulty={difficulty} data-status={status}>
+    <main
+      className="app-shell"
+      data-difficulty={difficulty}
+      data-song-id={currentSong?.id ?? ""}
+      data-status={status}
+    >
       <section className="game-layout">
         <aside className="mode-panel" aria-label="Difficulty">
           <nav className="difficulty-list">
@@ -596,6 +640,28 @@ function App() {
                 <div className="result-stamp">
                   {status === "won" ? `Guessed in ${currentStage}s!` : "Lost!"}
                 </div>
+                <div className="result-actions">
+                  {status === "lost" && (
+                    <button className="result-action result-retry-button" onClick={replayCurrentSong} type="button">
+                      <ReplayIcon /> Retry
+                    </button>
+                  )}
+                  <button className="result-action result-next-button primary" onClick={() => advanceToNextSong()} type="button">
+                    Next song <NextIcon />
+                  </button>
+                </div>
+                {autoReroll && autoRerollRemaining !== null && (
+                  <div className="auto-reroll-countdown" role="status">
+                    <span>Next song in {autoRerollRemaining}s</span>
+                    <button
+                      aria-label="Cancel auto reroll for this round"
+                      onClick={() => setAutoRerollCancelled(true)}
+                      type="button"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="round-panel">
@@ -762,6 +828,17 @@ function App() {
               })}
             </div>
           </div>
+          <div>
+            <p className="eyebrow"><AutoRerollIcon /> Next song</p>
+            <button
+              aria-pressed={autoReroll}
+              className={`setting-value${autoReroll ? " active-setting" : ""}`}
+              onClick={() => setAutoReroll((enabled) => !enabled)}
+              type="button"
+            >
+              Auto reroll {autoReroll ? `on · ${AUTO_REROLL_SECONDS}s` : "off"}
+            </button>
+          </div>
           <label className="volume-control">
             <div className="volume-header">
               <span className="eyebrow"><VolumeIcon /> Volume</span>
@@ -907,6 +984,17 @@ function StopwatchIcon() {
   );
 }
 
+function AutoRerollIcon() {
+  return (
+    <svg className="label-icon auto-reroll-icon" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M3.1 5.4A5.4 5.4 0 0 1 12.7 4" />
+      <path d="M12.7 1.8V4H10.5" />
+      <path d="M12.9 10.6A5.4 5.4 0 0 1 3.3 12" />
+      <path d="M3.3 14.2V12h2.2" />
+    </svg>
+  );
+}
+
 function PlayIcon() {
   return (
     <svg className="play-glyph play-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -960,6 +1048,15 @@ function ReplayIcon() {
     <svg className="action-icon replay-icon" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4.2 9.2A8.5 8.5 0 1 1 3.8 15" />
       <path d="M4.2 4.5v4.7h4.7" />
+    </svg>
+  );
+}
+
+function NextIcon() {
+  return (
+    <svg className="action-icon next-icon" viewBox="0 0 20 20" aria-hidden="true">
+      <path d="M3.5 10h12" />
+      <path d="m11.5 6 4 4-4 4" />
     </svg>
   );
 }

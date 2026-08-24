@@ -668,6 +668,7 @@ input:focus-visible {
 .volume-icon { width: 13px; height: 13px; }
 .waveform-icon { width: 14px; height: 12px; }
 .stopwatch-icon { width: 12px; height: 12px; }
+.auto-reroll-icon { width: 13px; height: 13px; }
 
 .setting-value {
   width: 168px;
@@ -839,6 +840,39 @@ input:focus-visible {
   z-index: 2;
 }
 
+.auto-reroll-countdown {
+  min-height: 24px;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.46);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.7px;
+  white-space: nowrap;
+}
+
+.auto-reroll-countdown button {
+  padding: 3px 7px;
+  border: 0;
+  border-radius: 999px;
+  color: #bfc5be;
+  background: rgba(255, 255, 255, 0.075);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.2px;
+  transition: color 160ms ease, background 160ms ease, transform 160ms var(--ease-out);
+}
+
+.auto-reroll-countdown button:hover {
+  color: #f1f3ef;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.auto-reroll-countdown button:active { transform: scale(0.96); }
+
 .game-content.result-state {
   min-height: calc(100vh - 48px);
   min-height: calc(100dvh - 48px);
@@ -982,6 +1016,45 @@ input:focus-visible {
   box-shadow: 0 0 15px rgba(237, 92, 98, 0.08);
 }
 
+.result-actions {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.result-action {
+  min-width: 104px;
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  color: #cbd0ca;
+  background: rgba(20, 23, 16, 0.88);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 750;
+  transition: color 180ms ease, background 180ms ease, filter 180ms ease, transform 180ms var(--ease-out);
+}
+
+.result-action.primary {
+  border-color: rgba(var(--accent-rgb), 0.32);
+  color: #11150d;
+  background: var(--accent);
+  box-shadow: 0 7px 19px rgba(var(--accent-rgb), 0.17);
+}
+
+.result-action:hover { color: #f0f2ee; background: #24291c; transform: translateY(-1px); }
+.result-action.primary:hover { color: #11150d; background: var(--accent); filter: brightness(1.08); }
+.result-action:active { transform: translateY(0) scale(0.97); }
+.result-action .action-icon { width: 13px; height: 13px; }
+
 .result-panel .result-artwork-wrap {
   animation: resultArtworkIn 720ms 120ms var(--ease-spring) both;
 }
@@ -1001,6 +1074,11 @@ input:focus-visible {
 .result-panel .result-stamp {
   --stamp-angle: -6deg;
   animation: resultStampIn 560ms 690ms var(--ease-spring) both;
+}
+
+.result-panel .result-actions,
+.result-panel .auto-reroll-countdown {
+  animation: resultCopyIn 460ms 790ms var(--ease-out) both;
 }
 
 .result-panel.won .result-stamp { --stamp-angle: -7deg; }
@@ -1210,6 +1288,7 @@ input:focus-visible {
   .label-icon { width: 16px; height: 16px; }
   .waveform-icon { width: 18px; height: 16px; }
   .volume-icon { width: 16px; height: 16px; }
+  .auto-reroll-icon { width: 16px; height: 16px; }
 
   .setting-value {
     width: 240px;
@@ -1245,6 +1324,10 @@ input:focus-visible {
   .result-kicker { font-size: 13px; }
   .result-panel.won .result-stamp { padding: 8px 18px 9px; font-size: 19px; }
   .result-stamp { font-size: 22px; }
+  .result-actions { margin-top: 20px; gap: 10px; }
+  .result-action { min-width: 124px; height: 40px; font-size: 13px; }
+  .auto-reroll-countdown { margin-top: 11px; font-size: 12px; }
+  .auto-reroll-countdown button { padding: 4px 9px; font-size: 11px; }
 }
 
 @media (max-width: 1050px) {

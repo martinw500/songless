@@ -32,6 +32,8 @@ Entering either win or loss stops clue playback and immediately restarts the sel
 
 Artwork is optional and must follow the current song identity. Each changed song creates a fresh image request; missing, throttled, or failed artwork renders the stable fallback instead of retaining decoded pixels from the previous cover. Search-result thumbnails load lazily to avoid unnecessary R2 request bursts.
 
+Auto reroll is opt-in and persists locally. A win or loss remains visible for a four-second countdown, with reveal audio continuing in the background. At zero, the app stops that reveal and begins a clean round with an unseen song in the same difficulty. The result screen exposes a one-round Cancel control without disabling the saved preference. Its Next song action advances immediately on either outcome, while a loss also exposes Retry for the same song. Disabling the option or manually advancing cancels any pending transition.
+
 Loss sequence:
 
 1. The game card receives a red wash.
@@ -61,6 +63,8 @@ All choreography is reduced to near-instant state changes when `prefers-reduced-
 - Complete 2 seconds and press Skip. Confirm the stage changes to 8 while audio remains stopped and only 2-8 becomes translucent. Press Play and confirm audio and opaque progress run from 2-8. After completion, press Play again and confirm both restart from 0.
 - During the cumulative 0-8 replay, press Pause between stage boundaries. Audio and opaque progress must remain at that exact point, and the next Play must continue from it instead of jumping back to 2 seconds or restarting at zero.
 - Trigger both a win and loss. Confirm the visible artwork-to-stamp group is optically centered and no result content is clipped.
+- Enable auto reroll, finish a round, cancel the visible countdown, and confirm the result stays put. On the next result, let the four-second countdown advance to a different song without carrying over reveal audio or locked round state.
+- Confirm Next song is available directly on both outcomes and Retry is available directly on a loss.
 - Observe the transition rather than only its final frame. Win confetti should be visible but contained, and the stamp should be the final emphasis.
 - Check a narrow viewport and the reduced-motion media mode.
 

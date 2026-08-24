@@ -23,6 +23,7 @@ The current storage split is:
 | Optional local intro audio | `public/media/audio` | Ignored |
 | Optional local album artwork | `public/media/artwork` | Ignored |
 | Volume preference | Browser local storage | Not applicable |
+| Auto-reroll preference | Browser local storage | Not applicable |
 | Enabled clue stages | Browser local storage | Not applicable |
 | Current round | React memory | Not persisted |
 
@@ -43,7 +44,8 @@ The longlist is one stage earlier than the candidate queue. `scripts/refresh-son
 5. The audio engine decodes only the compact hosted clue asset. It switches to a streaming HTML audio element for the complete result track, avoiding a full-song download before every clue.
 6. Skip changes the endpoint without scheduling audio. The first Play after advancing schedules only the new interval—for example, 2-8. After that interval completes, the next Play schedules the full cumulative 0-8 replay.
 7. A win or final loss stops clue playback, restarts the selected intro or hook from game-time zero, and leaves it playing while the result is visible.
-8. Guesses use catalogue IDs, avoiding ambiguous fuzzy-title comparisons.
+8. When the opt-in auto-reroll preference is enabled, the result displays a four-second countdown and then selects an unseen song from the current difficulty without immediately repeating the previous song. Cancelling pauses auto reroll for that result only; direct Retry and Next song controls provide immediate alternatives.
+9. Guesses use catalogue IDs, avoiding ambiguous fuzzy-title comparisons.
 
 Stage configuration is client-side. Toggling a duration stops active audio. Removing the current clue selects the next valid clue; adding a shorter clue makes that duration current so it is never misclassified as passed. Enabled durations are saved to local storage so playback state and the interface cannot disagree.
 

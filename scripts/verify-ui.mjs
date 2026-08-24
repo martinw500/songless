@@ -347,6 +347,22 @@ async function run() {
       `Volume fill state is incorrect (${JSON.stringify(volumeState)}).`);
     console.log("PASS volume fill boundary follows the thumb (40% output on the 0-500% range)");
 
+    const autoRerollFound = await client.evaluate(`(() => {
+      const button = [...document.querySelectorAll('.settings-panel .setting-value')]
+        .find((node) => node.textContent.trim().startsWith('Auto reroll'));
+      button?.click();
+      return Boolean(button);
+    })()`);
+    await delay(100);
+    const autoRerollSetting = await client.evaluate(`(() => {
+      const button = [...document.querySelectorAll('.settings-panel .setting-value')]
+        .find((node) => node.textContent.trim().startsWith('Auto reroll'));
+      return { pressed: button?.getAttribute('aria-pressed'), stored: localStorage.getItem('songless-auto-reroll') };
+    })()`);
+    assert(autoRerollFound && autoRerollSetting.pressed === "true"
+      && autoRerollSetting.stored === "true",
+    `Auto-reroll setting did not enable and persist (${JSON.stringify(autoRerollSetting)}).`);
+
     await clickStage(client, "0.01s");
     await client.evaluate("document.querySelector('.play-button').click()");
     await delay(1500);
@@ -665,11 +681,30 @@ async function run() {
       won: Boolean(document.querySelector('.result-panel.won')),
       title: document.querySelector('.result-panel h1')?.textContent.trim(),
       revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
+      hasNext: Boolean(document.querySelector('.result-next-button')),
+      hasRetry: Boolean(document.querySelector('.result-retry-button')),
+      hasCancel: Boolean(document.querySelector('.auto-reroll-countdown button')),
     })`);
-    assert(wonReveal.won && wonReveal.title === "Afterglow Avenue" && wonReveal.revealPlaying,
+    assert(wonReveal.won && wonReveal.title === "Afterglow Avenue" && wonReveal.revealPlaying
+      && wonReveal.hasNext && !wonReveal.hasRetry && wonReveal.hasCancel,
       `A correct guess did not begin reveal playback (${JSON.stringify(wonReveal)}).`);
+    if (saveArtifacts) {
+      await delay(800);
+      const artifactDirectory = path.join(root, ".ui-audit");
+      const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+      writeFileSync(path.join(artifactDirectory, "won-state.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "won-state.png"))}`);
+    }
 
-    await client.evaluate("document.querySelector('.mode-action').click()");
+    await client.evaluate("document.querySelector('.auto-reroll-countdown button').click()");
+    await delay(4300);
+    const cancelledAutoReroll = await client.evaluate(`({
+      status: document.querySelector('.app-shell')?.dataset.status ?? '',
+      countdown: Boolean(document.querySelector('.auto-reroll-countdown')),
+    })`);
+    assert(cancelledAutoReroll.status === "won" && !cancelledAutoReroll.countdown,
+      `Cancelling auto reroll did not hold the result (${JSON.stringify(cancelledAutoReroll)}).`);
+    await client.evaluate("document.querySelector('.result-next-button').click()");
     await delay(100);
     for (const stage of ["0.5s", "2s", "8s", "15s"]) await clickStage(client, stage);
     await client.evaluate("document.querySelector('.skip-button').click()");
@@ -677,14 +712,52 @@ async function run() {
     const lostReveal = await client.evaluate(`({
       lost: Boolean(document.querySelector('.result-panel.lost')),
       title: document.querySelector('.result-panel h1')?.textContent.trim(),
+      songId: document.querySelector('.app-shell')?.dataset.songId ?? '',
       revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
+      countdown: document.querySelector('.auto-reroll-countdown')?.textContent.trim() ?? '',
+      hasNext: Boolean(document.querySelector('.result-next-button')),
+      hasRetry: Boolean(document.querySelector('.result-retry-button')),
     })`);
-    assert(lostReveal.lost && lostReveal.title === "Afterglow Avenue" && lostReveal.revealPlaying,
+    assert(lostReveal.lost && lostReveal.title === "Afterglow Avenue" && lostReveal.revealPlaying
+      && lostReveal.countdown.startsWith("Next song in 4s") && lostReveal.hasNext && lostReveal.hasRetry,
       `A final skip did not begin reveal playback (${JSON.stringify(lostReveal)}).`);
+    if (saveArtifacts) {
+      await delay(800);
+      const artifactDirectory = path.join(root, ".ui-audit");
+      const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+      writeFileSync(path.join(artifactDirectory, "lost-state.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "lost-state.png"))}`);
+    }
     console.log("PASS win and loss results restart reveal audio from the prepared song beginning");
 
-    await client.evaluate("document.querySelector('.mode-action').click()");
+    await client.evaluate("document.querySelector('.result-retry-button').click()");
     await delay(100);
+    const retryState = await client.evaluate(`({
+      status: document.querySelector('.app-shell')?.dataset.status ?? '',
+      unlocked: [...document.querySelectorAll('.stage-pill')].every((node) => !node.disabled),
+    })`);
+    assert(retryState.status === "playing" && retryState.unlocked,
+      `The result Retry button did not reset the current round (${JSON.stringify(retryState)}).`);
+    await client.evaluate("document.querySelector('.skip-button').click()");
+    await delay(160);
+
+    await delay(4300);
+    const autoAdvanced = await client.evaluate(`(() => {
+      const button = [...document.querySelectorAll('.settings-panel .setting-value')]
+        .find((node) => node.textContent.trim().startsWith('Auto reroll'));
+      const state = {
+        status: document.querySelector('.app-shell')?.dataset.status ?? '',
+        songId: document.querySelector('.app-shell')?.dataset.songId ?? '',
+        countdown: Boolean(document.querySelector('.auto-reroll-countdown')),
+        unlocked: [...document.querySelectorAll('.stage-pill')].every((node) => !node.disabled),
+      };
+      button?.click();
+      return state;
+    })()`);
+    assert(autoAdvanced.status === "playing" && autoAdvanced.songId
+      && !autoAdvanced.countdown && autoAdvanced.unlocked,
+    `Auto reroll did not start a clean next round (${JSON.stringify(autoAdvanced)}).`);
+    console.log("PASS result Retry, Next song, Cancel, and four-second auto reroll controls");
 
     await client.call("Emulation.setDeviceMetricsOverride", {
       width: 720,
