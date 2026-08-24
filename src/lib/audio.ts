@@ -12,6 +12,7 @@ export class AudioEngine {
   private buffers = new Map<string, AudioBuffer>();
   private playbackId = 0;
   private media: HTMLAudioElement | null = null;
+  private mediaStopTimer: number | null = null;
   private volume = 1;
 
   setVolume(volume: number): void {
@@ -21,6 +22,10 @@ export class AudioEngine {
 
   stop(): void {
     this.playbackId += 1;
+    if (this.mediaStopTimer !== null) {
+      window.clearTimeout(this.mediaStopTimer);
+      this.mediaStopTimer = null;
+    }
     for (const node of this.activeNodes) {
       try {
         node.stop();
@@ -48,14 +53,13 @@ export class AudioEngine {
     if (playbackId !== this.playbackId) return 0;
     this.setVolume(volume);
 
-    if (song.audio.kind === "file" || song.audio.kind === "hosted") {
-      let sourceUrl = song.audio.kind === "file" ? song.audio.src : song.audio.clueSrc;
-      // If the start time is past the end of the ~30s clue clip (e.g. when playing a hook offset), 
-      // we must use the full audio track instead.
-      if (song.audio.kind === "hosted" && (song.startAtMs ?? 0) > 28000) {
-        sourceUrl = song.audio.fullSrc;
-      }
-      const buffer = await this.loadBuffer(sourceUrl, context);
+    if (song.audio.kind === "hosted") {
+      const sourceUrl = (song.startAtMs ?? 0) > 28000 ? song.audio.fullSrc : song.audio.clueSrc;
+      return this.playHostedRange(song, sourceUrl, rangeStart, requestedDuration, context, playbackId);
+    }
+
+    if (song.audio.kind === "file") {
+      const buffer = await this.loadBuffer(song.audio.src, context);
       if (playbackId !== this.playbackId) return 0;
       const now = context.currentTime;
       const offset = Math.max(0, (song.startAtMs ?? 0) / 1000 + rangeStart);
@@ -115,37 +119,14 @@ export class AudioEngine {
       const context = await this.getContext();
       if (playbackId !== this.playbackId) return 0;
       this.setVolume(volume);
-
-      const media = new Audio();
-      media.preload = "auto";
-      media.crossOrigin = "anonymous";
-      
-      const source = context.createMediaElementSource(media);
-      source.connect(this.getMasterGain(context));
-
-      // Add a dummy node to disconnect the graph on stop
-      const disconnectNode = {
-        stop: () => {
-          source.disconnect();
-        }
-      } as any;
-      this.activeNodes.push(disconnectNode);
-
-      media.src = song.audio.fullSrc;
-      this.media = media;
-      await this.waitForMetadata(media);
-      if (playbackId !== this.playbackId || this.media !== media) return 0;
-      const offset = Math.max(0, (song.startAtMs ?? 0) / 1000 + Math.max(0, startSeconds));
-      const configuredDuration = song.audio.durationMs / 1000;
-      const duration = Number.isFinite(media.duration) ? media.duration : configuredDuration;
-      if (offset >= duration) throw new Error("The reveal starts past the end of the hosted song.");
-      media.currentTime = offset;
-      await media.play();
-      if (playbackId !== this.playbackId || this.media !== media) {
-        media.pause();
-        return 0;
-      }
-      return duration - offset;
+      return this.playHostedRange(
+        song,
+        song.audio.fullSrc,
+        Math.max(0, startSeconds),
+        null,
+        context,
+        playbackId,
+      );
     }
 
     this.stop();
@@ -196,6 +177,69 @@ export class AudioEngine {
       gain.connect(this.getMasterGain(context));
     }
     return gain;
+  }
+
+  private createMediaGain(context: AudioContext, boostDb = 0): AudioNode {
+    if (boostDb <= 0) return this.getMasterGain(context);
+    const gain = context.createGain();
+    gain.gain.value = 10 ** (Math.max(0, boostDb) / 20);
+    const limiter = context.createDynamicsCompressor();
+    limiter.threshold.value = -4;
+    limiter.knee.value = 2;
+    limiter.ratio.value = 16;
+    limiter.attack.value = 0.002;
+    limiter.release.value = 0.18;
+    gain.connect(limiter);
+    limiter.connect(this.getMasterGain(context));
+    return gain;
+  }
+
+  private async playHostedRange(
+    song: Song,
+    src: string,
+    rangeStart: number,
+    requestedDuration: number | null,
+    context: AudioContext,
+    playbackId: number,
+  ): Promise<number> {
+    if (song.audio.kind !== "hosted") throw new Error("Hosted playback requires a hosted audio source.");
+    const media = new Audio();
+    media.preload = "auto";
+    media.crossOrigin = "anonymous";
+    media.src = src;
+    this.media = media;
+    await this.waitForMetadata(media);
+    if (playbackId !== this.playbackId || this.media !== media) return 0;
+
+    // Safari can suspend Web Audio while metadata is loading. Once the Play
+    // gesture has unlocked it, resume again before connecting the media node.
+    if (context.state !== "running") await context.resume();
+    if (playbackId !== this.playbackId || this.media !== media) return 0;
+
+    const offset = Math.max(0, (song.startAtMs ?? 0) / 1000 + rangeStart);
+    const configuredDuration = song.audio.durationMs / 1000;
+    const mediaDuration = Number.isFinite(media.duration) ? media.duration : configuredDuration;
+    const available = Math.max(0, mediaDuration - offset);
+    const actualDuration = requestedDuration === null ? available : Math.min(requestedDuration, available);
+    if (actualDuration <= 0) throw new Error("The configured playback range is past the end of the hosted song.");
+
+    media.currentTime = offset;
+    const source = context.createMediaElementSource(media);
+    source.connect(this.createMediaGain(context, requestedDuration === null ? 0 : song.clueGainDb ?? 0));
+    this.activeNodes.push({ stop: () => source.disconnect() } as AudioScheduledSourceNode);
+    await media.play();
+    if (playbackId !== this.playbackId || this.media !== media) {
+      media.pause();
+      return 0;
+    }
+    if (requestedDuration !== null) {
+      this.mediaStopTimer = window.setTimeout(() => {
+        if (playbackId !== this.playbackId || this.media !== media) return;
+        this.mediaStopTimer = null;
+        media.pause();
+      }, actualDuration * 1000);
+    }
+    return actualDuration;
   }
 
   private getMasterGain(context: AudioContext): GainNode {

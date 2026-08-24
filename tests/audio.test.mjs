@@ -2,6 +2,83 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { AudioEngine } from "../src/lib/audio.ts";
 
+test("hosted clues use the media playback route with exact offsets and timed cutoffs", async (context) => {
+  const originalAudio = globalThis.Audio;
+  const originalMediaElement = globalThis.HTMLMediaElement;
+  const originalAudioContext = globalThis.AudioContext;
+  const originalWindow = globalThis.window;
+  let media;
+  let disconnected = false;
+  let masterGain;
+  let cutoffMs;
+  class MockAudio {
+    readyState = 1;
+    duration = 30;
+    currentTime = 0;
+    src = "";
+    paused = true;
+    constructor() { media = this; }
+    async play() { this.paused = false; }
+    pause() { this.paused = true; }
+    removeAttribute(name) { if (name === "src") this.src = ""; }
+    load() {}
+    addEventListener() {}
+    removeEventListener() {}
+  }
+  class MockAudioContext {
+    state = "running";
+    destination = {};
+    async resume() {}
+    createMediaElementSource() {
+      return { connect() {}, disconnect() { disconnected = true; } };
+    }
+    createGain() {
+      masterGain = { gain: { value: 1 }, connect() {}, disconnect() {} };
+      return masterGain;
+    }
+  }
+  globalThis.Audio = MockAudio;
+  globalThis.HTMLMediaElement = { HAVE_METADATA: 1 };
+  globalThis.AudioContext = MockAudioContext;
+  globalThis.window = {
+    setTimeout(_callback, delayMs) { cutoffMs = delayMs; return 17; },
+    clearTimeout() {},
+  };
+  context.after(() => {
+    globalThis.Audio = originalAudio;
+    globalThis.HTMLMediaElement = originalMediaElement;
+    globalThis.AudioContext = originalAudioContext;
+    globalThis.window = originalWindow;
+  });
+
+  const engine = new AudioEngine();
+  const song = {
+    id: "hosted-clue",
+    title: "Hosted Clue",
+    artist: "Test Artist",
+    difficulty: "easy",
+    startAtMs: 85,
+    audio: {
+      kind: "hosted",
+      clueSrc: "https://media.example/audio/clues/hosted-clue.mp3",
+      fullSrc: "https://media.example/audio/full/hosted-clue.mp3",
+      durationMs: 210000,
+    },
+  };
+  assert.equal(await engine.play(song, 0.5, 2, 0.8), 1.5);
+  assert.equal(media.src, song.audio.clueSrc);
+  assert.ok(Math.abs(media.currentTime - 0.585) < 0.000001);
+  assert.equal(media.paused, false);
+  assert.equal(cutoffMs, 1500);
+  assert.equal(masterGain.gain.value, 0.8);
+  engine.setVolume(1.6);
+  assert.equal(masterGain.gain.value, 1.6);
+  assert.equal(media.paused, false);
+  engine.stop();
+  assert.equal(media.paused, true);
+  assert.equal(disconnected, true);
+});
+
 test("hosted reveal streams from game-time zero and responds to live volume changes", async (context) => {
   const originalAudio = globalThis.Audio;
   const originalMediaElement = globalThis.HTMLMediaElement;

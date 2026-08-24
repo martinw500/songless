@@ -147,7 +147,7 @@ Because the shortest normal clue is 0.1 seconds, `npm run provisional:catalog` a
 }
 ```
 
-R2 artwork or optional metadata artwork is used when no local JPG exists. Album and Spotify-link metadata are display-only and optional; Spotify is never a playback source. Playable R2/local audio and verified intro scoring are mandatory. The first real catalogue needs at least ten songs in each mode and cannot mix demos with real songs. Hosted clues decode only the compact clue asset; a win or final loss streams the complete file from game-time zero rather than inheriting the final clue position.
+R2 artwork or optional metadata artwork is used when no local JPG exists. Album and Spotify-link metadata are display-only and optional; Spotify is never a playback source. Playable R2/local audio and verified intro scoring are mandatory. The first real catalogue needs at least ten songs in each mode and cannot mix demos with real songs. Hosted clues stream the compact clue asset through an HTML media element connected to the shared Web Audio gain graph. This keeps mobile Safari on the same reliable media route as the result reveal while retaining source offsets, timed stage cutoffs, pause/resume, clue-only gain, and live volume changes. A win or final loss streams the complete file from game-time zero rather than inheriting the final clue position.
 
 ### Artwork integrity
 
