@@ -23,6 +23,7 @@ if (!existsSync(backupFile)) {
 const candidateRoot = JSON.parse(readFileSync(candidateFile, "utf8"));
 const songs = candidateRoot.songs.filter(
   (s) =>
+    s.reviewStatus !== "rejected" &&
     s.media?.hostedClueUrl &&
     s.media?.hostedFullUrl &&
     Number.isInteger(s.media.hostedDurationMs)
@@ -56,6 +57,7 @@ const catalog = withEase.map((entry, index) => {
     difficulty: entry.difficulty,
     familiarity: s.familiarity,
     recognitionScore: entry.recognitionScore,
+    audienceFamiliarityScore: entry.audienceFamiliarityScore,
     streamReachScore: entry.streamReachScore,
     genZRelevanceScore: entry.genZRelevanceScore,
     longevityScore: entry.longevityScore,
@@ -83,7 +85,8 @@ for (const entry of catalog) counts[entry.difficulty] = (counts[entry.difficulty
 
 console.log("\n=== Provisional Catalogue ===");
 console.log(`Total songs: ${songs.length}`);
-console.log(`Method: 45% intro + 35% reach + 15% Gen-Z/current + 5% longevity`);
+console.log(`Reviewed method: 45% intro + 35% reach + 15% Gen-Z/current + 5% longevity`);
+console.log(`Provisional method: 10% audibility + 50% reach + 20% audience familiarity + 15% Gen-Z/current + 5% longevity`);
 console.log(`  easy      : ${counts.easy}`);
 console.log(`  medium    : ${counts.medium}`);
 console.log(`  hard      : ${counts.hard}`);

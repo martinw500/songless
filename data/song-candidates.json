@@ -5710,7 +5710,8 @@
       "easeScore": null,
       "proposedDifficulty": null,
       "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
+      "reviewStatus": "rejected",
+      "rejectionReason": "Removed from the playable catalogue after audience review found recognition too weak for the target North American/internet-aware 18–24 cohort.",
       "media": {
         "audioFile": "indila-derniere-danse.mp3",
         "artworkFile": "indila-derniere-danse.jpg",
@@ -19449,7 +19450,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 2000,
+      "startAtMs": 2100,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,

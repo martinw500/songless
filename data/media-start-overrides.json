@@ -271,7 +271,7 @@
     { "id": "lupe-fiasco-the-show-goes-on", "startAtMs": 300, "clueGainDb": 12, "reason": "Remove only the measured pad before the verified artist release's genuine quiet build and lift clue playback." },
     { "id": "far-east-movement-rocketeer", "startAtMs": 150, "reason": "Begin the acoustically verified canonical recording at its measured first sound." },
     { "id": "onerepublic-counting-stars", "startAtMs": 0, "reason": "The acoustically verified original Native recording begins immediately; remove the stale 2023 re-recording offset." },
-    { "id": "bruno-mars-locked-out-of-heaven", "startAtMs": 2000, "reason": "Skip the lyric upload's remaining measured blank lead-in and begin at the canonical recording's first strong musical content." },
+    { "id": "bruno-mars-locked-out-of-heaven", "startAtMs": 2100, "reason": "Skip the lyric upload's remaining blank lead-in plus its 0.1-second dead zone so the shortest clue begins on strong musical content." },
     { "id": "wham-last-christmas", "startAtMs": 400, "clueGainDb": 6, "reason": "Begin the official lyric recording at its measured first sound and gently lift its soft synth opening during clues." },
     { "id": "kendrick-lamar-money-trees", "startAtMs": 0, "clueGainDb": 4, "reason": "Preserve the verified artist release's immediate soft opening and gently lift clue playback." },
     { "id": "the-weeknd-i-feel-it-coming", "startAtMs": 150, "reason": "Begin the complete artist release at its measured first sound." },

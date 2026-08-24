@@ -1,7 +1,13 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { createScorer, difficultyFor, difficultyWeights } from "../scripts/provisional-scoring.mjs";
+import {
+  createScorer,
+  difficultyFor,
+  difficultyWeights,
+  provisionalDifficultyFor,
+  provisionalDifficultyWeights,
+} from "../scripts/provisional-scoring.mjs";
 
 test("fixed difficulty thresholds cover every calibrated boundary", () => {
   assert.equal(difficultyFor(100), "easy");
@@ -42,6 +48,44 @@ test("difficulty weights keep Gen-Z relevance at fifteen percent", () => {
   assert.equal(result.longevityScore, 40);
   assert.equal(result.easeScore, 75.7);
   assert.equal(result.difficulty, "expert");
+});
+
+test("unreviewed intros keep waveform audibility at ten percent", () => {
+  assert.deepEqual(provisionalDifficultyWeights, {
+    audibilityProxy: 0.10,
+    streamReach: 0.50,
+    audienceFamiliarity: 0.20,
+    genZRelevance: 0.15,
+    longevity: 0.05,
+  });
+  assert.equal(provisionalDifficultyFor(78.1), "easy");
+  assert.equal(provisionalDifficultyFor(78), "medium");
+  assert.equal(provisionalDifficultyFor(72.8), "medium");
+  assert.equal(provisionalDifficultyFor(72.7), "hard");
+  assert.equal(provisionalDifficultyFor(68.7), "hard");
+  assert.equal(provisionalDifficultyFor(68.6), "expert");
+  assert.equal(provisionalDifficultyFor(66.8), "expert");
+  assert.equal(provisionalDifficultyFor(66.7), "impossible");
+
+  const scoreSong = createScorer({ tracks: [] }, { songs: [] });
+  const result = scoreSong({
+    id: "unreviewed-example",
+    title: "Unreviewed Example",
+    artist: "Test Artist",
+    familiarity: 75,
+    introRecognition: null,
+    scores: {
+      audienceRecognition: 80,
+      currentCirculation: 60,
+      broaderVisibility: 80,
+      longevity: 40,
+    },
+  });
+  assert.equal(result.introScoreMethod, "waveform_audibility_proxy_low_weight");
+  assert.equal(result.introRecognition, 50);
+  assert.equal(result.audienceFamiliarityScore, 80);
+  assert.equal(result.easeScore, 73.7);
+  assert.equal(result.difficulty, "medium");
 });
 
 test("reviewed iconic childhood hits are not demoted by waveform proxies", () => {

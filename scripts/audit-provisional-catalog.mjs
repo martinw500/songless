@@ -34,15 +34,12 @@ const candidateById = uniqueMap(candidates, "Candidates");
 const catalogById = uniqueMap(catalog, "Catalogue");
 const featureById = uniqueMap(features.songs, "Intro features");
 const overrideById = uniqueMap(overrides, "Media-start overrides");
-const playableCandidates = candidates.filter((song) => song.media?.hostedClueUrl
+const playableCandidates = candidates.filter((song) => song.reviewStatus !== "rejected" && song.media?.hostedClueUrl
   && song.media?.hostedFullUrl && Number.isInteger(song.media?.hostedDurationMs));
 const scoreSong = createScorer(longlist, features);
 
 if (catalog.length !== playableCandidates.length) {
   errors.push(`Catalogue has ${catalog.length} songs; expected ${playableCandidates.length} hosted candidates.`);
-}
-if (features.songs.length !== playableCandidates.length) {
-  errors.push(`Intro features have ${features.songs.length} rows; expected ${playableCandidates.length}.`);
 }
 
 for (const candidate of playableCandidates) {
@@ -72,7 +69,7 @@ for (const candidate of playableCandidates) {
     errors.push(`${candidate.id}: clueGainDb must be between 0 and 12.`);
   }
   const expected = scoreSong(candidate);
-  for (const key of ["streamReachScore", "genZRelevanceScore", "longevityScore", "recognitionScore", "introRecognition"]) {
+  for (const key of ["streamReachScore", "audienceFamiliarityScore", "genZRelevanceScore", "longevityScore", "recognitionScore", "introRecognition"]) {
     if (song[key] !== expected[key]) errors.push(`${candidate.id}: ${key} is stale; expected ${expected[key]}, found ${song[key]}.`);
   }
   if (song._easeScore !== expected.easeScore || song.difficulty !== expected.difficulty) {
@@ -89,6 +86,9 @@ for (const candidate of playableCandidates) {
 }
 
 for (const song of catalog) if (!candidateById.has(song.id)) errors.push(`${song.id}: catalogue song has no candidate.`);
+for (const song of catalog) {
+  if (candidateById.get(song.id)?.reviewStatus === "rejected") errors.push(`${song.id}: rejected candidate remains in the catalogue.`);
+}
 for (const override of overrides) {
   const candidate = candidateById.get(override.id);
   if (!candidate) errors.push(`${override.id}: media-start override has no candidate.`);
@@ -103,7 +103,7 @@ for (const difficulty of difficulties) {
 }
 
 console.log(`Provisional catalogue: ${catalog.length} songs; ${difficulties.map((difficulty) => `${difficulty}=${counts[difficulty]}`).join(", ")}.`);
-console.log(`Waveform features: ${features.songs.length}; documented media overrides: ${overrideById.size}.`);
+console.log(`Waveform features: ${features.songs.length} total / ${playableCandidates.length} playable; documented media overrides: ${overrideById.size}.`);
 if (warnings.length) {
   console.log(`Warnings (${warnings.length}):`);
   for (const warning of warnings) console.log(`- ${warning}`);

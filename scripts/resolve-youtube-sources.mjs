@@ -2,9 +2,11 @@ import { spawnSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { sortCandidatesBillionFirst } from "./song-priority.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
+const longlistFile = path.join(root, "data", "song-longlist.json");
 const sourceFile = path.join(root, "data", "song-download-sources.local.json");
 const args = process.argv.slice(2);
 const valueAfter = (name) => {
@@ -22,6 +24,8 @@ const force = args.includes("--force") || valueAfter("--force") === "true";
 if (!Number.isInteger(limit) || limit < 1 || limit > 500) throw new Error("--limit must be from 1 to 500.");
 
 const candidates = JSON.parse(readFileSync(candidateFile, "utf8")).songs;
+const longlist = JSON.parse(readFileSync(longlistFile, "utf8"));
+const prioritizedCandidates = sortCandidatesBillionFirst(candidates, longlist);
 const sourceRoot = JSON.parse(readFileSync(sourceFile, "utf8"));
 const sourceById = new Map(sourceRoot.songs.map((song) => [song.id, song]));
 
@@ -148,7 +152,7 @@ if (manualUrl) {
 
 let resolved = 0;
 const unresolved = [];
-for (const candidate of candidates) {
+for (const candidate of prioritizedCandidates) {
   if (selectedId && candidate.id !== selectedId) continue;
   const source = sourceById.get(candidate.id);
   if (!source) throw new Error(`Missing source row for ${candidate.id}. Run npm run init:sources.`);

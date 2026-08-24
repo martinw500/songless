@@ -9,6 +9,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "audit:songs": "node scripts/song-library.mjs audit",
     "audit:provisional": "node scripts/audit-provisional-catalog.mjs",
+    "audit:coverage": "node scripts/audit-billion-coverage.mjs",
     "approve:song": "node scripts/approve-song.mjs",
     "prepare:media": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-audio.ps1",
     "resolve:youtube": "node scripts/resolve-youtube-sources.mjs",

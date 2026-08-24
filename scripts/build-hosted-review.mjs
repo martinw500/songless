@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateRoot = JSON.parse(readFileSync(path.join(root, "data", "song-candidates.json"), "utf8"));
 const songs = candidateRoot.songs
-  .filter((song) => song.media?.hostedClueUrl && song.media?.hostedFullUrl && Number.isInteger(song.media.hostedDurationMs))
+  .filter((song) => song.reviewStatus !== "rejected"
+    && song.media?.hostedClueUrl && song.media?.hostedFullUrl && Number.isInteger(song.media.hostedDurationMs))
   .map((song) => ({
     id: song.id,
     title: song.title,

@@ -21,6 +21,16 @@ export const difficultyWeights = Object.freeze({
 
 export const easeFormula = "0.45 * introRecognition + 0.35 * streamReach + 0.15 * genZRelevance + 0.05 * longevity";
 
+export const provisionalDifficultyWeights = Object.freeze({
+  audibilityProxy: 0.10,
+  streamReach: 0.50,
+  audienceFamiliarity: 0.20,
+  genZRelevance: 0.15,
+  longevity: 0.05,
+});
+
+export const provisionalEaseFormula = "0.10 * audibilityProxy + 0.50 * streamReach + 0.20 * audienceFamiliarity + 0.15 * genZRelevance + 0.05 * longevity";
+
 function streamBillions(value) {
   const match = String(value ?? "").match(/([0-9.]+)\s*B/iu);
   return match ? Number(match[1]) : null;
@@ -79,6 +89,14 @@ export function difficultyFor(easeScore) {
   return "impossible";
 }
 
+export function provisionalDifficultyFor(easeScore) {
+  if (easeScore >= 78.1) return "easy";
+  if (easeScore >= 72.8) return "medium";
+  if (easeScore >= 68.7) return "hard";
+  if (easeScore >= 66.8) return "expert";
+  return "impossible";
+}
+
 export function createScorer(longlist, featureRoot) {
   const rows = longlist.tracks ?? [];
   const features = new Map((featureRoot?.songs ?? []).map((feature) => [feature.id, feature]));
@@ -117,29 +135,46 @@ export function createScorer(longlist, featureRoot) {
       + longevityScore * difficultyWeights.longevity
     ) / recognitionWeight);
     const estimatedIntroRecognition = introAudioScore(song, features.get(song.id));
-    const introRecognition = Number.isFinite(song.introRecognition)
+    const reviewedIntro = Number.isFinite(song.introRecognition);
+    const introRecognition = reviewedIntro
       ? song.introRecognition
       : estimatedIntroRecognition;
-    const easeScore = round(
-      introRecognition * difficultyWeights.introRecognition
-      + streamReachScore * difficultyWeights.streamReach
-      + genZRelevanceScore * difficultyWeights.genZRelevance
-      + longevityScore * difficultyWeights.longevity,
-    );
+    const audienceFamiliarityScore = Number.isFinite(song.scores?.audienceRecognition)
+      ? song.scores.audienceRecognition
+      : Number.isFinite(song.familiarity)
+        ? song.familiarity
+        : recognitionScore;
+    const easeScore = reviewedIntro
+      ? round(
+        introRecognition * difficultyWeights.introRecognition
+        + streamReachScore * difficultyWeights.streamReach
+        + genZRelevanceScore * difficultyWeights.genZRelevance
+        + longevityScore * difficultyWeights.longevity,
+      )
+      : round(
+        estimatedIntroRecognition * provisionalDifficultyWeights.audibilityProxy
+        + streamReachScore * provisionalDifficultyWeights.streamReach
+        + audienceFamiliarityScore * provisionalDifficultyWeights.audienceFamiliarity
+        + genZRelevanceScore * provisionalDifficultyWeights.genZRelevance
+        + longevityScore * provisionalDifficultyWeights.longevity,
+      );
     return {
       streamReachScore,
       genZRelevanceScore,
       longevityScore,
       recognitionScore,
+      audienceFamiliarityScore,
       introRecognition,
       estimatedIntroRecognition,
-      introScoreMethod: Number.isFinite(song.introRecognition) ? "reviewed" : "waveform_audibility_proxy",
+      introScoreMethod: reviewedIntro ? "reviewed" : "waveform_audibility_proxy_low_weight",
       easeScore,
-      difficulty: Number.isFinite(song.introRecognition)
+      difficulty: reviewedIntro
         && song.proposedDifficulty
         && song.difficultyOverrideReason
         ? song.proposedDifficulty
-        : difficultyFor(easeScore),
+        : reviewedIntro
+          ? difficultyFor(easeScore)
+          : provisionalDifficultyFor(easeScore),
     };
   };
 }

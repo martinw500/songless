@@ -54,7 +54,9 @@ New-song discovery is frozen while the playable catalogue is implemented. Previo
 
 Run `npm run audit:songs` after editing. The audit validates IDs, aliases, score math, review transitions, media names, live catalogue entries, and approved difficulty counts. The original 120-song pilot composition remains curation history; the provisional playable catalogue is now larger.
 
-Run `npm run audit:provisional` for the expanded playable testing catalogue. It validates every hosted candidate/catalogue mapping, unique IDs, R2 URLs and durations, start offsets, clue gains, tracked waveform features, deterministic score fields, difficulty counts, and documented media-start overrides.
+Run `npm run audit:provisional` for the expanded playable testing catalogue. It validates every hosted candidate/catalogue mapping, unique IDs, R2 URLs and durations, start offsets, clue gains, tracked waveform features, deterministic score fields, difficulty counts, documented media-start overrides, and that rejected candidates cannot remain playable merely because their hosted media still exists.
+
+Run `npm run audit:coverage` to compare the active billion-stream intake rows with candidate records and the playable catalogue. It reports separately which songs have never received a candidate record and which already have metadata but still lack playable media. The comparison is conservative normalized title/artist matching; review its reported edge cases before treating a near-match as the same recording.
 
 Complete displayed artist credits are maintained separately from title aliases. Apply reviewed corrections from `data/artist-credit-overrides.json` with `npm run apply:artist-credits`; every override includes a reason so later metadata refreshes cannot silently discard or invent a featured artist.
 
@@ -101,7 +103,7 @@ Only score the prepared clip, while the title and artist are hidden. The questio
 Intro identification is the largest single component at 45%. These fixed bands were calibrated once around the current library's score quintiles so each mode remains similarly playable; songs are never randomly assigned, and adding another song does not move an existing song by rank. `audit:provisional` requires at least 50 playable songs in every mode so a threshold change cannot silently create an unusably small pool. The audit permits a manual difficulty override only when `difficultyOverrideReason` explains it.
 
 > [!NOTE]
-> **Provisional intro scoring:** Waveform analysis can measure silence, level, onset, and an energy ramp, but it cannot determine whether a melody, beat, or voice is culturally unique. Until blind play-tested reviews exist, `scripts/generate-provisional-catalog.mjs` uses that measurement only as a `waveform_audibility_proxy`. It is provisional rather than evidence that the intro is identifiable. A blind time-to-identification `introRecognition` score replaces it.
+> **Provisional intro scoring:** Waveform analysis can measure silence, level, onset, and an energy ramp, but it cannot determine whether a melody, beat, or voice is culturally unique. Until blind play-tested reviews exist, the waveform audibility proxy contributes only 10%; stream/broad reach contributes 50%, stored audience familiarity 20%, Gen-Z/current relevance 15%, and longevity 5%. Provisional fixed thresholds (78.1, 72.8, 68.7, and 66.8) keep the current modes comparably populated without randomly assigning songs. A quiet but distinctive opening can therefore remain easy, while a loud generic opening cannot dominate the rating. Once an intro receives a real identification review, the normal 45/35/15/5 formula and normal fixed thresholds apply.
 
 ## Audio onset calibration
 
