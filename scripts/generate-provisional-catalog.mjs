@@ -58,6 +58,7 @@ const catalog = withEase.map((entry, index) => {
     recognitionScore: entry.recognitionScore,
     streamReachScore: entry.streamReachScore,
     genZRelevanceScore: entry.genZRelevanceScore,
+    longevityScore: entry.longevityScore,
     introRecognition: entry.introRecognition,
     startAtMs: s.startAtMs ?? s.media?.onsetPadMs ?? 30,
     ...(s.clueGainDb != null ? { clueGainDb: s.clueGainDb } : {}),
@@ -82,7 +83,7 @@ for (const entry of catalog) counts[entry.difficulty] = (counts[entry.difficulty
 
 console.log("\n=== Provisional Catalogue ===");
 console.log(`Total songs: ${songs.length}`);
-console.log(`Method: absolute 50% recognition + 50% intro thresholds`);
+console.log(`Method: 45% intro + 35% reach + 15% Gen-Z/current + 5% longevity`);
 console.log(`  easy      : ${counts.easy}`);
 console.log(`  medium    : ${counts.medium}`);
 console.log(`  hard      : ${counts.hard}`);
@@ -92,7 +93,7 @@ console.log(`  impossible: ${counts.impossible}`);
 const withIntro = withEase.filter((e) => e.introScoreMethod === "reviewed").length;
 const withoutIntro = withEase.length - withIntro;
 console.log(`\nIntro reviewed: ${withIntro}`);
-console.log(`Waveform-estimated intros (provisional): ${withoutIntro}`);
+console.log(`Waveform audibility proxies (provisional): ${withoutIntro}`);
 console.log(`\nEase score range: ${withEase[withEase.length - 1].easeScore} – ${withEase[0].easeScore}`);
 
 // (Band boundaries removed because we now use absolute thresholds)
@@ -103,6 +104,6 @@ if (dryRun) {
   writeFileSync(catalogFile, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
   console.log(`\nWrote provisional catalogue to ${path.basename(catalogFile)}.`);
   console.log("⚠ This is a PROVISIONAL catalogue for testing only.");
-  console.log("  Unreviewed intro scores are deterministic waveform estimates and may change after play-testing.");
+  console.log("  Unreviewed intro scores are waveform audibility proxies and must be replaced by blind identification reviews.");
   console.log("  Run npm run promote:songs after all intro reviews are complete.");
 }

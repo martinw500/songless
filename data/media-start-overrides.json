@@ -7,6 +7,7 @@
     { "id": "oasis-wonderwall", "startAtMs": 150, "reason": "Verified remaster guitar begins at 150 ms." },
     { "id": "miley-cyrus-flowers", "startAtMs": 3700, "reason": "Official lyric source has 3.7 seconds of blank lead-in before the track." },
     { "id": "beach-house-space-song", "startAtMs": 250, "clueGainDb": 8, "reason": "Keep the deliberate fade from its first musical sound and raise clue-only audibility." },
+    { "id": "d4vd-romantic-homicide", "startAtMs": 750, "clueGainDb": 6, "reason": "Begin at the measured sustained onset instead of leaving half of the 0.1-second clue blank, and lift the opening only during clue playback." },
     { "id": "kendrick-lamar-sza-luther", "startAtMs": 400, "reason": "Remove measured encoder/source padding." },
     { "id": "kendrick-lamar-not-like-us", "startAtMs": 0, "clueGainDb": 10, "reason": "Preserve the quiet recognizable opening and boost only clue playback." },
     { "id": "kelly-clarkson-since-u-been-gone", "startAtMs": 450, "clueGainDb": 12, "reason": "Preserve the intentional filtered build from its first sound." },

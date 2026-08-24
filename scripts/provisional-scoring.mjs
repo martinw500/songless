@@ -12,6 +12,15 @@ function round(value) {
   return Math.round(value * 10) / 10;
 }
 
+export const difficultyWeights = Object.freeze({
+  introRecognition: 0.45,
+  streamReach: 0.35,
+  genZRelevance: 0.15,
+  longevity: 0.05,
+});
+
+export const easeFormula = "0.45 * introRecognition + 0.35 * streamReach + 0.15 * genZRelevance + 0.05 * longevity";
+
 function streamBillions(value) {
   const match = String(value ?? "").match(/([0-9.]+)\s*B/iu);
   return match ? Number(match[1]) : null;
@@ -63,10 +72,10 @@ function introAudioScore(song, feature) {
 }
 
 export function difficultyFor(easeScore) {
-  if (easeScore >= 85) return "easy";
-  if (easeScore >= 82.5) return "medium";
-  if (easeScore >= 80) return "hard";
-  if (easeScore >= 75) return "expert";
+  if (easeScore >= 82.6) return "easy";
+  if (easeScore >= 79.2) return "medium";
+  if (easeScore >= 75.9) return "hard";
+  if (easeScore >= 72) return "expert";
   return "impossible";
 }
 
@@ -96,19 +105,35 @@ export function createScorer(longlist, featureRoot) {
     const genZRelevanceScore = song.scores
       ? round(song.scores.audienceRecognition * 0.55 + song.scores.currentCirculation * 0.45)
       : founderCohortScore(row?.founderReason, row?.signals);
-    const recognitionScore = round(streamReachScore * 0.5 + genZRelevanceScore * 0.5);
+    const longevityScore = Number.isFinite(song.scores?.longevity)
+      ? song.scores.longevity
+      : 50;
+    const recognitionWeight = difficultyWeights.streamReach
+      + difficultyWeights.genZRelevance
+      + difficultyWeights.longevity;
+    const recognitionScore = round((
+      streamReachScore * difficultyWeights.streamReach
+      + genZRelevanceScore * difficultyWeights.genZRelevance
+      + longevityScore * difficultyWeights.longevity
+    ) / recognitionWeight);
     const estimatedIntroRecognition = introAudioScore(song, features.get(song.id));
     const introRecognition = Number.isFinite(song.introRecognition)
       ? song.introRecognition
       : estimatedIntroRecognition;
-    const easeScore = round(recognitionScore * 0.5 + introRecognition * 0.5);
+    const easeScore = round(
+      introRecognition * difficultyWeights.introRecognition
+      + streamReachScore * difficultyWeights.streamReach
+      + genZRelevanceScore * difficultyWeights.genZRelevance
+      + longevityScore * difficultyWeights.longevity,
+    );
     return {
       streamReachScore,
       genZRelevanceScore,
+      longevityScore,
       recognitionScore,
       introRecognition,
       estimatedIntroRecognition,
-      introScoreMethod: Number.isFinite(song.introRecognition) ? "reviewed" : "waveform_estimate",
+      introScoreMethod: Number.isFinite(song.introRecognition) ? "reviewed" : "waveform_audibility_proxy",
       easeScore,
       difficulty: Number.isFinite(song.introRecognition)
         && song.proposedDifficulty

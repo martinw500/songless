@@ -43,6 +43,7 @@ export type Song = {
   recognitionScore?: number;
   streamReachScore?: number;
   genZRelevanceScore?: number;
+  longevityScore?: number;
   introRecognition?: number;
   startAtMs?: number;
   clueGainDb?: number;

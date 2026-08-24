@@ -71,7 +71,7 @@ for (const candidate of playableCandidates) {
     errors.push(`${candidate.id}: clueGainDb must be between 0 and 12.`);
   }
   const expected = scoreSong(candidate);
-  for (const key of ["streamReachScore", "genZRelevanceScore", "recognitionScore", "introRecognition"]) {
+  for (const key of ["streamReachScore", "genZRelevanceScore", "longevityScore", "recognitionScore", "introRecognition"]) {
     if (song[key] !== expected[key]) errors.push(`${candidate.id}: ${key} is stale; expected ${expected[key]}, found ${song[key]}.`);
   }
   if (song._easeScore !== expected.easeScore || song.difficulty !== expected.difficulty) {

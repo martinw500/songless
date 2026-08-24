@@ -69,17 +69,20 @@ Familiarity estimates recognition by the target audience, not lifetime streams:
 | Broader visibility | 20% | Did it cross charts, streaming, radio, film, or social media? |
 | Longevity | 15% | Has recognition survived beyond its original release cycle? |
 
-The audit recalculates the rounded weighted value and rejects mismatched legacy `familiarity` fields. Runtime provisional difficulty uses a more explicit recognition score. A researched public stream milestone takes precedence over the pilot's hand-scored broader-visibility field; broader visibility and intake signals are fallbacks for tracks without a recorded stream total:
+The audit recalculates the rounded weighted value and rejects mismatched legacy `familiarity` fields. Runtime difficulty uses the explicit components below. A researched public stream milestone takes precedence over the pilot's hand-scored broader-visibility field; broader visibility and intake signals are fallbacks for tracks without a recorded stream total:
 
 ```text
-recognition score = 0.50 × stream reach + 0.50 × Gen-Z/current relevance
+ease score = 0.45 × intro recognition
+           + 0.35 × stream/broad reach
+           + 0.15 × Gen-Z/current relevance
+           + 0.05 × longevity
 ```
 
-`stream reach` uses the stored billion-stream snapshot where available, on a logarithmic scale so five billion streams is meaningful without making every one-billion song equivalent. Under-one-billion founder picks receive conservative reach bands rather than invented exact counts. `Gen-Z/current relevance` uses the reviewed audience/circulation components or the longlist's Gen-Z, current-hit, social-revival, childhood-hit, and cohort signals. This lets a strong cohort pick compete with an older high-stream song without pretending their raw play counts are equal.
+`stream/broad reach` uses the stored billion-stream snapshot where available, on a logarithmic scale so five billion streams is meaningful without making every one-billion song equivalent. Under-one-billion founder picks receive conservative reach bands rather than invented exact counts. `Gen-Z/current relevance` uses the reviewed audience/circulation components or the longlist's Gen-Z, current-hit, social-revival, childhood-hit, and cohort signals. Its total contribution is capped at 15%, so social circulation cannot make a niche song Easy by itself. Longevity contributes the remaining 5%; candidates without researched longevity receive a neutral 50 until that metadata is added.
 
 ## Intro recognition and difficulty
 
-Only score the prepared clip:
+Only score the prepared clip, while the title and artist are hidden. The question is when a listener can identify the exact song from the audio—not when sound merely becomes audible:
 
 - 90–100: a signature sound identifies it immediately
 - 70–89: recognizable within roughly two seconds
@@ -87,22 +90,18 @@ Only score the prepared clip:
 - 30–49: generic, quiet, or delayed intro
 - 0–29: silence, ambience, or an extremely confusable opening
 
-```text
-ease score = 0.50 × recognition score + 0.50 × introRecognition
-```
-
 | Ease score | Suggested mode |
 |---:|---|
-| 85–100 | Easy |
-| 82.5–84.9 | Medium |
-| 80–82.4 | Hard |
-| 75–79.9 | Expert |
-| 0–74.9 | Impossible |
+| 82.6–100 | Easy |
+| 79.2–82.5 | Medium |
+| 75.9–79.1 | Hard |
+| 72–75.8 | Expert |
+| 0–71.9 | Impossible |
 
-Recognition and intro recognition contribute equally. These fixed bands are calibrated relative to the curated, intentionally recognizable library; they are not random or reassigned by rank. `audit:provisional` requires at least 50 playable songs in every mode so a threshold change cannot silently create an unusably small pool. The audit permits a manual difficulty override only when `difficultyOverrideReason` explains it.
+Intro identification is the largest single component at 45%. These fixed bands were calibrated once around the current library's score quintiles so each mode remains similarly playable; songs are never randomly assigned, and adding another song does not move an existing song by rank. `audit:provisional` requires at least 50 playable songs in every mode so a threshold change cannot silently create an unusably small pool. The audit permits a manual difficulty override only when `difficultyOverrideReason` explains it.
 
 > [!NOTE]
-> **Provisional intro scoring:** Until play-tested intro reviews exist, `scripts/generate-provisional-catalog.mjs` estimates intro recognition from the exact hosted waveform: audible-onset delay, first-two-second level, and the size of the 8–15-second energy ramp. These estimates use the fixed thresholds above, never random ordering or equal-sized quantile buckets. A reviewed `introRecognition` replaces the estimate.
+> **Provisional intro scoring:** Waveform analysis can measure silence, level, onset, and an energy ramp, but it cannot determine whether a melody, beat, or voice is culturally unique. Until blind play-tested reviews exist, `scripts/generate-provisional-catalog.mjs` uses that measurement only as a `waveform_audibility_proxy`. It is provisional rather than evidence that the intro is identifiable. A blind time-to-identification `introRecognition` score replaces it.
 
 ## Audio onset calibration
 

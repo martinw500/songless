@@ -1,10 +1,12 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { difficultyFor } from "./provisional-scoring.mjs";
+import { createScorer, difficultyFor } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
+const longlistFile = path.join(root, "data", "song-longlist.json");
+const introFeaturesFile = path.join(root, "data", "intro-audio-features.json");
 const audioDirectory = path.join(root, "public", "media", "audio");
 const difficulties = new Set(["easy", "medium", "hard", "expert", "impossible"]);
 
@@ -40,7 +42,12 @@ if (!hasLocalAudio && !hasHostedAudio) {
   throw new Error(`Playable media is missing for ${song.id}. Prepare a local file or upload it to R2.`);
 }
 
-const easeScore = Math.round(((song.familiarity + introRecognition) / 2) * 10) / 10;
+const scoreSong = createScorer(
+  JSON.parse(readFileSync(longlistFile, "utf8")),
+  JSON.parse(readFileSync(introFeaturesFile, "utf8")),
+);
+const scored = scoreSong({ ...song, introRecognition });
+const easeScore = scored.easeScore;
 const calculatedDifficulty = difficultyFor(easeScore);
 const proposedDifficulty = options.difficulty ?? calculatedDifficulty;
 if (!difficulties.has(proposedDifficulty)) throw new Error(`Unknown difficulty: ${proposedDifficulty}`);
@@ -61,4 +68,4 @@ if (options.album) song.album = options.album;
 if (options["spotify-url"]) song.spotifyUrl = options["spotify-url"];
 
 writeFileSync(candidateFile, `${JSON.stringify(candidateRoot, null, 2)}\n`, "utf8");
-console.log(`${song.title} — ${song.artist}: familiarity ${song.familiarity}, intro ${introRecognition}, ease ${easeScore}, ${proposedDifficulty}.`);
+console.log(`${song.title} — ${song.artist}: intro ${introRecognition}, reach ${scored.streamReachScore}, Gen-Z/current ${scored.genZRelevanceScore}, longevity ${scored.longevityScore}, ease ${easeScore}, ${proposedDifficulty}.`);

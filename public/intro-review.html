@@ -469,7 +469,7 @@ button:focus-visible { outline: 2px solid rgba(var(--accent-rgb), 0.72); outline
 <div class="review-shell" id="app">
   <div class="review-header">
     <h1>Intro Review</h1>
-    <div class="subtitle">Listen to each clue and select the earliest moment you recognize the song</div>
+    <div class="subtitle">Without seeing the title, select the earliest moment you can identify the exact song from its audio alone</div>
   </div>
 
   <div class="progress-bar-container">
@@ -702,7 +702,7 @@ button:focus-visible { outline: 2px solid rgba(var(--accent-rgb), 0.72); outline
       html += '</div>';
     } else {
       // Recognition buttons
-      html += '<div class="recognition-label">When did you first recognize this song?</div>';
+      html += '<div class="recognition-label">When could you identify the exact song—not merely hear that audio had started?</div>';
       html += '<div class="recognition-grid">';
       RECOGNITION_OPTIONS.forEach((opt, i) => {
         html += '<button class="recog-btn' + (selectedRecogOption === i ? ' selected' : '') +

@@ -9,7 +9,13 @@
       "broaderVisibility": 0.2,
       "longevity": 0.15
     },
-    "easeFormula": "0.5 * familiarity + 0.5 * introRecognition"
+    "difficultyWeights": {
+      "introRecognition": 0.45,
+      "streamReach": 0.35,
+      "genZRelevance": 0.15,
+      "longevity": 0.05
+    },
+    "easeFormula": "0.45 * introRecognition + 0.35 * streamReach + 0.15 * genZRelevance + 0.05 * longevity"
   },
   "researchSources": [
     {
@@ -3953,10 +3959,11 @@
       },
       "album": "Romantic Homicide",
       "spotifyUrl": "https://open.spotify.com/track/1xK59OXxi2TAAAbmZK0kBL",
-      "startAtMs": 700,
+      "startAtMs": 750,
       "hookStartMs": 87200,
       "spotifyDurationMs": 133000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "clueGainDb": 6
     },
     {
       "id": "kanye-west-heartless",

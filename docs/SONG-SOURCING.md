@@ -43,7 +43,7 @@ The queue is deliberately language-agnostic and caps each credited artist at thr
 - `approved`: the exact clip has an intro score, ease score, difficulty, and playable audio.
 - `rejected`: the candidate failed metadata, media, recognizability, or game-quality review.
 
-Do not score `introRecognition` from a different master. For immediate library testing, the provisional catalogue derives a deterministic estimate from the exact hosted waveform and labels it `waveform_estimate`; a play-tested score overrides it for final approval.
+Do not score `introRecognition` from a different master. For immediate library testing, the provisional catalogue derives a deterministic audibility proxy from the exact hosted waveform and labels it `waveform_audibility_proxy`; it does not claim to measure uniqueness. A blind play-tested time-to-identification score overrides it for final approval.
 
 ## R2 review and promotion workflow
 
@@ -111,4 +111,4 @@ For a purely local build, name a permitted source after the candidate ID and run
 
 ## Curation principle
 
-Familiarity and intro recognition remain separate. A Daniel Caesar track can outrank an older global hit for this audience, and a famous track with a quiet or generic opening can still land in Hard. See [CATALOG.md](CATALOG.md) for the schema and scoring rules.
+Difficulty weights intro identification at 45%, stream/broad reach at 35%, Gen-Z/current relevance at 15%, and longevity at 5%. A Daniel Caesar track can outrank an older global hit for this audience, while a famous track with a quiet or generic opening can still land in Hard. See [CATALOG.md](CATALOG.md) for the schema and scoring rules.

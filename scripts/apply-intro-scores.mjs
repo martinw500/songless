@@ -1,10 +1,12 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { difficultyFor } from "./provisional-scoring.mjs";
+import { createScorer, difficultyFor } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
+const longlistFile = path.join(root, "data", "song-longlist.json");
+const introFeaturesFile = path.join(root, "data", "intro-audio-features.json");
 
 function parseArguments(argv) {
   const options = {};
@@ -38,6 +40,10 @@ if (!Array.isArray(scores) || scores.length === 0) {
 
 const candidateRoot = JSON.parse(readFileSync(candidateFile, "utf8"));
 const songMap = new Map(candidateRoot.songs.map(s => [s.id, s]));
+const scoreSong = createScorer(
+  JSON.parse(readFileSync(longlistFile, "utf8")),
+  JSON.parse(readFileSync(introFeaturesFile, "utf8")),
+);
 
 // Validate and preview
 const updates = [];
@@ -56,13 +62,17 @@ for (const entry of scores) {
     notFound.push(entry.id);
     continue;
   }
-  const easeScore = Math.round(((song.familiarity + entry.introRecognition) / 2) * 10) / 10;
+  const scored = scoreSong({ ...song, introRecognition: entry.introRecognition });
+  const easeScore = scored.easeScore;
   const difficulty = difficultyFor(easeScore);
   updates.push({
     id: entry.id,
     title: song.title,
     artist: song.artist,
     familiarity: song.familiarity,
+    streamReachScore: scored.streamReachScore,
+    genZRelevanceScore: scored.genZRelevanceScore,
+    longevityScore: scored.longevityScore,
     introRecognition: entry.introRecognition,
     easeScore,
     difficulty,
@@ -85,7 +95,7 @@ for (const u of sorted) {
   const recog = u.recognizedAt !== null && u.recognizedAt !== undefined
     ? (u.recognizedAt === 999 ? "after 15s" : u.recognizedAt + "s")
     : "n/a";
-  console.log(`  ${u.difficulty.padEnd(11)} ${String(u.easeScore).padStart(5)}  fam=${u.familiarity} intro=${u.introRecognition} (${recog})  ${u.title} — ${u.artist}`);
+  console.log(`  ${u.difficulty.padEnd(11)} ${String(u.easeScore).padStart(5)}  intro=${u.introRecognition} reach=${u.streamReachScore} genZ=${u.genZRelevanceScore} long=${u.longevityScore} (${recog})  ${u.title} — ${u.artist}`);
 }
 
 // Difficulty distribution

@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { difficultyFor } from "./provisional-scoring.mjs";
+import { createScorer, difficultyFor, difficultyWeights, easeFormula } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const difficulties = ["easy", "medium", "hard", "expert", "impossible"];
@@ -20,8 +20,6 @@ const scoreWeights = {
   broaderVisibility: 0.2,
   longevity: 0.15,
 };
-const easeWeights = { familiarity: 0.5, introRecognition: 0.5 };
-const easeFormula = "0.5 * familiarity + 0.5 * introRecognition";
 
 function argumentsFor(argv) {
   const result = { command: "audit" };
@@ -55,10 +53,6 @@ function familiarityFor(scores) {
   return Math.round(scoreKeys.reduce((total, key) => total + scores[key] * scoreWeights[key], 0));
 }
 
-function easeFor(familiarity, introRecognition) {
-  return Math.round((easeWeights.familiarity * familiarity + easeWeights.introRecognition * introRecognition) * 10) / 10;
-}
-
 function eraFor(year) {
   if (year >= 2020) return "2020s";
   if (year >= 2010) return "2010s";
@@ -66,7 +60,7 @@ function eraFor(year) {
   return "pre-2000";
 }
 
-function validateCandidateRoot(candidateRoot, audioDirectory, artworkDirectory) {
+function validateCandidateRoot(candidateRoot, audioDirectory, artworkDirectory, scoreSong) {
   const errors = [];
   const warnings = [];
   const songs = Array.isArray(candidateRoot?.songs) ? candidateRoot.songs : [];
@@ -74,6 +68,11 @@ function validateCandidateRoot(candidateRoot, audioDirectory, artworkDirectory) 
   if (songs.length !== 120) errors.push(`Candidate queue must contain 120 songs; found ${songs.length}.`);
   for (const key of scoreKeys) {
     if (candidateRoot?.scoring?.weights?.[key] !== scoreWeights[key]) errors.push(`Root scoring weight for ${key} is incorrect.`);
+  }
+  for (const [key, weight] of Object.entries(difficultyWeights)) {
+    if (candidateRoot?.scoring?.difficultyWeights?.[key] !== weight) {
+      errors.push(`Root difficulty weight for ${key} must be ${weight}.`);
+    }
   }
   if (candidateRoot?.scoring?.easeFormula !== easeFormula) errors.push(`Root ease formula must be: ${easeFormula}.`);
   if (!Array.isArray(candidateRoot?.researchSources) || candidateRoot.researchSources.length === 0) {
@@ -158,7 +157,7 @@ function validateCandidateRoot(candidateRoot, audioDirectory, artworkDirectory) 
       errors.push(`${label}: introRecognition must be null or a number from 0 to 100.`);
     }
     if (hasIntro) {
-      const expectedEase = easeFor(song.familiarity, song.introRecognition);
+      const expectedEase = scoreSong(song).easeScore;
       if (song.easeScore !== expectedEase) errors.push(`${label}: easeScore must be ${expectedEase}; found ${song.easeScore}.`);
       const suggested = difficultyFor(expectedEase);
       if (!difficulties.includes(song.proposedDifficulty)) errors.push(`${label}: a scored intro needs a proposedDifficulty.`);
@@ -420,7 +419,15 @@ const audioDirectory = absolute(options.audioDirectory, "public/media/audio");
 const artworkDirectory = absolute(options.artworkDirectory, "public/media/artwork");
 const catalogFile = absolute(options.catalogFile, "public/catalog.json");
 const longlistFile = absolute(options.longlistFile, "data/song-longlist.json");
-const report = validateCandidateRoot(readJson(candidateFile), audioDirectory, artworkDirectory);
+const candidateRoot = readJson(candidateFile);
+const longlistRoot = readJson(longlistFile);
+const introFeatures = readJson(absolute(undefined, "data/intro-audio-features.json"));
+const report = validateCandidateRoot(
+  candidateRoot,
+  audioDirectory,
+  artworkDirectory,
+  createScorer(longlistRoot, introFeatures),
+);
 validateLiveCatalog(report, catalogFile, audioDirectory);
 validateLonglist(report, longlistFile);
 printAudit(report);
