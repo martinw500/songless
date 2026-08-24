@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { difficultyFor } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const difficulties = ["easy", "medium", "hard", "expert", "impossible"];
@@ -56,14 +57,6 @@ function familiarityFor(scores) {
 
 function easeFor(familiarity, introRecognition) {
   return Math.round((easeWeights.familiarity * familiarity + easeWeights.introRecognition * introRecognition) * 10) / 10;
-}
-
-function suggestedDifficulty(easeScore) {
-  if (easeScore >= 85) return "easy";
-  if (easeScore >= 70) return "medium";
-  if (easeScore >= 50) return "hard";
-  if (easeScore >= 30) return "expert";
-  return "impossible";
 }
 
 function eraFor(year) {
@@ -131,6 +124,10 @@ function validateCandidateRoot(candidateRoot, audioDirectory, artworkDirectory) 
     if (song?.startAtMs !== undefined && (!Number.isInteger(song.startAtMs) || song.startAtMs < 0)) {
       errors.push(`${label}: startAtMs must be a non-negative integer when supplied.`);
     }
+    if (song?.clueGainDb !== undefined
+      && (!Number.isFinite(song.clueGainDb) || song.clueGainDb < 0 || song.clueGainDb > 12)) {
+      errors.push(`${label}: clueGainDb must be a number from 0 to 12 when supplied.`);
+    }
     if (!reviewStatuses.has(song?.reviewStatus)) errors.push(`${label}: unknown reviewStatus ${song?.reviewStatus}.`);
     if (!Number.isInteger(song?.releaseYear) || song.releaseYear < 1900 || song.releaseYear > 2026) {
       errors.push(`${label}: releaseYear must be between 1900 and 2026.`);
@@ -163,7 +160,7 @@ function validateCandidateRoot(candidateRoot, audioDirectory, artworkDirectory) 
     if (hasIntro) {
       const expectedEase = easeFor(song.familiarity, song.introRecognition);
       if (song.easeScore !== expectedEase) errors.push(`${label}: easeScore must be ${expectedEase}; found ${song.easeScore}.`);
-      const suggested = suggestedDifficulty(expectedEase);
+      const suggested = difficultyFor(expectedEase);
       if (!difficulties.includes(song.proposedDifficulty)) errors.push(`${label}: a scored intro needs a proposedDifficulty.`);
       if (song.proposedDifficulty !== suggested && !song.difficultyOverrideReason) {
         errors.push(`${label}: difficulty override from ${suggested} needs difficultyOverrideReason.`);
@@ -260,6 +257,10 @@ function validateLiveCatalog(report, catalogFile, audioDirectory) {
     if (!Number.isInteger(song.startAtMs) || song.startAtMs < 0) {
       report.errors.push(`${label}: live startAtMs must be a non-negative integer.`);
     }
+    if (song.clueGainDb !== undefined
+      && (!Number.isFinite(song.clueGainDb) || song.clueGainDb < 0 || song.clueGainDb > 12)) {
+      report.errors.push(`${label}: live clueGainDb must be a number from 0 to 12.`);
+    }
     realCount += 1;
     const candidate = candidates.get(song.id);
     if (!candidate || candidate.reviewStatus !== "approved") {
@@ -269,6 +270,7 @@ function validateLiveCatalog(report, catalogFile, audioDirectory) {
     if (song.difficulty !== candidate.proposedDifficulty) report.errors.push(`${label}: live difficulty disagrees with its approved candidate.`);
     const expectedStartAtMs = candidate.startAtMs ?? candidate.media?.onsetPadMs ?? 30;
     if (song.startAtMs !== expectedStartAtMs) report.errors.push(`${label}: live startAtMs disagrees with its approved candidate.`);
+    if ((song.clueGainDb ?? 0) !== (candidate.clueGainDb ?? 0)) report.errors.push(`${label}: live clueGainDb disagrees with its candidate.`);
     if (song.audio.kind === "file" && !existsSync(path.join(audioDirectory, candidate.media.audioFile))) report.errors.push(`${label}: live audio file is missing.`);
   }
   if (realCount > 0) {
@@ -402,6 +404,7 @@ function promote(report, catalogFile, audioDirectory, artworkDirectory) {
       familiarity: song.familiarity,
       introRecognition: song.introRecognition,
       startAtMs: song.startAtMs ?? song.media?.onsetPadMs ?? 30,
+      ...(song.clueGainDb != null ? { clueGainDb: song.clueGainDb } : {}),
       ...(artwork ? { artwork } : {}),
       audio,
     };

@@ -16,7 +16,7 @@ function containsPhrase(haystack, needle) {
   return ` ${haystack} `.includes(` ${needle} `);
 }
 
-const alteredVersion = /\b(live|concert|performance|sessions?|acoustic|a ?cappella|acapella|remix|sped up|slowed|reverb|nightcore|cover|karaoke|instrumental|censored|clean version|radio edit|extended|edit|loop|reaction|bass boosted|8d|mashup|parody|tutorial|snippet|teaser|demo|unreleased|fan ?made|shorts?|compilation|playlist|interview|meaning|explained|breakdown|verified|ai (?:cover|version)|vocals? only|music only)\b/iu;
+const alteredVersion = /\b(live|concert|performance|sessions?|acoustic|stripped|orchestral|lullaby|animatic|footnotes|a ?cappella|acapella|remix|dub|medley|sped up|slowed|reverb|nightcore|cover|karaoke|instrumental|censored|clean version|radio edit|extended|edit|editions?|re[- ]?recorded|rerecorded|remake|w(?:\/|\s)?o|without|loop|reaction|bass boosted|8d|mashup|parody|tutorial|snippet|teaser|demo|unreleased|fan ?made|shorts?|compilation|playlist|interview|meaning|explained|breakdown|making of|footnotes|behind the scenes?|documentary|visuals?|visuali[sz]er|verified|ai (?:cover|version)|vocals? only|music only)\b/iu;
 function hasUnexpectedFeature(versionText) {
   const featureText = versionText.match(/\b(?:feat|ft|featuring|with)\b([\s\S]*)/iu)?.[1];
   if (!featureText) return false;

@@ -16,6 +16,8 @@ param(
 
     [long]$MaxPreparedBytes = 8500000000,
 
+    [string[]]$Ids,
+
     [switch]$Force
 )
 
@@ -64,6 +66,20 @@ $candidatesById = @{}
 foreach ($candidate in $candidateRoot.songs) { $candidatesById[$candidate.id] = $candidate }
 $sourceFiles = @(Get-ChildItem -LiteralPath $inputRoot -Recurse -File |
     Where-Object { $supportedExtensions -contains $_.Extension.ToLowerInvariant() })
+$selectedIds = @{}
+foreach ($id in $Ids) {
+    foreach ($part in $id.Split(',')) {
+        if (-not [string]::IsNullOrWhiteSpace($part)) { $selectedIds[$part.Trim()] = $true }
+    }
+}
+if ($selectedIds.Count -gt 0) {
+    $sourceFiles = @($sourceFiles | Where-Object { $selectedIds.ContainsKey($_.BaseName) })
+    if ($sourceFiles.Count -ne $selectedIds.Count) {
+        $found = @($sourceFiles | ForEach-Object { $_.BaseName })
+        $missing = @($selectedIds.Keys | Where-Object { $_ -notin $found })
+        throw "Selected source ids are missing or duplicated: $($missing -join ', ')"
+    }
+}
 if ($sourceFiles.Count -eq 0) {
     Write-Host "No supported source files found in $inputRoot"
     exit 0

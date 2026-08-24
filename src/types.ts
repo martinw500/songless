@@ -40,8 +40,12 @@ export type Song = {
   genres?: string[];
   difficulty: Difficulty;
   familiarity?: number;
+  recognitionScore?: number;
+  streamReachScore?: number;
+  genZRelevanceScore?: number;
   introRecognition?: number;
   startAtMs?: number;
+  clueGainDb?: number;
   hookStartMs?: number;
   artwork?: string;
   audio: AudioSource;

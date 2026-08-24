@@ -3,6 +3,7 @@ import type { Song } from "../types";
 const MIN_FADE_SECONDS = 0.004;
 const MAX_CACHED_BUFFERS = 3;
 const SYNTH_REVEAL_SECONDS = 30;
+const BUFFER_RETRY_DELAYS_MS = [0, 350, 900] as const;
 
 export class AudioEngine {
   private context: AudioContext | null = null;
@@ -55,7 +56,7 @@ export class AudioEngine {
       if (actualDuration <= 0) {
         throw new Error("The configured playback range is past the end of the audio file.");
       }
-      const gain = this.createGain(context, now, actualDuration, volume);
+      const gain = this.createGain(context, now, actualDuration, volume, song.clueGainDb ?? 0);
       const source = context.createBufferSource();
       source.buffer = buffer;
       source.connect(gain);
@@ -167,15 +168,28 @@ export class AudioEngine {
     now: number,
     durationSeconds: number,
     volume: number,
+    boostDb = 0,
   ): GainNode {
     const gain = context.createGain();
+    const adjustedVolume = volume * 10 ** (Math.max(0, boostDb) / 20);
     const end = now + durationSeconds;
     const fade = Math.min(MIN_FADE_SECONDS, durationSeconds / 3);
     gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(volume, now + fade);
-    gain.gain.setValueAtTime(volume, Math.max(now + fade, end - fade));
+    gain.gain.linearRampToValueAtTime(adjustedVolume, now + fade);
+    gain.gain.setValueAtTime(adjustedVolume, Math.max(now + fade, end - fade));
     gain.gain.linearRampToValueAtTime(0, end);
-    gain.connect(context.destination);
+    if (boostDb > 0) {
+      const limiter = context.createDynamicsCompressor();
+      limiter.threshold.value = -4;
+      limiter.knee.value = 2;
+      limiter.ratio.value = 16;
+      limiter.attack.value = 0.002;
+      limiter.release.value = 0.18;
+      gain.connect(limiter);
+      limiter.connect(context.destination);
+    } else {
+      gain.connect(context.destination);
+    }
     return gain;
   }
 
@@ -195,11 +209,30 @@ export class AudioEngine {
       return cached;
     }
 
-    const response = await fetch(src);
-    if (!response.ok) {
-      throw new Error(`Could not load ${src} (${response.status}).`);
+    let buffer: AudioBuffer | null = null;
+    let lastError: unknown = null;
+    for (let attempt = 0; attempt < BUFFER_RETRY_DELAYS_MS.length; attempt += 1) {
+      const delayMs = BUFFER_RETRY_DELAYS_MS[attempt];
+      if (delayMs > 0) await new Promise((resolve) => window.setTimeout(resolve, delayMs));
+      try {
+        const response = await fetch(src);
+        if (!response.ok) {
+          const retryable = response.status === 408 || response.status === 425 || response.status === 429
+            || response.status >= 500;
+          const error = new Error(`Could not load ${src} (${response.status}).`);
+          if (!retryable) throw error;
+          lastError = error;
+          continue;
+        }
+        buffer = await context.decodeAudioData(await response.arrayBuffer());
+        break;
+      } catch (error) {
+        lastError = error;
+      }
     }
-    const buffer = await context.decodeAudioData(await response.arrayBuffer());
+    if (!buffer) {
+      throw lastError instanceof Error ? lastError : new Error(`Could not decode ${src}.`);
+    }
     this.buffers.set(src, buffer);
     while (this.buffers.size > MAX_CACHED_BUFFERS) {
       const oldest = this.buffers.keys().next().value;

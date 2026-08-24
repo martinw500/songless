@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katy-perry-i-kissed-a-girl",
+    "title": "I Kissed A Girl",
+    "artist": "Katy Perry",
+    "ytDur": "240.0",
+    "itunesDur": "179.6",
+    "diffSeconds": 60.4
+  },
+  {
+    "id": "bruno-mars-versace-on-the-floor",
+    "title": "Versace On The Floor",
+    "artist": "Bruno Mars",
+    "ytDur": "202.0",
+    "itunesDur": "261.2",
+    "diffSeconds": -59.2
+  },
+  {
+    "id": "tame-impala-the-less-i-know-the-better",
+    "title": "The Less I Know the Better",
+    "artist": "Tame Impala",
+    "ytDur": "218.0",
+    "itunesDur": "176.1",
+    "diffSeconds": 41.9
+  },
+  {
+    "id": "psy-gangnam-style",
+    "title": "Gangnam Style",
+    "artist": "PSY",
+    "ytDur": "253.0",
+    "itunesDur": "219.5",
+    "diffSeconds": 33.5
+  },
+  {
+    "id": "master-kg-nomcebo-zikode-jerusalema",
+    "title": "Jerusalema",
+    "artist": "Master KG feat. Nomcebo Zikode",
+    "ytDur": "344.0",
+    "itunesDur": "328.0",
+    "diffSeconds": 16
+  },
+  {
+    "id": "tame-impala-let-it-happen",
+    "title": "Let It Happen",
+    "artist": "Tame Impala",
+    "ytDur": "475.0",
+    "itunesDur": "466.9",
+    "diffSeconds": 8.1
+  },
+  {
+    "id": "nicki-minaj-super-bass",
+    "title": "Super Bass",
+    "artist": "Nicki Minaj",
+    "ytDur": "208.0",
+    "itunesDur": "201.3",
+    "diffSeconds": 6.7
+  },
+  {
+    "id": "rose-bruno-mars-apt",
+    "title": "APT.",
+    "artist": "ROSÉ & Bruno Mars",
+    "ytDur": "176.0",
+    "itunesDur": "169.9",
+    "diffSeconds": 6.1
+  }
+]

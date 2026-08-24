@@ -123,6 +123,7 @@ function App() {
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
   const [audioError, setAudioError] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaybackPending, setIsPlaybackPending] = useState(false);
   const [isRevealPlaying, setIsRevealPlaying] = useState(false);
   const [playbackElapsed, setPlaybackElapsed] = useState(0);
   const [heardThrough, setHeardThrough] = useState(0);
@@ -228,6 +229,7 @@ function App() {
   function stopPlayback(displayElapsed = 0) {
     playbackRun.current += 1;
     playbackPending.current = false;
+    setIsPlaybackPending(false);
     if (playbackFrame.current !== null) {
       cancelAnimationFrame(playbackFrame.current);
       playbackFrame.current = null;
@@ -243,11 +245,14 @@ function App() {
   }
 
   async function startRevealPlayback(startSeconds: number) {
-    if (!playableSong) return;
+    if (!currentSong) return;
     const run = playbackRun.current;
     setAudioError("");
     try {
-      const actualDuration = await audioEngine.current.playRemainder(playableSong, startSeconds, volume);
+      // A reveal always restarts at the normal game intro. `playableSong` may
+      // temporarily point at hookStartMs while hook mode is enabled, but that
+      // clue-only offset must never leak into the win/loss playback.
+      const actualDuration = await audioEngine.current.playRemainder(currentSong, startSeconds, volume);
       if (run !== playbackRun.current || actualDuration <= 0) return;
       setIsRevealPlaying(true);
       revealTimer.current = window.setTimeout(() => {
@@ -301,6 +306,7 @@ function App() {
     stopPlayback(rangeStart);
     const run = playbackRun.current;
     playbackPending.current = true;
+    setIsPlaybackPending(true);
     setAudioError("");
     try {
       const actualDuration = await audioEngine.current.play(
@@ -311,6 +317,7 @@ function App() {
       );
       if (run !== playbackRun.current || actualDuration <= 0) return;
       playbackPending.current = false;
+      setIsPlaybackPending(false);
       setIsPlaying(true);
       const startedAt = performance.now();
       const durationMs = Math.max(1, actualDuration * 1000);
@@ -330,6 +337,7 @@ function App() {
     } catch (error) {
       if (run !== playbackRun.current) return;
       playbackPending.current = false;
+      setIsPlaybackPending(false);
       setIsPlaying(false);
       setPlaybackElapsed(retainedThrough);
       setAudioError(error instanceof Error ? error.message : "The clip could not be played.");
@@ -635,12 +643,15 @@ function App() {
 
                 <div className="player-area">
                   <button
-                    className={isPlaying ? "play-button playing" : "play-button"}
+                    className={`play-button${isPlaying ? " playing" : ""}${isPlaybackPending ? " loading" : ""}`}
                     onClick={playClip}
                     type="button"
-                    aria-label={isPlaying ? "Pause clip playback" : `Play ${currentStage} second clip`}
+                    aria-busy={isPlaybackPending}
+                    aria-label={isPlaybackPending
+                      ? "Cancel loading clip"
+                      : isPlaying ? "Pause clip playback" : `Play ${currentStage} second clip`}
                   >
-                    {isPlaying ? <PauseIcon /> : <PlayIcon />}
+                    {isPlaybackPending ? <LoadingIcon /> : isPlaying ? <PauseIcon /> : <PlayIcon />}
                     <span className="pulse-ring" />
                   </button>
                   <div className="stage-time">
@@ -883,6 +894,15 @@ function PlayIcon() {
   return (
     <svg className="play-glyph play-icon" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.3 6.55c0-1.72 1.88-2.78 3.35-1.9l7.35 4.4c1.43.86 1.43 2.94 0 3.8l-7.35 4.4c-1.47.88-3.35-.18-3.35-1.9v-8.8Z" />
+    </svg>
+  );
+}
+
+function LoadingIcon() {
+  return (
+    <svg className="play-glyph loading-icon" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" strokeWidth="5" opacity="0.28" />
+      <path d="M24 7a17 17 0 0 1 17 17" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
     </svg>
   );
 }

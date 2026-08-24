@@ -68,13 +68,16 @@ export function validateCatalog(value: unknown): Song[] {
           : false;
     const validStart = song.startAtMs === undefined
       || (Number.isInteger(song.startAtMs) && song.startAtMs >= 0);
+    const validClueGain = song.clueGainDb === undefined
+      || (Number.isFinite(song.clueGainDb) && song.clueGainDb >= 0 && song.clueGainDb <= 12);
     return Boolean(
       song.id &&
         song.title &&
         song.artist &&
         song.difficulty &&
         validAudio &&
-        validStart,
+        validStart &&
+        validClueGain,
     );
   });
 }

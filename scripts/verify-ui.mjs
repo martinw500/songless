@@ -8,6 +8,8 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const saveArtifacts = process.argv.includes("--artifacts");
 const verifyHostedPlayback = process.argv.includes("--hosted-smoke");
+const requestedHostedSongId = process.argv.find((value) => value.startsWith("--hosted-id="))?.split("=")[1];
+const hostedSongId = requestedHostedSongId ?? "beach-house-space-song";
 const children = [];
 let browserClient;
 
@@ -192,10 +194,15 @@ async function stageState(client) {
 async function run() {
   const appPort = await freePort();
   const profile = mkdtempSync(path.join(os.tmpdir(), "songless-ui-audit-"));
+  const catalogFile = path.join(root, "public", "catalog.json");
+  const demoCatalogFile = path.join(root, "public", "catalog-demo-backup.json");
+  const originalCatalog = readFileSync(catalogFile);
   const reviewCatalogFile = path.join(root, "public", "review-catalog.json");
   const originalReviewCatalog = existsSync(reviewCatalogFile) ? readFileSync(reviewCatalogFile) : null;
   const viteBin = path.join(root, "node_modules", "vite", "bin", "vite.js");
   assert(existsSync(viteBin), "Run npm install before npm run verify:ui.");
+  assert(existsSync(demoCatalogFile), "The deterministic UI demo catalogue is missing.");
+  writeFileSync(catalogFile, readFileSync(demoCatalogFile));
 
   try {
     const vite = spawn(process.execPath, [viteBin, "--host", "127.0.0.1", "--port", String(appPort)], {
@@ -336,9 +343,9 @@ async function run() {
         percent: getComputedStyle(input).getPropertyValue('--volume-percent').trim(),
       };
     })()`);
-    assert(volumeState.value === 0.4 && volumeState.percent === "40%",
+    assert(volumeState.value === 0.4 && volumeState.percent === "8%",
       `Volume fill state is incorrect (${JSON.stringify(volumeState)}).`);
-    console.log("PASS volume fill boundary follows the thumb (40% filled / 60% unfilled)");
+    console.log("PASS volume fill boundary follows the thumb (40% output on the 0-500% range)");
 
     await clickStage(client, "0.01s");
     await client.evaluate("document.querySelector('.play-button').click()");
@@ -683,21 +690,51 @@ async function run() {
     if (verifyHostedPlayback) {
       assert(originalReviewCatalog, "Run npm run review:r2 before npm run verify:hosted.");
       const hostedSongs = JSON.parse(originalReviewCatalog.toString("utf8"));
-      const hostedSong = hostedSongs.find((song) => song.audio?.kind === "hosted");
+      const hostedSong = hostedSongs.find((song) => song.id === hostedSongId && song.audio?.kind === "hosted")
+        ?? hostedSongs.find((song) => song.clueGainDb > 0 && song.audio?.kind === "hosted")
+        ?? hostedSongs.find((song) => song.audio?.kind === "hosted");
       assert(hostedSong, "The generated review catalogue has no hosted R2 song.");
+      if (requestedHostedSongId) {
+        assert(hostedSong.id === requestedHostedSongId,
+          `Requested hosted smoke song is unavailable: ${requestedHostedSongId}.`);
+      }
       writeFileSync(reviewCatalogFile, `${JSON.stringify([hostedSong], null, 2)}\n`);
       await client.call("Page.navigate", { url: `http://127.0.0.1:${appPort}/?reviewSong=${encodeURIComponent(hostedSong.id)}` });
       await waitForPage(client);
+      await client.evaluate(`(() => {
+        [...document.querySelectorAll('.setting-value')]
+          .find((button) => button.textContent.trim() === 'From the start')?.click();
+        window.__songlessRevealStarts = [];
+        const originalPlay = HTMLMediaElement.prototype.play;
+        HTMLMediaElement.prototype.play = function songlessObservedPlay(...args) {
+          window.__songlessRevealStarts.push({ src: this.currentSrc || this.src, currentTime: this.currentTime });
+          return originalPlay.apply(this, args);
+        };
+      })()`);
       await setStageEnabled(client, "2s", true);
       await setStageEnabled(client, "0.1s", false);
       await setStageEnabled(client, "0.5s", false);
       await client.evaluate("document.querySelector('.play-button').click()");
-      await delay(500);
-      const activePlayback = await client.evaluate(`({
+      await delay(80);
+      const initialHostedState = await client.evaluate(`({
         playing: document.querySelector('.play-button')?.classList.contains('playing') ?? false,
-        elapsed: Number(document.querySelector('.stage-playback-progress')?.dataset.elapsed ?? 0),
+        loading: document.querySelector('.play-button')?.classList.contains('loading') ?? false,
+        busy: document.querySelector('.play-button')?.getAttribute('aria-busy') === 'true',
         error: document.querySelector('.audio-error')?.textContent.trim() ?? '',
       })`);
+      assert((initialHostedState.playing || (initialHostedState.loading && initialHostedState.busy))
+        && !initialHostedState.error,
+      `Hosted playback gave no playing/loading feedback (${JSON.stringify(initialHostedState)}).`);
+      let activePlayback;
+      for (let attempt = 0; attempt < 40; attempt += 1) {
+        activePlayback = await client.evaluate(`({
+          playing: document.querySelector('.play-button')?.classList.contains('playing') ?? false,
+          elapsed: Number(document.querySelector('.stage-playback-progress')?.dataset.elapsed ?? 0),
+          error: document.querySelector('.audio-error')?.textContent.trim() ?? '',
+        })`);
+        if ((activePlayback.playing && activePlayback.elapsed > 0) || activePlayback.error) break;
+        await delay(250);
+      }
       assert(activePlayback.playing && activePlayback.elapsed > 0 && !activePlayback.error,
         `The real hosted clue did not play through Web Audio (${JSON.stringify(activePlayback)}).`);
       await client.evaluate("document.querySelector('.play-button').click()");
@@ -714,10 +751,15 @@ async function run() {
         lost: Boolean(document.querySelector('.result-panel.lost')),
         revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
         error: document.querySelector('.audio-error')?.textContent.trim() ?? '',
+        mediaStarts: window.__songlessRevealStarts ?? [],
       })`);
       assert(hostedReveal.lost && hostedReveal.revealPlaying && !hostedReveal.error,
-        `The real hosted full-song reveal did not continue (${JSON.stringify(hostedReveal)}).`);
-      console.log(`PASS real R2 clue and full-song reveal playback (${hostedSong.id})`);
+        `The real hosted full-song reveal did not restart (${JSON.stringify(hostedReveal)}).`);
+      const revealStart = hostedReveal.mediaStarts.at(-1)?.currentTime;
+      const expectedRevealStart = (hostedSong.startAtMs ?? 0) / 1000;
+      assert(Number.isFinite(revealStart) && Math.abs(revealStart - expectedRevealStart) <= 0.2,
+        `The hosted reveal inherited clue time instead of restarting at game-time zero (${JSON.stringify({ revealStart, expectedRevealStart })}).`);
+      console.log(`PASS real R2 clue and full-song reveal restart (${hostedSong.id})`);
     }
 
     writeFileSync(reviewCatalogFile, `${JSON.stringify([{
@@ -743,16 +785,13 @@ async function run() {
     await waitForPage(client);
     await delay(150);
     const hostedLayout = await client.evaluate(`(() => {
-      const sourceLabel = [...document.querySelectorAll('.settings-panel .setting-value')]
-        .find((element) => element.textContent.trim() === 'R2 hosted');
       return {
-        sourceLabel: sourceLabel?.textContent.trim() ?? '',
         spotifySetting: Boolean(document.querySelector('.spotify-setting')),
         overflow: document.documentElement.scrollWidth - window.innerWidth,
       };
     })()`);
-    assert(hostedLayout.sourceLabel === "R2 hosted" && !hostedLayout.spotifySetting,
-      `Hosted source status or removed Spotify setting is incorrect (${JSON.stringify(hostedLayout)}).`);
+    assert(!hostedLayout.spotifySetting,
+      `The removed Spotify runtime setting reappeared (${JSON.stringify(hostedLayout)}).`);
     assert(hostedLayout.overflow <= 1,
       `Hosted settings broke the narrow layout (${JSON.stringify(hostedLayout)}).`);
 
@@ -806,6 +845,7 @@ async function run() {
 
     console.log("UI audit passed.");
   } finally {
+    writeFileSync(catalogFile, originalCatalog);
     if (originalReviewCatalog === null) rmSync(reviewCatalogFile, { force: true });
     else writeFileSync(reviewCatalogFile, originalReviewCatalog);
     browserClient?.socket.close();

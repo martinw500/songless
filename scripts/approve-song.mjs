@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { difficultyFor } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
@@ -15,14 +16,6 @@ function parseArguments(argv) {
     options[key.slice(2)] = argv[++index];
   }
   return options;
-}
-
-function suggestedDifficulty(score) {
-  if (score >= 85) return "easy";
-  if (score >= 70) return "medium";
-  if (score >= 50) return "hard";
-  if (score >= 30) return "expert";
-  return "impossible";
 }
 
 const options = parseArguments(process.argv.slice(2));
@@ -48,7 +41,7 @@ if (!hasLocalAudio && !hasHostedAudio) {
 }
 
 const easeScore = Math.round(((song.familiarity + introRecognition) / 2) * 10) / 10;
-const calculatedDifficulty = suggestedDifficulty(easeScore);
+const calculatedDifficulty = difficultyFor(easeScore);
 const proposedDifficulty = options.difficulty ?? calculatedDifficulty;
 if (!difficulties.has(proposedDifficulty)) throw new Error(`Unknown difficulty: ${proposedDifficulty}`);
 if (proposedDifficulty !== calculatedDifficulty && !options.reason) {

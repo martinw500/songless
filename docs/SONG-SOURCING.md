@@ -22,9 +22,9 @@ Refresh the snapshot and merge manual additions with:
 npm run refresh:longlist
 ```
 
-The longlist refresh is research-only. The playable application uses R2 or prepared local files; Spotify is optional metadata lookup only and never a playback source. The curated 120-song queue remains the only path toward intro scoring and promotion.
+The longlist refresh is research-only. The playable application uses R2 or prepared local files; Spotify is optional metadata lookup only and never a playback source. Candidates must still pass the source, media, intro, and catalogue checks before they are treated as final.
 
-The tracked review queue contains 120 candidates in `data/song-candidates.json`:
+The first tracked review queue used this 120-song composition; later implementation batches expanded the same candidate file and provisional playable catalogue:
 
 | Primary bucket | Songs | Purpose |
 |---|---:|---|
@@ -43,7 +43,7 @@ The queue is deliberately language-agnostic and caps each credited artist at thr
 - `approved`: the exact clip has an intro score, ease score, difficulty, and playable audio.
 - `rejected`: the candidate failed metadata, media, recognizability, or game-quality review.
 
-Do not guess `introRecognition` from the full song or a different master. Until the expected clip has been heard, `introRecognition`, `easeScore`, and `proposedDifficulty` remain `null`.
+Do not score `introRecognition` from a different master. For immediate library testing, the provisional catalogue derives a deterministic estimate from the exact hosted waveform and labels it `waveform_estimate`; a play-tested score overrides it for final approval.
 
 ## R2 review and promotion workflow
 
@@ -51,7 +51,17 @@ Do not guess `introRecognition` from the full song or a different master. Until 
 2. Copy `.env.example` to ignored `.env.local` and configure the five `R2_` connection values. Leave `R2_MAX_BYTES` at 8.5 billion bytes or lower it when the account stores data elsewhere.
 3. Run `npm run init:sources` to create or safely sync ignored `data/song-download-sources.local.json`; existing resolved URLs are preserved and removed candidate rows are dropped. `npm run resolve:youtube -- 10` fills a reviewable batch, while `npm run resolve:youtube -- 120` resolves every pending row. Selection prefers verified, artist, official, VEVO, and Topic channels; rejects live, karaoke, remix, sped/slowed, cover, edit, snippet, demo, compilation, and implausibly short or long results; and favors results containing every credited artist. `npm run audit:sources` independently checks completeness, aliases, title/artist agreement, durations, altered-version labels, duplicate video IDs, collaborator coverage, remaster warnings, and provenance before downloads.
 
-   When no official upload is searchable, an exact full studio recording can be recorded with `node scripts/resolve-youtube-sources.mjs --id <id> --url <youtube-url> --reason <short-reason>`. Manual selection can override provenance only; title, artist, duration, altered-version, unexpected-feature, and combined-song checks still apply, and the reason remains in the ignored audit metadata.
+   When no official upload is searchable, an exact full studio recording can be recorded with `node scripts/resolve-youtube-sources.mjs --id <id> --url <youtube-url> --reason <short-reason>`. Manual selection can override provenance only; title, artist, duration, altered-version, unexpected-feature, and combined-song checks still apply, and the reason remains in the ignored audit metadata. Production material such as making-of clips, footnotes, behind-the-scenes footage, documentaries, and visualizers is rejected alongside ordinary music videos because it can contain dialogue, ambience, or effects before the studio recording.
+
+   Existing hosted media must also pass the stricter recording-identity workflow. `node scripts/resolve-studio-sources.mjs --metadata-only --metadata-request-limit=100` caches high-confidence public Apple/iTunes duration evidence only when title, lead artist, complete credits, and album agree. A hosted duration more than 2.5 seconds away is review evidence for a video/radio/alternate version, not an automatic replacement. Resolve exact IDs in a dry run first, then repeat with `--apply`; the resolver rejects generic video/visual/production labels, live/acoustic/stripped/clean/sped/slowed/remix/mix/radio-mix/reissue-edition uploads, incomplete or extra prefix credits, featured-artist channels that do not prove the lead artist, fake tribute or karaoke Topic channels, and canonical-duration mismatches. `--force-search --search-size=50` refreshes an ambiguous YouTube search without weakening those gates.
+
+   `npm run audit:fingerprints -- --id=<ids>` independently compares each prepared full track with the canonical Apple/iTunes preview using raw Chromaprint hashes. This is the preferred evidence for an exact recording when uploader provenance is weak: `canonical_match` is strong acoustic evidence, `probable_match` stays review-only, and `recording_mismatch` must be replaced. Cached previews and the generated report are local-only; they are never shipped to the game.
+
+   For a confirmed mismatch, refresh its studio-source search and run `npm run audit:source-candidates -- --id=<ids>`. The candidate audit downloads only title/credit/duration-compatible search results into ignored local storage and compares each one to the same canonical preview. Review its dry-run report before repeating with `--apply`; only a strong acoustic match can update the source manifest.
+
+   `npm run audit:spotify-pages` can independently cache metadata from each candidate's public `open.spotify.com/track/...` page without API credentials. It checks the displayed title, complete credited artists, album, release date, duration, and artwork; `--apply-metadata` writes only exact-credit matches. Extra credits and duration disagreements remain explicit review flags. The ignored page cache makes the audit resumable after public-page rate limiting, and Spotify is not contacted by the game at runtime. Reviewed missing feature credits belong in tracked `data/artist-credit-overrides.json` and are applied with `npm run apply:artist-credits`; sampled artists, members of a group, and credits from a wrong linked version must not be copied automatically.
+
+   `npm run metadata:deezer -- --id=<ids>` is a credential-free fallback when Apple or Spotify public metadata is unavailable. It caches only strict title and complete-credit matches with duration and a 30-second preview. Deezer is build-time evidence only; the game never contacts it at runtime.
 4. Download and prepare complete 128 kbps tracks, 30-second clue assets, and optional artwork. Preparation requires exactly one media source per song, fails on continuous 30-second opening silence, and retains a 30 ms onset pad when trimming so the first transient is not clipped:
 
    ```powershell
@@ -70,16 +80,21 @@ Do not guess `introRecognition` from the full song or a different master. Until 
    npm run dev
    ```
 
-   The uploader gives catalogue URLs a media-version query and uses a one-hour R2 cache lifetime, so replacing a corrected source cannot leave devices pinned to an older immutable response.
+   The uploader gives each clue and full-track URL a content-hash version query and uses a one-hour R2 cache lifetime. Even when a replacement has the same duration and silence trim as the old file, its URL changes immediately instead of leaving a device pinned to the previous response.
+
+   For a correction batch, pass the same comma-separated ID list to `download-authorized-sources.ps1 -Replace`, `prepare-r2-media.ps1 -Force`, and `upload-r2-media.mjs --id=<ids>` (the uploader also accepts `--id <ids>`). Replacement downloads move the previous exact-ID source files into a timestamped `private-media/replaced-backup` folder. Before upload, run `node scripts/audit-media-starts.mjs --id=<ids>`; after upload, rerun it so catalogue duration, clue/full alignment, onset, loudness, and source classification all describe the deployed files.
 
 6. Open `http://127.0.0.1:5173/?reviewSong=<id>` and confirm the exact version. Test 0.1, 0.5, 2, 8, and 15 seconds.
 7. Audit the complete queue:
 
    ```powershell
    npm run audit:songs
+   npm run audit:provisional
    # or
    .\scripts\audit-song-library.ps1
    ```
+
+   `audit:songs` remains the final approved-library gate. `audit:provisional` validates the expanded testing catalogue. For a real hosted playback check of a corrected song, run `npm run review:r2` followed by `node scripts/verify-ui.mjs --hosted-smoke --hosted-id=<candidate-id>`; it plays the R2 clue in a browser and proves that the result reveal restarts at game-time zero.
 
 8. Approve the exact hosted track with `npm run approve:song -- --id <id> --intro <0-100>`. If the master has genuine leading silence, add `--start-at <seconds>` (for example, `--start-at 2.4`) so both the clue and complete reveal treat that position as time zero. Add `--difficulty` and `--reason` only for a documented manual override.
 9. Once at least ten approved songs exist in every difficulty, promote them:
@@ -88,7 +103,7 @@ Do not guess `introRecognition` from the full song or a different master. Until 
    npm run promote:songs
    ```
 
-Promotion refuses to replace the five playable demos before that 50-song minimum is complete. Later runs promote every approved candidate, allowing the live pool to grow beyond the pilot. The result screen streams the complete R2 file from the exact reached timestamp.
+Promotion refuses to replace the five playable demos before that 50-song minimum is complete. Later runs promote every approved candidate, allowing the live pool to grow beyond the pilot. The result screen streams the complete R2 file from game-time zero, using the same silence-trim offset as clues.
 
 ## Local-file fallback
 

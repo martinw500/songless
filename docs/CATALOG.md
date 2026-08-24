@@ -10,7 +10,7 @@ New-song discovery is frozen while the playable catalogue is implemented. Previo
 
 ## Candidate records
 
-`data/song-candidates.json` is the source-of-truth review queue. Each song stores canonical metadata, credited artists, aliases, language, genres, one primary sourcing bucket, selection signals, four familiarity components, review state, and expected media filenames.
+`data/song-candidates.json` is the source-of-truth review queue. Each song stores canonical metadata, credited artists, aliases, language, genres, one primary sourcing bucket, selection signals, four familiarity components, review state, and expected media filenames. When a public Spotify track page has been checked, `spotifyDurationMs` records the exact edition duration and `spotifyMetadataStatus: "verified_public_page"` records its provenance. These are build-time verification fields, not a playback dependency.
 
 ```json
 {
@@ -22,6 +22,8 @@ New-song discovery is frozen while the playable catalogue is implemented. Previo
   "artistAliases": [],
   "album": "Album title (optional)",
   "spotifyUrl": "https://open.spotify.com/track/example (optional)",
+  "spotifyDurationMs": 172000,
+  "spotifyMetadataStatus": "verified_public_page",
   "releaseYear": 2024,
   "genres": ["alternative", "r&b"],
   "language": "en",
@@ -50,9 +52,13 @@ New-song discovery is frozen while the playable catalogue is implemented. Previo
 }
 ```
 
-Run `npm run audit:songs` after editing. The audit validates the 120-song and bucket totals, rough era distribution, three-song artist cap, IDs, aliases, score math, review transitions, media names, live catalogue, and approved difficulty counts.
+Run `npm run audit:songs` after editing. The audit validates IDs, aliases, score math, review transitions, media names, live catalogue entries, and approved difficulty counts. The original 120-song pilot composition remains curation history; the provisional playable catalogue is now larger.
 
-## Familiarity
+Run `npm run audit:provisional` for the expanded playable testing catalogue. It validates every hosted candidate/catalogue mapping, unique IDs, R2 URLs and durations, start offsets, clue gains, tracked waveform features, deterministic score fields, difficulty counts, and documented media-start overrides.
+
+Complete displayed artist credits are maintained separately from title aliases. Apply reviewed corrections from `data/artist-credit-overrides.json` with `npm run apply:artist-credits`; every override includes a reason so later metadata refreshes cannot silently discard or invent a featured artist.
+
+## Recognition
 
 Familiarity estimates recognition by the target audience, not lifetime streams:
 
@@ -63,7 +69,13 @@ Familiarity estimates recognition by the target audience, not lifetime streams:
 | Broader visibility | 20% | Did it cross charts, streaming, radio, film, or social media? |
 | Longevity | 15% | Has recognition survived beyond its original release cycle? |
 
-The audit recalculates the rounded weighted value and rejects mismatched `familiarity` fields.
+The audit recalculates the rounded weighted value and rejects mismatched legacy `familiarity` fields. Runtime provisional difficulty uses a more explicit recognition score. A researched public stream milestone takes precedence over the pilot's hand-scored broader-visibility field; broader visibility and intake signals are fallbacks for tracks without a recorded stream total:
+
+```text
+recognition score = 0.50 × stream reach + 0.50 × Gen-Z/current relevance
+```
+
+`stream reach` uses the stored billion-stream snapshot where available, on a logarithmic scale so five billion streams is meaningful without making every one-billion song equivalent. Under-one-billion founder picks receive conservative reach bands rather than invented exact counts. `Gen-Z/current relevance` uses the reviewed audience/circulation components or the longlist's Gen-Z, current-hit, social-revival, childhood-hit, and cohort signals. This lets a strong cohort pick compete with an older high-stream song without pretending their raw play counts are equal.
 
 ## Intro recognition and difficulty
 
@@ -76,35 +88,34 @@ Only score the prepared clip:
 - 0–29: silence, ambience, or an extremely confusable opening
 
 ```text
-ease score = 0.50 × familiarity + 0.50 × introRecognition
+ease score = 0.50 × recognition score + 0.50 × introRecognition
 ```
 
 | Ease score | Suggested mode |
 |---:|---|
 | 85–100 | Easy |
-| 70–84.9 | Medium |
-| 50–69.9 | Hard |
-| 30–49.9 | Expert |
-| 0–29.9 | Impossible |
+| 82.5–84.9 | Medium |
+| 80–82.4 | Hard |
+| 75–79.9 | Expert |
+| 0–74.9 | Impossible |
 
-Familiarity and intro recognition contribute equally. The audit permits a manual difficulty override only when `difficultyOverrideReason` explains it.
+Recognition and intro recognition contribute equally. These fixed bands are calibrated relative to the curated, intentionally recognizable library; they are not random or reassigned by rank. `audit:provisional` requires at least 50 playable songs in every mode so a threshold change cannot silently create an unusably small pool. The audit permits a manual difficulty override only when `difficultyOverrideReason` explains it.
 
 > [!NOTE]
-> **Provisional Quantile Calibration:** Until manual intro reviews are completed for all songs, the game uses a provisional ease score equal to the familiarity score. Because familiarity scores tend to cluster in specific ranges, absolute thresholds resulted in very few songs assigned to certain difficulties. Therefore, the provisional catalog script splits songs into 5 even buckets using quantile calibration to ensure an equal distribution of difficulties for testing purposes.
+> **Provisional intro scoring:** Until play-tested intro reviews exist, `scripts/generate-provisional-catalog.mjs` estimates intro recognition from the exact hosted waveform: audible-onset delay, first-two-second level, and the size of the 8–15-second energy ramp. These estimates use the fixed thresholds above, never random ordering or equal-sized quantile buckets. A reviewed `introRecognition` replaces the estimate.
 
 ## Audio onset calibration
 
 MP3 files contain encoder padding (typically one full MP3 frame of 1152 samples ≈ 26ms) plus any genuine silence or fade-in at the start of the track. When the browser's Web Audio API decodes an MP3 to PCM via `decodeAudioData()`, this padding becomes real zero-valued samples at the start of the buffer. For extremely short playback stages (0.01s, 0.1s), even 50–300ms of leading silence makes the clip completely inaudible.
 
-The `startAtMs` field in each candidate and catalog entry tells the audio engine where to begin playback inside the decoded buffer. To set it correctly:
+The `startAtMs` field in each candidate and catalog entry tells the audio engine where to begin playback inside the decoded buffer. `scripts/audit-media-starts.mjs` measures every complete/clue pair and stores safe tracked measurements in `data/intro-audio-features.json`. To set it correctly:
 
-1. Decode each prepared clue MP3 to raw 32-bit float PCM at 44100 Hz using ffmpeg.
-2. Scan for the first sample whose absolute value exceeds a threshold of 0.002 (~-54 dBFS).
-3. Store that sample's timestamp in milliseconds as `startAtMs`.
+1. Decode the first 35 seconds of both prepared files to mono 8 kHz, 32-bit float PCM using ffmpeg.
+2. Measure 50 ms RMS frames and find sustained first-sound, audible, and strong thresholds at -52, -42, and -32 dBFS.
+3. Compare the clue envelope with the complete file, reject alignment drift, and inspect the first two seconds plus the 8–15 second energy ramp.
+4. Document `startAtMs` at the earliest playable musical onset. Do not mistake audible video noise for a valid song onset; source title, artist credits, album, version label, and canonical duration must pass independently.
 
-The probe script is at `scratch/probe-all-onsets.ps1` and writes `data/onset-data.local.json`. The application script `scratch/apply-onsets.js` patches `song-candidates.json` while preserving any existing manual overrides (e.g. `gnarls-barkley-crazy` at 2530ms for tape-hiss skip, `cafune-tek-it` at 120ms).
-
-After applying onsets, regenerate the catalog with `node scripts/generate-provisional-catalog.mjs`. The fallback chain is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding).
+After applying onsets, regenerate the catalog with `node scripts/generate-provisional-catalog.mjs`. The fallback chain is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding). Do not skip a deliberate fade or melody merely because it is soft. Set `clueGainDb` from 0–12 dB for those cases; clue playback is limited, and full-song reveal playback remains at the original level.
 
 ## Live catalogue
 
@@ -135,10 +146,10 @@ After applying onsets, regenerate the catalog with `node scripts/generate-provis
 }
 ```
 
-R2 artwork or optional metadata artwork is used when no local JPG exists. Album and Spotify-link metadata are display-only and optional; Spotify is never a playback source. Playable R2/local audio and verified intro scoring are mandatory. The first real catalogue needs at least ten songs in each mode and cannot mix demos with real songs. Hosted clues decode only the compact clue asset; a win or final loss streams the complete file from the timestamp the player reached.
+R2 artwork or optional metadata artwork is used when no local JPG exists. Album and Spotify-link metadata are display-only and optional; Spotify is never a playback source. Playable R2/local audio and verified intro scoring are mandatory. The first real catalogue needs at least ten songs in each mode and cannot mix demos with real songs. Hosted clues decode only the compact clue asset; a win or final loss streams the complete file from game-time zero rather than inheriting the final clue position.
 
 ## Search metadata
 
 Use `aliases` for alternate titles, translations, and romanizations, and `artistAliases` for common artist spellings. Search normalization preserves letters and numbers from every Unicode script while remaining accent-, punctuation-, capitalization-, `feat.`, and version-insensitive. The player still selects a canonical result before submitting a guess.
 
-Keep IDs and filenames lowercase, stable, and unique. `startAtMs` defines where game-time zero begins in a hosted or local source. Use it only to remove actual leading silence or master padding—not to jump ahead to a hook. Every clue and the complete result-screen continuation apply the same offset.
+Keep IDs and filenames lowercase, stable, and unique. `startAtMs` defines where game-time zero begins in a hosted or local source. Use it only to remove actual leading silence or master padding—not to jump ahead to a hook. Every clue and the complete result-screen restart apply the same offset.

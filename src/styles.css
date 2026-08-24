@@ -393,6 +393,10 @@ input:focus-visible {
 }
 .play-button:active { transform: translateY(1px) scale(0.965); transition-duration: 90ms; }
 .play-button.playing { animation: playBreathe 1.05s ease-in-out infinite alternate; }
+.play-button.loading {
+  cursor: progress;
+  filter: saturate(0.92) brightness(0.98);
+}
 
 .play-glyph {
   width: 45%;
@@ -413,6 +417,14 @@ input:focus-visible {
 .play-button:hover .play-icon { transform: translate(-4.5%, 4.5%) scale(1.04); }
 .pause-icon { transform: scale(1); }
 .play-button:hover .pause-icon { transform: scale(1.04); }
+.loading-icon {
+  color: #10140d;
+  animation: loadingSpin 900ms linear infinite;
+}
+
+@keyframes loadingSpin {
+  to { transform: rotate(360deg); }
+}
 
 .pulse-ring {
   position: absolute;

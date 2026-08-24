@@ -20,6 +20,7 @@ const songs = candidateRoot.songs
     familiarity: song.familiarity,
     introRecognition: song.introRecognition ?? undefined,
     startAtMs: song.startAtMs ?? 0,
+    ...(song.clueGainDb != null ? { clueGainDb: song.clueGainDb } : {}),
     artwork: song.media.artworkUrl,
     audio: {
       kind: "hosted",

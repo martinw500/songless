@@ -1,4 +1,5 @@
 import { createReadStream, readFileSync, statSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ListObjectsV2Command, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
@@ -12,7 +13,11 @@ const dryRun = process.argv.includes("--dry-run") || process.argv.includes("--dr
 const catalogOnly = process.argv.includes("--catalog-only");
 const connectionCheck = process.argv.includes("--check");
 const idIndex = process.argv.indexOf("--id");
-const selectedId = idIndex >= 0 ? process.argv[idIndex + 1] : null;
+const inlineIds = process.argv.find((value) => value.startsWith("--id="))?.slice("--id=".length);
+const selectedIds = new Set((inlineIds ?? (idIndex >= 0 ? process.argv[idIndex + 1] : ""))
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean));
 const required = ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET", "R2_PUBLIC_BASE_URL"];
 for (const name of required) {
   if (!process.env[name]?.trim()) throw new Error(`${name} is required in ignored .env.local.`);
@@ -57,8 +62,11 @@ if (connectionCheck) {
 const localManifest = JSON.parse(readFileSync(localManifestFile, "utf8"));
 const candidateRoot = JSON.parse(readFileSync(candidateFile, "utf8"));
 const candidateById = new Map(candidateRoot.songs.map((song) => [song.id, song]));
-const songs = localManifest.songs.filter((song) => !selectedId || song.id === selectedId);
-if (selectedId && songs.length === 0) throw new Error(`Prepared manifest does not contain ${selectedId}.`);
+const songs = localManifest.songs.filter((song) => selectedIds.size === 0 || selectedIds.has(song.id));
+if (selectedIds.size > 0 && songs.length !== selectedIds.size) {
+  const found = new Set(songs.map((song) => song.id));
+  throw new Error(`Prepared manifest does not contain: ${[...selectedIds].filter((id) => !found.has(id)).join(", ")}.`);
+}
 if (songs.length === 0) throw new Error("No prepared songs are available to upload.");
 
 function publicUrl(key, version) {
@@ -70,7 +78,8 @@ function localAsset(relativeFile, key, contentType) {
   const absoluteFile = path.resolve(preparedRoot, relativeFile);
   if (!absoluteFile.startsWith(`${preparedRoot}${path.sep}`)) throw new Error(`Prepared path escapes its root: ${relativeFile}`);
   const size = statSync(absoluteFile).size;
-  return { absoluteFile, key, size, contentType };
+  const contentVersion = createHash("sha256").update(readFileSync(absoluteFile)).digest("hex").slice(0, 12);
+  return { absoluteFile, key, size, contentType, contentVersion };
 }
 
 const assets = [];
@@ -79,6 +88,7 @@ for (const song of songs) {
   assets.push(localAsset(song.fullFile, `audio/full/${song.id}.mp3`, "audio/mpeg"));
   assets.push(localAsset(song.clueFile, `audio/clues/${song.id}.mp3`, "audio/mpeg"));
 }
+const assetByKey = new Map(assets.map((asset) => [asset.key, asset]));
 
 const existing = await listObjects();
 const { existingBytes, projectedBytes } = projectedBucketBytes(existing, assets);
@@ -114,9 +124,10 @@ if (!dryRun) {
 
   for (const song of songs) {
     const candidate = candidateById.get(song.id);
-    const mediaVersion = `${song.durationMs}-${song.leadingSilenceTrimMs ?? 0}`;
-    candidate.media.hostedClueUrl = publicUrl(`audio/clues/${song.id}.mp3`, mediaVersion);
-    candidate.media.hostedFullUrl = publicUrl(`audio/full/${song.id}.mp3`, mediaVersion);
+    const clueKey = `audio/clues/${song.id}.mp3`;
+    const fullKey = `audio/full/${song.id}.mp3`;
+    candidate.media.hostedClueUrl = publicUrl(clueKey, assetByKey.get(clueKey).contentVersion);
+    candidate.media.hostedFullUrl = publicUrl(fullKey, assetByKey.get(fullKey).contentVersion);
     candidate.media.hostedDurationMs = song.durationMs;
     candidate.reviewStatus = "needs_intro_review";
   }

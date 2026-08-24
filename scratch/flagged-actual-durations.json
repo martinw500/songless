@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bad-bunny-dtmf",
+    "title": "DtMF",
+    "artist": "Bad Bunny",
+    "ytDur": "240.2",
+    "itunesDur": "132.9",
+    "diffSeconds": 107.3
+  },
+  {
+    "id": "bruno-mars-versace-on-the-floor",
+    "title": "Versace On The Floor",
+    "artist": "Bruno Mars",
+    "ytDur": "201.9",
+    "itunesDur": "261.2",
+    "diffSeconds": -59.4
+  },
+  {
+    "id": "tame-impala-the-less-i-know-the-better",
+    "title": "The Less I Know the Better",
+    "artist": "Tame Impala",
+    "ytDur": "216.4",
+    "itunesDur": "176.1",
+    "diffSeconds": 40.2
+  },
+  {
+    "id": "psy-gangnam-style",
+    "title": "Gangnam Style",
+    "artist": "PSY",
+    "ytDur": "248.3",
+    "itunesDur": "219.5",
+    "diffSeconds": 28.9
+  },
+  {
+    "id": "olivia-dean-so-easy-to-fall-in-love",
+    "title": "So Easy (To Fall In Love)",
+    "artist": "Olivia Dean",
+    "ytDur": "196.9",
+    "itunesDur": "169.0",
+    "diffSeconds": 27.9
+  },
+  {
+    "id": "flo-rida-good-feeling",
+    "title": "Good Feeling",
+    "artist": "Flo Rida",
+    "ytDur": "270.3",
+    "itunesDur": "248.1",
+    "diffSeconds": 22.1
+  },
+  {
+    "id": "katy-perry-california-gurls",
+    "title": "California Gurls",
+    "artist": "Katy Perry",
+    "ytDur": "218.7",
+    "itunesDur": "234.7",
+    "diffSeconds": -16
+  },
+  {
+    "id": "shawn-mendes-camila-cabello-senorita",
+    "title": "Señorita",
+    "artist": "Shawn Mendes & Camila Cabello",
+    "ytDur": "205.4",
+    "itunesDur": "190.9",
+    "diffSeconds": 14.4
+  },
+  {
+    "id": "master-kg-nomcebo-zikode-jerusalema",
+    "title": "Jerusalema",
+    "artist": "Master KG feat. Nomcebo Zikode",
+    "ytDur": "342.3",
+    "itunesDur": "328.0",
+    "diffSeconds": 14.3
+  },
+  {
+    "id": "billie-eilish-bad-guy",
+    "title": "bad guy",
+    "artist": "Billie Eilish",
+    "ytDur": "204.9",
+    "itunesDur": "194.1",
+    "diffSeconds": 10.8
+  },
+  {
+    "id": "kehlani-folded",
+    "title": "Folded",
+    "artist": "Kehlani",
+    "ytDur": "245.4",
+    "itunesDur": "238.1",
+    "diffSeconds": 7.3
+  },
+  {
+    "id": "eminem-mockingbird",
+    "title": "Mockingbird",
+    "artist": "Eminem",
+    "ytDur": "257.8",
+    "itunesDur": "250.8",
+    "diffSeconds": 7.1
+  },
+  {
+    "id": "rose-bruno-mars-apt",
+    "title": "APT.",
+    "artist": "ROSÉ & Bruno Mars",
+    "ytDur": "175.1",
+    "itunesDur": "169.9",
+    "diffSeconds": 5.2
+  },
+  {
+    "id": "lisa-money",
+    "title": "Money",
+    "artist": "LISA",
+    "ytDur": "165.1",
+    "itunesDur": "169.8",
+    "diffSeconds": -4.8
+  },
+  {
+    "id": "katy-perry-i-kissed-a-girl",
+    "title": "I Kissed A Girl",
+    "artist": "Katy Perry",
+    "ytDur": "184.4",
+    "itunesDur": "179.6",
+    "diffSeconds": 4.8
+  }
+]

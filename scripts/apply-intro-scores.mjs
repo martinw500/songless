@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { difficultyFor } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
@@ -13,14 +14,6 @@ function parseArguments(argv) {
     options[key.slice(2)] = argv[++index];
   }
   return options;
-}
-
-function suggestedDifficulty(score) {
-  if (score >= 85) return "easy";
-  if (score >= 70) return "medium";
-  if (score >= 50) return "hard";
-  if (score >= 30) return "expert";
-  return "impossible";
 }
 
 const options = parseArguments(process.argv.slice(2));
@@ -64,7 +57,7 @@ for (const entry of scores) {
     continue;
   }
   const easeScore = Math.round(((song.familiarity + entry.introRecognition) / 2) * 10) / 10;
-  const difficulty = suggestedDifficulty(easeScore);
+  const difficulty = difficultyFor(easeScore);
   updates.push({
     id: entry.id,
     title: song.title,
@@ -103,21 +96,6 @@ for (const d of ["easy", "medium", "hard", "expert", "impossible"]) {
   console.log(`  ${d}: ${diffCounts[d] || 0}`);
 }
 
-// Check for quantile mode
-const useQuantiles = options.quantile === "true" || options.quantile === undefined;
-if (useQuantiles && updates.length === 120) {
-  console.log(`\n--- Provisional quantile bands (equal 24-song groups) ---`);
-  const byEase = [...updates].sort((a, b) => b.easeScore - a.easeScore);
-  const bands = ["easy", "medium", "hard", "expert", "impossible"];
-  const quantileDiffs = {};
-  byEase.forEach((u, i) => {
-    const band = bands[Math.floor(i / 24)];
-    u.quantileDifficulty = band;
-    quantileDiffs[band] = (quantileDiffs[band] || 0) + 1;
-  });
-  for (const d of bands) console.log(`  ${d}: ${quantileDiffs[d] || 0}`);
-}
-
 if (options["dry-run"] === "true" || options["dry-run"] === undefined) {
   console.log("\n[DRY RUN] No changes written. Run with --dry-run false to apply.\n");
   process.exit(0);
@@ -129,10 +107,8 @@ for (const u of updates) {
   const song = songMap.get(u.id);
   song.introRecognition = u.introRecognition;
   song.easeScore = u.easeScore;
-  song.proposedDifficulty = useQuantiles && u.quantileDifficulty ? u.quantileDifficulty : u.difficulty;
-  song.difficultyOverrideReason = useQuantiles && u.quantileDifficulty && u.quantileDifficulty !== u.difficulty
-    ? "provisional quantile band assignment"
-    : null;
+  song.proposedDifficulty = u.difficulty;
+  song.difficultyOverrideReason = null;
   song.reviewStatus = "approved";
   applied += 1;
 }

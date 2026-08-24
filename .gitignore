@@ -17,3 +17,15 @@ private-media/
 data/song-download-sources.local.json
 
 data/spotify-cache.local/
+data/media-start-audit.local.json
+data/studio-source-search.local/
+data/itunes-track-metadata.local/
+data/studio-source-audit.local.json
+data/canonical-fingerprint-audit.local.json
+data/source-candidate-fingerprint-audit.local.json
+data/deezer-metadata-audit.local.json
+data/deezer-track-metadata.local/
+data/deezer-track-previews.local/
+data/itunes-previews.local/
+data/spotify-track-pages.local/
+data/spotify-track-page-audit.local.json

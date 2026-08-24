@@ -1,0 +1,6077 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-24T06:17:32.067Z",
+  "notes": "Derived waveform measurements only. Regenerate after replacing, trimming, or retiming hosted audio.",
+  "songs": [
+    {
+      "id": "the-weeknd-blinding-lights",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "ed-sheeran-shape-of-you",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.1,
+      "seconds8To15Db": -9.6
+    },
+    {
+      "id": "post-malone-swae-lee-sunflower",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 2050,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -48.2,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "the-weeknd-daft-punk-starboy",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 550,
+      "firstStrongMs": 1050,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.4,
+      "seconds8To15Db": -6.9
+    },
+    {
+      "id": "the-neighbourhood-sweater-weather",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.9,
+      "seconds8To15Db": -11.7
+    },
+    {
+      "id": "glass-animals-heat-waves",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32,
+      "seconds8To15Db": -28.3
+    },
+    {
+      "id": "harry-styles-as-it-was",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.2,
+      "seconds8To15Db": -6.5
+    },
+    {
+      "id": "journey-dont-stop-believin",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.5,
+      "seconds8To15Db": -22.1
+    },
+    {
+      "id": "imagine-dragons-believer",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -7.6,
+      "seconds8To15Db": -9.1
+    },
+    {
+      "id": "the-chainsmokers-halsey-closer",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.3,
+      "seconds8To15Db": -19.7
+    },
+    {
+      "id": "dua-lipa-levitating",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.7,
+      "seconds8To15Db": -7.8
+    },
+    {
+      "id": "billie-eilish-bad-guy",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -6.6,
+      "seconds8To15Db": -6.1
+    },
+    {
+      "id": "harry-styles-watermelon-sugar",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "drake-wizkid-kyla-one-dance",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 1200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.8,
+      "seconds8To15Db": -6.7
+    },
+    {
+      "id": "billie-eilish-khalid-lovely",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 800,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.4,
+      "seconds8To15Db": -18.7
+    },
+    {
+      "id": "the-kid-laroi-justin-bieber-stay",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.3,
+      "seconds8To15Db": -15.3
+    },
+    {
+      "id": "shawn-mendes-camila-cabello-senorita",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.3,
+      "seconds8To15Db": -14.3
+    },
+    {
+      "id": "dua-lipa-dont-start-now",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 1100,
+      "firstStrongMs": 1100,
+      "firstMusicalMs": 700,
+      "recommendedPlayableMs": 150,
+      "first2SecondsDb": -14.2,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "post-malone-circles",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.4,
+      "seconds8To15Db": -21.4
+    },
+    {
+      "id": "coldplay-viva-la-vida",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.5,
+      "seconds8To15Db": -16.2
+    },
+    {
+      "id": "timbaland-onerepublic-apologize",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.8,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "lady-gaga-poker-face",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.6,
+      "seconds8To15Db": -19.1
+    },
+    {
+      "id": "gnarls-barkley-crazy",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 350,
+      "recommendedPlayableMs": 200,
+      "first2SecondsDb": -16.2,
+      "seconds8To15Db": -8.1
+    },
+    {
+      "id": "rihanna-jay-z-umbrella",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.2,
+      "seconds8To15Db": -12.6
+    },
+    {
+      "id": "coldplay-yellow",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.1,
+      "seconds8To15Db": -13.8
+    },
+    {
+      "id": "radiohead-creep",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.4,
+      "seconds8To15Db": -20.9
+    },
+    {
+      "id": "eminem-without-me",
+      "firstSoundMs": 550,
+      "firstAudibleMs": 600,
+      "firstStrongMs": 700,
+      "firstMusicalMs": 250,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.9,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "tears-for-fears-everybody-wants-to-rule-the-world",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.1,
+      "seconds8To15Db": -10.3
+    },
+    {
+      "id": "toto-africa",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.8,
+      "seconds8To15Db": -21.9
+    },
+    {
+      "id": "fleetwood-mac-dreams",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.7,
+      "seconds8To15Db": -22.3
+    },
+    {
+      "id": "lady-gaga-bruno-mars-die-with-a-smile",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.8,
+      "seconds8To15Db": -21.8
+    },
+    {
+      "id": "billie-eilish-birds-of-a-feather",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.2,
+      "seconds8To15Db": -13.2
+    },
+    {
+      "id": "rose-bruno-mars-apt",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.5,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "alex-warren-ordinary",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.7,
+      "seconds8To15Db": -13.1
+    },
+    {
+      "id": "bad-bunny-dtmf",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.3,
+      "seconds8To15Db": -18.9
+    },
+    {
+      "id": "sombr-back-to-friends",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.2,
+      "seconds8To15Db": -8.3
+    },
+    {
+      "id": "huntrix-golden",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.8,
+      "seconds8To15Db": -18.6
+    },
+    {
+      "id": "kendrick-lamar-sza-luther",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.2,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "gracie-abrams-thats-so-true",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.7,
+      "seconds8To15Db": -9.4
+    },
+    {
+      "id": "sabrina-carpenter-espresso",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.3,
+      "seconds8To15Db": -8.2
+    },
+    {
+      "id": "benson-boone-beautiful-things",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.9,
+      "seconds8To15Db": -11.7
+    },
+    {
+      "id": "chappell-roan-pink-pony-club",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.3,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "lola-young-messy",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.1,
+      "seconds8To15Db": -11.5
+    },
+    {
+      "id": "tate-mcrae-sports-car",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.9,
+      "seconds8To15Db": -7.7
+    },
+    {
+      "id": "hozier-too-sweet",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.1,
+      "seconds8To15Db": -13.6
+    },
+    {
+      "id": "shaboozey-a-bar-song-tipsy",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 500,
+      "firstStrongMs": 650,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.9,
+      "seconds8To15Db": -17
+    },
+    {
+      "id": "sabrina-carpenter-taste",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.5,
+      "seconds8To15Db": -9.3
+    },
+    {
+      "id": "the-rare-occasions-notion",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.3,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "drake-nokia",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14,
+      "seconds8To15Db": -9.2
+    },
+    {
+      "id": "the-weeknd-playboi-carti-timeless",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.2,
+      "seconds8To15Db": -20.9
+    },
+    {
+      "id": "chappell-roan-good-luck-babe",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -36.5,
+      "seconds8To15Db": -15
+    },
+    {
+      "id": "teddy-swims-lose-control",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.2,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "doechii-anxiety",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.8,
+      "seconds8To15Db": -15.1
+    },
+    {
+      "id": "sabrina-carpenter-manchild",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 1900,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -45.5,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "gigi-perez-sailor-song",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 700,
+      "firstStrongMs": 5000,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -40.1,
+      "seconds8To15Db": -16.5
+    },
+    {
+      "id": "dominic-fike-white-keys",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.9,
+      "seconds8To15Db": -27.3
+    },
+    {
+      "id": "charli-xcx-apple",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.1,
+      "seconds8To15Db": -8.5
+    },
+    {
+      "id": "malcolm-todd-earrings",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.1,
+      "seconds8To15Db": -8.5
+    },
+    {
+      "id": "the-marias-no-one-noticed",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.2,
+      "seconds8To15Db": -15.4
+    },
+    {
+      "id": "djo-end-of-beginning",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -37.1,
+      "seconds8To15Db": -12.3
+    },
+    {
+      "id": "daniel-caesar-her-best-part",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.7,
+      "seconds8To15Db": -17.1
+    },
+    {
+      "id": "daniel-caesar-kali-uchis-get-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 3000,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -35.3,
+      "seconds8To15Db": -11.6
+    },
+    {
+      "id": "daniel-caesar-japanese-denim",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 950,
+      "firstStrongMs": 950,
+      "firstMusicalMs": 1950,
+      "recommendedPlayableMs": 850,
+      "first2SecondsDb": -46.3,
+      "seconds8To15Db": -17.8
+    },
+    {
+      "id": "frank-ocean-nights",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.8,
+      "seconds8To15Db": -22.3
+    },
+    {
+      "id": "frank-ocean-pink-white",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14,
+      "seconds8To15Db": -11.6
+    },
+    {
+      "id": "frank-ocean-lost",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "joji-slow-dancing-in-the-dark",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.9,
+      "seconds8To15Db": -18
+    },
+    {
+      "id": "joji-glimpse-of-us",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.5,
+      "seconds8To15Db": -28.6
+    },
+    {
+      "id": "joji-sanctuary",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -12.6
+    },
+    {
+      "id": "tyler-the-creator-kali-uchis-see-you-again",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.5,
+      "seconds8To15Db": -19.8
+    },
+    {
+      "id": "tyler-the-creator-earfquake",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -20.8
+    },
+    {
+      "id": "tyler-the-creator-new-magic-wand",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.2,
+      "seconds8To15Db": -12.8
+    },
+    {
+      "id": "tv-girl-not-allowed",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8,
+      "seconds8To15Db": -8.5
+    },
+    {
+      "id": "tv-girl-lovers-rock",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.4,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "tv-girl-cigarettes-out-the-window",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.8,
+      "seconds8To15Db": -7.9
+    },
+    {
+      "id": "steve-lacy-dark-red",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.6,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "steve-lacy-bad-habit",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29,
+      "seconds8To15Db": -8.9
+    },
+    {
+      "id": "steve-lacy-some",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -6.2,
+      "seconds8To15Db": -6.2
+    },
+    {
+      "id": "clairo-sofia",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.3,
+      "seconds8To15Db": -31.2
+    },
+    {
+      "id": "clairo-bags",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 1450,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -38.6,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "mgmt-electric-feel",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.6,
+      "seconds8To15Db": -8.7
+    },
+    {
+      "id": "cafune-tek-it",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.4,
+      "seconds8To15Db": -8.8
+    },
+    {
+      "id": "d4vd-romantic-homicide",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 750,
+      "firstStrongMs": 750,
+      "firstMusicalMs": 450,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -11.3,
+      "seconds8To15Db": -12.7
+    },
+    {
+      "id": "kanye-west-heartless",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.1,
+      "seconds8To15Db": -8.4
+    },
+    {
+      "id": "tame-impala-borderline",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.7,
+      "seconds8To15Db": -13
+    },
+    {
+      "id": "tame-impala-the-less-i-know-the-better",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.3,
+      "seconds8To15Db": -8.6
+    },
+    {
+      "id": "tame-impala-let-it-happen",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.6,
+      "seconds8To15Db": -11.6
+    },
+    {
+      "id": "beach-house-space-song",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 1200,
+      "firstStrongMs": 4150,
+      "firstMusicalMs": 450,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -41.5,
+      "seconds8To15Db": -21.8
+    },
+    {
+      "id": "cigarettes-after-sex-apocalypse",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 650,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.6,
+      "seconds8To15Db": -27.7
+    },
+    {
+      "id": "mgmt-kids",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.4,
+      "seconds8To15Db": -7.7
+    },
+    {
+      "id": "the-killers-mr-brightside",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.8,
+      "seconds8To15Db": -11.5
+    },
+    {
+      "id": "a-ha-take-on-me",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.4,
+      "seconds8To15Db": -21.9
+    },
+    {
+      "id": "michael-jackson-billie-jean",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -39.1,
+      "seconds8To15Db": -17.1
+    },
+    {
+      "id": "nirvana-smells-like-teen-spirit",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.1,
+      "seconds8To15Db": -10.2
+    },
+    {
+      "id": "oasis-wonderwall",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.6,
+      "seconds8To15Db": -21.2
+    },
+    {
+      "id": "whitney-houston-i-wanna-dance-with-somebody",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.3,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "queen-bohemian-rhapsody",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.6,
+      "seconds8To15Db": -30.6
+    },
+    {
+      "id": "queen-dont-stop-me-now",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 600,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31.9,
+      "seconds8To15Db": -21.4
+    },
+    {
+      "id": "abba-dancing-queen",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.1,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "earth-wind-fire-september",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.8,
+      "seconds8To15Db": -18.2
+    },
+    {
+      "id": "eurythmics-sweet-dreams",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.6,
+      "seconds8To15Db": -21.3
+    },
+    {
+      "id": "george-michael-careless-whisper",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.1,
+      "seconds8To15Db": -14.4
+    },
+    {
+      "id": "the-cranberries-zombie",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.1,
+      "seconds8To15Db": -23.7
+    },
+    {
+      "id": "goo-goo-dolls-iris",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.4,
+      "seconds8To15Db": -20.7
+    },
+    {
+      "id": "tlc-no-scrubs",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.6,
+      "seconds8To15Db": -20.3
+    },
+    {
+      "id": "britney-spears-toxic",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.5,
+      "seconds8To15Db": -14.8
+    },
+    {
+      "id": "alexandra-stan-mr-saxobeat",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 800,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.8,
+      "seconds8To15Db": -13.7
+    },
+    {
+      "id": "nelly-furtado-timbaland-promiscuous",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -38.3,
+      "seconds8To15Db": -14.3
+    },
+    {
+      "id": "miley-cyrus-party-in-the-usa",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.9,
+      "seconds8To15Db": -11.4
+    },
+    {
+      "id": "lady-gaga-just-dance",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 950,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -40.6,
+      "seconds8To15Db": -20.3
+    },
+    {
+      "id": "stromae-alors-on-danse",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "luis-fonsi-daddy-yankee-despacito",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.9,
+      "seconds8To15Db": -17.2
+    },
+    {
+      "id": "psy-gangnam-style",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.7,
+      "seconds8To15Db": -11.7
+    },
+    {
+      "id": "don-omar-lucenzo-danza-kuduro",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17,
+      "seconds8To15Db": -8.8
+    },
+    {
+      "id": "rema-selena-gomez-calm-down",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.7,
+      "seconds8To15Db": -13.4
+    },
+    {
+      "id": "master-kg-nomcebo-zikode-jerusalema",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.3,
+      "seconds8To15Db": -15.1
+    },
+    {
+      "id": "o-zone-dragostea-din-tei",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.8,
+      "seconds8To15Db": -13.7
+    },
+    {
+      "id": "stromae-papaoutai",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.5,
+      "seconds8To15Db": -32.9
+    },
+    {
+      "id": "j-balvin-willy-william-mi-gente",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.3,
+      "seconds8To15Db": -11
+    },
+    {
+      "id": "indila-derniere-danse",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.7,
+      "seconds8To15Db": -26.3
+    },
+    {
+      "id": "sheck-wes-mo-bamba",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.1,
+      "seconds8To15Db": -9.7
+    },
+    {
+      "id": "modjo-lady-hear-me-tonight",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.7,
+      "seconds8To15Db": -19.9
+    },
+    {
+      "id": "bts-dynamite",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.3,
+      "seconds8To15Db": -10.8
+    },
+    {
+      "id": "justin-bieber-peaches-feat-daniel-caesar-giveon",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.9,
+      "seconds8To15Db": -10.6
+    },
+    {
+      "id": "sza-snooze",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.1,
+      "seconds8To15Db": -8.8
+    },
+    {
+      "id": "kendrick-lamar-not-like-us",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 900,
+      "firstStrongMs": 900,
+      "firstMusicalMs": 700,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -45.5,
+      "seconds8To15Db": -4.7
+    },
+    {
+      "id": "taylor-swift-style",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.2,
+      "seconds8To15Db": -12.9
+    },
+    {
+      "id": "rihanna-don-t-stop-the-music",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -11.1
+    },
+    {
+      "id": "akon-smack-that",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.7,
+      "seconds8To15Db": -14.6
+    },
+    {
+      "id": "sza-good-days",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 950,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.3,
+      "seconds8To15Db": -30.8
+    },
+    {
+      "id": "flo-rida-low-feat-t-pain",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 850,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.3,
+      "seconds8To15Db": -19.7
+    },
+    {
+      "id": "giv-on-heartbreak-anniversary",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.6,
+      "seconds8To15Db": -21.5
+    },
+    {
+      "id": "drake-nice-for-what",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.7,
+      "seconds8To15Db": -28.5
+    },
+    {
+      "id": "tory-lanez-the-color-violet",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.6,
+      "seconds8To15Db": -20.5
+    },
+    {
+      "id": "kendrick-lamar-dna",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.3,
+      "seconds8To15Db": -4.9
+    },
+    {
+      "id": "bts-butter",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 1150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34,
+      "seconds8To15Db": -14.4
+    },
+    {
+      "id": "jung-kook-standing-next-to-you",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -7.7,
+      "seconds8To15Db": -8.2
+    },
+    {
+      "id": "the-weeknd-reminder",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28,
+      "seconds8To15Db": -24.6
+    },
+    {
+      "id": "lisa-money",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.4,
+      "seconds8To15Db": -17.7
+    },
+    {
+      "id": "black-eyed-peas-where-is-the-love",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.4,
+      "seconds8To15Db": -23.1
+    },
+    {
+      "id": "taylor-swift-the-fate-of-ophelia",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.4,
+      "seconds8To15Db": -13.7
+    },
+    {
+      "id": "dominic-fike-babydoll",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.7,
+      "seconds8To15Db": -9.3
+    },
+    {
+      "id": "the-weeknd-after-hours",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.9,
+      "seconds8To15Db": -16.5
+    },
+    {
+      "id": "icona-pop-i-love-it-feat-charli-xcx",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.3,
+      "seconds8To15Db": -11.1
+    },
+    {
+      "id": "don-toliver-no-idea",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.5,
+      "seconds8To15Db": -25.8
+    },
+    {
+      "id": "taylor-swift-delicate",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 600,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.3,
+      "seconds8To15Db": -31
+    },
+    {
+      "id": "katy-perry-california-gurls",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 200,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "ava-max-kings-queens",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 550,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.9,
+      "seconds8To15Db": -10
+    },
+    {
+      "id": "bryson-tiller-exchange",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.8,
+      "seconds8To15Db": -26.3
+    },
+    {
+      "id": "tove-lo-habits-stay-high",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.3,
+      "seconds8To15Db": -14.6
+    },
+    {
+      "id": "my-chemical-romance-teenagers",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.2,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "50-cent-candy-shop",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.4,
+      "seconds8To15Db": -13.7
+    },
+    {
+      "id": "drake-hold-on-we-re-going-home",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.4,
+      "seconds8To15Db": -28.5
+    },
+    {
+      "id": "eminem-not-afraid",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.1,
+      "seconds8To15Db": -14.2
+    },
+    {
+      "id": "hailee-steinfeld-starving",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.2,
+      "seconds8To15Db": -17.9
+    },
+    {
+      "id": "mr-probz-waves",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.9,
+      "seconds8To15Db": -7.4
+    },
+    {
+      "id": "selena-gomez-love-you-like-a-love-song",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.2,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "avicii-hey-brother",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.9,
+      "seconds8To15Db": -12.6
+    },
+    {
+      "id": "mac-miller-the-spins",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.3,
+      "seconds8To15Db": -12
+    },
+    {
+      "id": "miley-cyrus-we-can-t-stop",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.9,
+      "seconds8To15Db": -18
+    },
+    {
+      "id": "avicii-levels",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.5,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "flo-rida-my-house",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18,
+      "seconds8To15Db": -13.1
+    },
+    {
+      "id": "the-weeknd-often",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.1,
+      "seconds8To15Db": -27.8
+    },
+    {
+      "id": "partynextdoor-break-from-toronto",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.8,
+      "seconds8To15Db": -12.1
+    },
+    {
+      "id": "jason-derulo-swalla-feat-nicki-minaj-ty-dolla-ign",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 1150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -39.5,
+      "seconds8To15Db": -8.6
+    },
+    {
+      "id": "sia-elastic-heart",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.4,
+      "seconds8To15Db": -13.2
+    },
+    {
+      "id": "miley-cyrus-wrecking-ball",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.2,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "katy-perry-i-kissed-a-girl",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.4,
+      "seconds8To15Db": -16.1
+    },
+    {
+      "id": "demi-lovato-sorry-not-sorry",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 750,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.5,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "one-direction-perfect",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.8,
+      "seconds8To15Db": -12.8
+    },
+    {
+      "id": "nsync-bye-bye-bye",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.4,
+      "seconds8To15Db": -14.3
+    },
+    {
+      "id": "julia-michaels-issues",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31.1,
+      "seconds8To15Db": -18.5
+    },
+    {
+      "id": "jason-derulo-want-to-want-me",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.3,
+      "seconds8To15Db": -10.9
+    },
+    {
+      "id": "one-direction-steal-my-girl",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.2,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "flo-rida-wild-ones-feat-sia",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.5,
+      "seconds8To15Db": -13.5
+    },
+    {
+      "id": "nico-am-i-wrong",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -12
+    },
+    {
+      "id": "britney-spears-gimme-more",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.3,
+      "seconds8To15Db": -14.2
+    },
+    {
+      "id": "nelly-furtado-maneater",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.7,
+      "seconds8To15Db": -16.4
+    },
+    {
+      "id": "ariana-grande-break-free",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.6,
+      "seconds8To15Db": -11.7
+    },
+    {
+      "id": "alicia-keys-no-one",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.1,
+      "seconds8To15Db": -11.1
+    },
+    {
+      "id": "paramore-still-into-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 1400,
+      "firstStrongMs": 2550,
+      "firstMusicalMs": 400,
+      "recommendedPlayableMs": 850,
+      "first2SecondsDb": -37.8,
+      "seconds8To15Db": -10.7
+    },
+    {
+      "id": "ne-yo-so-sick",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24,
+      "seconds8To15Db": -17.8
+    },
+    {
+      "id": "britney-spears-oops-i-did-it-again",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.5,
+      "seconds8To15Db": -19.8
+    },
+    {
+      "id": "taylor-swift-wildest-dreams",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.9,
+      "seconds8To15Db": -21.4
+    },
+    {
+      "id": "kali-uchis-moonlight",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.3,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "rihanna-where-have-you-been",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.4,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "demi-lovato-heart-attack",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.2,
+      "seconds8To15Db": -22.8
+    },
+    {
+      "id": "kendrick-lamar-pride",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 950,
+      "firstStrongMs": 2650,
+      "firstMusicalMs": 300,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -38.3,
+      "seconds8To15Db": -18.8
+    },
+    {
+      "id": "shawn-mendes-if-i-can-t-have-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.8,
+      "seconds8To15Db": -7.2
+    },
+    {
+      "id": "bruno-mars-versace-on-the-floor",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.7,
+      "seconds8To15Db": -16.8
+    },
+    {
+      "id": "zara-larsson-never-forget-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.4,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "ed-sheeran-the-a-team",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.7,
+      "seconds8To15Db": -17.9
+    },
+    {
+      "id": "paramore-misery-business",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.3,
+      "seconds8To15Db": -18.7
+    },
+    {
+      "id": "nicki-minaj-super-bass",
+      "firstSoundMs": 700,
+      "firstAudibleMs": 1100,
+      "firstStrongMs": 1450,
+      "firstMusicalMs": 600,
+      "recommendedPlayableMs": 300,
+      "first2SecondsDb": -22.7,
+      "seconds8To15Db": -15.9
+    },
+    {
+      "id": "kendrick-lamar-swimming-pools-drank",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -21.9
+    },
+    {
+      "id": "owl-city-fireflies",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.6,
+      "seconds8To15Db": -26
+    },
+    {
+      "id": "james-blunt-you-re-beautiful",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.3,
+      "seconds8To15Db": -17.3
+    },
+    {
+      "id": "destiny-s-child-say-my-name",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25,
+      "seconds8To15Db": -19.5
+    },
+    {
+      "id": "taylor-swift-love-story",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.2,
+      "seconds8To15Db": -20.6
+    },
+    {
+      "id": "usher-my-boo",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.6,
+      "seconds8To15Db": -22.7
+    },
+    {
+      "id": "leona-lewis-bleeding-love",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.2,
+      "seconds8To15Db": -19.1
+    },
+    {
+      "id": "galantis-runaway-u-i",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 850,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.3,
+      "seconds8To15Db": -19.9
+    },
+    {
+      "id": "sza-saturn",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.6,
+      "seconds8To15Db": -18.2
+    },
+    {
+      "id": "lady-gaga-telephone",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31.1,
+      "seconds8To15Db": -23.6
+    },
+    {
+      "id": "panic-at-the-disco-i-write-sins-not-tragedies",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.4,
+      "seconds8To15Db": -16.4
+    },
+    {
+      "id": "neon-trees-everybody-talks",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.9,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "black-eyed-peas-meet-me-halfway",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.5,
+      "seconds8To15Db": -21.5
+    },
+    {
+      "id": "sean-kingston-eenie-meenie",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.8,
+      "seconds8To15Db": -17.5
+    },
+    {
+      "id": "demi-lovato-cool-for-the-summer",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.1,
+      "seconds8To15Db": -13
+    },
+    {
+      "id": "olivia-dean-man-i-need",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.4,
+      "seconds8To15Db": -11.4
+    },
+    {
+      "id": "lorde-team",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.6,
+      "seconds8To15Db": -21.5
+    },
+    {
+      "id": "charlie-puth-one-call-away",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.5,
+      "seconds8To15Db": -16
+    },
+    {
+      "id": "taylor-swift-you-belong-with-me-taylor-s-version",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.5,
+      "seconds8To15Db": -17.3
+    },
+    {
+      "id": "kelly-clarkson-since-u-been-gone",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 4350,
+      "firstStrongMs": 8000,
+      "firstMusicalMs": 4050,
+      "recommendedPlayableMs": 400,
+      "first2SecondsDb": -49.8,
+      "seconds8To15Db": -26.8
+    },
+    {
+      "id": "black-eyed-peas-pump-it",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.3,
+      "seconds8To15Db": -8.9
+    },
+    {
+      "id": "rihanna-disturbia",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.4,
+      "seconds8To15Db": -11.2
+    },
+    {
+      "id": "pinkpantheress-boy-s-a-liar-pt-2",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.5,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "p-nk-try",
+      "firstSoundMs": 550,
+      "firstAudibleMs": 2150,
+      "firstStrongMs": 3300,
+      "firstMusicalMs": 1800,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -47.2,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "rihanna-pon-de-replay",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.2,
+      "seconds8To15Db": -6.4
+    },
+    {
+      "id": "lorde-ribs",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 500,
+      "firstStrongMs": 950,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.9,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "drake-teenage-fever",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.1,
+      "seconds8To15Db": -24.1
+    },
+    {
+      "id": "khalid-love-lies",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.3,
+      "seconds8To15Db": -19.3
+    },
+    {
+      "id": "justin-bieber-mistletoe",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 2900,
+      "firstMusicalMs": 2300,
+      "recommendedPlayableMs": 300,
+      "first2SecondsDb": -49.8,
+      "seconds8To15Db": -18.4
+    },
+    {
+      "id": "estelle-american-boy",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.6,
+      "seconds8To15Db": -28.8
+    },
+    {
+      "id": "becky-g-shower",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.8,
+      "seconds8To15Db": -11.4
+    },
+    {
+      "id": "nelly-furtado-say-it-right",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 5450,
+      "first2SecondsDb": -34.4,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "rachel-platten-fight-song",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26,
+      "seconds8To15Db": -18.3
+    },
+    {
+      "id": "b-o-b-airplanes-feat-hayley-williams-of-paramore",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.3,
+      "seconds8To15Db": -14.3
+    },
+    {
+      "id": "akon-lonely",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.4,
+      "seconds8To15Db": -19.7
+    },
+    {
+      "id": "50-cent-21-questions",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 550,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.3,
+      "seconds8To15Db": -15.5
+    },
+    {
+      "id": "lady-gaga-paparazzi",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.5,
+      "seconds8To15Db": -8.9
+    },
+    {
+      "id": "kid-cudi-pursuit-of-happiness-nightmare",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.9,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "justin-timberlake-rock-your-body",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.1,
+      "seconds8To15Db": -14.2
+    },
+    {
+      "id": "john-newman-love-me-again",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 1250,
+      "firstStrongMs": 2300,
+      "firstMusicalMs": 800,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -37.5,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "kesha-die-young",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.6,
+      "seconds8To15Db": -13.6
+    },
+    {
+      "id": "ellie-goulding-burn",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.6,
+      "seconds8To15Db": -16.8
+    },
+    {
+      "id": "m-i-a-paper-planes",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.2,
+      "seconds8To15Db": -19.2
+    },
+    {
+      "id": "the-1975-somebody-else",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.9,
+      "seconds8To15Db": -16.1
+    },
+    {
+      "id": "train-drive-by",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.2,
+      "seconds8To15Db": -11.1
+    },
+    {
+      "id": "ne-yo-miss-independent",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.3,
+      "seconds8To15Db": -11.7
+    },
+    {
+      "id": "taylor-swift-enchanted",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 550,
+      "firstStrongMs": 1400,
+      "firstMusicalMs": 200,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31.6,
+      "seconds8To15Db": -20
+    },
+    {
+      "id": "the-1975-about-you",
+      "firstSoundMs": 500,
+      "firstAudibleMs": 800,
+      "firstStrongMs": 2700,
+      "firstMusicalMs": 1000,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -40.4,
+      "seconds8To15Db": -21.4
+    },
+    {
+      "id": "jennifer-lopez-on-the-floor",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.6,
+      "seconds8To15Db": -17.6
+    },
+    {
+      "id": "future-like-that",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.5,
+      "seconds8To15Db": -14.4
+    },
+    {
+      "id": "daniel-caesar-who-knows",
+      "firstSoundMs": 550,
+      "firstAudibleMs": 550,
+      "firstStrongMs": 750,
+      "firstMusicalMs": 250,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.5,
+      "seconds8To15Db": -19.1
+    },
+    {
+      "id": "daniel-caesar-always",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.4,
+      "seconds8To15Db": -21
+    },
+    {
+      "id": "daniel-caesar-loose",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.2,
+      "seconds8To15Db": -14
+    },
+    {
+      "id": "daniel-caesar-freudian",
+      "firstSoundMs": 800,
+      "firstAudibleMs": 1300,
+      "firstStrongMs": 1750,
+      "firstMusicalMs": 800,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.4,
+      "seconds8To15Db": -14.6
+    },
+    {
+      "id": "daniel-caesar-blessed",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.1,
+      "seconds8To15Db": -17.2
+    },
+    {
+      "id": "daniel-caesar-streetcar",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.3,
+      "seconds8To15Db": -20.3
+    },
+    {
+      "id": "daniel-caesar-cyanide",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.1,
+      "seconds8To15Db": -16.1
+    },
+    {
+      "id": "daniel-caesar-superpowers",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 550,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.7,
+      "seconds8To15Db": -11.3
+    },
+    {
+      "id": "justin-bieber-one-time",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.2,
+      "seconds8To15Db": -11.5
+    },
+    {
+      "id": "justin-bieber-one-less-lonely-girl",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 1600,
+      "first2SecondsDb": -48.9,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "justin-bieber-boyfriend",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.5,
+      "seconds8To15Db": -25.8
+    },
+    {
+      "id": "justin-bieber-what-do-you-mean",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.5,
+      "seconds8To15Db": -24
+    },
+    {
+      "id": "justin-bieber-company",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 600,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.3,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "justin-bieber-anyone",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 200,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.2,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "justin-bieber-hold-on",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.9,
+      "seconds8To15Db": -11.9
+    },
+    {
+      "id": "justin-bieber-all-that-matters",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.3,
+      "seconds8To15Db": -30.4
+    },
+    {
+      "id": "justin-bieber-daisies",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.2,
+      "seconds8To15Db": -13.4
+    },
+    {
+      "id": "brent-faiyaz-clouded",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.5,
+      "seconds8To15Db": -14.2
+    },
+    {
+      "id": "brent-faiyaz-trust",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.6,
+      "seconds8To15Db": -27.2
+    },
+    {
+      "id": "brent-faiyaz-dead-man-walking",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 8850,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -40,
+      "seconds8To15Db": -35.6
+    },
+    {
+      "id": "brent-faiyaz-jackie-brown",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.5,
+      "seconds8To15Db": -17.2
+    },
+    {
+      "id": "brent-faiyaz-all-mine",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.8,
+      "seconds8To15Db": -19.9
+    },
+    {
+      "id": "sza-kill-bill",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.7,
+      "seconds8To15Db": -8
+    },
+    {
+      "id": "sza-broken-clocks",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 1100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.4,
+      "seconds8To15Db": -18
+    },
+    {
+      "id": "sza-the-weekend",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.5,
+      "seconds8To15Db": -26.7
+    },
+    {
+      "id": "kendrick-lamar-alright",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 950,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.3,
+      "seconds8To15Db": -14.6
+    },
+    {
+      "id": "drake-jungle",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.5,
+      "seconds8To15Db": -18.4
+    },
+    {
+      "id": "drake-marvins-room",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 2500,
+      "firstStrongMs": 5450,
+      "firstMusicalMs": 1950,
+      "recommendedPlayableMs": 500,
+      "first2SecondsDb": -49.9,
+      "seconds8To15Db": -32.3
+    },
+    {
+      "id": "drake-feel-no-ways",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.9,
+      "seconds8To15Db": -9.1
+    },
+    {
+      "id": "the-weeknd-wicked-games",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.1,
+      "seconds8To15Db": -11.1
+    },
+    {
+      "id": "the-weeknd-out-of-time",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.6,
+      "seconds8To15Db": -10
+    },
+    {
+      "id": "tyler-wusyaname",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15,
+      "seconds8To15Db": -15.1
+    },
+    {
+      "id": "tyler-sweet-i-thought-you-wanted-to-dance",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.8,
+      "seconds8To15Db": -11.2
+    },
+    {
+      "id": "tyler-like-him",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22,
+      "seconds8To15Db": -19.1
+    },
+    {
+      "id": "mac-miller-self-care",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.4,
+      "seconds8To15Db": -21
+    },
+    {
+      "id": "mac-miller-come-back-to-earth",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.9,
+      "seconds8To15Db": -13.6
+    },
+    {
+      "id": "giveon-like-i-want-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.1,
+      "seconds8To15Db": -37.3
+    },
+    {
+      "id": "giveon-for-tonight",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.1,
+      "seconds8To15Db": -24.3
+    },
+    {
+      "id": "partynextdoor-not-nice",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -36.7,
+      "seconds8To15Db": -15
+    },
+    {
+      "id": "malcolm-todd-chest-pain-i-love",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.9,
+      "seconds8To15Db": -8.6
+    },
+    {
+      "id": "sombr-undressed",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.6,
+      "seconds8To15Db": -9.8
+    },
+    {
+      "id": "pinkpantheress-illegal",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.2,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "black-eyed-peas-rock-that-body",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.7,
+      "seconds8To15Db": -19.8
+    },
+    {
+      "id": "jeezy-soul-survivor",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.8,
+      "seconds8To15Db": -26.2
+    },
+    {
+      "id": "radiohead-let-down",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.3,
+      "seconds8To15Db": -17.7
+    },
+    {
+      "id": "kesha-your-love-is-my-drug",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "lady-gaga-abracadabra",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.2,
+      "seconds8To15Db": -7.8
+    },
+    {
+      "id": "sabrina-carpenter-bed-chem",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.7,
+      "seconds8To15Db": -9.2
+    },
+    {
+      "id": "sabrina-carpenter-please-please-please",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.7,
+      "seconds8To15Db": -13.4
+    },
+    {
+      "id": "addison-rae-diet-pepsi",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.2,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "chappell-roan-hot-to-go",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -35,
+      "seconds8To15Db": -15.9
+    },
+    {
+      "id": "billie-eilish-lunch",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -37.6,
+      "seconds8To15Db": -16.6
+    },
+    {
+      "id": "beabadoobee-glue-song",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.7,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "yung-kai-blue",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.6,
+      "seconds8To15Db": -12.3
+    },
+    {
+      "id": "kendrick-lamar-tv-off",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.7,
+      "seconds8To15Db": -13.1
+    },
+    {
+      "id": "tyler-sticky",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.4,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "doechii-denial-is-a-river",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -6.7
+    },
+    {
+      "id": "don-toliver-no-pole",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -2.5,
+      "seconds8To15Db": -2.7
+    },
+    {
+      "id": "goldlink-crew",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 700,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -35,
+      "seconds8To15Db": -34.8
+    },
+    {
+      "id": "khalid-location",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -35.1,
+      "seconds8To15Db": -29.6
+    },
+    {
+      "id": "ricky-montgomery-line-without-a-hook",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.6,
+      "seconds8To15Db": -10.2
+    },
+    {
+      "id": "keyshia-cole-love",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.3,
+      "seconds8To15Db": -22.3
+    },
+    {
+      "id": "owl-city-good-time",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.8,
+      "seconds8To15Db": -27.5
+    },
+    {
+      "id": "imagine-dragons-radioactive",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.2,
+      "seconds8To15Db": -23.7
+    },
+    {
+      "id": "john-legend-all-of-me",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.1,
+      "seconds8To15Db": -10.8
+    },
+    {
+      "id": "sam-smith-stay-with-me",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.5,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "ed-sheeran-bad-habits",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 1150,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.9,
+      "seconds8To15Db": -13.1
+    },
+    {
+      "id": "ariana-grande-one-last-time",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 700,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.4,
+      "seconds8To15Db": -12
+    },
+    {
+      "id": "panic-at-the-disco-house-of-memories",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 1300,
+      "firstStrongMs": 1950,
+      "firstMusicalMs": 450,
+      "recommendedPlayableMs": 650,
+      "first2SecondsDb": -34.5,
+      "seconds8To15Db": -8.5
+    },
+    {
+      "id": "katy-perry-the-one-that-got-away",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -11.1,
+      "seconds8To15Db": -11.9
+    },
+    {
+      "id": "duncan-laurence-arcade",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.7,
+      "seconds8To15Db": -28.1
+    },
+    {
+      "id": "mkto-classic",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.3,
+      "seconds8To15Db": -13.9
+    },
+    {
+      "id": "edward-maya-stereo-love",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12,
+      "seconds8To15Db": -11
+    },
+    {
+      "id": "katy-perry-firework",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.5,
+      "seconds8To15Db": -15.1
+    },
+    {
+      "id": "katy-perry-teenage-dream",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.2,
+      "seconds8To15Db": -16.9
+    },
+    {
+      "id": "the-wanted-glad-you-came",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.8,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "pitbull-international-love",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.8,
+      "seconds8To15Db": -22.4
+    },
+    {
+      "id": "flo-rida-good-feeling",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.2,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "jason-derulo-whatcha-say",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.5,
+      "seconds8To15Db": -14.9
+    },
+    {
+      "id": "nelly-just-a-dream",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.6,
+      "seconds8To15Db": -15.5
+    },
+    {
+      "id": "justin-bieber-beauty-and-a-beat",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.9,
+      "seconds8To15Db": -14.5
+    },
+    {
+      "id": "sia-cheap-thrills",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27,
+      "seconds8To15Db": -13.9
+    },
+    {
+      "id": "jessie-j-price-tag",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.4,
+      "seconds8To15Db": -11.5
+    },
+    {
+      "id": "jessie-j-domino",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 850,
+      "firstStrongMs": 850,
+      "firstMusicalMs": 800,
+      "recommendedPlayableMs": 200,
+      "first2SecondsDb": -30.4,
+      "seconds8To15Db": -12
+    },
+    {
+      "id": "p-nk-raise-your-glass",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.1,
+      "seconds8To15Db": -17.7
+    },
+    {
+      "id": "fun-some-nights",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.2,
+      "seconds8To15Db": -17.2
+    },
+    {
+      "id": "of-monsters-and-men-little-talks",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.8,
+      "seconds8To15Db": -9.3
+    },
+    {
+      "id": "echosmith-cool-kids",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.7,
+      "seconds8To15Db": -10.2
+    },
+    {
+      "id": "grouplove-tongue-tied",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.9,
+      "seconds8To15Db": -21.7
+    },
+    {
+      "id": "taio-cruz-break-your-heart",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.2,
+      "seconds8To15Db": -11.3
+    },
+    {
+      "id": "akon-right-now-na-na-na",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.6,
+      "seconds8To15Db": -17.9
+    },
+    {
+      "id": "natasha-bedingfield-pocketful-of-sunshine",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.6,
+      "seconds8To15Db": -13.4
+    },
+    {
+      "id": "sara-bareilles-love-song",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.7,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "miley-cyrus-the-climb",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.7,
+      "seconds8To15Db": -19.9
+    },
+    {
+      "id": "avril-lavigne-sk8er-boi",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.7,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "avril-lavigne-girlfriend",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10,
+      "seconds8To15Db": -9.3
+    },
+    {
+      "id": "avril-lavigne-what-the-hell",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.1,
+      "seconds8To15Db": -23.1
+    },
+    {
+      "id": "3oh-3-starstrukk",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -7.8,
+      "seconds8To15Db": -7.7
+    },
+    {
+      "id": "cascada-evacuate-the-dancefloor",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.4,
+      "seconds8To15Db": -9.5
+    },
+    {
+      "id": "cascada-everytime-we-touch",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 650,
+      "firstStrongMs": 1050,
+      "firstMusicalMs": 250,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.6,
+      "seconds8To15Db": -15.1
+    },
+    {
+      "id": "la-roux-bulletproof",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.1,
+      "seconds8To15Db": -9
+    },
+    {
+      "id": "sean-kingston-fire-burning",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.5,
+      "seconds8To15Db": -12.8
+    },
+    {
+      "id": "nelly-dilemma",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.7,
+      "seconds8To15Db": -21.7
+    },
+    {
+      "id": "the-pussycat-dolls-buttons",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.5,
+      "seconds8To15Db": -10.8
+    },
+    {
+      "id": "the-pussycat-dolls-don-t-cha",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15,
+      "seconds8To15Db": -14.8
+    },
+    {
+      "id": "sean-paul-temperature",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.9,
+      "seconds8To15Db": -12.6
+    },
+    {
+      "id": "kevin-rudolf-let-it-rock",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.1,
+      "seconds8To15Db": -9.6
+    },
+    {
+      "id": "aly-potential-breakup-song",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.2,
+      "seconds8To15Db": -17.5
+    },
+    {
+      "id": "drake-forever",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.7,
+      "seconds8To15Db": -10.4
+    },
+    {
+      "id": "young-money-bedrock",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.4,
+      "seconds8To15Db": -15.3
+    },
+    {
+      "id": "nicki-minaj-moment-4-life",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17,
+      "seconds8To15Db": -14.1
+    },
+    {
+      "id": "jesse-mccartney-beautiful-soul",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.2,
+      "seconds8To15Db": -12.1
+    },
+    {
+      "id": "tory-lanez-hurts-me",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20,
+      "seconds8To15Db": -16.4
+    },
+    {
+      "id": "leon-thomas-mutt",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.6,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "kehlani-folded",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.6,
+      "seconds8To15Db": -17.1
+    },
+    {
+      "id": "sza-30-for-30",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -35,
+      "seconds8To15Db": -27.9
+    },
+    {
+      "id": "partynextdoor-die-trying",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.9,
+      "seconds8To15Db": -9.1
+    },
+    {
+      "id": "justin-bieber-yukon",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.8,
+      "seconds8To15Db": -15.4
+    },
+    {
+      "id": "charli-xcx-guess",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9,
+      "seconds8To15Db": -13.9
+    },
+    {
+      "id": "charli-xcx-360",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14,
+      "seconds8To15Db": -6.7
+    },
+    {
+      "id": "sza-bmf",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.3,
+      "seconds8To15Db": -16.3
+    },
+    {
+      "id": "katseye-gabriela",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.1,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "tyla-push-2-start",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "miguel-adorn",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.9,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "summer-walker-playing-games",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.3,
+      "seconds8To15Db": -18.6
+    },
+    {
+      "id": "summer-walker-girls-need-love",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 500,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.3,
+      "seconds8To15Db": -24.8
+    },
+    {
+      "id": "ella-mai-trip",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.7,
+      "seconds8To15Db": -18.7
+    },
+    {
+      "id": "victoria-mon-t-on-my-mama",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.4,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "kehlani-after-hours",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.6,
+      "seconds8To15Db": -5.6
+    },
+    {
+      "id": "ciara-goodies",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 700,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.4,
+      "seconds8To15Db": -12.1
+    },
+    {
+      "id": "ciara-1-2-step",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.9,
+      "seconds8To15Db": -16.6
+    },
+    {
+      "id": "the-all-american-rejects-gives-you-hell",
+      "firstSoundMs": 800,
+      "firstAudibleMs": 800,
+      "firstStrongMs": 3200,
+      "firstMusicalMs": 1150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -41.6,
+      "seconds8To15Db": -26.2
+    },
+    {
+      "id": "daniel-powter-bad-day",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.8,
+      "seconds8To15Db": -19.4
+    },
+    {
+      "id": "paramore-ain-t-it-fun",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "paramore-decode",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 750,
+      "firstStrongMs": 1400,
+      "firstMusicalMs": 250,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.5,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "charli-xcx-boom-clap",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.7,
+      "seconds8To15Db": -10.2
+    },
+    {
+      "id": "onerepublic-good-life",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.4,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "will-i-am-scream-shout",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.1,
+      "seconds8To15Db": -19.5
+    },
+    {
+      "id": "cher-lloyd-want-u-back",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 500,
+      "firstStrongMs": 700,
+      "firstMusicalMs": 200,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.1,
+      "seconds8To15Db": -10
+    },
+    {
+      "id": "lupe-fiasco-the-show-goes-on",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 950,
+      "firstStrongMs": 1700,
+      "firstMusicalMs": 300,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -36.9,
+      "seconds8To15Db": -18.9
+    },
+    {
+      "id": "metro-station-shake-it",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.4,
+      "seconds8To15Db": -12.2
+    },
+    {
+      "id": "one-direction-live-while-we-re-young",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.9,
+      "seconds8To15Db": -14.7
+    },
+    {
+      "id": "one-direction-best-song-ever",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 2300,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.9,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "one-direction-kiss-you",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.3,
+      "seconds8To15Db": -8.8
+    },
+    {
+      "id": "one-direction-one-thing",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.1,
+      "seconds8To15Db": -19.6
+    },
+    {
+      "id": "demi-lovato-give-your-heart-a-break",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.9,
+      "seconds8To15Db": -12.2
+    },
+    {
+      "id": "miley-cyrus-7-things",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 1750,
+      "firstStrongMs": 2450,
+      "firstMusicalMs": 1350,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -48,
+      "seconds8To15Db": -13.6
+    },
+    {
+      "id": "miley-cyrus-see-you-again",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.1,
+      "seconds8To15Db": -9.2
+    },
+    {
+      "id": "selena-gomez-naturally",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.9,
+      "seconds8To15Db": -12.5
+    },
+    {
+      "id": "selena-gomez-who-says",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.2,
+      "seconds8To15Db": -9.5
+    },
+    {
+      "id": "selena-gomez-come-get-it",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19,
+      "seconds8To15Db": -21.3
+    },
+    {
+      "id": "miley-cyrus-can-t-be-tamed",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.8,
+      "seconds8To15Db": -10.1
+    },
+    {
+      "id": "justin-bieber-somebody-to-love",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.1,
+      "seconds8To15Db": -9.3
+    },
+    {
+      "id": "nicki-minaj-pound-the-alarm",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 550,
+      "firstStrongMs": 850,
+      "firstMusicalMs": 200,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.9,
+      "seconds8To15Db": -14.8
+    },
+    {
+      "id": "don-toliver-e85",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.8,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "bryson-tiller-right-my-wrongs",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.6,
+      "seconds8To15Db": -25.3
+    },
+    {
+      "id": "miguel-come-through-and-chill",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.8,
+      "seconds8To15Db": -13.9
+    },
+    {
+      "id": "miguel-sky-walker",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.5,
+      "seconds8To15Db": -12.5
+    },
+    {
+      "id": "brent-faiyaz-poison",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.5,
+      "seconds8To15Db": -23.2
+    },
+    {
+      "id": "brent-faiyaz-been-away",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.9,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "h-e-r-damage",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 950,
+      "firstStrongMs": 1850,
+      "firstMusicalMs": 400,
+      "recommendedPlayableMs": 500,
+      "first2SecondsDb": -35.1,
+      "seconds8To15Db": -17
+    },
+    {
+      "id": "h-e-r-focus",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 1600,
+      "firstStrongMs": 8150,
+      "firstMusicalMs": 1950,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -47.1,
+      "seconds8To15Db": -28.9
+    },
+    {
+      "id": "h-e-r-could-ve-been",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -37.5,
+      "seconds8To15Db": -23.1
+    },
+    {
+      "id": "masego-tadow",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "masego-mystery-lady",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.8,
+      "seconds8To15Db": -22.4
+    },
+    {
+      "id": "pink-sweat-at-my-worst",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.8,
+      "seconds8To15Db": -8.6
+    },
+    {
+      "id": "ella-mai-boo-d-up",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.4,
+      "seconds8To15Db": -11.3
+    },
+    {
+      "id": "tamia-so-into-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.4,
+      "seconds8To15Db": -20.1
+    },
+    {
+      "id": "partynextdoor-her-way",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.3,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "tory-lanez-luv",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.5,
+      "seconds8To15Db": -18.7
+    },
+    {
+      "id": "kaash-paige-love-songs",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.7,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "don-toliver-cardigan",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.5,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "don-toliver-after-party",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.2,
+      "seconds8To15Db": -17.7
+    },
+    {
+      "id": "don-toliver-what-you-need",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.9,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "joji-worldstar-money-interlude",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.7,
+      "seconds8To15Db": -12.7
+    },
+    {
+      "id": "ms-lauryn-hill-ex-factor",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 500,
+      "firstStrongMs": 1150,
+      "firstMusicalMs": 400,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.7,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "tevin-campbell-can-we-talk",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.4,
+      "seconds8To15Db": -15.9
+    },
+    {
+      "id": "onerepublic-i-lived",
+      "firstSoundMs": 1150,
+      "firstAudibleMs": 1150,
+      "firstStrongMs": 1150,
+      "firstMusicalMs": 850,
+      "recommendedPlayableMs": 200,
+      "first2SecondsDb": -23.6,
+      "seconds8To15Db": -19.4
+    },
+    {
+      "id": "mgmt-little-dark-age",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 650,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.7,
+      "seconds8To15Db": -23.8
+    },
+    {
+      "id": "kesha-take-it-off",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.1,
+      "seconds8To15Db": -7.7
+    },
+    {
+      "id": "kesha-blow",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 800,
+      "firstStrongMs": 950,
+      "firstMusicalMs": 1700,
+      "recommendedPlayableMs": 600,
+      "first2SecondsDb": -23.3,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "kesha-we-r-who-we-r",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.7,
+      "seconds8To15Db": -17.9
+    },
+    {
+      "id": "jason-derulo-ridin-solo",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.2,
+      "seconds8To15Db": -10
+    },
+    {
+      "id": "jason-derulo-in-my-head",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.1,
+      "seconds8To15Db": -10.1
+    },
+    {
+      "id": "onerepublic-secrets",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.9,
+      "seconds8To15Db": -20.1
+    },
+    {
+      "id": "usher-scream",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.7,
+      "seconds8To15Db": -22.6
+    },
+    {
+      "id": "black-eyed-peas-boom-boom-pow",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 1000,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31.6,
+      "seconds8To15Db": -22.3
+    },
+    {
+      "id": "black-eyed-peas-just-can-t-get-enough",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.8,
+      "seconds8To15Db": -25.6
+    },
+    {
+      "id": "black-eyed-peas-the-time-dirty-bit",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 1800,
+      "firstMusicalMs": 4850,
+      "recommendedPlayableMs": 50,
+      "first2SecondsDb": -48.3,
+      "seconds8To15Db": -38.9
+    },
+    {
+      "id": "far-east-movement-rocketeer",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.5,
+      "seconds8To15Db": -19.1
+    },
+    {
+      "id": "dnce-cake-by-the-ocean",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.1,
+      "seconds8To15Db": -12.7
+    },
+    {
+      "id": "hot-chelle-rae-tonight-tonight",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 2250,
+      "firstMusicalMs": 1850,
+      "recommendedPlayableMs": 250,
+      "first2SecondsDb": -49.4,
+      "seconds8To15Db": -22.6
+    },
+    {
+      "id": "enrique-iglesias-i-like-it",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.1,
+      "seconds8To15Db": -8.9
+    },
+    {
+      "id": "lmfao-sexy-and-i-know-it",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.9,
+      "seconds8To15Db": -16.3
+    },
+    {
+      "id": "pitbull-hotel-room-service",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.5,
+      "seconds8To15Db": -13
+    },
+    {
+      "id": "pitbull-i-know-you-want-me-calle-ocho",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.5,
+      "seconds8To15Db": -12
+    },
+    {
+      "id": "chris-brown-yeah-3x",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "chris-brown-turn-up-the-music",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.1,
+      "seconds8To15Db": -6.7
+    },
+    {
+      "id": "3oh-3-don-t-trust-me",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -17.1
+    },
+    {
+      "id": "jeremih-don-t-tell-em",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.6,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "tinashe-2-on",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.7,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "jeremih-birthday-sex",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -33.6,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "chris-brown-loyal",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.9,
+      "seconds8To15Db": -13.8
+    },
+    {
+      "id": "rae-sremmurd-no-type",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.4,
+      "seconds8To15Db": -28.7
+    },
+    {
+      "id": "rae-sremmurd-come-get-her",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24,
+      "seconds8To15Db": -12.6
+    },
+    {
+      "id": "rae-sremmurd-swang",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25,
+      "seconds8To15Db": -21.9
+    },
+    {
+      "id": "kent-jones-don-t-mind",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.8,
+      "seconds8To15Db": -12.8
+    },
+    {
+      "id": "drake-controlla",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -33.9,
+      "seconds8To15Db": -29.4
+    },
+    {
+      "id": "drake-crew-love",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13,
+      "seconds8To15Db": -13.8
+    },
+    {
+      "id": "drake-chicago-freestyle",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.1,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "j-cole-love-yourz",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.4,
+      "seconds8To15Db": -28.3
+    },
+    {
+      "id": "j-cole-power-trip",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.3,
+      "seconds8To15Db": -17.6
+    },
+    {
+      "id": "j-cole-she-knows",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.7,
+      "seconds8To15Db": -22.8
+    },
+    {
+      "id": "lil-uzi-vert-money-longer",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15,
+      "seconds8To15Db": -15.3
+    },
+    {
+      "id": "jhen-aiko-sativa",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.9,
+      "seconds8To15Db": -25.1
+    },
+    {
+      "id": "jhen-aiko-the-worst",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19,
+      "seconds8To15Db": -10
+    },
+    {
+      "id": "jhen-aiko-bed-peace",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.6,
+      "seconds8To15Db": -15.1
+    },
+    {
+      "id": "ari-lennox-shea-butter-baby",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.1,
+      "seconds8To15Db": -19.5
+    },
+    {
+      "id": "jhen-aiko-p-y-fairy-otw",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.2,
+      "seconds8To15Db": -12.4
+    },
+    {
+      "id": "jhen-aiko-while-we-re-young",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.8,
+      "seconds8To15Db": -14.4
+    },
+    {
+      "id": "jeremih-oui",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -30.5,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "jeremih-planez",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.6,
+      "seconds8To15Db": -12.7
+    },
+    {
+      "id": "tyler-best-interest",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -11.7,
+      "seconds8To15Db": -12.5
+    },
+    {
+      "id": "pinkpantheress-stateside-zara-larsson",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.1,
+      "seconds8To15Db": -6.5
+    },
+    {
+      "id": "olivia-dean-so-easy-to-fall-in-love",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21,
+      "seconds8To15Db": -12.3
+    },
+    {
+      "id": "sienna-spiro-die-on-this-hill",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 2600,
+      "firstStrongMs": 2600,
+      "firstMusicalMs": 2100,
+      "recommendedPlayableMs": 950,
+      "first2SecondsDb": -20.8,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "ariana-grande-hate-that-i-made-you-love-me",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "rihanna-breakin-dishes",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -6.1,
+      "seconds8To15Db": -6.2
+    },
+    {
+      "id": "rihanna-rude-boy",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.9,
+      "seconds8To15Db": -12.7
+    },
+    {
+      "id": "timbaland-give-it-to-me",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 550,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -35.3,
+      "seconds8To15Db": -17
+    },
+    {
+      "id": "black-eyed-peas-don-t-phunk-with-my-heart",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.3,
+      "seconds8To15Db": -17.6
+    },
+    {
+      "id": "olivia-rodrigo-drop-dead",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24,
+      "seconds8To15Db": -23.6
+    },
+    {
+      "id": "bruno-mars-i-just-might",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.2,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "drake-janice-stfu",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.2,
+      "seconds8To15Db": -9.9
+    },
+    {
+      "id": "tame-impala-dracula",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.9,
+      "seconds8To15Db": -19.9
+    },
+    {
+      "id": "steve-lacy-oh-yeah",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.3,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "charli-xcx-party-4-u",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.5,
+      "seconds8To15Db": -24.5
+    },
+    {
+      "id": "wizthemc-show-me-love",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 600,
+      "firstStrongMs": 850,
+      "firstMusicalMs": 250,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.5,
+      "seconds8To15Db": -12.7
+    },
+    {
+      "id": "lil-tecca-dark-thoughts",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -5.1,
+      "seconds8To15Db": -17.5
+    },
+    {
+      "id": "tyler-darling-i",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.4,
+      "seconds8To15Db": -16.8
+    },
+    {
+      "id": "lewis-capaldi-someone-you-loved",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.3,
+      "seconds8To15Db": -12.8
+    },
+    {
+      "id": "post-malone-sunflower",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 600,
+      "firstStrongMs": 1250,
+      "firstMusicalMs": 450,
+      "recommendedPlayableMs": 200,
+      "first2SecondsDb": -40.2,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "ed-sheeran-perfect",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 600,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26.1,
+      "seconds8To15Db": -15.5
+    },
+    {
+      "id": "arctic-monkeys-i-wanna-be-yours",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 750,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31.4,
+      "seconds8To15Db": -18.3
+    },
+    {
+      "id": "billie-eilish-lovely-with-khalid",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 800,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.4,
+      "seconds8To15Db": -18.7
+    },
+    {
+      "id": "vance-joy-riptide",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.6,
+      "seconds8To15Db": -20.1
+    },
+    {
+      "id": "the-chainsmokers-something-just-like-this",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.3,
+      "seconds8To15Db": -18.2
+    },
+    {
+      "id": "james-arthur-say-you-won-t-let-go",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.9,
+      "seconds8To15Db": -16.3
+    },
+    {
+      "id": "the-police-every-breath-you-take",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.9,
+      "seconds8To15Db": -21.3
+    },
+    {
+      "id": "onerepublic-counting-stars",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.7,
+      "seconds8To15Db": -15.6
+    },
+    {
+      "id": "hozier-take-me-to-church",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.3,
+      "seconds8To15Db": -14.7
+    },
+    {
+      "id": "tones-and-i-dance-monkey",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.5,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "ed-sheeran-photograph",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -19.4
+    },
+    {
+      "id": "taylor-swift-cruel-summer",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.8,
+      "seconds8To15Db": -9.4
+    },
+    {
+      "id": "macklemore-can-t-hold-us-feat-ray-dalton",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.5,
+      "seconds8To15Db": -13.2
+    },
+    {
+      "id": "bruno-mars-just-the-way-you-are",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -21.2
+    },
+    {
+      "id": "the-weeknd-die-for-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.1,
+      "seconds8To15Db": -15.5
+    },
+    {
+      "id": "bruno-mars-locked-out-of-heaven",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 2050,
+      "firstMusicalMs": 1500,
+      "recommendedPlayableMs": 700,
+      "first2SecondsDb": -15.7,
+      "seconds8To15Db": -11.5
+    },
+    {
+      "id": "justin-bieber-love-yourself",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.6,
+      "seconds8To15Db": -15.9
+    },
+    {
+      "id": "linkin-park-in-the-end",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.3,
+      "seconds8To15Db": -21.9
+    },
+    {
+      "id": "bruno-mars-when-i-was-your-man",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.3,
+      "seconds8To15Db": -23.6
+    },
+    {
+      "id": "travis-scott-goosebumps",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.7,
+      "seconds8To15Db": -22.6
+    },
+    {
+      "id": "juice-wrld-lucid-dreams",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.5,
+      "seconds8To15Db": -16.4
+    },
+    {
+      "id": "ed-sheeran-thinking-out-loud",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24,
+      "seconds8To15Db": -24.8
+    },
+    {
+      "id": "avicii-wake-me-up",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.6,
+      "seconds8To15Db": -13.2
+    },
+    {
+      "id": "lady-gaga-shallow",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.8,
+      "seconds8To15Db": -26.1
+    },
+    {
+      "id": "drake-god-s-plan",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.4,
+      "seconds8To15Db": -23.7
+    },
+    {
+      "id": "dj-snake-let-me-love-you",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -11,
+      "seconds8To15Db": -9.6
+    },
+    {
+      "id": "the-weeknd-the-hills",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15,
+      "seconds8To15Db": -16.1
+    },
+    {
+      "id": "twenty-one-pilots-stressed-out",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.5,
+      "seconds8To15Db": -10.5
+    },
+    {
+      "id": "imagine-dragons-demons",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.3,
+      "seconds8To15Db": -20.5
+    },
+    {
+      "id": "imagine-dragons-thunder",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9.4,
+      "seconds8To15Db": -10.1
+    },
+    {
+      "id": "arctic-monkeys-do-i-wanna-know",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.7,
+      "seconds8To15Db": -12.5
+    },
+    {
+      "id": "j-cole-no-role-modelz",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.2,
+      "seconds8To15Db": -20.2
+    },
+    {
+      "id": "justin-bieber-sorry",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.4,
+      "seconds8To15Db": -11.6
+    },
+    {
+      "id": "kendrick-lamar-humble",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.8,
+      "seconds8To15Db": -6.6
+    },
+    {
+      "id": "french-montana-unforgettable",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -9,
+      "seconds8To15Db": -10.7
+    },
+    {
+      "id": "eminem-lose-yourself",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 750,
+      "firstStrongMs": 800,
+      "firstMusicalMs": 400,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.4,
+      "seconds8To15Db": -20.2
+    },
+    {
+      "id": "miley-cyrus-flowers",
+      "firstSoundMs": 3700,
+      "firstAudibleMs": 3800,
+      "firstStrongMs": 3800,
+      "firstMusicalMs": 3450,
+      "recommendedPlayableMs": 2850,
+      "first2SecondsDb": -24.3,
+      "seconds8To15Db": -11
+    },
+    {
+      "id": "shawn-mendes-treat-you-better",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.6,
+      "seconds8To15Db": -15.4
+    },
+    {
+      "id": "coldplay-the-scientist",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.4,
+      "seconds8To15Db": -20
+    },
+    {
+      "id": "olivia-rodrigo-drivers-license",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.8,
+      "seconds8To15Db": -18.8
+    },
+    {
+      "id": "ariana-grande-7-rings",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.1,
+      "seconds8To15Db": -19.3
+    },
+    {
+      "id": "passenger-let-her-go",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.1,
+      "seconds8To15Db": -18.7
+    },
+    {
+      "id": "shawn-mendes-there-s-nothing-holdin-me-back",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -11.4,
+      "seconds8To15Db": -12.5
+    },
+    {
+      "id": "linkin-park-numb",
+      "firstSoundMs": 550,
+      "firstAudibleMs": 1100,
+      "firstStrongMs": 2450,
+      "firstMusicalMs": 600,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -38.6,
+      "seconds8To15Db": -15
+    },
+    {
+      "id": "the-weeknd-save-your-tears",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.7,
+      "seconds8To15Db": -15.5
+    },
+    {
+      "id": "elton-john-cold-heart",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -33.4,
+      "seconds8To15Db": -10.9
+    },
+    {
+      "id": "guns-n-roses-sweet-child-o-mine",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.5,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "maroon-5-payphone",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "queen-don-t-stop-me-now",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.7,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "olivia-rodrigo-good-4-u",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.7,
+      "seconds8To15Db": -13.5
+    },
+    {
+      "id": "adele-someone-like-you",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.3,
+      "seconds8To15Db": -24.2
+    },
+    {
+      "id": "charlie-puth-we-don-t-talk-anymore-feat-selena-gomez",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 650,
+      "firstStrongMs": 650,
+      "firstMusicalMs": 350,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.7,
+      "seconds8To15Db": -16.3
+    },
+    {
+      "id": "travis-scott-sicko-mode",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.3,
+      "seconds8To15Db": -16.8
+    },
+    {
+      "id": "one-direction-night-changes",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.6,
+      "seconds8To15Db": -15.3
+    },
+    {
+      "id": "dua-lipa-new-rules",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.4,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "keane-somewhere-only-we-know",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 500,
+      "firstStrongMs": 650,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.6,
+      "seconds8To15Db": -8.8
+    },
+    {
+      "id": "xxxtentacion-sad",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.6,
+      "seconds8To15Db": -22.8
+    },
+    {
+      "id": "lil-uzi-vert-xo-tour-llif3",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.6,
+      "seconds8To15Db": -28.6
+    },
+    {
+      "id": "sam-smith-too-good-at-goodbyes",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.9,
+      "seconds8To15Db": -21.4
+    },
+    {
+      "id": "rihanna-we-found-love",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -27.7,
+      "seconds8To15Db": -20.6
+    },
+    {
+      "id": "billie-eilish-when-the-party-s-over",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.2,
+      "seconds8To15Db": -17.2
+    },
+    {
+      "id": "xxxtentacion-jocelyn-flores",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.7,
+      "seconds8To15Db": -25.8
+    },
+    {
+      "id": "shawn-mendes-stitches",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.6,
+      "seconds8To15Db": -19.8
+    },
+    {
+      "id": "eminem-mockingbird",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.7,
+      "seconds8To15Db": -10.9
+    },
+    {
+      "id": "charlie-puth-attention",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.8,
+      "seconds8To15Db": -17.8
+    },
+    {
+      "id": "maroon-5-memories",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.6,
+      "seconds8To15Db": -13.4
+    },
+    {
+      "id": "foster-the-people-pumped-up-kicks",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.1,
+      "seconds8To15Db": -10.9
+    },
+    {
+      "id": "adele-easy-on-me",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.9,
+      "seconds8To15Db": -17.1
+    },
+    {
+      "id": "lewis-capaldi-before-you-go",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.6,
+      "seconds8To15Db": -11.7
+    },
+    {
+      "id": "taylor-swift-blank-space",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26,
+      "seconds8To15Db": -14.2
+    },
+    {
+      "id": "jason-mraz-i-m-yours",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.2,
+      "seconds8To15Db": -19.4
+    },
+    {
+      "id": "queen-another-one-bites-the-dust",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -20.7
+    },
+    {
+      "id": "the-weeknd-call-out-my-name",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.3,
+      "seconds8To15Db": -18
+    },
+    {
+      "id": "mike-posner-i-took-a-pill-in-ibiza",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.4,
+      "seconds8To15Db": -14.2
+    },
+    {
+      "id": "creedence-clearwater-revival-have-you-ever-seen-the-rain",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17,
+      "seconds8To15Db": -13.2
+    },
+    {
+      "id": "wiz-khalifa-see-you-again-feat-charlie-puth",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 50,
+      "firstStrongMs": 50,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.3,
+      "seconds8To15Db": -26.7
+    },
+    {
+      "id": "alan-walker-faded",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.2,
+      "seconds8To15Db": -16.9
+    },
+    {
+      "id": "maroon-5-maps",
+      "firstSoundMs": 350,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 350,
+      "firstMusicalMs": 50,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.5,
+      "seconds8To15Db": -22.6
+    },
+    {
+      "id": "david-guetta-i-m-good-blue",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -10.7,
+      "seconds8To15Db": -9.8
+    },
+    {
+      "id": "xxxtentacion-moonlight",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.1,
+      "seconds8To15Db": -15.2
+    },
+    {
+      "id": "adele-rolling-in-the-deep",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.7,
+      "seconds8To15Db": -9.5
+    },
+    {
+      "id": "avicii-the-nights",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 600,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.9,
+      "seconds8To15Db": -10.8
+    },
+    {
+      "id": "roddy-ricch-the-box",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 350,
+      "firstStrongMs": 700,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -32.5,
+      "seconds8To15Db": -20.5
+    },
+    {
+      "id": "gorillaz-feel-good-inc",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -29.9,
+      "seconds8To15Db": -12
+    },
+    {
+      "id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.7,
+      "seconds8To15Db": -15.8
+    },
+    {
+      "id": "walk-the-moon-shut-up-and-dance",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18,
+      "seconds8To15Db": -8.6
+    },
+    {
+      "id": "the-walters-i-love-you-so",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.7,
+      "seconds8To15Db": -24.3
+    },
+    {
+      "id": "conan-gray-heather",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28.3,
+      "seconds8To15Db": -17.9
+    },
+    {
+      "id": "post-malone-congratulations",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -22.4,
+      "seconds8To15Db": -18.4
+    },
+    {
+      "id": "adele-set-fire-to-the-rain",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.6,
+      "seconds8To15Db": -16.5
+    },
+    {
+      "id": "lana-del-rey-summertime-sadness",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 11350,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -37.3,
+      "seconds8To15Db": -34.3
+    },
+    {
+      "id": "olivia-rodrigo-traitor",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.7,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "maroon-5-sugar",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -24.4,
+      "seconds8To15Db": -16.1
+    },
+    {
+      "id": "ruth-b-dandelions",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.9,
+      "seconds8To15Db": -15.7
+    },
+    {
+      "id": "ac-dc-highway-to-hell",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -34.5,
+      "seconds8To15Db": -18.2
+    },
+    {
+      "id": "lauv-i-like-me-better",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -23.8,
+      "seconds8To15Db": -13.3
+    },
+    {
+      "id": "onerepublic-i-ain-t-worried",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19,
+      "seconds8To15Db": -12.8
+    },
+    {
+      "id": "david-guetta-titanium-feat-sia",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.2,
+      "seconds8To15Db": -20.1
+    },
+    {
+      "id": "olivia-rodrigo-deja-vu",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -20.8,
+      "seconds8To15Db": -19
+    },
+    {
+      "id": "travis-scott-highest-in-the-room",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.3,
+      "seconds8To15Db": -14.4
+    },
+    {
+      "id": "justin-bieber-ghost",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19.3,
+      "seconds8To15Db": -9.8
+    },
+    {
+      "id": "christina-perri-a-thousand-years",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -31,
+      "seconds8To15Db": -27.1
+    },
+    {
+      "id": "calvin-harris-this-is-what-you-came-for",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -18.3,
+      "seconds8To15Db": -16.7
+    },
+    {
+      "id": "sia-chandelier",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.3,
+      "seconds8To15Db": -18.2
+    },
+    {
+      "id": "post-malone-better-now",
+      "firstSoundMs": 450,
+      "firstAudibleMs": 450,
+      "firstStrongMs": 450,
+      "firstMusicalMs": 150,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -13.2,
+      "seconds8To15Db": -10.9
+    },
+    {
+      "id": "bon-jovi-livin-on-a-prayer",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 1700,
+      "firstStrongMs": 5400,
+      "firstMusicalMs": 950,
+      "recommendedPlayableMs": 800,
+      "first2SecondsDb": -39.6,
+      "seconds8To15Db": -13.8
+    },
+    {
+      "id": "tate-mcrae-greedy",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -9.1
+    },
+    {
+      "id": "drake-passionfruit",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -14.6,
+      "seconds8To15Db": -14.3
+    },
+    {
+      "id": "ac-dc-thunderstruck",
+      "firstSoundMs": 500,
+      "firstAudibleMs": 550,
+      "firstStrongMs": 550,
+      "firstMusicalMs": 200,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -25.9,
+      "seconds8To15Db": -24.2
+    },
+    {
+      "id": "ariana-grande-thank-u-next",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.9,
+      "seconds8To15Db": -11.8
+    },
+    {
+      "id": "eminem-love-the-way-you-lie",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.5,
+      "seconds8To15Db": -21.6
+    },
+    {
+      "id": "wham-last-christmas",
+      "firstSoundMs": 400,
+      "firstAudibleMs": 400,
+      "firstStrongMs": 400,
+      "firstMusicalMs": 100,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -28,
+      "seconds8To15Db": -23.9
+    },
+    {
+      "id": "kendrick-lamar-money-trees",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -26,
+      "seconds8To15Db": -25
+    },
+    {
+      "id": "the-weeknd-i-feel-it-coming",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21.2,
+      "seconds8To15Db": -18.2
+    },
+    {
+      "id": "m-neskin-beggin",
+      "firstSoundMs": 300,
+      "firstAudibleMs": 300,
+      "firstStrongMs": 300,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -12.7,
+      "seconds8To15Db": -17.4
+    },
+    {
+      "id": "billie-eilish-ocean-eyes",
+      "firstSoundMs": 50,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -19,
+      "seconds8To15Db": -18.4
+    },
+    {
+      "id": "harry-styles-sign-of-the-times",
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 0,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21,
+      "seconds8To15Db": -22.9
+    },
+    {
+      "id": "the-white-stripes-seven-nation-army",
+      "firstSoundMs": 100,
+      "firstAudibleMs": 100,
+      "firstStrongMs": 100,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -15.9,
+      "seconds8To15Db": -11.1
+    },
+    {
+      "id": "rihanna-love-on-the-brain",
+      "firstSoundMs": 250,
+      "firstAudibleMs": 250,
+      "firstStrongMs": 250,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -8.8,
+      "seconds8To15Db": -9.2
+    },
+    {
+      "id": "omi-cheerleader-felix-jaehn-remix",
+      "firstSoundMs": 200,
+      "firstAudibleMs": 200,
+      "firstStrongMs": 200,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.6,
+      "seconds8To15Db": -16.2
+    },
+    {
+      "id": "the-weeknd-can-t-feel-my-face",
+      "firstSoundMs": 150,
+      "firstAudibleMs": 150,
+      "firstStrongMs": 150,
+      "firstMusicalMs": 0,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -17.8,
+      "seconds8To15Db": -13.3
+    }
+  ]
+}

@@ -1,9 +1,12 @@
 import { existsSync, readFileSync, writeFileSync, copyFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createScorer } from "./provisional-scoring.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
+const longlistFile = path.join(root, "data", "song-longlist.json");
+const introFeaturesFile = path.join(root, "data", "intro-audio-features.json");
 const catalogFile = path.join(root, "public", "catalog.json");
 const backupFile = path.join(root, "public", "catalog-demo-backup.json");
 
@@ -26,25 +29,18 @@ const songs = candidateRoot.songs.filter(
 );
 
 
-// For songs without intro scores yet, use familiarity alone as a provisional ease
-const withEase = songs.map((s) => {
-  const introRecog = s.introRecognition ?? null;
-  const easeScore =
-    introRecog !== null
-      ? Math.round(((s.familiarity + introRecog) / 2) * 10) / 10
-      : s.familiarity; // use familiarity as provisional ease when intro not yet reviewed
-  return { song: s, easeScore, hasIntroReview: introRecog !== null };
-});
+const longlist = JSON.parse(readFileSync(longlistFile, "utf8"));
+const introFeatures = existsSync(introFeaturesFile)
+  ? JSON.parse(readFileSync(introFeaturesFile, "utf8"))
+  : { songs: [] };
+const scoreSong = createScorer(longlist, introFeatures);
+const withEase = songs.map((song) => ({ song, ...scoreSong(song) }));
 
 // Sort by ease descending
-withEase.sort((a, b) => b.easeScore - a.easeScore);
-
-const bands = ["easy", "medium", "hard", "expert", "impossible"];
-const bandSize = Math.ceil(withEase.length / bands.length);
+withEase.sort((a, b) => b.easeScore - a.easeScore || a.song.title.localeCompare(b.song.title));
 
 const catalog = withEase.map((entry, index) => {
   const s = entry.song;
-  const difficulty = bands[Math.min(bands.length - 1, Math.floor(index / bandSize))];
   const artwork = s.media.artworkUrl || undefined;
 
   return {
@@ -57,10 +53,14 @@ const catalog = withEase.map((entry, index) => {
     ...(s.spotifyUrl ? { spotifyUrl: s.spotifyUrl } : {}),
     releaseYear: s.releaseYear,
     genres: s.genres,
-    difficulty,
+    difficulty: entry.difficulty,
     familiarity: s.familiarity,
-    ...(s.introRecognition !== null ? { introRecognition: s.introRecognition } : {}),
+    recognitionScore: entry.recognitionScore,
+    streamReachScore: entry.streamReachScore,
+    genZRelevanceScore: entry.genZRelevanceScore,
+    introRecognition: entry.introRecognition,
     startAtMs: s.startAtMs ?? s.media?.onsetPadMs ?? 30,
+    ...(s.clueGainDb != null ? { clueGainDb: s.clueGainDb } : {}),
     ...(s.hookStartMs != null ? { hookStartMs: s.hookStartMs } : {}),
     ...(artwork ? { artwork } : {}),
     audio: {
@@ -70,7 +70,7 @@ const catalog = withEase.map((entry, index) => {
       durationMs: s.media.hostedDurationMs,
     },
     _provisional: true,
-    _provisionalMethod: entry.hasIntroReview ? "ease_score" : "familiarity_only",
+    _provisionalMethod: entry.introScoreMethod,
     _easeScore: entry.easeScore,
     _rank: index + 1,
   };
@@ -82,17 +82,17 @@ for (const entry of catalog) counts[entry.difficulty] = (counts[entry.difficulty
 
 console.log("\n=== Provisional Catalogue ===");
 console.log(`Total songs: ${songs.length}`);
-console.log(`Method: quantile calibration (even buckets)`);
+console.log(`Method: absolute 50% recognition + 50% intro thresholds`);
 console.log(`  easy      : ${counts.easy}`);
 console.log(`  medium    : ${counts.medium}`);
 console.log(`  hard      : ${counts.hard}`);
 console.log(`  expert    : ${counts.expert}`);
 console.log(`  impossible: ${counts.impossible}`);
 
-const withIntro = withEase.filter((e) => e.hasIntroReview).length;
+const withIntro = withEase.filter((e) => e.introScoreMethod === "reviewed").length;
 const withoutIntro = withEase.length - withIntro;
 console.log(`\nIntro reviewed: ${withIntro}`);
-console.log(`Familiarity-only (provisional): ${withoutIntro}`);
+console.log(`Waveform-estimated intros (provisional): ${withoutIntro}`);
 console.log(`\nEase score range: ${withEase[withEase.length - 1].easeScore} – ${withEase[0].easeScore}`);
 
 // (Band boundaries removed because we now use absolute thresholds)
@@ -103,6 +103,6 @@ if (dryRun) {
   writeFileSync(catalogFile, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
   console.log(`\nWrote provisional catalogue to ${path.basename(catalogFile)}.`);
   console.log("⚠ This is a PROVISIONAL catalogue for testing only.");
-  console.log("  Difficulties are quantile-calibrated and will change after intro review.");
+  console.log("  Unreviewed intro scores are deterministic waveform estimates and may change after play-testing.");
   console.log("  Run npm run promote:songs after all intro reviews are complete.");
 }

@@ -8,6 +8,8 @@ The center game card is the primary surface. Difficulty controls and settings su
 
 The play glyph, skip icon, settings icons, and side actions use SVG artwork so their edges remain complete and smooth at every size. Optical centering is judged from the rendered shape, especially for asymmetric play and skip symbols.
 
+Hosted clue loading replaces the play glyph with an inline-SVG progress ring and exposes `aria-busy` until decoded playback starts. The audio loader retries brief network, rate-limit, and server failures while keeping the same round position; the pending control remains clickable so the player can cancel without waiting for the request timeout.
+
 ## Stage configuration
 
 The stage pills toggle the durations used by the round. The timeline keeps a stable node for every available duration and animates each enabled segment between zero and its weighted width. This lets neighboring segments slide into their new positions when a duration is added or removed.
@@ -26,7 +28,7 @@ Skipping or submitting a wrong answer silently unlocks the next interval without
 
 The visible result group—not an oversized invisible wrapper—is centered in the game card.
 
-Entering either win or loss stops clue playback and immediately continues the same track from the furthest timestamp actually reached. Starting a new round, rerolling, or changing difficulty stops that reveal playback.
+Entering either win or loss stops clue playback and immediately restarts the selected song intro or hook from game-time zero. It must never inherit the 15-second clue position. Starting a new round, rerolling, or changing difficulty stops that reveal playback.
 
 Loss sequence:
 
