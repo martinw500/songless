@@ -565,6 +565,26 @@ async function run() {
       `Timeline fill did not replay from the first stage boundary (${JSON.stringify(playing)}).`);
     console.log("PASS Skip stays silent; Play continues 2-8s; next Play replays 0-8s");
 
+    const liveVolume = await client.evaluate(`(() => {
+      const input = document.querySelector('input[aria-label="Volume"]');
+      const before = Number(document.querySelector('.stage-playback-progress').dataset.elapsed);
+      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+      setter.call(input, '1.6');
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+      return { before };
+    })()`);
+    await delay(150);
+    const liveVolumeState = await client.evaluate(`({
+      value: Number(document.querySelector('input[aria-label="Volume"]').value),
+      isPlaying: document.querySelector('.play-button').classList.contains('playing'),
+      elapsed: Number(document.querySelector('.stage-playback-progress').dataset.elapsed),
+    })`);
+    assert(liveVolumeState.value === 1.6 && liveVolumeState.isPlaying
+      && liveVolumeState.elapsed > liveVolume.before,
+    `Changing volume interrupted active playback (${JSON.stringify(liveVolumeState)}).`);
+    console.log("PASS volume changes apply without restarting active playback");
+
     if (saveArtifacts) {
       const artifactDirectory = path.join(root, ".ui-audit");
       mkdirSync(artifactDirectory, { recursive: true });

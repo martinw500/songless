@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { AudioEngine } from "../src/lib/audio.ts";
 
-test("hosted reveal streams the complete R2 file from game-time zero", async (context) => {
+test("hosted reveal streams from game-time zero and responds to live volume changes", async (context) => {
   const originalAudio = globalThis.Audio;
   const originalMediaElement = globalThis.HTMLMediaElement;
   const originalAudioContext = globalThis.AudioContext;
@@ -65,6 +65,9 @@ test("hosted reveal streams the complete R2 file from game-time zero", async (co
   assert.equal(media.src, song.audio.fullSrc);
   assert.ok(Math.abs(media.currentTime - 2.4) < 0.000001);
   assert.equal(mediaGain.gain.value, 0.7);
+  assert.equal(media.paused, false);
+  engine.setVolume(1.6);
+  assert.equal(mediaGain.gain.value, 1.6);
   assert.equal(media.paused, false);
   engine.stop();
   assert.equal(media.paused, true);

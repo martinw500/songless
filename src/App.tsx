@@ -166,6 +166,7 @@ function App() {
 
   useEffect(() => {
     window.localStorage.setItem("songless-volume-v2", String(volume));
+    audioEngine.current.setVolume(volume);
   }, [volume]);
 
   useEffect(() => {

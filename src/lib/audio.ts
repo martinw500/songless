@@ -7,10 +7,17 @@ const BUFFER_RETRY_DELAYS_MS = [0, 350, 900] as const;
 
 export class AudioEngine {
   private context: AudioContext | null = null;
+  private masterGain: GainNode | null = null;
   private activeNodes: AudioScheduledSourceNode[] = [];
   private buffers = new Map<string, AudioBuffer>();
   private playbackId = 0;
   private media: HTMLAudioElement | null = null;
+  private volume = 1;
+
+  setVolume(volume: number): void {
+    this.volume = Math.min(5, Math.max(0, Number.isFinite(volume) ? volume : 1));
+    if (this.masterGain) this.masterGain.gain.value = this.volume;
+  }
 
   stop(): void {
     this.playbackId += 1;
@@ -39,6 +46,7 @@ export class AudioEngine {
 
     const context = await this.getContext();
     if (playbackId !== this.playbackId) return 0;
+    this.setVolume(volume);
 
     if (song.audio.kind === "file" || song.audio.kind === "hosted") {
       let sourceUrl = song.audio.kind === "file" ? song.audio.src : song.audio.clueSrc;
@@ -56,7 +64,7 @@ export class AudioEngine {
       if (actualDuration <= 0) {
         throw new Error("The configured playback range is past the end of the audio file.");
       }
-      const gain = this.createGain(context, now, actualDuration, volume, song.clueGainDb ?? 0);
+      const gain = this.createGain(context, now, actualDuration, song.clueGainDb ?? 0);
       const source = context.createBufferSource();
       source.buffer = buffer;
       source.connect(gain);
@@ -67,7 +75,7 @@ export class AudioEngine {
 
     const now = context.currentTime;
     const end = now + requestedDuration;
-    const gain = this.createGain(context, now, requestedDuration, volume);
+    const gain = this.createGain(context, now, requestedDuration);
     const noteLength = Math.max(0.08, (song.audio.noteLengthMs ?? 350) / 1000);
     const notes = song.audio.notes.length > 0 ? song.audio.notes : [440];
     let cursor = now;
@@ -106,22 +114,19 @@ export class AudioEngine {
       const playbackId = this.playbackId;
       const context = await this.getContext();
       if (playbackId !== this.playbackId) return 0;
+      this.setVolume(volume);
 
       const media = new Audio();
       media.preload = "auto";
       media.crossOrigin = "anonymous";
       
       const source = context.createMediaElementSource(media);
-      const gain = context.createGain();
-      gain.gain.value = volume;
-      source.connect(gain);
-      gain.connect(context.destination);
+      source.connect(this.getMasterGain(context));
 
       // Add a dummy node to disconnect the graph on stop
       const disconnectNode = {
         stop: () => {
           source.disconnect();
-          gain.disconnect();
         }
       } as any;
       this.activeNodes.push(disconnectNode);
@@ -147,6 +152,7 @@ export class AudioEngine {
     const playbackId = this.playbackId;
     const context = await this.getContext();
     if (playbackId !== this.playbackId) return 0;
+    this.setVolume(volume);
     const buffer = await this.loadBuffer(song.audio.src, context);
     if (playbackId !== this.playbackId) return 0;
     const offset = Math.max(0, (song.startAtMs ?? 0) / 1000 + Math.max(0, startSeconds));
@@ -154,7 +160,7 @@ export class AudioEngine {
     if (actualDuration <= 0) throw new Error("The reveal starts past the end of the audio file.");
 
     const now = context.currentTime;
-    const gain = this.createGain(context, now, actualDuration, volume);
+    const gain = this.createGain(context, now, actualDuration);
     const source = context.createBufferSource();
     source.buffer = buffer;
     source.connect(gain);
@@ -167,11 +173,10 @@ export class AudioEngine {
     context: AudioContext,
     now: number,
     durationSeconds: number,
-    volume: number,
     boostDb = 0,
   ): GainNode {
     const gain = context.createGain();
-    const adjustedVolume = volume * 10 ** (Math.max(0, boostDb) / 20);
+    const adjustedVolume = 10 ** (Math.max(0, boostDb) / 20);
     const end = now + durationSeconds;
     const fade = Math.min(MIN_FADE_SECONDS, durationSeconds / 3);
     gain.gain.setValueAtTime(0, now);
@@ -186,11 +191,20 @@ export class AudioEngine {
       limiter.attack.value = 0.002;
       limiter.release.value = 0.18;
       gain.connect(limiter);
-      limiter.connect(context.destination);
+      limiter.connect(this.getMasterGain(context));
     } else {
-      gain.connect(context.destination);
+      gain.connect(this.getMasterGain(context));
     }
     return gain;
+  }
+
+  private getMasterGain(context: AudioContext): GainNode {
+    if (!this.masterGain) {
+      this.masterGain = context.createGain();
+      this.masterGain.gain.value = this.volume;
+      this.masterGain.connect(context.destination);
+    }
+    return this.masterGain;
   }
 
   private async getContext(): Promise<AudioContext> {
