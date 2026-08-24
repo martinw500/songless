@@ -30,6 +30,8 @@ The visible result group—not an oversized invisible wrapper—is centered in t
 
 Entering either win or loss stops clue playback and immediately restarts the selected song intro or hook from game-time zero. It must never inherit the 15-second clue position. Starting a new round, rerolling, or changing difficulty stops that reveal playback.
 
+Artwork is optional and must follow the current song identity. Each changed song creates a fresh image request; missing, throttled, or failed artwork renders the stable fallback instead of retaining decoded pixels from the previous cover. Search-result thumbnails load lazily to avoid unnecessary R2 request bursts.
+
 Loss sequence:
 
 1. The game card receives a red wash.

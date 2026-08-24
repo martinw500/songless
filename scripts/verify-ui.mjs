@@ -794,6 +794,7 @@ async function run() {
       genres: ["pop"],
       difficulty: "easy",
       familiarity: 85,
+      artwork: "/missing-artwork-fixture.jpg",
       audio: {
         kind: "hosted",
         clueSrc: "https://media.invalid/audio/clues/hosted-review-fixture.mp3",
@@ -831,12 +832,14 @@ async function run() {
       artist: document.querySelector('.result-artist')?.textContent.replace(/\\s+/g, ' ').trim(),
       metadataHref: document.querySelector('.result-source-link')?.href ?? "",
       artworkFallback: Boolean(document.querySelector('.result-panel .artwork.fallback')),
+      artworkId: document.querySelector('.result-panel .artwork')?.dataset.artworkId ?? "",
       overflow: document.documentElement.scrollWidth - window.innerWidth,
     })`);
     assert(hostedResult.title === "A Deliberately Long International Review Title" &&
       hostedResult.artist.includes("Primary Artist, Featured Artist") &&
       hostedResult.artist.includes("A Long Album Name for Result Layout") &&
-      hostedResult.metadataHref.includes("open.spotify.com/track/") && hostedResult.artworkFallback,
+      hostedResult.metadataHref.includes("open.spotify.com/track/") && hostedResult.artworkFallback &&
+      hostedResult.artworkId === "hosted-review-fixture",
     `Hosted result metadata or artwork fallback is incomplete (${JSON.stringify(hostedResult)}).`);
     assert(hostedResult.overflow <= 1, `Hosted result overflows the narrow viewport (${JSON.stringify(hostedResult)}).`);
     await client.call("Emulation.setDeviceMetricsOverride", {

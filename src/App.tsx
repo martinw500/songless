@@ -834,11 +834,27 @@ function App() {
 }
 
 function Artwork({ song, small = false }: { song: Song; small?: boolean }) {
-  if (song.artwork) {
-    return <img className={small ? "artwork small" : "artwork"} src={song.artwork} alt="" />;
+  const [failedArtwork, setFailedArtwork] = useState<string | null>(null);
+  if (song.artwork && failedArtwork !== song.artwork) {
+    return (
+      <img
+        className={small ? "artwork small" : "artwork"}
+        data-artwork-id={song.id}
+        decoding="async"
+        key={`${song.id}:${song.artwork}`}
+        loading={small ? "lazy" : "eager"}
+        onError={() => setFailedArtwork(song.artwork ?? null)}
+        src={song.artwork}
+        alt=""
+      />
+    );
   }
   return (
-    <span className={small ? "artwork fallback small" : "artwork fallback"} aria-hidden="true">
+    <span
+      className={small ? "artwork fallback small" : "artwork fallback"}
+      data-artwork-id={song.id}
+      aria-hidden="true"
+    >
       {String.fromCharCode(9835)}
     </span>
   );
