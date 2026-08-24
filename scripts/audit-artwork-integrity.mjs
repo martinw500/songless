@@ -9,6 +9,7 @@ const candidateFile = path.join(root, "data", "song-candidates.json");
 const catalogFile = path.join(root, "public", "catalog.json");
 const artworkDirectory = path.join(root, "private-media", "r2", "artwork");
 const sharingOverridesFile = path.join(root, "data", "artwork-sharing-overrides.json");
+const sourceOverridesFile = path.join(root, "data", "artwork-source-overrides.json");
 const checkRemote = process.argv.includes("--remote");
 const compareLocal = process.argv.includes("--compare-local");
 
@@ -17,8 +18,14 @@ const catalog = JSON.parse(readFileSync(catalogFile, "utf8"));
 const sharingOverrides = existsSync(sharingOverridesFile)
   ? JSON.parse(readFileSync(sharingOverridesFile, "utf8")).groups ?? []
   : [];
+const sourceOverrides = existsSync(sourceOverridesFile)
+  ? JSON.parse(readFileSync(sourceOverridesFile, "utf8")).overrides ?? []
+  : [];
+const sourceOverridesById = new Map(sourceOverrides.map((override) => [override.id, override]));
+const candidateById = new Map(candidates.map((song) => [song.id, song]));
 const errors = [];
 const warnings = [];
+const unrelatedCompilationPattern = /\b(?:sing[ -]?along|karaoke|made famous|in the style of|sound[ -]?alike|top motivation|workout|fitness|kids bop|\d+ greatest .*songs)\b/iu;
 
 function artworkKey(url) {
   if (!url) return null;
@@ -48,6 +55,20 @@ for (const song of candidates) {
   const expected = `artwork/${song.id}.jpg`;
   if (song.media?.artworkUrl && !key) errors.push(`${song.id}: invalid artwork URL`);
   else if (key && key !== expected) errors.push(`${song.id}: artwork key is ${key}; expected ${expected}`);
+  if (unrelatedCompilationPattern.test(song.album ?? "") && !sourceOverridesById.has(song.id)) {
+    errors.push(`${song.id}: suspicious compilation album metadata (${song.album}) requires a reviewed artwork source override`);
+  }
+}
+
+for (const override of sourceOverrides) {
+  const song = candidateById.get(override.id);
+  if (!song) {
+    errors.push(`${override.id}: artwork source override references a missing candidate`);
+    continue;
+  }
+  if (!override.reason?.trim()) errors.push(`${override.id}: artwork source override is missing its review reason`);
+  if (song.album !== override.album) errors.push(`${override.id}: candidate album does not match reviewed artwork override`);
+  if (override.spotifyUrl && song.spotifyUrl !== override.spotifyUrl) errors.push(`${override.id}: candidate Spotify URL does not match reviewed artwork override`);
 }
 
 for (const song of catalog) {
@@ -65,7 +86,6 @@ const localByKey = new Map(localFiles.map((file) => {
   return [`artwork/${file}`, { hash: md5(fullPath), size: statSync(fullPath).size }];
 }));
 
-const candidateById = new Map(candidates.map((song) => [song.id, song]));
 const localHashGroups = new Map();
 for (const [key, value] of localByKey) {
   const id = path.basename(key, path.extname(key));
@@ -150,6 +170,12 @@ if (checkRemote) {
       if (remote.size !== null && remote.size !== local.size) {
         errors.push(`${song.id}: R2 size differs from local artwork (${remote.size} != ${local.size})`);
       }
+    }
+  }
+  for (const override of sourceOverrides.filter((entry) => entry.artworkMd5)) {
+    const remote = remoteByKey.get(`artwork/${override.id}.jpg`);
+    if (remote?.etag && !remote.etag.includes("-") && remote.etag !== override.artworkMd5.toLowerCase()) {
+      errors.push(`${override.id}: reviewed artwork checksum changed (${remote.etag} != ${override.artworkMd5})`);
     }
   }
   console.log(`Remote artwork objects: ${remoteByKey.size}`);

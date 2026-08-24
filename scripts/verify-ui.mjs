@@ -902,15 +902,29 @@ async function run() {
         lost: Boolean(document.querySelector('.result-panel.lost')),
         revealPlaying: document.querySelector('.sr-only')?.textContent.includes('Reveal audio is playing') ?? false,
         error: document.querySelector('.audio-error')?.textContent.trim() ?? '',
+        artworkId: document.querySelector('.result-panel img.artwork')?.dataset.artworkId ?? '',
+        artworkSrc: document.querySelector('.result-panel img.artwork')?.currentSrc ?? '',
+        artworkLoaded: (document.querySelector('.result-panel img.artwork')?.naturalWidth ?? 0) > 0,
         mediaStarts: window.__songlessRevealStarts ?? [],
       })`);
       assert(hostedReveal.lost && hostedReveal.revealPlaying && !hostedReveal.error,
         `The real hosted full-song reveal did not restart (${JSON.stringify(hostedReveal)}).`);
+      assert(hostedReveal.artworkId === hostedSong.id && hostedReveal.artworkSrc === hostedSong.artwork
+        && hostedReveal.artworkLoaded,
+      `The real hosted result did not render its assigned artwork (${JSON.stringify(hostedReveal)}).`);
+      if (saveArtifacts) {
+        const artifactDirectory = path.join(root, ".ui-audit");
+        mkdirSync(artifactDirectory, { recursive: true });
+        const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+        const artifactFile = path.join(artifactDirectory, `hosted-${hostedSong.id}-lost-state.png`);
+        writeFileSync(artifactFile, Buffer.from(capture.data, "base64"));
+        console.log(`Saved ${path.relative(root, artifactFile)}`);
+      }
       const revealStart = hostedReveal.mediaStarts.at(-1)?.currentTime;
       const expectedRevealStart = (hostedSong.startAtMs ?? 0) / 1000;
       assert(Number.isFinite(revealStart) && Math.abs(revealStart - expectedRevealStart) <= 0.2,
         `The hosted reveal inherited clue time instead of restarting at game-time zero (${JSON.stringify({ revealStart, expectedRevealStart })}).`);
-      console.log(`PASS real R2 clue and full-song reveal restart (${hostedSong.id})`);
+      console.log(`PASS real R2 clue, assigned artwork, and full-song reveal restart (${hostedSong.id})`);
     }
 
     writeFileSync(reviewCatalogFile, `${JSON.stringify([{

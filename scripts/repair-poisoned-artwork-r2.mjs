@@ -17,6 +17,7 @@ const includeNonLive = process.argv.includes("--all");
 const quarantineMissing = process.argv.includes("--quarantine-missing");
 const poisonedEtag = (process.argv.find((value) => value.startsWith("--etag="))?.split("=")[1]
   ?? "353d5e66d18f33a612b802a839a957fe").toLowerCase();
+const unrelatedCompilationPattern = /\b(?:sing[ -]?along|karaoke|made famous|in the style of|sound[ -]?alike|top motivation|workout|fitness|kids bop|\d+ greatest .*songs)\b/iu;
 
 const required = ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET", "R2_PUBLIC_BASE_URL"];
 for (const name of required) {
@@ -61,11 +62,18 @@ function spotifyArtwork(song) {
   return page.artworkUrl;
 }
 
-function itunesTrackId(song) {
+function itunesMetadata(song) {
   const cacheFile = path.join(itunesMetadataDirectory, `${song.id}.json`);
   if (!existsSync(cacheFile)) return null;
   const metadata = JSON.parse(readFileSync(cacheFile, "utf8"));
-  return Number.isInteger(metadata.trackId) ? metadata.trackId : null;
+  if (!metadata || !Number.isInteger(metadata.trackId)) return null;
+  return metadata;
+}
+
+function itunesTrackId(song) {
+  const metadata = itunesMetadata(song);
+  if (!metadata || unrelatedCompilationPattern.test(metadata.collectionName ?? "")) return null;
+  return metadata.trackId;
 }
 
 async function listObjects() {
@@ -141,10 +149,11 @@ const plans = targets.map((song) => {
   const trackId = itunesTrackId(song);
   const itunesUrl = trackId ? itunesArtwork.get(trackId) ?? null : null;
   const localFile = path.join(artworkDirectory, `${song.id}.jpg`);
+  const rejectedCompilation = unrelatedCompilationPattern.test(itunesMetadata(song)?.collectionName ?? "");
   return {
     song,
     key: artworkKey(song),
-    source: spotifyUrl ? "spotify-canonical" : itunesUrl ? "itunes-canonical" : existsSync(localFile) ? "local-song-fallback" : "missing",
+    source: spotifyUrl ? "spotify-canonical" : itunesUrl ? "itunes-canonical" : existsSync(localFile) && !rejectedCompilation ? "local-song-fallback" : "missing",
     sourceUrl: spotifyUrl ?? itunesUrl,
     localFile,
   };

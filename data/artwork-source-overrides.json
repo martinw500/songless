@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "overrides": [
+    {
+      "id": "maroon-5-payphone",
+      "album": "Overexposed (Deluxe)",
+      "releaseYear": 2012,
+      "spotifyVerificationUrl": "https://open.spotify.com/track/4lpClDF4DoILUjRtZ863Em",
+      "artworkSourceUrl": "https://i.scdn.co/image/ab67616d0000b2730f5a731f31141752882d2b18",
+      "reason": "The hosted non-rap master was surfaced through the unrelated Sing Along Bangers compilation; use the recognizable original Overexposed release artwork.",
+      "artworkMd5": "268451231d3aac7b42fbbe728f65335f"
+    },
+    {
+      "id": "ed-sheeran-shape-of-you",
+      "album": "÷ (Deluxe)",
+      "releaseYear": 2017,
+      "spotifyUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
+      "spotifyVerificationUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
+      "artworkSourceUrl": "https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96",
+      "reason": "Replace the Top Motivation compilation presentation with the original ÷ (Deluxe) release.",
+      "artworkMd5": "736bea93a89fba9865883abf65892f77"
+    },
+    {
+      "id": "gnarls-barkley-crazy",
+      "album": "St. Elsewhere",
+      "releaseYear": 2006,
+      "spotifyUrl": "https://open.spotify.com/track/2N5zMZX7YeL1tico8oQxa9",
+      "spotifyVerificationUrl": "https://open.spotify.com/track/2N5zMZX7YeL1tico8oQxa9",
+      "artworkSourceUrl": "https://i.scdn.co/image/ab67616d0000b27361a13426a99fd3500e2fff54",
+      "reason": "Replace the 100 Greatest Summer Songs compilation presentation with the original St. Elsewhere release.",
+      "artworkMd5": "d65b9de5350e4d0be062f432c8e26969"
+    }
+  ]
+}

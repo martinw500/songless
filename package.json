@@ -38,6 +38,7 @@
     "audit:artwork": "node --env-file-if-exists=.env.local scripts/audit-artwork-integrity.mjs",
     "audit:artwork:remote": "node --env-file-if-exists=.env.local scripts/audit-artwork-integrity.mjs --remote",
     "repair:artwork": "node --env-file-if-exists=.env.local scripts/repair-poisoned-artwork-r2.mjs",
+    "apply:artwork-overrides": "node --env-file-if-exists=.env.local scripts/apply-artwork-source-overrides.mjs",
     "refresh:longlist": "node scripts/refresh-song-longlist.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -b",

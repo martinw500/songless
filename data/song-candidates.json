@@ -116,10 +116,10 @@
         "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-shape-of-you.mp3?v=da963be508c9",
         "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/ed-sheeran-shape-of-you.mp3?v=7f19042ff3d7",
         "hostedDurationMs": 235009,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg?v=235009-0"
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg?v=spotify-736bea93a89f"
       },
-      "album": "Top Motivation",
-      "spotifyUrl": "https://open.spotify.com/track/5BhCnMoTq4qI4vf37Ohlkm",
+      "album": "÷ (Deluxe)",
+      "spotifyUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
       "startAtMs": 316,
       "hookStartMs": 68400,
       "spotifyDurationMs": 234000,
@@ -1111,13 +1111,13 @@
         "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gnarls-barkley-crazy.mp3?v=2fe76fbf4862",
         "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/gnarls-barkley-crazy.mp3?v=bf674da141cc",
         "hostedDurationMs": 178334,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=178334-0"
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=spotify-d65b9de5350e"
       },
-      "album": "100 Greatest Summer Songs",
-      "spotifyUrl": "https://open.spotify.com/track/0BtXtxmKBm1HwGnM3kO3rY",
+      "album": "St. Elsewhere",
+      "spotifyUrl": "https://open.spotify.com/track/2N5zMZX7YeL1tico8oQxa9",
       "startAtMs": 450,
       "hookStartMs": 48000,
-      "spotifyDurationMs": 180000,
+      "spotifyDurationMs": 182000,
       "spotifyMetadataStatus": "verified_public_page"
     },
     {
@@ -20528,11 +20528,13 @@
         "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/maroon-5-payphone.mp3?v=dccb34327c2a",
         "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/maroon-5-payphone.mp3?v=3f51046213c1",
         "hostedDurationMs": 222707,
-        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-payphone.jpg?v=artfix-af2f009d7dce"
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-payphone.jpg?v=spotify-268451231d3a"
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 53600
+      "hookStartMs": 53600,
+      "album": "Overexposed (Deluxe)",
+      "releaseYear": 2012
     },
     {
       "id": "major-lazer-lean-on",

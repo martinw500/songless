@@ -39,8 +39,8 @@
     "artist": "Ed Sheeran",
     "aliases": [],
     "artistAliases": [],
-    "album": "Top Motivation",
-    "spotifyUrl": "https://open.spotify.com/track/5BhCnMoTq4qI4vf37Ohlkm",
+    "album": "÷ (Deluxe)",
+    "spotifyUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
     "releaseYear": 2017,
     "genres": [
       "pop"
@@ -54,7 +54,7 @@
     "introRecognition": 96.1,
     "startAtMs": 316,
     "hookStartMs": 68400,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg?v=235009-0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-shape-of-you.jpg?v=spotify-736bea93a89f",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/ed-sheeran-shape-of-you.mp3?v=da963be508c9",
@@ -3229,6 +3229,8 @@
     "artist": "Maroon 5",
     "aliases": [],
     "artistAliases": [],
+    "album": "Overexposed (Deluxe)",
+    "releaseYear": 2012,
     "difficulty": "easy",
     "familiarity": 75,
     "recognitionScore": 75.9,
@@ -3238,7 +3240,7 @@
     "introRecognition": 92.5,
     "startAtMs": 85,
     "hookStartMs": 53600,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-payphone.jpg?v=artfix-af2f009d7dce",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-payphone.jpg?v=spotify-268451231d3a",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/maroon-5-payphone.mp3?v=dccb34327c2a",
@@ -5655,8 +5657,8 @@
     "artist": "Gnarls Barkley",
     "aliases": [],
     "artistAliases": [],
-    "album": "100 Greatest Summer Songs",
-    "spotifyUrl": "https://open.spotify.com/track/0BtXtxmKBm1HwGnM3kO3rY",
+    "album": "St. Elsewhere",
+    "spotifyUrl": "https://open.spotify.com/track/2N5zMZX7YeL1tico8oQxa9",
     "releaseYear": 2006,
     "genres": [
       "soul",
@@ -5671,7 +5673,7 @@
     "introRecognition": 94.6,
     "startAtMs": 450,
     "hookStartMs": 48000,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=178334-0",
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gnarls-barkley-crazy.jpg?v=spotify-d65b9de5350e",
     "audio": {
       "kind": "hosted",
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/gnarls-barkley-crazy.mp3?v=2fe76fbf4862",
