@@ -1,0 +1,1806 @@
+{
+  "generatedAt": "2026-08-25T03:36:08.743Z",
+  "target": 200,
+  "eligibleCount": 215,
+  "finalCount": 200,
+  "reserveNeeded": 0,
+  "counts": {
+    "excluded": 35,
+    "gatedFinal": 67,
+    "directFinal": 133
+  },
+  "finalIds": [
+    "kendrick-lamar-all-the-stars-with-sza",
+    "jung-kook-seven",
+    "calvin-harris-one-kiss-with-dua-lipa",
+    "the-weeknd-one-of-the-girls-with-jennie-lily-rose-depp",
+    "marshmello-happier",
+    "shakira-hips-don-t-lie",
+    "camila-cabello-havana-feat-young-thug",
+    "eminem-the-real-slim-shady",
+    "the-chainsmokers-don-t-let-me-down",
+    "ed-sheeran-i-don-t-care",
+    "24kgoldn-mood",
+    "ac-dc-back-in-black",
+    "saint-jhn-roses-imanbek-remix",
+    "dean-lewis-be-alright",
+    "5-seconds-of-summer-youngblood",
+    "doja-cat-woman",
+    "the-weeknd-earned-it-fifty-shades-of-grey",
+    "pitbull-timber",
+    "kings-of-leon-sex-on-fire",
+    "juice-wrld-all-girls-are-the-same",
+    "magic-rude",
+    "billie-eilish-everything-i-wanted",
+    "black-eyed-peas-i-gotta-feeling",
+    "metallica-enter-sandman",
+    "pitbull-give-me-everything",
+    "harry-styles-adore-you",
+    "calvin-harris-summer",
+    "ava-max-sweet-but-psycho",
+    "backstreet-boys-i-want-it-that-way",
+    "future-mask-off",
+    "billie-eilish-wildflower",
+    "train-hey-soul-sister",
+    "bastille-pompeii",
+    "usher-yeah",
+    "powfu-death-bed-coffee-for-your-head",
+    "r-e-m-losing-my-religion",
+    "red-hot-chili-peppers-californication",
+    "system-of-a-down-chop-suey",
+    "tate-mcrae-you-broke-me-first",
+    "evanescence-bring-me-to-life",
+    "beyonce-halo",
+    "the-script-hall-of-fame",
+    "katy-perry-dark-horse",
+    "offset-ric-flair-drip",
+    "khalid-young-dumb-and-broke",
+    "milky-chance-stolen-dance",
+    "eurythmics-sweet-dreams-are-made-of-this",
+    "lil-tecca-ransom",
+    "mitski-my-love-mine-all-mine",
+    "red-hot-chili-peppers-under-the-bridge",
+    "ariana-grande-we-can-t-be-friends-wait-for-your-love",
+    "sia-unstoppable",
+    "bruno-mars-grenade",
+    "coldplay-hymn-for-the-weekend",
+    "rihanna-diamonds",
+    "bruno-mars-24k-magic",
+    "panic-at-the-disco-high-hopes",
+    "one-direction-story-of-my-life",
+    "maroon-5-animals",
+    "p-nk-just-give-me-a-reason",
+    "xxxtentacion-revenge",
+    "clean-bandit-symphony",
+    "sam-smith-unholy",
+    "pitbull-time-of-our-lives",
+    "clean-bandit-rockabye",
+    "post-malone-wow",
+    "xxxtentacion-hope",
+    "rihanna-needed-me",
+    "marshmello-silence",
+    "travis-scott-butterfly-effect",
+    "creedence-clearwater-revival-fortunate-son",
+    "lady-gaga-always-remember-us-this-way",
+    "one-direction-what-makes-you-beautiful",
+    "ariana-grande-side-to-side",
+    "lady-gaga-bad-romance",
+    "kendrick-lamar-love",
+    "outkast-hey-ya",
+    "coldplay-paradise",
+    "bryson-tiller-don-t",
+    "capital-cities-safe-and-sound",
+    "chris-brown-under-the-influence",
+    "rihanna-only-girl-in-the-world",
+    "anne-marie-2002",
+    "billie-eilish-happier-than-ever",
+    "calvin-harris-outside",
+    "adele-hello",
+    "the-beatles-here-comes-the-sun",
+    "snoop-dogg-young-wild-and-free",
+    "post-malone-i-fall-apart",
+    "clean-bandit-rather-be",
+    "noah-kahan-stick-season",
+    "avicii-waiting-for-love",
+    "lil-baby-drip-too-hard",
+    "kanye-west-stronger",
+    "d4vd-here",
+    "dababy-rockstar",
+    "imagine-dragons-bones",
+    "gym-class-heroes-stereo-hearts",
+    "michael-jackson-beat-it",
+    "zedd-the-middle",
+    "alessia-cara-scars-to-your-beautiful",
+    "khalid-better",
+    "kanye-west-flashing-lights",
+    "pharrell-williams-happy",
+    "sean-paul-no-lie",
+    "bruno-mars-leave-the-door-open",
+    "ariana-grande-positions",
+    "zayn-pillowtalk",
+    "kate-bush-running-up-that-hill-a-deal",
+    "portugal-the-man-feel-it-still",
+    "hotel-ugly-shut-up-my-moms-calling",
+    "fifth-harmony-work-from-home",
+    "nf-let-you-down",
+    "lil-peep-falling-down",
+    "the-lumineers-ho-hey",
+    "lost-frequencies-where-are-you-now",
+    "rihanna-work",
+    "lil-nas-x-old-town-road",
+    "jessie-j-bang-bang",
+    "imagine-dragons-whatever-it-takes",
+    "rihanna-s-and-m",
+    "shawn-mendes-mercy",
+    "a-ap-rocky-praise-the-lord-da-shine",
+    "adele-when-we-were-young",
+    "lil-peep-star-shopping",
+    "olivia-rodrigo-vampire",
+    "olivia-rodrigo-happier",
+    "the-neighbourhood-softcore",
+    "billie-eilish-what-was-i-made-for-from-the-motion-picture-barbie",
+    "coldplay-my-universe",
+    "ariana-grande-dangerous-woman",
+    "ed-sheeran-galway-girl",
+    "ed-sheeran-castle-on-the-hill",
+    "travis-scott-fe-n",
+    "bruno-mars-marry-you",
+    "calvin-harris-how-deep-is-your-love",
+    "ariana-grande-no-tears-left-to-cry",
+    "harry-styles-falling",
+    "george-ezra-budapest",
+    "sabrina-carpenter-nonsense",
+    "bebe-rexha-meant-to-be",
+    "ed-sheeran-beautiful-people",
+    "cardi-b-wap",
+    "artemas-i-like-the-way-you-kiss-me",
+    "stephen-sanchez-until-i-found-you",
+    "robin-schulz-sugar",
+    "olivia-rodrigo-favorite-crime",
+    "j-cole-middle-child",
+    "ariana-grande-santa-tell-me",
+    "justin-timberlake-mirrors",
+    "lorde-royals",
+    "ed-sheeran-happier",
+    "selena-gomez-lose-you-to-love-me",
+    "future-life-is-good",
+    "van-morrison-brown-eyed-girl",
+    "post-malone-goodbyes",
+    "ariana-grande-stuck",
+    "swedish-house-mafia-moth-to-a-flame",
+    "benson-boone-in-the-stars",
+    "tommy-richman-million-dollar-baby",
+    "zedd-stay",
+    "masked-wolf-astronaut-in-the-ocean",
+    "one-direction-drag-me-down",
+    "lewis-capaldi-bruises",
+    "tiesto-the-business",
+    "the-script-breakeven",
+    "green-day-american-idiot",
+    "daryl-hall-and-john-oates-you-make-my-dreams-come-true",
+    "the-chainsmokers-roses",
+    "post-malone-white-iverson",
+    "avril-lavigne-complicated",
+    "billie-eilish-idontwannabeyouanymore",
+    "oasis-don-t-look-back-in-anger",
+    "meghan-trainor-like-i-m-gonna-lose-you",
+    "rag-n-bone-man-human",
+    "future-wait-for-u",
+    "calvin-harris-blame",
+    "elvis-presley-can-t-help-falling-in-love",
+    "adele-send-my-love-to-your-new-lover",
+    "american-authors-best-day-of-my-life",
+    "chris-brown-no-guidance",
+    "gucci-mane-wake-up-in-the-sky",
+    "dominic-fike-3-nights",
+    "kodak-black-zeze",
+    "calvin-harris-slide",
+    "dhruv-double-take",
+    "wham-wake-me-up-before-you-go-go",
+    "lana-del-rey-west-coast",
+    "green-day-boulevard-of-broken-dreams",
+    "the-weeknd-heartless",
+    "dan-shay-10-000-hours-with-justin-bieber",
+    "becky-g-mamiii",
+    "billie-eilish-chihiro",
+    "the-weeknd-pray-for-me",
+    "abba-gimme-gimme-gimme-a-man-after-midnight",
+    "ariana-grande-34-35",
+    "post-malone-go-flex",
+    "a-boogie-wit-da-hoodie-drowning",
+    "drake-laugh-now-cry-later",
+    "juice-wrld-come-and-go"
+  ],
+  "final": [
+    {
+      "id": "kendrick-lamar-all-the-stars-with-sza",
+      "sourceRank": 53,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "jung-kook-seven",
+      "sourceRank": 57,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0635
+    },
+    {
+      "id": "calvin-harris-one-kiss-with-dua-lipa",
+      "sourceRank": 85,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "the-weeknd-one-of-the-girls-with-jennie-lily-rose-depp",
+      "sourceRank": 91,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "marshmello-happier",
+      "sourceRank": 93,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0205
+    },
+    {
+      "id": "shakira-hips-don-t-lie",
+      "sourceRank": 118,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0946
+    },
+    {
+      "id": "camila-cabello-havana-feat-young-thug",
+      "sourceRank": 121,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0357
+    },
+    {
+      "id": "eminem-the-real-slim-shady",
+      "sourceRank": 123,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0296
+    },
+    {
+      "id": "the-chainsmokers-don-t-let-me-down",
+      "sourceRank": 140,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0538
+    },
+    {
+      "id": "ed-sheeran-i-don-t-care",
+      "sourceRank": 193,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "24kgoldn-mood",
+      "sourceRank": 195,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0553
+    },
+    {
+      "id": "ac-dc-back-in-black",
+      "sourceRank": 198,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.1348
+    },
+    {
+      "id": "saint-jhn-roses-imanbek-remix",
+      "sourceRank": 200,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0628
+    },
+    {
+      "id": "dean-lewis-be-alright",
+      "sourceRank": 201,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0478
+    },
+    {
+      "id": "5-seconds-of-summer-youngblood",
+      "sourceRank": 202,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0232
+    },
+    {
+      "id": "doja-cat-woman",
+      "sourceRank": 203,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0533
+    },
+    {
+      "id": "the-weeknd-earned-it-fifty-shades-of-grey",
+      "sourceRank": 205,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0251
+    },
+    {
+      "id": "pitbull-timber",
+      "sourceRank": 207,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "kings-of-leon-sex-on-fire",
+      "sourceRank": 208,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0594
+    },
+    {
+      "id": "juice-wrld-all-girls-are-the-same",
+      "sourceRank": 210,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0629
+    },
+    {
+      "id": "magic-rude",
+      "sourceRank": 213,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0798
+    },
+    {
+      "id": "billie-eilish-everything-i-wanted",
+      "sourceRank": 215,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0525
+    },
+    {
+      "id": "black-eyed-peas-i-gotta-feeling",
+      "sourceRank": 218,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0675
+    },
+    {
+      "id": "metallica-enter-sandman",
+      "sourceRank": 220,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.059
+    },
+    {
+      "id": "pitbull-give-me-everything",
+      "sourceRank": 222,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "harry-styles-adore-you",
+      "sourceRank": 223,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0676
+    },
+    {
+      "id": "calvin-harris-summer",
+      "sourceRank": 224,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0348
+    },
+    {
+      "id": "ava-max-sweet-but-psycho",
+      "sourceRank": 226,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0511
+    },
+    {
+      "id": "backstreet-boys-i-want-it-that-way",
+      "sourceRank": 227,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0585
+    },
+    {
+      "id": "future-mask-off",
+      "sourceRank": 228,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0648
+    },
+    {
+      "id": "billie-eilish-wildflower",
+      "sourceRank": 230,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0534
+    },
+    {
+      "id": "train-hey-soul-sister",
+      "sourceRank": 232,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0723
+    },
+    {
+      "id": "bastille-pompeii",
+      "sourceRank": 237,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0656
+    },
+    {
+      "id": "usher-yeah",
+      "sourceRank": 238,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0898
+    },
+    {
+      "id": "powfu-death-bed-coffee-for-your-head",
+      "sourceRank": 239,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.1307
+    },
+    {
+      "id": "r-e-m-losing-my-religion",
+      "sourceRank": 242,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0949
+    },
+    {
+      "id": "red-hot-chili-peppers-californication",
+      "sourceRank": 244,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0104
+    },
+    {
+      "id": "system-of-a-down-chop-suey",
+      "sourceRank": 245,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0618
+    },
+    {
+      "id": "tate-mcrae-you-broke-me-first",
+      "sourceRank": 246,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0094
+    },
+    {
+      "id": "evanescence-bring-me-to-life",
+      "sourceRank": 250,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0626
+    },
+    {
+      "id": "beyonce-halo",
+      "sourceRank": 253,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0453
+    },
+    {
+      "id": "the-script-hall-of-fame",
+      "sourceRank": 254,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "katy-perry-dark-horse",
+      "sourceRank": 256,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0553
+    },
+    {
+      "id": "offset-ric-flair-drip",
+      "sourceRank": 257,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0379
+    },
+    {
+      "id": "khalid-young-dumb-and-broke",
+      "sourceRank": 258,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.07
+    },
+    {
+      "id": "milky-chance-stolen-dance",
+      "sourceRank": 259,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "eurythmics-sweet-dreams-are-made-of-this",
+      "sourceRank": 260,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0632
+    },
+    {
+      "id": "lil-tecca-ransom",
+      "sourceRank": 261,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.031
+    },
+    {
+      "id": "mitski-my-love-mine-all-mine",
+      "sourceRank": 262,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0518
+    },
+    {
+      "id": "red-hot-chili-peppers-under-the-bridge",
+      "sourceRank": 264,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0131
+    },
+    {
+      "id": "ariana-grande-we-can-t-be-friends-wait-for-your-love",
+      "sourceRank": 265,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.017
+    },
+    {
+      "id": "sia-unstoppable",
+      "sourceRank": 266,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0351
+    },
+    {
+      "id": "bruno-mars-grenade",
+      "sourceRank": 268,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0693
+    },
+    {
+      "id": "coldplay-hymn-for-the-weekend",
+      "sourceRank": 270,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0487
+    },
+    {
+      "id": "rihanna-diamonds",
+      "sourceRank": 272,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.082
+    },
+    {
+      "id": "bruno-mars-24k-magic",
+      "sourceRank": 273,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0712
+    },
+    {
+      "id": "panic-at-the-disco-high-hopes",
+      "sourceRank": 274,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0477
+    },
+    {
+      "id": "one-direction-story-of-my-life",
+      "sourceRank": 275,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0582
+    },
+    {
+      "id": "maroon-5-animals",
+      "sourceRank": 276,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.023
+    },
+    {
+      "id": "p-nk-just-give-me-a-reason",
+      "sourceRank": 279,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0776
+    },
+    {
+      "id": "xxxtentacion-revenge",
+      "sourceRank": 282,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0582
+    },
+    {
+      "id": "clean-bandit-symphony",
+      "sourceRank": 283,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0223
+    },
+    {
+      "id": "sam-smith-unholy",
+      "sourceRank": 284,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "pitbull-time-of-our-lives",
+      "sourceRank": 286,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "clean-bandit-rockabye",
+      "sourceRank": 287,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0428
+    },
+    {
+      "id": "post-malone-wow",
+      "sourceRank": 288,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0085
+    },
+    {
+      "id": "xxxtentacion-hope",
+      "sourceRank": 289,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0638
+    },
+    {
+      "id": "rihanna-needed-me",
+      "sourceRank": 290,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0489
+    },
+    {
+      "id": "marshmello-silence",
+      "sourceRank": 291,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0599
+    },
+    {
+      "id": "travis-scott-butterfly-effect",
+      "sourceRank": 293,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.151
+    },
+    {
+      "id": "creedence-clearwater-revival-fortunate-son",
+      "sourceRank": 294,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.059
+    },
+    {
+      "id": "lady-gaga-always-remember-us-this-way",
+      "sourceRank": 295,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0587
+    },
+    {
+      "id": "one-direction-what-makes-you-beautiful",
+      "sourceRank": 301,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.06
+    },
+    {
+      "id": "ariana-grande-side-to-side",
+      "sourceRank": 303,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.1168
+    },
+    {
+      "id": "lady-gaga-bad-romance",
+      "sourceRank": 304,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0445
+    },
+    {
+      "id": "kendrick-lamar-love",
+      "sourceRank": 305,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0647
+    },
+    {
+      "id": "outkast-hey-ya",
+      "sourceRank": 308,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0552
+    },
+    {
+      "id": "coldplay-paradise",
+      "sourceRank": 309,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0515
+    },
+    {
+      "id": "bryson-tiller-don-t",
+      "sourceRank": 310,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0277
+    },
+    {
+      "id": "capital-cities-safe-and-sound",
+      "sourceRank": 312,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0459
+    },
+    {
+      "id": "chris-brown-under-the-influence",
+      "sourceRank": 313,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "rihanna-only-girl-in-the-world",
+      "sourceRank": 314,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0433
+    },
+    {
+      "id": "anne-marie-2002",
+      "sourceRank": 316,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0596
+    },
+    {
+      "id": "billie-eilish-happier-than-ever",
+      "sourceRank": 320,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.064
+    },
+    {
+      "id": "calvin-harris-outside",
+      "sourceRank": 321,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0425
+    },
+    {
+      "id": "adele-hello",
+      "sourceRank": 325,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0164
+    },
+    {
+      "id": "the-beatles-here-comes-the-sun",
+      "sourceRank": 328,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.06
+    },
+    {
+      "id": "snoop-dogg-young-wild-and-free",
+      "sourceRank": 329,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.043
+    },
+    {
+      "id": "post-malone-i-fall-apart",
+      "sourceRank": 332,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0257
+    },
+    {
+      "id": "clean-bandit-rather-be",
+      "sourceRank": 333,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0543
+    },
+    {
+      "id": "noah-kahan-stick-season",
+      "sourceRank": 334,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0783
+    },
+    {
+      "id": "avicii-waiting-for-love",
+      "sourceRank": 335,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0506
+    },
+    {
+      "id": "lil-baby-drip-too-hard",
+      "sourceRank": 336,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0317
+    },
+    {
+      "id": "kanye-west-stronger",
+      "sourceRank": 338,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0734
+    },
+    {
+      "id": "d4vd-here",
+      "sourceRank": 339,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0314
+    },
+    {
+      "id": "dababy-rockstar",
+      "sourceRank": 343,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "imagine-dragons-bones",
+      "sourceRank": 346,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0672
+    },
+    {
+      "id": "gym-class-heroes-stereo-hearts",
+      "sourceRank": 347,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0468
+    },
+    {
+      "id": "michael-jackson-beat-it",
+      "sourceRank": 351,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0676
+    },
+    {
+      "id": "zedd-the-middle",
+      "sourceRank": 356,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0515
+    },
+    {
+      "id": "alessia-cara-scars-to-your-beautiful",
+      "sourceRank": 358,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0731
+    },
+    {
+      "id": "khalid-better",
+      "sourceRank": 360,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0613
+    },
+    {
+      "id": "kanye-west-flashing-lights",
+      "sourceRank": 361,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0698
+    },
+    {
+      "id": "pharrell-williams-happy",
+      "sourceRank": 362,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0226
+    },
+    {
+      "id": "sean-paul-no-lie",
+      "sourceRank": 364,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0283
+    },
+    {
+      "id": "bruno-mars-leave-the-door-open",
+      "sourceRank": 365,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.081
+    },
+    {
+      "id": "ariana-grande-positions",
+      "sourceRank": 367,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0128
+    },
+    {
+      "id": "zayn-pillowtalk",
+      "sourceRank": 368,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.064
+    },
+    {
+      "id": "kate-bush-running-up-that-hill-a-deal",
+      "sourceRank": 372,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0982
+    },
+    {
+      "id": "portugal-the-man-feel-it-still",
+      "sourceRank": 374,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0719
+    },
+    {
+      "id": "hotel-ugly-shut-up-my-moms-calling",
+      "sourceRank": 375,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0107
+    },
+    {
+      "id": "fifth-harmony-work-from-home",
+      "sourceRank": 378,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0584
+    },
+    {
+      "id": "nf-let-you-down",
+      "sourceRank": 379,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0556
+    },
+    {
+      "id": "lil-peep-falling-down",
+      "sourceRank": 382,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0399
+    },
+    {
+      "id": "the-lumineers-ho-hey",
+      "sourceRank": 384,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0403
+    },
+    {
+      "id": "lost-frequencies-where-are-you-now",
+      "sourceRank": 387,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0145
+    },
+    {
+      "id": "rihanna-work",
+      "sourceRank": 389,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.103
+    },
+    {
+      "id": "lil-nas-x-old-town-road",
+      "sourceRank": 390,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0371
+    },
+    {
+      "id": "jessie-j-bang-bang",
+      "sourceRank": 391,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0392
+    },
+    {
+      "id": "imagine-dragons-whatever-it-takes",
+      "sourceRank": 392,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0553
+    },
+    {
+      "id": "rihanna-s-and-m",
+      "sourceRank": 393,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0346
+    },
+    {
+      "id": "shawn-mendes-mercy",
+      "sourceRank": 397,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.037
+    },
+    {
+      "id": "a-ap-rocky-praise-the-lord-da-shine",
+      "sourceRank": 401,
+      "fingerprintRequired": true,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0462
+    },
+    {
+      "id": "adele-when-we-were-young",
+      "sourceRank": 411,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0091
+    },
+    {
+      "id": "lil-peep-star-shopping",
+      "sourceRank": 414,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0629
+    },
+    {
+      "id": "olivia-rodrigo-vampire",
+      "sourceRank": 417,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0453
+    },
+    {
+      "id": "olivia-rodrigo-happier",
+      "sourceRank": 421,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0646
+    },
+    {
+      "id": "the-neighbourhood-softcore",
+      "sourceRank": 424,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0772
+    },
+    {
+      "id": "billie-eilish-what-was-i-made-for-from-the-motion-picture-barbie",
+      "sourceRank": 430,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "canonical_match",
+      "distance": 0.0368
+    },
+    {
+      "id": "coldplay-my-universe",
+      "sourceRank": 431,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ariana-grande-dangerous-woman",
+      "sourceRank": 436,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ed-sheeran-galway-girl",
+      "sourceRank": 437,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ed-sheeran-castle-on-the-hill",
+      "sourceRank": 438,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "travis-scott-fe-n",
+      "sourceRank": 441,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "bruno-mars-marry-you",
+      "sourceRank": 442,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "calvin-harris-how-deep-is-your-love",
+      "sourceRank": 448,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ariana-grande-no-tears-left-to-cry",
+      "sourceRank": 454,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "harry-styles-falling",
+      "sourceRank": 460,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "george-ezra-budapest",
+      "sourceRank": 464,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "sabrina-carpenter-nonsense",
+      "sourceRank": 466,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "bebe-rexha-meant-to-be",
+      "sourceRank": 467,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ed-sheeran-beautiful-people",
+      "sourceRank": 474,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "cardi-b-wap",
+      "sourceRank": 475,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "artemas-i-like-the-way-you-kiss-me",
+      "sourceRank": 481,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "stephen-sanchez-until-i-found-you",
+      "sourceRank": 484,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "robin-schulz-sugar",
+      "sourceRank": 485,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "olivia-rodrigo-favorite-crime",
+      "sourceRank": 486,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "j-cole-middle-child",
+      "sourceRank": 488,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ariana-grande-santa-tell-me",
+      "sourceRank": 498,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "justin-timberlake-mirrors",
+      "sourceRank": 501,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "lorde-royals",
+      "sourceRank": 512,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ed-sheeran-happier",
+      "sourceRank": 516,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "selena-gomez-lose-you-to-love-me",
+      "sourceRank": 530,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "future-life-is-good",
+      "sourceRank": 532,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "van-morrison-brown-eyed-girl",
+      "sourceRank": 534,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "post-malone-goodbyes",
+      "sourceRank": 536,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ariana-grande-stuck",
+      "sourceRank": 554,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "swedish-house-mafia-moth-to-a-flame",
+      "sourceRank": 557,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "benson-boone-in-the-stars",
+      "sourceRank": 560,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "tommy-richman-million-dollar-baby",
+      "sourceRank": 564,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "zedd-stay",
+      "sourceRank": 568,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "masked-wolf-astronaut-in-the-ocean",
+      "sourceRank": 573,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "one-direction-drag-me-down",
+      "sourceRank": 579,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "lewis-capaldi-bruises",
+      "sourceRank": 585,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "tiesto-the-business",
+      "sourceRank": 590,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "the-script-breakeven",
+      "sourceRank": 591,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "green-day-american-idiot",
+      "sourceRank": 592,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "daryl-hall-and-john-oates-you-make-my-dreams-come-true",
+      "sourceRank": 598,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "the-chainsmokers-roses",
+      "sourceRank": 607,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "post-malone-white-iverson",
+      "sourceRank": 608,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "avril-lavigne-complicated",
+      "sourceRank": 616,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "billie-eilish-idontwannabeyouanymore",
+      "sourceRank": 619,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "oasis-don-t-look-back-in-anger",
+      "sourceRank": 633,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "meghan-trainor-like-i-m-gonna-lose-you",
+      "sourceRank": 637,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "rag-n-bone-man-human",
+      "sourceRank": 645,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "future-wait-for-u",
+      "sourceRank": 650,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "calvin-harris-blame",
+      "sourceRank": 660,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "elvis-presley-can-t-help-falling-in-love",
+      "sourceRank": 670,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "adele-send-my-love-to-your-new-lover",
+      "sourceRank": 671,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "american-authors-best-day-of-my-life",
+      "sourceRank": 678,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "chris-brown-no-guidance",
+      "sourceRank": 679,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "gucci-mane-wake-up-in-the-sky",
+      "sourceRank": 704,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "dominic-fike-3-nights",
+      "sourceRank": 707,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "kodak-black-zeze",
+      "sourceRank": 715,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "calvin-harris-slide",
+      "sourceRank": 719,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "dhruv-double-take",
+      "sourceRank": 730,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "wham-wake-me-up-before-you-go-go",
+      "sourceRank": 742,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "lana-del-rey-west-coast",
+      "sourceRank": 764,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "green-day-boulevard-of-broken-dreams",
+      "sourceRank": 766,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "the-weeknd-heartless",
+      "sourceRank": 771,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "dan-shay-10-000-hours-with-justin-bieber",
+      "sourceRank": 779,
+      "fingerprintRequired": false,
+      "fingerprintStatus": null,
+      "distance": null
+    },
+    {
+      "id": "becky-g-mamiii",
+      "sourceRank": 801,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "billie-eilish-chihiro",
+      "sourceRank": 812,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "the-weeknd-pray-for-me",
+      "sourceRank": 824,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "abba-gimme-gimme-gimme-a-man-after-midnight",
+      "sourceRank": 831,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "ariana-grande-34-35",
+      "sourceRank": 833,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "post-malone-go-flex",
+      "sourceRank": 846,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "a-boogie-wit-da-hoodie-drowning",
+      "sourceRank": 864,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "drake-laugh-now-cry-later",
+      "sourceRank": 874,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    },
+    {
+      "id": "juice-wrld-come-and-go",
+      "sourceRank": 880,
+      "fingerprintRequired": false,
+      "fingerprintStatus": "error",
+      "distance": null
+    }
+  ],
+  "excluded": [
+    {
+      "id": "post-malone-rockstar-feat-21-savage",
+      "reason": "fingerprint_error",
+      "distance": null,
+      "sourceRank": 25
+    },
+    {
+      "id": "eminem-till-i-collapse",
+      "reason": "missing_source",
+      "sourceRank": 110
+    },
+    {
+      "id": "lil-nas-x-industry-baby-feat-jack-harlow",
+      "reason": "duration_youtube_mismatch",
+      "sourceRank": 157
+    },
+    {
+      "id": "zayn-dusk-till-dawn-feat-sia",
+      "reason": "duration_canonical_mismatch",
+      "sourceRank": 179
+    },
+    {
+      "id": "maroon-5-moves-like-jagger",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 204
+    },
+    {
+      "id": "xxxtentacion-fuck-love",
+      "reason": "missing_source",
+      "sourceRank": 206
+    },
+    {
+      "id": "zayn-i-don-t-wanna-live-forever-fifty-shades-darker",
+      "reason": "fingerprint_error",
+      "distance": null,
+      "sourceRank": 209
+    },
+    {
+      "id": "bruno-mars-talking-to-the-moon",
+      "reason": "duration_canonical_mismatch",
+      "sourceRank": 214
+    },
+    {
+      "id": "lana-del-rey-young-and-beautiful",
+      "reason": "fingerprint_probable_match",
+      "distance": 0.2751,
+      "sourceRank": 217
+    },
+    {
+      "id": "coldplay-sparks",
+      "reason": "missing_source",
+      "sourceRank": 229
+    },
+    {
+      "id": "maroon-5-she-will-be-loved",
+      "reason": "fingerprint_probable_match",
+      "distance": 0.249,
+      "sourceRank": 231
+    },
+    {
+      "id": "justin-timberlake-can-t-stop-the-feeling-from-dreamworks-animation-s-trolls",
+      "reason": "missing_source",
+      "sourceRank": 234
+    },
+    {
+      "id": "nirvana-come-as-you-are",
+      "reason": "missing_source",
+      "sourceRank": 236
+    },
+    {
+      "id": "carly-rae-jepsen-call-me-maybe",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 241
+    },
+    {
+      "id": "imagine-dragons-enemy-from-the-series-arcane-league-of-legends",
+      "reason": "duration_canonical_mismatch",
+      "sourceRank": 249
+    },
+    {
+      "id": "rihanna-stay",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 269
+    },
+    {
+      "id": "red-hot-chili-peppers-can-t-stop",
+      "reason": "missing_source",
+      "sourceRank": 285
+    },
+    {
+      "id": "xxxtentacion-everybody-dies-in-their-nightmares",
+      "reason": "missing_source",
+      "sourceRank": 292
+    },
+    {
+      "id": "major-lazer-cold-water",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 311
+    },
+    {
+      "id": "maroon-5-girls-like-you",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 317
+    },
+    {
+      "id": "kesha-tik-tok",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 323
+    },
+    {
+      "id": "ellie-goulding-love-me-like-you-do-from-fifty-shades-of-grey",
+      "reason": "fingerprint_reference_album_mismatch",
+      "distance": null,
+      "sourceRank": 330
+    },
+    {
+      "id": "snow-patrol-chasing-cars",
+      "reason": "fingerprint_required_missing",
+      "distance": null,
+      "sourceRank": 350
+    },
+    {
+      "id": "the-cranberries-zombie-2025",
+      "reason": "fingerprint_probable_match",
+      "distance": 0.201,
+      "sourceRank": 353
+    },
+    {
+      "id": "maroon-5-this-love",
+      "reason": "missing_source",
+      "sourceRank": 369
+    },
+    {
+      "id": "juice-wrld-robbery",
+      "reason": "missing_source",
+      "sourceRank": 452
+    },
+    {
+      "id": "doja-cat-streets",
+      "reason": "missing_source",
+      "sourceRank": 459
+    },
+    {
+      "id": "the-script-the-man-who-can-t-be-moved",
+      "reason": "missing_source",
+      "sourceRank": 604
+    },
+    {
+      "id": "patrick-watson-je-te-laisserai-des-mots",
+      "reason": "missing_source",
+      "sourceRank": 614
+    },
+    {
+      "id": "miley-cyrus-angels-like-you",
+      "reason": "duration_canonical_mismatch",
+      "sourceRank": 621
+    },
+    {
+      "id": "michael-buble-it-s-beginning-to-look-a-lot-like-christmas",
+      "reason": "missing_source",
+      "sourceRank": 635
+    },
+    {
+      "id": "ariana-grande-god-is-a-woman",
+      "reason": "duration_canonical_mismatch",
+      "sourceRank": 720
+    },
+    {
+      "id": "sza-nobody-gets-me",
+      "reason": "missing_source",
+      "sourceRank": 745
+    },
+    {
+      "id": "harry-styles-late-night-talking",
+      "reason": "missing_source",
+      "sourceRank": 828
+    },
+    {
+      "id": "drake-fake-love",
+      "reason": "duration_canonical_mismatch",
+      "sourceRank": 1039
+    }
+  ]
+}

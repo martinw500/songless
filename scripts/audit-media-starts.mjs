@@ -2,6 +2,22 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  clueWindowIsAudible,
+  clueWindowMs,
+  clueWindowSilent,
+  configuredStartMs as resolveConfiguredStartMs,
+  digitalSilenceDb,
+  evaluateClueWindow,
+  gateMinAudibleSubWindows,
+  gateOffsetDb,
+  leadSilenceMs,
+  mp3FrameToleranceMs,
+  onsetOffsetDb,
+  onsetPreferenceWindowMs,
+  subWindowCount,
+  subWindowMs,
+} from "./media-start-normalization.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
@@ -63,11 +79,19 @@ const fingerprintRoot = existsSync(fingerprintReportFile)
   : { songs: [] };
 const fingerprintById = new Map(fingerprintRoot.songs.map((entry) => [entry.id, entry]));
 
+// 44.1 kHz with a 10 ms hop is the coarsest analysis that can still resolve the
+// 0.01s stage in stageOptions. The previous 8 kHz / 50 ms envelope averaged
+// silence together with the onset transient and reported starts inside dead air.
+const SAMPLE_RATE = 44100;
+const FINE_MS = 10;
+const FINE_SAMPLES = (SAMPLE_RATE * FINE_MS) / 1000;
+const COARSE_GROUP = 5;
+
 function decode(file, seconds = 35) {
   const buffer = execFileSync(ffmpeg, [
     "-hide_banner", "-loglevel", "error", "-i", file, "-t", String(seconds),
-    "-vn", "-ac", "1", "-ar", "8000", "-f", "f32le", "pipe:1",
-  ], { encoding: "buffer", maxBuffer: 8 * 1024 * 1024 });
+    "-vn", "-ac", "1", "-ar", String(SAMPLE_RATE), "-f", "f32le", "pipe:1",
+  ], { encoding: "buffer", maxBuffer: 96 * 1024 * 1024 });
   return new Float32Array(buffer.buffer, buffer.byteOffset, Math.floor(buffer.length / 4));
 }
 
@@ -78,42 +102,79 @@ function durationMs(file) {
   return Math.round(Number(value) * 1000);
 }
 
-const FRAME_SECONDS = 0.05;
-const FRAME_SAMPLES = 8000 * FRAME_SECONDS;
+const FRAME_SECONDS = COARSE_GROUP * FINE_MS / 1000;
+
+function toDb(rms) {
+  return 20 * Math.log10(Math.max(rms, 1e-9));
+}
+
 function envelope(samples) {
   const frames = [];
-  for (let offset = 0; offset + FRAME_SAMPLES <= samples.length; offset += FRAME_SAMPLES) {
+  for (let offset = 0; offset + FINE_SAMPLES <= samples.length; offset += FINE_SAMPLES) {
     let sum = 0;
     let peak = 0;
-    for (let index = offset; index < offset + FRAME_SAMPLES; index += 1) {
+    for (let index = offset; index < offset + FINE_SAMPLES; index += 1) {
       const absolute = Math.abs(samples[index]);
       sum += samples[index] * samples[index];
       peak = Math.max(peak, absolute);
     }
-    const rms = Math.sqrt(sum / FRAME_SAMPLES);
-    frames.push({ rms, db: 20 * Math.log10(Math.max(rms, 1e-8)), peak });
+    const rms = Math.sqrt(sum / FINE_SAMPLES);
+    frames.push({ rms, db: toDb(rms), peak });
   }
   return frames;
 }
 
-function firstSustained(frames, thresholdDb, sustainedFrames = 3) {
-  for (let index = 0; index <= frames.length - sustainedFrames; index += 1) {
-    let audible = 0;
-    for (let cursor = 0; cursor < sustainedFrames; cursor += 1) {
-      if (frames[index + cursor].db >= thresholdDb) audible += 1;
-    }
-    if (audible >= sustainedFrames - 1) return Math.round(index * FRAME_SECONDS * 1000);
-  }
-  return null;
+// Energy averaging, not dB averaging: a window is as loud as the power it
+// carries, so one loud 10 ms frame must be able to carry a quiet neighbour.
+function windowDb(frames, startIndex, frameCount) {
+  const end = Math.min(frames.length, startIndex + frameCount);
+  const start = Math.max(0, startIndex);
+  if (end <= start) return null;
+  let sum = 0;
+  for (let index = start; index < end; index += 1) sum += frames[index].rms * frames[index].rms;
+  return toDb(Math.sqrt(sum / (end - start)));
 }
 
-function firstMostlyAudibleWindow(frames, thresholdDb = -45, windowFrames = 20, requiredRatio = 0.65) {
-  for (let index = 0; index <= frames.length - windowFrames; index += 1) {
+// The 50 ms view the alignment correlation and the legacy medians expect.
+function coarsen(frames) {
+  const coarse = [];
+  for (let index = 0; index + COARSE_GROUP <= frames.length; index += COARSE_GROUP) {
+    let sum = 0;
+    let peak = 0;
+    for (let cursor = index; cursor < index + COARSE_GROUP; cursor += 1) {
+      sum += frames[cursor].rms * frames[cursor].rms;
+      peak = Math.max(peak, frames[cursor].peak);
+    }
+    const rms = Math.sqrt(sum / COARSE_GROUP);
+    coarse.push({ rms, db: toDb(rms), peak });
+  }
+  return coarse;
+}
+
+// Returns the frame that actually crosses the threshold. The previous version
+// returned the start of a 2-of-3 window, which routinely pointed at a silent
+// frame and is the direct cause of clues that open on dead air.
+function firstSustained(frames, thresholdDb, sustainMs = 150, requiredRatio = 2 / 3) {
+  const windowFrames = Math.max(1, Math.round(sustainMs / FINE_MS));
+  for (let index = 0; index + windowFrames <= frames.length; index += 1) {
+    if (frames[index].db < thresholdDb) continue;
     let audible = 0;
     for (let cursor = 0; cursor < windowFrames; cursor += 1) {
       if (frames[index + cursor].db >= thresholdDb) audible += 1;
     }
-    if (audible / windowFrames >= requiredRatio) return Math.round(index * FRAME_SECONDS * 1000);
+    if (audible / windowFrames >= requiredRatio) return index * FINE_MS;
+  }
+  return null;
+}
+
+function firstMostlyAudibleWindow(frames, thresholdDb = -45, windowMs = 1000, requiredRatio = 0.65) {
+  const windowFrames = Math.round(windowMs / FINE_MS);
+  for (let index = 0; index + windowFrames <= frames.length; index += 1) {
+    let audible = 0;
+    for (let cursor = 0; cursor < windowFrames; cursor += 1) {
+      if (frames[index + cursor].db >= thresholdDb) audible += 1;
+    }
+    if (audible / windowFrames >= requiredRatio) return index * FINE_MS;
   }
   return null;
 }
@@ -125,19 +186,102 @@ function median(values) {
 }
 
 function rangeMedian(frames, startSeconds, endSeconds) {
-  const start = Math.floor(startSeconds / FRAME_SECONDS);
-  const end = Math.min(frames.length, Math.ceil(endSeconds / FRAME_SECONDS));
+  const start = Math.max(0, Math.floor(startSeconds * 1000 / FINE_MS));
+  const end = Math.min(frames.length, Math.ceil(endSeconds * 1000 / FINE_MS));
   return median(frames.slice(start, end).map((frame) => frame.db));
 }
 
 function firstPlayableWindow(frames, clueGainDb, windowSeconds = 2) {
-  const windowFrames = Math.round(windowSeconds / FRAME_SECONDS);
+  const windowFrames = Math.round(windowSeconds * 1000 / FINE_MS);
   const targetRawDb = -38 - clueGainDb;
-  for (let index = 0; index <= frames.length - windowFrames; index += 1) {
-    const windowDb = median(frames.slice(index, index + windowFrames).map((frame) => frame.db));
-    if (windowDb >= targetRawDb) return Math.round(index * FRAME_SECONDS * 1000);
+  for (let index = 0; index + windowFrames <= frames.length; index += 1) {
+    const level = median(frames.slice(index, index + windowFrames).map((frame) => frame.db));
+    if (level >= targetRawDb) return index * FINE_MS;
   }
   return null;
+}
+
+// The song's own established loudness. Every audibility threshold is measured
+// against this so a -60 dB analogue noise floor and a -180 dB digital zero
+// both classify correctly without per-song tuning.
+function bodyLevelDb(frames) {
+  const preferred = rangeMedian(frames, 5, 20);
+  if (Number.isFinite(preferred) && preferred > -100) return preferred;
+  const fallback = rangeMedian(frames, 1, Math.max(2, frames.length * FINE_MS / 1000));
+  return Number.isFinite(fallback) ? fallback : null;
+}
+
+// The five 20 ms sub-windows a 100 ms clue beginning at startMs is made of.
+function clueSubWindowDbs(frames, startMs) {
+  const index = Math.round(startMs / FINE_MS);
+  const subFrames = subWindowMs / FINE_MS;
+  const values = [];
+  for (let slot = 0; slot < subWindowCount; slot += 1) {
+    const level = windowDb(frames, index + slot * subFrames, subFrames);
+    if (level === null) return values;
+    values.push(level);
+  }
+  return values;
+}
+
+function searchOnset(frames, bodyDb, clueGainDb, offsetDb, required, fromMs = 0, toMs = Number.POSITIVE_INFINITY) {
+  if (!Number.isFinite(bodyDb)) return null;
+  const limit = Math.min(toMs, frames.length * FINE_MS - clueWindowMs);
+  for (let startMs = Math.max(0, fromMs); startMs <= limit; startMs += FINE_MS) {
+    const subWindowDbs = clueSubWindowDbs(frames, startMs);
+    if (subWindowDbs.length < subWindowCount) break;
+    if (!clueWindowIsAudible(subWindowDbs, bodyDb, clueGainDb, offsetDb, required)) continue;
+    if (leadHasDigitalSilence(frames, startMs)) continue;
+    return startMs;
+  }
+  return null;
+}
+
+// Defining the onset by the same measurement the gate uses guarantees that a
+// corrected start passes, instead of chasing a separate notion of "loud".
+// The search begins at the configured start so that a deliberately late start,
+// chosen to open on a hook, is moved forward to audible audio rather than
+// unwound back to the top of the track.
+// The strict threshold is preferred only when it arrives soon after the clue
+// first sounds continuous; otherwise the song has a deliberately quiet intro
+// and skipping to its loud section would discard real music.
+function musicOnsetMs(frames, bodyDb, clueGainDb, fromMs) {
+  const gateOnset = searchOnset(frames, bodyDb, clueGainDb, gateOffsetDb, gateMinAudibleSubWindows, fromMs);
+  if (gateOnset === null) return null;
+  const strictOnset = searchOnset(
+    frames, bodyDb, clueGainDb, onsetOffsetDb, subWindowCount,
+    gateOnset, gateOnset + onsetPreferenceWindowMs,
+  );
+  return strictOnset ?? gateOnset;
+}
+
+// Digital zeros at the very front of a clue are always wrong, however the rest
+// of the window measures.
+function leadHasDigitalSilence(frames, startMs) {
+  const index = Math.round(startMs / FINE_MS);
+  const end = Math.min(frames.length, index + leadSilenceMs / FINE_MS);
+  for (let cursor = Math.max(0, index); cursor < end; cursor += 1) {
+    if (frames[cursor].db < digitalSilenceDb) return true;
+  }
+  return false;
+}
+
+// Measures the exact audio the player hears when a clue begins at startMs.
+function clueWindowMeasurements(frames, startMs) {
+  const index = Math.round(startMs / FINE_MS);
+  if (index >= frames.length) return null;
+  const windowFrames = clueWindowMs / FINE_MS;
+  const earlyIndex = Math.max(0, Math.round((startMs - mp3FrameToleranceMs) / FINE_MS));
+  return {
+    subWindowDbs: clueSubWindowDbs(frames, startMs),
+    clueFirst100Db: windowDb(frames, index, windowFrames),
+    earlySeekMeanDb: windowDb(frames, earlyIndex, windowFrames),
+    leadHasDigitalSilence: leadHasDigitalSilence(frames, startMs),
+  };
+}
+
+function round1(value) {
+  return Number.isFinite(value) ? Math.round(value * 10) / 10 : null;
 }
 
 function envelopeCorrelation(left, right, lagFrames) {
@@ -199,36 +343,52 @@ const reports = [];
 let processed = 0;
 for (const song of candidates) {
   if (selectedIds.size > 0 && !selectedIds.has(song.id)) continue;
-  if (!song.media?.hostedFullUrl || !song.media?.hostedClueUrl) continue;
-  if (processed >= limit) break;
-  processed += 1;
   const fullFile = path.join(root, "private-media", "r2", "full", `${song.id}.mp3`);
   const clueFile = path.join(root, "private-media", "r2", "clues", `${song.id}.mp3`);
+  const hasHosted = Boolean(song.media?.hostedFullUrl && song.media?.hostedClueUrl);
+  const hasPrepared = existsSync(fullFile) && existsSync(clueFile);
+  if (!hasHosted && !(selectedIds.size > 0 && hasPrepared)) continue;
+  if (processed >= limit) break;
+  processed += 1;
   const source = sourceById.get(song.id);
   const flags = [];
-  if (!existsSync(fullFile) || !existsSync(clueFile)) {
+  if (!hasPrepared) {
     reports.push({ id: song.id, title: song.title, artist: song.artist, flags: ["missing-local-media"] });
     continue;
   }
   try {
     const fullFrames = envelope(decode(fullFile));
     const clueFrames = envelope(decode(clueFile));
-    const configuredStartMs = song.startAtMs ?? song.media?.onsetPadMs ?? 30;
+    const configuredStartMs = resolveConfiguredStartMs(song);
+    const clueGainDb = song.clueGainDb ?? 0;
+    const bodyDb = bodyLevelDb(fullFrames);
     const firstSoundMs = firstSustained(fullFrames, -52);
     const firstAudibleMs = firstSustained(fullFrames, -42);
     const firstStrongMs = firstSustained(fullFrames, -32);
     const firstMusicalMs = firstMostlyAudibleWindow(fullFrames);
     const introDb = rangeMedian(fullFrames, configuredStartMs / 1000, configuredStartMs / 1000 + 2);
     const laterDb = rangeMedian(fullFrames, configuredStartMs / 1000 + 8, configuredStartMs / 1000 + 15);
-    const clueGainDb = song.clueGainDb ?? 0;
     const effectiveIntroDb = introDb + clueGainDb;
     const recommendedPlayableMs = firstPlayableWindow(fullFrames, clueGainDb);
-    const aligned = alignment(fullFrames, clueFrames);
+    const aligned = alignment(coarsen(fullFrames), coarsen(clueFrames));
     const actualDurationMs = durationMs(fullFile);
     const kind = sourceKind(source, song);
-    if (firstSoundMs !== null && configuredStartMs + 250 < firstSoundMs) flags.push("configured-before-first-sound");
-    if (firstAudibleMs !== null && configuredStartMs + 100 <= firstAudibleMs) flags.push("short-clue-dead-zone");
-    if (firstAudibleMs !== null && configuredStartMs + 600 < firstAudibleMs && clueGainDb === 0) flags.push("configured-before-audible-content");
+
+    // The gate reads the clue asset the browser actually requests for short
+    // stages, so encoder priming and trim drift are included in the verdict.
+    const measured = clueWindowMeasurements(clueFrames, configuredStartMs);
+    const verdict = measured
+      ? evaluateClueWindow({ bodyDb, clueGainDb, ...measured })
+      : { status: clueWindowSilent, reasons: ["clue-window-past-end"], audibleSubWindows: null };
+    const onsetMs = verdict.status === clueWindowSilent
+      ? musicOnsetMs(clueFrames, bodyDb, clueGainDb, configuredStartMs)
+      : configuredStartMs;
+    if (verdict.status === clueWindowSilent) {
+      flags.push(clueWindowSilent);
+      // No forward correction is available, so this one needs a person.
+      if (!Number.isInteger(onsetMs) || onsetMs <= configuredStartMs) flags.push("clue-window-needs-review");
+    }
+
     if (configuredStartMs > 1000) flags.push("manual-offset-over-1s");
     if (effectiveIntroDb < -38) flags.push("very-quiet-first-2s");
     if (laterDb - introDb >= 12) flags.push("large-intro-energy-ramp");
@@ -241,15 +401,24 @@ for (const song of candidates) {
       artist: song.artist,
       configuredStartMs,
       hookStartMs: song.hookStartMs ?? null,
+      bodyDb: round1(bodyDb),
+      musicOnsetMs: onsetMs,
+      clueWindowStartMs: configuredStartMs,
+      clueWindowStatus: verdict.status,
+      clueWindowReasons: verdict.reasons,
+      clueAudibleSubWindows: verdict.audibleSubWindows,
+      clueSubWindowDbs: (measured?.subWindowDbs ?? []).map(round1),
+      clueFirst100Db: round1(measured?.clueFirst100Db),
+      clueEarlySeekDb: round1(measured?.earlySeekMeanDb),
       firstSoundMs,
       firstAudibleMs,
       firstStrongMs,
       firstMusicalMs,
-      first2SecondsDb: Math.round(introDb * 10) / 10,
+      first2SecondsDb: round1(introDb),
       clueGainDb,
-      effectiveFirst2SecondsDb: Math.round(effectiveIntroDb * 10) / 10,
+      effectiveFirst2SecondsDb: round1(effectiveIntroDb),
       recommendedPlayableMs,
-      seconds8To15Db: Math.round(laterDb * 10) / 10,
+      seconds8To15Db: round1(laterDb),
       clueFullAlignment: aligned,
       actualDurationMs,
       catalogDurationMs: song.media.hostedDurationMs,
@@ -259,7 +428,8 @@ for (const song of candidates) {
       flags,
     });
     if (flags.length > 0 || selectedIds.size > 0 || verbose) {
-      console.log(`${flags.length ? "FLAG" : "PASS"} ${song.id}${flags.length ? `: ${flags.join(", ")}` : ""}`);
+      console.log(`${flags.length ? "FLAG" : "PASS"} ${song.id}${flags.length ? `: ${flags.join(", ")}` : ""}`
+        + (verdict.status === clueWindowSilent ? ` [${verdict.reasons.join("/")}; start=${configuredStartMs}ms onset=${onsetMs ?? "?"}ms body=${round1(bodyDb)}dB]` : ""));
     }
   } catch (error) {
     reports.push({ id: song.id, title: song.title, artist: song.artist, flags: ["analysis-failed"], error: error.message });
@@ -284,6 +454,13 @@ const publicFeatures = {
   notes: "Derived waveform measurements only. Regenerate after replacing, trimming, or retiming hosted audio.",
   songs: completeReports.map((song) => ({
     id: song.id,
+    bodyDb: song.bodyDb ?? null,
+    musicOnsetMs: song.musicOnsetMs ?? null,
+    clueWindowStartMs: song.clueWindowStartMs ?? null,
+    clueWindowStatus: song.clueWindowStatus ?? null,
+    clueWindowReasons: song.clueWindowReasons ?? null,
+    clueAudibleSubWindows: song.clueAudibleSubWindows ?? null,
+    clueFirst100Db: song.clueFirst100Db ?? null,
     firstSoundMs: song.firstSoundMs,
     firstAudibleMs: song.firstAudibleMs,
     firstStrongMs: song.firstStrongMs,
@@ -296,4 +473,6 @@ const publicFeatures = {
 writeFileSync(publicFeaturesFile, `${JSON.stringify(publicFeatures, null, 2)}\n`, "utf8");
 console.log(`\nAudited ${reports.length} hosted song(s); retained ${completeReports.length} total feature rows.`);
 for (const [flag, count] of Object.entries(flagCounts).sort((a, b) => b[1] - a[1])) console.log(`${flag}: ${count}`);
+const silentCount = completeReports.filter((song) => song.clueWindowStatus === clueWindowSilent).length;
+console.log(`Clue-window gate: ${completeReports.length - silentCount} pass, ${silentCount} silent.`);
 console.log(`Report: ${path.relative(root, outputFile)}`);

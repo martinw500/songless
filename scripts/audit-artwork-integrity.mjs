@@ -12,9 +12,17 @@ const sharingOverridesFile = path.join(root, "data", "artwork-sharing-overrides.
 const sourceOverridesFile = path.join(root, "data", "artwork-source-overrides.json");
 const checkRemote = process.argv.includes("--remote");
 const compareLocal = process.argv.includes("--compare-local");
+const idIndex = process.argv.indexOf("--id");
+const inlineIds = process.argv.find((value) => value.startsWith("--id="))?.slice("--id=".length);
+const selectedIds = new Set((inlineIds ?? (idIndex >= 0 ? process.argv[idIndex + 1] : ""))
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean));
 
-const candidates = JSON.parse(readFileSync(candidateFile, "utf8")).songs;
-const catalog = JSON.parse(readFileSync(catalogFile, "utf8"));
+const candidates = JSON.parse(readFileSync(candidateFile, "utf8")).songs
+  .filter((song) => selectedIds.size === 0 || selectedIds.has(song.id));
+const catalog = JSON.parse(readFileSync(catalogFile, "utf8"))
+  .filter((song) => selectedIds.size === 0 || selectedIds.has(song.id));
 const sharingOverrides = existsSync(sharingOverridesFile)
   ? JSON.parse(readFileSync(sharingOverridesFile, "utf8")).groups ?? []
   : [];
@@ -61,6 +69,7 @@ for (const song of candidates) {
 }
 
 for (const override of sourceOverrides) {
+  if (selectedIds.size > 0 && !selectedIds.has(override.id)) continue;
   const song = candidateById.get(override.id);
   if (!song) {
     errors.push(`${override.id}: artwork source override references a missing candidate`);
@@ -173,6 +182,7 @@ if (checkRemote) {
     }
   }
   for (const override of sourceOverrides.filter((entry) => entry.artworkMd5)) {
+    if (selectedIds.size > 0 && !selectedIds.has(override.id)) continue;
     const remote = remoteByKey.get(`artwork/${override.id}.jpg`);
     if (remote?.etag && !remote.etag.includes("-") && remote.etag !== override.artworkMd5.toLowerCase()) {
       errors.push(`${override.id}: reviewed artwork checksum changed (${remote.etag} != ${override.artworkMd5})`);

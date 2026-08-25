@@ -8,6 +8,7 @@ const candidateFile = path.join(root, "data", "song-candidates.json");
 const sourceFile = path.join(root, "data", "song-download-sources.local.json");
 const cacheDirectory = path.join(root, "data", "studio-source-search.local");
 const metadataCacheDirectory = path.join(root, "data", "itunes-track-metadata.local");
+const preparedDirectory = path.join(root, "private-media", "r2", "full");
 const reportFile = path.join(root, "data", "studio-source-audit.local.json");
 const fingerprintReportFile = path.join(root, "data", "canonical-fingerprint-audit.local.json");
 const apply = process.argv.includes("--apply");
@@ -35,7 +36,8 @@ let metadataRequests = 0;
 mkdirSync(cacheDirectory, { recursive: true });
 mkdirSync(metadataCacheDirectory, { recursive: true });
 const candidateRoot = JSON.parse(readFileSync(candidateFile, "utf8"));
-const playable = candidateRoot.songs.filter((song) => song.media?.hostedFullUrl && song.media?.hostedClueUrl);
+const playable = candidateRoot.songs.filter((song) => (song.media?.hostedFullUrl && song.media?.hostedClueUrl)
+  || existsSync(path.join(preparedDirectory, `${song.id}.mp3`)));
 const sourceRoot = JSON.parse(readFileSync(sourceFile, "utf8"));
 const sourceById = new Map(sourceRoot.songs.map((source) => [source.id, source]));
 const fingerprintRoot = existsSync(fingerprintReportFile)

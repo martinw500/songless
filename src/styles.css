@@ -1338,8 +1338,17 @@ input:focus-visible {
 @media (max-width: 760px) {
   body { overflow-y: auto; }
 
+  /* Everything is sized to the small viewport, the height with the browser
+     toolbars showing. A phone layout that fits there never becomes scrollable,
+     so the toolbar never collapses, so it cannot re-expand when audio starts
+     and drag the whole round down and back up again. Sizing to vh or dvh
+     instead reintroduces exactly that shift. */
+  html, body, #root { min-height: 100svh; }
+
+  .app-shell { min-height: 100svh; }
+
   .game-layout {
-    min-height: 100dvh;
+    min-height: 100svh;
     padding: 18px 14px 28px;
     display: flex;
     flex-direction: column;
@@ -1361,16 +1370,23 @@ input:focus-visible {
   .mode-actions { margin-top: 8px; display: flex; justify-content: center; }
   .mode-action { width: auto; min-width: 112px; }
 
+  /* The card absorbs whatever height the panels leave rather than claiming a
+     fixed 570px, so the round centres itself on tall phones and still fits on
+     short ones. It grows but never shrinks, because the card clips overflow. */
   .game-card {
     width: min(100%, 424px);
-    min-height: 570px;
+    min-height: 0;
+    flex: 1 0 auto;
     order: 2;
     padding: 0 25px 34px;
     border: 1px solid rgba(116, 125, 104, 0.13);
     transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .game-content { padding-top: clamp(115px, 21vh, 175px); }
+  .game-content { padding-top: 0; }
 
   .settings-panel {
     width: min(100%, 424px);
@@ -1385,9 +1401,14 @@ input:focus-visible {
   .stage-pills { padding: 0; gap: 4px; }
   .stage-pill { min-width: 26px; padding: 0 4px; }
   .game-content.result-state {
-    min-height: 536px;
+    min-height: 0;
     height: auto;
   }
+  /* The card centres its content inside the padding box, so the bottom-only
+     padding would sit the result group above the card's true centre. Matching
+     the top padding restores the centring the desktop layout has. */
+  .app-shell[data-status="won"] .game-card,
+  .app-shell[data-status="lost"] .game-card { padding-top: 34px; }
   .result-state .result-panel { padding: 0; transform: translateY(12px); }
 }
 
@@ -1395,12 +1416,13 @@ input:focus-visible {
   .game-layout { padding-left: 0; padding-right: 0; }
   .mode-panel, .settings-panel { width: calc(100% - 28px); }
   .game-card { width: 100%; border-left: 0; border-right: 0; }
-  .game-content { padding-top: 110px; }
   .difficulty-tabs { gap: 4px; }
   .difficulty-tabs button { padding: 0 9px; font-size: 10px; }
   .guess-form { grid-template-columns: minmax(0, 1fr) 102px; }
   .skip-button { min-width: 102px; }
-  .settings-panel { grid-template-columns: 1fr; gap: 18px; }
+  /* Two columns rather than four stacked rows: the settings block is the
+     tallest thing competing with the card for small-viewport height. */
+  .settings-panel { grid-template-columns: repeat(2, 1fr); gap: 14px 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

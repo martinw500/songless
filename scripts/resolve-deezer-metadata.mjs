@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
+const preparedDirectory = path.join(root, "private-media", "r2", "full");
 const cacheDirectory = path.join(root, "data", "deezer-track-metadata.local");
 const reportFile = path.join(root, "data", "deezer-metadata-audit.local.json");
 const refresh = process.argv.includes("--refresh");
@@ -16,7 +17,8 @@ const limit = Number(process.argv.find((value) => value.startsWith("--limit="))?
 
 mkdirSync(cacheDirectory, { recursive: true });
 const candidates = JSON.parse(readFileSync(candidateFile, "utf8")).songs
-  .filter((song) => song.media?.hostedFullUrl && (selectedIds.size === 0 || selectedIds.has(song.id)));
+  .filter((song) => (song.media?.hostedFullUrl || existsSync(path.join(preparedDirectory, `${song.id}.mp3`)))
+    && (selectedIds.size === 0 || selectedIds.has(song.id)));
 
 function normalize(value = "") {
   return value.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase()
@@ -31,7 +33,8 @@ function normalizeArtist(value = "") {
   return normalize(value).replace(/^(?:the|ms)\s+/u, "");
 }
 
-const altered = /\b(live|concert|sessions?|acoustic|stripped|remix|mix|disko|sped|slowed|reverb|nightcore|cover|karaoke|instrumental|clean|radio (?:edit|version)|versions?|extended|re recorded|rerecorded|remake|mashup|parody|demo|tribute|sprint music series|taylor s version|originally performed|made famous|in the style of|midifine)\b/iu;
+const altered = /\b(live|concert|sessions?|acoustic|stripped|remix|mix|disko|sped|slowed|reverb|nightcore|cover|karaoke|instrumental|clean|radio (?:edit|version)|versions?|extended|re recorded|rerecorded|remake|mashup|parody|demo|tribute|sprint music series|taylor s version|originally performed|made famous|in the style of|midifine|unplugged|megamix|432\s*hz|8\s*d|3\s*d|10\s*d|7000\s*d|pitched)\b/iu;
+const rejectedAlbum = /\b(?:unplugged|megamix|workout|fitness|body by|karaoke|sing.?along|greatest hits|best of|essentials|party hits)\b/iu;
 
 function inspect(candidate, result) {
   const titles = [candidate.title, ...(candidate.aliases ?? [])].map(normalize);
@@ -50,7 +53,7 @@ function inspect(candidate, result) {
   const leadMatch = normalizeArtist(result.artist?.name ?? "") === normalizeArtist(candidate.primaryArtists[0] ?? "");
   const expectedAlbum = normalize(candidate.album ?? "");
   const album = normalize(result.album?.title ?? "");
-  const alteredAlbum = altered.test(album);
+  const alteredAlbum = altered.test(album) || rejectedAlbum.test(album);
   const albumMatch = expectedAlbum && (album === expectedAlbum
     || containsPhrase(album, expectedAlbum) || containsPhrase(expectedAlbum, album));
   const spotifyDurationSeconds = Number(candidate.spotifyDurationMs) / 1000;
@@ -65,9 +68,11 @@ function inspect(candidate, result) {
   const creditsVerified = artistCoverage === artists.length
     || (artists.length === 1 && leadMatch)
     || spotifyCorroborated;
+  const albumRequired = Boolean(expectedAlbum);
   const valid = (referenceDurationSeconds === null ? exactTitle : titleMatch) && leadMatch && creditsVerified
     && !altered.test(versionText)
     && !alteredAlbum
+    && (!albumRequired || albumMatch)
     && Number.isFinite(Number(result.duration)) && result.duration >= 60
     && (durationDifference === null || durationDifference <= 15)
     && /^https:\/\//u.test(result.preview ?? "");
@@ -76,7 +81,8 @@ function inspect(candidate, result) {
     + (leadMatch ? 100 : 0)
     + (albumMatch ? 250 : 0)
     + (durationDifference !== null ? Math.max(-200, 150 - durationDifference * 40) : 0)
-    - (altered.test(versionText) ? 800 : 0);
+    - (altered.test(versionText) ? 800 : 0)
+    - (alteredAlbum ? 800 : 0);
   return { valid, score, artistCoverage, albumMatch, durationDifference, spotifyCorroborated };
 }
 

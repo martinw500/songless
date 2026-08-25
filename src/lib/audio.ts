@@ -1,6 +1,7 @@
 import type { Song } from "../types";
 
 const MIN_FADE_SECONDS = 0.004;
+const SEEK_TOLERANCE_SECONDS = 0.005;
 const MAX_CACHED_BUFFERS = 3;
 const SYNTH_REVEAL_SECONDS = 30;
 const BUFFER_RETRY_DELAYS_MS = [0, 350, 900] as const;
@@ -227,6 +228,10 @@ export class AudioEngine {
     const source = context.createMediaElementSource(media);
     source.connect(this.createMediaGain(context, requestedDuration === null ? 0 : song.clueGainDb ?? 0));
     this.activeNodes.push({ stop: () => source.disconnect() } as AudioScheduledSourceNode);
+    // A 0.1 second clue cannot absorb a seek that is still in flight, so let the
+    // element settle on the requested offset before it starts producing audio.
+    await this.waitForSeek(media, offset);
+    if (playbackId !== this.playbackId || this.media !== media) return 0;
     await media.play();
     if (playbackId !== this.playbackId || this.media !== media) {
       media.pause();
@@ -316,6 +321,23 @@ export class AudioEngine {
       media.addEventListener("loadedmetadata", loaded, { once: true });
       media.addEventListener("error", failed, { once: true });
       media.load();
+    });
+  }
+
+  // Resolves rather than rejects on timeout: a late seek is worth waiting a
+  // moment for, but never worth refusing to play the clue over.
+  private async waitForSeek(media: HTMLAudioElement, offset: number): Promise<void> {
+    if (!media.seeking && Math.abs(media.currentTime - offset) < SEEK_TOLERANCE_SECONDS) return;
+    await new Promise<void>((resolve) => {
+      const timeout = window.setTimeout(finish, 1_500);
+      function finish(): void {
+        window.clearTimeout(timeout);
+        media.removeEventListener("seeked", finish);
+        media.removeEventListener("error", finish);
+        resolve();
+      }
+      media.addEventListener("seeked", finish, { once: true });
+      media.addEventListener("error", finish, { once: true });
     });
   }
 }

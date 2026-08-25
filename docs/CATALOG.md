@@ -109,16 +109,32 @@ Intro identification is the largest single component at 45%. These fixed bands w
 
 MP3 files contain encoder padding (typically one full MP3 frame of 1152 samples ≈ 26ms) plus any genuine silence or fade-in at the start of the track. When the browser's Web Audio API decodes an MP3 to PCM via `decodeAudioData()`, this padding becomes real zero-valued samples at the start of the buffer. For extremely short playback stages (0.01s, 0.1s), even 50–300ms of leading silence makes the clip completely inaudible.
 
-The `startAtMs` field in each candidate and catalog entry tells the audio engine where to begin playback inside the decoded buffer. `scripts/audit-media-starts.mjs` measures every complete/clue pair and stores safe tracked measurements in `data/intro-audio-features.json`. To set it correctly:
+The `startAtMs` field in each candidate and catalog entry tells the audio engine where to begin playback inside the decoded buffer. `scripts/audit-media-starts.mjs` measures every complete/clue pair and stores tracked measurements in `data/intro-audio-features.json`.
 
-1. Decode the first 35 seconds of both prepared files to mono 8 kHz, 32-bit float PCM using ffmpeg.
-2. Measure 50 ms RMS frames and find sustained first-sound, audible, and strong thresholds at -52, -42, and -32 dBFS.
-3. Compare the clue envelope with the complete file, reject alignment drift, and inspect the first two seconds plus the 8–15 second energy ramp.
-4. Document `startAtMs` at the earliest playable musical onset. Do not mistake audible video noise for a valid song onset; source title, artist credits, album, version label, and canonical duration must pass independently.
+### The clue-window gate
 
-After applying onsets, regenerate the catalog with `node scripts/generate-provisional-catalog.mjs`. The fallback chain is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding). Do not skip a deliberate fade or melody merely because it is soft. Set `clueGainDb` from 0–12 dB for those cases; clue playback is limited, and full-song reveal playback remains at the original level.
+The only question that matters is whether the 0.1 second window the player actually hears contains audible music, so that is what the audit measures, on `private-media/r2/clues/<id>.mp3` — the same asset the browser requests for short stages, including its encoder priming and trim.
 
-Because the shortest normal clue is 0.1 seconds, `npm run provisional:catalog` automatically advances an undocumented start that sits at least 100 ms before the measured sustained-audio onset. The audit verifies that normalization was applied instead of rejecting the song as a curation decision. Intentional quiet textures and fades must have a documented media-start override and, when necessary, clue-only gain. Audible static cannot be distinguished reliably from intentional texture by level measurements, so known static receives an explicit skip such as the tracked `No One Noticed` override.
+1. Decode the first 35 seconds of both prepared files to mono 44.1 kHz, 32-bit float PCM using ffmpeg, and take RMS on a 10 ms hop. That resolution matches the shortest stage in `stageOptions`; the previous 8 kHz / 50 ms envelope averaged the onset transient together with the silence beside it and routinely reported starts inside dead air.
+2. Compute `bodyDb`, the median level over seconds 5–20, as a per-song loudness reference. Every threshold is relative to it. A fixed dBFS floor cannot separate a quiet analogue intro from digital silence across a catalogue this varied.
+3. Split the 100 ms clue into five 20 ms sub-windows. The clue **passes** when at least four of the five sit within 26 dB of `bodyDb` (crediting `clueGainDb`) and no digital zero appears in the first 30 ms. One quiet sub-window is tolerated because that is what a note attack is; a clue that only carries energy in its tail is reported as `clue-window-silent`.
+4. Compare the clue envelope with the complete file, reject alignment drift, and inspect the first two seconds plus the 8–15 second energy ramp.
+5. Confirm the recording independently. Do not mistake audible video noise for a valid song onset; source title, artist credits, album, version label, and canonical duration must pass on their own.
+
+### Correcting a failing start
+
+`npm run provisional:catalog` moves a failing song to `musicOnsetMs`, the earliest start whose whole clue clears a stricter threshold: all five sub-windows within 20 dB of `bodyDb`. Holding a corrected start to the stricter bar leaves it comfortably inside the gate rather than on its boundary, and that margin also absorbs an MP3 seek that lands one frame (≈26 ms) early.
+
+Two guards keep the correction honest:
+
+- If the strict threshold is only reached more than 250 ms after the clue first sounds continuous, the song opens quietly on purpose and the gate boundary is used instead. Without this, a soft intro such as `system-of-a-down-chop-suey` would be skipped entirely in favour of the band entry 1.5 seconds later.
+- The search starts at the configured start, so corrections only ever move forward. A measured onset before the configured start means the start was chosen deliberately, to open on a hook or skip an intro, and unwinding that is a human decision.
+
+A failing clue window is an audible defect, so it corrects documented overrides too, rewriting their `startAtMs` and reason in `data/media-start-overrides.json`. Overrides stay authoritative for `clueGainDb` and for every song whose clue window already passes. Re-run `npm run audit:media-starts` after applying; the gate is self-consistent, so a corrected catalogue reports zero `clue-window-silent` songs.
+
+`node scripts/verify-ui.mjs --hosted-smoke --hosted-id=<id>` confirms the result from the other end: it fetches the deployed R2 clue, decodes it with the browser's own MP3 decoder, and applies the same sub-window rule. That is the only check that includes decoder priming on the asset a player actually receives, so run it after an upload batch. It reads `public/review-catalog.json`, so regenerate that with `npm run review:r2` after changing any start.
+
+The fallback chain for an unset start is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding). Do not skip a deliberate fade or melody merely because it is soft. Set `clueGainDb` from 0–12 dB for those cases; clue playback is limited, and full-song reveal playback remains at the original level. Audible static cannot be distinguished reliably from intentional texture by level measurements, so known static receives an explicit skip such as the tracked `No One Noticed` override.
 
 ## Live catalogue
 

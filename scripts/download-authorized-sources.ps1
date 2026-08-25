@@ -4,7 +4,8 @@ param(
     [string]$OutputDirectory,
     [string]$CandidateFile,
     [string[]]$Ids,
-    [switch]$Replace
+    [switch]$Replace,
+    [switch]$ContinueOnError
 )
 
 $ErrorActionPreference = "Stop"
@@ -64,6 +65,7 @@ foreach ($entry in $matchingEntries) {
     }
 }
 $entries = @($entriesById.Values)
+$failedDownloads = @()
 $missing = @()
 if ($selectedIds.Count -gt 0) {
     $missing = @($selectedIds.Keys | Where-Object { -not $entriesById.ContainsKey($_) })
@@ -91,8 +93,13 @@ foreach ($entry in $entries) {
     }
     $outputTemplate = Join-Path $OutputDirectory "$($entry.id).%(ext)s"
     $overwrite = if ($Replace) { "--force-overwrites" } else { "--no-overwrites" }
-    & $downloader.Source --no-playlist $overwrite --js-runtimes "node:$($node.Source)" --remote-components "ejs:github" --ffmpeg-location $ffmpegDirectory --format "bestaudio/best" --write-thumbnail --convert-thumbnails jpg --output $outputTemplate -- $entry.url
-    if ($LASTEXITCODE -ne 0) { throw "Source download failed for $($entry.id)." }
+    & $downloader.Source --no-playlist $overwrite --newline --socket-timeout 20 --retries 2 --fragment-retries 2 --extractor-retries 2 --js-runtimes "node:$($node.Source)" --remote-components "ejs:github" --ffmpeg-location $ffmpegDirectory --format "bestaudio/best" --write-thumbnail --convert-thumbnails jpg --output $outputTemplate -- $entry.url
+    if ($LASTEXITCODE -ne 0) {
+        if (-not $ContinueOnError) { throw "Source download failed for $($entry.id)." }
+        $failedDownloads += $entry.id
+        Write-Warning "FAILED $($entry.id): source download did not complete."
+    }
 }
 if ($Replace) { Write-Host "Previous exact-id source files were backed up to $backupDirectory." }
+if ($failedDownloads.Count -gt 0) { Write-Warning "Failed source ids: $($failedDownloads -join ', ')" }
 Write-Host "Authorized sources are ready in $OutputDirectory. Run npm run prepare:r2 next."

@@ -61,13 +61,16 @@ Do not score `introRecognition` from a different master. For immediate library t
 
    `npm run audit:spotify-pages` can independently cache metadata from each candidate's public `open.spotify.com/track/...` page without API credentials. It checks the displayed title, complete credited artists, album, release date, duration, and artwork; `--apply-metadata` writes only exact-credit matches. Extra credits and duration disagreements remain explicit review flags. The ignored page cache makes the audit resumable after public-page rate limiting, and Spotify is not contacted by the game at runtime. Reviewed missing feature credits belong in tracked `data/artist-credit-overrides.json` and are applied with `npm run apply:artist-credits`; sampled artists, members of a group, and credits from a wrong linked version must not be copied automatically.
 
-   `npm run metadata:deezer -- --id=<ids>` is a credential-free fallback when Apple or Spotify public metadata is unavailable. It caches only strict title and complete-credit matches with duration and a 30-second preview. Deezer is build-time evidence only; the game never contacts it at runtime.
+   `npm run metadata:deezer -- --id=<ids>` is a credential-free fallback when Apple or Spotify public metadata is unavailable. It caches only strict title and complete-credit matches with duration and a 30-second preview. Deezer rejects unplugged, megamix, workout/fitness, and effect/frequency editions, and requires candidate-album agreement when an album is already known. Deezer is build-time evidence only; the game never contacts it at runtime.
+
+   For a large high-stream expansion, build a cached batch with `node scripts/prepare-billion-download-batch.mjs --target=434` (do not rely on `npm run batch:billion -- --target=...`; some npm installs swallow the flags). Resolve sources with the PID-locked `scripts/resolve-youtube-sources.mjs` (bounded workers, 45-second search timeouts, per-chunk persistence). Select a verification set with `node scripts/select-billion-media-batch.mjs --target=200 --reserve=50` (250 selected; remaining gated mirrors stay as reserve). Duration-audit downloaded sources with `npm run audit:source-durations` before encoding; reject probe failures and canonical differences over three seconds. Prepare only duration-passing IDs, then fingerprint with `npm run audit:fingerprints -- --id=<ids>` using Apple, billion-batch, and Deezer preview references (album agreement required; expired Apple preview 403s fall back to Deezer). Finalize exactly 200 with `npm run finalize:billion-media`, preferring source-rank order: gated rows require `canonical_match`, and direct rows are excluded only for acoustic mismatches or wrong-album references. If fewer than 200 pass, pull only the shortfall from the gated reserve—never redownload completed sources. Upload with filtered `--id` lists on both `upload-r2-media.mjs` and `upload-artwork-r2.mjs`. Do not use browser cookies for age-gated YouTube failures.
 4. Download and prepare complete 128 kbps tracks, 30-second clue assets, and optional artwork. Preparation requires exactly one media source per song, fails on continuous 30-second opening silence, and retains a 30 ms onset pad when trimming so the first transient is not clipped:
 
    ```powershell
    npm run resolve:youtube -- 10
    npm run audit:sources
    npm run download:media
+   npm run audit:source-durations
    npm run prepare:r2 -- ".\private-media\source"
    ```
 
@@ -76,13 +79,16 @@ Do not score `introRecognition` from a different master. For immediate library t
    ```powershell
    npm run upload:r2:dry-run
    npm run upload:r2
+   npm run upload:artwork -- --dry-run --id=<ids>
+   npm run upload:artwork -- --id=<ids>
+   npm run audit:artwork:remote -- --id=<ids>
    npm run review:r2
    npm run dev
    ```
 
    The uploader gives each clue and full-track URL a content-hash version query and uses a one-hour R2 cache lifetime. Even when a replacement has the same duration and silence trim as the old file, its URL changes immediately instead of leaving a device pinned to the previous response.
 
-   For a correction batch, pass the same comma-separated ID list to `download-authorized-sources.ps1 -Replace`, `prepare-r2-media.ps1 -Force`, and `upload-r2-media.mjs --id=<ids>` (the uploader also accepts `--id <ids>`). Replacement downloads move the previous exact-ID source files into a timestamped `private-media/replaced-backup` folder. Before upload, run `node scripts/audit-media-starts.mjs --id=<ids>`; after upload, rerun it so catalogue duration, clue/full alignment, onset, loudness, and source classification all describe the deployed files.
+   For a correction batch, pass the same comma-separated ID list to `download-authorized-sources.ps1 -Replace`, `prepare-r2-media.ps1 -Force`, and `upload-r2-media.mjs --id=<ids>` (the uploader also accepts `--id <ids>`). Artwork upload now accepts the same `--id` / `--id=` filter. Replacement downloads move the previous exact-ID source files into a timestamped `private-media/replaced-backup` folder. Before upload, run `node scripts/audit-media-starts.mjs --id=<ids>`; after upload, rerun it so catalogue duration, clue/full alignment, onset, loudness, and source classification all describe the deployed files. That audit also runs the clue-window gate, which measures the exact 0.1 second window the player hears at each song's `startAtMs` and reports `clue-window-silent` when it opens on inaudible audio. Any song it flags is corrected to its measured music onset by `npm run provisional:catalog`; a finished batch must report zero flagged songs. See [CATALOG.md](CATALOG.md#the-clue-window-gate) for the measurement and its thresholds.
 
 6. Open `http://127.0.0.1:5173/?reviewSong=<id>` and confirm the exact version. Test 0.1, 0.5, 2, 8, and 15 seconds.
 7. Audit the complete queue:

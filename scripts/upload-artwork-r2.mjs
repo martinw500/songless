@@ -7,6 +7,12 @@ import { assertWithinR2Budget, projectedBucketBytes } from "./r2-storage.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
 const dryRun = process.argv.includes("--dry-run");
+const idIndex = process.argv.indexOf("--id");
+const inlineIds = process.argv.find((value) => value.startsWith("--id="))?.slice("--id=".length);
+const selectedIds = new Set((inlineIds ?? (idIndex >= 0 ? process.argv[idIndex + 1] : ""))
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean));
 const required = ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET", "R2_PUBLIC_BASE_URL"];
 for (const name of required) {
   if (!process.env[name]?.trim()) throw new Error(`${name} is required in ignored .env.local.`);
@@ -45,7 +51,13 @@ async function listObjects() {
 }
 
 const candidateRoot = JSON.parse(readFileSync(candidateFile, "utf8"));
-const songs = candidateRoot.songs;
+const songs = selectedIds.size > 0
+  ? candidateRoot.songs.filter((song) => selectedIds.has(song.id))
+  : candidateRoot.songs;
+if (selectedIds.size > 0 && songs.length !== selectedIds.size) {
+  const found = new Set(songs.map((song) => song.id));
+  throw new Error(`Unknown artwork candidate ids: ${[...selectedIds].filter((id) => !found.has(id)).join(", ")}.`);
+}
 
 // Identify songs with Spotify CDN artwork that need R2 rehosting
 const toUpload = [];
@@ -68,9 +80,13 @@ for (const song of songs) {
 }
 
 console.log(`=== Artwork R2 Rehost ===`);
+if (selectedIds.size > 0) console.log(`Filtered ids: ${selectedIds.size}`);
 console.log(`Already on R2: ${alreadyR2.length}`);
 console.log(`Need rehosting: ${toUpload.length}`);
 console.log(`No artwork URL: ${noArtwork.length}`);
+if (toUpload.length > 0 && (dryRun || selectedIds.size > 0)) {
+  console.log(`Upload candidates: ${toUpload.map((song) => song.id).join(", ")}`);
+}
 
 if (toUpload.length === 0) {
   console.log("\nNothing to upload.");

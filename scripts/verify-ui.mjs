@@ -780,6 +780,148 @@ async function run() {
       `Play triangle lost optical alignment at 720px (${JSON.stringify(narrow)}).`);
     console.log("PASS 720px responsive layout and play-icon alignment");
 
+    // A phone-sized round view must hold still while a clip plays. Any growth in
+    // the scrollable page also matters: on iOS the browser toolbar only
+    // collapses on a scrollable page, and it re-expands when media starts,
+    // which drags the whole layout down and back up around playback.
+    await client.call("Emulation.setDeviceMetricsOverride", {
+      width: 390,
+      height: 844,
+      deviceScaleFactor: 3,
+      mobile: true,
+    });
+    await delay(260);
+    await setStageEnabled(client, "8s", true);
+    for (const label of ["0.01s", "0.1s", "0.5s", "2s"]) await setStageEnabled(client, label, false);
+    await delay(200);
+    const phoneGeometry = `(() => {
+      const rect = (selector) => {
+        const node = document.querySelector(selector);
+        if (!node) return null;
+        const box = node.getBoundingClientRect();
+        return { top: Math.round(box.top * 100) / 100, height: Math.round(box.height * 100) / 100 };
+      };
+      return {
+        gameContent: rect('.game-content'),
+        stageTrack: rect('.stage-track'),
+        playButton: rect('.play-button'),
+        guessForm: rect('.guess-form'),
+        modePanel: rect('.mode-panel'),
+        gameCard: rect('.game-card'),
+        settingsPanel: rect('.settings-panel'),
+        difficultyTabs: rect('.difficulty-tabs'),
+        scrollY: Math.round(window.scrollY * 100) / 100,
+        innerHeight: window.innerHeight,
+        scrollHeight: document.documentElement.scrollHeight,
+        viewportHeight: Math.round((window.visualViewport?.height ?? 0) * 100) / 100,
+        viewportOffsetTop: Math.round((window.visualViewport?.offsetTop ?? 0) * 100) / 100,
+        playing: document.querySelector('.play-button')?.classList.contains('playing') ?? false,
+      };
+    })()`;
+    const phoneIdle = await client.evaluate(phoneGeometry);
+    await client.evaluate("document.querySelector('.play-button').click()");
+    let phonePlaying = null;
+    for (let attempt = 0; attempt < 24; attempt += 1) {
+      await delay(120);
+      const sample = await client.evaluate(phoneGeometry);
+      if (sample.playing && Number(await client.evaluate("Number(document.querySelector('.stage-playback-progress').dataset.elapsed)")) > 0) {
+        phonePlaying = sample;
+        break;
+      }
+    }
+    assert(phonePlaying, "Playback never became active at the 390x844 phone viewport.");
+    if (saveArtifacts) {
+      const artifactDirectory = path.join(root, ".ui-audit");
+      mkdirSync(artifactDirectory, { recursive: true });
+      const capture = await client.call("Page.captureScreenshot", { format: "png" });
+      writeFileSync(path.join(artifactDirectory, "phone-playing-state.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "phone-playing-state.png"))}`);
+    }
+    await client.evaluate("document.querySelector('.play-button').click()");
+    await delay(220);
+    const phoneStopped = await client.evaluate(phoneGeometry);
+    console.log(`Phone geometry idle/playing/stopped: ${JSON.stringify({ phoneIdle, phonePlaying, phoneStopped })}`);
+    for (const key of ["gameContent", "stageTrack", "playButton", "guessForm"]) {
+      const drift = Math.abs(phonePlaying[key].top - phoneIdle[key].top);
+      const restored = Math.abs(phoneStopped[key].top - phoneIdle[key].top);
+      assert(drift <= 0.5 && restored <= 0.5,
+        `${key} moved vertically around playback on a phone viewport (idle ${phoneIdle[key].top}, playing ${phonePlaying[key].top}, stopped ${phoneStopped[key].top}).`);
+    }
+    assert(phonePlaying.scrollHeight <= phonePlaying.innerHeight + 1,
+      `The phone round view is ${phonePlaying.scrollHeight - phonePlaying.innerHeight}px taller than the viewport, so the iOS toolbar can collapse and re-expand around playback (${JSON.stringify(phonePlaying)}).`);
+    console.log("PASS phone round view holds still and fits the viewport during playback");
+
+    // Headless Chrome has no collapsing toolbar, so svh, dvh and vh all resolve
+    // to the same height here. Re-measuring at a deliberately short viewport is
+    // what proves the round still fits once a real toolbar takes its share.
+    await client.call("Emulation.setDeviceMetricsOverride", {
+      width: 390,
+      height: 660,
+      deviceScaleFactor: 3,
+      mobile: true,
+    });
+    await delay(240);
+    const shortViewport = await client.evaluate(phoneGeometry);
+    assert(shortViewport.scrollHeight <= shortViewport.innerHeight + 1,
+      `The round view overflows a 390x660 phone viewport by ${shortViewport.scrollHeight - shortViewport.innerHeight}px (${JSON.stringify(shortViewport)}).`);
+    console.log(`PASS round view fits a short 390x660 phone viewport (card ${shortViewport.gameCard.height}px)`);
+
+    // The result screen shares the card, so it has to fit the small viewport
+    // too. If it can scroll, the toolbar collapses there and the next round's
+    // first Play brings it back, which is the same jump by another route.
+    await client.call("Emulation.setDeviceMetricsOverride", {
+      width: 390,
+      height: 844,
+      deviceScaleFactor: 3,
+      mobile: true,
+    });
+    await delay(200);
+    for (let attempt = 0; attempt < 10; attempt += 1) {
+      const status = await client.evaluate("document.querySelector('.app-shell')?.dataset.status");
+      if (status !== "playing") break;
+      await client.evaluate("document.querySelector('.skip-button')?.click()");
+      await delay(130);
+    }
+    await delay(700);
+    const phoneResult = await client.evaluate(phoneGeometry);
+    if (saveArtifacts) {
+      const artifactDirectory = path.join(root, ".ui-audit");
+      mkdirSync(artifactDirectory, { recursive: true });
+      const capture = await client.call("Page.captureScreenshot", { format: "png" });
+      writeFileSync(path.join(artifactDirectory, "phone-result-state.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "phone-result-state.png"))}`);
+    }
+    assert(phoneResult.scrollHeight <= phoneResult.innerHeight + 1,
+      `The phone result screen overflows the viewport by ${phoneResult.scrollHeight - phoneResult.innerHeight}px (${JSON.stringify(phoneResult)}).`);
+    const phoneResultCentering = await client.evaluate(`(() => {
+      const card = document.querySelector('.game-card').getBoundingClientRect();
+      const artwork = document.querySelector('.result-artwork-wrap')?.getBoundingClientRect();
+      const stamp = document.querySelector('.result-stamp')?.getBoundingClientRect();
+      if (!artwork || !stamp) return null;
+      return {
+        groupTop: Math.round(artwork.top),
+        groupBottom: Math.round(stamp.bottom),
+        offset: Math.round(((artwork.top + stamp.bottom) / 2) - (card.top + card.height / 2)),
+      };
+    })()`);
+    console.log(`Phone result group vs card centre: ${JSON.stringify(phoneResultCentering)}`);
+    assert(phoneResultCentering && Math.abs(phoneResultCentering.offset) <= 16,
+      `The phone result group is not centred in the game card (${JSON.stringify(phoneResultCentering)}).`);
+    console.log("PASS phone result screen fits the viewport and centres its result group");
+    // Playback locked the stage pills, so reroll before restoring the defaults
+    // the remaining checks expect.
+    await client.evaluate("document.querySelector('.mode-action').click()");
+    await delay(220);
+    for (const label of ["0.01s", "0.1s", "0.5s", "2s"]) await setStageEnabled(client, label, true);
+    await setStageEnabled(client, "0.01s", false);
+    await client.call("Emulation.setDeviceMetricsOverride", {
+      width: 1918,
+      height: 1079,
+      deviceScaleFactor: 1,
+      mobile: false,
+    });
+    await delay(200);
+
     const artworkFixtures = ["#ff3158", "#2f7cff"].map((color, index) => (
       `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" fill="${color}"/><text x="32" y="40" text-anchor="middle" fill="white" font-size="24">${index + 1}</text></svg>`).toString("base64")}`
     ));
@@ -925,6 +1067,45 @@ async function run() {
       assert(Number.isFinite(revealStart) && Math.abs(revealStart - expectedRevealStart) <= 0.2,
         `The hosted reveal inherited clue time instead of restarting at game-time zero (${JSON.stringify({ revealStart, expectedRevealStart })}).`);
       console.log(`PASS real R2 clue, assigned artwork, and full-song reveal restart (${hostedSong.id})`);
+
+      // The shortest stage is the one that breaks when a start lands early, and
+      // it is too brief to judge by watching the UI. Decode the deployed clue
+      // with the browser's own MP3 decoder, so its priming is included, and
+      // measure the exact 0.1 second window the player would hear.
+      const clueUrl = hostedSong.audio.clueSrc;
+      assert(clueUrl, `The hosted smoke song ${hostedSong.id} has no clue asset URL.`);
+      const shortestClue = await client.evaluate(`(async () => {
+        const context = new (window.AudioContext ?? window.webkitAudioContext)();
+        const response = await fetch(${JSON.stringify(clueUrl)});
+        const buffer = await context.decodeAudioData(await response.arrayBuffer());
+        const samples = buffer.getChannelData(0);
+        const rate = buffer.sampleRate;
+        const levelDb = (fromMs, lengthMs) => {
+          const start = Math.max(0, Math.round((fromMs / 1000) * rate));
+          const end = Math.min(samples.length, start + Math.round((lengthMs / 1000) * rate));
+          if (end <= start) return null;
+          let sum = 0;
+          for (let index = start; index < end; index += 1) sum += samples[index] * samples[index];
+          return 20 * Math.log10(Math.max(Math.sqrt(sum / (end - start)), 1e-9));
+        };
+        const startMs = ${Number(hostedSong.startAtMs ?? 0)};
+        await context.close();
+        return {
+          startMs,
+          // The same five 20 ms sub-windows the offline gate judges, so this is
+          // a confirmation of that gate rather than a weaker average.
+          subWindowDbs: [0, 1, 2, 3, 4].map((slot) => levelDb(startMs + slot * 20, 20)),
+          bodyDb: levelDb(5000, 15000),
+          durationMs: Math.round(buffer.duration * 1000),
+        };
+      })()`);
+      const clueGainDb = hostedSong.clueGainDb ?? 0;
+      const relativeDbs = shortestClue.subWindowDbs.map((db) => db + clueGainDb - shortestClue.bodyDb);
+      const audibleSubWindows = relativeDbs.filter((db) => db >= -26).length;
+      console.log(`Shortest hosted clue for ${hostedSong.id} at ${shortestClue.startMs}ms: ${audibleSubWindows}/5 sub-windows audible, [${relativeDbs.map((db) => db.toFixed(1)).join(", ")}] dB relative to the song body`);
+      assert(audibleSubWindows >= 4,
+        `The deployed 0.1s clue for ${hostedSong.id} opens on inaudible audio: only ${audibleSubWindows} of 5 sub-windows reach its body level (${JSON.stringify(shortestClue)}).`);
+      console.log(`PASS deployed 0.1s clue is audible in the browser decoder (${hostedSong.id})`);
     }
 
     writeFileSync(reviewCatalogFile, `${JSON.stringify([{
@@ -998,10 +1179,15 @@ async function run() {
       const settingPanel = document.querySelector('.settings-panel').getBoundingClientRect();
       const gameCard = document.querySelector('.game-card').getBoundingClientRect();
       const result = document.querySelector('.result-panel').getBoundingClientRect();
+      const artwork = document.querySelector('.result-artwork-wrap')?.getBoundingClientRect();
+      const stamp = document.querySelector('.result-stamp')?.getBoundingClientRect();
       return {
         panelTop: settingPanel.top,
         panelBottom: settingPanel.bottom,
         resultCenterOffset: (result.left + result.width / 2) - (gameCard.left + gameCard.width / 2),
+        resultVerticalOffset: artwork && stamp
+          ? Math.round(((artwork.top + stamp.bottom) / 2) - (gameCard.top + gameCard.height / 2))
+          : null,
         overflow: document.documentElement.scrollWidth - window.innerWidth,
       };
     })()`);
@@ -1009,6 +1195,7 @@ async function run() {
       `Hosted settings do not fit the desktop viewport (${JSON.stringify(hostedDesktop)}).`);
     assert(Math.abs(hostedDesktop.resultCenterOffset) <= 1,
       `Hosted result group is not centered in the game card (${JSON.stringify(hostedDesktop)}).`);
+    console.log(`Desktop result group vs card centre: ${hostedDesktop.resultVerticalOffset}px`);
     console.log("PASS hosted source and long result metadata fit narrow and desktop layouts");
 
     console.log("UI audit passed.");
