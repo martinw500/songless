@@ -34,3 +34,5 @@ data/billion-candidate-metadata.local/
 data/billion-download-batch.local.json
 data/billion-media-selection.local.json
 data/billion-source-duration-audit.local.json
+
+.vercel

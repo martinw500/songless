@@ -52,9 +52,17 @@ All choreography is reduced to near-instant state changes when `prefers-reduced-
 
 ## Phone layout
 
-A round must fit inside the small viewport, the height a phone has with its browser toolbars showing. This is a playback correctness rule, not a density preference. Mobile browsers collapse their toolbar only once a page becomes scrollable, and iOS re-expands it when media starts, which drags the entire round down as audio begins and back up when it stops. Nothing in the page moves, so no CSS rule can be blamed and no desktop check can catch it; the only defence is a layout that never becomes scrollable.
+A round must fit inside the small viewport, the height a phone has with its browser toolbars showing. This is a playback correctness rule, not a density preference. Mobile browsers collapse their toolbar only once a page becomes scrollable, and iOS re-expands it when HTML media starts, which drags the entire round down as audio begins and back up when it stops.
 
-Below 760px the layout therefore sizes to `svh` rather than `vh` or `dvh`, on `html`, `body`, `#root`, `.app-shell`, and `.game-layout` alike. A single `vh` anywhere reintroduces the shift, because it measures the viewport with the toolbar hidden and forces the document past the height actually available. `.game-card` carries no fixed height at these widths: it grows to absorb whatever the mode and settings panels leave, and never shrinks, since the card clips its overflow. The result screen must fit too, or the toolbar collapses there and the next round's first Play brings it back.
+Three iPhone-specific cases produce that jump even when the layout looks fine in desktop Chrome:
+
+1. The document is the scroll root (`overflow-y: auto` on `body`, or `min-height: 100vh` / `100dvh` making the page 1px taller than the small viewport). iOS then treats the page as scrollable, collapses chrome, and restores it when media starts or a tap ends. Below 760px the document is therefore `height: 100svh; overflow: hidden` so it cannot become the scroller.
+2. Sticky `:hover`. iOS applies hover on tap and often leaves it stuck. A play-button hover that `scale(1.025)`s is enough to make the document scrollable for the duration of a clip. Hover transforms are limited to `(hover: hover) and (pointer: fine)`.
+3. `HTMLAudioElement` / `createMediaElementSource` for clues. WebKit registers a Now Playing session and, in Chrome on iOS, an in-page media bar. That chrome appears on Play and disappears on Pause, which is the same down-then-up jump. Clues decode to PCM and play through Web Audio instead; only the result-screen reveal still streams an HTML audio element.
+
+Nothing in the page moves during those chrome changes, so no CSS rule on `.game-card` can be blamed and no desktop check can catch it. Sizing to `vh` or `dvh` reintroduces case 1, because those units measure the viewport with the toolbar hidden.
+
+`.game-card` carries no fixed height at these widths: it grows to absorb whatever the mode and settings panels leave, and never shrinks, since the card clips its overflow. The result screen must fit too, or the toolbar collapses there and the next round's first Play brings it back.
 
 ## Visual acceptance checklist
 

@@ -2,42 +2,32 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { AudioEngine } from "../src/lib/audio.ts";
 
-test("hosted clues use the media playback route with exact offsets and timed cutoffs", async (context) => {
+test("hosted clues decode the compact asset and schedule an exact buffer range", async (context) => {
+  const originalFetch = globalThis.fetch;
   const originalAudio = globalThis.Audio;
-  const originalMediaElement = globalThis.HTMLMediaElement;
   const originalAudioContext = globalThis.AudioContext;
   const originalWindow = globalThis.window;
-  let media;
-  let disconnected = false;
-  let cutoffMs;
-  let cutoffScheduledAtMediaTime;
+  let mediaCreated = false;
+  let fetchedUrl = "";
+  let started;
   const gains = [];
-  // A phone accepts play() well before its decoder and audio session produce
-  // sound. This element mimics that: the clock only starts on the third frame.
-  const framesBeforeOutput = 3;
-  const outputStepSeconds = 0.02;
-  let frames = 0;
+  const decoded = { duration: 30 };
   class MockAudio {
-    readyState = 1;
-    duration = 30;
-    currentTime = 0;
-    src = "";
-    paused = true;
-    constructor() { media = this; }
-    async play() { this.paused = false; }
-    pause() { this.paused = true; }
-    removeAttribute(name) { if (name === "src") this.src = ""; }
-    load() {}
-    addEventListener() {}
-    removeEventListener() {}
+    constructor() { mediaCreated = true; }
   }
   class MockAudioContext {
     state = "running";
     destination = {};
-    currentTime = 0;
+    currentTime = 1.25;
     async resume() {}
-    createMediaElementSource() {
-      return { connect() {}, disconnect() { disconnected = true; } };
+    decodeAudioData = async () => decoded;
+    createBufferSource() {
+      return {
+        buffer: null,
+        connect() {},
+        start(when, offset, duration) { started = { when, offset, duration }; },
+        stop() {},
+      };
     }
     createGain() {
       const node = {
@@ -50,28 +40,15 @@ test("hosted clues use the media playback route with exact offsets and timed cut
     }
   }
   globalThis.Audio = MockAudio;
-  globalThis.HTMLMediaElement = { HAVE_METADATA: 1 };
   globalThis.AudioContext = MockAudioContext;
-  globalThis.window = {
-    setTimeout(_callback, delayMs) {
-      cutoffMs = delayMs;
-      cutoffScheduledAtMediaTime = media.currentTime;
-      return 17;
-    },
-    clearTimeout() {},
-    requestAnimationFrame(callback) {
-      setImmediate(() => {
-        frames += 1;
-        if (frames >= framesBeforeOutput) media.currentTime += outputStepSeconds;
-        callback();
-      });
-      return frames + 1;
-    },
-    cancelAnimationFrame() {},
+  globalThis.window = { setTimeout, clearTimeout };
+  globalThis.fetch = async (url) => {
+    fetchedUrl = String(url);
+    return { ok: true, status: 200, arrayBuffer: async () => new ArrayBuffer(8) };
   };
   context.after(() => {
+    globalThis.fetch = originalFetch;
     globalThis.Audio = originalAudio;
-    globalThis.HTMLMediaElement = originalMediaElement;
     globalThis.AudioContext = originalAudioContext;
     globalThis.window = originalWindow;
   });
@@ -91,33 +68,17 @@ test("hosted clues use the media playback route with exact offsets and timed cut
     },
   };
   assert.equal(await engine.play(song, 0.5, 2, 0.8), 1.5);
-  assert.equal(media.src, song.audio.clueSrc);
-  assert.equal(media.paused, false);
+  assert.equal(fetchedUrl, song.audio.clueSrc);
+  assert.equal(mediaCreated, false);
+  assert.deepEqual(started, { when: 1.25, offset: 0.585, duration: 1.5 });
 
-  // The clue window must open on the media clock, not when play() returns.
-  // Timing it from play() would let the window expire during decoder startup,
-  // which is silent on a phone and inaudible on the shortest stages.
-  assert.ok(frames >= framesBeforeOutput, "the engine must wait for the element to actually start");
-  assert.ok(
-    cutoffScheduledAtMediaTime > 0.585,
-    `the cutoff must be scheduled only once audio exists, but it was scheduled at ${cutoffScheduledAtMediaTime}`,
-  );
-  // Whatever the element already played counts against the clue, so the
-  // remaining window shortens rather than the clue running long.
-  const alreadyHeardMs = Math.round((media.currentTime - 0.585) * 1000);
-  assert.ok(
-    Math.abs(cutoffMs - (1500 - alreadyHeardMs + 60)) < 1,
-    `the cutoff should cover the unheard remainder, but it was ${cutoffMs}ms after ${alreadyHeardMs}ms played`,
-  );
-
-  const masterGain = gains[0];
+  // Envelope gain is created first; the persistent master is created next and
+  // is the node live volume changes must hit.
+  const masterGain = gains[1];
   assert.equal(masterGain.gain.value, 0.8);
   engine.setVolume(1.6);
   assert.equal(masterGain.gain.value, 1.6);
-  assert.equal(media.paused, false);
   engine.stop();
-  assert.equal(media.paused, true);
-  assert.equal(disconnected, true);
 });
 
 test("hosted reveal streams from game-time zero and responds to live volume changes", async (context) => {
@@ -134,9 +95,11 @@ test("hosted reveal streams from game-time zero and responds to live volume chan
     volume = 1;
     src = "";
     paused = true;
+    playsInline = false;
     constructor() { media = this; }
     async play() { this.paused = false; }
     pause() { this.paused = true; }
+    setAttribute() {}
     removeAttribute(name) { if (name === "src") this.src = ""; }
     load() {}
     addEventListener() {}

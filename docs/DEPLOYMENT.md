@@ -28,7 +28,9 @@ The feedback form posts to `/api/feedback`, which forwards the message to Discor
 
 The variable must not carry a `VITE_` prefix. A `VITE_` variable is inlined into the client bundle, so publishing the webhook there would let any visitor read it and post to, or delete, the channel. The relay runs server-side for that reason, and it strips mentions, caps message length, and rate-limits a single address to five messages a minute. A server-only fallback still reads `VITE_DISCORD_WEBHOOK_URL` if the documented name is missing, so an already-deployed project env keeps working, but new setup should use `DISCORD_WEBHOOK_URL`.
 
-`npm run dev` serves the relay through a Vite middleware so the in-game form works locally. `node --experimental-strip-types --test tests/feedback.test.mjs` drives the handler against a stand-in webhook. Production still needs the same variable on Vercel.
+`npm run dev` serves the relay through a Vite middleware so the in-game form works locally. Production is a different machine: `POST /api/feedback` only works after a deploy that includes `api/feedback.ts` and has `DISCORD_WEBHOOK_URL` set in the Vercel project. Without that function, Vercel serves `index.html` for the path and the form gets HTTP 405. Deploy with `npx vercel@latest --prod` from this directory after `vercel login`, then set the variable under **Settings → Environment Variables**.
+
+`node --experimental-strip-types --test tests/feedback.test.mjs` drives the handler against a stand-in webhook.
 
 From the project directory:
 

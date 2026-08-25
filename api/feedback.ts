@@ -127,7 +127,11 @@ export default async function handler(
   requestOrReq: Request | IncomingMessage,
   res?: ServerResponse,
 ): Promise<Response | void> {
-  const request = requestOrReq instanceof Request ? requestOrReq : await toWebRequest(requestOrReq);
+  // IncomingMessage is an EventEmitter; the Fetch Request is not. That is a
+  // more reliable split than `instanceof Request`, which can fail across realms.
+  const request = typeof (requestOrReq as IncomingMessage).on === "function"
+    ? await toWebRequest(requestOrReq as IncomingMessage)
+    : requestOrReq as Request;
   const response = await handleFeedback(request);
   if (res) {
     await writeNodeResponse(res, response);
@@ -135,5 +139,7 @@ export default async function handler(
   }
   return response;
 }
+
+export const config = { runtime: "nodejs" };
 
 export { handler as POST };
