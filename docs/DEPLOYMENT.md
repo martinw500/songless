@@ -12,6 +12,7 @@ A private Git repository does **not** make either deployed website private by it
 - Every response gets `X-Robots-Tag: noindex, nofollow, noarchive`.
 - `public/robots.txt` asks crawlers not to index any route.
 - `.vercelignore` excludes development-only files. R2-backed catalogues contain URLs and metadata, not audio files.
+- `api/feedback.ts` relays the in-game feedback form to Discord.
 
 Crawler directives reduce accidental search-engine discovery; they are not access control. Public R2 media URLs can be requested directly by anyone who obtains them.
 
@@ -20,6 +21,14 @@ Crawler directives reduce accidental search-engine discovery; they are not acces
 The promoted catalogue already contains R2 public URLs, so Vercel needs no R2 credential. Never put `R2_SECRET_ACCESS_KEY` or `R2_ACCESS_KEY_ID` into a `VITE_` variable; they remain only in ignored local `.env.local` for uploads.
 
 If the public hostname changes after objects are uploaded, update `R2_PUBLIC_BASE_URL` and run `npm run sync:r2`. This verifies that every expected object exists and rewrites catalogue URLs without consuming upload operations.
+
+## Feedback relay
+
+The feedback form posts to `/api/feedback`, which forwards the message to Discord and attaches the song the player was on. Set `DISCORD_WEBHOOK_URL` in **Settings → Environment Variables** and in ignored `.env.local`; without it the endpoint answers 503 and the form reports that feedback is not configured, rather than silently discarding the message.
+
+The variable must not carry a `VITE_` prefix. A `VITE_` variable is inlined into the client bundle, so publishing the webhook there would let any visitor read it and post to, or delete, the channel. The relay runs server-side for that reason, and it strips mentions, caps message length, and rate-limits a single address to five messages a minute. A server-only fallback still reads `VITE_DISCORD_WEBHOOK_URL` if the documented name is missing, so an already-deployed project env keeps working, but new setup should use `DISCORD_WEBHOOK_URL`.
+
+`npm run dev` serves the relay through a Vite middleware so the in-game form works locally. `node --experimental-strip-types --test tests/feedback.test.mjs` drives the handler against a stand-in webhook. Production still needs the same variable on Vercel.
 
 From the project directory:
 

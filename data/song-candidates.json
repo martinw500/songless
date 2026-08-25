@@ -4851,16 +4851,17 @@
       "media": {
         "audioFile": "george-michael-careless-whisper.mp3",
         "artworkFile": "george-michael-careless-whisper.jpg",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/george-michael-careless-whisper.mp3?v=14d611ab6932",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/george-michael-careless-whisper.mp3?v=f0650a39f93d",
-        "hostedDurationMs": 389479,
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/george-michael-careless-whisper.mp3?v=5113f36012d7",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/george-michael-careless-whisper.mp3?v=1f2fbacbc7e6",
+        "hostedDurationMs": 300687,
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/george-michael-careless-whisper.jpg?v=302600-0"
       },
-      "album": "Make It Big",
-      "spotifyUrl": "https://open.spotify.com/track/6KsgCYcZKPcBRDNGhiZWRR",
-      "startAtMs": 0,
+      "album": "Ladies & Gentlemen",
+      "spotifyUrl": "https://open.spotify.com/track/4jDmJ51x1o9NZB5Nxxc7gY",
+      "startAtMs": 80,
       "hookStartMs": 112400,
-      "spotifyDurationMs": 392000,
+      "spotifyDurationMs": 300000,
+      "itunesDurationMs": 300107,
       "spotifyMetadataStatus": "verified_public_page"
     },
     {
@@ -14382,7 +14383,7 @@
       "artistAliases": [],
       "bucket": "billion_anchor",
       "familiarity": 75,
-      "startAtMs": 1,
+      "startAtMs": 155,
       "introRecognition": null,
       "easeScore": null,
       "proposedDifficulty": null,

@@ -72,7 +72,7 @@
     { "id": "tyler-the-creator-earfquake", "startAtMs": 40, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
     { "id": "lady-gaga-poker-face", "startAtMs": 310, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
     { "id": "tyler-the-creator-kali-uchis-see-you-again", "startAtMs": 100, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
-    { "id": "george-michael-careless-whisper", "startAtMs": 0, "reason": "Preparation removed the source pad; the full Spotify-linked edition begins immediately with its recognizable saxophone." },
+    { "id": "george-michael-careless-whisper", "startAtMs": 80, "reason": "5:00 single/video edition, not the 6:30 Make It Big / 12-inch extended mix. Game-time zero is 80ms to skip encoder silence before the saxophone." },
     { "id": "psy-gangnam-style", "startAtMs": 420, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
     { "id": "modjo-lady-hear-me-tonight", "startAtMs": 210, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
     { "id": "rihanna-don-t-stop-the-music", "startAtMs": 210, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
@@ -312,6 +312,7 @@
     { "id": "charlie-puth-we-don-t-talk-anymore-feat-selena-gomez", "startAtMs": 700, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
     { "id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high", "startAtMs": 270, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
     { "id": "black-eyed-peas-just-can-t-get-enough", "startAtMs": 70, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
-    { "id": "tame-impala-dracula", "startAtMs": 60, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." }
+    { "id": "tame-impala-dracula", "startAtMs": 60, "reason": "Measured music onset; the previous start opened the shortest clue on inaudible audio." },
+    { "id": "leon-thomas-mutt", "startAtMs": 155, "reason": "The first 150ms is a -35 to -47dB noise floor with no attack. Energy jumps from -35.7dB to -25.0dB at 155ms, then to -7.5dB by 225ms. 140ms still opened the 0.1s clue on that floor, so game-time zero is the first frame above -30dB." }
   ]
 }

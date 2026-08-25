@@ -134,6 +134,20 @@ A failing clue window is an audible defect, so it corrects documented overrides 
 
 `node scripts/verify-ui.mjs --hosted-smoke --hosted-id=<id>` confirms the result from the other end: it fetches the deployed R2 clue, decodes it with the browser's own MP3 decoder, and applies the same sub-window rule. That is the only check that includes decoder priming on the asset a player actually receives, so run it after an upload batch. It reads `public/review-catalog.json`, so regenerate that with `npm run review:r2` after changing any start.
 
+### Investigating a "this song starts late" report
+
+`npm run inspect:clue -- <song-id>` answers the two questions a start-time report raises, before any threshold is touched. It cross-correlates the prepared clue against the complete track to report the offset the clue was actually cut at, and prints the leading level profile of both at 5 ms resolution. A non-zero offset means the clue is mis-cut and the audio must be re-prepared; an offset of zero with a quiet profile means the start is landing in a lead-in and `startAtMs` is what needs to move.
+
+Rendering the opening as a spectrogram distinguishes the two cases that a level meter cannot:
+
+```powershell
+ffmpeg -i private-media/r2/clues/<song-id>.mp3 -lavfi "atrim=0:1,asetpts=PTS-STARTPTS,showspectrumpic=s=1400x520:scale=log:gain=8:legend=1" intro.png
+```
+
+Broadband haze with no harmonic structure is a noise floor and should be skipped. Visible harmonic partials are a deliberately soft intro, which must be kept and raised with `clueGainDb` instead.
+
+The gate deliberately tolerates a clue at its `-26 dB` floor, because that is what keeps genuinely soft intros such as `linkin-park-numb` intact. The cost is that a clue can pass while sitting more than 20 dB under its own body level, which sounds late even though it is not silent. `leon-thomas-mutt` was exactly that: a 5 ms envelope stays around `-35 dB` until `155 ms`, where it jumps to `-25 dB` and then to `-7.5 dB` by `225 ms`. Treat a passing clue with a large body-to-clue gap and a strong onset just outside the 100 ms window as a start-time bug, not as a gate failure.
+
 A correctly calibrated start is still not sufficient on its own. The same smoke run also plays the 0.1 second stage with a 400 ms media start delay injected, because a clue window timed from `play()` returning will open and close before a phone's decoder and audio session produce sound — the start offset is then irrelevant and the player hears nothing. Desktop Chrome starts a media element almost instantly and hides this entirely, so the delay is injected rather than waited for. The assertion is that the element's own clock still advances a full clue's worth of audio.
 
 The fallback chain for an unset start is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding). Do not skip a deliberate fade or melody merely because it is soft. Set `clueGainDb` from 0–12 dB for those cases; clue playback is limited, and full-song reveal playback remains at the original level. Audible static cannot be distinguished reliably from intentional texture by level measurements, so known static receives an explicit skip such as the tracked `No One Noticed` override.
@@ -178,6 +192,8 @@ R2 object names do not prove that their contents are correct. Run `npm run audit
 An exact title, artist, duration, or audio fingerprint can still point to a licensed compilation carrying the same master. That does not make its presentation artwork the intended album cover. The audit therefore rejects unrelated sing-along, karaoke, workout, motivation, sound-alike, and generic hit-compilation album metadata unless the song has a documented review in `data/artwork-source-overrides.json`. Run `npm run apply:artwork-overrides` first for a source-only dry run, then `node --env-file-if-exists=.env.local scripts/apply-artwork-source-overrides.mjs --apply` to upload reviewed Spotify artwork, update the stable R2 key with a new content-hash cache-buster, and record the expected checksum. The remote artwork audit verifies that checksum on later runs.
 
 Payphone intentionally uses the familiar `Overexposed (Deluxe)` artwork but does not expose a Spotify track link: the hosted 223-second non-rap master and Spotify's 231-second Wiz Khalifa album version are not the same edition. Artwork presentation may be reviewed independently, but a canonical track link must never claim an edition match that the audio does not satisfy.
+
+Careless Whisper is the 5:00 single/video edition, not the 6:30 Make It Big album cut. That longer master is the same recording as the 12-inch extended mix, so players correctly hear it as the wrong version. The result screen keeps the familiar Make It Big artwork and names `Ladies & Gentlemen` as the album that actually carries this 5:00 master. The Spotify link and hosted duration must follow that hit.
 
 ## Search metadata
 

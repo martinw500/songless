@@ -5517,41 +5517,6 @@
     "_rank": 173
   },
   {
-    "id": "george-michael-careless-whisper",
-    "title": "Careless Whisper",
-    "artist": "George Michael",
-    "aliases": [],
-    "artistAliases": [],
-    "album": "Make It Big",
-    "spotifyUrl": "https://open.spotify.com/track/6KsgCYcZKPcBRDNGhiZWRR",
-    "releaseYear": 1984,
-    "genres": [
-      "pop",
-      "soul"
-    ],
-    "difficulty": "medium",
-    "familiarity": 86,
-    "recognitionScore": 72.3,
-    "audienceFamiliarityScore": 85,
-    "streamReachScore": 65.7,
-    "genZRelevanceScore": 78.3,
-    "longevityScore": 100,
-    "introRecognition": 96.4,
-    "startAtMs": 0,
-    "hookStartMs": 112400,
-    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/george-michael-careless-whisper.jpg?v=302600-0",
-    "audio": {
-      "kind": "hosted",
-      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/george-michael-careless-whisper.mp3?v=14d611ab6932",
-      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/george-michael-careless-whisper.mp3?v=f0650a39f93d",
-      "durationMs": 389479
-    },
-    "_provisional": true,
-    "_provisionalMethod": "waveform_audibility_proxy_low_weight",
-    "_easeScore": 76.2,
-    "_rank": 174
-  },
-  {
     "id": "ruth-b-dandelions",
     "title": "Dandelions",
     "artist": "Ruth B.",
@@ -5577,7 +5542,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76.2,
-    "_rank": 175
+    "_rank": 174
   },
   {
     "id": "rihanna-love-on-the-brain",
@@ -5605,7 +5570,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76.2,
-    "_rank": 176
+    "_rank": 175
   },
   {
     "id": "maroon-5-maps",
@@ -5633,7 +5598,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76.2,
-    "_rank": 177
+    "_rank": 176
   },
   {
     "id": "tlc-no-scrubs",
@@ -5668,7 +5633,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76.2,
-    "_rank": 178
+    "_rank": 177
   },
   {
     "id": "olivia-rodrigo-traitor",
@@ -5697,7 +5662,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76.2,
-    "_rank": 179
+    "_rank": 178
   },
   {
     "id": "lil-uzi-vert-xo-tour-llif3",
@@ -5726,7 +5691,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76.1,
-    "_rank": 180
+    "_rank": 179
   },
   {
     "id": "dean-lewis-be-alright",
@@ -5758,7 +5723,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76,
-    "_rank": 181
+    "_rank": 180
   },
   {
     "id": "post-malone-congratulations",
@@ -5787,7 +5752,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 76,
-    "_rank": 182
+    "_rank": 181
   },
   {
     "id": "harry-styles-adore-you",
@@ -5819,7 +5784,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 183
+    "_rank": 182
   },
   {
     "id": "queen-another-one-bites-the-dust",
@@ -5847,7 +5812,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 184
+    "_rank": 183
   },
   {
     "id": "justin-bieber-ghost",
@@ -5876,7 +5841,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 185
+    "_rank": 184
   },
   {
     "id": "onerepublic-i-ain-t-worried",
@@ -5904,7 +5869,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 186
+    "_rank": 185
   },
   {
     "id": "drake-passionfruit",
@@ -5932,7 +5897,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 187
+    "_rank": 186
   },
   {
     "id": "foster-the-people-pumped-up-kicks",
@@ -5960,7 +5925,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 188
+    "_rank": 187
   },
   {
     "id": "magic-rude",
@@ -5992,7 +5957,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 189
+    "_rank": 188
   },
   {
     "id": "calvin-harris-this-is-what-you-came-for",
@@ -6020,7 +5985,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 190
+    "_rank": 189
   },
   {
     "id": "5-seconds-of-summer-youngblood",
@@ -6052,7 +6017,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.9,
-    "_rank": 191
+    "_rank": 190
   },
   {
     "id": "black-eyed-peas-i-gotta-feeling",
@@ -6084,7 +6049,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.8,
-    "_rank": 192
+    "_rank": 191
   },
   {
     "id": "the-walters-i-love-you-so",
@@ -6113,7 +6078,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.8,
-    "_rank": 193
+    "_rank": 192
   },
   {
     "id": "offset-ric-flair-drip",
@@ -6145,7 +6110,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.8,
-    "_rank": 194
+    "_rank": 193
   },
   {
     "id": "wiz-khalifa-see-you-again-feat-charlie-puth",
@@ -6174,7 +6139,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.8,
-    "_rank": 195
+    "_rank": 194
   },
   {
     "id": "walk-the-moon-shut-up-and-dance",
@@ -6202,7 +6167,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.8,
-    "_rank": 196
+    "_rank": 195
   },
   {
     "id": "shawn-mendes-stitches",
@@ -6230,7 +6195,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.8,
-    "_rank": 197
+    "_rank": 196
   },
   {
     "id": "olivia-rodrigo-deja-vu",
@@ -6258,7 +6223,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.7,
-    "_rank": 198
+    "_rank": 197
   },
   {
     "id": "the-white-stripes-seven-nation-army",
@@ -6287,7 +6252,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.7,
-    "_rank": 199
+    "_rank": 198
   },
   {
     "id": "charlie-puth-attention",
@@ -6316,7 +6281,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.6,
-    "_rank": 200
+    "_rank": 199
   },
   {
     "id": "katy-perry-dark-horse",
@@ -6348,7 +6313,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.6,
-    "_rank": 201
+    "_rank": 200
   },
   {
     "id": "metallica-enter-sandman",
@@ -6380,7 +6345,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.6,
-    "_rank": 202
+    "_rank": 201
   },
   {
     "id": "pitbull-give-me-everything",
@@ -6414,7 +6379,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.6,
-    "_rank": 203
+    "_rank": 202
   },
   {
     "id": "one-direction-night-changes",
@@ -6443,7 +6408,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.6,
-    "_rank": 204
+    "_rank": 203
   },
   {
     "id": "kings-of-leon-sex-on-fire",
@@ -6475,7 +6440,7 @@
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
     "_easeScore": 75.6,
-    "_rank": 205
+    "_rank": 204
   },
   {
     "id": "the-weeknd-can-t-feel-my-face",
@@ -6499,6 +6464,41 @@
       "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/the-weeknd-can-t-feel-my-face.mp3?v=fa35a24b39a4",
       "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/the-weeknd-can-t-feel-my-face.mp3?v=9fca6740865d",
       "durationMs": 215655
+    },
+    "_provisional": true,
+    "_provisionalMethod": "waveform_audibility_proxy_low_weight",
+    "_easeScore": 75.5,
+    "_rank": 205
+  },
+  {
+    "id": "george-michael-careless-whisper",
+    "title": "Careless Whisper",
+    "artist": "George Michael",
+    "aliases": [],
+    "artistAliases": [],
+    "album": "Ladies & Gentlemen",
+    "spotifyUrl": "https://open.spotify.com/track/4jDmJ51x1o9NZB5Nxxc7gY",
+    "releaseYear": 1984,
+    "genres": [
+      "pop",
+      "soul"
+    ],
+    "difficulty": "medium",
+    "familiarity": 86,
+    "recognitionScore": 72.3,
+    "audienceFamiliarityScore": 85,
+    "streamReachScore": 65.7,
+    "genZRelevanceScore": 78.3,
+    "longevityScore": 100,
+    "introRecognition": 88.8,
+    "startAtMs": 80,
+    "hookStartMs": 112400,
+    "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/george-michael-careless-whisper.jpg?v=302600-0",
+    "audio": {
+      "kind": "hosted",
+      "clueSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/george-michael-careless-whisper.mp3?v=5113f36012d7",
+      "fullSrc": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/george-michael-careless-whisper.mp3?v=1f2fbacbc7e6",
+      "durationMs": 300687
     },
     "_provisional": true,
     "_provisionalMethod": "waveform_audibility_proxy_low_weight",
@@ -7924,8 +7924,8 @@
     "streamReachScore": 68,
     "genZRelevanceScore": 92,
     "longevityScore": 50,
-    "introRecognition": 93.9,
-    "startAtMs": 1,
+    "introRecognition": 94.1,
+    "startAtMs": 155,
     "hookStartMs": 51800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/leon-thomas-mutt.jpg?v=artfix-5e239bf1a94a",
     "audio": {

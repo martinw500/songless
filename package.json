@@ -19,6 +19,7 @@
     "download:media": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/download-authorized-sources.ps1",
     "cache:hosted-media": "node scripts/cache-hosted-media.mjs",
     "audit:media-starts": "node scripts/audit-media-starts.mjs",
+    "inspect:clue": "node scripts/inspect-clue-alignment.mjs",
     "audit:source-durations": "node scripts/audit-billion-source-durations.mjs",
     "audit:fingerprints": "node scripts/audit-canonical-fingerprints.mjs",
     "finalize:billion-media": "node scripts/finalize-billion-media.mjs",
@@ -58,6 +59,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1113.0",
+    "@types/node": "^26.3.0",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",
     "@vitejs/plugin-react": "6.0.5",

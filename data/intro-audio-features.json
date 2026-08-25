@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-25T05:52:11.055Z",
+  "generatedAt": "2026-08-25T18:53:46.262Z",
   "notes": "Derived waveform measurements only. Regenerate after replacing, trimming, or retiming hosted audio.",
   "songs": [
     {
@@ -1722,20 +1722,20 @@
     },
     {
       "id": "george-michael-careless-whisper",
-      "bodyDb": -14.1,
-      "musicOnsetMs": 0,
-      "clueWindowStartMs": 0,
+      "bodyDb": -20.5,
+      "musicOnsetMs": 80,
+      "clueWindowStartMs": 80,
       "clueWindowStatus": "pass",
       "clueWindowReasons": [],
       "clueAudibleSubWindows": 5,
-      "clueFirst100Db": -20,
-      "firstSoundMs": 0,
-      "firstAudibleMs": 0,
-      "firstStrongMs": 0,
+      "clueFirst100Db": -19.4,
+      "firstSoundMs": 90,
+      "firstAudibleMs": 90,
+      "firstStrongMs": 270,
       "firstMusicalMs": 0,
       "recommendedPlayableMs": 0,
-      "first2SecondsDb": -14.9,
-      "seconds8To15Db": -14.2
+      "first2SecondsDb": -21,
+      "seconds8To15Db": -20.8
     },
     {
       "id": "the-cranberries-zombie",
@@ -6092,19 +6092,19 @@
     {
       "id": "leon-thomas-mutt",
       "bodyDb": -16.2,
-      "musicOnsetMs": 1,
-      "clueWindowStartMs": 1,
+      "musicOnsetMs": 155,
+      "clueWindowStartMs": 155,
       "clueWindowStatus": "pass",
       "clueWindowReasons": [],
-      "clueAudibleSubWindows": 4,
-      "clueFirst100Db": -37.8,
+      "clueAudibleSubWindows": 5,
+      "clueFirst100Db": -14.1,
       "firstSoundMs": 0,
       "firstAudibleMs": 10,
       "firstStrongMs": 150,
       "firstMusicalMs": 0,
       "recommendedPlayableMs": 0,
-      "first2SecondsDb": -16.9,
-      "seconds8To15Db": -16.5
+      "first2SecondsDb": -16.7,
+      "seconds8To15Db": -16.3
     },
     {
       "id": "kehlani-folded",

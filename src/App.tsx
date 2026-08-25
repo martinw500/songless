@@ -120,6 +120,7 @@ function App() {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
   const [feedbackText, setFeedbackText] = useState("");
   const [feedbackStatus, setFeedbackStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [feedbackError, setFeedbackError] = useState("");
   const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const [guessedSongIds, setGuessedSongIds] = useState<string[]>([]);
   const [audioError, setAudioError] = useState("");
@@ -499,22 +500,27 @@ function App() {
     if (!feedbackText.trim() || feedbackStatus === "submitting") return;
 
     setFeedbackStatus("submitting");
+    setFeedbackError("");
     try {
-      const webhookUrl = import.meta.env.VITE_DISCORD_WEBHOOK_URL;
-      if (!webhookUrl) {
-        throw new Error("Discord webhook URL not configured.");
-      }
-
-      const response = await fetch(webhookUrl, {
+      // The webhook lives on the server. Sending it from here would publish it
+      // in the bundle, where anyone could read it and post to the channel.
+      const response = await fetch("/api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          content: `**New Feedback from Songless**\n\n${feedbackText}`
-        })
+          message: feedbackText,
+          song: currentSong ? `${currentSong.title} — ${currentSong.artist} (${currentSong.id})` : "",
+        }),
       });
 
-      if (!response.ok) throw new Error("Failed to send feedback");
-      
+      const contentType = response.headers.get("content-type") ?? "";
+      const reason = contentType.includes("application/json")
+        ? await response.json().catch(() => null)
+        : null;
+      if (!response.ok || !reason?.ok) {
+        throw new Error(reason?.error ?? `The feedback service returned ${response.status}.`);
+      }
+
       setFeedbackStatus("success");
       setTimeout(() => {
         setIsFeedbackOpen(false);
@@ -523,6 +529,7 @@ function App() {
       }, 2000);
     } catch (error) {
       console.error(error);
+      setFeedbackError(error instanceof Error ? error.message : "");
       setFeedbackStatus("error");
     }
   }
@@ -892,7 +899,7 @@ function App() {
               />
               
               {feedbackStatus === "error" && (
-                <p className="modal-error">Failed to send feedback. Please try again or check VITE_DISCORD_WEBHOOK_URL.</p>
+                <p className="modal-error">{feedbackError || "Feedback could not be sent. Please try again."}</p>
               )}
               
               <button 
