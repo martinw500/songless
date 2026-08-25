@@ -2,6 +2,7 @@ import type { Song } from "../types";
 
 const MIN_FADE_SECONDS = 0.004;
 const SEEK_TOLERANCE_SECONDS = 0.005;
+const MEDIA_OUTPUT_TIMEOUT_MS = 4_000;
 const MAX_CACHED_BUFFERS = 3;
 const SYNTH_REVEAL_SECONDS = 30;
 const BUFFER_RETRY_DELAYS_MS = [0, 350, 900] as const;
@@ -14,6 +15,7 @@ export class AudioEngine {
   private playbackId = 0;
   private media: HTMLAudioElement | null = null;
   private mediaStopTimer: number | null = null;
+  private mediaFrame: number | null = null;
   private volume = 1;
 
   setVolume(volume: number): void {
@@ -26,6 +28,10 @@ export class AudioEngine {
     if (this.mediaStopTimer !== null) {
       window.clearTimeout(this.mediaStopTimer);
       this.mediaStopTimer = null;
+    }
+    if (this.mediaFrame !== null) {
+      window.cancelAnimationFrame(this.mediaFrame);
+      this.mediaFrame = null;
     }
     for (const node of this.activeNodes) {
       try {
@@ -226,7 +232,16 @@ export class AudioEngine {
 
     media.currentTime = offset;
     const source = context.createMediaElementSource(media);
-    source.connect(this.createMediaGain(context, requestedDuration === null ? 0 : song.clueGainDb ?? 0));
+    const output = this.createMediaGain(context, requestedDuration === null ? 0 : song.clueGainDb ?? 0);
+    // Clues get their own envelope so the window can be closed on the audio
+    // clock, which is exact, instead of by pausing the element, which is not.
+    const envelope = requestedDuration === null ? null : context.createGain();
+    if (envelope) {
+      source.connect(envelope);
+      envelope.connect(output);
+    } else {
+      source.connect(output);
+    }
     this.activeNodes.push({ stop: () => source.disconnect() } as AudioScheduledSourceNode);
     // A 0.1 second clue cannot absorb a seek that is still in flight, so let the
     // element settle on the requested offset before it starts producing audio.
@@ -237,12 +252,26 @@ export class AudioEngine {
       media.pause();
       return 0;
     }
-    if (requestedDuration !== null) {
+
+    if (envelope) {
+      // play() resolving only means playback was accepted. A phone still has to
+      // start its decoder and audio session, which routinely takes longer than
+      // the 0.1 second clue itself, so a window timed from here would close
+      // before any sound existed. Wait for the element's own clock to move,
+      // then measure the clue against that clock.
+      const started = await this.waitForMediaOutput(media, offset, playbackId);
+      if (playbackId !== this.playbackId || this.media !== media) return 0;
+      const heardSoFar = started ? Math.max(0, media.currentTime - offset) : 0;
+      const remaining = Math.max(0, actualDuration - heardSoFar);
+      const fade = Math.min(MIN_FADE_SECONDS, Math.max(remaining, MIN_FADE_SECONDS) / 3);
+      const endAt = context.currentTime + remaining;
+      envelope.gain.setValueAtTime(envelope.gain.value, Math.max(context.currentTime, endAt - fade));
+      envelope.gain.linearRampToValueAtTime(0, endAt);
       this.mediaStopTimer = window.setTimeout(() => {
         if (playbackId !== this.playbackId || this.media !== media) return;
         this.mediaStopTimer = null;
         media.pause();
-      }, actualDuration * 1000);
+      }, remaining * 1000 + 60);
     }
     return actualDuration;
   }
@@ -321,6 +350,39 @@ export class AudioEngine {
       media.addEventListener("loadedmetadata", loaded, { once: true });
       media.addEventListener("error", failed, { once: true });
       media.load();
+    });
+  }
+
+  // Resolves once the element's clock has actually moved past the requested
+  // offset, which is the first moment audio genuinely exists. Returns false if
+  // the device never got there, so a stalled element still ends the clue rather
+  // than leaving it hanging.
+  private async waitForMediaOutput(
+    media: HTMLAudioElement,
+    offset: number,
+    playbackId: number,
+  ): Promise<boolean> {
+    return new Promise<boolean>((resolve) => {
+      const deadline = performance.now() + MEDIA_OUTPUT_TIMEOUT_MS;
+      const poll = () => {
+        if (playbackId !== this.playbackId || this.media !== media) {
+          this.mediaFrame = null;
+          resolve(false);
+          return;
+        }
+        if (media.currentTime > offset || media.ended) {
+          this.mediaFrame = null;
+          resolve(true);
+          return;
+        }
+        if (performance.now() >= deadline) {
+          this.mediaFrame = null;
+          resolve(false);
+          return;
+        }
+        this.mediaFrame = window.requestAnimationFrame(poll);
+      };
+      this.mediaFrame = window.requestAnimationFrame(poll);
     });
   }
 

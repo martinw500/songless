@@ -9,8 +9,14 @@ test("hosted clues use the media playback route with exact offsets and timed cut
   const originalWindow = globalThis.window;
   let media;
   let disconnected = false;
-  let masterGain;
   let cutoffMs;
+  let cutoffScheduledAtMediaTime;
+  const gains = [];
+  // A phone accepts play() well before its decoder and audio session produce
+  // sound. This element mimics that: the clock only starts on the third frame.
+  const framesBeforeOutput = 3;
+  const outputStepSeconds = 0.02;
+  let frames = 0;
   class MockAudio {
     readyState = 1;
     duration = 30;
@@ -28,21 +34,40 @@ test("hosted clues use the media playback route with exact offsets and timed cut
   class MockAudioContext {
     state = "running";
     destination = {};
+    currentTime = 0;
     async resume() {}
     createMediaElementSource() {
       return { connect() {}, disconnect() { disconnected = true; } };
     }
     createGain() {
-      masterGain = { gain: { value: 1 }, connect() {}, disconnect() {} };
-      return masterGain;
+      const node = {
+        gain: { value: 1, setValueAtTime() {}, linearRampToValueAtTime() {} },
+        connect() {},
+        disconnect() {},
+      };
+      gains.push(node);
+      return node;
     }
   }
   globalThis.Audio = MockAudio;
   globalThis.HTMLMediaElement = { HAVE_METADATA: 1 };
   globalThis.AudioContext = MockAudioContext;
   globalThis.window = {
-    setTimeout(_callback, delayMs) { cutoffMs = delayMs; return 17; },
+    setTimeout(_callback, delayMs) {
+      cutoffMs = delayMs;
+      cutoffScheduledAtMediaTime = media.currentTime;
+      return 17;
+    },
     clearTimeout() {},
+    requestAnimationFrame(callback) {
+      setImmediate(() => {
+        frames += 1;
+        if (frames >= framesBeforeOutput) media.currentTime += outputStepSeconds;
+        callback();
+      });
+      return frames + 1;
+    },
+    cancelAnimationFrame() {},
   };
   context.after(() => {
     globalThis.Audio = originalAudio;
@@ -67,9 +92,25 @@ test("hosted clues use the media playback route with exact offsets and timed cut
   };
   assert.equal(await engine.play(song, 0.5, 2, 0.8), 1.5);
   assert.equal(media.src, song.audio.clueSrc);
-  assert.ok(Math.abs(media.currentTime - 0.585) < 0.000001);
   assert.equal(media.paused, false);
-  assert.equal(cutoffMs, 1500);
+
+  // The clue window must open on the media clock, not when play() returns.
+  // Timing it from play() would let the window expire during decoder startup,
+  // which is silent on a phone and inaudible on the shortest stages.
+  assert.ok(frames >= framesBeforeOutput, "the engine must wait for the element to actually start");
+  assert.ok(
+    cutoffScheduledAtMediaTime > 0.585,
+    `the cutoff must be scheduled only once audio exists, but it was scheduled at ${cutoffScheduledAtMediaTime}`,
+  );
+  // Whatever the element already played counts against the clue, so the
+  // remaining window shortens rather than the clue running long.
+  const alreadyHeardMs = Math.round((media.currentTime - 0.585) * 1000);
+  assert.ok(
+    Math.abs(cutoffMs - (1500 - alreadyHeardMs + 60)) < 1,
+    `the cutoff should cover the unheard remainder, but it was ${cutoffMs}ms after ${alreadyHeardMs}ms played`,
+  );
+
+  const masterGain = gains[0];
   assert.equal(masterGain.gain.value, 0.8);
   engine.setVolume(1.6);
   assert.equal(masterGain.gain.value, 1.6);

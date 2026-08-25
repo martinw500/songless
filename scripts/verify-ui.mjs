@@ -1106,6 +1106,58 @@ async function run() {
       assert(audibleSubWindows >= 4,
         `The deployed 0.1s clue for ${hostedSong.id} opens on inaudible audio: only ${audibleSubWindows} of 5 sub-windows reach its body level (${JSON.stringify(shortestClue)}).`);
       console.log(`PASS deployed 0.1s clue is audible in the browser decoder (${hostedSong.id})`);
+
+      // A hosted clue must be bounded by the media element's own timeline, not
+      // by a wall-clock timer. A phone needs time to start its decoder and
+      // audio session, and that startup routinely exceeds a 0.1 second clue, so
+      // a wall-clock window closes before any sound exists and the player hears
+      // silence. Desktop Chrome starts a media element almost instantly, so the
+      // delay is injected here to make that device class reproducible.
+      const injectedStartLatencyMs = 400;
+      await client.evaluate(`(() => {
+        window.__songlessClueTrace = [];
+        const play = HTMLMediaElement.prototype.play;
+        const pause = HTMLMediaElement.prototype.pause;
+        HTMLMediaElement.prototype.play = function tracedPlay() {
+          const element = this;
+          window.__songlessClueTrace.push({ event: 'play', currentTime: element.currentTime, at: performance.now() });
+          // Resolve like a real play() does, while output genuinely starts late.
+          window.setTimeout(() => {
+            window.__songlessClueTrace.push({ event: 'output', currentTime: element.currentTime, at: performance.now() });
+            play.call(element).catch(() => {});
+          }, ${injectedStartLatencyMs});
+          return Promise.resolve();
+        };
+        HTMLMediaElement.prototype.pause = function tracedPause(...args) {
+          window.__songlessClueTrace.push({ event: 'pause', currentTime: this.currentTime, at: performance.now() });
+          return pause.apply(this, args);
+        };
+      })()`);
+      // Reroll first: the earlier playback locked the stage pills for that round.
+      await client.evaluate("document.querySelector('.mode-action').click()");
+      await delay(500);
+      await setStageEnabled(client, "0.1s", true);
+      for (const label of ["0.01s", "0.5s", "2s", "8s", "15s"]) await setStageEnabled(client, label, false);
+      const clueStages = await client.evaluate(`[...document.querySelectorAll('.stage-pill[aria-pressed="true"]')].map((node) => node.textContent.trim())`);
+      assert(clueStages.length === 1 && clueStages[0] === "0.1s",
+        `The clue-duration check needs only the 0.1s stage enabled (${JSON.stringify(clueStages)}).`);
+      await client.evaluate("window.__songlessClueTrace = []");
+      await client.evaluate("document.querySelector('.play-button').click()");
+      await delay(4000);
+      const clueTrace = await client.evaluate("window.__songlessClueTrace ?? []");
+      const started = clueTrace.find((entry) => entry.event === "play");
+      const output = clueTrace.find((entry) => entry.event === "output" && entry.at >= (started?.at ?? 0));
+      const ended = clueTrace.find((entry) => entry.event === "pause" && entry.at > (output?.at ?? Infinity));
+      // The audible window is closed exactly by the gain envelope on the audio
+      // clock; the element is paused a short moment later purely as cleanup, so
+      // the media advance seen here is the clue plus that cleanup margin. The
+      // floor is what matters: it proves a full clue of real audio was
+      // delivered rather than a window that expired during decoder startup.
+      const deliveredMs = output && ended ? Math.round((ended.currentTime - output.currentTime) * 1000) : null;
+      console.log(`0.1s hosted clue delivered ${deliveredMs}ms of media (100ms clue + cleanup) after a ${injectedStartLatencyMs}ms decoder start`);
+      assert(deliveredMs !== null && deliveredMs >= 100 && deliveredMs <= 260,
+        `A 0.1s hosted clue must still deliver its full 100ms of audio when output starts ${injectedStartLatencyMs}ms late, but the element only advanced ${deliveredMs}ms (${JSON.stringify(clueTrace)}).`);
+      console.log("PASS the 0.1s hosted clue survives a slow decoder start");
     }
 
     writeFileSync(reviewCatalogFile, `${JSON.stringify([{

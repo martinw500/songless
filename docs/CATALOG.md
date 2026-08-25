@@ -134,6 +134,8 @@ A failing clue window is an audible defect, so it corrects documented overrides 
 
 `node scripts/verify-ui.mjs --hosted-smoke --hosted-id=<id>` confirms the result from the other end: it fetches the deployed R2 clue, decodes it with the browser's own MP3 decoder, and applies the same sub-window rule. That is the only check that includes decoder priming on the asset a player actually receives, so run it after an upload batch. It reads `public/review-catalog.json`, so regenerate that with `npm run review:r2` after changing any start.
 
+A correctly calibrated start is still not sufficient on its own. The same smoke run also plays the 0.1 second stage with a 400 ms media start delay injected, because a clue window timed from `play()` returning will open and close before a phone's decoder and audio session produce sound — the start offset is then irrelevant and the player hears nothing. Desktop Chrome starts a media element almost instantly and hides this entirely, so the delay is injected rather than waited for. The assertion is that the element's own clock still advances a full clue's worth of audio.
+
 The fallback chain for an unset start is: `song.startAtMs` → `song.media.onsetPadMs` → `30` (default LAME padding). Do not skip a deliberate fade or melody merely because it is soft. Set `clueGainDb` from 0–12 dB for those cases; clue playback is limited, and full-song reveal playback remains at the original level. Audible static cannot be distinguished reliably from intentional texture by level measurements, so known static receives an explicit skip such as the tracked `No One Noticed` override.
 
 ## Live catalogue
