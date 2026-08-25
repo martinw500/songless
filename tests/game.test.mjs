@@ -80,4 +80,6 @@ test("catalogue validation accepts complete R2 hosted sources", () => {
   assert.deepEqual(validateCatalog([{ ...valid, startAtMs: -1 }]), []);
   assert.deepEqual(validateCatalog([{ ...valid, clueGainDb: 8 }]), [{ ...valid, clueGainDb: 8 }]);
   assert.deepEqual(validateCatalog([{ ...valid, clueGainDb: 13 }]), []);
+  assert.deepEqual(validateCatalog([{ ...valid, playbackGainDb: 12 }]), [{ ...valid, playbackGainDb: 12 }]);
+  assert.deepEqual(validateCatalog([{ ...valid, playbackGainDb: 13 }]), []);
 });

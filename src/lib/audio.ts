@@ -5,6 +5,14 @@ const SEEK_TOLERANCE_SECONDS = 0.005;
 const MAX_CACHED_BUFFERS = 3;
 const SYNTH_REVEAL_SECONDS = 30;
 const BUFFER_RETRY_DELAYS_MS = [0, 350, 900] as const;
+const MAX_BOOST_DB = 12;
+const MOBILE_SUB_RUMBLE_HZ = 40;
+
+function cappedBoostDb(...gains: Array<number | undefined>): number {
+  let total = 0;
+  for (const gain of gains) total += Math.max(0, gain ?? 0);
+  return Math.min(MAX_BOOST_DB, total);
+}
 
 export class AudioEngine {
   private context: AudioContext | null = null;
@@ -60,7 +68,7 @@ export class AudioEngine {
         song.startAtMs ?? 0,
         rangeStart,
         requestedDuration,
-        song.clueGainDb ?? 0,
+        cappedBoostDb(song.clueGainDb, song.playbackGainDb),
         context,
         playbackId,
       );
@@ -72,7 +80,7 @@ export class AudioEngine {
         song.startAtMs ?? 0,
         rangeStart,
         requestedDuration,
-        song.clueGainDb ?? 0,
+        cappedBoostDb(song.clueGainDb, song.playbackGainDb),
         context,
         playbackId,
       );
@@ -127,6 +135,7 @@ export class AudioEngine {
         null,
         context,
         playbackId,
+        cappedBoostDb(song.playbackGainDb),
       );
     }
 
@@ -142,7 +151,7 @@ export class AudioEngine {
     if (actualDuration <= 0) throw new Error("The reveal starts past the end of the audio file.");
 
     const now = context.currentTime;
-    const gain = this.createGain(context, now, actualDuration);
+    const gain = this.createGain(context, now, actualDuration, cappedBoostDb(song.playbackGainDb));
     const source = context.createBufferSource();
     source.buffer = buffer;
     source.connect(gain);
@@ -229,6 +238,7 @@ export class AudioEngine {
     requestedDuration: number | null,
     context: AudioContext,
     playbackId: number,
+    boostDb = 0,
   ): Promise<number> {
     if (song.audio.kind !== "hosted") throw new Error("Hosted playback requires a hosted audio source.");
     const media = new Audio();
@@ -256,7 +266,7 @@ export class AudioEngine {
 
     media.currentTime = offset;
     const source = context.createMediaElementSource(media);
-    const output = this.createMediaGain(context, 0);
+    const output = this.createMediaGain(context, boostDb);
     source.connect(output);
     this.activeNodes.push({ stop: () => source.disconnect() } as AudioScheduledSourceNode);
     await this.waitForSeek(media, offset);
@@ -273,7 +283,15 @@ export class AudioEngine {
     if (!this.masterGain) {
       this.masterGain = context.createGain();
       this.masterGain.gain.value = this.volume;
-      this.masterGain.connect(context.destination);
+      // Phone speakers cannot reproduce sub-40 Hz; they turn it into cone
+      // excursion that reads as "too much bass". A gentle high-pass removes
+      // rumble without taking the 808 body that sits above it.
+      const highpass = context.createBiquadFilter();
+      highpass.type = "highpass";
+      highpass.frequency.value = MOBILE_SUB_RUMBLE_HZ;
+      highpass.Q.value = 0.707;
+      this.masterGain.connect(highpass);
+      highpass.connect(context.destination);
     }
     return this.masterGain;
   }

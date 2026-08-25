@@ -70,6 +70,8 @@ export function validateCatalog(value: unknown): Song[] {
       || (Number.isInteger(song.startAtMs) && song.startAtMs >= 0);
     const validClueGain = song.clueGainDb === undefined
       || (Number.isFinite(song.clueGainDb) && song.clueGainDb >= 0 && song.clueGainDb <= 12);
+    const validPlaybackGain = song.playbackGainDb === undefined
+      || (Number.isFinite(song.playbackGainDb) && song.playbackGainDb >= 0 && song.playbackGainDb <= 12);
     return Boolean(
       song.id &&
         song.title &&
@@ -77,7 +79,8 @@ export function validateCatalog(value: unknown): Song[] {
         song.difficulty &&
         validAudio &&
         validStart &&
-        validClueGain,
+        validClueGain &&
+        validPlaybackGain,
     );
   });
 }

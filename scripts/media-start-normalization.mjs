@@ -28,6 +28,19 @@ export const onsetOffsetDb = -20;
 // quietly on purpose and the gate boundary is the honest start.
 export const onsetPreferenceWindowMs = 250;
 
+// Quiet masters (Billie whisper-pop, analogue ballads) sit 15–25 dB under
+// brickwalled pop. Streaming services loudness-normalise; we do not, so the
+// player hears Wildflower at master level next to Woman. Raise the body toward
+// this target, never above the same 12 dB cap as clueGainDb, and never attenuate
+// a loud mix.
+export const playbackLoudnessTargetDb = -16;
+export const maxPlaybackGainDb = 12;
+
+export function playbackGainFromBodyDb(bodyDb) {
+  if (!Number.isFinite(bodyDb)) return 0;
+  return Math.min(maxPlaybackGainDb, Math.max(0, Math.round(playbackLoudnessTargetDb - bodyDb)));
+}
+
 export const clueWindowPass = "pass";
 export const clueWindowSilent = "clue-window-silent";
 

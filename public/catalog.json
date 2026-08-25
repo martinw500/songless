@@ -445,6 +445,7 @@
     "longevityScore": 100,
     "introRecognition": 87.6,
     "startAtMs": 0,
+    "playbackGainDb": 6,
     "hookStartMs": 109400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eurythmics-sweet-dreams.jpg?v=291561-0",
     "audio": {
@@ -480,6 +481,7 @@
     "longevityScore": 100,
     "introRecognition": 87.4,
     "startAtMs": 210,
+    "playbackGainDb": 5,
     "hookStartMs": 72200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/oasis-wonderwall.jpg?v=276723-0",
     "audio": {
@@ -516,6 +518,7 @@
     "longevityScore": 100,
     "introRecognition": 86.6,
     "startAtMs": 111,
+    "playbackGainDb": 6,
     "hookStartMs": 91800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/journey-dont-stop-believin.jpg?v=249219-0",
     "audio": {
@@ -553,6 +556,7 @@
     "longevityScore": 80,
     "introRecognition": 78.9,
     "startAtMs": 0,
+    "playbackGainDb": 12,
     "hookStartMs": 47600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/stromae-papaoutai.jpg?v=231380-0",
     "audio": {
@@ -587,6 +591,7 @@
     "longevityScore": 100,
     "introRecognition": 84.3,
     "startAtMs": 443,
+    "playbackGainDb": 4,
     "hookStartMs": 48400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/goo-goo-dolls-iris.jpg?v=artfix-b352afc1b22e",
     "audio": {
@@ -621,6 +626,7 @@
     "longevityScore": 80,
     "introRecognition": 74.6,
     "startAtMs": 90,
+    "playbackGainDb": 12,
     "hookStartMs": 15000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/glass-animals-heat-waves.jpg?v=175302-0",
     "audio": {
@@ -696,6 +702,7 @@
     "longevityScore": 100,
     "introRecognition": 82,
     "startAtMs": 350,
+    "playbackGainDb": 3,
     "hookStartMs": 108400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/earth-wind-fire-september.jpg?v=215093-0",
     "audio": {
@@ -730,6 +737,7 @@
     "longevityScore": 100,
     "introRecognition": 79.9,
     "startAtMs": 185,
+    "playbackGainDb": 12,
     "hookStartMs": 93800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-bohemian-rhapsody.jpg?v=356627-0",
     "audio": {
@@ -802,6 +810,7 @@
     "introRecognition": 75.4,
     "startAtMs": 250,
     "clueGainDb": 3,
+    "playbackGainDb": 5,
     "hookStartMs": 37400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-dont-stop-me-now.jpg?v=198907-0",
     "audio": {
@@ -909,6 +918,7 @@
     "longevityScore": 80,
     "introRecognition": 66.4,
     "startAtMs": 83,
+    "playbackGainDb": 3,
     "hookStartMs": 37200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-khalid-lovely.jpg?v=200469-0",
     "audio": {
@@ -943,6 +953,7 @@
     "longevityScore": 100,
     "introRecognition": 73.8,
     "startAtMs": 0,
+    "playbackGainDb": 4,
     "hookStartMs": 93400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-cranberries-zombie.jpg?v=306131-0",
     "audio": {
@@ -978,6 +989,7 @@
     "longevityScore": 80,
     "introRecognition": 59.2,
     "startAtMs": 600,
+    "playbackGainDb": 3,
     "hookStartMs": 87800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/luis-fonsi-daddy-yankee-despacito.jpg?v=227346-0",
     "audio": {
@@ -1081,6 +1093,7 @@
     "longevityScore": 80,
     "introRecognition": 84.8,
     "startAtMs": 110,
+    "playbackGainDb": 3,
     "hookStartMs": 132600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-chainsmokers-halsey-closer.jpg?v=245922-0",
     "audio": {
@@ -1293,6 +1306,7 @@
     "longevityScore": 35,
     "introRecognition": 77.2,
     "startAtMs": 249,
+    "playbackGainDb": 8,
     "hookStartMs": 39800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-bruno-mars-die-with-a-smile.jpg?v=251717-0",
     "audio": {
@@ -1471,6 +1485,7 @@
     "longevityScore": 80,
     "introRecognition": 81.8,
     "startAtMs": 521,
+    "playbackGainDb": 4,
     "hookStartMs": 16600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-circles.jpg?v=215355-0",
     "audio": {
@@ -1540,6 +1555,7 @@
     "longevityScore": 75,
     "introRecognition": 92.1,
     "startAtMs": 0,
+    "playbackGainDb": 1,
     "hookStartMs": 53800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/master-kg-nomcebo-zikode-jerusalema.jpg?v=342254-0",
     "audio": {
@@ -1574,6 +1590,7 @@
     "longevityScore": 100,
     "introRecognition": 93.1,
     "startAtMs": 80,
+    "playbackGainDb": 5,
     "hookStartMs": 62800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/radiohead-creep.jpg?v=236530-0",
     "audio": {
@@ -1678,6 +1695,7 @@
     "longevityScore": 90,
     "introRecognition": 85.5,
     "startAtMs": 310,
+    "playbackGainDb": 2,
     "hookStartMs": 56400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-poker-face.jpg?v=213612-0",
     "audio": {
@@ -1811,6 +1829,7 @@
     "longevityScore": 100,
     "introRecognition": 87.1,
     "startAtMs": 320,
+    "playbackGainDb": 7,
     "hookStartMs": 32600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/fleetwood-mac-dreams.jpg?v=257544-0",
     "audio": {
@@ -1846,6 +1865,7 @@
     "longevityScore": 55,
     "introRecognition": 83.5,
     "startAtMs": 100,
+    "playbackGainDb": 3,
     "hookStartMs": 75400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-kali-uchis-see-you-again.jpg?v=202954-0",
     "audio": {
@@ -1916,6 +1936,7 @@
     "longevityScore": 100,
     "introRecognition": 79.1,
     "startAtMs": 371,
+    "playbackGainDb": 6,
     "hookStartMs": 49200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/a-ha-take-on-me.jpg?v=228520-0",
     "audio": {
@@ -1975,6 +1996,7 @@
     "introRecognition": 91.3,
     "startAtMs": 250,
     "clueGainDb": 4,
+    "playbackGainDb": 2,
     "hookStartMs": 44200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/vance-joy-riptide.jpg?v=artfix-22c1998cf631",
     "audio": {
@@ -2140,6 +2162,7 @@
     "introRecognition": 90.6,
     "startAtMs": 350,
     "clueGainDb": 6,
+    "playbackGainDb": 4,
     "hookStartMs": 82000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-chainsmokers-something-just-like-this.jpg?v=artfix-1c0cd89d2942",
     "audio": {
@@ -2202,6 +2225,7 @@
     "longevityScore": 50,
     "introRecognition": 88.4,
     "startAtMs": 0,
+    "playbackGainDb": 1,
     "hookStartMs": 105000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/james-arthur-say-you-won-t-let-go.jpg?v=artfix-96c31efdaf89",
     "audio": {
@@ -2259,6 +2283,7 @@
     "introRecognition": 78.3,
     "startAtMs": 250,
     "clueGainDb": 10,
+    "playbackGainDb": 2,
     "hookStartMs": 58200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/arctic-monkeys-i-wanna-be-yours.jpg?v=artfix-27f425d5c47c",
     "audio": {
@@ -2391,6 +2416,7 @@
     "longevityScore": 100,
     "introRecognition": 69.6,
     "startAtMs": 400,
+    "playbackGainDb": 7,
     "hookStartMs": 69200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/toto-africa.jpg?v=294333-0",
     "audio": {
@@ -2419,6 +2445,7 @@
     "longevityScore": 50,
     "introRecognition": 84.4,
     "startAtMs": 360,
+    "playbackGainDb": 6,
     "hookStartMs": 81000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-police-every-breath-you-take.jpg?v=artfix-27426df79ab5",
     "audio": {
@@ -2448,6 +2475,7 @@
     "longevityScore": 50,
     "introRecognition": 88.3,
     "startAtMs": 190,
+    "playbackGainDb": 4,
     "hookStartMs": 192600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-photograph.jpg?v=artfix-797158c72ffb",
     "audio": {
@@ -2574,6 +2602,7 @@
     "longevityScore": 55,
     "introRecognition": 81.6,
     "startAtMs": 357,
+    "playbackGainDb": 7,
     "hookStartMs": 46400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/cigarettes-after-sex-apocalypse.jpg?v=290075-0",
     "audio": {
@@ -2603,6 +2632,7 @@
     "introRecognition": 85.3,
     "startAtMs": 0,
     "clueGainDb": 12,
+    "playbackGainDb": 1,
     "hookStartMs": 130600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tones-and-i-dance-monkey.jpg?v=artfix-ae575f6107f3",
     "audio": {
@@ -2667,6 +2697,7 @@
     "longevityScore": 50,
     "introRecognition": 88.1,
     "startAtMs": 350,
+    "playbackGainDb": 5,
     "hookStartMs": 66200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-just-the-way-you-are.jpg?v=artfix-b312a69524de",
     "audio": {
@@ -2844,6 +2875,7 @@
     "longevityScore": 50,
     "introRecognition": 93.4,
     "startAtMs": 155,
+    "playbackGainDb": 1,
     "hookStartMs": 24400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/juice-wrld-lucid-dreams.jpg?v=artfix-eea886f4edcc",
     "audio": {
@@ -2880,6 +2912,7 @@
     "introRecognition": 56.5,
     "startAtMs": 160,
     "clueGainDb": 5,
+    "playbackGainDb": 2,
     "hookStartMs": 56000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/michael-jackson-billie-jean.jpg?v=294227-0",
     "audio": {
@@ -2945,6 +2978,7 @@
     "longevityScore": 50,
     "introRecognition": 66.4,
     "startAtMs": 83,
+    "playbackGainDb": 3,
     "hookStartMs": 37200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-lovely-with-khalid.jpg?v=artfix-9a2dea6adfc0",
     "audio": {
@@ -3196,6 +3230,7 @@
     "introRecognition": 90.8,
     "startAtMs": 10,
     "clueGainDb": 4,
+    "playbackGainDb": 3,
     "hookStartMs": 49400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/travis-scott-goosebumps.jpg?v=artfix-92642659f205",
     "audio": {
@@ -3224,6 +3259,7 @@
     "longevityScore": 50,
     "introRecognition": 90.6,
     "startAtMs": 100,
+    "playbackGainDb": 9,
     "hookStartMs": 153200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-shallow.jpg?v=artfix-3fb5482d4d33",
     "audio": {
@@ -3252,6 +3288,7 @@
     "longevityScore": 50,
     "introRecognition": 90.5,
     "startAtMs": 250,
+    "playbackGainDb": 8,
     "hookStartMs": 48000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-thinking-out-loud.jpg?v=artfix-bbd9f2ce4f9c",
     "audio": {
@@ -3317,6 +3354,7 @@
     "longevityScore": 55,
     "introRecognition": 90.9,
     "startAtMs": 0,
+    "playbackGainDb": 2,
     "hookStartMs": 46800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-her-best-part.jpg?v=210012-0",
     "audio": {
@@ -3345,6 +3383,7 @@
     "longevityScore": 50,
     "introRecognition": 84.6,
     "startAtMs": 30,
+    "playbackGainDb": 7,
     "hookStartMs": 45400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/linkin-park-in-the-end.jpg?v=artfix-6f9277585dae",
     "audio": {
@@ -3408,6 +3447,7 @@
     "longevityScore": 50,
     "introRecognition": 87.3,
     "startAtMs": 180,
+    "playbackGainDb": 3,
     "hookStartMs": 49600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-when-i-was-your-man.jpg?v=artfix-d3e39134ae76",
     "audio": {
@@ -3522,6 +3562,7 @@
     "longevityScore": 50,
     "introRecognition": 94.3,
     "startAtMs": 0,
+    "playbackGainDb": 4,
     "hookStartMs": 41600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-cole-no-role-modelz.jpg?v=artfix-f531c271c722",
     "audio": {
@@ -3684,6 +3725,7 @@
     "longevityScore": 50,
     "introRecognition": 83.1,
     "startAtMs": 2,
+    "playbackGainDb": 6,
     "hookStartMs": 28600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-god-s-plan.jpg?v=artfix-ef93ec533797",
     "audio": {
@@ -3712,6 +3754,7 @@
     "longevityScore": 50,
     "introRecognition": 87,
     "startAtMs": 160,
+    "playbackGainDb": 5,
     "hookStartMs": 43000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-demons.jpg?v=artfix-db2ba9c7e34e",
     "audio": {
@@ -3750,6 +3793,7 @@
     "longevityScore": 20,
     "introRecognition": 89.3,
     "startAtMs": 29,
+    "playbackGainDb": 2,
     "hookStartMs": 50200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bad-bunny-dtmf.jpg?v=240245-0",
     "audio": {
@@ -3779,6 +3823,7 @@
     "longevityScore": 50,
     "introRecognition": 89.9,
     "startAtMs": 820,
+    "playbackGainDb": 4,
     "hookStartMs": 95800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-lose-yourself.jpg?v=artfix-8870b10f3dfd",
     "audio": {
@@ -3808,6 +3853,7 @@
     "longevityScore": 50,
     "introRecognition": 88.1,
     "startAtMs": 90,
+    "playbackGainDb": 4,
     "hookStartMs": 125600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-the-scientist.jpg?v=artfix-8ce3319908d4",
     "audio": {
@@ -3900,6 +3946,7 @@
     "longevityScore": 50,
     "introRecognition": 90.6,
     "startAtMs": 259,
+    "playbackGainDb": 3,
     "hookStartMs": 105800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/passenger-let-her-go.jpg?v=artfix-69d04b462365",
     "audio": {
@@ -3929,6 +3976,7 @@
     "longevityScore": 50,
     "introRecognition": 94.8,
     "startAtMs": 470,
+    "playbackGainDb": 1,
     "hookStartMs": 28600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/guns-n-roses-sweet-child-o-mine.jpg?v=artfix-caa379dd93ea",
     "audio": {
@@ -4022,6 +4070,7 @@
     "longevityScore": 50,
     "introRecognition": 92.6,
     "startAtMs": 85,
+    "playbackGainDb": 1,
     "hookStartMs": 53600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-payphone.jpg?v=spotify-268451231d3a",
     "audio": {
@@ -4050,6 +4099,7 @@
     "longevityScore": 50,
     "introRecognition": 86.6,
     "startAtMs": 0,
+    "playbackGainDb": 2,
     "hookStartMs": 41400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ariana-grande-7-rings.jpg?v=artfix-2cb92cc72102",
     "audio": {
@@ -4079,6 +4129,7 @@
     "introRecognition": 86.7,
     "startAtMs": 300,
     "clueGainDb": 6,
+    "playbackGainDb": 5,
     "hookStartMs": 143400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-drivers-license.jpg?v=artfix-8040afe2d146",
     "audio": {
@@ -4114,6 +4165,7 @@
     "longevityScore": 55,
     "introRecognition": 96.5,
     "startAtMs": 70,
+    "playbackGainDb": 3,
     "hookStartMs": 187800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-slow-dancing-in-the-dark.jpg?v=209274-0",
     "audio": {
@@ -4142,6 +4194,7 @@
     "longevityScore": 50,
     "introRecognition": 82.1,
     "startAtMs": 305,
+    "playbackGainDb": 1,
     "hookStartMs": 34200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-treat-you-better.jpg?v=artfix-1faec7bcbf51",
     "audio": {
@@ -4204,6 +4257,7 @@
     "longevityScore": 50,
     "introRecognition": 89.6,
     "startAtMs": 215,
+    "playbackGainDb": 1,
     "hookStartMs": 84800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-don-t-stop-me-now.jpg?v=artfix-3144b1518c1b",
     "audio": {
@@ -4707,6 +4761,7 @@
     "longevityScore": 50,
     "introRecognition": 87.4,
     "startAtMs": 80,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-one-of-the-girls-with-jennie-lily-rose-depp.jpg?v=244692-0",
     "audio": {
       "kind": "hosted",
@@ -4735,6 +4790,7 @@
     "introRecognition": 91.9,
     "startAtMs": 60,
     "clueGainDb": 10,
+    "playbackGainDb": 7,
     "hookStartMs": 26600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/xxxtentacion-sad.jpg?v=artfix-ac7ca59def8d",
     "audio": {
@@ -4763,6 +4819,7 @@
     "longevityScore": 50,
     "introRecognition": 91.8,
     "startAtMs": 0,
+    "playbackGainDb": 6,
     "hookStartMs": 42000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-when-the-party-s-over.jpg?v=artfix-fc7b3726d7e3",
     "audio": {
@@ -4880,6 +4937,7 @@
     "longevityScore": 50,
     "introRecognition": 84.5,
     "startAtMs": 0,
+    "playbackGainDb": 7,
     "hookStartMs": 74800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/adele-someone-like-you.jpg?v=artfix-6b82bf9cc85f",
     "audio": {
@@ -4936,6 +4994,7 @@
     "longevityScore": 50,
     "introRecognition": 93.5,
     "startAtMs": 33,
+    "playbackGainDb": 1,
     "hookStartMs": 55800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-call-out-my-name.jpg?v=artfix-2838b33e1128",
     "audio": {
@@ -4971,6 +5030,7 @@
     "longevityScore": 55,
     "introRecognition": 82.5,
     "startAtMs": 430,
+    "playbackGainDb": 12,
     "hookStartMs": 136800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/joji-glimpse-of-us.jpg?v=234034-0",
     "audio": {
@@ -5154,6 +5214,7 @@
     "longevityScore": 50,
     "introRecognition": 87.1,
     "startAtMs": 400,
+    "playbackGainDb": 1,
     "hookStartMs": 62000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dua-lipa-new-rules.jpg?v=artfix-70da120abdfe",
     "audio": {
@@ -5183,6 +5244,7 @@
     "longevityScore": 50,
     "introRecognition": 87.4,
     "startAtMs": 150,
+    "playbackGainDb": 7,
     "hookStartMs": 144800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sam-smith-too-good-at-goodbyes.jpg?v=artfix-2ce07e8dcf9b",
     "audio": {
@@ -5242,6 +5304,7 @@
     "longevityScore": 50,
     "introRecognition": 86.4,
     "startAtMs": 300,
+    "playbackGainDb": 2,
     "hookStartMs": 47000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/adele-easy-on-me.jpg?v=artfix-8679998b805c",
     "audio": {
@@ -5272,6 +5335,7 @@
     "longevityScore": 50,
     "introRecognition": 91.6,
     "startAtMs": 270,
+    "playbackGainDb": 1,
     "hookStartMs": 45200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/arctic-monkeys-why-d-you-only-call-me-when-you-re-high.jpg?v=artfix-2b6871b8ace8",
     "audio": {
@@ -5333,6 +5397,7 @@
     "longevityScore": 50,
     "introRecognition": 96.3,
     "startAtMs": 0,
+    "playbackGainDb": 2,
     "hookStartMs": 41000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sia-chandelier.jpg?v=artfix-2e4c6dc1bbd1",
     "audio": {
@@ -5391,6 +5456,7 @@
     "longevityScore": 50,
     "introRecognition": 89.9,
     "startAtMs": 248,
+    "playbackGainDb": 1,
     "hookStartMs": 54000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/alan-walker-faded.jpg?v=artfix-106ac3e1e228",
     "audio": {
@@ -5447,6 +5513,7 @@
     "longevityScore": 50,
     "introRecognition": 89.4,
     "startAtMs": 120,
+    "playbackGainDb": 3,
     "hookStartMs": 107400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jason-mraz-i-m-yours.jpg?v=artfix-9040cf0416a9",
     "audio": {
@@ -5475,6 +5542,7 @@
     "longevityScore": 50,
     "introRecognition": 84.1,
     "startAtMs": 57,
+    "playbackGainDb": 7,
     "hookStartMs": 46000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/xxxtentacion-jocelyn-flores.jpg?v=artfix-afad2e667767",
     "audio": {
@@ -5587,6 +5655,7 @@
     "longevityScore": 50,
     "introRecognition": 88.4,
     "startAtMs": 411,
+    "playbackGainDb": 7,
     "hookStartMs": 39800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-maps.jpg?v=artfix-babfc4ff3a6e",
     "audio": {
@@ -5622,6 +5691,7 @@
     "longevityScore": 100,
     "introRecognition": 88,
     "startAtMs": 367,
+    "playbackGainDb": 4,
     "hookStartMs": 32400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tlc-no-scrubs.jpg?v=214891-0",
     "audio": {
@@ -5651,6 +5721,7 @@
     "introRecognition": 94.1,
     "startAtMs": 490,
     "clueGainDb": 4,
+    "playbackGainDb": 1,
     "hookStartMs": 66200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-traitor.jpg?v=artfix-cd992bb784fb",
     "audio": {
@@ -5680,6 +5751,7 @@
     "introRecognition": 81.8,
     "startAtMs": 260,
     "clueGainDb": 8,
+    "playbackGainDb": 12,
     "hookStartMs": 34400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lil-uzi-vert-xo-tour-llif3.jpg?v=artfix-a257a4f14528",
     "audio": {
@@ -5713,6 +5785,7 @@
     "longevityScore": 78,
     "introRecognition": 89.9,
     "startAtMs": 2890,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dean-lewis-be-alright.jpg?v=195694-0",
     "audio": {
       "kind": "hosted",
@@ -5741,6 +5814,7 @@
     "introRecognition": 91.9,
     "startAtMs": 40,
     "clueGainDb": 4,
+    "playbackGainDb": 1,
     "hookStartMs": 32600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-congratulations.jpg?v=artfix-a9c6e0bfd220",
     "audio": {
@@ -5801,6 +5875,7 @@
     "longevityScore": 50,
     "introRecognition": 85.4,
     "startAtMs": 225,
+    "playbackGainDb": 4,
     "hookStartMs": 19600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/queen-another-one-bites-the-dust.jpg?v=artfix-3144b1518c1b",
     "audio": {
@@ -6007,6 +6082,7 @@
     "longevityScore": 78,
     "introRecognition": 89.1,
     "startAtMs": 750,
+    "playbackGainDb": 8,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/5-seconds-of-summer-youngblood.jpg?v=203593-0",
     "audio": {
       "kind": "hosted",
@@ -6039,6 +6115,7 @@
     "longevityScore": 85,
     "introRecognition": 95,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-i-gotta-feeling.jpg?v=290435-0",
     "audio": {
       "kind": "hosted",
@@ -6067,6 +6144,7 @@
     "introRecognition": 90.1,
     "startAtMs": 0,
     "clueGainDb": 4,
+    "playbackGainDb": 6,
     "hookStartMs": 104000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-walters-i-love-you-so.jpg?v=artfix-bcb53e600af7",
     "audio": {
@@ -6128,6 +6206,7 @@
     "introRecognition": 84.1,
     "startAtMs": 110,
     "clueGainDb": 10,
+    "playbackGainDb": 10,
     "hookStartMs": 39400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/wiz-khalifa-see-you-again-feat-charlie-puth.jpg?v=artfix-ad2216359ac4",
     "audio": {
@@ -6184,6 +6263,7 @@
     "longevityScore": 50,
     "introRecognition": 78.8,
     "startAtMs": 190,
+    "playbackGainDb": 6,
     "hookStartMs": 48800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-stitches.jpg?v=artfix-6d1ad2eedaa9",
     "audio": {
@@ -6212,6 +6292,7 @@
     "longevityScore": 50,
     "introRecognition": 89.1,
     "startAtMs": 230,
+    "playbackGainDb": 4,
     "hookStartMs": 141200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-deja-vu.jpg?v=artfix-4e68cf67687c",
     "audio": {
@@ -6270,6 +6351,7 @@
     "introRecognition": 76.7,
     "startAtMs": 0,
     "clueGainDb": 10,
+    "playbackGainDb": 3,
     "hookStartMs": 92800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charlie-puth-attention.jpg?v=artfix-643b012c827b",
     "audio": {
@@ -6335,6 +6417,7 @@
     "longevityScore": 92,
     "introRecognition": 90.1,
     "startAtMs": 30,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/metallica-enter-sandman.jpg?v=327909-0",
     "audio": {
       "kind": "hosted",
@@ -6369,6 +6452,7 @@
     "longevityScore": 85,
     "introRecognition": 88.1,
     "startAtMs": 30,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/pitbull-give-me-everything.jpg?v=256336-0",
     "audio": {
       "kind": "hosted",
@@ -6397,6 +6481,7 @@
     "longevityScore": 50,
     "introRecognition": 72.4,
     "startAtMs": 0,
+    "playbackGainDb": 2,
     "hookStartMs": 59200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-night-changes.jpg?v=artfix-c61322c3b698",
     "audio": {
@@ -6492,6 +6577,7 @@
     "longevityScore": 100,
     "introRecognition": 88.8,
     "startAtMs": 80,
+    "playbackGainDb": 5,
     "hookStartMs": 112400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/george-michael-careless-whisper.jpg?v=302600-0",
     "audio": {
@@ -6548,6 +6634,7 @@
     "longevityScore": 50,
     "introRecognition": 87.4,
     "startAtMs": 222,
+    "playbackGainDb": 2,
     "hookStartMs": 29600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/david-guetta-titanium-feat-sia.jpg?v=artfix-59c68ae9386e",
     "audio": {
@@ -6636,6 +6723,7 @@
     "longevityScore": 50,
     "introRecognition": 91.5,
     "startAtMs": 140,
+    "playbackGainDb": 2,
     "hookStartMs": 72000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-ocean-eyes.jpg?v=artfix-f0491e56aa62",
     "audio": {
@@ -6784,6 +6872,7 @@
     "introRecognition": 84,
     "startAtMs": 0,
     "clueGainDb": 6,
+    "playbackGainDb": 2,
     "hookStartMs": 65200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/conan-gray-heather.jpg?v=artfix-ad9e5023a968",
     "audio": {
@@ -6815,6 +6904,7 @@
     "introRecognition": 89.5,
     "startAtMs": 470,
     "clueGainDb": 6,
+    "playbackGainDb": 8,
     "hookStartMs": 52000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/wham-last-christmas.jpg?v=artfix-6bd891462f4f",
     "audio": {
@@ -6968,6 +7058,7 @@
     "longevityScore": 50,
     "introRecognition": 83.9,
     "startAtMs": 304,
+    "playbackGainDb": 1,
     "hookStartMs": 131200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-sugar.jpg?v=artfix-6a354312ed0e",
     "audio": {
@@ -7155,6 +7246,7 @@
     "longevityScore": 78,
     "introRecognition": 93.9,
     "startAtMs": 390,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/r-e-m-losing-my-religion.jpg?v=268971-0",
     "audio": {
       "kind": "hosted",
@@ -7182,6 +7274,7 @@
     "longevityScore": 50,
     "introRecognition": 88.8,
     "startAtMs": 70,
+    "playbackGainDb": 5,
     "hookStartMs": 46600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eminem-love-the-way-you-lie.jpg?v=artfix-d1d8aa00e89d",
     "audio": {
@@ -7211,6 +7304,7 @@
     "introRecognition": 89.4,
     "startAtMs": 40,
     "clueGainDb": 4,
+    "playbackGainDb": 7,
     "hookStartMs": 36000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-money-trees.jpg?v=artfix-b3663a322d96",
     "audio": {
@@ -7372,6 +7466,7 @@
     "longevityScore": 50,
     "introRecognition": 96.5,
     "startAtMs": 520,
+    "playbackGainDb": 1,
     "hookStartMs": 193200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kehlani-folded.jpg?v=artfix-1dbd30b63d5d",
     "audio": {
@@ -7464,6 +7559,7 @@
     "longevityScore": 50,
     "introRecognition": 87.8,
     "startAtMs": 190,
+    "playbackGainDb": 2,
     "hookStartMs": 40400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-i-feel-it-coming.jpg?v=artfix-e5b46934bc10",
     "audio": {
@@ -7492,6 +7588,7 @@
     "longevityScore": 50,
     "introRecognition": 82,
     "startAtMs": 300,
+    "playbackGainDb": 4,
     "hookStartMs": 61600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/adele-set-fire-to-the-rain.jpg?v=artfix-6b82bf9cc85f",
     "audio": {
@@ -7520,6 +7617,7 @@
     "longevityScore": 50,
     "introRecognition": 88.3,
     "startAtMs": 44,
+    "playbackGainDb": 6,
     "hookStartMs": 79200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-sign-of-the-times.jpg?v=artfix-eeebb66c3470",
     "audio": {
@@ -7835,6 +7933,7 @@
     "longevityScore": 85,
     "introRecognition": 92.5,
     "startAtMs": 370,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/maroon-5-animals.jpg?v=229552-0",
     "audio": {
       "kind": "hosted",
@@ -7867,6 +7966,7 @@
     "longevityScore": 68,
     "introRecognition": 87.8,
     "startAtMs": 340,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/powfu-death-bed-coffee-for-your-head.jpg?v=173906-0",
     "audio": {
       "kind": "hosted",
@@ -7896,6 +7996,7 @@
     "introRecognition": 93.8,
     "startAtMs": 2100,
     "clueGainDb": 12,
+    "playbackGainDb": 4,
     "hookStartMs": 114600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sienna-spiro-die-on-this-hill.jpg?v=artfix-6781af01193b",
     "audio": {
@@ -7959,6 +8060,7 @@
     "longevityScore": 85,
     "introRecognition": 93.1,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/capital-cities-safe-and-sound.jpg?v=190577-0",
     "audio": {
       "kind": "hosted",
@@ -7986,6 +8088,7 @@
     "longevityScore": 50,
     "introRecognition": 68.2,
     "startAtMs": 35,
+    "playbackGainDb": 6,
     "hookStartMs": 81600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-we-found-love.jpg?v=artfix-a991998e0834",
     "audio": {
@@ -8051,6 +8154,7 @@
     "longevityScore": 68,
     "introRecognition": 93.4,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sam-smith-unholy.jpg?v=157013-0",
     "audio": {
       "kind": "hosted",
@@ -8117,6 +8221,7 @@
     "longevityScore": 78,
     "introRecognition": 80.9,
     "startAtMs": 40,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/future-mask-off.jpg?v=204608-0",
     "audio": {
       "kind": "hosted",
@@ -8149,6 +8254,7 @@
     "longevityScore": 85,
     "introRecognition": 90.6,
     "startAtMs": 40,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-paradise.jpg?v=278082-0",
     "audio": {
       "kind": "hosted",
@@ -8343,6 +8449,7 @@
     "longevityScore": 50,
     "introRecognition": 83.4,
     "startAtMs": 589,
+    "playbackGainDb": 8,
     "hookStartMs": 144200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ac-dc-thunderstruck.jpg?v=artfix-22b11b0f110c",
     "audio": {
@@ -8376,6 +8483,7 @@
     "longevityScore": 78,
     "introRecognition": 93.1,
     "startAtMs": 150,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-24k-magic.jpg?v=226604-0",
     "audio": {
       "kind": "hosted",
@@ -8403,6 +8511,7 @@
     "longevityScore": 50,
     "introRecognition": 75.9,
     "startAtMs": 40,
+    "playbackGainDb": 10,
     "hookStartMs": 98600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/christina-perri-a-thousand-years.jpg?v=artfix-6cafeba342fd",
     "audio": {
@@ -8466,6 +8575,7 @@
     "longevityScore": 78,
     "introRecognition": 79.9,
     "startAtMs": 30,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-everything-i-wanted.jpg?v=245422-0",
     "audio": {
       "kind": "hosted",
@@ -8567,6 +8677,7 @@
     "introRecognition": 54,
     "startAtMs": 260,
     "clueGainDb": 5,
+    "playbackGainDb": 3,
     "hookStartMs": 54600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-just-dance.jpg?v=245771-0",
     "audio": {
@@ -8634,6 +8745,7 @@
     "longevityScore": 92,
     "introRecognition": 84,
     "startAtMs": 270,
+    "playbackGainDb": 11,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/red-hot-chili-peppers-under-the-bridge.jpg?v=264348-0",
     "audio": {
       "kind": "hosted",
@@ -8666,6 +8778,7 @@
     "longevityScore": 78,
     "introRecognition": 93.3,
     "startAtMs": 30,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sia-unstoppable.jpg?v=219057-0",
     "audio": {
       "kind": "hosted",
@@ -8825,6 +8938,7 @@
     "longevityScore": 50,
     "introRecognition": 69.3,
     "startAtMs": 496,
+    "playbackGainDb": 4,
     "hookStartMs": 18000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/roddy-ricch-the-box.jpg?v=artfix-c07ef0549815",
     "audio": {
@@ -8926,6 +9040,7 @@
     "longevityScore": 92,
     "introRecognition": 83.9,
     "startAtMs": 170,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/eurythmics-sweet-dreams-are-made-of-this.jpg?v=214007-0",
     "audio": {
       "kind": "hosted",
@@ -8958,6 +9073,7 @@
     "longevityScore": 78,
     "introRecognition": 90.5,
     "startAtMs": 150,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-always-remember-us-this-way.jpg?v=210384-0",
     "audio": {
       "kind": "hosted",
@@ -9020,6 +9136,7 @@
     "longevityScore": 85,
     "introRecognition": 79.9,
     "startAtMs": 200,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-script-hall-of-fame.jpg?v=201282-0",
     "audio": {
       "kind": "hosted",
@@ -9052,6 +9169,7 @@
     "longevityScore": 85,
     "introRecognition": 87,
     "startAtMs": 350,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-story-of-my-life.jpg?v=245483-0",
     "audio": {
       "kind": "hosted",
@@ -9084,6 +9202,7 @@
     "longevityScore": 85,
     "introRecognition": 85.8,
     "startAtMs": 200,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-diamonds.jpg?v=225152-0",
     "audio": {
       "kind": "hosted",
@@ -9179,6 +9298,7 @@
     "longevityScore": 92,
     "introRecognition": 92.9,
     "startAtMs": 280,
+    "playbackGainDb": 7,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/michael-jackson-beat-it.jpg?v=258566-0",
     "audio": {
       "kind": "hosted",
@@ -9243,6 +9363,7 @@
     "longevityScore": 78,
     "introRecognition": 95.9,
     "startAtMs": 250,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-i-fall-apart.jpg?v=223400-0",
     "audio": {
       "kind": "hosted",
@@ -9275,6 +9396,7 @@
     "longevityScore": 85,
     "introRecognition": 85.1,
     "startAtMs": 140,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/p-nk-just-give-me-a-reason.jpg?v=243705-0",
     "audio": {
       "kind": "hosted",
@@ -9339,6 +9461,7 @@
     "longevityScore": 55,
     "introRecognition": 74.8,
     "startAtMs": 240,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-wildflower.jpg?v=261213-0",
     "audio": {
       "kind": "hosted",
@@ -9369,6 +9492,7 @@
     "introRecognition": 84.8,
     "startAtMs": 390,
     "clueGainDb": 10,
+    "playbackGainDb": 11,
     "hookStartMs": 60200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-30-for-30.jpg?v=artfix-42d373634a6f",
     "audio": {
@@ -9436,6 +9560,7 @@
     "longevityScore": 78,
     "introRecognition": 87.8,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/xxxtentacion-revenge.jpg?v=120976-0",
     "audio": {
       "kind": "hosted",
@@ -9503,6 +9628,7 @@
     "longevityScore": 85,
     "introRecognition": 75.8,
     "startAtMs": 270,
+    "playbackGainDb": 8,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/evanescence-bring-me-to-life.jpg?v=235381-0",
     "audio": {
       "kind": "hosted",
@@ -9537,6 +9663,7 @@
     "longevityScore": 78,
     "introRecognition": 86.1,
     "startAtMs": 230,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-love.jpg?v=212915-0",
     "audio": {
       "kind": "hosted",
@@ -9633,6 +9760,7 @@
     "longevityScore": 92,
     "introRecognition": 69.4,
     "startAtMs": 510,
+    "playbackGainDb": 9,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/backstreet-boys-i-want-it-that-way.jpg?v=214007-0",
     "audio": {
       "kind": "hosted",
@@ -9665,6 +9793,7 @@
     "longevityScore": 85,
     "introRecognition": 89,
     "startAtMs": 1930,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/calvin-harris-outside.jpg?v=226128-0",
     "audio": {
       "kind": "hosted",
@@ -9724,6 +9853,7 @@
     "longevityScore": 50,
     "introRecognition": 68.3,
     "startAtMs": 0,
+    "playbackGainDb": 12,
     "hookStartMs": 73800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lana-del-rey-summertime-sadness.jpg?v=artfix-5a7c49b8cd6a",
     "audio": {
@@ -9785,6 +9915,7 @@
     "longevityScore": 78,
     "introRecognition": 91.1,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kanye-west-flashing-lights.jpg?v=237633-0",
     "audio": {
       "kind": "hosted",
@@ -9885,6 +10016,7 @@
     "longevityScore": 20,
     "introRecognition": 88.4,
     "startAtMs": 151,
+    "playbackGainDb": 2,
     "hookStartMs": 65000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/huntrix-golden.jpg?v=193934-0",
     "audio": {
@@ -9918,6 +10050,7 @@
     "longevityScore": 68,
     "introRecognition": 96.3,
     "startAtMs": 110,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-leave-the-door-open.jpg?v=242104-0",
     "audio": {
       "kind": "hosted",
@@ -10014,6 +10147,7 @@
     "longevityScore": 78,
     "introRecognition": 89.4,
     "startAtMs": 30,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/khalid-better.jpg?v=229970-0",
     "audio": {
       "kind": "hosted",
@@ -10046,6 +10180,7 @@
     "longevityScore": 78,
     "introRecognition": 97.4,
     "startAtMs": 460,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/shawn-mendes-mercy.jpg?v=205102-0",
     "audio": {
       "kind": "hosted",
@@ -10110,6 +10245,7 @@
     "longevityScore": 85,
     "introRecognition": 75.3,
     "startAtMs": 30,
+    "playbackGainDb": 9,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beyonce-halo.jpg?v=260748-0",
     "audio": {
       "kind": "hosted",
@@ -10174,6 +10310,7 @@
     "longevityScore": 85,
     "introRecognition": 63.3,
     "startAtMs": 2350,
+    "playbackGainDb": 11,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-earned-it-fifty-shades-of-grey.jpg?v=275050-0",
     "audio": {
       "kind": "hosted",
@@ -10300,6 +10437,7 @@
     "longevityScore": 68,
     "introRecognition": 92.3,
     "startAtMs": 60,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hotel-ugly-shut-up-my-moms-calling.jpg?v=165036-0",
     "audio": {
       "kind": "hosted",
@@ -10332,6 +10470,7 @@
     "longevityScore": 68,
     "introRecognition": 91.8,
     "startAtMs": 210,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lost-frequencies-where-are-you-now.jpg?v=148677-0",
     "audio": {
       "kind": "hosted",
@@ -10368,6 +10507,7 @@
     "longevityScore": 55,
     "introRecognition": 87.1,
     "startAtMs": 40,
+    "playbackGainDb": 5,
     "hookStartMs": 105200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-the-creator-earfquake.jpg?v=266091-0",
     "audio": {
@@ -10659,6 +10799,7 @@
     "longevityScore": 78,
     "introRecognition": 77,
     "startAtMs": 190,
+    "playbackGainDb": 5,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clean-bandit-symphony.jpg?v=212053-0",
     "audio": {
       "kind": "hosted",
@@ -10755,6 +10896,7 @@
     "longevityScore": 50,
     "introRecognition": 74.8,
     "startAtMs": 143,
+    "playbackGainDb": 12,
     "hookStartMs": 59600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-good-days.jpg?v=279753-0",
     "audio": {
@@ -10785,6 +10927,7 @@
     "longevityScore": 50,
     "introRecognition": 86,
     "startAtMs": 667,
+    "playbackGainDb": 3,
     "hookStartMs": 39000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/flo-rida-low-feat-t-pain.jpg?v=230819-0",
     "audio": {
@@ -10884,6 +11027,7 @@
     "longevityScore": 78,
     "introRecognition": 90.6,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-whatever-it-takes.jpg?v=199680-0",
     "audio": {
       "kind": "hosted",
@@ -10916,6 +11060,7 @@
     "longevityScore": 85,
     "introRecognition": 86.6,
     "startAtMs": 190,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-lumineers-ho-hey.jpg?v=158519-0",
     "audio": {
       "kind": "hosted",
@@ -10950,6 +11095,7 @@
     "introRecognition": 48.9,
     "startAtMs": 250,
     "clueGainDb": 8,
+    "playbackGainDb": 6,
     "hookStartMs": 23800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beach-house-space-song.jpg?v=320493-0",
     "audio": {
@@ -11076,6 +11222,7 @@
     "longevityScore": 50,
     "introRecognition": 89.1,
     "startAtMs": 24,
+    "playbackGainDb": 3,
     "hookStartMs": 22400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tory-lanez-the-color-violet.jpg?v=226487-0",
     "audio": {
@@ -11144,6 +11291,7 @@
     "longevityScore": 78,
     "introRecognition": 80.1,
     "startAtMs": 450,
+    "playbackGainDb": 10,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/adele-hello.jpg?v=295532-0",
     "audio": {
       "kind": "hosted",
@@ -11176,6 +11324,7 @@
     "longevityScore": 78,
     "introRecognition": 73.2,
     "startAtMs": 350,
+    "playbackGainDb": 7,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/xxxtentacion-hope.jpg?v=110864-0",
     "audio": {
       "kind": "hosted",
@@ -11208,6 +11357,7 @@
     "longevityScore": 85,
     "introRecognition": 77.1,
     "startAtMs": 290,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clean-bandit-rather-be.jpg?v=227091-0",
     "audio": {
       "kind": "hosted",
@@ -11242,6 +11392,7 @@
     "longevityScore": 68,
     "introRecognition": 77.8,
     "startAtMs": 220,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dababy-rockstar.jpg?v=181777-0",
     "audio": {
       "kind": "hosted",
@@ -11334,6 +11485,7 @@
     "introRecognition": 53.7,
     "startAtMs": 150,
     "clueGainDb": 6,
+    "playbackGainDb": 2,
     "hookStartMs": 103600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ac-dc-highway-to-hell.jpg?v=artfix-4e6ad533dc0c",
     "audio": {
@@ -11365,6 +11517,7 @@
     "introRecognition": 68.7,
     "startAtMs": 360,
     "clueGainDb": 6,
+    "playbackGainDb": 1,
     "hookStartMs": 44800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-yukon.jpg?v=artfix-1b71846a0b7b",
     "audio": {
@@ -11400,6 +11553,7 @@
     "longevityScore": 78,
     "introRecognition": 85,
     "startAtMs": 30,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lil-peep-falling-down.jpg?v=196348-0",
     "audio": {
       "kind": "hosted",
@@ -11430,6 +11584,7 @@
     "introRecognition": 67.5,
     "startAtMs": 80,
     "clueGainDb": 10,
+    "playbackGainDb": 1,
     "hookStartMs": 29200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-lunch.jpg?v=artfix-cb68cea91f1f",
     "audio": {
@@ -11495,6 +11650,7 @@
     "longevityScore": 85,
     "introRecognition": 58.6,
     "startAtMs": 500,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bastille-pompeii.jpg?v=214216-0",
     "audio": {
       "kind": "hosted",
@@ -11527,6 +11683,7 @@
     "longevityScore": 78,
     "introRecognition": 69.7,
     "startAtMs": 490,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-wow.jpg?v=150535-0",
     "audio": {
       "kind": "hosted",
@@ -11556,6 +11713,7 @@
     "longevityScore": 50,
     "introRecognition": 83.8,
     "startAtMs": 0,
+    "playbackGainDb": 3,
     "hookStartMs": 56000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/giv-on-heartbreak-anniversary.jpg?v=197337-0",
     "audio": {
@@ -11723,6 +11881,7 @@
     "longevityScore": 78,
     "introRecognition": 69.9,
     "startAtMs": 30,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-beatles-here-comes-the-sun.jpg?v=183250-0",
     "audio": {
       "kind": "hosted",
@@ -11823,6 +11982,7 @@
     "longevityScore": 78,
     "introRecognition": 65.6,
     "startAtMs": 350,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rihanna-needed-me.jpg?v=191599-0",
     "audio": {
       "kind": "hosted",
@@ -11857,6 +12017,7 @@
     "longevityScore": 20,
     "introRecognition": 87.4,
     "startAtMs": 49,
+    "playbackGainDb": 5,
     "hookStartMs": 217000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-playboi-carti-timeless.jpg?v=256093-0",
     "audio": {
@@ -11890,6 +12051,7 @@
     "longevityScore": 78,
     "introRecognition": 86.6,
     "startAtMs": 290,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bebe-rexha-meant-to-be.jpg?v=164908-0",
     "audio": {
       "kind": "hosted",
@@ -11922,6 +12084,7 @@
     "longevityScore": 85,
     "introRecognition": 47.2,
     "startAtMs": 210,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/calvin-harris-summer.jpg?v=220044-0",
     "audio": {
       "kind": "hosted",
@@ -12009,6 +12172,7 @@
     "introRecognition": 51.5,
     "startAtMs": 1805,
     "clueGainDb": 4,
+    "playbackGainDb": 6,
     "hookStartMs": 86000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bon-jovi-livin-on-a-prayer.jpg?v=artfix-c5c6c263ace3",
     "audio": {
@@ -12102,6 +12266,7 @@
     "longevityScore": 68,
     "introRecognition": 84.1,
     "startAtMs": 300,
+    "playbackGainDb": 7,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-what-was-i-made-for-from-the-motion-picture-barbie.jpg?v=222308-0",
     "audio": {
       "kind": "hosted",
@@ -12166,6 +12331,7 @@
     "longevityScore": 85,
     "introRecognition": 90,
     "startAtMs": 210,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-timberlake-mirrors.jpg?v=485657-0",
     "audio": {
       "kind": "hosted",
@@ -12198,6 +12364,7 @@
     "longevityScore": 78,
     "introRecognition": 55.1,
     "startAtMs": 270,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lil-tecca-ransom.jpg?v=131435-0",
     "audio": {
       "kind": "hosted",
@@ -12230,6 +12397,7 @@
     "longevityScore": 78,
     "introRecognition": 84.5,
     "startAtMs": 50,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lil-peep-star-shopping.jpg?v=142036-0",
     "audio": {
       "kind": "hosted",
@@ -12294,6 +12462,7 @@
     "longevityScore": 85,
     "introRecognition": 89.3,
     "startAtMs": 470,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/van-morrison-brown-eyed-girl.jpg?v=184285-0",
     "audio": {
       "kind": "hosted",
@@ -12358,6 +12527,7 @@
     "longevityScore": 78,
     "introRecognition": 76.3,
     "startAtMs": 250,
+    "playbackGainDb": 8,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lil-nas-x-old-town-road.jpg?v=157206-0",
     "audio": {
       "kind": "hosted",
@@ -12390,6 +12560,7 @@
     "longevityScore": 85,
     "introRecognition": 88.9,
     "startAtMs": 70,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lorde-royals.jpg?v=190357-0",
     "audio": {
       "kind": "hosted",
@@ -12482,6 +12653,7 @@
     "longevityScore": 78,
     "introRecognition": 100,
     "startAtMs": 280,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lewis-capaldi-bruises.jpg?v=218489-0",
     "audio": {
       "kind": "hosted",
@@ -12546,6 +12718,7 @@
     "longevityScore": 85,
     "introRecognition": 57.3,
     "startAtMs": 950,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-grenade.jpg?v=219649-0",
     "audio": {
       "kind": "hosted",
@@ -12672,6 +12845,7 @@
     "longevityScore": 68,
     "introRecognition": 88.6,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-lose-you-to-love-me.jpg?v=206460-0",
     "audio": {
       "kind": "hosted",
@@ -12704,6 +12878,7 @@
     "longevityScore": 78,
     "introRecognition": 66.8,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/zedd-the-middle.jpg?v=183414-0",
     "audio": {
       "kind": "hosted",
@@ -12736,6 +12911,7 @@
     "longevityScore": 68,
     "introRecognition": 80,
     "startAtMs": 320,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-vampire.jpg?v=219812-0",
     "audio": {
       "kind": "hosted",
@@ -12862,6 +13038,7 @@
     "longevityScore": 78,
     "introRecognition": 79.9,
     "startAtMs": 330,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/calvin-harris-how-deep-is-your-love.jpg?v=212730-0",
     "audio": {
       "kind": "hosted",
@@ -12894,6 +13071,7 @@
     "longevityScore": 78,
     "introRecognition": 57,
     "startAtMs": 950,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/coldplay-hymn-for-the-weekend.jpg?v=260644-0",
     "audio": {
       "kind": "hosted",
@@ -13018,6 +13196,7 @@
     "longevityScore": 92,
     "introRecognition": 35,
     "startAtMs": 440,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ac-dc-back-in-black.jpg?v=253841-0",
     "audio": {
       "kind": "hosted",
@@ -13085,6 +13264,7 @@
     "longevityScore": 78,
     "introRecognition": 87.9,
     "startAtMs": 90,
+    "playbackGainDb": 7,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ed-sheeran-happier.jpg?v=207018-0",
     "audio": {
       "kind": "hosted",
@@ -13114,6 +13294,7 @@
     "longevityScore": 50,
     "introRecognition": 80.1,
     "startAtMs": 0,
+    "playbackGainDb": 7,
     "hookStartMs": 59800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-reminder.jpg?v=218880-0",
     "audio": {
@@ -13173,6 +13354,7 @@
     "longevityScore": 50,
     "introRecognition": 93.1,
     "startAtMs": 240,
+    "playbackGainDb": 1,
     "hookStartMs": 71400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-we-can-t-stop.jpg?v=233327-0",
     "audio": {
@@ -13270,6 +13452,7 @@
     "longevityScore": 68,
     "introRecognition": 76.6,
     "startAtMs": 500,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ariana-grande-dangerous-woman.jpg?v=235626-0",
     "audio": {
       "kind": "hosted",
@@ -13298,6 +13481,7 @@
     "longevityScore": 50,
     "introRecognition": 92.6,
     "startAtMs": 293,
+    "playbackGainDb": 1,
     "hookStartMs": 119800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-love-you-like-a-love-song.jpg?v=artfix-91437fe49574",
     "audio": {
@@ -13454,6 +13638,7 @@
     "longevityScore": 50,
     "introRecognition": 87.5,
     "startAtMs": 73,
+    "playbackGainDb": 1,
     "hookStartMs": 156400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-after-hours.jpg?v=361929-0",
     "audio": {
@@ -13517,6 +13702,7 @@
     "longevityScore": 68,
     "introRecognition": 82.4,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/future-life-is-good.jpg?v=238254-0",
     "audio": {
       "kind": "hosted",
@@ -13606,6 +13792,7 @@
     "longevityScore": 50,
     "introRecognition": 86.5,
     "startAtMs": 370,
+    "playbackGainDb": 8,
     "hookStartMs": 34200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-toliver-no-idea.jpg?v=152404-0",
     "audio": {
@@ -13667,6 +13854,7 @@
     "longevityScore": 50,
     "introRecognition": 79.6,
     "startAtMs": 50,
+    "playbackGainDb": 9,
     "hookStartMs": 28400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-where-is-the-love.jpg?v=250543-0",
     "audio": {
@@ -13734,6 +13922,7 @@
     "longevityScore": 55,
     "introRecognition": 81.6,
     "startAtMs": 41,
+    "playbackGainDb": 4,
     "hookStartMs": 113800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/frank-ocean-nights.jpg?v=307154-0",
     "audio": {
@@ -13769,6 +13958,7 @@
     "introRecognition": 42.3,
     "startAtMs": 70,
     "clueGainDb": 3,
+    "playbackGainDb": 1,
     "hookStartMs": 115200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/gigi-perez-sailor-song.jpg?v=210918-0",
     "audio": {
@@ -13866,6 +14056,7 @@
     "longevityScore": 92,
     "introRecognition": 88.4,
     "startAtMs": 450,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avril-lavigne-complicated.jpg?v=245214-0",
     "audio": {
       "kind": "hosted",
@@ -13898,6 +14089,7 @@
     "longevityScore": 68,
     "introRecognition": 80,
     "startAtMs": 580,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-favorite-crime.jpg?v=153321-0",
     "audio": {
       "kind": "hosted",
@@ -14022,6 +14214,7 @@
     "longevityScore": 78,
     "introRecognition": 80.7,
     "startAtMs": 30,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-cole-middle-child.jpg?v=212555-0",
     "audio": {
       "kind": "hosted",
@@ -14146,6 +14339,7 @@
     "longevityScore": 68,
     "introRecognition": 87,
     "startAtMs": 60,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/masked-wolf-astronaut-in-the-ocean.jpg?v=134571-0",
     "audio": {
       "kind": "hosted",
@@ -14310,6 +14504,7 @@
     "longevityScore": 68,
     "introRecognition": 85.8,
     "startAtMs": 40,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/swedish-house-mafia-moth-to-a-flame.jpg?v=234112-0",
     "audio": {
       "kind": "hosted",
@@ -14369,6 +14564,7 @@
     "longevityScore": 50,
     "introRecognition": 87,
     "startAtMs": 0,
+    "playbackGainDb": 7,
     "hookStartMs": 64600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-nice-for-what.jpg?v=210747-0",
     "audio": {
@@ -14492,6 +14688,7 @@
     "longevityScore": 78,
     "introRecognition": 87.5,
     "startAtMs": 70,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/billie-eilish-idontwannabeyouanymore.jpg?v=203558-0",
     "audio": {
       "kind": "hosted",
@@ -14797,6 +14994,7 @@
     "longevityScore": 85,
     "introRecognition": 73.3,
     "startAtMs": 350,
+    "playbackGainDb": 12,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ariana-grande-santa-tell-me.jpg?v=204022-0",
     "audio": {
       "kind": "hosted",
@@ -14826,6 +15024,7 @@
     "longevityScore": 50,
     "introRecognition": 82.3,
     "startAtMs": 29,
+    "playbackGainDb": 2,
     "hookStartMs": 59400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hailee-steinfeld-starving.jpg?v=181933-0",
     "audio": {
@@ -14920,6 +15119,7 @@
     "longevityScore": 50,
     "introRecognition": 78.5,
     "startAtMs": 20,
+    "playbackGainDb": 6,
     "hookStartMs": 40200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bryson-tiller-exchange.jpg?v=195871-0",
     "audio": {
@@ -14985,6 +15185,7 @@
     "introRecognition": 49.8,
     "startAtMs": 1300,
     "clueGainDb": 12,
+    "playbackGainDb": 3,
     "hookStartMs": 189200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-japanese-denim.jpg?v=269978-0",
     "audio": {
@@ -15018,6 +15219,7 @@
     "longevityScore": 92,
     "introRecognition": 56.2,
     "startAtMs": 850,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kate-bush-running-up-that-hill-a-deal.jpg?v=298804-0",
     "audio": {
       "kind": "hosted",
@@ -15169,6 +15371,7 @@
     "longevityScore": 50,
     "introRecognition": 77.4,
     "startAtMs": 269,
+    "playbackGainDb": 1,
     "hookStartMs": 63400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nsync-bye-bye-bye.jpg?v=201096-0",
     "audio": {
@@ -15266,6 +15469,7 @@
     "longevityScore": 78,
     "introRecognition": 93.1,
     "startAtMs": 60,
+    "playbackGainDb": 7,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dhruv-double-take.jpg?v=172548-0",
     "audio": {
       "kind": "hosted",
@@ -15415,6 +15619,7 @@
     "longevityScore": 50,
     "introRecognition": 90.9,
     "startAtMs": 225,
+    "playbackGainDb": 6,
     "hookStartMs": 44000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-heart-attack.jpg?v=211812-0",
     "audio": {
@@ -15685,6 +15890,7 @@
     "longevityScore": 50,
     "introRecognition": 91.1,
     "startAtMs": 220,
+    "playbackGainDb": 1,
     "hookStartMs": 50000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bruno-mars-versace-on-the-floor.jpg?v=201877-0",
     "audio": {
@@ -15776,6 +15982,7 @@
     "introRecognition": 99,
     "startAtMs": 750,
     "clueGainDb": 8,
+    "playbackGainDb": 1,
     "hookStartMs": 51800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/paramore-decode.jpg?v=artfix-b624bcef3ea8",
     "audio": {
@@ -15871,6 +16078,7 @@
     "longevityScore": 50,
     "introRecognition": 90.1,
     "startAtMs": 340,
+    "playbackGainDb": 1,
     "hookStartMs": 60200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/paramore-misery-business.jpg?v=198533-0",
     "audio": {
@@ -15965,6 +16173,7 @@
     "longevityScore": 50,
     "introRecognition": 94.8,
     "startAtMs": 1,
+    "playbackGainDb": 2,
     "hookStartMs": 115800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-blessed.jpg?v=artfix-88c84160ef88",
     "audio": {
@@ -16112,6 +16321,7 @@
     "introRecognition": 98.4,
     "startAtMs": 120,
     "clueGainDb": 12,
+    "playbackGainDb": 5,
     "hookStartMs": 15200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/grouplove-tongue-tied.jpg?v=artfix-5a99938bb0c5",
     "audio": {
@@ -16170,6 +16380,7 @@
     "longevityScore": 50,
     "introRecognition": 94.3,
     "startAtMs": 164,
+    "playbackGainDb": 4,
     "hookStartMs": 61000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-always.jpg?v=artfix-3f171ab00fcf",
     "audio": {
@@ -16321,6 +16532,7 @@
     "longevityScore": 50,
     "introRecognition": 87.6,
     "startAtMs": 307,
+    "playbackGainDb": 1,
     "hookStartMs": 61600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-steal-my-girl.jpg?v=227091-0",
     "audio": {
@@ -16351,6 +16563,7 @@
     "longevityScore": 50,
     "introRecognition": 93.6,
     "startAtMs": 20,
+    "playbackGainDb": 5,
     "hookStartMs": 104600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-streetcar.jpg?v=artfix-531395c9a5f1",
     "audio": {
@@ -16535,6 +16748,7 @@
     "longevityScore": 78,
     "introRecognition": 89.4,
     "startAtMs": 30,
+    "playbackGainDb": 3,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/calvin-harris-slide.jpg?v=230489-0",
     "audio": {
       "kind": "hosted",
@@ -16564,6 +16778,7 @@
     "longevityScore": 50,
     "introRecognition": 87.3,
     "startAtMs": 1100,
+    "playbackGainDb": 1,
     "hookStartMs": 21000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nicki-minaj-super-bass.jpg?v=201253-0",
     "audio": {
@@ -16626,6 +16841,7 @@
     "longevityScore": 78,
     "introRecognition": 60.8,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/harry-styles-falling.jpg?v=239675-0",
     "audio": {
       "kind": "hosted",
@@ -16655,6 +16871,7 @@
     "longevityScore": 50,
     "introRecognition": 91.9,
     "startAtMs": 0,
+    "playbackGainDb": 12,
     "hookStartMs": 75800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/giveon-like-i-want-you.jpg?v=artfix-19c9873bcae9",
     "audio": {
@@ -16775,6 +16992,7 @@
     "longevityScore": 50,
     "introRecognition": 86,
     "startAtMs": 240,
+    "playbackGainDb": 3,
     "hookStartMs": 74600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ne-yo-so-sick.jpg?v=207422-0",
     "audio": {
@@ -16805,6 +17023,7 @@
     "longevityScore": 50,
     "introRecognition": 94.5,
     "startAtMs": 350,
+    "playbackGainDb": 1,
     "hookStartMs": 42600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/fun-some-nights.jpg?v=artfix-e986885c15e1",
     "audio": {
@@ -16955,6 +17174,7 @@
     "longevityScore": 50,
     "introRecognition": 94.1,
     "startAtMs": 190,
+    "playbackGainDb": 1,
     "hookStartMs": 64400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-wanted-glad-you-came.jpg?v=artfix-808001d697b5",
     "audio": {
@@ -17075,6 +17295,7 @@
     "longevityScore": 50,
     "introRecognition": 90.3,
     "startAtMs": 56,
+    "playbackGainDb": 3,
     "hookStartMs": 37600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/brent-faiyaz-all-mine.jpg?v=artfix-7f0179326782",
     "audio": {
@@ -17255,6 +17476,7 @@
     "longevityScore": 50,
     "introRecognition": 95.6,
     "startAtMs": 330,
+    "playbackGainDb": 2,
     "hookStartMs": 76600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charlie-puth-one-call-away.jpg?v=240872-0",
     "audio": {
@@ -17373,6 +17595,7 @@
     "longevityScore": 50,
     "introRecognition": 92.6,
     "startAtMs": 400,
+    "playbackGainDb": 1,
     "hookStartMs": 59600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/far-east-movement-rocketeer.jpg?v=artfix-a62816e3fefa",
     "audio": {
@@ -17434,6 +17657,7 @@
     "longevityScore": 78,
     "introRecognition": 76.8,
     "startAtMs": 210,
+    "playbackGainDb": 5,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-white-iverson.jpg?v=254827-0",
     "audio": {
       "kind": "hosted",
@@ -17463,6 +17687,7 @@
     "longevityScore": 50,
     "introRecognition": 83.5,
     "startAtMs": 320,
+    "playbackGainDb": 5,
     "hookStartMs": 106000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-wildest-dreams.jpg?v=220475-0",
     "audio": {
@@ -17521,6 +17746,7 @@
     "longevityScore": 50,
     "introRecognition": 91.9,
     "startAtMs": 50,
+    "playbackGainDb": 2,
     "hookStartMs": 57200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ciara-1-2-step.jpg?v=artfix-98b8acff6b74",
     "audio": {
@@ -17585,6 +17811,7 @@
     "longevityScore": 85,
     "introRecognition": 97.5,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/green-day-boulevard-of-broken-dreams.jpg?v=260934-0",
     "audio": {
       "kind": "hosted",
@@ -17702,6 +17929,7 @@
     "longevityScore": 50,
     "introRecognition": 82.8,
     "startAtMs": 440,
+    "playbackGainDb": 4,
     "hookStartMs": 64400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/britney-spears-oops-i-did-it-again.jpg?v=211093-0",
     "audio": {
@@ -17738,6 +17966,7 @@
     "longevityScore": 55,
     "introRecognition": 78.4,
     "startAtMs": 33,
+    "playbackGainDb": 12,
     "hookStartMs": 84400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/clairo-sofia.jpg?v=188430-0",
     "audio": {
@@ -17889,6 +18118,7 @@
     "introRecognition": 90.9,
     "startAtMs": 2339,
     "clueGainDb": 3,
+    "playbackGainDb": 1,
     "hookStartMs": 122200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kesha-blow.jpg?v=artfix-13c8466c063c",
     "audio": {
@@ -17953,6 +18183,7 @@
     "longevityScore": 50,
     "introRecognition": 90.9,
     "startAtMs": 233,
+    "playbackGainDb": 3,
     "hookStartMs": 14800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/selena-gomez-come-get-it.jpg?v=artfix-34ddd4438474",
     "audio": {
@@ -17983,6 +18214,7 @@
     "longevityScore": 50,
     "introRecognition": 88.3,
     "startAtMs": 170,
+    "playbackGainDb": 1,
     "hookStartMs": 50200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/beabadoobee-glue-song.jpg?v=artfix-987439efb0ee",
     "audio": {
@@ -18077,6 +18309,7 @@
     "longevityScore": 50,
     "introRecognition": 91.3,
     "startAtMs": 100,
+    "playbackGainDb": 1,
     "hookStartMs": 58000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/onerepublic-secrets.jpg?v=artfix-39ce4e1dc660",
     "audio": {
@@ -18135,6 +18368,7 @@
     "longevityScore": 50,
     "introRecognition": 89.6,
     "startAtMs": 0,
+    "playbackGainDb": 1,
     "hookStartMs": 178600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-don-t-phunk-with-my-heart.jpg?v=artfix-cfb34779f09b",
     "audio": {
@@ -18165,6 +18399,7 @@
     "longevityScore": 50,
     "introRecognition": 87.3,
     "startAtMs": 230,
+    "playbackGainDb": 5,
     "hookStartMs": 74000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/keyshia-cole-love.jpg?v=artfix-d9257c77e675",
     "audio": {
@@ -18195,6 +18430,7 @@
     "longevityScore": 50,
     "introRecognition": 92.3,
     "startAtMs": 100,
+    "playbackGainDb": 6,
     "hookStartMs": 51600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/usher-my-boo.jpg?v=216827-0",
     "audio": {
@@ -18257,6 +18493,7 @@
     "longevityScore": 50,
     "introRecognition": 90.3,
     "startAtMs": 7,
+    "playbackGainDb": 2,
     "hookStartMs": 38600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/p-nk-raise-your-glass.jpg?v=artfix-3573405010dc",
     "audio": {
@@ -18287,6 +18524,7 @@
     "longevityScore": 50,
     "introRecognition": 86.5,
     "startAtMs": 60,
+    "playbackGainDb": 5,
     "hookStartMs": 26400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mac-miller-self-care.jpg?v=artfix-f60752ff06a7",
     "audio": {
@@ -18317,6 +18555,7 @@
     "longevityScore": 50,
     "introRecognition": 86.8,
     "startAtMs": 22,
+    "playbackGainDb": 10,
     "hookStartMs": 44200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-the-weekend.jpg?v=artfix-f66eb9557399",
     "audio": {
@@ -18409,6 +18648,7 @@
     "longevityScore": 50,
     "introRecognition": 91,
     "startAtMs": 340,
+    "playbackGainDb": 3,
     "hookStartMs": 162800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/leona-lewis-bleeding-love.jpg?v=261897-0",
     "audio": {
@@ -18498,6 +18738,7 @@
     "longevityScore": 50,
     "introRecognition": 80.2,
     "startAtMs": 100,
+    "playbackGainDb": 2,
     "hookStartMs": 136200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lisa-money.jpg?v=165071-0",
     "audio": {
@@ -18557,6 +18798,7 @@
     "introRecognition": 85.5,
     "startAtMs": 50,
     "clueGainDb": 4,
+    "playbackGainDb": 8,
     "hookStartMs": 34600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-cole-she-knows.jpg?v=artfix-3d56dc8bc743",
     "audio": {
@@ -18586,6 +18828,7 @@
     "introRecognition": 88.9,
     "startAtMs": 170,
     "clueGainDb": 8,
+    "playbackGainDb": 1,
     "hookStartMs": 55600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kesha-we-r-who-we-r.jpg?v=artfix-13c8466c063c",
     "audio": {
@@ -18646,6 +18889,7 @@
     "longevityScore": 50,
     "introRecognition": 88.4,
     "startAtMs": 290,
+    "playbackGainDb": 6,
     "hookStartMs": 29600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-dilemma.jpg?v=artfix-318b4a4fdd12",
     "audio": {
@@ -18706,6 +18950,7 @@
     "longevityScore": 50,
     "introRecognition": 84.5,
     "startAtMs": 28,
+    "playbackGainDb": 5,
     "hookStartMs": 58400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/giveon-for-tonight.jpg?v=artfix-4ebfdda1da50",
     "audio": {
@@ -18855,6 +19100,7 @@
     "longevityScore": 50,
     "introRecognition": 90.6,
     "startAtMs": 220,
+    "playbackGainDb": 1,
     "hookStartMs": 42800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/khalid-love-lies.jpg?v=artfix-bcc6fa77dc30",
     "audio": {
@@ -18945,6 +19191,7 @@
     "longevityScore": 50,
     "introRecognition": 88.1,
     "startAtMs": 140,
+    "playbackGainDb": 3,
     "hookStartMs": 63600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/will-i-am-scream-shout.jpg?v=artfix-d5812ccc565a",
     "audio": {
@@ -18975,6 +19222,7 @@
     "longevityScore": 50,
     "introRecognition": 90.4,
     "startAtMs": 0,
+    "playbackGainDb": 7,
     "hookStartMs": 68800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lorde-team.jpg?v=192004-0",
     "audio": {
@@ -19035,6 +19283,7 @@
     "longevityScore": 50,
     "introRecognition": 86.8,
     "startAtMs": 250,
+    "playbackGainDb": 2,
     "hookStartMs": 102800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/akon-right-now-na-na-na.jpg?v=artfix-766fe0f766c4",
     "audio": {
@@ -19096,6 +19345,7 @@
     "longevityScore": 50,
     "introRecognition": 67.3,
     "startAtMs": 382,
+    "playbackGainDb": 1,
     "hookStartMs": 44800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-wrecking-ball.jpg?v=224131-0",
     "audio": {
@@ -19129,6 +19379,7 @@
     "longevityScore": 92,
     "introRecognition": 67.8,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daryl-hall-and-john-oates-you-make-my-dreams-come-true.jpg?v=190364-0",
     "audio": {
       "kind": "hosted",
@@ -19158,6 +19409,7 @@
     "longevityScore": 50,
     "introRecognition": 86,
     "startAtMs": 290,
+    "playbackGainDb": 4,
     "hookStartMs": 48400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-powter-bad-day.jpg?v=artfix-95b3ebc7e192",
     "audio": {
@@ -19191,6 +19443,7 @@
     "longevityScore": 78,
     "introRecognition": 89.5,
     "startAtMs": 30,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/a-boogie-wit-da-hoodie-drowning.jpg?v=209247-0",
     "audio": {
       "kind": "hosted",
@@ -19278,6 +19531,7 @@
     "longevityScore": 50,
     "introRecognition": 83,
     "startAtMs": 400,
+    "playbackGainDb": 7,
     "hookStartMs": 66200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/mgmt-little-dark-age.jpg?v=artfix-db82abc1d6c7",
     "audio": {
@@ -19308,6 +19562,7 @@
     "longevityScore": 50,
     "introRecognition": 83.3,
     "startAtMs": 56,
+    "playbackGainDb": 2,
     "hookStartMs": 34400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-rock-that-body.jpg?v=artfix-0405525282cf",
     "audio": {
@@ -19338,6 +19593,7 @@
     "longevityScore": 50,
     "introRecognition": 85.4,
     "startAtMs": 93,
+    "playbackGainDb": 3,
     "hookStartMs": 63000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-saturn.jpg?v=186711-0",
     "audio": {
@@ -19368,6 +19624,7 @@
     "longevityScore": 50,
     "introRecognition": 85.9,
     "startAtMs": 290,
+    "playbackGainDb": 1,
     "hookStartMs": 128600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/katy-perry-teenage-dream.jpg?v=artfix-a385a1f58549",
     "audio": {
@@ -19398,6 +19655,7 @@
     "longevityScore": 50,
     "introRecognition": 85.5,
     "startAtMs": 1,
+    "playbackGainDb": 8,
     "hookStartMs": 24000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-teenage-fever.jpg?v=artfix-c2b9f07dce96",
     "audio": {
@@ -19429,6 +19687,7 @@
     "introRecognition": 86.3,
     "startAtMs": 70,
     "clueGainDb": 6,
+    "playbackGainDb": 6,
     "hookStartMs": 118800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/miley-cyrus-the-climb.jpg?v=artfix-63deb8b5e26f",
     "audio": {
@@ -19459,6 +19718,7 @@
     "longevityScore": 50,
     "introRecognition": 88.4,
     "startAtMs": 80,
+    "playbackGainDb": 1,
     "hookStartMs": 63600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/james-blunt-you-re-beautiful.jpg?v=213053-0",
     "audio": {
@@ -19522,6 +19782,7 @@
     "longevityScore": 85,
     "introRecognition": 80.1,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/elvis-presley-can-t-help-falling-in-love.jpg?v=179652-0",
     "audio": {
       "kind": "hosted",
@@ -19551,6 +19812,7 @@
     "longevityScore": 50,
     "introRecognition": 84.9,
     "startAtMs": 290,
+    "playbackGainDb": 4,
     "hookStartMs": 69400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/onerepublic-good-life.jpg?v=artfix-902af6d288e8",
     "audio": {
@@ -19669,6 +19931,7 @@
     "longevityScore": 50,
     "introRecognition": 81,
     "startAtMs": 61,
+    "playbackGainDb": 2,
     "hookStartMs": 48000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/brent-faiyaz-jackie-brown.jpg?v=artfix-7f0179326782",
     "audio": {
@@ -19702,6 +19965,7 @@
     "longevityScore": 68,
     "introRecognition": 86.5,
     "startAtMs": 30,
+    "playbackGainDb": 4,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/becky-g-mamiii.jpg?v=226626-0",
     "audio": {
       "kind": "hosted",
@@ -19731,6 +19995,7 @@
     "longevityScore": 50,
     "introRecognition": 83.5,
     "startAtMs": 167,
+    "playbackGainDb": 4,
     "hookStartMs": 50000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/one-direction-one-thing.jpg?v=artfix-272c769d5a87",
     "audio": {
@@ -19759,6 +20024,7 @@
     "longevityScore": 50,
     "introRecognition": 84.3,
     "startAtMs": 0,
+    "playbackGainDb": 5,
     "hookStartMs": 167000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/usher-scream.jpg?v=artfix-f8d084ed6733",
     "audio": {
@@ -19879,6 +20145,7 @@
     "longevityScore": 50,
     "introRecognition": 63.3,
     "startAtMs": 449,
+    "playbackGainDb": 1,
     "hookStartMs": 45600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/demi-lovato-sorry-not-sorry.jpg?v=203760-0",
     "audio": {
@@ -19967,6 +20234,7 @@
     "longevityScore": 50,
     "introRecognition": 81.8,
     "startAtMs": 70,
+    "playbackGainDb": 6,
     "hookStartMs": 35200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-just-can-t-get-enough.jpg?v=artfix-ecaad544f8b8",
     "audio": {
@@ -19997,6 +20265,7 @@
     "longevityScore": 50,
     "introRecognition": 84.4,
     "startAtMs": 340,
+    "playbackGainDb": 3,
     "hookStartMs": 61400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/destiny-s-child-say-my-name.jpg?v=267533-0",
     "audio": {
@@ -20027,6 +20296,7 @@
     "longevityScore": 50,
     "introRecognition": 82.4,
     "startAtMs": 785,
+    "playbackGainDb": 12,
     "hookStartMs": 51600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-delicate.jpg?v=231881-0",
     "audio": {
@@ -20087,6 +20357,7 @@
     "longevityScore": 50,
     "introRecognition": 83,
     "startAtMs": 334,
+    "playbackGainDb": 2,
     "hookStartMs": 46400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sean-kingston-eenie-meenie.jpg?v=201085-0",
     "audio": {
@@ -20117,6 +20388,7 @@
     "longevityScore": 50,
     "introRecognition": 83,
     "startAtMs": 380,
+    "playbackGainDb": 10,
     "hookStartMs": 87200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/owl-city-fireflies.jpg?v=231201-0",
     "audio": {
@@ -20148,6 +20420,7 @@
     "introRecognition": 80.6,
     "startAtMs": 80,
     "clueGainDb": 6,
+    "playbackGainDb": 6,
     "hookStartMs": 90000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/pitbull-international-love.jpg?v=artfix-481cf8f2c7b1",
     "audio": {
@@ -20242,6 +20515,7 @@
     "longevityScore": 50,
     "introRecognition": 83.8,
     "startAtMs": 350,
+    "playbackGainDb": 3,
     "hookStartMs": 101600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/galantis-runaway-u-i.jpg?v=263663-0",
     "audio": {
@@ -20272,6 +20546,7 @@
     "longevityScore": 50,
     "introRecognition": 78,
     "startAtMs": 201,
+    "playbackGainDb": 7,
     "hookStartMs": 123200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jeezy-soul-survivor.jpg?v=artfix-18d33d4f0e61",
     "audio": {
@@ -20362,6 +20637,7 @@
     "longevityScore": 50,
     "introRecognition": 76.5,
     "startAtMs": 184,
+    "playbackGainDb": 11,
     "hookStartMs": 43400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/brent-faiyaz-trust.jpg?v=artfix-7c41fab77ae6",
     "audio": {
@@ -20514,6 +20790,7 @@
     "longevityScore": 50,
     "introRecognition": 80.4,
     "startAtMs": 30,
+    "playbackGainDb": 11,
     "hookStartMs": 38000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/estelle-american-boy.jpg?v=artfix-6f2d80ac2fef",
     "audio": {
@@ -20604,6 +20881,7 @@
     "longevityScore": 50,
     "introRecognition": 74.8,
     "startAtMs": 1,
+    "playbackGainDb": 9,
     "hookStartMs": 62600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-jungle.jpg?v=artfix-8cef4079fe83",
     "audio": {
@@ -20634,6 +20912,7 @@
     "longevityScore": 50,
     "introRecognition": 77.7,
     "startAtMs": 45,
+    "playbackGainDb": 1,
     "hookStartMs": 48200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/aly-potential-breakup-song.jpg?v=artfix-a223445cfbbd",
     "audio": {
@@ -20694,6 +20973,7 @@
     "longevityScore": 50,
     "introRecognition": 91.5,
     "startAtMs": 100,
+    "playbackGainDb": 1,
     "hookStartMs": 55000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ellie-goulding-burn.jpg?v=artfix-33006bbcaeab",
     "audio": {
@@ -20754,6 +21034,7 @@
     "longevityScore": 50,
     "introRecognition": 68.4,
     "startAtMs": 166,
+    "playbackGainDb": 5,
     "hookStartMs": 138000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/julia-michaels-issues.jpg?v=176309-0",
     "audio": {
@@ -20814,6 +21095,7 @@
     "longevityScore": 50,
     "introRecognition": 79.6,
     "startAtMs": 42,
+    "playbackGainDb": 6,
     "hookStartMs": 52000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-meet-me-halfway.jpg?v=284413-0",
     "audio": {
@@ -20843,6 +21125,7 @@
     "introRecognition": 75.6,
     "startAtMs": 150,
     "clueGainDb": 12,
+    "playbackGainDb": 5,
     "hookStartMs": 67800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/timbaland-give-it-to-me.jpg?v=artfix-215135b6e269",
     "audio": {
@@ -20873,6 +21156,7 @@
     "longevityScore": 50,
     "introRecognition": 77.3,
     "startAtMs": 181,
+    "playbackGainDb": 7,
     "hookStartMs": 156600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-weeknd-often.jpg?v=249093-0",
     "audio": {
@@ -20904,6 +21188,7 @@
     "introRecognition": 63.8,
     "startAtMs": 700,
     "clueGainDb": 10,
+    "playbackGainDb": 4,
     "hookStartMs": 73400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-pride.jpg?v=274254-0",
     "audio": {
@@ -20964,6 +21249,7 @@
     "longevityScore": 50,
     "introRecognition": 87.5,
     "startAtMs": 515,
+    "playbackGainDb": 6,
     "hookStartMs": 61800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kendrick-lamar-swimming-pools-drank.jpg?v=248467-0",
     "audio": {
@@ -20995,6 +21281,7 @@
     "introRecognition": 76.4,
     "startAtMs": 300,
     "clueGainDb": 12,
+    "playbackGainDb": 1,
     "hookStartMs": 25400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lupe-fiasco-the-show-goes-on.jpg?v=artfix-6cd7c1daf09e",
     "audio": {
@@ -21024,6 +21311,7 @@
     "longevityScore": 50,
     "introRecognition": 74.9,
     "startAtMs": 256,
+    "playbackGainDb": 3,
     "hookStartMs": 130400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-boom-boom-pow.jpg?v=artfix-3c64137962ad",
     "audio": {
@@ -21054,6 +21342,7 @@
     "longevityScore": 50,
     "introRecognition": 90,
     "startAtMs": 89,
+    "playbackGainDb": 4,
     "hookStartMs": 121600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/akon-lonely.jpg?v=artfix-5aa1b16bc89c",
     "audio": {
@@ -21115,6 +21404,7 @@
     "longevityScore": 50,
     "introRecognition": 71,
     "startAtMs": 148,
+    "playbackGainDb": 12,
     "hookStartMs": 63400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/goldlink-crew.jpg?v=artfix-055ebd53fab7",
     "audio": {
@@ -21146,6 +21436,7 @@
     "introRecognition": 71.1,
     "startAtMs": 60,
     "clueGainDb": 4,
+    "playbackGainDb": 12,
     "hookStartMs": 121800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/brent-faiyaz-dead-man-walking.jpg?v=artfix-7f0179326782",
     "audio": {
@@ -21179,6 +21470,7 @@
     "longevityScore": 85,
     "introRecognition": 78.9,
     "startAtMs": 100,
+    "playbackGainDb": 8,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/abba-gimme-gimme-gimme-a-man-after-midnight.jpg?v=290006-0",
     "audio": {
       "kind": "hosted",
@@ -21208,6 +21500,7 @@
     "longevityScore": 50,
     "introRecognition": 76.4,
     "startAtMs": 310,
+    "playbackGainDb": 10,
     "hookStartMs": 70400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lady-gaga-telephone.jpg?v=220000-0",
     "audio": {
@@ -21238,6 +21531,7 @@
     "longevityScore": 50,
     "introRecognition": 93.6,
     "startAtMs": 627,
+    "playbackGainDb": 4,
     "hookStartMs": 49600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/daniel-caesar-who-knows.jpg?v=artfix-6ae02845b64c",
     "audio": {
@@ -21361,6 +21655,7 @@
     "longevityScore": 50,
     "introRecognition": 70.1,
     "startAtMs": 0,
+    "playbackGainDb": 11,
     "hookStartMs": 75000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/khalid-location.jpg?v=artfix-effffdc36783",
     "audio": {
@@ -21391,6 +21686,7 @@
     "longevityScore": 50,
     "introRecognition": 73,
     "startAtMs": 83,
+    "playbackGainDb": 8,
     "hookStartMs": 57200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/avril-lavigne-what-the-hell.jpg?v=artfix-b6c45c5e10bd",
     "audio": {
@@ -21511,6 +21807,7 @@
     "longevityScore": 50,
     "introRecognition": 100,
     "startAtMs": 18,
+    "playbackGainDb": 1,
     "hookStartMs": 18400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/lil-tecca-dark-thoughts.jpg?v=artfix-0ba7c7843e7c",
     "audio": {
@@ -21570,6 +21867,7 @@
     "longevityScore": 50,
     "introRecognition": 85.9,
     "startAtMs": 0,
+    "playbackGainDb": 4,
     "hookStartMs": 13000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/m-i-a-paper-planes.jpg?v=artfix-73176f831866",
     "audio": {
@@ -21605,6 +21903,7 @@
     "longevityScore": 68,
     "introRecognition": 81.5,
     "startAtMs": 210,
+    "playbackGainDb": 5,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/juice-wrld-come-and-go.jpg?v=205498-0",
     "audio": {
       "kind": "hosted",
@@ -21663,6 +21962,7 @@
     "longevityScore": 50,
     "introRecognition": 83.9,
     "startAtMs": 143,
+    "playbackGainDb": 2,
     "hookStartMs": 114200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/50-cent-21-questions.jpg?v=artfix-9c47eda21a18",
     "audio": {
@@ -21693,6 +21993,7 @@
     "longevityScore": 50,
     "introRecognition": 84.4,
     "startAtMs": 140,
+    "playbackGainDb": 2,
     "hookStartMs": 99400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jennifer-lopez-on-the-floor.jpg?v=artfix-1483b70c7485",
     "audio": {
@@ -21812,6 +22113,7 @@
     "longevityScore": 50,
     "introRecognition": 69.6,
     "startAtMs": 10,
+    "playbackGainDb": 12,
     "hookStartMs": 21000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-hold-on-we-re-going-home.jpg?v=227027-0",
     "audio": {
@@ -21936,6 +22238,7 @@
     "longevityScore": 78,
     "introRecognition": 71.4,
     "startAtMs": 30,
+    "playbackGainDb": 2,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/post-malone-go-flex.jpg?v=176622-0",
     "audio": {
       "kind": "hosted",
@@ -21965,6 +22268,7 @@
     "longevityScore": 50,
     "introRecognition": 95,
     "startAtMs": 60,
+    "playbackGainDb": 1,
     "hookStartMs": 51200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tame-impala-dracula.jpg?v=artfix-f3f847941633",
     "audio": {
@@ -22056,6 +22360,7 @@
     "longevityScore": 50,
     "introRecognition": 88.4,
     "startAtMs": 70,
+    "playbackGainDb": 4,
     "hookStartMs": 117600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-love-story.jpg?v=240427-0",
     "audio": {
@@ -22116,6 +22421,7 @@
     "longevityScore": 50,
     "introRecognition": 60.2,
     "startAtMs": 8,
+    "playbackGainDb": 1,
     "hookStartMs": 13000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/sza-broken-clocks.jpg?v=artfix-f66eb9557399",
     "audio": {
@@ -22146,6 +22452,7 @@
     "longevityScore": 50,
     "introRecognition": 92.1,
     "startAtMs": 120,
+    "playbackGainDb": 1,
     "hookStartMs": 48200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-darling-i.jpg?v=artfix-5b209a398950",
     "audio": {
@@ -22176,6 +22483,7 @@
     "longevityScore": 50,
     "introRecognition": 65.8,
     "startAtMs": 5760,
+    "playbackGainDb": 3,
     "hookStartMs": 138000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/nelly-furtado-say-it-right.jpg?v=artfix-b933491e2223",
     "audio": {
@@ -22211,6 +22519,7 @@
     "longevityScore": 68,
     "introRecognition": 43.9,
     "startAtMs": 30,
+    "playbackGainDb": 5,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ariana-grande-stuck.jpg?v=228449-0",
     "audio": {
       "kind": "hosted",
@@ -22329,6 +22638,7 @@
     "introRecognition": 89.8,
     "startAtMs": 360,
     "clueGainDb": 4,
+    "playbackGainDb": 6,
     "hookStartMs": 65200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/olivia-rodrigo-drop-dead.jpg?v=artfix-b5f3046b414b",
     "audio": {
@@ -22509,6 +22819,7 @@
     "introRecognition": 56.9,
     "startAtMs": 800,
     "clueGainDb": 12,
+    "playbackGainDb": 10,
     "hookStartMs": 69400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-all-american-rejects-gives-you-hell.jpg?v=artfix-b7c1ba393524",
     "audio": {
@@ -22539,6 +22850,7 @@
     "longevityScore": 50,
     "introRecognition": 84.6,
     "startAtMs": 260,
+    "playbackGainDb": 12,
     "hookStartMs": 65800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/duncan-laurence-arcade.jpg?v=artfix-cf47ca377248",
     "audio": {
@@ -22569,6 +22881,7 @@
     "longevityScore": 50,
     "introRecognition": 83.5,
     "startAtMs": 370,
+    "playbackGainDb": 8,
     "hookStartMs": 56400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/imagine-dragons-radioactive.jpg?v=artfix-db2ba9c7e34e",
     "audio": {
@@ -22599,6 +22912,7 @@
     "longevityScore": 50,
     "introRecognition": 78.6,
     "startAtMs": 261,
+    "playbackGainDb": 2,
     "hookStartMs": 54800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-you-belong-with-me-taylor-s-version.jpg?v=232200-0",
     "audio": {
@@ -22694,6 +23008,7 @@
     "longevityScore": 68,
     "introRecognition": 35.1,
     "startAtMs": 200,
+    "playbackGainDb": 6,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/benson-boone-in-the-stars.jpg?v=215643-0",
     "audio": {
       "kind": "hosted",
@@ -22896,6 +23211,7 @@
     "longevityScore": 50,
     "introRecognition": 78.9,
     "startAtMs": 245,
+    "playbackGainDb": 10,
     "hookStartMs": 100800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/charli-xcx-party-4-u.jpg?v=artfix-a5c46e0eccf0",
     "audio": {
@@ -22925,6 +23241,7 @@
     "introRecognition": 50.5,
     "startAtMs": 350,
     "clueGainDb": 12,
+    "playbackGainDb": 5,
     "hookStartMs": 87200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/hot-chelle-rae-tonight-tonight.jpg?v=artfix-39bb35bbb3e5",
     "audio": {
@@ -23130,6 +23447,7 @@
     "longevityScore": 50,
     "introRecognition": 94.5,
     "startAtMs": 219,
+    "playbackGainDb": 1,
     "hookStartMs": 40800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/summer-walker-playing-games.jpg?v=artfix-1b2bb1968473",
     "audio": {
@@ -23217,6 +23535,7 @@
     "longevityScore": 50,
     "introRecognition": 76.4,
     "startAtMs": 102,
+    "playbackGainDb": 10,
     "hookStartMs": 63400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/owl-city-good-time.jpg?v=artfix-159d1591748f",
     "audio": {
@@ -23250,6 +23569,7 @@
     "longevityScore": 78,
     "introRecognition": 40,
     "startAtMs": 650,
+    "playbackGainDb": 1,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/adele-send-my-love-to-your-new-lover.jpg?v=223109-0",
     "audio": {
       "kind": "hosted",
@@ -23337,6 +23657,7 @@
     "longevityScore": 50,
     "introRecognition": 92.5,
     "startAtMs": 0,
+    "playbackGainDb": 2,
     "hookStartMs": 46000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-toliver-what-you-need.jpg?v=artfix-2ff0051ed15d",
     "audio": {
@@ -23365,6 +23686,7 @@
     "longevityScore": 50,
     "introRecognition": 91.4,
     "startAtMs": 190,
+    "playbackGainDb": 6,
     "hookStartMs": 37800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ari-lennox-shea-butter-baby.jpg?v=artfix-092c4ac1a623",
     "audio": {
@@ -23395,6 +23717,7 @@
     "introRecognition": 58.1,
     "startAtMs": 650,
     "clueGainDb": 12,
+    "playbackGainDb": 2,
     "hookStartMs": 89200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/john-newman-love-me-again.jpg?v=artfix-35ff3f6f7218",
     "audio": {
@@ -23454,6 +23777,7 @@
     "introRecognition": 88.6,
     "startAtMs": 70,
     "clueGainDb": 4,
+    "playbackGainDb": 7,
     "hookStartMs": 73400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jhen-aiko-sativa.jpg?v=artfix-ed72fdb172fa",
     "audio": {
@@ -23514,6 +23838,7 @@
     "introRecognition": 52.5,
     "startAtMs": 650,
     "clueGainDb": 10,
+    "playbackGainDb": 5,
     "hookStartMs": 86200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/the-1975-about-you.jpg?v=artfix-54c7c2df1f7e",
     "audio": {
@@ -23543,6 +23868,7 @@
     "introRecognition": 90.8,
     "startAtMs": 120,
     "clueGainDb": 4,
+    "playbackGainDb": 2,
     "hookStartMs": 77800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-cole-power-trip.jpg?v=artfix-3d56dc8bc743",
     "audio": {
@@ -23573,6 +23899,7 @@
     "longevityScore": 50,
     "introRecognition": 87.3,
     "startAtMs": 51,
+    "playbackGainDb": 1,
     "hookStartMs": 26800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/don-toliver-after-party.jpg?v=artfix-40645dddbafa",
     "audio": {
@@ -23631,6 +23958,7 @@
     "introRecognition": 87,
     "startAtMs": 250,
     "clueGainDb": 6,
+    "playbackGainDb": 10,
     "hookStartMs": 81800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/summer-walker-girls-need-love.jpg?v=artfix-199942f70ee1",
     "audio": {
@@ -23661,6 +23989,7 @@
     "longevityScore": 50,
     "introRecognition": 90,
     "startAtMs": 210,
+    "playbackGainDb": 3,
     "hookStartMs": 113000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/modjo-lady-hear-me-tonight.jpg?v=221135-0",
     "audio": {
@@ -23690,6 +24019,7 @@
     "introRecognition": 86.8,
     "startAtMs": 0,
     "clueGainDb": 4,
+    "playbackGainDb": 12,
     "hookStartMs": 92800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/j-cole-love-yourz.jpg?v=artfix-f531c271c722",
     "audio": {
@@ -23750,6 +24080,7 @@
     "introRecognition": 87.3,
     "startAtMs": 0,
     "clueGainDb": 4,
+    "playbackGainDb": 8,
     "hookStartMs": 37200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/brent-faiyaz-poison.jpg?v=artfix-eb59afeb38dd",
     "audio": {
@@ -23780,6 +24111,7 @@
     "longevityScore": 50,
     "introRecognition": 87.4,
     "startAtMs": 0,
+    "playbackGainDb": 2,
     "hookStartMs": 44600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ella-mai-trip.jpg?v=artfix-7b70609274f4",
     "audio": {
@@ -23839,6 +24171,7 @@
     "introRecognition": 89,
     "startAtMs": 130,
     "clueGainDb": 4,
+    "playbackGainDb": 4,
     "hookStartMs": 40600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rae-sremmurd-swang.jpg?v=artfix-19323447d312",
     "audio": {
@@ -23870,6 +24203,7 @@
     "introRecognition": 34.7,
     "startAtMs": 500,
     "clueGainDb": 12,
+    "playbackGainDb": 12,
     "hookStartMs": 43000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-marvins-room.jpg?v=artfix-d5009c8d95c2",
     "audio": {
@@ -23900,6 +24234,7 @@
     "longevityScore": 50,
     "introRecognition": 83,
     "startAtMs": 874,
+    "playbackGainDb": 2,
     "hookStartMs": 34200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-damage.jpg?v=artfix-7991412fca81",
     "audio": {
@@ -23928,6 +24263,7 @@
     "longevityScore": 50,
     "introRecognition": 86,
     "startAtMs": 0,
+    "playbackGainDb": 1,
     "hookStartMs": 78800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/steve-lacy-oh-yeah.jpg?v=artfix-fe4ccbf6217d",
     "audio": {
@@ -23958,6 +24294,7 @@
     "longevityScore": 50,
     "introRecognition": 71.2,
     "startAtMs": 623,
+    "playbackGainDb": 3,
     "hookStartMs": 90000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/taylor-swift-enchanted.jpg?v=artfix-a1a07f1ff6cf",
     "audio": {
@@ -23986,6 +24323,7 @@
     "longevityScore": 50,
     "introRecognition": 85.4,
     "startAtMs": 1190,
+    "playbackGainDb": 6,
     "hookStartMs": 131600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/onerepublic-i-lived.jpg?v=artfix-ee54fa60c77c",
     "audio": {
@@ -24044,6 +24382,7 @@
     "longevityScore": 50,
     "introRecognition": 79.8,
     "startAtMs": 8,
+    "playbackGainDb": 4,
     "hookStartMs": 74400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tory-lanez-luv.jpg?v=artfix-5e6cac3006c9",
     "audio": {
@@ -24075,6 +24414,7 @@
     "introRecognition": 56.1,
     "startAtMs": 380,
     "clueGainDb": 12,
+    "playbackGainDb": 1,
     "hookStartMs": 61400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-mistletoe.jpg?v=artfix-a95e509674bc",
     "audio": {
@@ -24105,6 +24445,7 @@
     "longevityScore": 50,
     "introRecognition": 80.3,
     "startAtMs": 0,
+    "playbackGainDb": 11,
     "hookStartMs": 56400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/bryson-tiller-right-my-wrongs.jpg?v=artfix-9878beb4c127",
     "audio": {
@@ -24136,6 +24477,7 @@
     "introRecognition": 78.5,
     "startAtMs": 0,
     "clueGainDb": 8,
+    "playbackGainDb": 8,
     "hookStartMs": 76200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/masego-mystery-lady.jpg?v=artfix-4ae0837bfb3e",
     "audio": {
@@ -24195,6 +24537,7 @@
     "longevityScore": 50,
     "introRecognition": 80.1,
     "startAtMs": 0,
+    "playbackGainDb": 6,
     "hookStartMs": 25600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/rae-sremmurd-no-type.jpg?v=artfix-3565cb8bad73",
     "audio": {
@@ -24224,6 +24567,7 @@
     "introRecognition": 29.7,
     "startAtMs": 590,
     "clueGainDb": 12,
+    "playbackGainDb": 12,
     "hookStartMs": 59800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/black-eyed-peas-the-time-dirty-bit.jpg?v=artfix-a38b5faccc22",
     "audio": {
@@ -24255,6 +24599,7 @@
     "introRecognition": 32.3,
     "startAtMs": 550,
     "clueGainDb": 12,
+    "playbackGainDb": 1,
     "hookStartMs": 44800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/p-nk-try.jpg?v=artfix-505d4f247093",
     "audio": {
@@ -24289,6 +24634,7 @@
     "longevityScore": 10,
     "introRecognition": 77.6,
     "startAtMs": 222,
+    "playbackGainDb": 5,
     "hookStartMs": 75800,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/dominic-fike-white-keys.jpg?v=144080-0",
     "audio": {
@@ -24406,6 +24752,7 @@
     "longevityScore": 50,
     "introRecognition": 72.9,
     "startAtMs": 84,
+    "playbackGainDb": 12,
     "hookStartMs": 39000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/drake-controlla.jpg?v=artfix-1a97640e2069",
     "audio": {
@@ -24437,6 +24784,7 @@
     "introRecognition": 73,
     "startAtMs": 40,
     "clueGainDb": 12,
+    "playbackGainDb": 4,
     "hookStartMs": 57400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-could-ve-been.jpg?v=artfix-9c71850e93a4",
     "audio": {
@@ -24528,6 +24876,7 @@
     "introRecognition": 87.6,
     "startAtMs": 400,
     "clueGainDb": 4,
+    "playbackGainDb": 2,
     "hookStartMs": 20200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/ms-lauryn-hill-ex-factor.jpg?v=artfix-97556e0daafe",
     "audio": {
@@ -24558,6 +24907,7 @@
     "longevityScore": 50,
     "introRecognition": 86.6,
     "startAtMs": 60,
+    "playbackGainDb": 11,
     "hookStartMs": 18000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-all-that-matters.jpg?v=artfix-9e7ac7218c91",
     "audio": {
@@ -24618,6 +24968,7 @@
     "longevityScore": 50,
     "introRecognition": 85.5,
     "startAtMs": 50,
+    "playbackGainDb": 4,
     "hookStartMs": 72200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tamia-so-into-you.jpg?v=artfix-51264d1906cc",
     "audio": {
@@ -24648,6 +24999,7 @@
     "longevityScore": 50,
     "introRecognition": 85,
     "startAtMs": 5,
+    "playbackGainDb": 2,
     "hookStartMs": 88600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/tyler-like-him.jpg?v=artfix-2d8be183aa35",
     "audio": {
@@ -24679,6 +25031,7 @@
     "introRecognition": 16.7,
     "startAtMs": 450,
     "clueGainDb": 12,
+    "playbackGainDb": 12,
     "hookStartMs": 50000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/kelly-clarkson-since-u-been-gone.jpg?v=191820-0",
     "audio": {
@@ -24707,6 +25060,7 @@
     "longevityScore": 50,
     "introRecognition": 60.2,
     "startAtMs": 260,
+    "playbackGainDb": 1,
     "hookStartMs": 44400,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/jeremih-birthday-sex.jpg?v=artfix-658297554f83",
     "audio": {
@@ -24737,6 +25091,7 @@
     "longevityScore": 50,
     "introRecognition": 81.1,
     "startAtMs": 153,
+    "playbackGainDb": 6,
     "hookStartMs": 20000,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-what-do-you-mean.jpg?v=artfix-d9057f96f45d",
     "audio": {
@@ -24767,6 +25122,7 @@
     "longevityScore": 50,
     "introRecognition": 79.6,
     "startAtMs": 116,
+    "playbackGainDb": 9,
     "hookStartMs": 127600,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/justin-bieber-boyfriend.jpg?v=artfix-aa320438e47c",
     "audio": {
@@ -24924,6 +25280,7 @@
     "introRecognition": 35.6,
     "startAtMs": 350,
     "clueGainDb": 12,
+    "playbackGainDb": 12,
     "hookStartMs": 37200,
     "artwork": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/h-e-r-focus.jpg?v=artfix-405785e8b462",
     "audio": {

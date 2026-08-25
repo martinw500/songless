@@ -7,6 +7,7 @@ import {
   clueWindowSilent,
   configuredStartMs,
   evaluateClueWindow,
+  playbackGainFromBodyDb,
 } from "../scripts/media-start-normalization.mjs";
 
 const bodyDb = -20;
@@ -37,6 +38,13 @@ test("digital zeros in the lead-in fail however the rest of the clue measures", 
   });
   assert.equal(verdict.status, clueWindowSilent);
   assert.deepEqual(verdict.reasons, ["digital-silence-lead-in"]);
+});
+
+test("quiet masters are raised toward the playback loudness target", () => {
+  assert.equal(playbackGainFromBodyDb(-28.9), 12);
+  assert.equal(playbackGainFromBodyDb(-12.7), 0);
+  assert.equal(playbackGainFromBodyDb(-20), 4);
+  assert.equal(playbackGainFromBodyDb(null), 0);
 });
 
 test("clue-only gain is credited against the audibility threshold", () => {

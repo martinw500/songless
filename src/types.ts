@@ -47,6 +47,7 @@ export type Song = {
   introRecognition?: number;
   startAtMs?: number;
   clueGainDb?: number;
+  playbackGainDb?: number;
   hookStartMs?: number;
   artwork?: string;
   audio: AudioSource;

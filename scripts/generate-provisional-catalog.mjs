@@ -2,6 +2,7 @@ import { existsSync, readFileSync, writeFileSync, copyFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createScorer } from "./provisional-scoring.mjs";
+import { playbackGainFromBodyDb } from "./media-start-normalization.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
@@ -34,6 +35,7 @@ const longlist = JSON.parse(readFileSync(longlistFile, "utf8"));
 const introFeatures = existsSync(introFeaturesFile)
   ? JSON.parse(readFileSync(introFeaturesFile, "utf8"))
   : { songs: [] };
+const featureById = new Map((introFeatures.songs ?? []).map((feature) => [feature.id, feature]));
 const scoreSong = createScorer(longlist, introFeatures);
 const withEase = songs.map((song) => ({ song, ...scoreSong(song) }));
 
@@ -43,6 +45,7 @@ withEase.sort((a, b) => b.easeScore - a.easeScore || a.song.title.localeCompare(
 const catalog = withEase.map((entry, index) => {
   const s = entry.song;
   const artwork = s.media.artworkUrl || undefined;
+  const playbackGainDb = playbackGainFromBodyDb(featureById.get(s.id)?.bodyDb);
 
   return {
     id: s.id,
@@ -64,6 +67,7 @@ const catalog = withEase.map((entry, index) => {
     introRecognition: entry.introRecognition,
     startAtMs: s.startAtMs ?? s.media?.onsetPadMs ?? 30,
     ...(s.clueGainDb != null ? { clueGainDb: s.clueGainDb } : {}),
+    ...(playbackGainDb > 0 ? { playbackGainDb } : {}),
     ...(s.hookStartMs != null ? { hookStartMs: s.hookStartMs } : {}),
     ...(artwork ? { artwork } : {}),
     audio: {

@@ -38,6 +38,9 @@ test("hosted clues decode the compact asset and schedule an exact buffer range",
       gains.push(node);
       return node;
     }
+    createBiquadFilter() {
+      return { type: "", frequency: { value: 0 }, Q: { value: 0 }, connect() {} };
+    }
   }
   globalThis.Audio = MockAudio;
   globalThis.AudioContext = MockAudioContext;
@@ -81,6 +84,109 @@ test("hosted clues decode the compact asset and schedule an exact buffer range",
   engine.stop();
 });
 
+test("quiet masters raise both the clue and the reveal, capped with the limiter path", async (context) => {
+  const originalFetch = globalThis.fetch;
+  const originalAudio = globalThis.Audio;
+  const originalMediaElement = globalThis.HTMLMediaElement;
+  const originalAudioContext = globalThis.AudioContext;
+  const originalWindow = globalThis.window;
+  let media;
+  const gains = [];
+  const envelopePeaks = [];
+  const decoded = { duration: 30 };
+  class MockAudio {
+    readyState = 1;
+    duration = 210;
+    currentTime = 0;
+    src = "";
+    paused = true;
+    constructor() { media = this; }
+    async play() { this.paused = false; }
+    pause() { this.paused = true; }
+    setAttribute() {}
+    removeAttribute(name) { if (name === "src") this.src = ""; }
+    load() {}
+    addEventListener() {}
+    removeEventListener() {}
+  }
+  class MockAudioContext {
+    state = "running";
+    destination = {};
+    currentTime = 0;
+    async resume() {}
+    decodeAudioData = async () => decoded;
+    createBufferSource() {
+      return { buffer: null, connect() {}, start() {}, stop() {} };
+    }
+    createMediaElementSource() {
+      return { connect() {}, disconnect() {} };
+    }
+    createGain() {
+      const node = {
+        gain: {
+          value: 1,
+          setValueAtTime(value) { this.value = value; },
+          linearRampToValueAtTime(value) { this.value = value; envelopePeaks.push(value); },
+        },
+        connect() {},
+        disconnect() {},
+      };
+      gains.push(node);
+      return node;
+    }
+    createDynamicsCompressor() {
+      return {
+        threshold: { value: 0 },
+        knee: { value: 0 },
+        ratio: { value: 0 },
+        attack: { value: 0 },
+        release: { value: 0 },
+        connect() {},
+      };
+    }
+    createBiquadFilter() {
+      return { type: "", frequency: { value: 0 }, Q: { value: 0 }, connect() {} };
+    }
+  }
+  globalThis.Audio = MockAudio;
+  globalThis.HTMLMediaElement = { HAVE_METADATA: 1 };
+  globalThis.AudioContext = MockAudioContext;
+  globalThis.window = { setTimeout, clearTimeout };
+  globalThis.fetch = async () => ({ ok: true, status: 200, arrayBuffer: async () => new ArrayBuffer(8) });
+  context.after(() => {
+    globalThis.fetch = originalFetch;
+    globalThis.Audio = originalAudio;
+    globalThis.HTMLMediaElement = originalMediaElement;
+    globalThis.AudioContext = originalAudioContext;
+    globalThis.window = originalWindow;
+  });
+
+  const engine = new AudioEngine();
+  const song = {
+    id: "billie-eilish-wildflower",
+    title: "WILDFLOWER",
+    artist: "Billie Eilish",
+    difficulty: "medium",
+    playbackGainDb: 12,
+    startAtMs: 240,
+    audio: {
+      kind: "hosted",
+      clueSrc: "https://media.example/audio/clues/wildflower.mp3",
+      fullSrc: "https://media.example/audio/full/wildflower.mp3",
+      durationMs: 261213,
+    },
+  };
+  await engine.play(song, 0, 0.1, 1);
+  const boosted = 10 ** (12 / 20);
+  assert.ok(envelopePeaks.includes(boosted), `clue envelope never reached +12 dB (${JSON.stringify(envelopePeaks)})`);
+
+  gains.length = 0;
+  await engine.playRemainder(song, 0, 1);
+  const revealGain = gains[0];
+  assert.ok(Math.abs(revealGain.gain.value - boosted) < 0.0001);
+  assert.equal(media.src, song.audio.fullSrc);
+});
+
 test("hosted reveal streams from game-time zero and responds to live volume changes", async (context) => {
   const originalAudio = globalThis.Audio;
   const originalMediaElement = globalThis.HTMLMediaElement;
@@ -115,6 +221,9 @@ test("hosted reveal streams from game-time zero and responds to live volume chan
     createGain() {
       mediaGain = { gain: { value: 1 }, connect() {}, disconnect() {} };
       return mediaGain;
+    }
+    createBiquadFilter() {
+      return { type: "", frequency: { value: 0 }, Q: { value: 0 }, connect() {} };
     }
   }
   globalThis.Audio = MockAudio;
