@@ -274,6 +274,68 @@ async function run() {
     })`);
     assert(linkedDifficulty.difficulty === "medium" && linkedDifficulty.central && linkedDifficulty.side,
       "Central difficulty selection did not update the full interface.");
+
+    const filterOpened = await client.evaluate(`(() => {
+      const beforeSong = document.querySelector('.app-shell')?.dataset.songId;
+      document.querySelector('.filter-button')?.click();
+      return beforeSong;
+    })()`);
+    await delay(120);
+    const clickFilterChoice = async (label) => {
+      await client.evaluate(`(() => {
+        const label = ${JSON.stringify(label)};
+        const button = [...document.querySelectorAll('.filter-modal .filter-options button')]
+          .find((node) => node.textContent.trim() === label);
+        button?.click();
+      })()`);
+      await delay(40);
+    };
+    await clickFilterChoice('Modern (2020+)');
+    await clickFilterChoice('2010s');
+    await clickFilterChoice('Rock / Alternative');
+    await clickFilterChoice('Other / Unclassified');
+    const desktopFilter = await client.evaluate(`(() => {
+      const modal = document.querySelector('.filter-modal');
+      const box = modal.getBoundingClientRect();
+      return {
+        exists: Boolean(modal),
+        poolText: modal.querySelector('.filter-heading p')?.textContent.trim(),
+        selected: [...modal.querySelectorAll('.filter-options button[aria-pressed="true"]')]
+          .map((button) => button.textContent.trim()),
+        songBeforeApply: document.querySelector('.app-shell')?.dataset.songId,
+        insideViewport: box.left >= 0 && box.right <= innerWidth && box.top >= 0 && box.bottom <= innerHeight,
+      };
+    })()`);
+    assert(desktopFilter.exists && /\d+ songs? available in Medium/u.test(desktopFilter.poolText)
+      && desktopFilter.selected.length === 4
+      && desktopFilter.songBeforeApply === filterOpened && desktopFilter.insideViewport,
+    `Desktop filter modal did not draft a valid mix cleanly (${JSON.stringify(desktopFilter)}).`);
+    if (saveArtifacts) {
+      const artifactDirectory = path.join(root, ".ui-audit");
+      mkdirSync(artifactDirectory, { recursive: true });
+      const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+      writeFileSync(path.join(artifactDirectory, "filter-modal-desktop.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "filter-modal-desktop.png"))}`);
+    }
+    await client.evaluate("document.querySelector('.filter-done').click()");
+    await delay(100);
+    const appliedFilters = await client.evaluate(`({
+      modalClosed: !document.querySelector('.filter-modal'),
+      era: localStorage.getItem('songless-era-filter'),
+      genre: localStorage.getItem('songless-genre-filter'),
+      button: document.querySelector('.filter-button')?.textContent.replace(/\\s+/g, ' ').trim(),
+    })`);
+    assert(appliedFilters.modalClosed && appliedFilters.era === '["modern","2010s"]'
+      && appliedFilters.genre === '["rock","other"]' && appliedFilters.button === "Filters (4)",
+    `Applied filters did not persist (${JSON.stringify(appliedFilters)}).`);
+    await client.evaluate("document.querySelector('.filter-button').click()");
+    await delay(80);
+    await client.evaluate("document.querySelector('.filter-clear').click()");
+    await delay(80);
+    await client.evaluate("document.querySelector('.filter-done').click()");
+    await delay(100);
+    console.log("PASS multi-select era/genre filters draft, fit, apply, clear, and persist");
+
     const defaultStages = await client.evaluate(`[...document.querySelectorAll('.stage-pill.enabled')]
       .map((node) => node.textContent.trim())`);
     assert(JSON.stringify(defaultStages) === JSON.stringify(["0.1s", "0.5s", "2s", "8s", "15s"]),
@@ -791,6 +853,37 @@ async function run() {
       mobile: true,
     });
     await delay(260);
+    await client.evaluate("document.querySelector('.filter-button').click()");
+    await delay(120);
+    const phoneFilter = await client.evaluate(`(() => {
+      const box = (selector) => {
+        const rect = document.querySelector(selector)?.getBoundingClientRect();
+        return rect ? { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom } : null;
+      };
+      return {
+        modal: box('.filter-modal'),
+        footer: box('.filter-footer'),
+        viewportWidth: innerWidth,
+        viewportHeight: innerHeight,
+        pageScrollHeight: document.documentElement.scrollHeight,
+      };
+    })()`);
+    assert(phoneFilter.modal && phoneFilter.footer
+      && phoneFilter.modal.left >= 0 && phoneFilter.modal.right <= phoneFilter.viewportWidth
+      && phoneFilter.modal.top >= 0 && phoneFilter.modal.bottom <= phoneFilter.viewportHeight
+      && phoneFilter.footer.bottom <= phoneFilter.modal.bottom
+      && phoneFilter.pageScrollHeight === phoneFilter.viewportHeight,
+    `Phone filter modal does not fit the fixed viewport (${JSON.stringify(phoneFilter)}).`);
+    if (saveArtifacts) {
+      const artifactDirectory = path.join(root, ".ui-audit");
+      const capture = await client.call("Page.captureScreenshot", { format: "png", fromSurface: true });
+      writeFileSync(path.join(artifactDirectory, "filter-modal-phone.png"), Buffer.from(capture.data, "base64"));
+      console.log(`Saved ${path.relative(root, path.join(artifactDirectory, "filter-modal-phone.png"))}`);
+    }
+    await client.evaluate("document.querySelector('.modal-close').click()");
+    await delay(80);
+    console.log("PASS phone filter modal fits without making the page scrollable");
+
     await setStageEnabled(client, "8s", true);
     for (const label of ["0.01s", "0.1s", "0.5s", "2s"]) await setStageEnabled(client, label, false);
     await delay(200);

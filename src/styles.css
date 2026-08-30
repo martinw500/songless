@@ -227,6 +227,12 @@ input:focus-visible {
 
 .mode-action:active { transform: translateY(0) scale(0.975); }
 
+.mode-action.active-filter {
+  color: var(--accent);
+  border-color: rgba(var(--accent-rgb), 0.2);
+  background: rgba(var(--accent-rgb), 0.08);
+}
+
 .action-icon {
   width: 14px;
   height: 14px;
@@ -1380,8 +1386,15 @@ input:focus-visible {
   .difficulty-list::-webkit-scrollbar { display: none; }
   .difficulty { width: auto; min-width: 82px; height: 34px; flex: 1 0 auto; }
 
-  .mode-actions { margin-top: 8px; display: flex; justify-content: center; }
-  .mode-action { width: auto; min-width: 112px; }
+  .mode-actions {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .mode-actions::-webkit-scrollbar { display: none; }
+  .mode-action { width: auto; min-width: 96px; flex: 1 0 auto; }
 
   /* The card absorbs whatever height the panels leave rather than claiming a
      fixed 570px, so the round centres itself on tall phones and still fits on
@@ -1555,6 +1568,105 @@ input:focus-visible {
   color: #e55c5c;
   font-size: 13px;
   margin: 8px 0 0;
+}
+
+.filter-modal { max-width: 520px; }
+
+.filter-heading {
+  margin-right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.filter-heading > .filter-icon {
+  width: 23px;
+  height: 23px;
+  color: var(--accent);
+}
+
+.filter-heading h2 { margin-bottom: 3px; }
+.filter-heading p { margin: 0; color: #8f968c; font-size: 12px; }
+
+.filter-group {
+  margin: 25px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-group legend {
+  margin-bottom: 10px;
+  color: #a9b0a6;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.filter-group legend span {
+  color: #7d857b;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-options button {
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid #2c3228;
+  border-radius: 999px;
+  color: #9ba197;
+  background: #1a1f15;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 650;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 200ms var(--ease-out);
+}
+
+.filter-options button:hover { color: #d7ddd4; transform: translateY(-1px); }
+.filter-options button.selected {
+  color: #101409;
+  border-color: transparent;
+  background: var(--accent);
+  box-shadow: 0 0 14px rgba(var(--accent-rgb), 0.15);
+}
+
+.filter-footer {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 10px;
+}
+
+.filter-footer button {
+  height: 42px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.filter-clear { border: 1px solid #30352c; color: #a0a69d; background: transparent; }
+.filter-clear:disabled { opacity: 0.35; cursor: not-allowed; }
+.filter-done { border: 0; color: #101409; background: var(--accent); }
+.filter-done:disabled { opacity: 0.35; cursor: not-allowed; }
+
+@media (max-width: 560px) {
+  .filter-modal {
+    width: calc(100% - 28px);
+    max-height: calc(100svh - 28px);
+    padding: 26px 22px 22px;
+    border-radius: 22px;
+    overflow-y: auto;
+  }
+  .filter-options { gap: 7px; }
+  .filter-options button { min-height: 32px; padding: 0 11px; font-size: 10.5px; }
 }
 
 @keyframes fade-in {

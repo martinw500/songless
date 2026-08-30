@@ -4802,7 +4802,8 @@
       "easeScore": null,
       "proposedDifficulty": null,
       "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
+      "reviewStatus": "rejected",
+      "rejectionReason": "Duplicate title with a non-canonical 4:51 recording. Keep eurythmics-sweet-dreams-are-made-of-this.",
       "media": {
         "audioFile": "eurythmics-sweet-dreams.mp3",
         "artworkFile": "eurythmics-sweet-dreams.jpg",
@@ -5792,7 +5793,8 @@
       "spotifyUrl": "https://open.spotify.com/track/49X0LAl6faAusYq02PRAY6",
       "hookStartMs": 113000,
       "spotifyDurationMs": 307000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2000
     },
     {
       "id": "bts-dynamite",
@@ -5825,7 +5827,8 @@
       "spotifyUrl": "https://open.spotify.com/track/5QDLhrAOJJdNAmCTJ8xMyW",
       "hookStartMs": 107200,
       "spotifyDurationMs": 199000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2020
     },
     {
       "id": "justin-bieber-peaches-feat-daniel-caesar-giveon",
@@ -5858,7 +5861,8 @@
       "startAtMs": 347,
       "album": "Justice",
       "spotifyUrl": "https://open.spotify.com/track/4iJyoBOLtHqaGxP12qzhQI",
-      "hookStartMs": 45800
+      "hookStartMs": 45800,
+      "releaseYear": 2021
     },
     {
       "id": "sza-snooze",
@@ -5891,7 +5895,8 @@
       "spotifyUrl": "https://open.spotify.com/track/4iZ4pt7kvcaH6Yo8UoZ4s2",
       "hookStartMs": 75000,
       "spotifyDurationMs": 202000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2022
     },
     {
       "id": "kendrick-lamar-not-like-us",
@@ -5925,7 +5930,8 @@
       "hookStartMs": 57000,
       "clueGainDb": 10,
       "spotifyDurationMs": 274000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2024
     },
     {
       "id": "taylor-swift-style",
@@ -5958,7 +5964,8 @@
       "spotifyUrl": "https://open.spotify.com/track/4lIxdJw6W3Fg4vUIYCB0S5",
       "hookStartMs": 65400,
       "spotifyDurationMs": 231000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2014
     },
     {
       "id": "rihanna-don-t-stop-the-music",
@@ -5991,7 +5998,8 @@
       "spotifyUrl": "https://open.spotify.com/track/0ByMNEPAPpOR5H69DVrTNy",
       "hookStartMs": 76600,
       "spotifyDurationMs": 267000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2007
     },
     {
       "id": "akon-smack-that",
@@ -6023,7 +6031,8 @@
       "startAtMs": 53,
       "album": "Konvicted",
       "spotifyUrl": "https://open.spotify.com/track/2kQuhkFX7uSVepCD3h29g5",
-      "hookStartMs": 38200
+      "hookStartMs": 38200,
+      "releaseYear": 2006
     },
     {
       "id": "sza-good-days",
@@ -6056,7 +6065,8 @@
       "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID",
       "hookStartMs": 59600,
       "spotifyDurationMs": 279000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2020
     },
     {
       "id": "flo-rida-low-feat-t-pain",
@@ -6088,7 +6098,8 @@
       "startAtMs": 667,
       "album": "Mail on Sunday",
       "spotifyUrl": "https://open.spotify.com/track/0CAfXk7DXMnon4gLudAp7J",
-      "hookStartMs": 39000
+      "hookStartMs": 39000,
+      "releaseYear": 2007
     },
     {
       "id": "giv-on-heartbreak-anniversary",
@@ -6121,7 +6132,8 @@
       "spotifyUrl": "https://open.spotify.com/track/2QfznFotJNZmnIEYFdzE5T",
       "hookStartMs": 56000,
       "spotifyDurationMs": 197000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2020
     },
     {
       "id": "drake-nice-for-what",
@@ -6154,7 +6166,8 @@
       "spotifyUrl": "https://open.spotify.com/track/3CA9pLiwRIGtUBiMjbZmRw",
       "hookStartMs": 64600,
       "spotifyDurationMs": 211000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2018
     },
     {
       "id": "tory-lanez-the-color-violet",
@@ -6187,7 +6200,8 @@
       "spotifyUrl": "https://open.spotify.com/track/3azJifCSqg9fRij2yKIbWz",
       "hookStartMs": 22400,
       "spotifyDurationMs": 226000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2021
     },
     {
       "id": "kendrick-lamar-dna",
@@ -6220,7 +6234,8 @@
       "spotifyUrl": "https://open.spotify.com/track/6HZILIRieu8S0iqY8kIKhj",
       "hookStartMs": 125200,
       "spotifyDurationMs": 186000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2017
     },
     {
       "id": "bts-butter",
@@ -6253,7 +6268,8 @@
       "spotifyUrl": "https://open.spotify.com/track/1mWdTewIgB3gtBM3TOSFhB",
       "hookStartMs": 30400,
       "spotifyDurationMs": 164000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2021
     },
     {
       "id": "jung-kook-standing-next-to-you",
@@ -6286,7 +6302,8 @@
       "spotifyUrl": "https://open.spotify.com/track/2KslE17cAJNHTsI2MI0jb2",
       "hookStartMs": 10600,
       "spotifyDurationMs": 206000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2023
     },
     {
       "id": "the-weeknd-reminder",
@@ -6319,7 +6336,8 @@
       "spotifyUrl": "https://open.spotify.com/track/37F0uwRSrdzkBiuj0D5UHI",
       "hookStartMs": 59800,
       "spotifyDurationMs": 219000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2016
     },
     {
       "id": "lisa-money",
@@ -6385,7 +6403,8 @@
       "spotifyUrl": "https://open.spotify.com/track/0xmjwnQ3FNE6HuWCt2nHdZ",
       "hookStartMs": 28400,
       "spotifyDurationMs": 273000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2003
     },
     {
       "id": "taylor-swift-the-fate-of-ophelia",
@@ -6451,7 +6470,8 @@
       "spotifyUrl": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
       "hookStartMs": 10600,
       "spotifyDurationMs": 98000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2018
     },
     {
       "id": "the-weeknd-after-hours",
@@ -6484,7 +6504,8 @@
       "spotifyUrl": "https://open.spotify.com/track/2p8IUWQDrpjuFltbdgLOag",
       "hookStartMs": 156400,
       "spotifyDurationMs": 361000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2020
     },
     {
       "id": "icona-pop-i-love-it-feat-charli-xcx",
@@ -6516,7 +6537,8 @@
       "startAtMs": 349,
       "album": "THIS IS... ICONA POP",
       "spotifyUrl": "https://open.spotify.com/track/6HZ9VeI5IRFCNQLXhpF4bq",
-      "hookStartMs": 44200
+      "hookStartMs": 44200,
+      "releaseYear": 2012
     },
     {
       "id": "don-toliver-no-idea",
@@ -6549,7 +6571,8 @@
       "spotifyUrl": "https://open.spotify.com/track/7AzlLxHn24DxjgQX73F9fU",
       "hookStartMs": 34200,
       "spotifyDurationMs": 154000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2019
     },
     {
       "id": "taylor-swift-delicate",
@@ -6582,7 +6605,8 @@
       "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf",
       "hookStartMs": 51600,
       "spotifyDurationMs": 232000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2017
     },
     {
       "id": "katy-perry-california-gurls",
@@ -6665,7 +6689,8 @@
       "spotifyUrl": "https://open.spotify.com/track/7a53HqqArd4b9NF4XAmlbI",
       "hookStartMs": 17600,
       "spotifyDurationMs": 162000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2020
     },
     {
       "id": "bryson-tiller-exchange",
@@ -6698,7 +6723,8 @@
       "spotifyUrl": "https://open.spotify.com/track/43PuMrRfbyyuz4QpZ3oAwN",
       "hookStartMs": 40200,
       "spotifyDurationMs": 195000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2015
     },
     {
       "id": "tove-lo-habits-stay-high",
@@ -6731,7 +6757,8 @@
       "spotifyUrl": "https://open.spotify.com/track/14OxJlLdcHNpgsm4DRwDOB",
       "hookStartMs": 51000,
       "spotifyDurationMs": 209000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2013
     },
     {
       "id": "my-chemical-romance-teenagers",
@@ -6764,7 +6791,8 @@
       "spotifyUrl": "https://open.spotify.com/track/7j31rVgGX9Q2blT92VBEA0",
       "hookStartMs": 48000,
       "spotifyDurationMs": 162000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2006
     },
     {
       "id": "50-cent-candy-shop",
@@ -6796,7 +6824,8 @@
       "startAtMs": 500,
       "album": "The Massacre",
       "spotifyUrl": "https://open.spotify.com/track/5D2mYZuzcgjpchVY1pmTPh",
-      "hookStartMs": 79400
+      "hookStartMs": 79400,
+      "releaseYear": 2005
     },
     {
       "id": "drake-hold-on-we-re-going-home",
@@ -6828,7 +6857,8 @@
       "startAtMs": 10,
       "album": "Nothing Was The Same (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/6jdOi5U5LBzQrc4c1VT983",
-      "hookStartMs": 21000
+      "hookStartMs": 21000,
+      "releaseYear": 2013
     },
     {
       "id": "eminem-not-afraid",
@@ -6861,7 +6891,8 @@
       "spotifyUrl": "https://open.spotify.com/track/7Ie9W94M7OjPoZVV216Xus",
       "hookStartMs": 166800,
       "spotifyDurationMs": 248000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2010
     },
     {
       "id": "hailee-steinfeld-starving",
@@ -6894,7 +6925,8 @@
       "startAtMs": 29,
       "album": "Starving",
       "spotifyUrl": "https://open.spotify.com/track/4Ce37cRWvM1vIGGynKcs22",
-      "hookStartMs": 59400
+      "hookStartMs": 59400,
+      "releaseYear": 2015
     },
     {
       "id": "mr-probz-waves",
@@ -6987,7 +7019,8 @@
       "spotifyUrl": "https://open.spotify.com/track/4lhqb6JvbHId48OUJGwymk",
       "hookStartMs": 37600,
       "spotifyDurationMs": 255000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2013
     },
     {
       "id": "mac-miller-the-spins",
@@ -7051,7 +7084,8 @@
       "spotifyUrl": "https://open.spotify.com/track/2y4lAQpi5VTNLu2ldeTdUH",
       "hookStartMs": 71400,
       "spotifyDurationMs": 231000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2013
     },
     {
       "id": "avicii-levels",
@@ -7081,7 +7115,8 @@
       "artwork": null,
       "startAtMs": 77,
       "hookStartMs": 22200,
-      "album": "Levels - EP"
+      "album": "Levels - EP",
+      "releaseYear": 2011
     },
     {
       "id": "flo-rida-my-house",
@@ -7114,7 +7149,8 @@
       "spotifyUrl": "https://open.spotify.com/track/6Knv6wdA0luoMUuuoYi2i1",
       "hookStartMs": 40800,
       "spotifyDurationMs": 192000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2015
     },
     {
       "id": "the-weeknd-often",
@@ -7214,7 +7250,8 @@
       "album": "Swalla (feat. Nicki Minaj & Ty Dolla $ign)",
       "spotifyUrl": "https://open.spotify.com/track/6kex4EBAj0WHXDKZMEJaaF",
       "hookStartMs": 22400,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2017
     },
     {
       "id": "sia-elastic-heart",
@@ -7313,7 +7350,8 @@
       "spotifyUrl": "https://open.spotify.com/track/005lwxGU1tms6HGELIcUv9",
       "hookStartMs": 34200,
       "spotifyDurationMs": 180000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2008
     },
     {
       "id": "demi-lovato-sorry-not-sorry",
@@ -7543,7 +7581,8 @@
       "artwork": null,
       "album": "Wild Ones",
       "spotifyUrl": "https://open.spotify.com/track/1NpW5kyvO4XrNJ3rnfcNy3",
-      "hookStartMs": 45000
+      "hookStartMs": 45000,
+      "releaseYear": 2011
     },
     {
       "id": "nico-am-i-wrong",
@@ -7669,7 +7708,8 @@
       "spotifyUrl": "https://open.spotify.com/track/4wH4dJgrsxONID6KS2tDQM",
       "hookStartMs": 147200,
       "spotifyDurationMs": 259000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2006
     },
     {
       "id": "metro-boomin-too-many-nights-feat-don-toliver-with-future",
@@ -7728,7 +7768,8 @@
       "artwork": null,
       "album": "My Everything (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/12KUFSHFgT0XCoiSlvdQi4",
-      "hookStartMs": 117800
+      "hookStartMs": 117800,
+      "releaseYear": 2014
     },
     {
       "id": "justin-bieber-confident",
@@ -8183,7 +8224,8 @@
       "artwork": null,
       "album": "So Good",
       "spotifyUrl": "https://open.spotify.com/track/6hmhG1b4LEyNuashVvuIAo",
-      "hookStartMs": 53200
+      "hookStartMs": 53200,
+      "releaseYear": 2017
     },
     {
       "id": "ed-sheeran-the-a-team",
@@ -8216,7 +8258,8 @@
       "spotifyUrl": "https://open.spotify.com/track/6wJhz2jABaX2oMChhGy39Y",
       "hookStartMs": 55200,
       "spotifyDurationMs": 258000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2011
     },
     {
       "id": "paramore-misery-business",
@@ -8380,7 +8423,8 @@
       "spotifyUrl": "https://open.spotify.com/track/3DamFFqW32WihKkTVlwTYQ",
       "hookStartMs": 87200,
       "spotifyDurationMs": 228000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2009
     },
     {
       "id": "james-blunt-you-re-beautiful",
@@ -8477,7 +8521,8 @@
       "artwork": null,
       "album": "Fearless",
       "spotifyUrl": "https://open.spotify.com/track/1vrd6UOGamcKNGnSHJQlSt",
-      "hookStartMs": 117600
+      "hookStartMs": 117600,
+      "releaseYear": 2008
     },
     {
       "id": "usher-my-boo",
@@ -8542,7 +8587,8 @@
       "artwork": null,
       "album": "Spirit",
       "spotifyUrl": "https://open.spotify.com/track/7wZUrN8oemZfsEd1CGkbXE",
-      "hookStartMs": 162800
+      "hookStartMs": 162800,
+      "releaseYear": 2007
     },
     {
       "id": "galantis-runaway-u-i",
@@ -8573,7 +8619,8 @@
       "artwork": null,
       "album": "Pharmacy",
       "spotifyUrl": "https://open.spotify.com/track/46lFttIf5hnUZMGvjK0Wxo",
-      "hookStartMs": 101600
+      "hookStartMs": 101600,
+      "releaseYear": 2014
     },
     {
       "id": "sean-kingston-beautiful-girls",
@@ -8635,7 +8682,8 @@
       "artwork": null,
       "album": "Saturn",
       "spotifyUrl": "https://open.spotify.com/track/1bjeWoagtHmUKputLVyDxQ",
-      "hookStartMs": 63000
+      "hookStartMs": 63000,
+      "releaseYear": 2024
     },
     {
       "id": "lady-gaga-telephone",
@@ -8667,7 +8715,8 @@
       "artwork": null,
       "album": "The Fame Monster (Deluxe Edition)",
       "spotifyUrl": "https://open.spotify.com/track/4TCL0qqKyqsMZml0G3M9IM",
-      "hookStartMs": 70400
+      "hookStartMs": 70400,
+      "releaseYear": 2009
     },
     {
       "id": "panic-at-the-disco-i-write-sins-not-tragedies",
@@ -8698,7 +8747,8 @@
       "artwork": null,
       "album": "A Fever You Can't Sweat Out",
       "spotifyUrl": "https://open.spotify.com/track/4948g5UqwZFLGI8UTOXqdi",
-      "hookStartMs": 78200
+      "hookStartMs": 78200,
+      "releaseYear": 2005
     },
     {
       "id": "neon-trees-everybody-talks",
@@ -8762,7 +8812,8 @@
       "artwork": null,
       "album": "THE E.N.D. (THE ENERGY NEVER DIES)",
       "spotifyUrl": "https://open.spotify.com/track/6wOYnPq1hPihRepcDClPUw",
-      "hookStartMs": 52000
+      "hookStartMs": 52000,
+      "releaseYear": 2009
     },
     {
       "id": "childish-gambino-3005",
@@ -8825,7 +8876,8 @@
       "artwork": null,
       "album": "Eenie Meenie",
       "spotifyUrl": "https://open.spotify.com/track/4vVTI94F9uJ8lHNDWKv0i2",
-      "hookStartMs": 46400
+      "hookStartMs": 46400,
+      "releaseYear": 2010
     },
     {
       "id": "demi-lovato-cool-for-the-summer",
@@ -8857,7 +8909,8 @@
       "album": "Confident",
       "spotifyUrl": "https://open.spotify.com/track/3uwnnTQcHM1rDqSfA4gQNz",
       "hookStartMs": 51400,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2015
     },
     {
       "id": "olivia-dean-man-i-need",
@@ -8888,7 +8941,8 @@
       "artwork": null,
       "album": "Man I Need",
       "spotifyUrl": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX",
-      "hookStartMs": 79200
+      "hookStartMs": 79200,
+      "releaseYear": 2025
     },
     {
       "id": "lorde-team",
@@ -8919,7 +8973,8 @@
       "artwork": null,
       "album": "Pure Heroine",
       "spotifyUrl": "https://open.spotify.com/track/3G6hD9B2ZHOsgf4WfNu7X1",
-      "hookStartMs": 68800
+      "hookStartMs": 68800,
+      "releaseYear": 2013
     },
     {
       "id": "charlie-puth-one-call-away",
@@ -8950,7 +9005,8 @@
       "artwork": null,
       "album": "Nine Track Mind",
       "spotifyUrl": "https://open.spotify.com/track/7soJgKhQTO8hLP2JPRkL5O",
-      "hookStartMs": 76600
+      "hookStartMs": 76600,
+      "releaseYear": 2015
     },
     {
       "id": "taylor-swift-you-belong-with-me-taylor-s-version",
@@ -8981,7 +9037,8 @@
       "artwork": null,
       "album": "Valentines Day 2022",
       "spotifyUrl": "https://open.spotify.com/track/04K9KfH0TQyrdadWYV30Tq",
-      "hookStartMs": 54800
+      "hookStartMs": 54800,
+      "releaseYear": 2021
     },
     {
       "id": "kelly-clarkson-since-u-been-gone",
@@ -9013,7 +9070,8 @@
       "album": "Breakaway",
       "spotifyUrl": "https://open.spotify.com/track/6JY1IdkZGeIcPegKxjSKeb",
       "hookStartMs": 50000,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2004
     },
     {
       "id": "childish-gambino-les",
@@ -9109,7 +9167,8 @@
       "artwork": null,
       "album": "Good Girl Gone Bad: Reloaded",
       "spotifyUrl": "https://open.spotify.com/track/2VOomzT6VavJOGBeySqaMc",
-      "hookStartMs": 143400
+      "hookStartMs": 143400,
+      "releaseYear": 2008
     },
     {
       "id": "pitbull-feel-this-moment-feat-christina-aguilera",
@@ -9207,7 +9266,8 @@
       "album": "The Truth About Love",
       "spotifyUrl": "https://open.spotify.com/track/1jF7IL57ayN4Ity3jQqGu0",
       "hookStartMs": 44800,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2012
     },
     {
       "id": "ariana-grande-boyfriend-with-social-house",
@@ -9271,7 +9331,8 @@
       "artwork": null,
       "album": "Music Of The Sun",
       "spotifyUrl": "https://open.spotify.com/track/4TsmezEQVSZNNPv5RJ65Ov",
-      "hookStartMs": 40800
+      "hookStartMs": 40800,
+      "releaseYear": 2005
     },
     {
       "id": "lorde-ribs",
@@ -9302,7 +9363,8 @@
       "artwork": null,
       "album": "Pure Heroine",
       "spotifyUrl": "https://open.spotify.com/track/2MvvoeRt8NcOXWESkxWn3g",
-      "hookStartMs": 92200
+      "hookStartMs": 92200,
+      "releaseYear": 2013
     },
     {
       "id": "drake-teenage-fever",
@@ -9333,7 +9395,8 @@
       "artwork": null,
       "album": "More Life",
       "spotifyUrl": "https://open.spotify.com/track/6n3HGiq4v35D6eFOSwqYuo",
-      "hookStartMs": 24000
+      "hookStartMs": 24000,
+      "releaseYear": 2017
     },
     {
       "id": "khalid-love-lies",
@@ -9399,7 +9462,8 @@
       "album": "Under The Mistletoe (Deluxe Edition)",
       "spotifyUrl": "https://open.spotify.com/track/7xapw9Oy21WpfEcib2ErSA",
       "hookStartMs": 61400,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2011
     },
     {
       "id": "estelle-american-boy",
@@ -9464,7 +9528,8 @@
       "artwork": null,
       "album": "Shower",
       "spotifyUrl": "https://open.spotify.com/track/3DmW6y7wTEYHJZlLo1r6XJ",
-      "hookStartMs": 33600
+      "hookStartMs": 33600,
+      "releaseYear": 2014
     },
     {
       "id": "nelly-furtado-say-it-right",
@@ -9495,7 +9560,8 @@
       "artwork": null,
       "album": "Loose",
       "spotifyUrl": "https://open.spotify.com/track/2aI21FnmY7TJVKeMaoQZ0t",
-      "hookStartMs": 138000
+      "hookStartMs": 138000,
+      "releaseYear": 2006
     },
     {
       "id": "rachel-platten-fight-song",
@@ -9526,7 +9592,8 @@
       "artwork": null,
       "album": "Wildfire",
       "spotifyUrl": "https://open.spotify.com/track/37f4ITSlgPX81ad2EvmVQr",
-      "hookStartMs": 37600
+      "hookStartMs": 37600,
+      "releaseYear": 2015
     },
     {
       "id": "b-o-b-airplanes-feat-hayley-williams-of-paramore",
@@ -9559,7 +9626,8 @@
       "album": "B.o.B Presents: The Adventures of Bobby Ray",
       "spotifyUrl": "https://open.spotify.com/track/6lV2MSQmRIkycDScNtrBXO",
       "hookStartMs": 71000,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2010
     },
     {
       "id": "sza-love-galore-feat-travis-scott",
@@ -9622,7 +9690,8 @@
       "artwork": null,
       "album": "Trouble Deluxe Edition",
       "spotifyUrl": "https://open.spotify.com/track/4v7DCN09hgXkKazefkznDQ",
-      "hookStartMs": 121600
+      "hookStartMs": 121600,
+      "releaseYear": 2004
     },
     {
       "id": "50-cent-21-questions",
@@ -9654,7 +9723,8 @@
       "artwork": null,
       "album": "Get Rich Or Die Tryin'",
       "spotifyUrl": "https://open.spotify.com/track/41bIQPBE1lFN0mmw6Lmssz",
-      "hookStartMs": 114200
+      "hookStartMs": 114200,
+      "releaseYear": 2003
     },
     {
       "id": "lady-gaga-paparazzi",
@@ -9685,7 +9755,8 @@
       "artwork": null,
       "album": "The Fame",
       "spotifyUrl": "https://open.spotify.com/track/7Hqig8kp32q2Ire3ECQvWM",
-      "hookStartMs": 43000
+      "hookStartMs": 43000,
+      "releaseYear": 2008
     },
     {
       "id": "kid-cudi-pursuit-of-happiness-nightmare",
@@ -9718,7 +9789,8 @@
       "artwork": null,
       "album": "Man On The Moon: The End Of Day",
       "spotifyUrl": "https://open.spotify.com/track/5iSEsR6NKjlC9SrIJkyL3k",
-      "hookStartMs": 204800
+      "hookStartMs": 204800,
+      "releaseYear": 2009
     },
     {
       "id": "justin-timberlake-rock-your-body",
@@ -9749,7 +9821,8 @@
       "artwork": null,
       "album": "Justified",
       "spotifyUrl": "https://open.spotify.com/track/1AWQoqb9bSvzTjaLralEkT",
-      "hookStartMs": 153400
+      "hookStartMs": 153400,
+      "releaseYear": 2002
     },
     {
       "id": "john-newman-love-me-again",
@@ -9780,7 +9853,8 @@
       "artwork": null,
       "hookStartMs": 89200,
       "album": "Tribute",
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2013
     },
     {
       "id": "kesha-die-young",
@@ -9811,7 +9885,8 @@
       "artwork": null,
       "album": "Warrior (Expanded Edition)",
       "spotifyUrl": "https://open.spotify.com/track/7EQGXaVSyEDsCWKmUcfpLk",
-      "hookStartMs": 39200
+      "hookStartMs": 39200,
+      "releaseYear": 2012
     },
     {
       "id": "ellie-goulding-burn",
@@ -9842,7 +9917,8 @@
       "artwork": null,
       "album": "Halcyon Days",
       "spotifyUrl": "https://open.spotify.com/track/0xMd5bcWTbyXS7wPrBtZA6",
-      "hookStartMs": 55000
+      "hookStartMs": 55000,
+      "releaseYear": 2013
     },
     {
       "id": "m-i-a-paper-planes",
@@ -9873,7 +9949,8 @@
       "artwork": null,
       "album": "Kala",
       "spotifyUrl": "https://open.spotify.com/track/1ixbwbeBi5ufN4noUKmW5a",
-      "hookStartMs": 13000
+      "hookStartMs": 13000,
+      "releaseYear": 2007
     },
     {
       "id": "gwen-stefani-the-sweet-escape",
@@ -9965,7 +10042,8 @@
       "artwork": null,
       "album": "California 37",
       "spotifyUrl": "https://open.spotify.com/track/0KAiuUOrLTIkzkpfpn9jb9",
-      "hookStartMs": 60200
+      "hookStartMs": 60200,
+      "releaseYear": 2012
     },
     {
       "id": "ne-yo-miss-independent",
@@ -9996,7 +10074,8 @@
       "artwork": null,
       "album": "Year Of The Gentleman",
       "spotifyUrl": "https://open.spotify.com/track/1yJ5fyqBusR7Verj8JGsKV",
-      "hookStartMs": 94600
+      "hookStartMs": 94600,
+      "releaseYear": 2008
     },
     {
       "id": "taylor-swift-enchanted",
@@ -10027,7 +10106,8 @@
       "artwork": null,
       "album": "Speak Now",
       "spotifyUrl": "https://open.spotify.com/track/10eBRyImhfqVvkiVEGf0N0",
-      "hookStartMs": 90000
+      "hookStartMs": 90000,
+      "releaseYear": 2010
     },
     {
       "id": "jay-sean-down",
@@ -10091,7 +10171,8 @@
       "album": "Being Funny In A Foreign Language",
       "spotifyUrl": "https://open.spotify.com/track/3hEfpBHxgieRLz4t3kLNEg",
       "hookStartMs": 86200,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2022
     },
     {
       "id": "david-guetta-hey-mama-feat-nicki-minaj-bebe-rexha-afrojack",
@@ -10184,7 +10265,8 @@
       "spotifyUrl": "https://open.spotify.com/track/20zQZVyUNPbq8kZACdgYrh",
       "hookStartMs": 99400,
       "spotifyDurationMs": 285000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2004
     },
     {
       "id": "future-like-that",
@@ -10277,7 +10359,8 @@
       "artwork": null,
       "album": "Son Of Spergy",
       "spotifyUrl": "https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48",
-      "hookStartMs": 49600
+      "hookStartMs": 49600,
+      "releaseYear": 2025
     },
     {
       "id": "daniel-caesar-always",
@@ -10308,7 +10391,8 @@
       "artwork": null,
       "album": "NEVER ENOUGH",
       "spotifyUrl": "https://open.spotify.com/track/2LlOeW5rVcvl3QcPNPcDus",
-      "hookStartMs": 61000
+      "hookStartMs": 61000,
+      "releaseYear": 2023
     },
     {
       "id": "daniel-caesar-loose",
@@ -10339,7 +10423,8 @@
       "artwork": null,
       "album": "Freudian",
       "spotifyUrl": "https://open.spotify.com/track/3xqWiKFFYF9Pv7H1nNoZFd",
-      "hookStartMs": 59600
+      "hookStartMs": 59600,
+      "releaseYear": 2017
     },
     {
       "id": "daniel-caesar-freudian",
@@ -10404,7 +10489,8 @@
       "artwork": null,
       "album": "Freudian",
       "spotifyUrl": "https://open.spotify.com/track/2XjoHA58XD0t3qye8bYGU8",
-      "hookStartMs": 115800
+      "hookStartMs": 115800,
+      "releaseYear": 2017
     },
     {
       "id": "daniel-caesar-streetcar",
@@ -10435,7 +10521,8 @@
       "artwork": null,
       "album": "Pilgrim's Paradise",
       "spotifyUrl": "https://open.spotify.com/track/3m5rs2BeWjLUe0Ygc6aM7i",
-      "hookStartMs": 104600
+      "hookStartMs": 104600,
+      "releaseYear": 2015
     },
     {
       "id": "daniel-caesar-cyanide",
@@ -10499,7 +10586,8 @@
       "artwork": null,
       "album": "NEVER ENOUGH",
       "spotifyUrl": "https://open.spotify.com/track/736PP5LTtREkDgktNmX3Gu",
-      "hookStartMs": 96200
+      "hookStartMs": 96200,
+      "releaseYear": 2023
     },
     {
       "id": "justin-bieber-one-time",
@@ -10530,7 +10618,8 @@
       "artwork": null,
       "album": "My World (Canada Version - All BP's)",
       "spotifyUrl": "https://open.spotify.com/track/38dxwjNTN6sw1ZV3EivUUu",
-      "hookStartMs": 96600
+      "hookStartMs": 96600,
+      "releaseYear": 2009
     },
     {
       "id": "justin-bieber-one-less-lonely-girl",
@@ -10562,7 +10651,8 @@
       "album": "My World",
       "spotifyUrl": "https://open.spotify.com/track/69ghzc538EQSVon2Gm3wrr",
       "hookStartMs": 179200,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2009
     },
     {
       "id": "justin-bieber-boyfriend",
@@ -10593,7 +10683,8 @@
       "artwork": null,
       "album": "Believe",
       "spotifyUrl": "https://open.spotify.com/track/3UGIZ8qcrMTwzLbx6Kttqt",
-      "hookStartMs": 127600
+      "hookStartMs": 127600,
+      "releaseYear": 2012
     },
     {
       "id": "justin-bieber-what-do-you-mean",
@@ -10624,7 +10715,8 @@
       "artwork": null,
       "album": "Purpose (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/4B0JvthVoAAuygILe3n4Bs",
-      "hookStartMs": 20000
+      "hookStartMs": 20000,
+      "releaseYear": 2015
     },
     {
       "id": "justin-bieber-company",
@@ -10655,7 +10747,8 @@
       "artwork": null,
       "album": "Purpose (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/61uyGDPJ06MkxJtHgPmuyO",
-      "hookStartMs": 70600
+      "hookStartMs": 70600,
+      "releaseYear": 2015
     },
     {
       "id": "justin-bieber-anyone",
@@ -10687,7 +10780,8 @@
       "album": "Justice",
       "spotifyUrl": "https://open.spotify.com/track/2WnAKZefdRHxtBEkRjFOHC",
       "hookStartMs": 87000,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2021
     },
     {
       "id": "justin-bieber-hold-on",
@@ -10718,7 +10812,8 @@
       "artwork": null,
       "album": "Justice",
       "spotifyUrl": "https://open.spotify.com/track/1nahzW3kfMuwReTka28tH5",
-      "hookStartMs": 87000
+      "hookStartMs": 87000,
+      "releaseYear": 2021
     },
     {
       "id": "justin-bieber-all-that-matters",
@@ -10749,7 +10844,8 @@
       "artwork": null,
       "album": "Journals",
       "spotifyUrl": "https://open.spotify.com/track/6CLVh9sekZ1p2G8Tfhhj8h",
-      "hookStartMs": 18000
+      "hookStartMs": 18000,
+      "releaseYear": 2013
     },
     {
       "id": "justin-bieber-daisies",
@@ -10780,7 +10876,8 @@
       "artwork": null,
       "album": "SWAG",
       "spotifyUrl": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb",
-      "hookStartMs": 49800
+      "hookStartMs": 49800,
+      "releaseYear": 2025
     },
     {
       "id": "brent-faiyaz-clouded",
@@ -10878,7 +10975,8 @@
       "album": "WASTELAND",
       "spotifyUrl": "https://open.spotify.com/track/2c2tlXfEmLgUNvxngIi1qL",
       "hookStartMs": 121800,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2022
     },
     {
       "id": "brent-faiyaz-jackie-brown",
@@ -10909,7 +11007,8 @@
       "artwork": null,
       "album": "WASTELAND",
       "spotifyUrl": "https://open.spotify.com/track/2IlT65thKQQw248mhk2PjQ",
-      "hookStartMs": 48000
+      "hookStartMs": 48000,
+      "releaseYear": 2022
     },
     {
       "id": "brent-faiyaz-all-mine",
@@ -10940,7 +11039,8 @@
       "artwork": null,
       "album": "WASTELAND",
       "spotifyUrl": "https://open.spotify.com/track/3XgGQ1wjo5khvq2UImjyNF",
-      "hookStartMs": 37600
+      "hookStartMs": 37600,
+      "releaseYear": 2022
     },
     {
       "id": "sza-kill-bill",
@@ -10971,7 +11071,8 @@
       "artwork": null,
       "album": "SOS",
       "spotifyUrl": "https://open.spotify.com/track/3OHfY25tqY28d16oZczHc8",
-      "hookStartMs": 31000
+      "hookStartMs": 31000,
+      "releaseYear": 2022
     },
     {
       "id": "sza-broken-clocks",
@@ -11002,7 +11103,8 @@
       "artwork": null,
       "album": "Ctrl",
       "spotifyUrl": "https://open.spotify.com/track/2fXwCWkh6YG5zU1IyvQrbs",
-      "hookStartMs": 13000
+      "hookStartMs": 13000,
+      "releaseYear": 2017
     },
     {
       "id": "sza-the-weekend",
@@ -11033,7 +11135,8 @@
       "artwork": null,
       "album": "Ctrl",
       "spotifyUrl": "https://open.spotify.com/track/6gU9OKjOE7ghfEd55oRO57",
-      "hookStartMs": 44200
+      "hookStartMs": 44200,
+      "releaseYear": 2017
     },
     {
       "id": "kendrick-lamar-alright",
@@ -11064,7 +11167,8 @@
       "artwork": null,
       "album": "To Pimp A Butterfly",
       "spotifyUrl": "https://open.spotify.com/track/3iVcZ5G6tvkXZkZKlMpIUs",
-      "hookStartMs": 19600
+      "hookStartMs": 19600,
+      "releaseYear": 2015
     },
     {
       "id": "drake-jungle",
@@ -11095,7 +11199,8 @@
       "artwork": null,
       "album": "If You're Reading This It's Too Late",
       "spotifyUrl": "https://open.spotify.com/track/7JXZq0JgG2zTrSOAgY8VMC",
-      "hookStartMs": 62600
+      "hookStartMs": 62600,
+      "releaseYear": 2015
     },
     {
       "id": "drake-marvins-room",
@@ -11127,7 +11232,8 @@
       "album": "Take Care (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/047fCsbO4NdmwCBn8pcUXl",
       "hookStartMs": 43000,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2011
     },
     {
       "id": "drake-feel-no-ways",
@@ -11158,7 +11264,8 @@
       "artwork": null,
       "album": "Views",
       "spotifyUrl": "https://open.spotify.com/track/3cjF2OFRmip8spwZYQRKxP",
-      "hookStartMs": 20200
+      "hookStartMs": 20200,
+      "releaseYear": 2016
     },
     {
       "id": "frank-ocean-chanel",
@@ -11244,7 +11351,8 @@
       "album": "Trilogy",
       "spotifyUrl": "https://open.spotify.com/track/6VwBbL8CzPiC4QV66ay7oR",
       "hookStartMs": 116800,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2011
     },
     {
       "id": "the-weeknd-out-of-time",
@@ -11275,7 +11383,8 @@
       "artwork": null,
       "album": "Dawn FM",
       "spotifyUrl": "https://open.spotify.com/track/2SLwbpExuoBDZBpjfefCtV",
-      "hookStartMs": 63800
+      "hookStartMs": 63800,
+      "releaseYear": 2022
     },
     {
       "id": "tyler-wusyaname",
@@ -11497,7 +11606,8 @@
       "artwork": null,
       "album": "Swimming",
       "spotifyUrl": "https://open.spotify.com/track/01z2fBGB8Hl3Jd3zXe4IXR",
-      "hookStartMs": 38800
+      "hookStartMs": 38800,
+      "releaseYear": 2018
     },
     {
       "id": "childish-gambino-me-and-your-mama",
@@ -11580,7 +11690,8 @@
       "artwork": null,
       "album": "TAKE TIME",
       "spotifyUrl": "https://open.spotify.com/track/6qBFSepqLCuh5tehehc1bd",
-      "hookStartMs": 75800
+      "hookStartMs": 75800,
+      "releaseYear": 2019
     },
     {
       "id": "giveon-for-tonight",
@@ -11611,7 +11722,8 @@
       "artwork": null,
       "album": "For Tonight",
       "spotifyUrl": "https://open.spotify.com/track/61Emqg95O9zo1GNOcyxq4Y",
-      "hookStartMs": 58400
+      "hookStartMs": 58400,
+      "releaseYear": 2021
     },
     {
       "id": "partynextdoor-come-and-see-me",
@@ -11670,7 +11782,8 @@
       "album": "PARTYNEXTDOOR 3 (P3)",
       "spotifyUrl": "https://open.spotify.com/track/6tHt7Ln9RV8FTlT4kTxr2b",
       "hookStartMs": 43400,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2016
     },
     {
       "id": "malcolm-todd-chest-pain-i-love",
@@ -11701,7 +11814,8 @@
       "artwork": null,
       "album": "Chest Pain (I Love)",
       "spotifyUrl": "https://open.spotify.com/track/3gPYoFtn70aTgl546XVSET",
-      "hookStartMs": 18600
+      "hookStartMs": 18600,
+      "releaseYear": 2024
     },
     {
       "id": "ravyn-lenae-love-me-not",
@@ -11759,7 +11873,8 @@
       "artwork": null,
       "album": "undressed",
       "spotifyUrl": "https://open.spotify.com/track/4AajxCEwGEsmHmT4H1TwjY",
-      "hookStartMs": 50200
+      "hookStartMs": 50200,
+      "releaseYear": 2025
     },
     {
       "id": "pinkpantheress-illegal",
@@ -11790,7 +11905,8 @@
       "artwork": null,
       "album": "Fancy That",
       "spotifyUrl": "https://open.spotify.com/track/1WmBVbFmLt0w6zPP37TeCG",
-      "hookStartMs": 24200
+      "hookStartMs": 24200,
+      "releaseYear": 2025
     },
     {
       "id": "black-eyed-peas-rock-that-body",
@@ -11821,7 +11937,8 @@
       "artwork": null,
       "album": "THE E.N.D. (THE ENERGY NEVER DIES)",
       "spotifyUrl": "https://open.spotify.com/track/7K8XoQXZBffc4xG2xIQHMO",
-      "hookStartMs": 34400
+      "hookStartMs": 34400,
+      "releaseYear": 2009
     },
     {
       "id": "jeezy-soul-survivor",
@@ -11853,7 +11970,8 @@
       "artwork": null,
       "album": "Let's Get It: Thug Motivation 101",
       "spotifyUrl": "https://open.spotify.com/track/0Ss50OU9tCozI7JIywkv14",
-      "hookStartMs": 123200
+      "hookStartMs": 123200,
+      "releaseYear": 2005
     },
     {
       "id": "radiohead-let-down",
@@ -11884,7 +12002,8 @@
       "artwork": null,
       "album": "OK Computer",
       "spotifyUrl": "https://open.spotify.com/track/2fuYa3Lx06QQJAm0MjztKr",
-      "hookStartMs": 20000
+      "hookStartMs": 20000,
+      "releaseYear": 1997
     },
     {
       "id": "kesha-your-love-is-my-drug",
@@ -11915,7 +12034,8 @@
       "artwork": null,
       "album": "Animal (Expanded Edition)",
       "spotifyUrl": "https://open.spotify.com/track/6vc2Jq2vaGu8z326kSrw92",
-      "hookStartMs": 39000
+      "hookStartMs": 39000,
+      "releaseYear": 2010
     },
     {
       "id": "lady-gaga-abracadabra",
@@ -11946,7 +12066,8 @@
       "artwork": null,
       "album": "MAYHEM",
       "spotifyUrl": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR",
-      "hookStartMs": 60800
+      "hookStartMs": 60800,
+      "releaseYear": 2025
     },
     {
       "id": "sabrina-carpenter-bed-chem",
@@ -11977,7 +12098,8 @@
       "artwork": null,
       "album": "Short n' Sweet",
       "spotifyUrl": "https://open.spotify.com/track/1UHS8Rf6h5Ar3CDWRd3wjF",
-      "hookStartMs": 19600
+      "hookStartMs": 19600,
+      "releaseYear": 2024
     },
     {
       "id": "sabrina-carpenter-please-please-please",
@@ -12008,7 +12130,8 @@
       "artwork": null,
       "album": "Please Please Please",
       "spotifyUrl": "https://open.spotify.com/track/5N3hjp1WNayUPZrA8kJmJP",
-      "hookStartMs": 53600
+      "hookStartMs": 53600,
+      "releaseYear": 2024
     },
     {
       "id": "addison-rae-diet-pepsi",
@@ -12039,7 +12162,8 @@
       "artwork": null,
       "album": "Diet Pepsi",
       "spotifyUrl": "https://open.spotify.com/track/6MzofobZt2dm0Kf1hTThFz",
-      "hookStartMs": 34600
+      "hookStartMs": 34600,
+      "releaseYear": 2024
     },
     {
       "id": "chappell-roan-hot-to-go",
@@ -12071,7 +12195,8 @@
       "album": "The Rise and Fall of a Midwest Princess",
       "spotifyUrl": "https://open.spotify.com/track/4xdBrk0nFZaP54vvZj0yx7",
       "hookStartMs": 89200,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2023
     },
     {
       "id": "billie-eilish-lunch",
@@ -12103,7 +12228,8 @@
       "album": "HIT ME HARD AND SOFT",
       "spotifyUrl": "https://open.spotify.com/track/629DixmZGHc7ILtEntuiWE",
       "hookStartMs": 29200,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2024
     },
     {
       "id": "clairo-juna",
@@ -12161,7 +12287,8 @@
       "artwork": null,
       "album": "Glue Song",
       "spotifyUrl": "https://open.spotify.com/track/3iBgrkexCzVuPy4O9vx7Mf",
-      "hookStartMs": 50200
+      "hookStartMs": 50200,
+      "releaseYear": 2023
     },
     {
       "id": "yung-kai-blue",
@@ -12192,7 +12319,8 @@
       "artwork": null,
       "album": "blue",
       "spotifyUrl": "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG",
-      "hookStartMs": 47600
+      "hookStartMs": 47600,
+      "releaseYear": 2025
     },
     {
       "id": "kendrick-lamar-tv-off",
@@ -12221,7 +12349,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 17200
+      "hookStartMs": 17200,
+      "releaseYear": 2024
     },
     {
       "id": "tyler-sticky",
@@ -12284,7 +12413,8 @@
       "artwork": null,
       "album": "Alligator Bites Never Heal",
       "spotifyUrl": "https://open.spotify.com/track/1eTaznNW4Xxtx9za2SMTXB",
-      "hookStartMs": 16000
+      "hookStartMs": 16000,
+      "releaseYear": 2024
     },
     {
       "id": "don-toliver-no-pole",
@@ -12404,7 +12534,8 @@
       "artwork": null,
       "album": "At What Cost",
       "spotifyUrl": "https://open.spotify.com/track/15EPc80XuFrb2LmOzGjuRg",
-      "hookStartMs": 63400
+      "hookStartMs": 63400,
+      "releaseYear": 2016
     },
     {
       "id": "khalid-location",
@@ -12435,7 +12566,8 @@
       "artwork": null,
       "album": "American Teen",
       "spotifyUrl": "https://open.spotify.com/track/152lZdxL1OR0ZMW6KquMif",
-      "hookStartMs": 75000
+      "hookStartMs": 75000,
+      "releaseYear": 2016
     },
     {
       "id": "kali-uchis-after-the-storm",
@@ -12520,7 +12652,8 @@
       "artwork": null,
       "album": "Montgomery Ricky",
       "spotifyUrl": "https://open.spotify.com/track/5NvOZCjZaGGGL597exlQWv",
-      "hookStartMs": 128400
+      "hookStartMs": 128400,
+      "releaseYear": 2016
     },
     {
       "id": "keyshia-cole-love",
@@ -12551,7 +12684,8 @@
       "artwork": null,
       "album": "The Way It Is",
       "spotifyUrl": "https://open.spotify.com/track/0W4NhJhcqKCqEP2GIpDCDq",
-      "hookStartMs": 74000
+      "hookStartMs": 74000,
+      "releaseYear": 2005
     },
     {
       "id": "owl-city-good-time",
@@ -12597,12 +12731,24 @@
       "aliases": [],
       "artistAliases": [],
       "bucket": "billion_anchor",
-      "familiarity": 75,
+      "releaseYear": 2012,
+      "genres": [
+        "alternative rock",
+        "pop rock"
+      ],
+      "language": "en",
+      "scores": {
+        "audienceRecognition": 94,
+        "currentCirculation": 82,
+        "broaderVisibility": 98,
+        "longevity": 96
+      },
+      "familiarity": 93,
       "startAtMs": 370,
-      "introRecognition": null,
+      "introRecognition": 91,
       "easeScore": null,
-      "proposedDifficulty": null,
-      "difficultyOverrideReason": null,
+      "proposedDifficulty": "easy",
+      "difficultyOverrideReason": "Distinctive opening texture plus broad 2010s recognition; manually corrected after an Impossible outlier report.",
       "reviewStatus": "needs_intro_review",
       "media": {
         "clueLengthMs": 30000,
@@ -12647,7 +12793,8 @@
       "artwork": null,
       "album": "Love In The Future (Expanded Edition)",
       "spotifyUrl": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a",
-      "hookStartMs": 63000
+      "hookStartMs": 63000,
+      "releaseYear": 2013
     },
     {
       "id": "sam-smith-stay-with-me",
@@ -12678,7 +12825,8 @@
       "artwork": null,
       "album": "In The Lonely Hour",
       "spotifyUrl": "https://open.spotify.com/track/5Nm9ERjJZ5oyfXZTECKmRt",
-      "hookStartMs": 63400
+      "hookStartMs": 63400,
+      "releaseYear": 2014
     },
     {
       "id": "ed-sheeran-bad-habits",
@@ -12709,7 +12857,8 @@
       "artwork": null,
       "album": "=",
       "spotifyUrl": "https://open.spotify.com/track/3rmo8F54jFF8OgYsqTxm5d",
-      "hookStartMs": 70800
+      "hookStartMs": 70800,
+      "releaseYear": 2021
     },
     {
       "id": "ariana-grande-one-last-time",
@@ -12740,7 +12889,8 @@
       "artwork": null,
       "album": "My Everything (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/7xoUc6faLbCqZO6fQEYprd",
-      "hookStartMs": 40000
+      "hookStartMs": 40000,
+      "releaseYear": 2014
     },
     {
       "id": "panic-at-the-disco-house-of-memories",
@@ -12771,7 +12921,8 @@
       "artwork": null,
       "album": "Death of a Bachelor",
       "spotifyUrl": "https://open.spotify.com/track/2DgdHcjWmO3qd50RzuBLgZ",
-      "hookStartMs": 64600
+      "hookStartMs": 64600,
+      "releaseYear": 2016
     },
     {
       "id": "katy-perry-the-one-that-got-away",
@@ -12802,7 +12953,8 @@
       "artwork": null,
       "album": "Teenage Dream: The Complete Confection",
       "spotifyUrl": "https://open.spotify.com/track/3oL3XRtkP1WVbMxf7dtTdu",
-      "hookStartMs": 110800
+      "hookStartMs": 110800,
+      "releaseYear": 2010
     },
     {
       "id": "duncan-laurence-arcade",
@@ -12833,7 +12985,8 @@
       "artwork": null,
       "album": "Arcade",
       "spotifyUrl": "https://open.spotify.com/track/1Xi84slp6FryDSCbzq4UCD",
-      "hookStartMs": 65800
+      "hookStartMs": 65800,
+      "releaseYear": 2019
     },
     {
       "id": "aaron-smith-dancin",
@@ -12889,7 +13042,8 @@
       "artwork": null,
       "album": "MKTO",
       "spotifyUrl": "https://open.spotify.com/track/6FE2iI43OZnszFLuLtvvmg",
-      "hookStartMs": 41200
+      "hookStartMs": 41200,
+      "releaseYear": 2013
     },
     {
       "id": "edward-maya-stereo-love",
@@ -12923,7 +13077,8 @@
       "spotifyUrl": "https://open.spotify.com/track/11Iv8RCFmeImLOpaHYxKb4",
       "hookStartMs": 44800,
       "spotifyDurationMs": 185000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2010
     },
     {
       "id": "katy-perry-firework",
@@ -12954,7 +13109,8 @@
       "artwork": null,
       "album": "Teenage Dream: The Complete Confection",
       "spotifyUrl": "https://open.spotify.com/track/4lCv7b86sLynZbXhfScfm2",
-      "hookStartMs": 69000
+      "hookStartMs": 69000,
+      "releaseYear": 2010
     },
     {
       "id": "katy-perry-teenage-dream",
@@ -12987,7 +13143,8 @@
       "spotifyUrl": "https://open.spotify.com/track/5jzKL4BDMClWqRguW5qZvh",
       "hookStartMs": 128600,
       "spotifyDurationMs": 228000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2010
     },
     {
       "id": "the-wanted-glad-you-came",
@@ -13020,7 +13177,8 @@
       "spotifyUrl": "https://open.spotify.com/track/3AGOgQzp0YcPH41u9p7dOp",
       "hookStartMs": 64400,
       "spotifyDurationMs": 198000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2011
     },
     {
       "id": "pitbull-international-love",
@@ -13053,7 +13211,8 @@
       "album": "Planet Pit (Deluxe Version)",
       "spotifyUrl": "https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC",
       "hookStartMs": 90000,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2011
     },
     {
       "id": "flo-rida-good-feeling",
@@ -13084,7 +13243,8 @@
       "artwork": null,
       "album": "Wild Ones",
       "spotifyUrl": "https://open.spotify.com/track/2LEF1A8DOZ9wRYikWgVlZ8",
-      "hookStartMs": 35800
+      "hookStartMs": 35800,
+      "releaseYear": 2011
     },
     {
       "id": "jason-derulo-whatcha-say",
@@ -13115,7 +13275,8 @@
       "artwork": null,
       "album": "Jason Derulo (Deluxe Audio)",
       "spotifyUrl": "https://open.spotify.com/track/2zJZwWF7BTGIIvrAlgzJEx",
-      "hookStartMs": 42800
+      "hookStartMs": 42800,
+      "releaseYear": 2009
     },
     {
       "id": "nelly-just-a-dream",
@@ -13146,7 +13307,8 @@
       "artwork": null,
       "album": "5.0",
       "spotifyUrl": "https://open.spotify.com/track/3ZdJffjzJWFimSQyxgGIxN",
-      "hookStartMs": 25000
+      "hookStartMs": 25000,
+      "releaseYear": 2010
     },
     {
       "id": "justin-bieber-beauty-and-a-beat",
@@ -13180,7 +13342,8 @@
       "spotifyUrl": "https://open.spotify.com/track/190jyVPHYjAqEaOGmMzdyk",
       "hookStartMs": 40000,
       "spotifyDurationMs": 228000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2012
     },
     {
       "id": "sia-cheap-thrills",
@@ -13211,7 +13374,8 @@
       "artwork": null,
       "album": "This Is Acting",
       "spotifyUrl": "https://open.spotify.com/track/378iszndTZAR4dH8kwsLC6",
-      "hookStartMs": 32400
+      "hookStartMs": 32400,
+      "releaseYear": 2015
     },
     {
       "id": "jessie-j-price-tag",
@@ -13243,7 +13407,8 @@
       "artwork": null,
       "album": "Who You Are (Platinum Edition)",
       "spotifyUrl": "https://open.spotify.com/track/5mvKuE9Lf9ARVXVXA32kK9",
-      "hookStartMs": 141600
+      "hookStartMs": 141600,
+      "releaseYear": 2011
     },
     {
       "id": "jessie-j-domino",
@@ -13274,7 +13439,8 @@
       "artwork": null,
       "album": "Who You Are (Platinum Edition)",
       "spotifyUrl": "https://open.spotify.com/track/6MAdEUilV2p9RQUqE5bMAK",
-      "hookStartMs": 57200
+      "hookStartMs": 57200,
+      "releaseYear": 2011
     },
     {
       "id": "p-nk-raise-your-glass",
@@ -13305,7 +13471,8 @@
       "artwork": null,
       "album": "Raise Your Glass",
       "spotifyUrl": "https://open.spotify.com/track/1gv4xPanImH17bKZ9rOveR",
-      "hookStartMs": 38600
+      "hookStartMs": 38600,
+      "releaseYear": 2011
     },
     {
       "id": "fun-some-nights",
@@ -13336,7 +13503,8 @@
       "artwork": null,
       "album": "Some Nights",
       "spotifyUrl": "https://open.spotify.com/track/67WTwafOMgegV6ABnBQxcE",
-      "hookStartMs": 42600
+      "hookStartMs": 42600,
+      "releaseYear": 2012
     },
     {
       "id": "of-monsters-and-men-little-talks",
@@ -13367,7 +13535,8 @@
       "artwork": null,
       "album": "My Head Is An Animal",
       "spotifyUrl": "https://open.spotify.com/track/2ihCaVdNZmnHZWt0fvAM7B",
-      "hookStartMs": 115800
+      "hookStartMs": 115800,
+      "releaseYear": 2011
     },
     {
       "id": "echosmith-cool-kids",
@@ -13400,7 +13569,8 @@
       "spotifyUrl": "https://open.spotify.com/track/13P5rwmk2EsoFRIz9UCeh9",
       "hookStartMs": 56000,
       "spotifyDurationMs": 238000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2013
     },
     {
       "id": "grouplove-tongue-tied",
@@ -13432,7 +13602,8 @@
       "album": "Never Trust a Happy Song",
       "spotifyUrl": "https://open.spotify.com/track/0GO8y8jQk1PkHzS31d699N",
       "hookStartMs": 15200,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2011
     },
     {
       "id": "david-guetta-where-them-girls-at",
@@ -13519,7 +13690,8 @@
       "album": "Rokstarr",
       "spotifyUrl": "https://open.spotify.com/track/1CdqVF1ywD0ZO1zXtB9yWa",
       "hookStartMs": 140600,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2009
     },
     {
       "id": "akon-right-now-na-na-na",
@@ -13550,7 +13722,8 @@
       "artwork": null,
       "album": "Freedom",
       "spotifyUrl": "https://open.spotify.com/track/5Ravsw8TmHN5wBiYPPYUFw",
-      "hookStartMs": 102800
+      "hookStartMs": 102800,
+      "releaseYear": 2008
     },
     {
       "id": "natasha-bedingfield-pocketful-of-sunshine",
@@ -13581,7 +13754,8 @@
       "artwork": null,
       "album": "Pocketful Of Sunshine",
       "spotifyUrl": "https://open.spotify.com/track/1uigwk5hNV84zRd5YQQRTk",
-      "hookStartMs": 59000
+      "hookStartMs": 59000,
+      "releaseYear": 2008
     },
     {
       "id": "sara-bareilles-love-song",
@@ -13612,7 +13786,8 @@
       "artwork": null,
       "album": "Little Voice",
       "spotifyUrl": "https://open.spotify.com/track/4E6cwWJWZw2zWf7VFbH7wf",
-      "hookStartMs": 56400
+      "hookStartMs": 56400,
+      "releaseYear": 2007
     },
     {
       "id": "miley-cyrus-the-climb",
@@ -13644,7 +13819,8 @@
       "album": "Hannah Montana The Movie",
       "spotifyUrl": "https://open.spotify.com/track/0V8FYVlBFuXXTIvRnMbZyS",
       "hookStartMs": 118800,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2009
     },
     {
       "id": "avril-lavigne-sk8er-boi",
@@ -13675,7 +13851,8 @@
       "artwork": null,
       "album": "Let Go",
       "spotifyUrl": "https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU",
-      "hookStartMs": 124200
+      "hookStartMs": 124200,
+      "releaseYear": 2002
     },
     {
       "id": "avril-lavigne-girlfriend",
@@ -13706,7 +13883,8 @@
       "artwork": null,
       "album": "The Best Damn Thing (Expanded Edition)",
       "spotifyUrl": "https://open.spotify.com/track/45hOioMDJktr86iKDHC8gr",
-      "hookStartMs": 62000
+      "hookStartMs": 62000,
+      "releaseYear": 2007
     },
     {
       "id": "avril-lavigne-what-the-hell",
@@ -13737,7 +13915,8 @@
       "artwork": null,
       "album": "Goodbye Lullaby (Expanded Edition)",
       "spotifyUrl": "https://open.spotify.com/track/2z4U9d5OAA4YLNXoCgioxo",
-      "hookStartMs": 57200
+      "hookStartMs": 57200,
+      "releaseYear": 2011
     },
     {
       "id": "3oh-3-starstrukk",
@@ -13771,7 +13950,8 @@
       "spotifyUrl": "https://open.spotify.com/track/1hBM2D1ULT3aeKuddSwPsK",
       "hookStartMs": 21800,
       "spotifyDurationMs": 203000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2008
     },
     {
       "id": "cobra-starship-good-girls-go-bad",
@@ -13829,7 +14009,8 @@
       "artwork": null,
       "album": "Back On the Dancefloor",
       "spotifyUrl": "https://open.spotify.com/track/4Zfq7r0v4FKeoxwhyLYSyb",
-      "hookStartMs": 129800
+      "hookStartMs": 129800,
+      "releaseYear": 2012
     },
     {
       "id": "cascada-everytime-we-touch",
@@ -13862,7 +14043,8 @@
       "spotifyUrl": "https://open.spotify.com/track/2iA1MTr7YGg2lSu7XISiJR",
       "hookStartMs": 28200,
       "spotifyDurationMs": 196000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2005
     },
     {
       "id": "la-roux-bulletproof",
@@ -13893,7 +14075,8 @@
       "artwork": null,
       "album": "Bulletproof",
       "spotifyUrl": "https://open.spotify.com/track/0SyxZC4wlqAwf20cHE6Xon",
-      "hookStartMs": 102400
+      "hookStartMs": 102400,
+      "releaseYear": 2009
     },
     {
       "id": "sean-kingston-fire-burning",
@@ -13926,7 +14109,8 @@
       "spotifyUrl": "https://open.spotify.com/track/2oENJa1T33GJ0w8dC167G4",
       "hookStartMs": 60200,
       "spotifyDurationMs": 240000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2009
     },
     {
       "id": "nelly-dilemma",
@@ -13958,7 +14142,8 @@
       "artwork": null,
       "album": "Nellyville",
       "spotifyUrl": "https://open.spotify.com/track/0ARK753YaiJbpLUk7z5yIM",
-      "hookStartMs": 29600
+      "hookStartMs": 29600,
+      "releaseYear": 2002
     },
     {
       "id": "jordin-sparks-no-air",
@@ -14047,7 +14232,8 @@
       "hookStartMs": 126000,
       "spotifyDurationMs": 231000,
       "spotifyMetadataStatus": "verified_public_page",
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2005
     },
     {
       "id": "the-pussycat-dolls-don-t-cha",
@@ -14112,7 +14298,8 @@
       "artwork": null,
       "album": "The Trinity",
       "spotifyUrl": "https://open.spotify.com/track/0k2GOhqsrxDTAbFFSdNJjT",
-      "hookStartMs": 15800
+      "hookStartMs": 15800,
+      "releaseYear": 2005
     },
     {
       "id": "kevin-rudolf-let-it-rock",
@@ -14143,7 +14330,8 @@
       "artwork": null,
       "album": "In The City",
       "spotifyUrl": "https://open.spotify.com/track/6TrNRd98WksT9Kkmx9uj6R",
-      "hookStartMs": 32800
+      "hookStartMs": 32800,
+      "releaseYear": 2008
     },
     {
       "id": "aly-potential-breakup-song",
@@ -14245,7 +14433,8 @@
       "album": "We Are Young Money",
       "spotifyUrl": "https://open.spotify.com/track/3iL2l5gUqyPS6vDwJFgJTR",
       "hookStartMs": 26600,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2009
     },
     {
       "id": "waka-flocka-flame-no-hands",
@@ -14304,7 +14493,8 @@
       "artwork": null,
       "album": "Pink Friday",
       "spotifyUrl": "https://open.spotify.com/track/1ia019RqDK2o4QiANR1Dyn",
-      "hookStartMs": 36800
+      "hookStartMs": 36800,
+      "releaseYear": 2010
     },
     {
       "id": "jesse-mccartney-beautiful-soul",
@@ -14335,7 +14525,8 @@
       "artwork": null,
       "album": "Beautiful Soul",
       "spotifyUrl": "https://open.spotify.com/track/1HwpWwa6bnqqRhK8agG4RS",
-      "hookStartMs": 60200
+      "hookStartMs": 60200,
+      "releaseYear": 2004
     },
     {
       "id": "tory-lanez-hurts-me",
@@ -14401,7 +14592,8 @@
       "artwork": null,
       "album": "MUTT",
       "spotifyUrl": "https://open.spotify.com/track/1mh9eHVRdNhzryG43PXdW1",
-      "hookStartMs": 51800
+      "hookStartMs": 51800,
+      "releaseYear": 2024
     },
     {
       "id": "kehlani-folded",
@@ -14434,7 +14626,8 @@
       "spotifyUrl": "https://open.spotify.com/track/0bxPRWprUVpQK0UFcddkrA",
       "hookStartMs": 193200,
       "spotifyDurationMs": 238000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2025
     },
     {
       "id": "sza-30-for-30",
@@ -14467,7 +14660,8 @@
       "album": "SOS Deluxe: LANA",
       "spotifyUrl": "https://open.spotify.com/track/3aSWXU6owkZeVhh94XxEWO",
       "hookStartMs": 60200,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2025
     },
     {
       "id": "partynextdoor-die-trying",
@@ -14534,7 +14728,8 @@
       "album": "SWAG",
       "spotifyUrl": "https://open.spotify.com/track/29iva9idM6rFCPUlu7Rhxl",
       "hookStartMs": 44800,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2025
     },
     {
       "id": "charli-xcx-guess",
@@ -14565,7 +14760,8 @@
       "artwork": null,
       "album": "Brat and it’s completely different but also still brat",
       "spotifyUrl": "https://open.spotify.com/track/0IsIY8pfu1yaGkPUD7pkDx",
-      "hookStartMs": 58800
+      "hookStartMs": 58800,
+      "releaseYear": 2024
     },
     {
       "id": "charli-xcx-360",
@@ -14596,7 +14792,8 @@
       "artwork": null,
       "album": "BRAT",
       "spotifyUrl": "https://open.spotify.com/track/4w2GLmK2wnioVnb5CPQeex",
-      "hookStartMs": 58400
+      "hookStartMs": 58400,
+      "releaseYear": 2024
     },
     {
       "id": "sza-bmf",
@@ -14627,7 +14824,8 @@
       "artwork": null,
       "album": "SOS Deluxe: LANA",
       "spotifyUrl": "https://open.spotify.com/track/3U3hFkMr0Q90pD24EkE3Pr",
-      "hookStartMs": 30400
+      "hookStartMs": 30400,
+      "releaseYear": 2025
     },
     {
       "id": "katseye-gabriela",
@@ -14658,7 +14856,8 @@
       "artwork": null,
       "album": "Gabriela",
       "spotifyUrl": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL",
-      "hookStartMs": 53400
+      "hookStartMs": 53400,
+      "releaseYear": 2025
     },
     {
       "id": "tyla-push-2-start",
@@ -14689,7 +14888,8 @@
       "artwork": null,
       "album": "TYLA +",
       "spotifyUrl": "https://open.spotify.com/track/1Cbl3Yq8rHo7hhDQmLQagU",
-      "hookStartMs": 76000
+      "hookStartMs": 76000,
+      "releaseYear": 2024
     },
     {
       "id": "miguel-adorn",
@@ -14720,7 +14920,8 @@
       "artwork": null,
       "album": "Kaleidoscope Dream",
       "spotifyUrl": "https://open.spotify.com/track/25cUhiAod71TIQSNicOaW3",
-      "hookStartMs": 137200
+      "hookStartMs": 137200,
+      "releaseYear": 2012
     },
     {
       "id": "summer-walker-playing-games",
@@ -14751,7 +14952,8 @@
       "artwork": null,
       "album": "Over It",
       "spotifyUrl": "https://open.spotify.com/track/2xyx0o4xNOLLjBSbOOdcbA",
-      "hookStartMs": 40800
+      "hookStartMs": 40800,
+      "releaseYear": 2019
     },
     {
       "id": "summer-walker-girls-need-love",
@@ -14812,7 +15014,8 @@
       "artwork": null,
       "album": "Ella Mai",
       "spotifyUrl": "https://open.spotify.com/track/6CTWathupIiDs7U4InHnDA",
-      "hookStartMs": 44600
+      "hookStartMs": 44600,
+      "releaseYear": 2018
     },
     {
       "id": "victoria-mon-t-on-my-mama",
@@ -14843,7 +15046,8 @@
       "artwork": null,
       "album": "On My Mama",
       "spotifyUrl": "https://open.spotify.com/track/1o8Z7GD1CeOaVBEyuzu4HO",
-      "hookStartMs": 48800
+      "hookStartMs": 48800,
+      "releaseYear": 2023
     },
     {
       "id": "kehlani-after-hours",
@@ -14874,7 +15078,8 @@
       "artwork": null,
       "album": "After Hours",
       "spotifyUrl": "https://open.spotify.com/track/2x03XLsTZ0o86h0cfHrkKF",
-      "hookStartMs": 81200
+      "hookStartMs": 81200,
+      "releaseYear": 2024
     },
     {
       "id": "kehlani-nights-like-this",
@@ -14933,7 +15138,8 @@
       "artwork": null,
       "album": "Goodies",
       "spotifyUrl": "https://open.spotify.com/track/3dFwpxh2yH7C7p9BGEKLVB",
-      "hookStartMs": 59600
+      "hookStartMs": 59600,
+      "releaseYear": 2004
     },
     {
       "id": "ciara-1-2-step",
@@ -14964,7 +15170,8 @@
       "artwork": null,
       "album": "Goodies",
       "spotifyUrl": "https://open.spotify.com/track/7uKcScNXuO3MWw6LowBjW1",
-      "hookStartMs": 57200
+      "hookStartMs": 57200,
+      "releaseYear": 2004
     },
     {
       "id": "far-east-movement-like-a-g6",
@@ -15023,7 +15230,8 @@
       "album": "When The World Comes Down",
       "spotifyUrl": "https://open.spotify.com/track/6ihL9TjfRjadfEePzXXyVF",
       "hookStartMs": 69400,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2008
     },
     {
       "id": "daniel-powter-bad-day",
@@ -15054,7 +15262,8 @@
       "artwork": null,
       "album": "Daniel Powter",
       "spotifyUrl": "https://open.spotify.com/track/0mUyMawtxj1CJ76kn9gIZK",
-      "hookStartMs": 48400
+      "hookStartMs": 48400,
+      "releaseYear": 2005
     },
     {
       "id": "paramore-ain-t-it-fun",
@@ -15085,7 +15294,8 @@
       "artwork": null,
       "album": "Paramore",
       "spotifyUrl": "https://open.spotify.com/track/1j8z4TTjJ1YOdoFEDwJTQa",
-      "hookStartMs": 47200
+      "hookStartMs": 47200,
+      "releaseYear": 2013
     },
     {
       "id": "paramore-decode",
@@ -15117,7 +15327,8 @@
       "album": "Decode",
       "spotifyUrl": "https://open.spotify.com/track/1ZLtE9tSJdaUiIJ9YoKHQe",
       "hookStartMs": 51800,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2008
     },
     {
       "id": "charli-xcx-boom-clap",
@@ -15150,7 +15361,8 @@
       "spotifyUrl": "https://open.spotify.com/track/0Y1MWB026LYxGvhq4EcMiC",
       "hookStartMs": 34000,
       "spotifyDurationMs": 170000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2014
     },
     {
       "id": "travie-mccoy-billionaire",
@@ -15208,7 +15420,8 @@
       "artwork": null,
       "album": "Waking Up",
       "spotifyUrl": "https://open.spotify.com/track/5MDMFoTpN4ZIDUjNRt3AoN",
-      "hookStartMs": 69400
+      "hookStartMs": 69400,
+      "releaseYear": 2009
     },
     {
       "id": "will-i-am-scream-shout",
@@ -15239,7 +15452,8 @@
       "artwork": null,
       "album": "#willpower",
       "spotifyUrl": "https://open.spotify.com/track/2iJuuzV8P9Yz0VSurttIV5",
-      "hookStartMs": 63600
+      "hookStartMs": 63600,
+      "releaseYear": 2012
     },
     {
       "id": "will-i-am-thatpower",
@@ -15297,7 +15511,8 @@
       "artwork": null,
       "album": "Sticks & Stones",
       "spotifyUrl": "https://open.spotify.com/track/6E11E0lT5Zy7yb6iT3y8DN",
-      "hookStartMs": 126600
+      "hookStartMs": 126600,
+      "releaseYear": 2011
     },
     {
       "id": "lupe-fiasco-the-show-goes-on",
@@ -15329,7 +15544,8 @@
       "album": "Lasers",
       "spotifyUrl": "https://open.spotify.com/track/4NTWZqvfQTlOMitlVn6tew",
       "hookStartMs": 25400,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2011
     },
     {
       "id": "metro-station-shake-it",
@@ -15363,7 +15579,8 @@
       "hookStartMs": 42800,
       "spotifyDurationMs": 180000,
       "spotifyMetadataStatus": "verified_public_page",
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2007
     },
     {
       "id": "one-direction-live-while-we-re-young",
@@ -15392,7 +15609,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 51800
+      "hookStartMs": 51800,
+      "releaseYear": 2012
     },
     {
       "id": "one-direction-best-song-ever",
@@ -15423,7 +15641,8 @@
       "artwork": null,
       "album": "Midnight Memories (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/5T7ZFtCcOgkpjxcuaeZbw0",
-      "hookStartMs": 45600
+      "hookStartMs": 45600,
+      "releaseYear": 2013
     },
     {
       "id": "one-direction-kiss-you",
@@ -15454,7 +15673,8 @@
       "artwork": null,
       "album": "Take Me Home (Expanded Edition)",
       "spotifyUrl": "https://open.spotify.com/track/4My8w8AA1JpG6E5SiAPvJL",
-      "hookStartMs": 82800
+      "hookStartMs": 82800,
+      "releaseYear": 2012
     },
     {
       "id": "one-direction-one-thing",
@@ -15485,7 +15705,8 @@
       "artwork": null,
       "album": "Up All Night",
       "spotifyUrl": "https://open.spotify.com/track/5G2c6FsfTzgYUzageCmfXY",
-      "hookStartMs": 50000
+      "hookStartMs": 50000,
+      "releaseYear": 2011
     },
     {
       "id": "demi-lovato-really-don-t-care",
@@ -15543,7 +15764,8 @@
       "artwork": null,
       "album": "Unbroken",
       "spotifyUrl": "https://open.spotify.com/track/3sP3c86WFjOzHHnbhhZcLA",
-      "hookStartMs": 52400
+      "hookStartMs": 52400,
+      "releaseYear": 2011
     },
     {
       "id": "miley-cyrus-7-things",
@@ -15575,7 +15797,8 @@
       "album": "Breakout",
       "spotifyUrl": "https://open.spotify.com/track/5ecZWU5uQOiCVSnPxBZNmT",
       "hookStartMs": 61000,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2008
     },
     {
       "id": "miley-cyrus-see-you-again",
@@ -15606,7 +15829,8 @@
       "artwork": null,
       "album": "Meet Miley Cyrus",
       "spotifyUrl": "https://open.spotify.com/track/3AjyOYxBv8bByfBtG5o9dP",
-      "hookStartMs": 32800
+      "hookStartMs": 32800,
+      "releaseYear": 2007
     },
     {
       "id": "selena-gomez-naturally",
@@ -15635,7 +15859,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 51600
+      "hookStartMs": 51600,
+      "releaseYear": 2009
     },
     {
       "id": "selena-gomez-who-says",
@@ -15695,7 +15920,8 @@
       "artwork": null,
       "album": "Stars Dance (Bonus Track Version)",
       "spotifyUrl": "https://open.spotify.com/track/6LoQHIo74tOzQ8EsLEkhgF",
-      "hookStartMs": 14800
+      "hookStartMs": 14800,
+      "releaseYear": 2013
     },
     {
       "id": "miley-cyrus-can-t-be-tamed",
@@ -15726,7 +15952,8 @@
       "artwork": null,
       "album": "Can't Be Tamed",
       "spotifyUrl": "https://open.spotify.com/track/2r6DdaSbkbwoPzuK6NjLPn",
-      "hookStartMs": 90000
+      "hookStartMs": 90000,
+      "releaseYear": 2010
     },
     {
       "id": "justin-bieber-never-say-never",
@@ -15784,7 +16011,8 @@
       "artwork": null,
       "album": "My World 2.0",
       "spotifyUrl": "https://open.spotify.com/track/3rLIv187BhjyweFe89SgLn",
-      "hookStartMs": 49000
+      "hookStartMs": 49000,
+      "releaseYear": 2010
     },
     {
       "id": "justin-bieber-as-long-as-you-love-me",
@@ -15842,7 +16070,8 @@
       "artwork": null,
       "album": "Pink Friday ... Roman Reloaded",
       "spotifyUrl": "https://open.spotify.com/track/0LohatbcUXRauoeMlR1jnS",
-      "hookStartMs": 38400
+      "hookStartMs": 38400,
+      "releaseYear": 2012
     },
     {
       "id": "don-toliver-e85",
@@ -15873,7 +16102,8 @@
       "artwork": null,
       "album": "OCTANE",
       "spotifyUrl": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ",
-      "hookStartMs": 50000
+      "hookStartMs": 50000,
+      "releaseYear": 2026
     },
     {
       "id": "bryson-tiller-right-my-wrongs",
@@ -15904,7 +16134,8 @@
       "artwork": null,
       "album": "T R A P S O U L",
       "spotifyUrl": "https://open.spotify.com/track/5rgrBsAFYMun6yhtnLKRPz",
-      "hookStartMs": 56400
+      "hookStartMs": 56400,
+      "releaseYear": 2015
     },
     {
       "id": "miguel-come-through-and-chill",
@@ -15935,7 +16166,8 @@
       "artwork": null,
       "album": "War & Leisure",
       "spotifyUrl": "https://open.spotify.com/track/1m8WpLYXEiNVZchsWEcCSy",
-      "hookStartMs": 33400
+      "hookStartMs": 33400,
+      "releaseYear": 2017
     },
     {
       "id": "miguel-sky-walker",
@@ -15966,7 +16198,8 @@
       "artwork": null,
       "album": "War & Leisure",
       "spotifyUrl": "https://open.spotify.com/track/5WoaF1B5XIEnWfmb5NZikf",
-      "hookStartMs": 114200
+      "hookStartMs": 114200,
+      "releaseYear": 2017
     },
     {
       "id": "brent-faiyaz-poison",
@@ -15998,7 +16231,8 @@
       "album": "Poison",
       "spotifyUrl": "https://open.spotify.com/track/5NijSs5dAwaIybq1GaRTIe",
       "hookStartMs": 37200,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2016
     },
     {
       "id": "brent-faiyaz-been-away",
@@ -16089,7 +16323,8 @@
       "artwork": null,
       "album": "Damage",
       "spotifyUrl": "https://open.spotify.com/track/0KS2h61pHQ4WmOwruD7uxD",
-      "hookStartMs": 34200
+      "hookStartMs": 34200,
+      "releaseYear": 2020
     },
     {
       "id": "h-e-r-focus",
@@ -16121,7 +16356,8 @@
       "album": "H.E.R.",
       "spotifyUrl": "https://open.spotify.com/track/3tZs3nVjySLbL320lP4mvs",
       "hookStartMs": 37200,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2016
     },
     {
       "id": "h-e-r-could-ve-been",
@@ -16153,7 +16389,8 @@
       "album": "I Used To Know Her",
       "spotifyUrl": "https://open.spotify.com/track/6oEVnWKgPqIEPc53OYDNqG",
       "hookStartMs": 57400,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2018
     },
     {
       "id": "masego-tadow",
@@ -16184,7 +16421,8 @@
       "artwork": null,
       "album": "Lady Lady",
       "spotifyUrl": "https://open.spotify.com/track/6FMMd1fixOMmhplCevpjL7",
-      "hookStartMs": 54400
+      "hookStartMs": 54400,
+      "releaseYear": 2017
     },
     {
       "id": "masego-mystery-lady",
@@ -16250,7 +16488,8 @@
       "artwork": null,
       "album": "The Prelude",
       "spotifyUrl": "https://open.spotify.com/track/0ri0Han4IRJhzvERHOZTMr",
-      "hookStartMs": 43600
+      "hookStartMs": 43600,
+      "releaseYear": 2020
     },
     {
       "id": "ella-mai-boo-d-up",
@@ -16281,7 +16520,8 @@
       "artwork": null,
       "album": "Ella Mai",
       "spotifyUrl": "https://open.spotify.com/track/4squZv12LD9M8ooJfoVgZS",
-      "hookStartMs": 37800
+      "hookStartMs": 37800,
+      "releaseYear": 2017
     },
     {
       "id": "tamia-so-into-you",
@@ -16312,7 +16552,8 @@
       "artwork": null,
       "album": "Tamia",
       "spotifyUrl": "https://open.spotify.com/track/3c6afiysmB7OnxQzzSqRfD",
-      "hookStartMs": 72200
+      "hookStartMs": 72200,
+      "releaseYear": 1998
     },
     {
       "id": "partynextdoor-recognize",
@@ -16370,7 +16611,8 @@
       "artwork": null,
       "album": "PARTYNEXTDOOR TWO",
       "spotifyUrl": "https://open.spotify.com/track/3JEJwjqLkg2Jbau5922CAb",
-      "hookStartMs": 15000
+      "hookStartMs": 15000,
+      "releaseYear": 2014
     },
     {
       "id": "tory-lanez-luv",
@@ -16403,7 +16645,8 @@
       "spotifyUrl": "https://open.spotify.com/track/16Ah4QqH4mgYVXqfC4mdSd",
       "hookStartMs": 74400,
       "spotifyDurationMs": 229000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2016
     },
     {
       "id": "kaash-paige-love-songs",
@@ -16434,7 +16677,8 @@
       "artwork": null,
       "album": "420 Hits: Kaash Paige",
       "spotifyUrl": "https://open.spotify.com/track/0XjBXsgNpvIMAOTkDAlDkE",
-      "hookStartMs": 87000
+      "hookStartMs": 87000,
+      "releaseYear": 2018
     },
     {
       "id": "don-toliver-cardigan",
@@ -16466,7 +16710,8 @@
       "album": "Heaven Or Hell",
       "spotifyUrl": "https://open.spotify.com/track/0Li1OuXXfi7950ilZUFGkF",
       "hookStartMs": 31600,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2020
     },
     {
       "id": "don-toliver-after-party",
@@ -16530,7 +16775,8 @@
       "artwork": null,
       "album": "Life of a DON",
       "spotifyUrl": "https://open.spotify.com/track/7iC56CDz8miPDKaH0OEIqS",
-      "hookStartMs": 46000
+      "hookStartMs": 46000,
+      "releaseYear": 2021
     },
     {
       "id": "internet-money-lemonade",
@@ -16616,7 +16862,8 @@
       "album": "In Tongues (Deluxe)",
       "spotifyUrl": "https://open.spotify.com/track/3Y3KY9Apoeet0mYKM5QySi",
       "hookStartMs": 64600,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2016
     },
     {
       "id": "don-toliver-private-landing",
@@ -16706,7 +16953,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 78000
+      "hookStartMs": 78000,
+      "releaseYear": 1993
     },
     {
       "id": "macklemore-good-old-days",
@@ -16760,7 +17008,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 131600
+      "hookStartMs": 131600,
+      "releaseYear": 2013
     },
     {
       "id": "mgmt-little-dark-age",
@@ -16789,7 +17038,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 66200
+      "hookStartMs": 66200,
+      "releaseYear": 2017
     },
     {
       "id": "kesha-take-it-off",
@@ -16818,7 +17068,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 48000
+      "hookStartMs": 48000,
+      "releaseYear": 2010
     },
     {
       "id": "kesha-blow",
@@ -16848,7 +17099,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 122200,
-      "clueGainDb": 3
+      "clueGainDb": 3,
+      "releaseYear": 2010
     },
     {
       "id": "kesha-we-r-who-we-r",
@@ -16878,7 +17130,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 55600,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2010
     },
     {
       "id": "jason-derulo-ridin-solo",
@@ -16908,7 +17161,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 28600,
-      "clueGainDb": 5
+      "clueGainDb": 5,
+      "releaseYear": 2010
     },
     {
       "id": "jason-derulo-in-my-head",
@@ -16938,7 +17192,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 50400,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2009
     },
     {
       "id": "onerepublic-secrets",
@@ -16967,7 +17222,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 58000
+      "hookStartMs": 58000,
+      "releaseYear": 2009
     },
     {
       "id": "usher-omg",
@@ -17046,7 +17302,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 167000
+      "hookStartMs": 167000,
+      "releaseYear": 2022
     },
     {
       "id": "black-eyed-peas-boom-boom-pow",
@@ -17076,7 +17333,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 130400,
-      "album": "The Beginning & The Best of The E.N.D."
+      "album": "The Beginning & The Best of The E.N.D.",
+      "releaseYear": 2009
     },
     {
       "id": "black-eyed-peas-just-can-t-get-enough",
@@ -17109,7 +17367,8 @@
       "hookStartMs": 35200,
       "album": "The Beginning",
       "spotifyDurationMs": 219000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2010
     },
     {
       "id": "black-eyed-peas-the-time-dirty-bit",
@@ -17139,7 +17398,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 59800,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2010
     },
     {
       "id": "far-east-movement-rocketeer",
@@ -17169,7 +17429,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 59600
+      "hookStartMs": 59600,
+      "releaseYear": 2010
     },
     {
       "id": "dnce-cake-by-the-ocean",
@@ -17198,7 +17459,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 42400
+      "hookStartMs": 42400,
+      "releaseYear": 2015
     },
     {
       "id": "rixton-me-and-my-broken-heart",
@@ -17253,7 +17515,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 87200,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2011
     },
     {
       "id": "enrique-iglesias-i-like-it",
@@ -17282,7 +17545,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 52400
+      "hookStartMs": 52400,
+      "releaseYear": 2010
     },
     {
       "id": "lmfao-sexy-and-i-know-it",
@@ -17311,7 +17575,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 139000
+      "hookStartMs": 139000,
+      "releaseYear": 2011
     },
     {
       "id": "pitbull-hotel-room-service",
@@ -17340,7 +17605,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 55000
+      "hookStartMs": 55000,
+      "releaseYear": 2009
     },
     {
       "id": "pitbull-rain-over-me",
@@ -17419,7 +17685,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 38600
+      "hookStartMs": 38600,
+      "releaseYear": 2009
     },
     {
       "id": "chris-brown-yeah-3x",
@@ -17448,7 +17715,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 29600
+      "hookStartMs": 29600,
+      "releaseYear": 2010
     },
     {
       "id": "chris-brown-turn-up-the-music",
@@ -17477,7 +17745,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 6600
+      "hookStartMs": 6600,
+      "releaseYear": 2012
     },
     {
       "id": "3oh-3-don-t-trust-me",
@@ -17506,7 +17775,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 28800
+      "hookStartMs": 28800,
+      "releaseYear": 2008
     },
     {
       "id": "kid-ink-show-me",
@@ -17560,7 +17830,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 28800
+      "hookStartMs": 28800,
+      "releaseYear": 2014
     },
     {
       "id": "omarion-post-to-be",
@@ -17615,7 +17886,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 63800,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2014
     },
     {
       "id": "jeremih-birthday-sex",
@@ -17644,7 +17916,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 44400
+      "hookStartMs": 44400,
+      "releaseYear": 2009
     },
     {
       "id": "jeremih-down-on-me",
@@ -17752,7 +18025,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 25600
+      "hookStartMs": 25600,
+      "releaseYear": 2014
     },
     {
       "id": "rae-sremmurd-come-get-her",
@@ -17782,7 +18056,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 41000,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2015
     },
     {
       "id": "rae-sremmurd-swang",
@@ -17812,7 +18087,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 40600,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2016
     },
     {
       "id": "kent-jones-don-t-mind",
@@ -17841,7 +18117,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 88600
+      "hookStartMs": 88600,
+      "releaseYear": 2016
     },
     {
       "id": "drake-controlla",
@@ -17870,7 +18147,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 39000
+      "hookStartMs": 39000,
+      "releaseYear": 2016
     },
     {
       "id": "drake-crew-love",
@@ -17899,7 +18177,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 114600
+      "hookStartMs": 114600,
+      "releaseYear": 2011
     },
     {
       "id": "drake-chicago-freestyle",
@@ -17958,7 +18237,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 92800,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2014
     },
     {
       "id": "j-cole-power-trip",
@@ -17988,7 +18268,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 77800,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2013
     },
     {
       "id": "j-cole-she-knows",
@@ -18018,7 +18299,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 34600,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2013
     },
     {
       "id": "lil-uzi-vert-money-longer",
@@ -18047,7 +18329,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 32600
+      "hookStartMs": 32600,
+      "releaseYear": 2016
     },
     {
       "id": "playboi-carti-shoota",
@@ -18128,7 +18411,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 73400,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2017
     },
     {
       "id": "jhen-aiko-the-worst",
@@ -18158,7 +18442,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 19000,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2013
     },
     {
       "id": "jhen-aiko-bed-peace",
@@ -18188,7 +18473,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 31600,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2013
     },
     {
       "id": "ari-lennox-shea-butter-baby",
@@ -18247,7 +18533,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 15800,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2020
     },
     {
       "id": "jhen-aiko-while-we-re-young",
@@ -18276,7 +18563,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 47400
+      "hookStartMs": 47400,
+      "releaseYear": 2017
     },
     {
       "id": "jeremih-oui",
@@ -18305,7 +18593,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 38000
+      "hookStartMs": 38000,
+      "releaseYear": 2015
     },
     {
       "id": "jeremih-planez",
@@ -18335,7 +18624,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 32000,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2015
     },
     {
       "id": "tyler-best-interest",
@@ -18485,7 +18775,8 @@
       "artwork": null,
       "album": "Die On This Hill - Single",
       "hookStartMs": 114600,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2025
     },
     {
       "id": "ariana-grande-hate-that-i-made-you-love-me",
@@ -18515,7 +18806,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 61600,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2026
     },
     {
       "id": "rihanna-breakin-dishes",
@@ -18544,7 +18836,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 75000
+      "hookStartMs": 75000,
+      "releaseYear": 2007
     },
     {
       "id": "rihanna-rude-boy",
@@ -18573,7 +18866,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 142200
+      "hookStartMs": 142200,
+      "releaseYear": 2009
     },
     {
       "id": "timbaland-give-it-to-me",
@@ -18603,7 +18897,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 67800,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2007
     },
     {
       "id": "black-eyed-peas-don-t-phunk-with-my-heart",
@@ -18632,7 +18927,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 178600
+      "hookStartMs": 178600,
+      "releaseYear": 2005
     },
     {
       "id": "olivia-rodrigo-drop-dead",
@@ -18662,7 +18958,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 65200,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2026
     },
     {
       "id": "bruno-mars-i-just-might",
@@ -18691,7 +18988,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 66000
+      "hookStartMs": 66000,
+      "releaseYear": 2026
     },
     {
       "id": "drake-janice-stfu",
@@ -18721,7 +19019,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 44600,
-      "album": "ICEMAN"
+      "album": "ICEMAN",
+      "releaseYear": 2026
     },
     {
       "id": "tame-impala-dracula",
@@ -18754,7 +19053,8 @@
       "hookStartMs": 51200,
       "album": "Dracula (with JENNIE) + Instrumental",
       "spotifyDurationMs": 205000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2025
     },
     {
       "id": "mac-miller-cinderella",
@@ -18837,7 +19137,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 100800
+      "hookStartMs": 100800,
+      "releaseYear": 2020
     },
     {
       "id": "wizthemc-show-me-love",
@@ -18895,7 +19196,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 18400
+      "hookStartMs": 18400,
+      "releaseYear": 2025
     },
     {
       "id": "tyler-darling-i",
@@ -18929,7 +19231,8 @@
       "spotifyUrl": "https://open.spotify.com/track/3KG0gXHZMtcqtqQLQBLRXV",
       "hookStartMs": 48200,
       "spotifyDurationMs": 253000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2024
     },
     {
       "id": "lewis-capaldi-someone-you-loved",
@@ -18958,7 +19261,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 47600
+      "hookStartMs": 47600,
+      "releaseYear": 2018
     },
     {
       "id": "post-malone-sunflower",
@@ -18976,7 +19280,8 @@
       "easeScore": null,
       "proposedDifficulty": null,
       "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
+      "reviewStatus": "rejected",
+      "rejectionReason": "Duplicate/incomplete-artist copy of post-malone-swae-lee-sunflower.",
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
@@ -19019,7 +19324,8 @@
       "artwork": null,
       "album": "÷ (Deluxe)",
       "hookStartMs": 162000,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2017
     },
     {
       "id": "the-kid-laroi-stay-with-justin-bieber",
@@ -19074,7 +19380,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 58200,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2013
     },
     {
       "id": "billie-eilish-lovely-with-khalid",
@@ -19094,7 +19401,8 @@
       "easeScore": null,
       "proposedDifficulty": null,
       "difficultyOverrideReason": null,
-      "reviewStatus": "needs_intro_review",
+      "reviewStatus": "rejected",
+      "rejectionReason": "Duplicate media with incorrect compilation metadata. Keep billie-eilish-khalid-lovely.",
       "media": {
         "clueLengthMs": 30000,
         "onsetPadMs": 30,
@@ -19138,7 +19446,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 44200,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2013
     },
     {
       "id": "the-chainsmokers-something-just-like-this",
@@ -19202,7 +19511,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 105000
+      "hookStartMs": 105000,
+      "releaseYear": 2016
     },
     {
       "id": "the-police-every-breath-you-take",
@@ -19231,7 +19541,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 81000
+      "hookStartMs": 81000,
+      "releaseYear": 1983
     },
     {
       "id": "onerepublic-counting-stars",
@@ -19261,7 +19572,8 @@
       "audio": null,
       "artwork": null,
       "album": "Native (Deluxe)",
-      "hookStartMs": 30800
+      "hookStartMs": 30800,
+      "releaseYear": 2013
     },
     {
       "id": "hozier-take-me-to-church",
@@ -19290,7 +19602,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 74000
+      "hookStartMs": 74000,
+      "releaseYear": 2013
     },
     {
       "id": "tones-and-i-dance-monkey",
@@ -19320,7 +19633,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 130600,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2019
     },
     {
       "id": "ed-sheeran-photograph",
@@ -19350,7 +19664,8 @@
       "audio": null,
       "artwork": null,
       "album": "x (Wembley Edition)",
-      "hookStartMs": 192600
+      "hookStartMs": 192600,
+      "releaseYear": 2014
     },
     {
       "id": "post-malone-rockstar-feat-21-savage",
@@ -19410,7 +19725,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 5400
+      "hookStartMs": 5400,
+      "releaseYear": 2019
     },
     {
       "id": "macklemore-can-t-hold-us-feat-ray-dalton",
@@ -19469,7 +19785,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 66200
+      "hookStartMs": 66200,
+      "releaseYear": 2010
     },
     {
       "id": "the-weeknd-die-for-you",
@@ -19498,7 +19815,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 85200
+      "hookStartMs": 85200,
+      "releaseYear": 2016
     },
     {
       "id": "bruno-mars-locked-out-of-heaven",
@@ -19527,7 +19845,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 62000
+      "hookStartMs": 62000,
+      "releaseYear": 2012
     },
     {
       "id": "justin-bieber-love-yourself",
@@ -19556,7 +19875,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 4200
+      "hookStartMs": 4200,
+      "releaseYear": 2015
     },
     {
       "id": "linkin-park-in-the-end",
@@ -19585,7 +19905,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 45400
+      "hookStartMs": 45400,
+      "releaseYear": 2000
     },
     {
       "id": "bruno-mars-when-i-was-your-man",
@@ -19615,7 +19936,8 @@
       "audio": null,
       "artwork": null,
       "album": "Unorthodox Jukebox",
-      "hookStartMs": 49600
+      "hookStartMs": 49600,
+      "releaseYear": 2012
     },
     {
       "id": "travis-scott-goosebumps",
@@ -19645,7 +19967,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 49400,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2016
     },
     {
       "id": "juice-wrld-lucid-dreams",
@@ -19675,7 +19998,8 @@
       "audio": null,
       "artwork": null,
       "album": "Goodbye & Good Riddance (Anniversary Edition)",
-      "hookStartMs": 24400
+      "hookStartMs": 24400,
+      "releaseYear": 2017
     },
     {
       "id": "ed-sheeran-thinking-out-loud",
@@ -19704,7 +20028,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 48000
+      "hookStartMs": 48000,
+      "releaseYear": 2014
     },
     {
       "id": "avicii-wake-me-up",
@@ -19733,7 +20058,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 46600
+      "hookStartMs": 46600,
+      "releaseYear": 2013
     },
     {
       "id": "lady-gaga-shallow",
@@ -19791,7 +20117,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 28600
+      "hookStartMs": 28600,
+      "releaseYear": 2018
     },
     {
       "id": "dj-snake-let-me-love-you",
@@ -19820,7 +20147,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 31400
+      "hookStartMs": 31400,
+      "releaseYear": 2016
     },
     {
       "id": "the-weeknd-the-hills",
@@ -19849,7 +20177,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 43800
+      "hookStartMs": 43800,
+      "releaseYear": 2015
     },
     {
       "id": "twenty-one-pilots-stressed-out",
@@ -19878,7 +20207,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 60800
+      "hookStartMs": 60800,
+      "releaseYear": 2015
     },
     {
       "id": "imagine-dragons-demons",
@@ -19907,7 +20237,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 43000
+      "hookStartMs": 43000,
+      "releaseYear": 2012
     },
     {
       "id": "imagine-dragons-thunder",
@@ -19936,7 +20267,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 25000
+      "hookStartMs": 25000,
+      "releaseYear": 2017
     },
     {
       "id": "kendrick-lamar-all-the-stars-with-sza",
@@ -20000,7 +20332,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 96600
+      "hookStartMs": 96600,
+      "releaseYear": 2013
     },
     {
       "id": "tyler-see-you-again-feat-kali-uchis",
@@ -20055,7 +20388,8 @@
       "audio": null,
       "artwork": null,
       "album": "2014 Forest Hills Drive",
-      "hookStartMs": 41600
+      "hookStartMs": 41600,
+      "releaseYear": 2014
     },
     {
       "id": "justin-bieber-sorry",
@@ -20085,7 +20419,8 @@
       "audio": null,
       "artwork": null,
       "album": "Purpose (Deluxe)",
-      "hookStartMs": 61600
+      "hookStartMs": 61600,
+      "releaseYear": 2015
     },
     {
       "id": "kendrick-lamar-humble",
@@ -20114,7 +20449,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 59600
+      "hookStartMs": 59600,
+      "releaseYear": 2017
     },
     {
       "id": "french-montana-unforgettable",
@@ -20143,7 +20479,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 48600
+      "hookStartMs": 48600,
+      "releaseYear": 2017
     },
     {
       "id": "eminem-lose-yourself",
@@ -20173,7 +20510,8 @@
       "audio": null,
       "artwork": null,
       "album": "8 Mile (Music from and Inspired By the Motion Picture)",
-      "hookStartMs": 95800
+      "hookStartMs": 95800,
+      "releaseYear": 2002
     },
     {
       "id": "miley-cyrus-flowers",
@@ -20202,7 +20540,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 52200
+      "hookStartMs": 52200,
+      "releaseYear": 2023
     },
     {
       "id": "shawn-mendes-treat-you-better",
@@ -20231,7 +20570,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 34200
+      "hookStartMs": 34200,
+      "releaseYear": 2016
     },
     {
       "id": "coldplay-the-scientist",
@@ -20261,7 +20601,8 @@
       "audio": null,
       "artwork": null,
       "album": "A Rush of Blood to the Head",
-      "hookStartMs": 125600
+      "hookStartMs": 125600,
+      "releaseYear": 2002
     },
     {
       "id": "olivia-rodrigo-drivers-license",
@@ -20291,7 +20632,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 143400,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2021
     },
     {
       "id": "arctic-monkeys-505",
@@ -20370,7 +20712,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 41400
+      "hookStartMs": 41400,
+      "releaseYear": 2019
     },
     {
       "id": "passenger-let-her-go",
@@ -20400,7 +20743,8 @@
       "audio": null,
       "artwork": null,
       "album": "All the Little Lights",
-      "hookStartMs": 105800
+      "hookStartMs": 105800,
+      "releaseYear": 2012
     },
     {
       "id": "shawn-mendes-there-s-nothing-holdin-me-back",
@@ -20429,7 +20773,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 54200
+      "hookStartMs": 54200,
+      "releaseYear": 2016
     },
     {
       "id": "linkin-park-numb",
@@ -20459,7 +20804,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 44600,
-      "clueGainDb": 12
+      "clueGainDb": 12,
+      "releaseYear": 2003
     },
     {
       "id": "the-weeknd-save-your-tears",
@@ -20488,7 +20834,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 23600
+      "hookStartMs": 23600,
+      "releaseYear": 2020
     },
     {
       "id": "elton-john-cold-heart",
@@ -20520,7 +20867,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 143000,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2021
     },
     {
       "id": "guns-n-roses-sweet-child-o-mine",
@@ -20550,7 +20898,8 @@
       "audio": null,
       "artwork": null,
       "album": "Appetite for Destruction",
-      "hookStartMs": 28600
+      "hookStartMs": 28600,
+      "releaseYear": 1987
     },
     {
       "id": "calvin-harris-one-kiss-with-dua-lipa",
@@ -20670,7 +21019,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 84800
+      "hookStartMs": 84800,
+      "releaseYear": 1978
     },
     {
       "id": "mark-ronson-uptown-funk-feat-bruno-mars",
@@ -20730,7 +21080,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 28000
+      "hookStartMs": 28000,
+      "releaseYear": 2021
     },
     {
       "id": "the-weeknd-one-of-the-girls-with-jennie-lily-rose-depp",
@@ -20829,7 +21180,8 @@
       "audio": null,
       "artwork": null,
       "album": "21",
-      "hookStartMs": 74800
+      "hookStartMs": 74800,
+      "releaseYear": 2011
     },
     {
       "id": "charlie-puth-we-don-t-talk-anymore-feat-selena-gomez",
@@ -20858,7 +21210,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 123400
+      "hookStartMs": 123400,
+      "releaseYear": 2016
     },
     {
       "id": "travis-scott-sicko-mode",
@@ -20888,7 +21241,8 @@
       "audio": null,
       "artwork": null,
       "album": "ASTROWORLD",
-      "hookStartMs": 63400
+      "hookStartMs": 63400,
+      "releaseYear": 2018
     },
     {
       "id": "one-direction-night-changes",
@@ -20918,7 +21272,8 @@
       "audio": null,
       "artwork": null,
       "album": "FOUR (Deluxe)",
-      "hookStartMs": 59200
+      "hookStartMs": 59200,
+      "releaseYear": 2014
     },
     {
       "id": "dua-lipa-new-rules",
@@ -20948,7 +21303,8 @@
       "audio": null,
       "artwork": null,
       "album": "Dua Lipa (Deluxe)",
-      "hookStartMs": 62000
+      "hookStartMs": 62000,
+      "releaseYear": 2017
     },
     {
       "id": "keane-somewhere-only-we-know",
@@ -20981,7 +21337,8 @@
       "hookStartMs": 116200,
       "album": "Hopes And Fears",
       "spotifyDurationMs": 236000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2004
     },
     {
       "id": "xxxtentacion-sad",
@@ -21041,7 +21398,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 34400,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2017
     },
     {
       "id": "sam-smith-too-good-at-goodbyes",
@@ -21071,7 +21429,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Thrill of It All (Special Video Edition)",
-      "hookStartMs": 144800
+      "hookStartMs": 144800,
+      "releaseYear": 2017
     },
     {
       "id": "rihanna-we-found-love",
@@ -21100,7 +21459,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 81600
+      "hookStartMs": 81600,
+      "releaseYear": 2011
     },
     {
       "id": "eminem-till-i-collapse",
@@ -21160,7 +21520,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 42000
+      "hookStartMs": 42000,
+      "releaseYear": 2018
     },
     {
       "id": "xxxtentacion-jocelyn-flores",
@@ -21218,7 +21579,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 48800
+      "hookStartMs": 48800,
+      "releaseYear": 2015
     },
     {
       "id": "eminem-mockingbird",
@@ -21247,7 +21609,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 97000
+      "hookStartMs": 97000,
+      "releaseYear": 2004
     },
     {
       "id": "charlie-puth-attention",
@@ -21277,7 +21640,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 92800,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2017
     },
     {
       "id": "maroon-5-memories",
@@ -21306,7 +21670,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 28000
+      "hookStartMs": 28000,
+      "releaseYear": 2019
     },
     {
       "id": "foster-the-people-pumped-up-kicks",
@@ -21335,7 +21700,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 67800
+      "hookStartMs": 67800,
+      "releaseYear": 2010
     },
     {
       "id": "camila-cabello-havana-feat-young-thug",
@@ -21399,7 +21765,8 @@
       "audio": null,
       "artwork": null,
       "album": "30",
-      "hookStartMs": 47000
+      "hookStartMs": 47000,
+      "releaseYear": 2021
     },
     {
       "id": "eminem-the-real-slim-shady",
@@ -21463,7 +21830,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 130200
+      "hookStartMs": 130200,
+      "releaseYear": 2019
     },
     {
       "id": "gotye-somebody-that-i-used-to-know",
@@ -21519,7 +21887,8 @@
       "audio": null,
       "artwork": null,
       "album": "1989 (Deluxe Edition)",
-      "hookStartMs": 56600
+      "hookStartMs": 56600,
+      "releaseYear": 2014
     },
     {
       "id": "jason-mraz-i-m-yours",
@@ -21548,7 +21917,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 107400
+      "hookStartMs": 107400,
+      "releaseYear": 2008
     },
     {
       "id": "queen-another-one-bites-the-dust",
@@ -21577,7 +21947,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 19600
+      "hookStartMs": 19600,
+      "releaseYear": 1980
     },
     {
       "id": "the-weeknd-call-out-my-name",
@@ -21606,7 +21977,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 55800
+      "hookStartMs": 55800,
+      "releaseYear": 2018
     },
     {
       "id": "mike-posner-i-took-a-pill-in-ibiza",
@@ -21635,7 +22007,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 57200
+      "hookStartMs": 57200,
+      "releaseYear": 2015
     },
     {
       "id": "creedence-clearwater-revival-have-you-ever-seen-the-rain",
@@ -21664,7 +22037,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 23000
+      "hookStartMs": 23000,
+      "releaseYear": 1968
     },
     {
       "id": "wiz-khalifa-see-you-again-feat-charlie-puth",
@@ -21694,7 +22068,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 39400,
-      "clueGainDb": 10
+      "clueGainDb": 10,
+      "releaseYear": 2015
     },
     {
       "id": "alan-walker-faded",
@@ -21724,7 +22099,8 @@
       "audio": null,
       "artwork": null,
       "album": "Faded - EP",
-      "hookStartMs": 54000
+      "hookStartMs": 54000,
+      "releaseYear": 2015
     },
     {
       "id": "maroon-5-maps",
@@ -21753,7 +22129,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 39800
+      "hookStartMs": 39800,
+      "releaseYear": 2014
     },
     {
       "id": "the-chainsmokers-don-t-let-me-down",
@@ -21874,7 +22251,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 67000
+      "hookStartMs": 67000,
+      "releaseYear": 2010
     },
     {
       "id": "avicii-the-nights",
@@ -21904,7 +22282,8 @@
       "audio": null,
       "artwork": null,
       "album": "The Days / Nights - EP",
-      "hookStartMs": 23600
+      "hookStartMs": 23600,
+      "releaseYear": 2014
     },
     {
       "id": "roddy-ricch-the-box",
@@ -21964,7 +22343,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 49000,
-      "clueGainDb": 8
+      "clueGainDb": 8,
+      "releaseYear": 2005
     },
     {
       "id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
@@ -21997,7 +22377,8 @@
       "hookStartMs": 45200,
       "album": "AM",
       "spotifyDurationMs": 161000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 2013
     },
     {
       "id": "walk-the-moon-shut-up-and-dance",
@@ -22026,7 +22407,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 45800
+      "hookStartMs": 45800,
+      "releaseYear": 2014
     },
     {
       "id": "the-walters-i-love-you-so",
@@ -22056,7 +22438,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 104000,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2014
     },
     {
       "id": "conan-gray-heather",
@@ -22086,7 +22469,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 65200,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 2020
     },
     {
       "id": "post-malone-congratulations",
@@ -22116,7 +22500,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 32600,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2016
     },
     {
       "id": "adele-set-fire-to-the-rain",
@@ -22145,7 +22530,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 61600
+      "hookStartMs": 61600,
+      "releaseYear": 2011
     },
     {
       "id": "lana-del-rey-summertime-sadness",
@@ -22174,7 +22560,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 73800
+      "hookStartMs": 73800,
+      "releaseYear": 2012
     },
     {
       "id": "olivia-rodrigo-traitor",
@@ -22204,7 +22591,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 66200,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2021
     },
     {
       "id": "maroon-5-sugar",
@@ -22233,7 +22621,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 131200
+      "hookStartMs": 131200,
+      "releaseYear": 2014
     },
     {
       "id": "ruth-b-dandelions",
@@ -22262,7 +22651,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 53800
+      "hookStartMs": 53800,
+      "releaseYear": 2017
     },
     {
       "id": "lil-nas-x-industry-baby-feat-jack-harlow",
@@ -22323,7 +22713,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 103600,
-      "clueGainDb": 6
+      "clueGainDb": 6,
+      "releaseYear": 1979
     },
     {
       "id": "lauv-i-like-me-better",
@@ -22352,7 +22743,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 49800
+      "hookStartMs": 49800,
+      "releaseYear": 2017
     },
     {
       "id": "onerepublic-i-ain-t-worried",
@@ -22381,7 +22773,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 19800
+      "hookStartMs": 19800,
+      "releaseYear": 2022
     },
     {
       "id": "david-guetta-titanium-feat-sia",
@@ -22410,7 +22803,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 29600
+      "hookStartMs": 29600,
+      "releaseYear": 2011
     },
     {
       "id": "olivia-rodrigo-deja-vu",
@@ -22439,7 +22833,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 141200
+      "hookStartMs": 141200,
+      "releaseYear": 2021
     },
     {
       "id": "travis-scott-highest-in-the-room",
@@ -22468,7 +22863,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 22400
+      "hookStartMs": 22400,
+      "releaseYear": 2019
     },
     {
       "id": "justin-bieber-ghost",
@@ -22498,7 +22894,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 63200,
-      "album": "Justice"
+      "album": "Justice",
+      "releaseYear": 2021
     },
     {
       "id": "christina-perri-a-thousand-years",
@@ -22527,7 +22924,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 98600
+      "hookStartMs": 98600,
+      "releaseYear": 2011
     },
     {
       "id": "calvin-harris-this-is-what-you-came-for",
@@ -22586,7 +22984,8 @@
       "audio": null,
       "artwork": null,
       "album": "1000 Forms of Fear",
-      "hookStartMs": 41000
+      "hookStartMs": 41000,
+      "releaseYear": 2014
     },
     {
       "id": "post-malone-better-now",
@@ -22615,7 +23014,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 26600
+      "hookStartMs": 26600,
+      "releaseYear": 2018
     },
     {
       "id": "bon-jovi-livin-on-a-prayer",
@@ -22645,7 +23045,8 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 86000,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 1986
     },
     {
       "id": "tate-mcrae-greedy",
@@ -22674,7 +23075,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 22600
+      "hookStartMs": 22600,
+      "releaseYear": 2023
     },
     {
       "id": "drake-passionfruit",
@@ -22703,7 +23105,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 116200
+      "hookStartMs": 116200,
+      "releaseYear": 2017
     },
     {
       "id": "ac-dc-thunderstruck",
@@ -22732,7 +23135,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 144200
+      "hookStartMs": 144200,
+      "releaseYear": 1990
     },
     {
       "id": "ariana-grande-thank-u-next",
@@ -22761,7 +23165,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 52000
+      "hookStartMs": 52000,
+      "releaseYear": 2018
     },
     {
       "id": "eminem-love-the-way-you-lie",
@@ -22790,7 +23195,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 46600
+      "hookStartMs": 46600,
+      "releaseYear": 2010
     },
     {
       "id": "wham-last-christmas",
@@ -22824,7 +23230,8 @@
       "clueGainDb": 6,
       "album": "LAST CHRISTMAS",
       "spotifyDurationMs": 263000,
-      "spotifyMetadataStatus": "verified_public_page"
+      "spotifyMetadataStatus": "verified_public_page",
+      "releaseYear": 1984
     },
     {
       "id": "zayn-dusk-till-dawn-feat-sia",
@@ -22886,14 +23293,16 @@
       "audio": null,
       "artwork": null,
       "hookStartMs": 36000,
-      "clueGainDb": 4
+      "clueGainDb": 4,
+      "releaseYear": 2012
     },
     {
       "id": "the-weeknd-i-feel-it-coming",
       "title": "I Feel It Coming",
-      "artist": "The Weeknd",
+      "artist": "The Weeknd & Daft Punk",
       "primaryArtists": [
-        "The Weeknd"
+        "The Weeknd",
+        "Daft Punk"
       ],
       "aliases": [],
       "artistAliases": [],
@@ -22915,7 +23324,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 40400
+      "hookStartMs": 40400,
+      "releaseYear": 2016
     },
     {
       "id": "m-neskin-beggin",
@@ -22944,7 +23354,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 28600
+      "hookStartMs": 28600,
+      "releaseYear": 2017
     },
     {
       "id": "eagles-hotel-california",
@@ -22998,7 +23409,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 72000
+      "hookStartMs": 72000,
+      "releaseYear": 2016
     },
     {
       "id": "harry-styles-sign-of-the-times",
@@ -23027,7 +23439,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 79200
+      "hookStartMs": 79200,
+      "releaseYear": 2017
     },
     {
       "id": "the-white-stripes-seven-nation-army",
@@ -23057,7 +23470,8 @@
       "audio": null,
       "artwork": null,
       "album": "Elephant",
-      "hookStartMs": 118400
+      "hookStartMs": 118400,
+      "releaseYear": 2003
     },
     {
       "id": "rihanna-love-on-the-brain",
@@ -23086,7 +23500,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 73200
+      "hookStartMs": 73200,
+      "releaseYear": 2016
     },
     {
       "id": "omi-cheerleader-felix-jaehn-remix",
@@ -23115,7 +23530,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 44400
+      "hookStartMs": 44400,
+      "releaseYear": 2014
     },
     {
       "id": "the-weeknd-can-t-feel-my-face",
@@ -23144,7 +23560,8 @@
       },
       "audio": null,
       "artwork": null,
-      "hookStartMs": 82800
+      "hookStartMs": 82800,
+      "releaseYear": 2015
     },
     {
       "id": "jung-kook-seven",
@@ -24923,9 +25340,10 @@
     {
       "id": "powfu-death-bed-coffee-for-your-head",
       "title": "death bed (coffee for your head)",
-      "artist": "Powfu",
+      "artist": "Powfu feat. beabadoobee",
       "primaryArtists": [
-        "Powfu"
+        "Powfu",
+        "beabadoobee"
       ],
       "aliases": [],
       "artistAliases": [],
@@ -24955,9 +25373,9 @@
         "artworkFile": "powfu-death-bed-coffee-for-your-head.jpg",
         "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/powfu-death-bed-coffee-for-your-head.jpg?v=173906-0",
         "artworkStatus": "verified_deezer_album_art_needs_r2",
-        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/powfu-death-bed-coffee-for-your-head.mp3?v=6c70412c16be",
-        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/powfu-death-bed-coffee-for-your-head.mp3?v=e984837bd957",
-        "hostedDurationMs": 173906
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/powfu-death-bed-coffee-for-your-head.mp3?v=5a2c31a08499",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/powfu-death-bed-coffee-for-your-head.mp3?v=3635342db201",
+        "hostedDurationMs": 173333
       },
       "startAtMs": 340,
       "album": "death bed (coffee for your head)",
@@ -25617,11 +26035,12 @@
         "Sweet Dreams (Are Made Of This) - 2005 Remaster"
       ],
       "artistAliases": [],
-      "releaseYear": 2003,
+      "releaseYear": 1983,
       "genres": [
-        "unclassified"
+        "synth-pop",
+        "new wave"
       ],
-      "language": "und",
+      "language": "en",
       "bucket": "billion_anchor",
       "selectionSignals": [
         "billion_streams"
@@ -36673,7 +37092,7 @@
       ],
       "aliases": [],
       "artistAliases": [],
-      "releaseYear": 2022,
+      "releaseYear": 2011,
       "genres": [
         "unclassified"
       ],
@@ -36697,15 +37116,15 @@
       "media": {
         "audioFile": "michael-buble-it-s-beginning-to-look-a-lot-like-christmas.mp3",
         "artworkFile": "michael-buble-it-s-beginning-to-look-a-lot-like-christmas.jpg",
-        "artworkUrl": "https://cdn-images.dzcdn.net/images/cover/47f69f524f4560d5c843dfef4d70c8cd/1000x1000-000000-80-0-0.jpg",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/37/2d/6e/372d6e16-7a32-91f0-1a03-0f2d9dbe389e/093624942788.jpg/1000x1000bb.jpg",
         "artworkStatus": "verified_itunes_album_art_needs_r2"
       },
       "startAtMs": 30,
-      "album": "100 Greatest Christmas Songs Ever",
-      "itunesTrackUrl": "https://www.deezer.com/track/1934770197",
-      "itunesDurationMs": 206000,
-      "metadataStatus": "verified_deezer_search",
-      "metadataProvider": "deezer"
+      "album": "Christmas",
+      "itunesTrackUrl": "https://music.apple.com/ca/album/its-beginning-to-look-a-lot-like-christmas/669854820?i=669854831",
+      "itunesDurationMs": 207200,
+      "metadataStatus": "verified_itunes_search",
+      "metadataProvider": "itunes"
     },
     {
       "id": "jonas-blue-fast-car",
@@ -41115,6 +41534,60 @@
       "itunesDurationMs": 203000,
       "metadataStatus": "verified_deezer_search",
       "metadataProvider": "deezer"
+    },
+    {
+      "id": "meduza-becky-hill-goodboys-lose-control",
+      "title": "Lose Control",
+      "artist": "MEDUZA, Becky Hill & Goodboys",
+      "primaryArtists": [
+        "MEDUZA",
+        "Becky Hill",
+        "Goodboys"
+      ],
+      "aliases": [],
+      "artistAliases": [
+        "Meduza x Becky Hill x Goodboys"
+      ],
+      "releaseYear": 2019,
+      "genres": [
+        "dance",
+        "electronic"
+      ],
+      "language": "en",
+      "bucket": "billion_anchor",
+      "selectionSignals": [
+        "billion_streams",
+        "explicit_user_request",
+        "radio_hit"
+      ],
+      "scores": {
+        "audienceRecognition": 86,
+        "currentCirculation": 78,
+        "broaderVisibility": 88,
+        "longevity": 82
+      },
+      "familiarity": 84,
+      "introRecognition": null,
+      "easeScore": null,
+      "proposedDifficulty": null,
+      "difficultyOverrideReason": null,
+      "reviewStatus": "needs_intro_review",
+      "media": {
+        "audioFile": "meduza-becky-hill-goodboys-lose-control.mp3",
+        "artworkFile": "meduza-becky-hill-goodboys-lose-control.jpg",
+        "artworkUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/artwork/meduza-becky-hill-goodboys-lose-control.jpg?v=167927-0",
+        "artworkStatus": "verified_itunes_album_art_needs_r2",
+        "hostedClueUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/clues/meduza-becky-hill-goodboys-lose-control.mp3?v=365c00edc166",
+        "hostedFullUrl": "https://pub-c8bf6c1b7a9c4cebba767612228c207c.r2.dev/audio/full/meduza-becky-hill-goodboys-lose-control.mp3?v=7a0877fc4dd9",
+        "hostedDurationMs": 167927
+      },
+      "startAtMs": 490,
+      "album": "Lose Control - Single",
+      "spotifyUrl": "https://open.spotify.com/track/0siC5r1l07obWyc6bQMm5p",
+      "itunesTrackUrl": "https://music.apple.com/ca/album/lose-control/1481872806?i=1481872810",
+      "itunesDurationMs": 168387,
+      "metadataStatus": "verified_itunes_search",
+      "metadataProvider": "itunes"
     }
   ]
 }

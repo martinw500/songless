@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-25T18:53:46.262Z",
+  "generatedAt": "2026-08-30T17:03:04.037Z",
   "notes": "Derived waveform measurements only. Regenerate after replacing, trimming, or retiming hosted audio.",
   "songs": [
     {
@@ -10919,20 +10919,20 @@
     },
     {
       "id": "powfu-death-bed-coffee-for-your-head",
-      "bodyDb": -17.5,
+      "bodyDb": -16.9,
       "musicOnsetMs": 340,
       "clueWindowStartMs": 340,
       "clueWindowStatus": "pass",
       "clueWindowReasons": [],
       "clueAudibleSubWindows": 5,
-      "clueFirst100Db": -21.5,
-      "firstSoundMs": 340,
-      "firstAudibleMs": 340,
-      "firstStrongMs": 350,
+      "clueFirst100Db": -23.7,
+      "firstSoundMs": 0,
+      "firstAudibleMs": 0,
+      "firstStrongMs": 10,
       "firstMusicalMs": 0,
       "recommendedPlayableMs": 0,
-      "first2SecondsDb": -21.8,
-      "seconds8To15Db": -19.8
+      "first2SecondsDb": -22.5,
+      "seconds8To15Db": -18.2
     },
     {
       "id": "r-e-m-losing-my-religion",
@@ -13721,6 +13721,23 @@
       "recommendedPlayableMs": 0,
       "first2SecondsDb": -26.8,
       "seconds8To15Db": -19.7
+    },
+    {
+      "id": "meduza-becky-hill-goodboys-lose-control",
+      "bodyDb": -19.9,
+      "musicOnsetMs": 490,
+      "clueWindowStartMs": 490,
+      "clueWindowStatus": "pass",
+      "clueWindowReasons": [],
+      "clueAudibleSubWindows": 5,
+      "clueFirst100Db": -16.3,
+      "firstSoundMs": 490,
+      "firstAudibleMs": 490,
+      "firstStrongMs": 490,
+      "firstMusicalMs": 140,
+      "recommendedPlayableMs": 0,
+      "first2SecondsDb": -21,
+      "seconds8To15Db": -18.1
     }
   ]
 }

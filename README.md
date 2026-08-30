@@ -10,8 +10,9 @@ The first playable version includes:
 - configurable 0.01, 0.1, 0.5, 2, 8, and 15 second stages
 - precise clue playback through compact Web Audio assets with complete-track continuation from R2
 - searchable canonical answers and aliases
-- wrong guesses, skips, reveal states, and no-repeat rounds
-- five generated demo melodies, so no copyrighted audio is required to test it
+- wrong guesses, skips, reveal states, and persistent no-repeat rounds
+- optional era and broad-genre filters, persisted per browser
+- 804 playable hosted songs across the five difficulty pools
 - a JSON catalogue with familiarity and intro-recognition fields
 - a curated 120-song Gen-Z review queue with language-agnostic search aliases
 - a refreshable 1,179-record review pool built from a 1,125-song billion-stream snapshot plus selective sub-billion additions, with 1,120 active songs, 251 finalized exclusions, 59 current pruning decisions, 105 explicit reviewed keeps, and no unresolved 1B+ review tracks
@@ -92,7 +93,7 @@ To audit metadata, scoring, balance, and local media readiness:
 .\scripts\audit-song-library.ps1
 ```
 
-The readable lists are `data/song-list.txt` for the curated 120-song candidate queue and `data/song-longlist.txt` for the broader active intake pool. The longlist contains active songs only; internal exclusion JSON prevents pruned tracks from returning during refreshes. There are no separate recent-addition, pruned, or review-next text lists.
+The readable lists are `data/song-list.txt` for the original curated candidate queue and `data/song-longlist.txt` for the broader active intake pool. The longlist contains active songs only; internal exclusion JSON prevents pruned tracks from returning during refreshes. There are no separate recent-addition, pruned, or review-next text lists.
 
 ## Documentation
 

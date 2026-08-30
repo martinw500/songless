@@ -1,6 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { normalizeAnswer, songMatchesQuery, validateCatalog } from "../src/lib/game.ts";
+import {
+  filterSongs,
+  genreGroups,
+  normalizeAnswer,
+  pickSongFromCycle,
+  songMatchesQuery,
+  validateCatalog,
+} from "../src/lib/game.ts";
 
 const internationalSongs = [
   {
@@ -82,4 +89,41 @@ test("catalogue validation accepts complete R2 hosted sources", () => {
   assert.deepEqual(validateCatalog([{ ...valid, clueGainDb: 13 }]), []);
   assert.deepEqual(validateCatalog([{ ...valid, playbackGainDb: 12 }]), [{ ...valid, playbackGainDb: 12 }]);
   assert.deepEqual(validateCatalog([{ ...valid, playbackGainDb: 13 }]), []);
+});
+
+test("era and broad genre filters compose with difficulty", () => {
+  const songs = [
+    { ...internationalSongs[0], releaseYear: 2024, genres: ["dance-pop"] },
+    { ...internationalSongs[1], id: "classic-rock", releaseYear: 1985, genres: ["alternative rock"] },
+    { ...internationalSongs[1], id: "2010s-pop", releaseYear: 2016, genres: ["pop"] },
+    { ...internationalSongs[2], id: "old-medium", difficulty: "medium", releaseYear: 1985, genres: ["rock"] },
+  ];
+  assert.deepEqual(filterSongs(songs, "easy", { era: "modern", genre: "dance" }).map((song) => song.id), [
+    "stromae-alors-on-danse",
+  ]);
+  assert.deepEqual(filterSongs(songs, "easy", { era: "classics", genre: "rock" }).map((song) => song.id), [
+    "classic-rock",
+  ]);
+  assert.deepEqual(filterSongs(songs, "easy", {
+    era: ["modern", "2010s"],
+    genre: ["pop", "dance"],
+  }).map((song) => song.id), ["stromae-alors-on-danse", "2010s-pop"]);
+  assert.equal(filterSongs(songs, "easy", { era: [], genre: [] }).length, 3);
+  assert.deepEqual([...genreGroups({ ...internationalSongs[0], genres: ["indie pop"] })].sort(), ["pop", "rock"]);
+});
+
+test("persistent draw cycles exhaust a pool before repeating and avoid the last song on reset", () => {
+  const songs = ["one", "two", "three"].map((id) => ({ ...internationalSongs[0], id }));
+  let seenIds = [];
+  const drawn = [];
+  for (let draw = 0; draw < songs.length; draw += 1) {
+    const result = pickSongFromCycle(songs, seenIds, drawn.at(-1));
+    assert.ok(result.song);
+    drawn.push(result.song.id);
+    seenIds = result.seenIds;
+  }
+  assert.equal(new Set(drawn).size, songs.length);
+  const next = pickSongFromCycle(songs, seenIds, drawn.at(-1));
+  assert.ok(next.song);
+  assert.notEqual(next.song.id, drawn.at(-1));
 });

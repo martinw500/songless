@@ -60,6 +60,8 @@
     { "id": "billie-eilish-lovely-with-khalid", "artist": "Billie Eilish & Khalid", "primaryArtists": ["Billie Eilish", "Khalid"], "reason": "The exact public Spotify page credits Billie Eilish and Khalid." },
     { "id": "the-chainsmokers-something-just-like-this", "artist": "The Chainsmokers & Coldplay", "primaryArtists": ["The Chainsmokers", "Coldplay"], "reason": "The exact public Spotify page credits The Chainsmokers and Coldplay." },
     { "id": "elton-john-cold-heart", "artist": "Elton John, Dua Lipa & PNAU", "primaryArtists": ["Elton John", "Dua Lipa", "PNAU"], "reason": "The canonical PNAU remix page credits Elton John, Dua Lipa, and PNAU." },
-    { "id": "kendrick-lamar-money-trees", "artist": "Kendrick Lamar feat. Jay Rock", "primaryArtists": ["Kendrick Lamar", "Jay Rock"], "reason": "The exact public Spotify page includes Jay Rock." }
+    { "id": "kendrick-lamar-money-trees", "artist": "Kendrick Lamar feat. Jay Rock", "primaryArtists": ["Kendrick Lamar", "Jay Rock"], "reason": "The exact public Spotify page includes Jay Rock." },
+    { "id": "the-weeknd-i-feel-it-coming", "artist": "The Weeknd & Daft Punk", "primaryArtists": ["The Weeknd", "Daft Punk"], "reason": "The canonical Starboy recording credits Daft Punk as a performing artist." },
+    { "id": "powfu-death-bed-coffee-for-your-head", "artist": "Powfu feat. beabadoobee", "primaryArtists": ["Powfu", "beabadoobee"], "reason": "The canonical recording credits beabadoobee; use the official label-provided audio." }
   ]
 }

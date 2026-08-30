@@ -28,6 +28,7 @@
     "metadata:deezer": "node scripts/resolve-deezer-metadata.mjs",
     "apply:media-starts": "node scripts/apply-media-start-overrides.mjs",
     "apply:artist-credits": "node scripts/apply-artist-credit-overrides.mjs",
+    "apply:release-years": "node scripts/apply-cached-release-years.mjs",
     "init:sources": "node scripts/init-download-sources.mjs",
     "prepare:r2": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-r2-media.ps1",
     "check:r2": "node --env-file-if-exists=.env.local scripts/upload-r2-media.mjs --check",

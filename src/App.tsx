@@ -9,7 +9,7 @@ import {
 import { AudioEngine } from "./lib/audio";
 import {
   filterSongs,
-  pickSong,
+  pickSongFromCycle,
   songMatchesQuery,
   stageOptions,
   stages,
@@ -17,7 +17,11 @@ import {
 } from "./lib/game";
 import {
   difficulties,
+  eraFilters,
+  genreFilters,
   type Difficulty,
+  type EraFilter,
+  type GenreFilter,
   type RoundStatus,
   type Song,
 } from "./types";
@@ -30,6 +34,29 @@ const difficultyLabels: Record<Difficulty, string> = {
   impossible: "Impossible",
 };
 const AUTO_REROLL_SECONDS = 4;
+const playHistoryStorageKey = "songless-play-history-v1";
+type SelectableEra = Exclude<EraFilter, "all">;
+type SelectableGenre = Exclude<GenreFilter, "all">;
+const selectableEraFilters = eraFilters.filter((era): era is SelectableEra => era !== "all");
+const selectableGenreFilters = genreFilters.filter((genre): genre is SelectableGenre => genre !== "all");
+
+const eraLabels: Record<EraFilter, string> = {
+  all: "All eras",
+  modern: "Modern (2020+)",
+  "2010s": "2010s",
+  "2000s": "2000s",
+  classics: "Classics (pre-2000)",
+};
+
+const genreLabels: Record<GenreFilter, string> = {
+  all: "All genres",
+  pop: "Pop",
+  "hip-hop": "Hip-hop / Rap",
+  "r&b": "R&B / Soul",
+  rock: "Rock / Alternative",
+  dance: "Dance / Electronic",
+  other: "Other / Unclassified",
+};
 
 const stageStorageKey = "songless-stages-v2";
 
@@ -92,13 +119,48 @@ const confettiPieces = Array.from({ length: 30 }, (_, index) => {
   };
 });
 
-const initialSeen = (): Record<Difficulty, Set<string>> => ({
-  easy: new Set(),
-  medium: new Set(),
-  hard: new Set(),
-  expert: new Set(),
-  impossible: new Set(),
-});
+type PlayHistory = Record<string, string[]>;
+
+function initialPlayHistory(): PlayHistory {
+  try {
+    const saved = JSON.parse(window.localStorage.getItem(playHistoryStorageKey) ?? "{}");
+    if (!saved || typeof saved !== "object" || Array.isArray(saved)) return {};
+    return Object.fromEntries(Object.entries(saved).filter((entry): entry is [string, string[]] => (
+      Array.isArray(entry[1]) && entry[1].every((id) => typeof id === "string")
+    )));
+  } catch {
+    return {};
+  }
+}
+
+function initialFilterSelection<T extends string>(storageKey: string, allowed: readonly T[]): T[] {
+  const saved = window.localStorage.getItem(storageKey);
+  if (!saved) return [];
+  try {
+    const parsed: unknown = JSON.parse(saved);
+    if (Array.isArray(parsed)) {
+      return allowed.filter((option) => parsed.includes(option));
+    }
+  } catch {
+    // Older builds stored one unquoted filter value. Keep it during migration.
+  }
+  return allowed.includes(saved as T) ? [saved as T] : [];
+}
+
+function initialEraFilter(): SelectableEra[] {
+  return initialFilterSelection("songless-era-filter", selectableEraFilters);
+}
+
+function initialGenreFilter(): SelectableGenre[] {
+  return initialFilterSelection("songless-genre-filter", selectableGenreFilters);
+}
+
+function toggleFilter<T extends string>(selection: T[], option: T, order: readonly T[]): T[] {
+  const selected = new Set(selection);
+  if (selected.has(option)) selected.delete(option);
+  else selected.add(option);
+  return order.filter((value) => selected.has(value));
+}
 
 function App() {
   const audioEngine = useRef(new AudioEngine());
@@ -106,10 +168,15 @@ function App() {
   const revealTimer = useRef<number | null>(null);
   const playbackRun = useRef(0);
   const playbackPending = useRef(false);
-  const seenSongs = useRef(initialSeen());
+  const playHistory = useRef<PlayHistory>(initialPlayHistory());
   const [catalog, setCatalog] = useState<Song[]>([]);
   const [catalogError, setCatalogError] = useState("");
   const [difficulty, setDifficulty] = useState<Difficulty>("easy");
+  const [eraFilter, setEraFilter] = useState<SelectableEra[]>(initialEraFilter);
+  const [genreFilter, setGenreFilter] = useState<SelectableGenre[]>(initialGenreFilter);
+  const [draftEraFilter, setDraftEraFilter] = useState<SelectableEra[]>(initialEraFilter);
+  const [draftGenreFilter, setDraftGenreFilter] = useState<SelectableGenre[]>(initialGenreFilter);
+  const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [currentSong, setCurrentSong] = useState<Song | null>(null);
   const [enabledStages, setEnabledStages] = useState<number[]>(initialStages);
   const [stageIndex, setStageIndex] = useState(0);
@@ -181,6 +248,14 @@ function App() {
   }, [autoReroll]);
 
   useEffect(() => {
+    window.localStorage.setItem("songless-era-filter", JSON.stringify(eraFilter));
+  }, [eraFilter]);
+
+  useEffect(() => {
+    window.localStorage.setItem("songless-genre-filter", JSON.stringify(genreFilter));
+  }, [genreFilter]);
+
+  useEffect(() => {
     if (!autoReroll || autoRerollCancelled || status === "playing" || !currentSong) {
       setAutoRerollRemaining(null);
       return undefined;
@@ -208,12 +283,11 @@ function App() {
   }, [enabledStages]);
 
   useEffect(() => {
-    const pool = filterSongs(catalog, difficulty);
-    const song = pickSong(pool, seenSongs.current[difficulty]);
-    if (song) seenSongs.current[difficulty].add(song.id);
+    const pool = filterSongs(catalog, difficulty, { era: eraFilter, genre: genreFilter });
+    const song = drawSong(pool, currentSong?.id);
     setCurrentSong(song);
     resetRoundState();
-  }, [catalog, difficulty]);
+  }, [catalog, difficulty, eraFilter, genreFilter]);
 
   useEffect(() => () => {
     playbackRun.current += 1;
@@ -224,9 +298,12 @@ function App() {
   const counts = useMemo(
     () =>
       Object.fromEntries(
-        difficulties.map((level) => [level, filterSongs(catalog, level).length]),
+        difficulties.map((level) => [
+          level,
+          filterSongs(catalog, level, { era: eraFilter, genre: genreFilter }).length,
+        ]),
       ) as Record<Difficulty, number>,
-    [catalog],
+    [catalog, eraFilter, genreFilter],
   );
 
   const suggestions = useMemo(() => {
@@ -243,6 +320,11 @@ function App() {
   const selectedSong = selectedSongId
     ? catalog.find((song) => song.id === selectedSongId) ?? null
     : null;
+  const activeFilterCount = eraFilter.length + genreFilter.length;
+  const draftPoolCount = filterSongs(catalog, difficulty, {
+    era: draftEraFilter,
+    genre: draftGenreFilter,
+  }).length;
   const currentStage = enabledStages[stageIndex] ?? enabledStages[0] ?? stages[0];
   const unlockedOffset = stageCursorOffset(enabledStages, stageIndex + 1);
   const playbackProgress = currentStage > 0 ? Math.min(1, playbackElapsed / currentStage) : 0;
@@ -317,23 +399,29 @@ function App() {
     setAudioError("");
   }
 
-  function advanceToNextSong(resetSeen = false) {
-    if (resetSeen) seenSongs.current = initialSeen();
-    const pool = filterSongs(catalog, difficulty);
-    const seen = seenSongs.current[difficulty];
-    if (currentSong) seen.add(currentSong.id);
-    if (pool.length > 1 && pool.every((song) => seen.has(song.id))) {
-      seen.clear();
-      if (currentSong) seen.add(currentSong.id);
-    }
-    const song = pickSong(pool, seen);
-    if (song) seen.add(song.id);
+  function activePoolKey(): string {
+    return `${difficulty}|${eraFilter.join(",") || "all"}|${genreFilter.join(",") || "all"}`;
+  }
+
+  function drawSong(pool: Song[], avoidId?: string): Song | null {
+    const key = activePoolKey();
+    const result = pickSongFromCycle(pool, playHistory.current[key] ?? [], avoidId);
+    const song = result.song;
+    if (!song) return null;
+    playHistory.current[key] = result.seenIds;
+    window.localStorage.setItem(playHistoryStorageKey, JSON.stringify(playHistory.current));
+    return song;
+  }
+
+  function advanceToNextSong() {
+    const pool = filterSongs(catalog, difficulty, { era: eraFilter, genre: genreFilter });
+    const song = drawSong(pool, currentSong?.id);
     setCurrentSong(song);
     resetRoundState();
   }
 
   function rerollAll() {
-    advanceToNextSong(true);
+    advanceToNextSong();
   }
 
   function replayCurrentSong() {
@@ -567,6 +655,17 @@ function App() {
             )}
             <button
               type="button"
+              className={`mode-action filter-button${activeFilterCount ? " active-filter" : ""}`}
+              onClick={() => {
+                setDraftEraFilter(eraFilter);
+                setDraftGenreFilter(genreFilter);
+                setIsFiltersOpen(true);
+              }}
+            >
+              <FilterIcon /> Filters{activeFilterCount ? ` (${activeFilterCount})` : ""}
+            </button>
+            <button
+              type="button"
               className="mode-action feedback-button"
               onClick={() => setIsFeedbackOpen(true)}
               title="Send Feedback"
@@ -616,8 +715,10 @@ function App() {
             ) : !currentSong ? (
               <div className="empty-state">
                 <span className="empty-icon">{String.fromCharCode(9835)}</span>
-                <h1>{catalog.length === 0 ? "Loading catalogue..." : "No songs in this mode"}</h1>
-                <p>Add a song with the "{difficulty}" difficulty to public/catalog.json.</p>
+                <h1>{catalog.length === 0 ? "Loading catalogue..." : "No songs match"}</h1>
+                <p>{catalog.length === 0
+                  ? "The song library is loading."
+                  : "Try another difficulty or clear the era and genre filters."}</p>
               </div>
             ) : status !== "playing" ? (
               <div className={`result-panel ${status}`} key={`${status}-${currentSong.id}`}>
@@ -878,6 +979,92 @@ function App() {
         </aside>
       </section>
 
+      {isFiltersOpen && (
+        <div className="modal-overlay" onClick={() => setIsFiltersOpen(false)}>
+          <div className="modal-content filter-modal" onClick={(event) => event.stopPropagation()}>
+            <button className="modal-close" onClick={() => setIsFiltersOpen(false)} aria-label="Close filters">
+              &times;
+            </button>
+            <div className="filter-heading">
+              <FilterIcon />
+              <div>
+                <h2>Song filters</h2>
+                <p>{draftPoolCount} {draftPoolCount === 1 ? "song" : "songs"} available in {difficultyLabels[difficulty]}</p>
+              </div>
+            </div>
+            <fieldset className="filter-group">
+              <legend>Era <span>(select any)</span></legend>
+              <div className="filter-options">
+                {eraFilters.map((era) => {
+                  const selected = era === "all" ? draftEraFilter.length === 0 : draftEraFilter.includes(era);
+                  return (
+                    <button
+                      aria-pressed={selected}
+                      className={selected ? "selected" : ""}
+                      key={era}
+                      onClick={() => setDraftEraFilter(era === "all"
+                        ? []
+                        : toggleFilter(draftEraFilter, era, selectableEraFilters))}
+                      type="button"
+                    >
+                      {eraLabels[era]}
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+            <fieldset className="filter-group">
+              <legend>Genre <span>(select any)</span></legend>
+              <div className="filter-options">
+                {genreFilters.map((genre) => {
+                  const selected = genre === "all"
+                    ? draftGenreFilter.length === 0
+                    : draftGenreFilter.includes(genre);
+                  return (
+                    <button
+                      aria-pressed={selected}
+                      className={selected ? "selected" : ""}
+                      key={genre}
+                      onClick={() => setDraftGenreFilter(genre === "all"
+                        ? []
+                        : toggleFilter(draftGenreFilter, genre, selectableGenreFilters))}
+                      type="button"
+                    >
+                      {genreLabels[genre]}
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+            <div className="filter-footer">
+              <button
+                className="filter-clear"
+                disabled={draftEraFilter.length === 0 && draftGenreFilter.length === 0}
+                onClick={() => {
+                  setDraftEraFilter([]);
+                  setDraftGenreFilter([]);
+                }}
+                type="button"
+              >
+                Clear filters
+              </button>
+              <button
+                className="filter-done"
+                disabled={draftPoolCount === 0}
+                onClick={() => {
+                  setEraFilter(draftEraFilter);
+                  setGenreFilter(draftGenreFilter);
+                  setIsFiltersOpen(false);
+                }}
+                type="button"
+              >
+                Play this mix
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {isFeedbackOpen && (
         <div className="modal-overlay" onClick={() => setIsFeedbackOpen(false)}>
           <div className="modal-content feedback-modal" onClick={e => e.stopPropagation()}>
@@ -1046,6 +1233,17 @@ function RerollIcon() {
       <circle cx="9.25" cy="13.75" r=".7" className="pip" />
       <circle cx="9.75" cy="6.75" r=".7" className="pip" />
       <circle cx="13.25" cy="10.25" r=".7" className="pip" />
+    </svg>
+  );
+}
+
+function FilterIcon() {
+  return (
+    <svg className="action-icon filter-icon" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M2 3.25h12M4.2 8h7.6M6.4 12.75h3.2" />
+      <circle cx="5.2" cy="3.25" r="1.15" />
+      <circle cx="10.7" cy="8" r="1.15" />
+      <circle cx="7.4" cy="12.75" r="1.15" />
     </svg>
   );
 }

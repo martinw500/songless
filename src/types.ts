@@ -8,6 +8,12 @@ export const difficulties = [
 
 export type Difficulty = (typeof difficulties)[number];
 
+export const eraFilters = ["all", "modern", "2010s", "2000s", "classics"] as const;
+export type EraFilter = (typeof eraFilters)[number];
+
+export const genreFilters = ["all", "pop", "hip-hop", "r&b", "rock", "dance", "other"] as const;
+export type GenreFilter = (typeof genreFilters)[number];
+
 export type FileAudioSource = {
   kind: "file";
   src: string;
@@ -38,6 +44,7 @@ export type Song = {
   spotifyUrl?: string;
   releaseYear?: number;
   genres?: string[];
+  genreGroups?: Exclude<GenreFilter, "all">[];
   difficulty: Difficulty;
   familiarity?: number;
   recognitionScore?: number;

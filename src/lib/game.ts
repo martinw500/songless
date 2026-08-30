@@ -1,4 +1,4 @@
-import type { Difficulty, Song } from "../types";
+import type { Difficulty, EraFilter, GenreFilter, Song } from "../types";
 
 export const stages = [0.1, 0.5, 2, 8, 15] as const;
 export const stageOptions = [0.01, ...stages] as const;
@@ -34,8 +34,53 @@ export function songMatchesQuery(song: Song, rawQuery: string): boolean {
 export function filterSongs(
   songs: Song[],
   difficulty: Difficulty,
+  filters?: {
+    era?: EraFilter | readonly EraFilter[];
+    genre?: GenreFilter | readonly GenreFilter[];
+  },
 ): Song[] {
-  return songs.filter((song) => song.difficulty === difficulty);
+  return songs.filter((song) => song.difficulty === difficulty
+    && songMatchesAnyEra(song, filters?.era ?? "all")
+    && songMatchesAnyGenre(song, filters?.genre ?? "all"));
+}
+
+function songMatchesAnyEra(song: Song, selection: EraFilter | readonly EraFilter[]): boolean {
+  const eras = Array.isArray(selection) ? selection : [selection];
+  return eras.length === 0 || eras.includes("all") || eras.some((era) => songMatchesEra(song, era));
+}
+
+export function songMatchesEra(song: Song, era: EraFilter): boolean {
+  if (era === "all") return true;
+  if (!Number.isInteger(song.releaseYear)) return false;
+  if (era === "modern") return song.releaseYear! >= 2020;
+  if (era === "2010s") return song.releaseYear! >= 2010 && song.releaseYear! <= 2019;
+  if (era === "2000s") return song.releaseYear! >= 2000 && song.releaseYear! <= 2009;
+  return song.releaseYear! < 2000;
+}
+
+export function genreGroups(song: Song): Set<Exclude<GenreFilter, "all">> {
+  if (song.genreGroups?.length) return new Set(song.genreGroups);
+  const values = (song.genres ?? []).map((genre) => genre.toLowerCase());
+  const groups = new Set<Exclude<GenreFilter, "all">>();
+  for (const genre of values) {
+    if (/pop|adult contemporary|soundtrack/u.test(genre)) groups.add("pop");
+    if (/hip.?hop|rap|trap/u.test(genre)) groups.add("hip-hop");
+    if (/r&b|rhythm and blues|soul/u.test(genre)) groups.add("r&b");
+    if (/rock|grunge|metal|britpop|new wave|alternative|indie/u.test(genre)) groups.add("rock");
+    if (/dance|electro|house|disco|reggaeton|latin|afrobeat|funk/u.test(genre)) groups.add("dance");
+  }
+  if (groups.size === 0) groups.add("other");
+  return groups;
+}
+
+export function songMatchesGenre(song: Song, genre: GenreFilter): boolean {
+  return genre === "all" || genreGroups(song).has(genre);
+}
+
+function songMatchesAnyGenre(song: Song, selection: GenreFilter | readonly GenreFilter[]): boolean {
+  const genres = Array.isArray(selection) ? selection : [selection];
+  return genres.length === 0 || genres.includes("all")
+    || genres.some((genre) => songMatchesGenre(song, genre));
 }
 
 export function pickSong(songs: Song[], excludedIds: Set<string>): Song | null {
@@ -44,6 +89,23 @@ export function pickSong(songs: Song[], excludedIds: Set<string>): Song | null {
   const unseen = songs.filter((song) => !excludedIds.has(song.id));
   const candidates = unseen.length > 0 ? unseen : songs;
   return candidates[Math.floor(Math.random() * candidates.length)] ?? null;
+}
+
+export function pickSongFromCycle(
+  songs: Song[],
+  seenIds: Iterable<string>,
+  avoidId?: string,
+): { song: Song | null; seenIds: string[] } {
+  if (songs.length === 0) return { song: null, seenIds: [] };
+  const eligibleIds = new Set(songs.map((song) => song.id));
+  const seen = new Set([...seenIds].filter((id) => eligibleIds.has(id)));
+  if (songs.every((song) => seen.has(song.id))) {
+    seen.clear();
+    if (avoidId && songs.length > 1 && eligibleIds.has(avoidId)) seen.add(avoidId);
+  }
+  const song = pickSong(songs, seen);
+  if (song) seen.add(song.id);
+  return { song, seenIds: [...seen] };
 }
 
 export function validateCatalog(value: unknown): Song[] {

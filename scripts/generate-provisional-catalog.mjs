@@ -39,6 +39,40 @@ const featureById = new Map((introFeatures.songs ?? []).map((feature) => [featur
 const scoreSong = createScorer(longlist, introFeatures);
 const withEase = songs.map((song) => ({ song, ...scoreSong(song) }));
 
+function broadGenreGroups(genres = []) {
+  const groups = new Set();
+  for (const value of genres) {
+    const genre = String(value).toLowerCase();
+    if (/pop|adult contemporary|soundtrack/u.test(genre)) groups.add("pop");
+    if (/hip.?hop|rap|trap/u.test(genre)) groups.add("hip-hop");
+    if (/r&b|rhythm and blues|soul/u.test(genre)) groups.add("r&b");
+    if (/rock|grunge|metal|britpop|new wave|alternative|indie/u.test(genre)) groups.add("rock");
+    if (/dance|electro|house|disco|reggaeton|latin|afrobeat|funk/u.test(genre)) groups.add("dance");
+  }
+  return groups;
+}
+
+const genreGroupsByArtist = new Map();
+for (const song of songs) {
+  const groups = broadGenreGroups(song.genres);
+  for (const artist of song.primaryArtists ?? [song.artist]) {
+    const key = String(artist).normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
+    if (!genreGroupsByArtist.has(key)) genreGroupsByArtist.set(key, new Set());
+    for (const group of groups) genreGroupsByArtist.get(key).add(group);
+  }
+}
+
+function effectiveGenreGroups(song) {
+  const groups = broadGenreGroups(song.genres);
+  if (groups.size === 0) {
+    for (const artist of song.primaryArtists ?? [song.artist]) {
+      const key = String(artist).normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
+      for (const group of genreGroupsByArtist.get(key) ?? []) groups.add(group);
+    }
+  }
+  return groups.size > 0 ? [...groups] : ["other"];
+}
+
 // Sort by ease descending
 withEase.sort((a, b) => b.easeScore - a.easeScore || a.song.title.localeCompare(b.song.title));
 
@@ -57,6 +91,7 @@ const catalog = withEase.map((entry, index) => {
     ...(s.spotifyUrl ? { spotifyUrl: s.spotifyUrl } : {}),
     releaseYear: s.releaseYear,
     genres: s.genres,
+    genreGroups: effectiveGenreGroups(s),
     difficulty: entry.difficulty,
     familiarity: s.familiarity,
     recognitionScore: entry.recognitionScore,

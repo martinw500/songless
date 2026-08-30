@@ -40,14 +40,14 @@
   "counts": {
     "billionSnapshot": 1125,
     "billionIncluded": 823,
-    "founderPicks": 452,
+    "founderPicks": 453,
     "personalPlaylist": 69,
-    "reviewedKeeps": 106,
+    "reviewedKeeps": 107,
     "playlistSourceTracks": 100,
-    "finalizedExclusions": 248,
+    "finalizedExclusions": 247,
     "excludedByCurrentDecisions": 58,
-    "active": 1125,
-    "combinedUnique": 1125
+    "active": 1126,
+    "combinedUnique": 1126
   },
   "tracks": [
     {
@@ -13395,6 +13395,21 @@
       "founderReason": "explicit_user_request",
       "languageReview": "english",
       "reviewStatus": "unreviewed"
+    },
+    {
+      "sourceRank": null,
+      "title": "Lose Control",
+      "artist": "MEDUZA, Becky Hill & Goodboys",
+      "displayedStreams": "1.1B",
+      "signals": [
+        "billion_streams",
+        "founder_pick",
+        "radio_hit",
+        "reviewed_keep"
+      ],
+      "founderReason": "explicit_user_request",
+      "languageReview": "english",
+      "reviewStatus": "shortlisted"
     }
   ]
 }
