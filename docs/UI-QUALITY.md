@@ -36,6 +36,8 @@ Auto reroll is opt-in and persists locally. A win or loss remains visible for a 
 
 Era and genre filters live in a modal opened from the mode actions. Each group supports multiple selections: choices within a group are ORed together, while the selected eras and genres are combined together. `All eras` or `All genres` clears that group. Choices are drafted in the modal and take effect only through `Play this mix`, so browsing filter combinations must not silently consume songs or reset an active round. The modal reports the resulting pool size and refuses an empty mix. Both filter arrays persist locally.
 
+Right-rail setting buttons use the same flat dark-pill and accent-fill language as the rest of the interface, with a visible border plus pointer, keyboard-focus, hover, and pressed states. Binary controls such as Auto reroll also show a restrained moving switch and explicit timing; they must look clickable without introducing a separate glossy surface style.
+
 Played-song history also persists locally. Each difficulty/era/genre combination has its own draw cycle: every eligible song is selected once before that exact pool resets, and a cycle reset avoids immediately replaying the song that just ended when at least two choices exist. Manual next, auto reroll, and `Reroll all` all use the same cycle and must never bypass it.
 
 Loss sequence:

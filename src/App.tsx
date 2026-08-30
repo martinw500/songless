@@ -940,11 +940,13 @@ function App() {
             <p className="eyebrow"><AutoRerollIcon /> Next song</p>
             <button
               aria-pressed={autoReroll}
-              className={`setting-value${autoReroll ? " active-setting" : ""}`}
+              className={`setting-value auto-reroll-toggle${autoReroll ? " active-setting" : ""}`}
               onClick={() => setAutoReroll((enabled) => !enabled)}
               type="button"
             >
-              Auto reroll {autoReroll ? `on · ${AUTO_REROLL_SECONDS}s` : "off"}
+              <span>Auto reroll</span>
+              <span className="auto-reroll-state">{autoReroll ? `${AUTO_REROLL_SECONDS}s` : "Off"}</span>
+              <span className="toggle-track" aria-hidden="true"><span /></span>
             </button>
           </div>
           <label className="volume-control">
