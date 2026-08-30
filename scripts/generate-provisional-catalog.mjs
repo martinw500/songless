@@ -147,5 +147,5 @@ if (dryRun) {
   console.log(`\nWrote provisional catalogue to ${path.basename(catalogFile)}.`);
   console.log("⚠ This is a PROVISIONAL catalogue for testing only.");
   console.log("  Unreviewed intro scores are waveform audibility proxies and must be replaced by blind identification reviews.");
-  console.log("  Run npm run promote:songs after all intro reviews are complete.");
+  console.log("  Reviewed intro scores automatically replace waveform proxies on the next generation run.");
 }

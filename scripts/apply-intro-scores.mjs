@@ -125,4 +125,4 @@ for (const u of updates) {
 
 writeFileSync(candidateFile, `${JSON.stringify(candidateRoot, null, 2)}\n`, "utf8");
 console.log(`\nApplied intro scores to ${applied} songs in song-candidates.json.`);
-console.log("Run npm run audit:songs to validate.");
+console.log("Run npm run provisional:catalog and npm run audit:provisional to validate.");

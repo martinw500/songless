@@ -6,9 +6,8 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const candidateFile = path.join(root, "data", "song-candidates.json");
-const headCandidateFile = path.join(root, "scratch", "head-candidates.json");
 const cacheDir = path.join(root, "data", "spotify-cache.local");
-const reportFile = path.join(root, "data", "spotify-metadata-report.json");
+const reportFile = path.join(root, "data", "spotify-metadata-report.local.json");
 
 if (!existsSync(cacheDir)) mkdirSync(cacheDir, { recursive: true });
 
@@ -76,7 +75,7 @@ function generateReport(results) {
     nextSongToProcess: results.nextSong || null,
   };
   writeFileSync(reportFile, JSON.stringify(report, null, 2) + "\n", "utf8");
-  console.log(`\nSaved resumable report to data/spotify-metadata-report.json`);
+  console.log(`\nSaved resumable report to data/spotify-metadata-report.local.json`);
 }
 
 async function spotifyFetch(url, resultsForReport) {

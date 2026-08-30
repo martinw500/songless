@@ -93,29 +93,28 @@ Do not score `introRecognition` from a different master. For immediate library t
    For a correction batch, pass the same comma-separated ID list to `download-authorized-sources.ps1 -Replace`, `prepare-r2-media.ps1 -Force`, and `upload-r2-media.mjs --id=<ids>` (the uploader also accepts `--id <ids>`). Artwork upload now accepts the same `--id` / `--id=` filter. Replacement downloads move the previous exact-ID source files into a timestamped `private-media/replaced-backup` folder. Before upload, run `node scripts/audit-media-starts.mjs --id=<ids>`; after upload, rerun it so catalogue duration, clue/full alignment, onset, loudness, and source classification all describe the deployed files. That audit also runs the clue-window gate, which measures the exact 0.1 second window the player hears at each song's `startAtMs` and reports `clue-window-silent` when it opens on inaudible audio. Any song it flags is corrected to its measured music onset by `npm run provisional:catalog`; a finished batch must report zero flagged songs. See [CATALOG.md](CATALOG.md#the-clue-window-gate) for the measurement and its thresholds.
 
 6. Open `http://127.0.0.1:5173/?reviewSong=<id>` and confirm the exact version. Test 0.1, 0.5, 2, 8, and 15 seconds.
-7. Audit the complete queue:
+7. Regenerate and audit the playable catalogue:
 
    ```powershell
-   npm run audit:songs
+   npm run provisional:catalog
    npm run audit:provisional
-   # or
-   .\scripts\audit-song-library.ps1
    ```
 
-   `audit:songs` remains the final approved-library gate. `audit:provisional` validates the expanded testing catalogue. For a real hosted playback check of a corrected song, run `npm run review:r2` followed by `node scripts/verify-ui.mjs --hosted-smoke --hosted-id=<candidate-id>`; it plays the R2 clue in a browser and proves that the result reveal restarts at game-time zero.
+   `audit:provisional` validates the complete playable catalogue. For a real hosted playback check of a corrected song, run `npm run review:r2` followed by `node scripts/verify-ui.mjs --hosted-smoke --hosted-id=<candidate-id>`; it plays the R2 clue in a browser and proves that the result reveal restarts at game-time zero.
 
 8. Approve the exact hosted track with `npm run approve:song -- --id <id> --intro <0-100>`. If the master has genuine leading silence, add `--start-at <seconds>` (for example, `--start-at 2.4`) so both the clue and complete reveal treat that position as time zero. Add `--difficulty` and `--reason` only for a documented manual override.
-9. Once at least ten approved songs exist in every difficulty, promote them:
+9. Regenerate the catalogue after approval:
 
    ```powershell
-   npm run promote:songs
+   npm run provisional:catalog
+   npm run audit:provisional
    ```
 
-Promotion refuses to replace the five playable demos before that 50-song minimum is complete. Later runs promote every approved candidate, allowing the live pool to grow beyond the pilot. The result screen streams the complete R2 file from game-time zero, using the same silence-trim offset as clues.
+The generator includes every playable reviewed or provisionally scored candidate and balances the difficulty pools. The result screen streams the complete R2 file from game-time zero, using the same silence-trim offset as clues.
 
 ## Local-file fallback
 
-For a purely local build, name a permitted source after the candidate ID and run `.\scripts\prepare-audio.ps1 -InputDirectory "D:\Music\Songless Sources"`. The same audit, intro review, approval, and promotion rules apply.
+For a purely local build, name a permitted source after the candidate ID and run `.\scripts\prepare-audio.ps1 -InputDirectory "D:\Music\Songless Sources"`. The same media audit, intro review, scoring, and catalogue-generation rules apply.
 
 ## Curation principle
 

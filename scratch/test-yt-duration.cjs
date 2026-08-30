@@ -1,1 +1,0 @@
-const {execSync} = require('child_process'); const res = execSync('yt-dlp --dump-single-json --flat-playlist --no-warnings "https://music.youtube.com/search?q=Billie+Eilish+bad+guy+song"').toString(); const entries = JSON.parse(res).entries; console.log(Object.keys(entries[0]));

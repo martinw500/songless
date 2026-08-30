@@ -52,9 +52,7 @@ New-song discovery is frozen while the playable catalogue is implemented. Previo
 }
 ```
 
-Run `npm run audit:songs` after editing. The audit validates IDs, aliases, score math, review transitions, media names, live catalogue entries, and approved difficulty counts. The original 120-song pilot composition remains curation history; the provisional playable catalogue is now larger.
-
-Run `npm run audit:provisional` for the expanded playable testing catalogue. It validates every hosted candidate/catalogue mapping, unique IDs, R2 URLs and durations, start offsets, clue gains, tracked waveform features, deterministic score fields, difficulty counts, documented media-start overrides, and that rejected candidates cannot remain playable merely because their hosted media still exists.
+Run `npm run provisional:catalog` after editing candidate scores, media offsets, artist credits, or hosted metadata. Then run `npm run audit:provisional`. The audit validates every hosted candidate/catalogue mapping, unique IDs, R2 URLs and durations, start offsets, clue gains, tracked waveform features, deterministic score fields, difficulty counts, documented media-start overrides, and that rejected candidates cannot remain playable merely because their hosted media still exists.
 
 Run `npm run audit:coverage` to compare the active billion-stream intake rows with candidate records and the playable catalogue. It reports separately which songs have never received a candidate record and which already have metadata but still lack playable media. The comparison is conservative normalized title/artist matching; review its reported edge cases before treating a near-match as the same recording.
 

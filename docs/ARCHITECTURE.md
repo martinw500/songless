@@ -25,13 +25,15 @@ The current storage split is:
 | Volume preference | Browser local storage | Not applicable |
 | Auto-reroll preference | Browser local storage | Not applicable |
 | Enabled clue stages | Browser local storage | Not applicable |
+| Era and genre filters | Browser local storage | Not applicable |
+| Played-song cycles | Browser local storage | Not applicable |
 | Current round | React memory | Not persisted |
 
 This remains comfortable for thousands of catalogue records. Complete audio is ignored locally and never copied into the repository or Vercel deployment.
 
 Hosted media URLs include a version query derived from the prepared duration and silence trim. Stable R2 object keys can therefore be corrected without an older browser cache retaining a superseded encode; uploads use a one-hour cache lifetime while curation is active.
 
-The candidate queue is intentionally separate from the live catalogue. `scripts/song-library.mjs` audits curation invariants and generates the runtime catalogue only from approved records. It refuses the first real promotion until every difficulty has ten playable songs, so missing media cannot silently create empty modes. The five synthesized demos remain live until that gate passes.
+The candidate queue is intentionally separate from the live catalogue. `scripts/generate-provisional-catalog.mjs` selects playable hosted records, applies reviewed scoring and documented overrides, derives broad genre groups, balances difficulty pools, and writes the runtime catalogue. `scripts/audit-provisional-catalog.mjs` then validates the candidate-to-catalogue mapping and rejects missing media, invalid scores, duplicate IDs, broken offsets, or rejected candidates that accidentally remain playable.
 
 The longlist is one stage earlier than the candidate queue. `scripts/refresh-song-longlist.mjs` captures the public billion-stream research snapshot, merges editable founder/current picks, tags supported candidates that also appear in the personal playlist, removes finalized exclusions, applies explicit reviewed keeps, and then applies the current prune rules. Playlist matching uses `data/founder-playlist-export.csv` when supplied and otherwise falls back to Spotify's 100-track public embed preview. It generates one active-only JSON snapshot and one readable active-only text list. Pruned tracks remain only in internal exclusion rules so a refresh cannot accidentally restore them. The refresh never changes `public/catalog.json`; promoting a longlist track requires deliberate metadata, scoring, media, and intro review in the curated candidate queue.
 
@@ -40,7 +42,7 @@ The longlist is one stage earlier than the candidate queue. `scripts/refresh-son
 1. The React application loads `catalog.json`.
 2. It validates the basic shape and creates difficulty pools.
 3. Hosted sources use a compact clue URL for timing and a complete-track URL for the reveal.
-4. A song is selected while avoiding repeats within the current pool.
+4. Era and genre filters form the eligible pool. A browser-local cycle selects every eligible song once before allowing a repeat; each difficulty/filter combination rotates independently.
 5. The audio engine decodes only the compact hosted clue asset. It switches to a streaming HTML audio element for the complete result track, avoiding a full-song download before every clue.
 6. Skip changes the endpoint without scheduling audio. The first Play after advancing schedules only the new interval—for example, 2-8. After that interval completes, the next Play schedules the full cumulative 0-8 replay.
 7. A win or final loss stops clue playback, restarts the selected intro or hook from game-time zero, and leaves it playing while the result is visible.

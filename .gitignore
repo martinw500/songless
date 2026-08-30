@@ -6,6 +6,9 @@ dist/
 .ui-audit/
 .chrome-preview*/
 *-preview*.png
+scratch/
+data/*.local.json
+data/spotify-metadata-report.json
 
 # Private media stays on your machine.
 public/media/audio/*

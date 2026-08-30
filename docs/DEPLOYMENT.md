@@ -4,7 +4,7 @@
 
 Both services can host this static Vite application. Vercel is the default because it handles a Vite project at the domain root, creates preview deployments automatically, and also offers optional access protection. GitHub Pages would work, but it requires repository-path configuration and a separate Actions workflow without improving this project.
 
-A private Git repository does **not** make either deployed website private by itself. This project does not require privacy: a public URL is convenient for sharing with your girlfriend and friends.
+The GitHub repository and deployed game are public. Crawler directives keep the game out of ordinary search results but do not provide access control.
 
 ## What is already configured
 

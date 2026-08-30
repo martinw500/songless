@@ -1,1 +1,0 @@
-const {execSync} = require('child_process'); const res = execSync('yt-dlp --dump-single-json --flat-playlist --no-warnings "ytsearch1:Akon Right Now (Na Na Na) audio topic"').toString(); console.log(JSON.parse(res).entries[0].id);
